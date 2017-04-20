@@ -1,0 +1,593 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="Default"
+	PositionTop="673"
+	PositionLeft="658"
+	PositionWidth="252"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSOtherPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="1350776264"
+	>
+	<FormCaption><![CDATA[Resource Groups]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="true"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="R_SC_RSRC_GP"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGenericGridDisplay"
+		MaxGridRowCount="5"
+		FetchedBlockRowCount="20"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="RSRC_GP_ID" />
+				<RSDefaultAttribute ID="2" Name="RSRC_GP_DSCR" />
+				<RSDefaultAttribute ID="3" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="4" Name="RSRC_GP_DSCR_UP" />
+				<RSDefaultAttribute ID="5" Name="TBL_LAST_DT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="RSRC_GP_ID" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="RSRC_GP_DSCR" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RSRC_GP_DSCR_UP" Displayed="True" UnPlaced="False" Archetype="AMSUpperCaseTextBox" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="RSRC_GP_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="RSRC_GP_DSCR" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RSRC_GP_DSCR_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value="&quot;Y&quot;"
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value="&quot;RSRC_GP_ID,RSRC_GP_DSCR_UP&quot;"
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Adjacent_Fields"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value=""
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="SummaryCaption"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+		<RecordSource
+			RSID="2"
+			Prefix="T2"
+			BusinessObject="R_SC_APPL_RSRC"
+			Relationship="ResourceGroup(R_SC_RSRC_GP)-ApplicationResources(R_SC_APPL_RSRC)"
+			RelnIsFromParent="True"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+			RecordSourceArchetype="AMSGridNonEditable"
+			MaxGridRowCount="5"
+			FetchedBlockRowCount="20"
+			AllowDelete="False"
+			AllowInsert="False"
+			AllowUpdate="False"
+			SaveMode="Buffered"
+			PreFetchRowCount="False"
+			>
+			<ParameterizedWhereClause><![CDATA[ [RSRC_GP_ID] = [?RSRC_GP_ID]]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="RSRC_ID" />
+					<RSDefaultAttribute ID="2" Name="RSRC_TYP_IND" />
+					<RSDefaultAttribute ID="3" Name="RSRC_GP_ID" />
+					<RSDefaultAttribute ID="4" Name="LOG_FL" />
+					<RSDefaultAttribute ID="5" Name="ORG_LVL_CD" />
+					<RSDefaultAttribute ID="6" Name="ROW_SEC_FL" />
+					<RSDefaultAttribute ID="7" Name="FLD_CNT" />
+					<RSDefaultAttribute ID="8" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="9" Name="RSRC_ID_UP" />
+					<RSDefaultAttribute ID="14" Name="RSRC_SHORT_DESC" />
+					<RSDefaultAttribute ID="15" Name="RSRC_SHORT_DESC_UP" />
+					<RSDefaultAttribute ID="12" Name="RSRC_DESC" />
+					<RSDefaultAttribute ID="13" Name="RSRC_GP_DESC" />
+					<RSDefaultAttribute ID="16" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="17" Name="PG_SEC_FL" />
+					<RSDefaultAttribute ID="18" Name="UI_FLD_SEC_FL" />
+					<RSDefaultAttribute ID="19" Name="UI_SEC_FLD_CNT" />
+				</DefaultAttributes>
+				<GridAttributes>
+					<RSAttribute Name="RSRC_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="RSRC_SHORT_DESC" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="RSRC_TYP_IND" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="RSRC_GP_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LOG_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ORG_LVL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ROW_SEC_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLD_CNT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="RSRC_ID_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="RSRC_DESC" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="RSRC_GP_DESC" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="RSRC_SHORT_DESC_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PG_SEC_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UI_FLD_SEC_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UI_SEC_FLD_CNT" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="ColumnProjectionLevel"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileName"
+					Value=""
+				/>
+				<Property
+					Name="DownloadMaxRows"
+					Value=""
+				/>
+				<Property
+					Name="DownloadProperties"
+					Value=""
+				/>
+				<Property
+					Name="DownloadTemplate"
+					Value=""
+				/>
+				<Property
+					Name="maintenanceString"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageEndWith"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageStartWith"
+					Value=""
+				/>
+				<Property
+					Name="PreFetchRowCount"
+					Value=""
+				/>
+				<Property
+					Name="SearchColList"
+					Value=""
+				/>
+				<Property
+					Name="VirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="ZoomDataSource"
+					Value=""
+				/>
+			</ExtendedProperties>
+			<ArchetypeExtendedProperties>
+				<Property
+					Name="Action_1_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_1_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_2_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_3_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_4_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_5_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="DetailsCaption"
+					Value="Group Resources"
+				/>
+				<Property
+					Name="DownloadFileType"
+					Value="none"
+				/>
+				<Property
+					Name="GridDownloadFileType"
+					Value="none"
+				/>
+				<Property
+					Name="ObjectAttachmentMode"
+					Value="Editable"
+				/>
+				<Property
+					Name="ObjectAttachments"
+					Value="false"
+				/>
+				<Property
+					Name="showCopyPaste"
+					Value="false"
+				/>
+				<Property
+					Name="TimelineData"
+					Value="false"
+				/>
+				<Property
+					Name="UploadFileType"
+					Value="none"
+				/>
+			</ArchetypeExtendedProperties>
+			<Transition
+				FormTransNum="1"
+				Prefix="T3"
+				TargetFormName="pR_SC_APPL_RSRC"
+				IsTargetInitialQueryMode="False"
+				IsTargetInitialAddMode="False"
+				IsVisibleAppline="True"
+				IsAddedAfterGen="False"
+				FormTransCaption="Resource Information"
+				ClassName="PageNavigation"
+				TargetFramesetPage=""
+				TargetFrame=""
+				FrameNameInFramesetPage=""
+				>
+			</Transition>
+		</RecordSource>
+		<Transition
+			FormTransNum="1"
+			Prefix="T4"
+			TargetFormName="pR_SC_RSRC_ACCS"
+			IsTargetInitialQueryMode="False"
+			IsTargetInitialAddMode="False"
+			IsVisibleAppline="True"
+			IsAddedAfterGen="False"
+			FormTransCaption="Access Control"
+			ClassName="PageNavigation"
+			TargetFramesetPage=""
+			TargetFrame=""
+			FrameNameInFramesetPage=""
+			RSID="3"
+			BusinessObject="R_SC_RSRC_ACCS"
+			Relationship="ResourceGroup2(R_SC_RSRC_GP)-ResourceAccesses(R_SC_RSRC_ACCS)"
+			RelnIsFromParent="True"
+			>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<ParameterizedWhereClause><![CDATA[ [RSRC_GP_ID] = [?RSRC_GP_ID]]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		</Transition>
+		<Transition
+			FormTransNum="1"
+			Prefix="T5"
+			TargetFormName="pR_SC_FGN_ORG"
+			IsTargetInitialQueryMode="False"
+			IsTargetInitialAddMode="False"
+			IsVisibleAppline="True"
+			IsAddedAfterGen="False"
+			FormTransCaption="Foreign Organizations"
+			ClassName="PageNavigation"
+			TargetFramesetPage=""
+			TargetFrame=""
+			FrameNameInFramesetPage=""
+			RSID="4"
+			BusinessObject="R_SC_FGN_ORG"
+			RelnIsFromParent="True"
+			>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ RSRC_GP_ID = [?RSRC_GP_ID] ]]></AdditionalWhereClause>
+		</Transition>
+	</RecordSource>
+</Form>

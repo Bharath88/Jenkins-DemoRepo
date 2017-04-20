@@ -1,0 +1,1106 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs10"
+		ParentRoleName="R_WF_APRV_COND1"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_1_1"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs11"
+		ParentRoleName="R_WF_APRV_COND2"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_3_1"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs12"
+		ParentRoleName="R_WF_APRV_COND3"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_2_1"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs13"
+		ParentRoleName="R_WF_APRV_COND4"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_4_1"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs14"
+		ParentRoleName="R_WF_APRV_COND5"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_5_1"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs15"
+		ParentRoleName="R_WF_APRV_COND6"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_1_2"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs16"
+		ParentRoleName="R_WF_APRV_COND7"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_2_2"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs17"
+		ParentRoleName="R_WF_APRV_COND8"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_3_2"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs18"
+		ParentRoleName="R_WF_APRV_COND9"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_4_2"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs19"
+		ParentRoleName="R_WF_APRV_COND10"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_5_2"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs20"
+		ParentRoleName="R_WF_APRV_COND11"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_1_3"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs21"
+		ParentRoleName="R_WF_APRV_COND12"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_2_3"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs22"
+		ParentRoleName="R_WF_APRV_COND13"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_3_3"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs23"
+		ParentRoleName="R_WF_APRV_COND14"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_4_3"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs24"
+		ParentRoleName="R_WF_APRV_COND15"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_5_3"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs25"
+		ParentRoleName="R_WF_APRV_COND16"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_1_4"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs26"
+		ParentRoleName="R_WF_APRV_COND17"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_2_4"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs27"
+		ParentRoleName="R_WF_APRV_COND18"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_3_4"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs28"
+		ParentRoleName="R_WF_APRV_COND19"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_4_4"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs29"
+		ParentRoleName="R_WF_APRV_COND20"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_5_4"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs30"
+		ParentRoleName="R_WF_APRV_COND21"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_1_5"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs31"
+		ParentRoleName="R_WF_APRV_COND22"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_2_5"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs32"
+		ParentRoleName="R_WF_APRV_COND23"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_3_5"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs33"
+		ParentRoleName="R_WF_APRV_COND24"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_4_5"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs34"
+		ParentRoleName="R_WF_APRV_COND25"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_5_5"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs35"
+		ParentRoleName="R_WF_APRV_COND26"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_1_6"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs36"
+		ParentRoleName="R_WF_APRV_COND27"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_2_6"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs37"
+		ParentRoleName="R_WF_APRV_COND28"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_3_6"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs38"
+		ParentRoleName="R_WF_APRV_COND29"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_4_6"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs39"
+		ParentRoleName="R_WF_APRV_COND30"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_5_6"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs40"
+		ParentRoleName="R_WF_APRV_COND31"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_1_7"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs41"
+		ParentRoleName="R_WF_APRV_COND32"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_2_7"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs42"
+		ParentRoleName="R_WF_APRV_COND33"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_3_7"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs43"
+		ParentRoleName="R_WF_APRV_COND34"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_4_7"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs44"
+		ParentRoleName="R_WF_APRV_COND35"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_5_7"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs45"
+		ParentRoleName="R_WF_APRV_COND36"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_1_8"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs46"
+		ParentRoleName="R_WF_APRV_COND37"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_2_8"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs47"
+		ParentRoleName="R_WF_APRV_COND38"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_3_8"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs48"
+		ParentRoleName="R_WF_APRV_COND39"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_4_8"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs49"
+		ParentRoleName="R_WF_APRV_COND40"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_5_8"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs50"
+		ParentRoleName="R_WF_APRV_COND41"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_1_9"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs51"
+		ParentRoleName="R_WF_APRV_COND42"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_2_9"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs52"
+		ParentRoleName="R_WF_APRV_COND43"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_3_9"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs53"
+		ParentRoleName="R_WF_APRV_COND44"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_4_9"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs54"
+		ParentRoleName="R_WF_APRV_COND45"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_5_9"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs55"
+		ParentRoleName="R_WF_APRV_COND46"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_1_10"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs56"
+		ParentRoleName="R_WF_APRV_COND47"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_2_10"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs57"
+		ParentRoleName="R_WF_APRV_COND48"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_3_10"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs58"
+		ParentRoleName="R_WF_APRV_COND49"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_4_10"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs59"
+		ParentRoleName="R_WF_APRV_COND50"
+		>
+		<AscendCaption><![CDATA[R_WF_APRV_COND]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="COND_ID"
+				ChildAttribute="OR_COND_5_10"
+			/>
+		</AttributePairs>
+	</Relationship>
+</Relationships>

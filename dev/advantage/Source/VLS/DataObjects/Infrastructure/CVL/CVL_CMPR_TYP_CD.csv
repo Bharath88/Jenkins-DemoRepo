@@ -1,0 +1,5 @@
+"CMPR_TYP_CD","CMPR_TYP_DESC","AMS_ROW_VERS_NO"
+"E","Equals",1
+"I","Inside Range",1
+"N","Not Equals",1
+"O","Outside Range",1

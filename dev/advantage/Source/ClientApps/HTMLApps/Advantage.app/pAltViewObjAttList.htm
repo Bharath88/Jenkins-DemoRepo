@@ -1,0 +1,399 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Attachments</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="pAltViewObjAttList">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+
+<!-- CUSTOMIZATION BEGIN -->
+<!-- enable dynamic manipulation of page title
+<vstitle vstitle="Attachments">Attachments</vstitle>
+-->
+
+<vstext name="PageTitle" vsds="" vspreservetag="true">
+
+<!-- CUSTOMIZATION END -->
+
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+  <a name="T1OBJ_ATT_ALT_QRY_Top"></a>
+
+<!-- BEGIN CUSTOMIZATION -->
+ <input type="hidden" name="DownloadType" id="DownloadType" value="">
+<!-- END CUSTOMIZATION -->
+
+  <input type="hidden" name="T1OBJ_ATT_ALT_QRY_Currency" value="">
+  <input type="hidden" name="T1OBJ_ATT_ALT_QRY_Old_Currency" value="">
+  <table name="tblT1OBJ_ATT_ALT_QRY" id="tblT1OBJ_ATT_ALT_QRY" class="advgrid" vsds="T1OBJ_ATT_ALT_QRY">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1DOC_CATsortGridLabel" name="T1DOC_CATsortGridLabel" title="Category">Category</span></th>
+
+        <th
+><span id="T1DOC_TYPsortGridLabel" name="T1DOC_TYPsortGridLabel" title="Type">Type</span></th>
+
+        <th
+><span id="T1DOC_CDsortGridLabel" name="T1DOC_CDsortGridLabel" title="Doc Code">Doc Code</span></th>
+
+        <th
+><span id="T1DOC_DEPT_CDsortGridLabel" name="T1DOC_DEPT_CDsortGridLabel" title="Doc Dept">Doc Dept</span></th>
+
+        <th
+><span id="T1DOC_IDsortGridLabel" name="T1DOC_IDsortGridLabel" title="ID">ID</span></th>
+
+        <th
+><span id="T1DOC_VERS_NOsortGridLabel" name="T1DOC_VERS_NOsortGridLabel" title="Version">Version</span></th>
+
+        <th
+><span id="T1OBJ_ATT_NMsortGridLabel" name="T1OBJ_ATT_NMsortGridLabel" title="File Name">File Name</span></th>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+        <th
+><span id="T1OBJ_ATT_TYPsortGridLabel" name="T1OBJ_ATT_TYPsortGridLabel" title="Proprietary Flag">Proprietary Flag</span></th>
+-->
+        <th
+><span id="T1OBJ_ATT_TYPsortGridLabel" name="T1OBJ_ATT_TYPsortGridLabel" title="Attach Type">Attach Type</span></th>
+<!-- END CUSTOMIZATION -->
+
+        <th
+><span id="T1OBJ_ATT_DTsortGridLabel" name="T1OBJ_ATT_DTsortGridLabel" title="Date">Date</span></th>
+
+        <th
+><span id="T1OBJ_ATT_USER_IDsortGridLabel" name="T1OBJ_ATT_USER_IDsortGridLabel" title="User ID">User ID</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1OBJ_ATT_ALT_QRYvscurrency" id="T1OBJ_ATT_ALT_QRYvscurrency" title="Select Row" alt="Select Row" vsds="T1OBJ_ATT_ALT_QRY" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1DOC_CAT" vsds="T1OBJ_ATT_ALT_QRY" vsdf="DOC_CAT"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1DOC_TYP" vsds="T1OBJ_ATT_ALT_QRY" vsdf="DOC_TYP"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1DOC_CD" vsds="T1OBJ_ATT_ALT_QRY" vsdf="DOC_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1DOC_DEPT_CD" vsds="T1OBJ_ATT_ALT_QRY" vsdf="DOC_DEPT_CD"
+>
+        </td>
+
+        <td>
+          <a href="Advantage" vsaction="pagetransition" ams_doc_ref="DOC_ID" vsnavigation="DocCatalog">
+            <vstext name="btnT1DOC_ID" ams_doc_ref="DOC_ID" vsds="T1OBJ_ATT_ALT_QRY" vsdf="DOC_ID">
+          </a>
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1DOC_VERS_NO" vsds="T1OBJ_ATT_ALT_QRY" vsdf="DOC_VERS_NO"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1OBJ_ATT_NM" vsds="T1OBJ_ATT_ALT_QRY" vsdf="OBJ_ATT_NM"
+>
+        </td>
+
+        <td
+>
+          <vstext vsds="T1OBJ_ATT_ALT_QRY" vsdf="OBJ_ATT_TYP" vscodetable="CVL_OBJ_ATT_TYP">
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1OBJ_ATT_DT" vsds="T1OBJ_ATT_ALT_QRY" vsdf="OBJ_ATT_DT"
+      vsformat="Short Date"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1OBJ_ATT_USER_ID" vsds="T1OBJ_ATT_ALT_QRY" vsdf="OBJ_ATT_USER_ID"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Advantage" vsds="T1OBJ_ATT_ALT_QRY" vsaction="firstpage" name="T1OBJ_ATT_ALT_QRYfirstpage" id="T1OBJ_ATT_ALT_QRYfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T1OBJ_ATT_ALT_QRY" vsaction="prevpage" name="T1OBJ_ATT_ALT_QRYprevpage" id="T1OBJ_ATT_ALT_QRYprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T1OBJ_ATT_ALT_QRY" vsaction="nextpage" id="T1OBJ_ATT_ALT_QRYnextpage" name="T1OBJ_ATT_ALT_QRYnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T1OBJ_ATT_ALT_QRY" vsaction="lastpage" id="T1OBJ_ATT_ALT_QRYlastpage" name="T1OBJ_ATT_ALT_QRYlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+
+<hr class="advsectsep"></hr>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<a href="Advantage" vsds="T1OBJ_ATT_ALT_QRY" vsaction="saveall" name="T1OBJ_ATT_ALT_QRYSaveAll" id="T1OBJ_ATT_ALT_QRYSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Advantage" vsds="T1OBJ_ATT_ALT_QRY" vsaction="undoall" name="T1OBJ_ATT_ALT_QRYUndoAll" id="T1OBJ_ATT_ALT_QRYUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="Advantage" vsds="T1OBJ_ATT_ALT_QRY" vsaction="delete" id="IndexT1OBJ_ATT_ALT_QRYdelete" name="T1OBJ_ATT_ALT_QRYdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="Advantage" vsds="T1OBJ_ATT_ALT_QRY" vsaction="insert" id="T1OBJ_ATT_ALT_QRYinsert" name="T1OBJ_ATT_ALT_QRYinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="Advantage" vsds="T1OBJ_ATT_ALT_QRY" vsaction="11" name="T1OBJ_ATT_ALT_QRYCopyRecord" id="T1OBJ_ATT_ALT_QRYCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+
+<a href="Advantage" vsds="T1OBJ_ATT_ALT_QRY" vsaction="12" name="T1OBJ_ATT_ALT_QRYPasteLine" id="T1OBJ_ATT_ALT_QRYPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+-->
+<a href="javascript:{UTILS_DownloadAttachment(document.pAltViewObjAttList)}"
+  name="T1OBJ_ATT_ALT_QRYDownload" id="T1OBJ_ATT_ALT_QRYDownload" title="Download" accesskey="5"
+  onclick="if (!UTILS_CheckForTransaction()){event.returnValue = false};" >Download</a>
+
+<div name="DeleteDiv" vsds="T1OBJ_ATT_ALT_QRY" vsvisible="true">
+  <a href="Advantage" vsds="T1OBJ_ATT_ALT_QRY" vsaction="delete"
+    name="T1OBJ_ATT_ALT_QRYdelete" id="T1OBJ_ATT_ALT_QRYdelete" title="Delete" accesskey="6">Delete</a>
+</div>
+<!-- END CUSTOMIZATION -->
+</ams_map>
+      </td>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<td><vstext vsds=" " name="T1OBJ_ATT_ALT_QRYSearchColList" vspreservetag="true"></td>
+-->
+<!-- END CUSTOMIZATION -->
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label"><label title="Category">Category :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1DOC_CAT" vsds="T1OBJ_ATT_ALT_QRY" vsdf="DOC_CAT"
+            size="8"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label title="Type">Type :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1DOC_TYP" vsds="T1OBJ_ATT_ALT_QRY" vsdf="DOC_TYP"
+            size="8"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label title="Doc Code">Doc Code :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1DOC_CD" vsds="T1OBJ_ATT_ALT_QRY" vsdf="DOC_CD"
+            size="8"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label title="Doc Dept">Doc Dept :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1DOC_DEPT_CD" vsds="T1OBJ_ATT_ALT_QRY" vsdf="DOC_DEPT_CD"
+            size="4"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label title="ID">ID :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1DOC_ID" vsds="T1OBJ_ATT_ALT_QRY" vsdf="DOC_ID"
+         size="15"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label title="Version">Version :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1DOC_VERS_NO" vsds="T1OBJ_ATT_ALT_QRY" vsdf="DOC_VERS_NO"
+            size="10"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label title="File Name">File Name :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1OBJ_ATT_NM" vsds="T1OBJ_ATT_ALT_QRY" vsdf="OBJ_ATT_NM"
+         size="15"
+>
+        </td>
+      </tr>
+
+      <tr>
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+        <td class="label"><label title="Proprietary Flag">Proprietary Flag :</label></td>
+-->
+        <td class="label"><label for="disptxtT1OBJ_ATT_TYP" title="Attachment Type">Attachment Type :</label></td>
+<!-- END CUSTOMIZATION -->
+        <td class="val">
+          <vstext name="disptxtT1OBJ_ATT_TYP" vsds="T1OBJ_ATT_ALT_QRY" vsdf="OBJ_ATT_TYP"
+            size="10"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label title="Date">Date :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1OBJ_ATT_DT" vsds="T1OBJ_ATT_ALT_QRY" vsdf="OBJ_ATT_DT"
+         vsformat="Short Date"
+                                 size="15"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label title="User ID">User ID :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1OBJ_ATT_USER_ID" vsds="T1OBJ_ATT_ALT_QRY" vsdf="OBJ_ATT_USER_ID"
+         size="15"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1OBJ_ATT_DSCR" title="Description">Description :</label></td>
+        <td class="val memo">
+          <textarea ams_readonly cols="35" rows="4" name="txtT1OBJ_ATT_DSCR" id="txtT1OBJ_ATT_DSCR" vsds="T1OBJ_ATT_ALT_QRY" vsdf="OBJ_ATT_DSCR"
+ title="Description"></textarea>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1OBJ_ATT_ALT_QRY', new Array(), new Array() ) ;
+
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<!-- BEGIN CUSTOMIZATION -->
+<a href="Advantage" vsds=" " vsaction="undoall" name="ReturnToAltView" id="ReturnToAltView" title="Return To Alt View" accesskey="R"><vstext name="ReturnLinkTitle" vsds="" vspreservetag="true"></a>
+</ams_map></td></tr>
+<tr><td><ams_map title="Page Navigations2" name="Page Navigations2">
+<a href="Advantage" vsds=" " vsaction="undoall" name="ViewAttHistory" id="ViewAttHistory" title="View Attachment History" accesskey="V">View Attachment History</a>
+<!-- END CUSTOMIZATION -->
+</ams_map></td></tr></table>
+
+<!-- BEGIN CUSTOMIZATION -->
+<a href="Advantage" vsds="T1OBJ_ATT_ALT_QRY" vsaction="undoall" name="DownloadAttachment" id="DownloadAttachment" title="Download Attachment"></a>
+<!-- END CUSTOMIZATION -->
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

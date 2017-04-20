@@ -1,0 +1,65 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<title>Login</title>
+<base href="#default">
+<script language="javascript">
+<!--
+function PutAtTop() {
+	if ( self != top ) {
+		top.location.href = self.location.href;
+		alert("Your browser has been idle for more than the maximum time, please log on again.");
+	}
+}
+//-->
+</script>
+</head>
+
+<body BGCOLOR="#FFFFFF" LEFTMARGIN="0" TOPMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0"
+link="#800080" alink="#800080" vlink="#800080" target="_top" OnLoad="PutAtTop();">
+
+<form METHOD="POST" action="vs" vsloginform>
+  <input type="hidden" name="vsparams" value><p><br>
+  <br>
+  </p>
+  <div align="center"><table width="700" background="images/startbckgrnd.gif" width="700">
+    <tr width="100%">
+      <td align="left" width="110"><img SRC="images/logo.gif" WIDTH="82" HEIGHT="61" BORDER="0"></td>
+      <td align="center" width="513"><h1>Application Name</h1>
+      </td>
+    </tr>
+  </table>
+  <table bgcolor="lightskyblue" width="700">
+    <tr width="100%">
+      <td><table align="left">
+        <tr align="center">
+          <td align="right">Login:</td>
+          <td><input TYPE="text" VALUE="sa" SIZE="20" NAME="login" vlsuserid></td>
+        </tr>
+        <tr>
+          <td align="right">Password:</td>
+          <td><input TYPE="password" SIZE="20" NAME="password"></td>
+        </tr>
+        <tr>
+          <td align="right">Server Name:</td>
+          <td><input TYPE="text" VALUE="VLS_?" SIZE="20" NAME="serverName" vlsname> </td>
+        </tr>
+        <tr>
+          <td align="center" colspan="2"><input TYPE="submit" VALUE="Login" NAME="vslogin"> <input
+          TYPE="reset" VALUE="Reset"> </td>
+        </tr>
+      </table>
+      </td>
+      <td bgcolor="#FFFFFF"><table width="290">
+        <tr align="center">
+          <td align="center">(You could enter a description of the Application here.)</td>
+        </tr>
+      </table>
+      </td>
+    </tr>
+  </table>
+  </div>
+</form>
+</body>
+</html>

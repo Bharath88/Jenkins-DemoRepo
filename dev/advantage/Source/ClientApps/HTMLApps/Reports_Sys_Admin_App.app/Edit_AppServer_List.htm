@@ -1,0 +1,335 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Application Servers</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Reports_Sys_Admin_App" method="post" vsform="true" name="Edit_AppServer_List">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Application Servers">Application Servers</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+  <a name="T1IN_APPSRV_LST_Top"></a>
+
+
+
+  <input type="hidden" name="T1IN_APPSRV_LST_Currency" value="">
+  <input type="hidden" name="T1IN_APPSRV_LST_Old_Currency" value="">
+  <table name="tblT1IN_APPSRV_LST" id="tblT1IN_APPSRV_LST" class="advgrid" vsds="T1IN_APPSRV_LST">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1SEQ_NOsortGridLabel" name="T1SEQ_NOsortGridLabel" title="Id">Id</span></th>
+
+        <th
+><span id="T1APPSRV_NMsortGridLabel" name="T1APPSRV_NMsortGridLabel" title="App Server Host Name">App Server Host Name</span></th>
+
+        <th
+><span id="T1VLS_NMsortGridLabel" name="T1VLS_NMsortGridLabel" title="Application Server">Application Server</span></th>
+
+        <th
+><span id="T1JOB_MGRsortGridLabel" name="T1JOB_MGRsortGridLabel" title="Job Manager Name">Job Manager Name</span></th>
+
+        <th
+><span id="T1ACTIVE_JOB_Q_LSTsortGridLabel" name="T1ACTIVE_JOB_Q_LSTsortGridLabel" title="Active Job Queue List">Active Job Queue List</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IN_APPSRV_LSTvscurrency" id="T1IN_APPSRV_LSTvscurrency" title="Select Row" alt="Select Row" vsds="T1IN_APPSRV_LST" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1SEQ_NO" vsds="T1IN_APPSRV_LST" vsdf="SEQ_NO"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1APPSRV_NM" vsds="T1IN_APPSRV_LST" vsdf="APPSRV_NM"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1VLS_NM" vsds="T1IN_APPSRV_LST" vsdf="VLS_NM"
+>
+        </td>
+
+        <td class="memo">
+          <textarea ams_readonly cols="20" rows="2" name="txtT1JOB_MGR" vsds="T1IN_APPSRV_LST" vsdf="JOB_MGR"
+ title="Job Manager Name"></textarea>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1ACTIVE_JOB_Q_LST" vsds="T1IN_APPSRV_LST" vsdf="ACTIVE_JOB_Q_LST"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Reports_Sys_Admin_App" vsds="T1IN_APPSRV_LST" vsaction="firstpage" name="T1IN_APPSRV_LSTfirstpage" id="T1IN_APPSRV_LSTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1IN_APPSRV_LST" vsaction="prevpage" name="T1IN_APPSRV_LSTprevpage" id="T1IN_APPSRV_LSTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1IN_APPSRV_LST" vsaction="nextpage" id="T1IN_APPSRV_LSTnextpage" name="T1IN_APPSRV_LSTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1IN_APPSRV_LST" vsaction="lastpage" id="T1IN_APPSRV_LSTlastpage" name="T1IN_APPSRV_LSTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+    </tr>
+  </table>
+
+
+<hr class="advsectsep"></hr>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Reports_Sys_Admin_App" vsds="T1IN_APPSRV_LST" vsaction="saveall" name="T1IN_APPSRV_LSTSaveAll" id="T1IN_APPSRV_LSTSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Reports_Sys_Admin_App" vsds="T1IN_APPSRV_LST" vsaction="undoall" name="T1IN_APPSRV_LSTUndoAll" id="T1IN_APPSRV_LSTUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="Reports_Sys_Admin_App" vsds="T1IN_APPSRV_LST" vsaction="delete" id="IndexT1IN_APPSRV_LSTdelete" name="T1IN_APPSRV_LSTdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="Reports_Sys_Admin_App" vsds="T1IN_APPSRV_LST" vsaction="insert" id="T1IN_APPSRV_LSTinsert" name="T1IN_APPSRV_LSTinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="Reports_Sys_Admin_App" vsds="T1IN_APPSRV_LST" vsaction="11" name="T1IN_APPSRV_LSTCopyRecord" id="T1IN_APPSRV_LSTCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1IN_APPSRV_LST" vsaction="12" name="T1IN_APPSRV_LSTPasteLine" id="T1IN_APPSRV_LSTPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1SEQ_NO" title="Id">Id :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1SEQ_NO" id="txtT1SEQ_NO"
+                  size="15"
+ vsds="T1IN_APPSRV_LST" vsdf="SEQ_NO"
+                  ams_max_len="20"
+ ShowCodeInfo="" value="SEQ_NO" title="Id">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1VLS_NM" title="Application Server">Application Server :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1VLS_NM" id="txtT1VLS_NM"
+               size="20"
+ vsds="T1IN_APPSRV_LST" vsdf="VLS_NM"
+         ams_max_len="50"
+ ShowCodeInfo="" value="VLS_NM" title="Application Server">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1JOBMGR_PORT" title="EJB Container Port No.">EJB Container Port No. :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1JOBMGR_PORT" id="txtT1JOBMGR_PORT"
+               size="10"
+ vsds="T1IN_APPSRV_LST" vsdf="JOBMGR_PORT"
+               ams_max_len="10"
+ ShowCodeInfo="" value="JOBMGR_PORT" title="EJB Container Port No.">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1JOBMGR_POLLNG_ON" title="Start Job Polling on Connect ?">Start Job Polling on Connect ? :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1JOBMGR_POLLNG_ON" id="txtT1JOBMGR_POLLNG_ON" value="JOBMGR_POLLNG_ON" vsds="T1IN_APPSRV_LST" vsdf="JOBMGR_POLLNG_ON" title="Start Job Polling on Connect ?">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1JOBMGR_ACTV_RT" title="Job Activate Frequency (seconds)">Job Activate Frequency (seconds) :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1JOBMGR_ACTV_RT" id="txtT1JOBMGR_ACTV_RT"
+               size="10"
+ vsds="T1IN_APPSRV_LST" vsdf="JOBMGR_ACTV_RT"
+               ams_max_len="10"
+ ShowCodeInfo="" value="JOBMGR_ACTV_RT" title="Job Activate Frequency (seconds)">
+        </td>
+      </tr>
+
+      <tr>
+        <!-- BEGIN CUSTOMIZATION -->
+        <td class="label"><label for="txtT1JOBMGR_PCK_TGT_JOB" title="Process only Jobs Assigned to current VLS ?">Process only Jobs Assigned to <BR> current VLS ? :</label></td>
+        <!-- END CUSTOMIZATION -->
+        <td class="val">
+          <input type="checkbox" name="txtT1JOBMGR_PCK_TGT_JOB" id="txtT1JOBMGR_PCK_TGT_JOB" value="JOBMGR_PCK_TGT_JOB" vsds="T1IN_APPSRV_LST" vsdf="JOBMGR_PCK_TGT_JOB" title="Process only Jobs Assigned to current VLS ?">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1APPL_ID" title="Application">Application :</label></td>
+        <td class="val">
+          <select name="txtT1APPL_ID" id="txtT1APPL_ID" vsds="T1IN_APPSRV_LST" vsdf="APPL_ID" size="1" vscodetable="R_SC_APPL" ShowCodeInfo="" title="Application">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1APPSRV_NM" title="App Server Host Name">App Server Host Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1APPSRV_NM" id="txtT1APPSRV_NM"
+               size="20"
+ vsds="T1IN_APPSRV_LST" vsdf="APPSRV_NM"
+         ams_max_len="50"
+ ShowCodeInfo="" value="APPSRV_NM" title="App Server Host Name">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1JOB_MGR" title="Job Manager Name">Job Manager Name :</label></td>
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1JOB_MGR" id="txtT1JOB_MGR" vsds="T1IN_APPSRV_LST" vsdf="JOB_MGR"
+ title="Job Manager Name"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1ADMN_HOME_NM" title="Admin Home Name">Admin Home Name :</label></td>
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1ADMN_HOME_NM" id="txtT1ADMN_HOME_NM" vsds="T1IN_APPSRV_LST" vsdf="ADMN_HOME_NM"
+ title="Admin Home Name"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1DED_OFLN_FL" title="Offline Dedicated">Offline Dedicated :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1DED_OFLN_FL" id="txtT1DED_OFLN_FL" value="DED_OFLN_FL" vsds="T1IN_APPSRV_LST" vsdf="DED_OFLN_FL" title="Offline Dedicated">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1JOBMGR_POLLNG_RT" title="Job Polling Frequency (seconds)">Job Polling Frequency (seconds) :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1JOBMGR_POLLNG_RT" id="txtT1JOBMGR_POLLNG_RT"
+               size="10"
+ vsds="T1IN_APPSRV_LST" vsdf="JOBMGR_POLLNG_RT"
+               ams_max_len="10"
+ ShowCodeInfo="" value="JOBMGR_POLLNG_RT" title="Job Polling Frequency (seconds)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1JOBMGR_MAX_THRDCNT" title="Max. No. Of Concurrent Jobs">Max. No. Of Concurrent Jobs :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1JOBMGR_MAX_THRDCNT" id="txtT1JOBMGR_MAX_THRDCNT"
+               size="10"
+ vsds="T1IN_APPSRV_LST" vsdf="JOBMGR_MAX_THRDCNT"
+               ams_max_len="10"
+ ShowCodeInfo="" value="JOBMGR_MAX_THRDCNT" title="Max. No. Of Concurrent Jobs">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1ACTIVE_JOB_Q_LST" title="Active Job Queue List">Active Job Queue List :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1ACTIVE_JOB_Q_LST" id="txtT1ACTIVE_JOB_Q_LST"
+               size="20"
+ vsds="T1IN_APPSRV_LST" vsdf="ACTIVE_JOB_Q_LST"
+         ams_max_len="254"
+ ShowCodeInfo="" value="ACTIVE_JOB_Q_LST" title="Active Job Queue List">
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1IN_APPSRV_LST', new Array(), new Array() ) ;
+
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Reports_Sys_Admin_App" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

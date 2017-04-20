@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Vendor Self Service Site Map</title>
+  <base href>
+
+         <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSStyle.css">
+         <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSAppStyle.css">
+         <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSMenuStyle.css">
+         <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/ALTSS/ALTSSUtil.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+
+         <script type="text/javascript" language="JavaScript">
+         <!--
+
+            function SITEMAP_WriteSiteMap()
+            {
+               var lboolMakeMoreSec    = true;
+               var liCurrLevel         = 1;
+               var liPreviousLevel     = 1;
+
+               document.write( "<td class='advlistdata'><ul class='advlist level1'>" );
+               for( var liCntr = 0; liCntr < msaNodeArray.length; liCntr ++ )
+               {
+                  liCurrLevel = msaNodeArray[ liCntr ][ 0 ];
+
+                  // While coming back to higher level from lower, close the UL.
+                  // This could be from any lower level to any higher level, so
+                  // Need to close all higer level UL, i.e. while coming back
+                  // from 4th level to 1st, we need to close all 3 ULs
+                  if( liCurrLevel < liPreviousLevel )
+                  {
+                     for( var liULCloseCntr = liPreviousLevel;
+                        liULCloseCntr > liCurrLevel; liULCloseCntr -- )
+                     {
+                        document.write( "</ul>" );
+                     }
+                  }
+
+                  // Layout items in two vertical sections,
+                  // 2nd Section should start from Top level item
+                  // and roughly after half of the total items.
+                  if( lboolMakeMoreSec && liCurrLevel == 1
+                     && liCntr > msaNodeArray.length/2 )
+                  {
+                     document.write( "</td><td class='advlistdata'>" );
+                     document.write( "<ul class='advlist level1'>" );
+                     lboolMakeMoreSec = false;
+                  }
+
+                  // For every new lower level, start new UL
+                  if( liCurrLevel > liPreviousLevel )
+                  {
+                     document.write( "<ul class='advlist level"
+                        + liCurrLevel + "'>"  );
+                  }
+
+                  // If page code found, create link else simple list item.
+                  if( msaNodeArray[ liCntr ][ 1 ] == "" )
+                  {
+                     document.write( "<li>"
+                        + msaNodeArray[ liCntr ][ 2 ] + "</li>" );
+                  }
+                  else
+                  {
+                     var lsListItem = "<li><a href='";
+                     lsListItem += SITEMAP_GetHREFString(
+                        msaNodeArray[ liCntr ] );
+                     lsListItem += msaNodeArray[ liCntr ][ 2 ];
+                     lsListItem += "</a></li>";//alert( lsListItem );
+                     document.write( lsListItem );
+                  }
+
+                  liPreviousLevel = liCurrLevel;
+               }
+               document.write( "</ul></td>" );
+
+            }
+
+            function SITEMAP_GetHREFString( fsaNodeAttribs )
+            {
+               var lsHREFStr = "javascript:submitForm(top.frames.Startup.document.forms[0],";
+               lsHREFStr += "\"menu_action=menu_action";
+               lsHREFStr += "&ams_action=SiteMapNav";
+               lsHREFStr += "&node_tree=" + fsaNodeAttribs[3];
+               lsHREFStr += "&ams_sub_action=" + fsaNodeAttribs[1];
+               lsHREFStr += "\",\"Startup\");' >";
+
+               return lsHREFStr;
+            }
+         -->
+         </script>
+  <vstext vsds=" " name="SiteMapJSArray" vspreservetag="true">
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv">
+  <vserror>
+  <form action="AltSelfService" method="post" vsform="true" name="AltSSSiteMap">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Vendor Self Service Site Map">Vendor Self Service Site Map</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+  </div>
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+<!-- BEGIN CUSTOMIZATION -->
+      <table>
+         <tr>
+            <script type="text/javascript" language="JavaScript">
+            <!--
+               SITEMAP_WriteSiteMap() ;
+            -->
+            </script>
+         </tr>
+      </table>
+
+      <table class="advaction">
+         <tr>
+            <td class="advright">
+            <input class="advbutton" type="button" vsds="" name="btnCancel" id="btnCancel" title="Cancel" value="Cancel"
+            onClick="JavaScript:submitForm( top.frames.Startup.document.StartupPage,'menu_action=menu_action&ams_action=ShowTab&ams_sub_action=CloseSiteMap','Startup' );">
+            </td>
+         </tr>
+      </table>
+
+<!-- END CUSTOMIZATION -->
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="AltSelfService" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+   </div>
+  </form>
+
+</body>
+</html>
+
+
+

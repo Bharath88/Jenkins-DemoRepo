@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<!DOCTYPE DataObject SYSTEM "DataObject.dtd">
+<DataObject
+	SurrId="0374427368.mmohan.0000"
+	CodedValuesList="False"
+	IsRemoteAccessible="False"
+	UseQuotedIdentifiers="False"
+	SuperClass="AMSDataObject"
+	LockMode="NoOptimisticLocking"
+	ImageReference=" "
+	XdaConnector="SQL"
+	DTDVersion="05.06.00"
+	>
+	<CodedValuesList
+		DisplayAttribute=" "
+		StoredAttribute=" "
+	/>
+	<VLSDeployment
+		DeploySecurityInfo="False"
+	/>
+	<SingularCaption><![CDATA[*]]> </SingularCaption>
+	<PluralCaption><![CDATA[*]]> </PluralCaption>
+	<Description><![CDATA[ ]]> </Description>
+	<Comments><![CDATA[ ]]> </Comments>
+	<Attributes>
+		<Attribute
+			Name="DOC_S_ACTN_CD"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Integer"
+			/>
+			<Validation
+				ValidationType="Condition"
+				>
+				<Condition><![CDATA[DOC_S_ACTN_CD >= 300 AND DOC_S_ACTN_CD < 1068]]> </Condition>
+				<ErrorMessage><![CDATA[Sub Action Code is not in the allowable range (300 - 1067).]]> </ErrorMessage>
+			</Validation>
+			<Caption><![CDATA[Sub Action Code]]> </Caption>
+			<Derivation
+				DerivationType="None"
+			/>
+		</Attribute>
+		<Attribute
+			Name="DOC_S_ACTN_DESC"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="90"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Description]]> </Caption>
+			<ExtendedProperties>
+				<Property
+					Name="AllowMixedCase"
+					Value="Y"
+				/>
+			</ExtendedProperties>
+		</Attribute>
+		<Attribute
+			Name="AMS_ROW_VERS_NO"
+			Persistent="True"
+			PreventUserUpdates="True"
+			ValueRequired="False"
+			LayoutByDefault="True"
+			>
+			<DataType
+				DataType="Long"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+		</Attribute>
+		<Attribute
+			Name="TBL_LAST_DT"
+			Persistent="True"
+			PreventUserUpdates="True"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="DateTime"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Last Modified Date]]></Caption>
+		</Attribute>
+		<Attribute
+			Name="DOC_S_ACTN_EXPL"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Memo"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Extended Description]]></Caption>
+			<ExtendedProperties>
+				<Property
+					Name="AllowMixedCase"
+					Value="Y"
+				/>
+			</ExtendedProperties>
+		</Attribute>
+		<Attribute
+			Name="DOC_S_ACTN_DESC_UP"
+			PreventUserUpdates="True"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			Persistent="True"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="90"
+			/>
+			<Derivation
+				DerivationType="Formula"
+				>
+				<Formula><![CDATA[AMSDataObject.toUpperCaseString( DOC_S_ACTN_DESC )]]></Formula>
+			</Derivation>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Description><![CDATA[Upper case value of the attribute DOC_S_ACTN_DESC]]></Description>
+			<Caption><![CDATA[Description]]></Caption>
+		</Attribute>
+	</Attributes>
+	<Indexes>
+		<Index
+			Name="PK_RSCDOCCUSTACTN"
+			Primary="True"
+			Unique="True"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="DOC_S_ACTN_CD"
+				Descending="False"
+			/>
+		</Index>
+		<Index
+			Name="N1_RSCDOCCUSTACTN"
+			Primary="False"
+			Unique="False"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="TBL_LAST_DT"
+				Descending="False"
+			/>
+		</Index>
+		<Index
+			Name="N2_RSCDOCCUSTACTN"
+			Primary="False"
+			Unique="False"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="DOC_S_ACTN_DESC_UP"
+				Descending="False"
+			/>
+		</Index>
+	</Indexes>
+	<ExtendedProperties>
+		<Property
+			Name="FuncAreaName"
+			Value="FUNC_AREA_SECURITY"
+		/>
+	</ExtendedProperties>
+</DataObject>

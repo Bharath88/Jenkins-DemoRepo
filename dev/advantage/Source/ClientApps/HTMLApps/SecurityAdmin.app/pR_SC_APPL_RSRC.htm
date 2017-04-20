@@ -1,0 +1,386 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Application Resources</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="SecurityAdmin" method="post" vsform="true" name="pR_SC_APPL_RSRC">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Application Resources">Application Resources</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="SecurityAdmin" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+ 
+  <a name="T1R_SC_APPL_RSRC_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1R_SC_APPL_RSRC_Currency" value="">
+  <input type="hidden" name="T1R_SC_APPL_RSRC_Old_Currency" value="">
+  <table name="tblT1R_SC_APPL_RSRC" id="tblT1R_SC_APPL_RSRC" class="advgrid" vsds="T1R_SC_APPL_RSRC">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="SecurityAdmin" vsaction="sort" vsds="T1R_SC_APPL_RSRC" 
+    vsdf="RSRC_ID_UP"
+ name="T1RSRC_IDsort" id="T1RSRC_IDsort" title="Sort By Resource ID">Resource ID</a></th>
+      
+        <th 
+><span id="T1RSRC_TYP_INDsortGridLabel" name="T1RSRC_TYP_INDsortGridLabel" title="Resource Type">Resource Type</span></th>
+      
+        <th 
+><span id="T1RSRC_GP_IDsortGridLabel" name="T1RSRC_GP_IDsortGridLabel" title="Resource Group ID">Resource Group ID</span></th>
+      
+        <th 
+><span id="T1LOG_FLsortGridLabel" name="T1LOG_FLsortGridLabel" title="Logging">Logging</span></th>
+      
+        <th 
+><span id="T1ORG_LVL_CDsortGridLabel" name="T1ORG_LVL_CDsortGridLabel" title="Organization Security Type">Organization Security Type</span></th>
+      
+        <th 
+><span id="T1ROW_SEC_FLsortGridLabel" name="T1ROW_SEC_FLsortGridLabel" title="Row Filtering">Row Filtering</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_SC_APPL_RSRCvscurrency" id="T1R_SC_APPL_RSRCvscurrency" title="Select Row" alt="Select Row" vsds="T1R_SC_APPL_RSRC" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1RSRC_ID" vsds="T1R_SC_APPL_RSRC" vsdf="RSRC_ID" 
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1R_SC_APPL_RSRC" vsdf="RSRC_TYP_IND" vscodetable="CVL_RSRC_TYP_IND">
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1RSRC_GP_ID" vsds="T1R_SC_APPL_RSRC" vsdf="RSRC_GP_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1LOG_FL" vsds="T1R_SC_APPL_RSRC" vsdf="LOG_FL" 
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1R_SC_APPL_RSRC" vsdf="ORG_LVL_CD" vscodetable="CVL_ORG_LVL_CD">
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1ROW_SEC_FL" vsds="T1R_SC_APPL_RSRC" vsdf="ROW_SEC_FL" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="SecurityAdmin" vsds="T1R_SC_APPL_RSRC" vsaction="firstpage" name="T1R_SC_APPL_RSRCfirstpage" id="T1R_SC_APPL_RSRCfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+<a href="SecurityAdmin" vsds="T1R_SC_APPL_RSRC" vsaction="prevpage" name="T1R_SC_APPL_RSRCprevpage" id="T1R_SC_APPL_RSRCprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+<a href="SecurityAdmin" vsds="T1R_SC_APPL_RSRC" vsaction="nextpage" id="T1R_SC_APPL_RSRCnextpage" name="T1R_SC_APPL_RSRCnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+<a href="SecurityAdmin" vsds="T1R_SC_APPL_RSRC" vsaction="lastpage" id="T1R_SC_APPL_RSRClastpage" name="T1R_SC_APPL_RSRClastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+  
+  
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+<a href="SecurityAdmin" vsds="T1R_SC_APPL_RSRC" vsaction="saveall" name="T1R_SC_APPL_RSRCSaveAll" id="T1R_SC_APPL_RSRCSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="SecurityAdmin" vsds="T1R_SC_APPL_RSRC" vsaction="undoall" name="T1R_SC_APPL_RSRCUndoAll" id="T1R_SC_APPL_RSRCUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="SecurityAdmin" vsds="T1R_SC_APPL_RSRC" vsaction="delete" id="IndexT1R_SC_APPL_RSRCdelete" name="T1R_SC_APPL_RSRCdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="SecurityAdmin" vsds="T1R_SC_APPL_RSRC" vsaction="insert" id="T1R_SC_APPL_RSRCinsert" name="T1R_SC_APPL_RSRCinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="SecurityAdmin" vsds="T1R_SC_APPL_RSRC" vsaction="11" name="T1R_SC_APPL_RSRCCopyRecord" id="T1R_SC_APPL_RSRCCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+<a href="SecurityAdmin" vsds="T1R_SC_APPL_RSRC" vsaction="12" name="T1R_SC_APPL_RSRCPasteLine" id="T1R_SC_APPL_RSRCPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+      
+<td><vstext vsds=" " name="T1R_SC_APPL_RSRCSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1RSRC_ID" title="Resource ID (Required)">Resource ID :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1RSRC_ID" id="txtT1RSRC_ID" 
+               size="20"
+ vsds="T1R_SC_APPL_RSRC" vsdf="RSRC_ID" 
+         ams_max_len="129"
+ ShowCodeInfo="" value="RSRC_ID"title="Resource ID (Required)">
+        </td>
+      </tr>
+    
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT1RSRC_ID_UP" id="txtT1RSRC_ID_UP" 
+               size="20"
+           vsds="T1R_SC_APPL_RSRC" vsdf="RSRC_ID_UP"
+         ams_max_len="129"
+           ShowCodeInfo=""
+           value="RSRC_ID_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1RSRC_SHORT_DESC" title="Short Description (Required)">Short Description :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1RSRC_SHORT_DESC" id="txtT1RSRC_SHORT_DESC" 
+               size="20"
+ vsds="T1R_SC_APPL_RSRC" vsdf="RSRC_SHORT_DESC" 
+         ams_max_len="30"
+ ShowCodeInfo="" value="RSRC_SHORT_DESC"title="Short Description (Required)">
+        </td>
+      </tr>
+    
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT1RSRC_SHORT_DESC_UP" id="txtT1RSRC_SHORT_DESC_UP" 
+               size="20"
+           vsds="T1R_SC_APPL_RSRC" vsdf="RSRC_SHORT_DESC_UP"
+         ams_max_len="30"
+           ShowCodeInfo=""
+           value="RSRC_SHORT_DESC_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label for="txtT1RSRC_DESC" title="Description">Description :</label></td>
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1RSRC_DESC" id="txtT1RSRC_DESC" vsds="T1R_SC_APPL_RSRC" vsdf="RSRC_DESC" 
+ title="Description"></textarea>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1RSRC_TYP_IND" title="Resource Type (Required)">Resource Type :</label></td>
+        <td class="val required">
+          <select name="txtT1RSRC_TYP_IND" id="txtT1RSRC_TYP_IND" vsds="T1R_SC_APPL_RSRC" vsdf="RSRC_TYP_IND" size="1" vscodetable="CVL_RSRC_TYP_IND" ShowCodeInfo="" ams_show_es="NO" title="Resource Type (Required)">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1RSRC_GP_ID" title="Resource Group ID (Required)">Resource Group ID :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1RSRC_GP_ID" id="txtT1RSRC_GP_ID" 
+      ams_max_len="8"
+ value="RSRC_GP_ID" 
+            size="15"
+ vsds="T1R_SC_APPL_RSRC" vsdf="RSRC_GP_ID" ShowCodeInfo="" title="Resource Group ID (Required)">
+          <input type="image" vspick="T2R_SC_RSRC_GP" vspicktext="txtT1RSRC_GP_ID" vsds="T1R_SC_APPL_RSRC" vsaction="pick" name="pckT1RSRC_GP_ID" id="pckT1RSRC_GP_ID" title="Select Resource Group ID" alt="Select Resource Group ID" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtT1RSRC_GP_DESC" vsds="T1R_SC_APPL_RSRC" vsdf="RSRC_GP_DESC" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1ORG_LVL_CD" title="Organization Security Type (Required)">Organization Security Type :</label></td>
+        <td class="val required">
+          <select name="txtT1ORG_LVL_CD" id="txtT1ORG_LVL_CD" vsds="T1R_SC_APPL_RSRC" vsdf="ORG_LVL_CD" size="1" vscodetable="CVL_ORG_LVL_CD" ShowCodeInfo="" ams_show_es="NO" title="Organization Security Type (Required)">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1LOG_FL" title="Logging">Logging :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1LOG_FL" id="txtT1LOG_FL" value="LOG_FL" vsds="T1R_SC_APPL_RSRC" vsdf="LOG_FL" title="Logging">
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label for="txtT1PG_SEC_FL" title="Page Security">Page Security :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1PG_SEC_FL" id="txtT1PG_SEC_FL" value="PG_SEC_FL" vsds="T1R_SC_APPL_RSRC" vsdf="PG_SEC_FL" title="Page Security">
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label for="txtT1ROW_SEC_FL" title="Row Filtering">Row Filtering :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1ROW_SEC_FL" id="txtT1ROW_SEC_FL" value="ROW_SEC_FL" vsds="T1R_SC_APPL_RSRC" vsdf="ROW_SEC_FL" title="Row Filtering">
+        </td>
+      </tr>
+    
+          
+      <tr>
+        <td class="label"><label for="txtT1FLD_CNT" title="Row Secured Fields">Row Secured Fields :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1FLD_CNT" id="txtT1FLD_CNT" 
+            size="10"
+ vsds="T1R_SC_APPL_RSRC" vsdf="FLD_CNT" 
+ value="FLD_CNT" ams_readonly ShowCodeInfo="" title="Row Secured Fields">
+        </td>
+      </tr>
+    
+        
+      <tr>
+        <td class="label"><label for="txtT1UI_FLD_SEC_FL" title="UI Field Security">UI Field Security :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1UI_FLD_SEC_FL" id="txtT1UI_FLD_SEC_FL" value="UI_FLD_SEC_FL" vsds="T1R_SC_APPL_RSRC" vsdf="UI_FLD_SEC_FL" title="UI Field Security">
+        </td>
+      </tr>
+    
+          
+      <tr>
+        <td class="label"><label for="txtT1UI_SEC_FLD_CNT" title="UI Secured Fields">UI Secured Fields :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1UI_SEC_FLD_CNT" id="txtT1UI_SEC_FLD_CNT" 
+            size="10"
+ vsds="T1R_SC_APPL_RSRC" vsdf="UI_SEC_FLD_CNT" 
+ value="UI_SEC_FLD_CNT" ams_readonly ShowCodeInfo="" title="UI Secured Fields">
+        </td>
+      </tr>
+    
+        
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+<a name="btnT5pR_SC_APPL_RSRC_FLDs" href="SecurityAdmin" id="btnT5pR_SC_APPL_RSRC_FLDs" title="Navigation to Row Secured Fields" vsaction="pagetransition" 
+           vsds="T1R_SC_APPL_RSRC"
+ vsnavigation="T5pR_SC_APPL_RSRC_FLDs">Row Secured Fields</a>
+<a name="btnT6pR_SC_UI_FLD_SEC" href="SecurityAdmin" id="btnT6pR_SC_UI_FLD_SEC" title="Navigation to UI Secured Fields" vsaction="pagetransition" 
+           vsds="T1R_SC_APPL_RSRC"
+ vsnavigation="T6pR_SC_UI_FLD_SEC">UI Secured Fields</a>
+<a name="btnT3pSC_ACTN_LOG_Grid" href="SecurityAdmin" id="btnT3pSC_ACTN_LOG_Grid" title="Navigation to Action Log" vsaction="pagetransition" 
+           vsds="T1R_SC_APPL_RSRC"
+ vsnavigation="T3pSC_ACTN_LOG_Grid">Action Log</a>
+<a name="btnT4pR_SC_RSRC_GP" href="SecurityAdmin" id="btnT4pR_SC_RSRC_GP" title="Navigation to Resource Group" vsaction="pagetransition" 
+           vsds="T1R_SC_APPL_RSRC"
+ vsnavigation="T4pR_SC_RSRC_GP">Resource Group</a>
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_SC_APPL_RSRC', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'RSRC_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Resource ID' ;
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

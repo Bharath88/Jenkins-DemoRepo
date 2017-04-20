@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="R_SC_REALM"
+		ChildRoleName="R_ASEM_CNFG"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="REALM_ID"
+				ChildAttribute="REALM_ID"
+			/>
+			<AttributePair
+				ParentAttribute="ACTN_ID"
+				ChildAttribute="ACTN_ID"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_REALM]]></AscendCaption>
+		<DescendCaption><![CDATA[R_ASEM_CNFG(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:R_SC_REALM,v:Assembly Request Configuration%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Assembly Request Configuration%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:application resource and R_SC_REALM specified,v:R_SC_REALM table%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

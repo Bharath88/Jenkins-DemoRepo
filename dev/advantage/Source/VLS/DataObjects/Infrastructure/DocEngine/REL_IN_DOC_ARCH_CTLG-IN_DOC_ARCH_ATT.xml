@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="DeleteChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="IN_DOC_ARCH_ATTs"
+		ParentRoleName="IN_DOC_ARCH_CTLG"
+		>
+		<AscendCaption><![CDATA[IN_DOC_ARCH_CTLG]]> </AscendCaption>
+		<DescendCaption><![CDATA[IN_DOC_ARCH_ATT(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="DOC_ARCH_ID"
+				ChildAttribute="DOC_ARCH_ID"
+			/>
+		</AttributePairs>
+	</Relationship>
+</Relationships>

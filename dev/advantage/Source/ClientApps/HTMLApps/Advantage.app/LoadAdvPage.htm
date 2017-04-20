@@ -1,0 +1,51 @@
+<html>
+
+<head>
+  <title>CGI Advantage</title>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript">
+  <!--
+
+  function openDisplayPage()
+  {
+     UTILS_closeInfoWindow();
+     var lsURL = window.location.href;
+     var lsParams = lsURL.substring(lsURL.indexOf("?"), lsURL.length);
+
+     //Remove ?
+     lsParams = lsParams.substring(1, lsParams.length);
+
+     var laParams = lsParams.split('&');
+     for(var i=0;i<laParams.length;i++)
+     {
+        var lsParameter = laParams[i];
+        var lsName = lsParameter.substring(0, lsParameter.indexOf("="));
+        var lsValue = "";
+        if((lsParameter.indexOf("=") + 1) < lsParameter.length)
+        {
+           lsValue = lsParameter.substring(lsParameter.indexOf("=") + 1, lsParameter.length);
+        }
+        var loInput = document.createElement("input");
+        loInput.setAttribute("type", "text");
+        loInput.setAttribute("id", lsName);
+        loInput.setAttribute("name", lsName);
+        loInput.setAttribute("value", lsValue);
+        document.forms[0].appendChild(loInput);
+     }
+
+     lsURL = lsURL.substring(0,lsURL.indexOf("?"));
+     lsURL += "../../../../Advantage";
+     document.forms[0].action = lsURL + "?" + lsParams;
+     document.forms[0].target = "Display";
+     document.forms[0].submit();
+  }
+   -->
+  </script>
+  <base>
+</head>
+
+<body class="adv" onload="openDisplayPage()" style="display:none;visibility:hidden;">
+<form id="AdvPage" name="AdvPage" method="get"></form>
+</body>
+</html>

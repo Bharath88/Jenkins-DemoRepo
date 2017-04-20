@@ -1,0 +1,371 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Print Job Setup</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="PrintJob">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Print Job Setup">Print Job Setup</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="Advantage" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+
+  <INPUT type="hidden" name="T1R_PRNT_JOBvscurrency" vsds="T1R_PRNT_JOB" vscurrency="true">
+  
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+   
+      <a href="Advantage" vsds="T1R_PRNT_JOB" vsaction="saveall" name="T1R_PRNT_JOBSaveAll" id="T1R_PRNT_JOBSaveAll" title="Save All" accesskey="5">Save</a>
+   
+      <a href="Advantage" vsds="T1R_PRNT_JOB" vsaction="undoall" name="T1R_PRNT_JOBUndoAll" id="T1R_PRNT_JOBUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+      <a href="Advantage" vsds="T1R_PRNT_JOB" vsaction="delete" id="IndexT1R_PRNT_JOBdelete" name="T1R_PRNT_JOBdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="Advantage" vsds="T1R_PRNT_JOB" vsaction="insert" id="T1R_PRNT_JOBinsert" name="T1R_PRNT_JOBinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="Advantage" vsds="T1R_PRNT_JOB" vsaction="11" name="T1R_PRNT_JOBCopyRecord" id="T1R_PRNT_JOBCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="Advantage" vsds="T1R_PRNT_JOB" vsaction="12" name="T1R_PRNT_JOBPasteLine" id="T1R_PRNT_JOBPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+      
+   
+      <td><vstext vsds=" " name="T1R_PRNT_JOBSearchColList" vspreservetag="true"></td>
+      
+<td><div name="T1R_PRNT_JOBGridNav" id="T1R_PRNT_JOBGridNav" vsds=""><ams_map title="Record Navigation" name="Record Navigation">
+      <a href="Advantage" vsds="T1R_PRNT_JOB" vsaction="first" name="T1R_PRNT_JOBfirst" id="T1R_PRNT_JOBfirst" title="First Record" accesskey="0">First</a>
+ 
+   
+      <a href="Advantage" vsds="T1R_PRNT_JOB" vsaction="prev" name="T1R_PRNT_JOBprev" id="T1R_PRNT_JOBprev" title="Previous Record" accesskey="1">Prev</a>
+ 
+   
+      <a href="Advantage" vsds="T1R_PRNT_JOB" vsaction="next" name="T1R_PRNT_JOBnext" id="T1R_PRNT_JOBnext" title="Next Record" accesskey="2">Next</a>
+ 
+   
+      <a href="Advantage" vsds="T1R_PRNT_JOB" vsaction="last" name="T1R_PRNT_JOBlast" id="T1R_PRNT_JOBlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1APPL_RSRC_ID" title="Application Resource ID (Required)">Application Resource ID :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1APPL_RSRC_ID" id="txtT1APPL_RSRC_ID" 
+               size="20"
+ vsds="T1R_PRNT_JOB" vsdf="APPL_RSRC_ID" 
+         ams_max_len="50"
+ ShowCodeInfo="" value="APPL_RSRC_ID"title="Application Resource ID (Required)">
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1PRNT_JOB_CD" title="Print Job Code (Required)">Print Job Code :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1PRNT_JOB_CD" id="txtT1PRNT_JOB_CD" 
+               size="20"
+ vsds="T1R_PRNT_JOB" vsdf="PRNT_JOB_CD" 
+         ams_max_len="50"
+ ShowCodeInfo="" value="PRNT_JOB_CD"title="Print Job Code (Required)">
+        </td>
+      </tr>
+    
+      <tr>
+
+
+      <td class="label"><label for="txtT1DOC_PHASES_SUPRTED" title="Doc Phase(s) Supported">Doc Phase(s) Supported :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1DOC_PHASES_SUPRTED" id="txtT1DOC_PHASES_SUPRTED"
+      ams_max_len="255"
+ value="DOC_PHASES_SUPRTED"
+            size="20"
+ vsds="T1R_PRNT_JOB" vsdf="DOC_PHASES_SUPRTED" ShowCodeInfo="" title="Doc Phase(s) Supported">
+          <input type="image" vspick="T4CVL_DOC_PHASE_CD" vspicktext="txtT1DOC_PHASES_SUPRTED" vsds="T1R_PRNT_JOB" vsaction="pick" name="pckT1DOC_PHASES_SUPRTED" id="pckT1DOC_PHASES_SUPRTED" title="Select Doc Phase(s) Supported" alt="Select Doc Phase(s) Supported" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1NM" title="Print Job Name">Print Job Name :</label></td>
+   
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1NM" id="txtT1NM" vsds="T1R_PRNT_JOB" vsdf="NM" 
+ title="Print Job Name"></textarea>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DSCR" title="Print Job Description">Print Job Description :</label></td>
+   
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1DSCR" id="txtT1DSCR" vsds="T1R_PRNT_JOB" vsdf="DSCR" 
+ title="Print Job Description"></textarea>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1PRNT_SRV_ID" title="Print Server ID (Required)">Print Server ID :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1PRNT_SRV_ID" id="txtT1PRNT_SRV_ID" 
+      ams_max_len="20"
+ value="PRNT_SRV_ID" 
+            size="20"
+ vsds="T1R_PRNT_JOB" vsdf="PRNT_SRV_ID" ShowCodeInfo="" title="Print Server ID (Required)">
+          <input type="image" vspick="T3R_PRNT_SRV" vspicktext="txtT1PRNT_SRV_ID" vsds="T1R_PRNT_JOB" vsaction="pick" name="pckT1PRNT_SRV_ID" id="pckT1PRNT_SRV_ID" title="Select Print Server ID" alt="Select Print Server ID" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+    
+      <tr>
+
+
+      <td class="label"><label for="txtT1PRNT_CMNT_APRV_FL" title="Print Doc Comments and Approvals">Print Doc Comments and Approvals :</label></td>
+
+        <td class="val">
+          <input type="checkbox" name="txtT1PRNT_CMNT_APRV_FL" id="txtT1PRNT_CMNT_APRV_FL" value="PRNT_CMNT_APRV_FL" vsds="T1R_PRNT_JOB" vsdf="PRNT_CMNT_APRV_FL" title="Print Doc Comments and Approvals">
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1SPOOL_JOB" title="Spool print job?">Spool print job? :</label></td>
+   
+        <td class="val checkbox">
+          <input type="checkbox" name="txtT1SPOOL_JOB" id="txtT1SPOOL_JOB" value="SPOOL_JOB" vsds="T1R_PRNT_JOB" vsdf="SPOOL_JOB" title="Spool print job?">
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtT1APPL_RSRC_ID_UP" title="Application Resource ID">Application Resource ID :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1APPL_RSRC_ID_UP" id="txtT1APPL_RSRC_ID_UP" 
+               size="20"
+ vsds="T1R_PRNT_JOB" vsdf="APPL_RSRC_ID_UP" 
+         ams_max_len="50"
+ ShowCodeInfo="" title="Application Resource ID" value="APPL_RSRC_ID_UP"></div>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtT1PRNT_JOB_CD_UP" title="Print Job Code">Print Job Code :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1PRNT_JOB_CD_UP" id="txtT1PRNT_JOB_CD_UP" 
+               size="20"
+ vsds="T1R_PRNT_JOB" vsdf="PRNT_JOB_CD_UP" 
+         ams_max_len="50"
+ ShowCodeInfo="" title="Print Job Code" value="PRNT_JOB_CD_UP"></div>
+        </td>
+      </tr>
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+ 
+
+  <input type="hidden" name="T2R_PRNT_JOB_PARM_Currency" value="">
+  <input type="hidden" name="T2R_PRNT_JOB_PARM_Old_Currency" value="">
+  
+  
+  
+  <table name="tblT2R_PRNT_JOB_PARM" id="tblT2R_PRNT_JOB_PARM" class="advgrid" vsds="T2R_PRNT_JOB_PARM">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><span id="T2PARM_NMsortGridLabel" name="T2PARM_NMsortGridLabel" title="Parameter Name">Parameter Name</span></th>
+      
+        <th 
+><span id="T2PARM_VLsortGridLabel" name="T2PARM_VLsortGridLabel" title="Parameter Value">Parameter Value</span></th>
+      
+        <th 
+><span id="T2PARM_DSCRsortGridLabel" name="T2PARM_DSCRsortGridLabel" title="Parameter Description">Parameter Description</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T2R_PRNT_JOB_PARMvscurrency" id="T2R_PRNT_JOB_PARMvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T2R_PRNT_JOB_PARM" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td>
+          <input type="text" name="txtT2PARM_NM" 
+            size="20"
+      maxlength="50"
+ value="PARM_NM" vsds="T2R_PRNT_JOB_PARM" vsdf="PARM_NM" 
+ ShowCodeInfo="" title="Parameter Name"
+>
+        </td>
+      
+        <td>
+          <input type="text" name="txtT2PARM_VL" 
+            size="20"
+      maxlength="255"
+ value="PARM_VL" vsds="T2R_PRNT_JOB_PARM" vsdf="PARM_VL" 
+ ShowCodeInfo="" title="Parameter Value"
+>
+        </td>
+      
+        <td class="memo">
+           <textarea name="txtT2PARM_DSCR" vsds="T2R_PRNT_JOB_PARM" vsdf="PARM_DSCR" cols="20" rows="2" vsformat="" title="Parameter Description"></textarea>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+    <td><ams_map title="Update Actions" name="Update Actions">
+<a href="Advantage" vsds="T2R_PRNT_JOB_PARM" vsaction="delete" id="T2R_PRNT_JOB_PARMdelete" name="T2R_PRNT_JOB_PARMdelete" title="Delete Selected Row" accesskey="7">Delete</a>
+<a href="Advantage" vsds="T2R_PRNT_JOB_PARM" vsaction="insert" id="T2R_PRNT_JOB_PARMinsert" name="T2R_PRNT_JOB_PARMinsert" title="Insert New Row" accesskey="I">Insert</a>
+    </ams_map></td>
+      
+  <td><ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="Advantage" vsds="T2R_PRNT_JOB_PARM" vsaction="11" name="T2R_PRNT_JOB_PARMCopyLine" id="T2R_PRNT_JOB_PARMCopyLine" title="Copy Selected Row" accesskey="C">Copy</a>
+<a href="Advantage" vsds="T2R_PRNT_JOB_PARM" vsaction="12" name="T2R_PRNT_JOB_PARMPasteLine" id="T2R_PRNT_JOB_PARMPasteLine" title="Paste Copied Row" accesskey="8">Paste</a>
+  </ams_map></td>
+      
+<td><div name="T2R_PRNT_JOB_PARMGridNav" id="T2R_PRNT_JOB_PARMGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+      <a href="Advantage" vsds="T2R_PRNT_JOB_PARM" vsaction="firstpage" name="T2R_PRNT_JOB_PARMfirstpage" id="T2R_PRNT_JOB_PARMfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+      <a href="Advantage" vsds="T2R_PRNT_JOB_PARM" vsaction="prevpage" name="T2R_PRNT_JOB_PARMprevpage" id="T2R_PRNT_JOB_PARMprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+      <a href="Advantage" vsds="T2R_PRNT_JOB_PARM" vsaction="nextpage" id="T2R_PRNT_JOB_PARMnextpage" name="T2R_PRNT_JOB_PARMnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+      <a href="Advantage" vsds="T2R_PRNT_JOB_PARM" vsaction="lastpage" id="T2R_PRNT_JOB_PARMlastpage" name="T2R_PRNT_JOB_PARMlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T2R_PRNT_JOB_PARM', new Array(), new Array() ) ;
+    
+  -->
+  </script>
+ 
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0398001864.MGupta.0000"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="True"
+	ChildMostDataObject="BS_AGENT"
+	DistinctRowsOnly="True"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[Select BS_AGENT.AGNT_ID As AGNT_ID, BS_AGENT.USID As USID, BS_AGENT.JOB_NM As JOB_NM, BS_AGENT.PNT_CTLG_ID As CTLG_ID, R_BS_CATALOG.CTLG_NM As CTLG_NM, BS_AGENT.RUN_STRT_TS As RUN_STRT_TS, BS_AGENT.RUN_END_TS As RUN_END_TS, BS_AGENT.RUN_STA As RUN_STA, BS_AGENT.USID_UP As USID_UP, BS_AGENT.BASE_TMPL_PATH As BASE_TMPL_PATH, BS_AGENT.ITM_TYP As ITM_TYP, BS_AGENT.ID As ID, BS_AGENT.RET_CD As RET_CD, BS_AGENT.RUN_DT_TM as RUN_DT_TM, BS_AGENT.APPL_SRV_NM as APPL_SRV_NM, BS_AGENT.CHK_PT as CHK_PT
+ from BS_AGENT BS_AGENT, R_BS_CATALOG R_BS_CATALOG
+ where R_BS_CATALOG.CTLG_ID=BS_AGENT.PNT_CTLG_ID
+ Order By BS_AGENT.AGNT_ID Desc 
+]]></RuntimeSql>
+	<Where><![CDATA[]]></Where>
+	<OrderBy>
+	<OrderByAttribute
+		Name="BS_AGENT.AGNT_ID"
+		Direction="Descending"
+	/>
+	</OrderBy>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="BS_AGENT"
+			Alias="BS_AGENT"
+		/>
+
+		<DataObject
+			DataObjectName="R_BS_CATALOG"
+			Alias="R_BS_CATALOG"
+		/>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="AGNT_ID"
+			Alias="AGNT_ID"
+			AggregationType="None"
+			SourceDataObject="BS_AGENT"
+			Persistent="True"
+			IdentityColumnsElement="True"
+		/>
+
+		<Attribute
+			Name="USID"
+			Alias="USID"
+			AggregationType="None"
+			SourceDataObject="BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="JOB_NM"
+			Alias="JOB_NM"
+			AggregationType="None"
+			SourceDataObject="BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="PNT_CTLG_ID"
+			Alias="CTLG_ID"
+			AggregationType="None"
+			SourceDataObject="BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="CTLG_NM"
+			Alias="CTLG_NM"
+			AggregationType="None"
+			SourceDataObject="R_BS_CATALOG"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="RUN_STRT_TS"
+			Alias="RUN_STRT_TS"
+			AggregationType="None"
+			SourceDataObject="BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="RUN_END_TS"
+			Alias="RUN_END_TS"
+			AggregationType="None"
+			SourceDataObject="BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="RUN_STA"
+			Alias="RUN_STA"
+			AggregationType="None"
+			SourceDataObject="BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="USID_UP"
+			Alias="USID_UP"
+			AggregationType="None"
+			SourceDataObject="BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="BASE_TMPL_PATH"
+			Alias="BASE_TMPL_PATH"
+			AggregationType="None"
+			SourceDataObject="BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ITM_TYP"
+			Alias="ITM_TYP"
+			AggregationType="None"
+			SourceDataObject="BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ID"
+			Alias="ID"
+			AggregationType="None"
+			SourceDataObject="BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="RET_CD"
+			Alias="RET_CD"
+			AggregationType="None"
+			SourceDataObject="BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="APPL_ID"
+			Alias="APPL_ID"
+			AggregationType="None"
+			SourceDataObject="BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="RUN_DT_TM"
+			Alias="RUN_DT_TM"
+			AggregationType="None"
+			SourceDataObject="BS_AGENT"
+			Persistent="True"
+			>
+			<Caption><![CDATA[Scheduled Date/Time]]></Caption>
+		</Attribute>
+
+		<Attribute
+			Name="APPL_SRV_NM"
+			Alias="APPL_SRV_NM"
+			AggregationType="None"
+			SourceDataObject="BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="CHK_PT"
+			Alias="CHK_PT"
+			AggregationType="None"
+			SourceDataObject="BS_AGENT"
+			Persistent="True"
+		/>
+
+	</Attributes>
+	<Joins
+		LeftDataObject="R_BS_CATALOG"
+		RightDataObject="BS_AGENT"
+		JoinType="Equal"
+		>
+		<ColumnSet
+			LeftAttribute="R_BS_CATALOG.CTLG_ID"
+			RightAttribute="BS_AGENT.PNT_CTLG_ID"
+		/>
+	</Joins>
+
+	<RelsToParentDataObjects>
+		<RelToParentDO
+			RelToParentDO="TargetVLS(IN_APPSRV_LST)-JobsForServer(BS_AGENT)"
+		>
+			<Aliases>
+				<Alias
+					Name="BS_AGENT"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="SEQ_NO"
+							ChildAttribute="APPL_SRV_NM"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+		<RelToParentDO
+			RelToParentDO="R_BS_CATALOG(R_BS_CATALOG)-BS_AGENTs1(BS_AGENT)"
+		>
+			<Aliases>
+				<Alias
+					Name="BS_AGENT"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="CTLG_ID"
+							ChildAttribute="CTLG_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+	</RelsToParentDataObjects>
+
+	<RelsToChildDataObjects>
+		<RelToChildDO
+			RelToChildDO="BS_AGENT(BS_AGENT)-BS_AGENTs(BS_AGENT)"
+		>
+			<Aliases>
+				<Alias
+					Name="BS_AGENT"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="AGNT_ID"
+							ChildAttribute="PRE_CN"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+		<RelToChildDO
+			RelToChildDO="ParentJob(BS_AGENT)-LogEntries(BS_AGENT_LOG)"
+		>
+			<Aliases>
+				<Alias
+					Name="BS_AGENT"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="AGNT_ID"
+							ChildAttribute="AGNT_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+		<RelToChildDO
+			RelToChildDO="JobItem(BS_AGENT)-ParameterEntries(BS_AGENT_PARM)"
+		>
+			<Aliases>
+				<Alias
+					Name="BS_AGENT"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="AGNT_ID"
+							ChildAttribute="AGNT_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+	</RelsToChildDataObjects>
+
+	<PickSupportedRels>
+		<PickSupportedRel
+			PickSupportedRel="BS_AGENT(BS_AGENT)-BS_AGENTs(BS_AGENT)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="ParentJob(BS_AGENT)-LogEntries(BS_AGENT_LOG)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="JobItem(BS_AGENT)-ParameterEntries(BS_AGENT_PARM)"
+		/>
+	</PickSupportedRels >
+
+</QueryObject>

@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0351523090.ssurabhi.0001"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="False"
+	ChildMostDataObject="R_UNIT"
+	DistinctRowsOnly="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[SELECT R_UNIT.FY AS FY, R_UNIT.DEPT_CD AS DEPT_CD, R_UNIT.UNIT_CD AS UNIT_CD, R_UNIT.GOVT_BRN_CD AS GOVT_BRN_CD, R_UNIT.CAB_CD AS CAB_CD, R_UNIT.DIV_CD AS DIV_CD, R_UNIT.GP_CD AS GP_CD, R_UNIT.SECT_CD AS SECT_CD, R_UNIT.DSTC_CD AS DSTC_CD, R_UNIT.BUR_CD AS BUR_CD FROM <dbschema>.R_UNIT R_UNIT ]]></RuntimeSql>
+	<Description><![CDATA[]]></Description>
+	<Comments><![CDATA[]]></Comments>
+	<Where><![CDATA[]]></Where>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="R_UNIT"
+			Alias="R_UNIT"
+			>
+			<Description><![CDATA[ ]]></Description>
+		</DataObject>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="FY"
+			Alias="FY"
+			AggregationType="None"
+			SourceDataObject="R_UNIT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DEPT_CD"
+			Alias="DEPT_CD"
+			AggregationType="None"
+			SourceDataObject="R_UNIT"
+			Persistent="True"
+			InstanceOf="DEPT_CD"
+		/>
+
+		<Attribute
+			Name="UNIT_CD"
+			Alias="UNIT_CD"
+			AggregationType="None"
+			SourceDataObject="R_UNIT"
+			Persistent="True"
+			InstanceOf="UNIT_CD"
+		/>
+
+		<Attribute
+			Name="GOVT_BRN_CD"
+			Alias="GOVT_BRN_CD"
+			AggregationType="None"
+			SourceDataObject="R_UNIT"
+			Persistent="True"
+			InstanceOf="GOVT_BRN_CD"
+		/>
+
+		<Attribute
+			Name="CAB_CD"
+			Alias="CAB_CD"
+			AggregationType="None"
+			SourceDataObject="R_UNIT"
+			Persistent="True"
+			InstanceOf="CAB_CD"
+		/>
+
+		<Attribute
+			Name="DIV_CD"
+			Alias="DIV_CD"
+			AggregationType="None"
+			SourceDataObject="R_UNIT"
+			Persistent="True"
+			InstanceOf="DIV_CD"
+		/>
+
+		<Attribute
+			Name="GP_CD"
+			Alias="GP_CD"
+			AggregationType="None"
+			SourceDataObject="R_UNIT"
+			Persistent="True"
+			InstanceOf="GP_CD"
+		/>
+
+		<Attribute
+			Name="SECT_CD"
+			Alias="SECT_CD"
+			AggregationType="None"
+			SourceDataObject="R_UNIT"
+			Persistent="True"
+			InstanceOf="SECT_CD"
+		/>
+
+		<Attribute
+			Name="DSTC_CD"
+			Alias="DSTC_CD"
+			AggregationType="None"
+			SourceDataObject="R_UNIT"
+			Persistent="True"
+			InstanceOf="DSTC_CD"
+		/>
+
+		<Attribute
+			Name="BUR_CD"
+			Alias="BUR_CD"
+			AggregationType="None"
+			SourceDataObject="R_UNIT"
+			Persistent="True"
+			InstanceOf="BUR_CD"
+		/>
+
+	</Attributes>
+	<RelsToChildDataObjects>
+		<RelToChildDO
+			RelToChildDO="R_UNIT(R_UNIT)-R_PRNT_ACCS(R_PRNT_ACCS)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_UNIT"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="DEPT_CD"
+							ChildAttribute="DEPT_CD"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+		<RelToChildDO
+			RelToChildDO="R_UNIT_1(R_UNIT)-R_PRNT_ACCS_1(R_PRNT_ACCS)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_UNIT"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="UNIT_CD"
+							ChildAttribute="UNIT_CD"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+	</RelsToChildDataObjects>
+
+	<PickSupportedRels>
+		<PickSupportedRel
+			PickSupportedRel="R_UNIT(R_UNIT)-R_PRNT_ACCS(R_PRNT_ACCS)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="R_UNIT_1(R_UNIT)-R_PRNT_ACCS_1(R_PRNT_ACCS)"
+		/>
+	</PickSupportedRels >
+
+</QueryObject>

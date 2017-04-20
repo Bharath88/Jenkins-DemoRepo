@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0494268210.Administrator.0001"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="False"
+	ChildMostDataObject="R_WF_USER_ROLE"
+	DistinctRowsOnly="False"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[SELECT R_WF_USER_ROLE.USID AS USID, R_WF_USER_ROLE.ROLEID AS ROLEID, R_WF_USER_ROLE.ROLE_NM AS ROLE_NM FROM <dbschema>.R_SC_USER_INFO R_SC_USER_INFO, <dbschema>.R_WF_USER_ROLE R_WF_USER_ROLE  WHERE R_SC_USER_INFO.USER_ID = R_WF_USER_ROLE.USID ]]></RuntimeSql>
+	<Where><![CDATA[]]></Where>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="R_SC_USER_INFO"
+			Alias="R_SC_USER_INFO"
+		/>
+
+		<DataObject
+			DataObjectName="R_WF_USER_ROLE"
+			Alias="R_WF_USER_ROLE"
+		/>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="USID"
+			Alias="USID"
+			AggregationType="None"
+			SourceDataObject="R_WF_USER_ROLE"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ROLEID"
+			Alias="ROLEID"
+			AggregationType="None"
+			SourceDataObject="R_WF_USER_ROLE"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ROLE_NM"
+			Alias="ROLE_NM"
+			AggregationType="None"
+			SourceDataObject="R_WF_USER_ROLE"
+			Persistent="True"
+			>
+			<Caption><![CDATA[Role Name]]></Caption>
+		</Attribute>
+
+	</Attributes>
+	<Joins
+		LeftDataObject="R_SC_USER_INFO"
+		RightDataObject="R_WF_USER_ROLE"
+		JoinType="Equal"
+		>
+		<ColumnSet
+			LeftAttribute="R_SC_USER_INFO.USER_ID"
+			RightAttribute="R_WF_USER_ROLE.USID"
+		/>
+	</Joins>
+
+	<RelsToParentDataObjects>
+		<RelToParentDO
+			RelToParentDO="R_SC_USER_DIR_INFO23(R_SC_USER_DIR_INFO)-R_WF_USER_ROLEs(R_WF_USER_ROLE)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_WF_USER_ROLE"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="USER_ID"
+							ChildAttribute="USID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+		<RelToParentDO
+			RelToParentDO="R_WF_ROLE12(R_WF_ROLE)-R_WF_USER_ROLEs1(R_WF_USER_ROLE)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_WF_USER_ROLE"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="ROLEID"
+							ChildAttribute="ROLEID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+	</RelsToParentDataObjects>
+
+	<RelsToChildDataObjects>
+		<RelToChildDO
+			RelToChildDO="R_WF_USER_ROLE(R_WF_USER_ROLE)-IN_SYS_MAN_PARM(IN_SYS_MAN_PARM)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_WF_USER_ROLE"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="ROLEID"
+							ChildAttribute="APRV_ROLE"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+	</RelsToChildDataObjects>
+
+	<PickSupportedRels>
+		<PickSupportedRel
+			PickSupportedRel="R_WF_USER_ROLE(R_WF_USER_ROLE)-IN_SYS_MAN_PARM(IN_SYS_MAN_PARM)"
+		/>
+	</PickSupportedRels >
+
+</QueryObject>

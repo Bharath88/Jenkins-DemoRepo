@@ -1,0 +1,262 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Service Catalog</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="ABI" method="post" vsform="true" name="pIM_SRVC_FLOW_Schedule">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Service Catalog">Service Catalog</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+      
+      
+ 
+
+  
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+      <a href="ABI" vsds="T1IM_SRVC" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+      <a href="ABI" vsds="T1IM_SRVC" vsaction="clearquery" name="T1IM_SRVCclearquery" id="T1IM_SRVCclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+           
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1FLOW_NM_UP" title="Service Name">Service Name :</label></td>
+<!-- BEGIN CUSTOMIZATION -->
+        <td class="val">
+          <input type="text" name="txtT1FLOW_NM_UP" id="txtT1FLOW_NM_UP"
+            size="20"
+ vsds="T1IM_SRVC" vsdf="FLOW_NM_UP" vsdisplaymode="Query"
+ value="FLOW_NM_UP" title="Name"onblur="UTILS_OnBlurUpperCaseAndTrim(this,this,true)" onkeypress="UTILS_onKeyPressUpperCaseAndTrim(this, event,true,true)">
+        </td>
+ <!-- END CUSTOMIZATION -->
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1CYCLE_ID" title="Service Group">Service Group :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1CYCLE_ID" id="txtT1CYCLE_ID" maxlength="30" value="CYCLE_ID" size="12" vsds="T1IM_SRVC" vsdf="CYCLE_ID" vsdisplaymode="Query" title="Service Group">
+          
+      <input type="image" vspick="T7IM_CYCLE" vspicktext="txtT1CYCLE_ID" vsds="T1IM_SRVC" vsaction="pick" name="pckT1CYCLE_ID" id="pckT1CYCLE_ID" title="Select Service Group" alt="Select Service Group" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+        </table></td><td class="advscalarcol"><table class="advscalar">
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1FLOW_ID" title="Service ID">Service ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1FLOW_ID" id="txtT1FLOW_ID" 
+               size="15"
+ vsds="T1IM_SRVC" vsdf="FLOW_ID" vsdisplaymode="Query" 
+ value="FLOW_ID" title="Service ID">
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1FLOW_STA" title="Status">Status :</label></td>
+   
+        <td class="val">
+          <select name="txtT1FLOW_STA" id="txtT1FLOW_STA" vsds="T1IM_SRVC" vsdf="FLOW_STA" vsdisplaymode="Query" size="1" vscodetable="CVL_IM_SRVC_STA" title="Status">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+    
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  
+  
+
+  
+  <input type="hidden" name="T1IM_SRVC_Currency" value="">
+  <input type="hidden" name="T1IM_SRVC_Old_Currency" value="">
+  <table name="tblT1IM_SRVC" id="tblT1IM_SRVC" class="advgrid" vsds="T1IM_SRVC">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><span id="T1FLOW_NMsortGridLabel" name="T1FLOW_NMsortGridLabel" vsdf="FLOW_NM" title="Service Name">Service Name</span></th>
+      
+        <th 
+><span id="T1CYCLE_NMsortGridLabel" name="T1CYCLE_NMsortGridLabel" vsdf="CYCLE_NM" title="Service Group Name">Service Group Name</span></th>
+      
+        <th 
+><span id="T1FLOW_IDsortGridLabel" name="T1FLOW_IDsortGridLabel" vsdf="FLOW_ID" title="Service ID">Service ID</span></th>
+      
+        <th 
+><span id="T1FLOW_STAsortGridLabel" name="T1FLOW_STAsortGridLabel" vsdf="FLOW_STA" title="Status">Status</span></th>
+      
+        <th 
+><span id="T1TRIG_SRVC_LSTsortGridLabel" name="T1TRIG_SRVC_LSTsortGridLabel" vsdf="TRIG_SRVC_LST" title="Triggered Services">Triggered Services</span></th>
+      
+        <th 
+><span id="T1SRVC_DESCsortGridLabel" name="T1SRVC_DESCsortGridLabel" vsdf="SRVC_DESC" title="Description">Description</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IM_SRVCvscurrency" id="T1IM_SRVCvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1IM_SRVC" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1FLOW_NM" vsds="T1IM_SRVC" vsdf="FLOW_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1CYCLE_NM" vsds="T1IM_SRVC" vsdf="CYCLE_NM" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1FLOW_ID" vsds="T1IM_SRVC" vsdf="FLOW_ID" 
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1IM_SRVC" vsdf="FLOW_STA" vscodetable="CVL_IM_SRVC_STA">
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1TRIG_SRVC_LST" vsds="T1IM_SRVC" vsdf="TRIG_SRVC_LST" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1SRVC_DESC" vsds="T1IM_SRVC" vsdf="SRVC_DESC" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+      
+<td><div name="T1IM_SRVCGridNav" id="T1IM_SRVCGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="ABI" vsds="T1IM_SRVC" vsaction="firstpage" name="T1IM_SRVCfirstpage" id="T1IM_SRVCfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="ABI" vsds="T1IM_SRVC" vsaction="prevpage" name="T1IM_SRVCprevpage" id="T1IM_SRVCprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="ABI" vsds="T1IM_SRVC" vsaction="nextpage" id="T1IM_SRVCnextpage" name="T1IM_SRVCnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="ABI" vsds="T1IM_SRVC" vsaction="lastpage" id="T1IM_SRVClastpage" name="T1IM_SRVClastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+   
+        <a name="btnT2pScheduleFlow" href="ABI" vsaction="pagetransition" id="btnT2pScheduleFlow" vsds="(None)" vsnavigation="T2pScheduleFlow" title="Navigation to Schedule Flow">Schedule Flow</a>
+   
+        <a name="btnT3pIM_SRVC" href="ABI" vsaction="pagetransition" id="btnT3pIM_SRVC" vsds="(None)" vsnavigation="T3pIM_SRVC" title="Navigation to Service Definition">Service Definition</a>
+   
+        <a name="btnT4pIM_SRVC_FLOW_All" href="ABI" vsaction="pagetransition" id="btnT4pIM_SRVC_FLOW_All" vsds="(None)" vsnavigation="T4pIM_SRVC_FLOW_All" title="Navigation to Service Flows">Service Flows</a>
+      </td>
+    </tr>
+  </table>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="ABI" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

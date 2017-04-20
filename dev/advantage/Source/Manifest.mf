@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Class-Path:  csf.jar csfca.jar csfutils.jar AdvXBeans.jar
+Created-By: Versata Logic Studio

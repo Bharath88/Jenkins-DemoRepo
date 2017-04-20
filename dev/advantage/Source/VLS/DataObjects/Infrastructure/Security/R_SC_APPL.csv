@@ -1,0 +1,9 @@
+"APPL_ID","APPL_NM","ACTV_FL","STND_ALONE","STATELESS_FL","APPL_NM_UP","AMS_ROW_VERS_NO"
+0,"Common Application",true,false,false,"COMMON APPLICATION",1
+1,"ADVANTAGE Financial",true,false,false,"ADVANTAGE FINANCIAL",1
+2,"ADVANTAGE HR",true,false,false,"ADVANTAGE HR",1
+4,"ADVANTAGE VSS",true,true,false,"ADVANTAGE VSS",1
+5,"VSS Password Reset",true,true,false,"VSS PASSWORD RESET",1
+6,"ADVANTAGE Administrator",true,false,false,"ADVANTAGE ADMINISTRATOR",1
+7,"ADVANTAGE ESS",true,true,false,"ADVANTAGE ESS",1
+8,"PASSWORD RESET",true,true,false,"PASSWORD RESET",1

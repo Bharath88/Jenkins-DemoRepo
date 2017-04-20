@@ -1,0 +1,725 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>System Maintenance Utility Parameters</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <!-- BEGIN CUSTOMIZATION -->
+  <script type="text/javascript" language="JavaScript" src="../Reports_Sys_Admin_App/JS/AMSSysManParm.js"></script>
+  <!-- END CUSTOMIZATION -->
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<!-- BEGIN CUSTOMIZATION -->
+<body class="adv reftable dialog" onload="AMSSYSMANPARM_ProcLoadPage()">
+<!-- END CUSTOMIZATION -->
+  <vserror>
+  <form action="Reports_Sys_Admin_App" method="post" vsform="true" name="pIN_SYS_MAN_PARM">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="System Maintenance Utility Parameters">System Maintenance Utility Parameters</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+  <INPUT type="hidden" name="T1IN_SYS_MAN_PARMvscurrency" vsds="T1IN_SYS_MAN_PARM" vscurrency="true">
+
+  <a name="T1IN_SYS_MAN_PARM_Top"></a>
+<!-- BEGIN CUSTOMIZATION -->
+<div id="ADVExpandCollapse">
+<!-- END CUSTOMIZATION -->
+  <table class="advaction recsrc">
+    <tr>
+      <!-- BEGIN CUSTOMIZATION -->
+      <!--
+      <td>
+
+      </td>
+
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="Reports_Sys_Admin_App" vsds="T1IN_SYS_MAN_PARM" vsaction="first" name="T1IN_SYS_MAN_PARMfirst" id="T1IN_SYS_MAN_PARMfirst" title="First Record" accesskey="0">First</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1IN_SYS_MAN_PARM" vsaction="prev" name="T1IN_SYS_MAN_PARMprev" id="T1IN_SYS_MAN_PARMprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1IN_SYS_MAN_PARM" vsaction="next" name="T1IN_SYS_MAN_PARMnext" id="T1IN_SYS_MAN_PARMnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1IN_SYS_MAN_PARM" vsaction="last" name="T1IN_SYS_MAN_PARMlast" id="T1IN_SYS_MAN_PARMlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+      -->
+      <!-- END CUSTOMIZATION -->
+
+      <td><ams_map title="Section Controls" name="Section Controls">
+
+  <a href="javascript:
+        AMSTAB_ExpandSection('T1IN_SYS_MAN_PARM_Section1','T1IN_SYS_MAN_PARM_Section1_Button');
+          AMSTAB_ExpandSection('T1IN_SYS_MAN_PARM_Section2','T1IN_SYS_MAN_PARM_Section2_Button');
+            AMSTAB_ExpandSection('T1IN_SYS_MAN_PARM_Section3','T1IN_SYS_MAN_PARM_Section3_Button');
+              AMSTAB_ExpandSection('T1IN_SYS_MAN_PARM_Section4','T1IN_SYS_MAN_PARM_Section4_Button');
+                AMSTAB_ExpandSection('T1IN_SYS_MAN_PARM_Section5','T1IN_SYS_MAN_PARM_Section5_Button');
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+
+  <a href="javascript:
+        AMSTAB_CollapseSection('T1IN_SYS_MAN_PARM_Section1','T1IN_SYS_MAN_PARM_Section1_Button');
+          AMSTAB_CollapseSection('T1IN_SYS_MAN_PARM_Section2','T1IN_SYS_MAN_PARM_Section2_Button');
+            AMSTAB_CollapseSection('T1IN_SYS_MAN_PARM_Section3','T1IN_SYS_MAN_PARM_Section3_Button');
+              AMSTAB_CollapseSection('T1IN_SYS_MAN_PARM_Section4','T1IN_SYS_MAN_PARM_Section4_Button');
+                AMSTAB_CollapseSection('T1IN_SYS_MAN_PARM_Section5','T1IN_SYS_MAN_PARM_Section5_Button');
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION -->
+</div>
+<!-- END CUSTOMIZATION -->
+
+  <fieldset class="advscalar">
+    <div class="advpresection">
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+
+
+
+      <tr>
+        <td class="label"><label for="txtT1ACTN_CD" title="Action Code">Action Code :</label></td>
+        <td class="val">
+
+<!-- BEGIN CUSTOMIZATION -->
+          <select name="txtT1ACTN_CD" id="txtT1ACTN_CD" vsds="T1IN_SYS_MAN_PARM" vsdf="ACTN_CD" size="1" vscodetable="CVL_SYS_MAN_ACTN" ShowCodeInfo="" title="Action Code" onChange="AMSSYSMANPARM_ProcActnCd()">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1DOC_S_ACTN_CD" title="Document Sub Action Code">Document Sub Action Code :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_S_ACTN_CD" id="txtT1DOC_S_ACTN_CD"
+            ams_max_len="10"
+ value="DOC_S_ACTN_CD"
+            size="10"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="DOC_S_ACTN_CD" ShowCodeInfo="" title="Document Sub Action Code">
+          <input type="image" vspick="T2R_SC_DOC_CUST_ACTN" vspicktext="txtT1DOC_S_ACTN_CD" vsds="T1IN_SYS_MAN_PARM" vsaction="pick" name="pckT1DOC_S_ACTN_CD" id="pckT1DOC_S_ACTN_CD" title="Select Document Sub Action Code" alt="Select Document Sub Action Code" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1USER_ID" title="User ID">User ID :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1USER_ID" id="txtT1USER_ID"
+               size="20"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="USER_ID"
+         ams_max_len="16"
+ ShowCodeInfo="" value="USER_ID" title="User ID">
+        </td>
+      </tr>
+
+<!-- BEGIN CUSTOMIZATION -->
+<div id="ADVApproveId">
+ <!-- END CUSTOMIZATION -->
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1APRV_ID" title="Approver Id">Approver Id :</label></td>
+
+        <td class="val">
+
+
+
+          <input type="text" name="txtT1APRV_ID" id="txtT1APRV_ID"
+               size="20"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="APRV_ID"
+         ams_max_len="16"
+ ShowCodeInfo="" value="APRV_ID" title="Approver Id" >
+
+
+
+        </td>
+      </tr>
+
+<!-- BEGIN CUSTOMIZATION -->
+</div>
+<div id="ADVApproveRole">
+ <!-- END CUSTOMIZATION -->
+        <tr>
+
+
+      <td class="label"><label for="txtT1APRV_ROLE" title="Approval Role">Approval Role :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1APRV_ROLE" id="txtT1APRV_ROLE"
+      ams_max_len="16"
+ value="APRV_ROLE"
+            size="20"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="APRV_ROLE" ShowCodeInfo="" title="Approval Role">
+
+      <input type="image" vspick="T3R_WF_USER_ROLE" vspicktext="txtT1APRV_ROLE" vsds="T1IN_SYS_MAN_PARM" vsaction="pick" name="pckT1APRV_ROLE" id="pckT1APRV_ROLE" title="Select Approval Role" alt="Select Approval Role" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+
+<!-- BEGIN CUSTOMIZATION -->
+</div>
+ <!-- END CUSTOMIZATION -->
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1PARM_FILE" title="Parameter File Name">Parameter File Name :</label></td>
+        <td class="val">
+<!-- BEGIN CUSTOMIZATION -->
+          <input type="text" name="txtT1PARM_FILE" id="txtT1PARM_FILE"
+               size="20"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="PARM_FILE"
+         ams_max_len="64"
+ ShowCodeInfo="" value="PARM_FILE" title="Parameter File Name" onblur="AMSSYSMANPARM_ProcParmFile()">
+ <!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+<!-- BEGIN CUSTOMIZATION -->
+<div id="ADVApplyOverride">
+ <!-- END CUSTOMIZATION -->
+      <tr>
+
+      <td class="label"><label for="txtT1APPLY_OVERRIDES" title="Apply Overrides?">Apply Overrides? :</label></td>
+
+        <td class="val">
+          <input type="checkbox" name="txtT1APPLY_OVERRIDES" id="txtT1APPLY_OVERRIDES" value="APPLY_OVERRIDES" vsds="T1IN_SYS_MAN_PARM" vsdf="APPLY_OVERRIDES" title="Apply Overrides?">
+        </td>
+      </tr>
+<!-- BEGIN CUSTOMIZATION -->
+</div>
+ <!-- END CUSTOMIZATION -->
+      <tr>
+        <td class="label"><label for="txtT1GENERATE_STATS" title="Generate Statistics?">Generate Statistics? :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1GENERATE_STATS" id="txtT1GENERATE_STATS" value="GENERATE_STATS" vsds="T1IN_SYS_MAN_PARM" vsdf="GENERATE_STATS" title="Generate Statistics?">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1PARM_FIL_VERBOSE" title="Verbose Messages for Parameter File?">Verbose Messages for Parameter File? :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1PARM_FIL_VERBOSE" id="txtT1PARM_FIL_VERBOSE"
+               size="15"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="PARM_FIL_VERBOSE"
+         ams_max_len="10"
+ ShowCodeInfo="" value="PARM_FIL_VERBOSE" title="Verbose Messages for Parameter File?">
+        </td>
+      </tr>
+<!-- BEGIN CUSTOMIZATION -->
+<div id="ProgCtrSz">
+      <tr>
+      <td class="label"><label for="txtT1DOCSUB_PROG_CTR_SZ" title="Progression Counter Size">Progression Counter Size :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOCSUB_PROG_CTR_SZ" id="txtT1DOCSUB_PROG_CTR_SZ"
+                  size="15"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="DOCSUB_PROG_CTR_SZ"
+                  ams_max_len="20"
+ ShowCodeInfo="" value="DOCSUB_PROG_CTR_SZ" title="Progression Counter Size" >
+        </td>
+      </tr>
+  </div>
+  <!-- END CUSTOMIZATION -->
+        </table></td></tr></table></div></fieldset>
+
+<!-- BEGIN CUSTOMIZATION -->
+<div id="ADVDocInfo">
+<!-- END CUSTOMIZATION -->
+
+        <a name="T1IN_SYS_MAN_PARM_Section1_Top"></a><fieldset class="advscalar section">
+        <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1IN_SYS_MAN_PARM_Section1','T1IN_SYS_MAN_PARM_Section1_Button');" title="Expand/Collapse Document Information"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1IN_SYS_MAN_PARM_Section1_Button"> Document Information</a></legend>
+        <div id="T1IN_SYS_MAN_PARM_Section1" class="advsection">
+        <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1DOC_TYP" title="Document Type">Document Type :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_TYP" id="txtT1DOC_TYP"
+               size="20"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="DOC_TYP"
+         ams_max_len="50"
+ ShowCodeInfo="" value="DOC_TYP" title="Document Type">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1DOC_DEPT_CD" title="Document Dept Code">Document Dept Code :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_DEPT_CD" id="txtT1DOC_DEPT_CD"
+               size="20"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="DOC_DEPT_CD"
+         ams_max_len="30"
+ ShowCodeInfo="" value="DOC_DEPT_CD" title="Document Dept Code">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1DOC_VERS_NO" title="Document Vers No">Document Vers No :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_VERS_NO" id="txtT1DOC_VERS_NO"
+               size="15"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="DOC_VERS_NO"
+         ams_max_len="10"
+ ShowCodeInfo="" value="DOC_VERS_NO" title="Document Vers No">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1DOC_PHASE_CD" title="Document Phase Code">Document Phase Code :</label></td>
+        <td class="val">
+<!-- BEGIN CUSTOMIZATION -->
+   <!--
+          <select name="txtT1DOC_PHASE_CD" id="txtT1DOC_PHASE_CD" vsds="T1IN_SYS_MAN_PARM" vsdf="DOC_PHASE_CD" size="1" vscodetable="CVL_DOC_PHASE_CD" ShowCodeInfo="" title="Document Phase Code">
+   -->
+          <select name="txtT1DOC_PHASE_CD" id="txtT1DOC_PHASE_CD" vsds="T1IN_SYS_MAN_PARM" vsdf="DOC_PHASE_CD"
+          size="1" vscodetable="CVL_DOC_PHASE_CD" ShowCodeInfo="" title="Document Phase Code"
+          onChange="AMSSYSMANPARM_ProcDocPhaseCd()">
+<!-- END CUSTOMIZATION -->
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1DOC_CREA_USID" title="Create User Id">Create User Id :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_CREA_USID" id="txtT1DOC_CREA_USID"
+               size="20"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="DOC_CREA_USID"
+         ams_max_len="20"
+ ShowCodeInfo="" value="DOC_CREA_USID" title="Create User Id">
+        </td>
+      </tr>
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1DOC_CD" title="Document Code">Document Code :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_CD" id="txtT1DOC_CD"
+               size="20"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="DOC_CD"
+         ams_max_len="50"
+ ShowCodeInfo="" value="DOC_CD" title="Document Code">
+        </td>
+      </tr>
+
+      <tr>
+      <td class="label"><label for="txtT1DOC_ID" title="Document ID">Document ID :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_ID" id="txtT1DOC_ID"
+               size="20"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="DOC_ID"
+         ams_max_len="20"
+ ShowCodeInfo="" value="DOC_ID" title="Document ID">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1DOC_UNIT_CD" title="Document Unit Code">Document Unit Code :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_UNIT_CD" id="txtT1DOC_UNIT_CD"
+               size="20"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="DOC_UNIT_CD"
+         ams_max_len="30"
+ ShowCodeInfo="" value="DOC_UNIT_CD" title="Document Unit Code">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1DOC_STA_CD" title="Document Status">Document Status :</label></td>
+        <td class="val">
+          <select name="txtT1DOC_STA_CD" id="txtT1DOC_STA_CD" vsds="T1IN_SYS_MAN_PARM" vsdf="DOC_STA_CD" size="1" vscodetable="CVL_DOC_STA_CD" ShowCodeInfo="" title="Document Status">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+<!-- BEGIN CUSTOMIZATION -->
+<div id="ADVApproveLevel">
+<!-- END CUSTOMIZATION -->
+        <tr>
+
+
+      <td class="label"><label for="txtT1APRV_LVL" title="Approval Level">Approval Level :</label></td>
+
+        <td class="val">
+
+
+
+          <input type="text" name="txtT1APRV_LVL" id="txtT1APRV_LVL"
+               size="10"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="APRV_LVL"
+               ams_max_len="10"
+ ShowCodeInfo="" value="APRV_LVL" title="Approval Level" >
+
+
+
+        </td>
+        </tr>
+ <!-- BEGIN CUSTOMIZATION -->
+ <div>
+<!-- END CUSTOMIZATION -->
+      <td class="label">
+<!-- BEGIN CUSTOMIZATION -->
+      <!--
+      <label for="txtT1CLEANUP_PERIOD" title="Cleanup Period">Cleanup Period :</label></td>
+	  -->
+	  <vstext vsds="" name="CleanupPeriod">
+<!-- END CUSTOMIZATION -->
+        <td class="val">
+
+
+
+          <input type="text" name="txtT1CLEANUP_PERIOD" id="txtT1CLEANUP_PERIOD"
+               size="15"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="CLEANUP_PERIOD"
+         ams_max_len="10"
+ ShowCodeInfo="" value="CLEANUP_PERIOD" title="Cleanup Period" >
+
+
+
+        </td>
+      </tr>
+
+          </table></td></tr></table></div></fieldset><br><br>
+
+<!--BEGIN CUSTOMIZATION -->
+</div>
+<div id="ADVTableInfo">
+<!--END CUSTOMIZATION -->
+
+          <a name="T1IN_SYS_MAN_PARM_Section2_Top"></a><fieldset class="advscalar section">
+          <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1IN_SYS_MAN_PARM_Section2','T1IN_SYS_MAN_PARM_Section2_Button');" title="Expand/Collapse Table Information"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1IN_SYS_MAN_PARM_Section2_Button"> Table Information</a></legend>
+          <div id="T1IN_SYS_MAN_PARM_Section2" class="advsection">
+          <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1TBL_NM" title="Table Name">Table Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1TBL_NM" id="txtT1TBL_NM"
+               size="20"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="TBL_NM"
+         ams_max_len="18"
+ ShowCodeInfo="" value="TBL_NM" title="Table Name">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1FM_KEY" title="From Key">From Key :</label></td>
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1FM_KEY" id="txtT1FM_KEY" vsds="T1IN_SYS_MAN_PARM" vsdf="FM_KEY"
+ title="From Key"></textarea>
+        </td>
+      </tr>
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+
+<!-- BEGIN CUSTOMIZATION -->
+      <tr><td class="label"></td>
+        <td class="val">
+          <div id="AMSDummy"><input type="text" size="20"></div>
+        </td>
+</tr>
+<!-- END CUSTOMIZATION -->
+      <tr>
+        <td class="label"><label for="txtT1TO_KEY" title="To Key">To Key :</label></td>
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1TO_KEY" id="txtT1TO_KEY" vsds="T1IN_SYS_MAN_PARM" vsdf="TO_KEY"
+ title="To Key"></textarea>
+        </td>
+      </tr>
+
+            </table></td></tr></table></div></fieldset><br><br>
+
+
+<!--BEGIN CUSTOMIZATION -->
+</div>
+<div id="ADVImpExpInfo">
+<!--END CUSTOMIZATION -->
+            <a name="T1IN_SYS_MAN_PARM_Section3_Top"></a><fieldset class="advscalar section">
+            <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1IN_SYS_MAN_PARM_Section3','T1IN_SYS_MAN_PARM_Section3_Button');" title="Expand/Collapse Import/Export/Archive Information"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1IN_SYS_MAN_PARM_Section3_Button"> Import/Export/Archive Information</a></legend>
+            <div id="T1IN_SYS_MAN_PARM_Section3" class="advsection">
+            <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1FILE_NM" title="File Name">File Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1FILE_NM" id="txtT1FILE_NM"
+               size="20"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="FILE_NM"
+         ams_max_len="64"
+ ShowCodeInfo="" value="FILE_NM" title="File Name">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1MAX_ERRORS" title="Max. Errors Allowed">Max. Errors Allowed :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1MAX_ERRORS" id="txtT1MAX_ERRORS"
+                  size="15"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="MAX_ERRORS"
+                  ams_max_len="20"
+ ShowCodeInfo="" value="MAX_ERRORS" title="Max. Errors Allowed">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1DTL_IMP_MSG_FL" title="Detail Import Message Reporting?">Detail Import Message Reporting? :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1DTL_IMP_MSG_FL" id="txtT1DTL_IMP_MSG_FL" value="DTL_IMP_MSG_FL" vsds="T1IN_SYS_MAN_PARM" vsdf="DTL_IMP_MSG_FL" title="Detail Import Message Reporting?">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1EXP_ATT_FL" title="Export With Attachments">Export With Attachments :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1EXP_ATT_FL" id="txtT1EXP_ATT_FL" value="EXP_ATT_FL" vsds="T1IN_SYS_MAN_PARM" vsdf="EXP_ATT_FL" title="Export With Attachments">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1OVERRIDE_LVL" title="Override Level">Override Level :</label></td>
+        <td class="val">
+          <select name="txtT1OVERRIDE_LVL" id="txtT1OVERRIDE_LVL" vsds="T1IN_SYS_MAN_PARM" vsdf="OVERRIDE_LVL" size="1" vscodetable="CVL_OVERRIDE_LVL" ShowCodeInfo="" ams_show_es="NO" title="Override Level">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1BYPS_ADNT_FL" title="Bypass ADNT Req. Check?">Bypass ADNT Req. Check? :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1BYPS_ADNT_FL" id="txtT1BYPS_ADNT_FL" value="BYPS_ADNT_FL" vsds="T1IN_SYS_MAN_PARM" vsdf="BYPS_ADNT_FL" title="Bypass ADNT Req. Check?">
+        </td>
+      </tr>
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1ERROR_FILE_NM" title="Error File Name">Error File Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1ERROR_FILE_NM" id="txtT1ERROR_FILE_NM"
+               size="20"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="ERROR_FILE_NM"
+         ams_max_len="64"
+ ShowCodeInfo="" value="ERROR_FILE_NM" title="Error File Name">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1BYPASS_APPROVAL" title="Bypass Approvals?">Bypass Approvals? :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1BYPASS_APPROVAL" id="txtT1BYPASS_APPROVAL" value="BYPASS_APPROVAL" vsds="T1IN_SYS_MAN_PARM" vsdf="BYPASS_APPROVAL" title="Bypass Approvals?">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1EDITS_FL" title="Enforce Edits?">Enforce Edits? :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1EDITS_FL" id="txtT1EDITS_FL" value="EDITS_FL" vsds="T1IN_SYS_MAN_PARM" vsdf="EDITS_FL" title="Enforce Edits?">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1EXP_ATT_TYP" title="Attachments Export Type">Attachments Export Type :</label></td>
+        <td class="val">
+          <select name="txtT1EXP_ATT_TYP" id="txtT1EXP_ATT_TYP" vsds="T1IN_SYS_MAN_PARM" vsdf="EXP_ATT_TYP" size="1" vscodetable="CVL_EXP_TYP" ShowCodeInfo="" title="Attachments Export Type">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1EXP_FILE_TYP" title="Export File Format">Export File Format :</label></td>
+        <td class="val">
+          <select name="txtT1EXP_FILE_TYP" id="txtT1EXP_FILE_TYP" vsds="T1IN_SYS_MAN_PARM" vsdf="EXP_FILE_TYP" size="1" vscodetable="CVL_EXP_FILE_TYP" ShowCodeInfo="" title="Export File Format">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1EXCL_ATT" title="Excluded Attributes">Excluded Attributes :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1EXCL_ATT" id="txtT1EXCL_ATT"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="EXCL_ATT"
+ ShowCodeInfo="" value="EXCL_ATT" title="Excluded Attributes">
+        </td>
+      </tr>
+
+    <tr>
+	        <td class="label"><label for="txtT1EXCL_NON_PERSIST_ATT" title="Exclude Non-Persistent Attributes">Exclude Non-Persistent Attributes :</label></td>
+	        <td class="val">
+	          <input type="checkbox" name="txtT1EXCL_NON_PERSIST_ATT" id="txtT1EXCL_NON_PERSIST_ATT" value="EXCL_NON_PERSIST_ATT" vsds="T1IN_SYS_MAN_PARM" vsdf="EXCL_NON_PERSIST_ATT" title="Exclude Non-Persistent Attributes">
+	        </td>
+      </tr>
+              </table></td></tr></table></div></fieldset><br><br>
+
+<!--BEGIN CUSTOMIZATION -->
+</div>
+<div id="ADVExcepInfo">
+<!--END CUSTOMIZATION -->
+              <a name="T1IN_SYS_MAN_PARM_Section4_Top"></a><fieldset class="advscalar section">
+              <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1IN_SYS_MAN_PARM_Section4','T1IN_SYS_MAN_PARM_Section4_Button');" title="Expand/Collapse Exception Information"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1IN_SYS_MAN_PARM_Section4_Button"> Exception Information</a></legend>
+              <div id="T1IN_SYS_MAN_PARM_Section4" class="advsection">
+              <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1EXCEP_REP_IND" title="Exception Report Indicator">Exception Report Indicator :</label></td>
+        <td class="val">
+<!-- BEGIN CUSTOMIZATION -->
+          <select name="txtT1EXCEP_REP_IND" id="txtT1EXCEP_REP_IND" vsds="T1IN_SYS_MAN_PARM" vsdf="EXCEP_REP_IND" size="1" vscodetable="CVL_EXCEP_REPT_IND" ShowCodeInfo="" title="Exception Report Indicator" onChange="AMSSYSMANPARM_ShowMaxNo()">
+<!-- END CUSTOMIZATION -->
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label">
+
+<!-- BEGIN CUSTOMIZATION -->
+<div id="advExccepInfoMaxNo1">
+<!-- END CUSTOMIZATION -->
+        <label for="txtT1DOC_STA_MAX_MSG_NO" title="Max. Number of Msgs.">Max. Number of Msgs. :</label>
+
+<!-- BEGIN CUSTOMIZATION -->
+</div>
+<!-- END CUSTOMIZATION -->
+        </td>
+        <td class="val">
+
+<!-- BEGIN CUSTOMIZATION -->
+<div id="advExccepInfoMaxNo2">
+<!-- END CUSTOMIZATION -->
+          <input type="text" name="txtT1DOC_STA_MAX_MSG_NO" id="txtT1DOC_STA_MAX_MSG_NO"
+               size="10"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="DOC_STA_MAX_MSG_NO"
+               ams_max_len="10"
+ ShowCodeInfo="" value="DOC_STA_MAX_MSG_NO" title="Max. Number of Msgs.">
+
+ <!-- BEGIN CUSTOMIZATION -->
+ </div>
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1EXCEP_REP_FILE_NM" title="Exception Report File Name">Exception Report File Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1EXCEP_REP_FILE_NM" id="txtT1EXCEP_REP_FILE_NM"
+               size="20"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="EXCEP_REP_FILE_NM"
+         ams_max_len="64"
+ ShowCodeInfo="" value="EXCEP_REP_FILE_NM" title="Exception Report File Name">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1EXP_SEV_FL" title="Exception Severity Flag?">Exception Severity Flag? :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1EXP_SEV_FL" id="txtT1EXP_SEV_FL" value="EXP_SEV_FL" vsds="T1IN_SYS_MAN_PARM" vsdf="EXP_SEV_FL" title="Exception Severity Flag?">
+        </td>
+      </tr>
+                </table></td></tr></table></div></fieldset>
+
+
+<!--BEGIN CUSTOMIZATION -->
+</div>
+<div id="ADVRestartInfo">
+<!--END CUSTOMIZATION -->
+                <br><br><a name="T1IN_SYS_MAN_PARM_Section5_Top"></a><fieldset class="advscalar section">
+                <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1IN_SYS_MAN_PARM_Section5','T1IN_SYS_MAN_PARM_Section5_Button');" title="Expand/Collapse Restart Information"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1IN_SYS_MAN_PARM_Section5_Button"> Restart Information</a></legend>
+                <div id="T1IN_SYS_MAN_PARM_Section5" class="advsection">
+                <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1RESTART_FL" title="Save Restart Info?">Save Restart Info? :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1RESTART_FL" id="txtT1RESTART_FL" value="RESTART_FL" vsds="T1IN_SYS_MAN_PARM" vsdf="RESTART_FL" title="Save Restart Info?">
+        </td>
+      </tr>
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1COMMIT_BLOCK" title="Commit Block Size">Commit Block Size :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1COMMIT_BLOCK" id="txtT1COMMIT_BLOCK"
+                  size="15"
+ vsds="T1IN_SYS_MAN_PARM" vsdf="COMMIT_BLOCK"
+                  ams_max_len="20"
+ ShowCodeInfo="" value="COMMIT_BLOCK" title="Commit Block Size">
+        </td>
+      </tr>
+
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+<!--BEGIN CUSTOMIZATION -->
+</div>
+<!--END CUSTOMIZATION -->
+
+  <table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T1IN_SYS_MAN_PARM_Top');">Top</a></td></tr></table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+  <table class="advokcancel">
+    <tr>
+      <td>
+
+<input class="advbutton" type="submit" vsaction="ok" name="OK" value="OK" id="OK" title="OK">
+
+<input class="advbutton" type="submit" vsaction="cancel" name="Cancel" value="Cancel" id="Cancel" title="Cancel">
+      </td>
+    </tr>
+  </table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+<a href="Reports_Sys_Admin_App" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

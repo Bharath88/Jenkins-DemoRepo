@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Business Function Properties</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="ConfigBFPropertyPage">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Business Function Properties">Business Function Properties</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+  <INPUT type="hidden" name="T1IN_BFvscurrency" vsds="T1IN_BF" vscurrency="true">
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Advantage" vsds="T1IN_BF" vsaction="saveall" name="T1IN_BFSaveAll" id="T1IN_BFSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Advantage" vsds="T1IN_BF" vsaction="undoall" name="T1IN_BFUndoAll" id="T1IN_BFUndoAll" title="Undo All" accesskey="6">Undo</a>
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<a href="Advantage" vsds="T1IN_BF" vsaction="delete" id="IndexT1IN_BFdelete" name="T1IN_BFdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="Advantage" vsds="T1IN_BF" vsaction="insert" id="T1IN_BFinsert" name="T1IN_BFinsert" title="Insert New Record" accesskey="I">Insert</a>
+-->
+<!-- END CUSTOMIZATION -->
+</ams_map>
+      </td>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="Advantage" vsds="T1IN_BF" vsaction="first" name="T1IN_BFfirst" id="T1IN_BFfirst" title="First Record" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T1IN_BF" vsaction="prev" name="T1IN_BFprev" id="T1IN_BFprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T1IN_BF" vsaction="next" name="T1IN_BFnext" id="T1IN_BFnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T1IN_BF" vsaction="last" name="T1IN_BFlast" id="T1IN_BFlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+-->
+<!-- END CUSTOMIZATION -->
+
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1BF_NM" title="Name (Required)">Name :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1BF_NM" id="txtT1BF_NM"
+               size="20"
+ vsds="T1IN_BF" vsdf="BF_NM"
+         ams_max_len="50"
+ ShowCodeInfo="" value="BF_NM"title="Name (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1BF_DESC" title="Description">Description :</label></td>
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1BF_DESC" id="txtT1BF_DESC" vsds="T1IN_BF" vsdf="BF_DESC"
+ title="Description"></textarea>
+        </td>
+      </tr>
+
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1TMPL_NM" title="Default Name">Default Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1TMPL_NM" id="txtT1TMPL_NM"
+            size="20"
+ vsds="T1IN_BF" vsdf="TMPL_NM"
+ value="TMPL_NM" ams_readonly ShowCodeInfo="" title="Default Name">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1TMPL_DESC" title="Default Description">Default Description :</label></td>
+        <td class="val memo">
+          <textarea ams_readonly cols="35" rows="4" name="txtT1TMPL_DESC" id="txtT1TMPL_DESC" vsds="T1IN_BF" vsdf="TMPL_DESC"
+ title="Default Description"></textarea>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+
+
+  <input type="hidden" name="T2IN_BF_ITEM_Currency" value="">
+  <input type="hidden" name="T2IN_BF_ITEM_Old_Currency" value="">
+  <table name="tblT2IN_BF_ITEM" id="tblT2IN_BF_ITEM" class="advgrid" vsds="T2IN_BF_ITEM">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T2BF_ITEM_NMsortGridLabel" name="T2BF_ITEM_NMsortGridLabel" title="Name">Name</span></th>
+
+        <th
+><span id="T2PAGE_TYP_CDsortGridLabel" name="T2PAGE_TYP_CDsortGridLabel" title="Page Type">Page Type</span></th>
+
+        <th
+><span id="T2PAGE_CDsortGridLabel" name="T2PAGE_CDsortGridLabel" title="Page Code">Page Code</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T2IN_BF_ITEMvscurrency" id="T2IN_BF_ITEMvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T2IN_BF_ITEM" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT2BF_ITEM_NM" vsds="T2IN_BF_ITEM" vsdf="BF_ITEM_NM"
+>
+        </td>
+
+        <td
+>
+          <vstext vsds="T2IN_BF_ITEM" vsdf="PAGE_TYP_CD" vscodetable="IN_PAGE_TYP">
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT2PAGE_CD" vsds="T2IN_BF_ITEM" vsdf="PAGE_CD"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+    <td><ams_map title="Update Actions" name="Update Actions">
+<a href="Advantage" vsds="T2IN_BF_ITEM" vsaction="delete" id="T2IN_BF_ITEMdelete" name="T2IN_BF_ITEMdelete" title="Delete Selected Row" accesskey="7">Delete</a>
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<a href="Advantage" vsds="T2IN_BF_ITEM" vsaction="insert" id="T2IN_BF_ITEMinsert" name="T2IN_BF_ITEMinsert" title="Insert New Row" accesskey="I">Insert</a>
+-->
+<a href="Advantage" vsds="T2IN_BF_ITEM" vsaction="18" id="T2IN_BF_ITEMinsert" name="T2IN_BF_ITEMinsert" title="Insert New Row" accesskey="I">Insert</a>
+<!-- END CUSTOMIZATION -->
+    </ams_map></td>
+
+  <td><ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="Advantage" vsds="T2IN_BF_ITEM" vsaction="11" name="T2IN_BF_ITEMCopyLine" id="T2IN_BF_ITEMCopyLine" title="Copy Selected Row" accesskey="C">Copy</a>
+<a href="Advantage" vsds="T2IN_BF_ITEM" vsaction="12" name="T2IN_BF_ITEMPasteLine" id="T2IN_BF_ITEMPasteLine" title="Paste Copied Row" accesskey="8">Paste</a>
+  </ams_map></td>
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<a href="Advantage" vsds="T2IN_BF_ITEM" vsaction="firstpage" name="T2IN_BF_ITEMfirstpage" id="T2IN_BF_ITEMfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T2IN_BF_ITEM" vsaction="prevpage" name="T2IN_BF_ITEMprevpage" id="T2IN_BF_ITEMprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T2IN_BF_ITEM" vsaction="nextpage" id="T2IN_BF_ITEMnextpage" name="T2IN_BF_ITEMnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T2IN_BF_ITEM" vsaction="lastpage" id="T2IN_BF_ITEMlastpage" name="T2IN_BF_ITEMlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+-->
+<a href="Advantage" vsds="T2IN_BF_ITEM" vsaction="20" name="T2IN_BF_ITEMMoveTop" id="T2IN_BF_ITEMMoveTop" title="Move Top" accesskey="0">Top</a>
+
+<a href="Advantage" vsds="T2IN_BF_ITEM" vsaction="21" name="T2IN_BF_ITEMMoveUp" id="T2IN_BF_ITEMMoveUp" title="Move Up" accesskey="1">Up</a>
+
+<a href="Advantage" vsds="T2IN_BF_ITEM" vsaction="22" name="T2IN_BF_ITEMMoveDown" id="T2IN_BF_ITEMMoveDown" title="Move Down" accesskey="2">Down</a>
+
+<a href="Advantage" vsds="T2IN_BF_ITEM" vsaction="24" name="T2IN_BF_ITEMMoveBottom" id="T2IN_BF_ITEMMoveBottom" title="Move Bottom" accesskey="3">Bottom</a>
+<!-- END CUSTOMIZATION -->
+</ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T2IN_BF_ITEM', new Array(), new Array() ) ;
+
+  -->
+  </script>
+
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

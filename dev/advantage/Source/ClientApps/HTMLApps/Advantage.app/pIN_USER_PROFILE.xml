@@ -1,0 +1,481 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="Default"
+	PositionTop="342"
+	PositionLeft="342"
+	PositionWidth="148"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSOtherPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-961373898"
+	>
+	<FormCaption><![CDATA[User Profile]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="true"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="IN_USER_PROFILE"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="Display"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="USER_ID" />
+				<RSDefaultAttribute ID="2" Name="USE_DFLT_HMPG_WINS" />
+				<RSDefaultAttribute ID="3" Name="DFLT_WKGP" />
+				<RSDefaultAttribute ID="4" Name="RD_CHG_DT" />
+				<RSDefaultAttribute ID="5" Name="UPD_CHG_DT" />
+				<RSDefaultAttribute ID="6" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="7" Name="RD_BRDCST_DT" />
+				<RSDefaultAttribute ID="8" Name="USER_ID_UP" />
+				<RSDefaultAttribute ID="9" Name="TBL_LAST_DT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="USER_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="USE_DFLT_HMPG_WINS" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DFLT_WKGP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="RD_CHG_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="UPD_CHG_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RD_BRDCST_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="USER_ID_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+			</ScalerAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value=""
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+		</ArchetypeExtendedProperties>
+		<RecordSource
+			RSID="2"
+			Prefix="T2"
+			BusinessObject="qUSER_WKGP_QRY"
+			Relationship="IN_USER_PROFILE1(IN_USER_PROFILE)-IN_USER_WKGPs(IN_USER_WKGP)"
+			RelnIsFromParent="True"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+			RecordSourceArchetype="AMSGridEditable"
+			MaxGridRowCount="10"
+			FetchedBlockRowCount="16"
+			AllowDelete="True"
+			AllowInsert="True"
+			AllowUpdate="True"
+			SaveMode="Buffered"
+			PreFetchRowCount="False"
+			ParentAlias="IN_USER_WKGP"
+			>
+			<ParameterizedWhereClause><![CDATA[ [USER_ID] = [?USER_ID]]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="USER_ID" />
+					<RSDefaultAttribute ID="2" Name="WKGP_UNID" />
+					<RSDefaultAttribute ID="3" Name="WKGP_UNID_1" />
+					<RSDefaultAttribute ID="4" Name="WKGP_NM" />
+					<RSDefaultAttribute ID="5" Name="WKGP_DESC" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="USER_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="WKGP_UNID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="WKGP_UNID_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="WKGP_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="WKGP_DESC" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="WKGP_UNID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="WKGP_NM" Displayed="True" UnPlaced="False" Archetype="GridDisplayOnly" />
+					<RSAttribute Name="WKGP_DESC" Displayed="True" UnPlaced="False" Archetype="GridDisplayOnly" />
+					<RSAttribute Name="USER_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="WKGP_UNID_1" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ArchetypeExtendedProperties>
+				<Property
+					Name="Action_1_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_1_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_2_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_3_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_4_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_5_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="DetailsCaption"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileType"
+					Value="none"
+				/>
+				<Property
+					Name="GridDownloadFileType"
+					Value="none"
+				/>
+				<Property
+					Name="New_Column_Fields"
+					Value=""
+				/>
+				<Property
+					Name="ObjectAttachmentMode"
+					Value="Editable"
+				/>
+				<Property
+					Name="ObjectAttachments"
+					Value="false"
+				/>
+				<Property
+					Name="showCopyPaste"
+					Value="true"
+				/>
+				<Property
+					Name="TimelineData"
+					Value="false"
+				/>
+				<Property
+					Name="UploadFileType"
+					Value="none"
+				/>
+			</ArchetypeExtendedProperties>
+			<PickObject
+				RSID="3"
+				Prefix="T3"
+				BusinessObject="IN_WKGP"
+				Relationship="IN_WKGP2(IN_WKGP)-IN_USER_WKGPs1(IN_USER_WKGP)"
+				RelnIsFromParent="False"
+				DoesSourceAffectMe="False"
+				DoIAffectSource="False"
+				IsAddedAfterGen="False"
+				RsAttributesDefault="True"
+				ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+				OnScreenPick="False"
+				>
+				<FKeyParamsClause><![CDATA[ [WKGP_UNID] = [?WKGP_UNID]]]></FKeyParamsClause>
+				<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+				<OrderByClause><![CDATA[ ]]></OrderByClause>
+				<RSAttributesMeta>
+					<DefaultAttributes>
+						<RSDefaultAttribute ID="1" Name="WKGP_UNID" />
+						<RSDefaultAttribute ID="2" Name="WKGP_NM" />
+						<RSDefaultAttribute ID="3" Name="WKGP_DESC" />
+						<RSDefaultAttribute ID="4" Name="AMS_ROW_VERS_NO" />
+						<RSDefaultAttribute ID="5" Name="WKGP_NM_UP" />
+						<RSDefaultAttribute ID="6" Name="TBL_LAST_DT" />
+					</DefaultAttributes>
+					<GridAttributes>
+						<RSAttribute Name="WKGP_UNID" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="WKGP_NM" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="WKGP_DESC" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="WKGP_NM_UP" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					</GridAttributes>
+				</RSAttributesMeta>
+				<ExtendedProperties>
+					<Property
+						Name="DataSource"
+						Value=""
+					/>
+					<Property
+						Name="DisableAutoPickFilter"
+						Value=""
+					/>
+					<Property
+						Name="ScalarColList"
+						Value="&quot;WKGP_UNID,WKGP_NM_UP&quot;"
+					/>
+					<Property
+						Name="StoreMultiRowsInSingleCol"
+						Value=""
+					/>
+					<Property
+						Name="TimelinePick"
+						Value=""
+					/>
+				</ExtendedProperties>
+			</PickObject>
+		</RecordSource>
+	</RecordSource>
+</Form>

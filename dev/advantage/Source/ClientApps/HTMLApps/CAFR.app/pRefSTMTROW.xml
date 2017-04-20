@@ -1,0 +1,755 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="AMSRefTableGridDisplay"
+	PositionTop="151"
+	PositionLeft="0"
+	PositionWidth="150"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSRefTableGridDisplayPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-750040149"
+	>
+	<FormCaption><![CDATA[Statement Rows]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="true"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+		<Property
+			Name="SSCaptionImageFileNm"
+			Value=""
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="AddBackLink"
+			Value=""
+		/>
+		<Property
+			Name="ADVDTDType"
+			Value=""
+		/>
+		<Property
+			Name="ADVUIType"
+			Value=""
+		/>
+		<Property
+			Name="AjaxHandler"
+			Value=""
+		/>
+		<Property
+			Name="AttachmentTypeOptions"
+			Value=""
+		/>
+		<Property
+			Name="AttachmentTypes"
+			Value=""
+		/>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="DivMapToGen"
+			Value=""
+		/>
+		<Property
+			Name="DivToGenAction"
+			Value=""
+		/>
+		<Property
+			Name="EditMode"
+			Value=""
+		/>
+		<Property
+			Name="ErrorsFromPage"
+			Value=""
+		/>
+		<Property
+			Name="ExcludeCopyPasteAttributes"
+			Value=""
+		/>
+		<Property
+			Name="IsSearchMenuButton"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="PageCode"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="SearchDS"
+			Value=""
+		/>
+		<Property
+			Name="SearchPopupOnload"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="rs01"
+		BusinessObject="STMT_DEF"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGenericGridDisplay"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="20" Name="STMT_FY" />
+				<RSDefaultAttribute ID="15" Name="STMT_CD" />
+				<RSDefaultAttribute ID="24" Name="STMT_NM" />
+				<RSDefaultAttribute ID="21" Name="STMT_DSCR" />
+				<RSDefaultAttribute ID="6" Name="RUN_IMMEDIATE" />
+				<RSDefaultAttribute ID="25" Name="XWLK_ACT_FL" />
+				<RSDefaultAttribute ID="26" Name="ACT_FL" />
+				<RSDefaultAttribute ID="18" Name="STMT_TYPE" />
+				<RSDefaultAttribute ID="8" Name="LAST_REFRESH_DT" />
+				<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+				<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				<RSDefaultAttribute ID="22" Name="STMT_NM_UP" />
+				<RSDefaultAttribute ID="23" Name="STMT_DSCR_UP" />
+				<RSDefaultAttribute ID="27" Name="TBL_LAST_DT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="RUN_IMMEDIATE" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LAST_REFRESH_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="STMT_FY" Displayed="True" UnPlaced="False" Archetype="AMSUpperCaseTextBox" />
+				<RSAttribute Name="STMT_CD" Displayed="True" UnPlaced="False" Archetype="AMSUpperCaseTextBox" />
+				<RSAttribute Name="STMT_TYPE" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="STMT_DSCR" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="STMT_NM_UP" Displayed="True" UnPlaced="False" Archetype="AMSUpperCaseTextBox" />
+				<RSAttribute Name="STMT_DSCR_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="STMT_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="XWLK_ACT_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ACT_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="RUN_IMMEDIATE" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LAST_REFRESH_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="STMT_FY" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="STMT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="STMT_TYPE" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="STMT_DSCR" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="STMT_NM_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="STMT_DSCR_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="STMT_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="XWLK_ACT_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ACT_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxCSVRowsBeforeZip"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="DynamicGridAttrib"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCount"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCountMsg"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="OverrideNumRowsPerPage"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value="&quot;STMT_FY,STMT_CD,STMT_NM_UP&quot;"
+			/>
+			<Property
+				Name="ShowSearchPopup"
+				Value="true"
+			/>
+			<Property
+				Name="UseDBHint"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Adjacent_Fields"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value=""
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="SummaryCaption"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+		<RecordSource
+			RSID="2"
+			Prefix="rs02"
+			BusinessObject="STMT_ROW"
+			Relationship="StmtRowToStmtDef(STMT_DEF)-StmtDefToStmtRow(STMT_ROW)"
+			RelnIsFromParent="True"
+			DoesSourceAffectMe="True"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+			RecordSourceArchetype="AMSGridEditable"
+			MaxGridRowCount="10"
+			FetchedBlockRowCount="16"
+			AllowDelete="True"
+			AllowInsert="True"
+			AllowUpdate="True"
+			SaveMode="Buffered"
+			PreFetchRowCount="False"
+			ParentAlias=""
+			ChildAlias=""
+			>
+			<ParameterizedWhereClause><![CDATA[ [STMT_FY] = [?STMT_FY] and [STMT_CD] = [?STMT_CD]]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ SEQ_NO]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="13" Name="STMT_FY" />
+					<RSDefaultAttribute ID="10" Name="STMT_CD" />
+					<RSDefaultAttribute ID="18" Name="STMT_NM" />
+					<RSDefaultAttribute ID="3" Name="STMT_ROW" />
+					<RSDefaultAttribute ID="5" Name="ROW_TITLE" />
+					<RSDefaultAttribute ID="4" Name="ROW_LEVEL" />
+					<RSDefaultAttribute ID="17" Name="ROW_TYPE" />
+					<RSDefaultAttribute ID="16" Name="SEQ_NO" />
+					<RSDefaultAttribute ID="6" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="7" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="8" Name="LAST_UPDATE_USERID" />
+					<RSDefaultAttribute ID="12" Name="ROW_TITLE_UP" />
+					<RSDefaultAttribute ID="19" Name="STMT_NM_UP" />
+					<RSDefaultAttribute ID="20" Name="TBL_LAST_DT" />
+				</DefaultAttributes>
+				<GridAttributes>
+					<RSAttribute Name="STMT_ROW" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="ROW_TITLE" Displayed="True" UnPlaced="False" Archetype="AMSGridTextBoxLong" />
+					<RSAttribute Name="ROW_LEVEL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="STMT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="STMT_FY" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ROW_TITLE_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ROW_TYPE" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SEQ_NO" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="STMT_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="STMT_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="ColumnProjectionLevel"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileName"
+					Value=""
+				/>
+				<Property
+					Name="DownloadMaxCSVRowsBeforeZip"
+					Value=""
+				/>
+				<Property
+					Name="DownloadMaxRows"
+					Value=""
+				/>
+				<Property
+					Name="DownloadProperties"
+					Value=""
+				/>
+				<Property
+					Name="DownloadTemplate"
+					Value=""
+				/>
+				<Property
+					Name="DynamicGridAttrib"
+					Value=""
+				/>
+				<Property
+					Name="maintenanceString"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCount"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCountMsg"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageEndWith"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageStartWith"
+					Value=""
+				/>
+				<Property
+					Name="MultiTableCurrentRow"
+					Value=""
+				/>
+				<Property
+					Name="OverrideNumRowsPerPage"
+					Value=""
+				/>
+				<Property
+					Name="PreFetchRowCount"
+					Value=""
+				/>
+				<Property
+					Name="SearchColList"
+					Value="&quot;STMT_ROW,ROW_TITLE_UP,ROW_LEVEL,ROW_TYPE,SEQ_NO&quot;"
+				/>
+				<Property
+					Name="ShowSearchPopup"
+					Value="true"
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+				<Property
+					Name="VirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="ZoomDataSource"
+					Value=""
+				/>
+			</ExtendedProperties>
+			<ArchetypeExtendedProperties>
+				<Property
+					Name="Action_1_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_1_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_1_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_2_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_2_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_3_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_3_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_4_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_4_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_5_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_5_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="DetailsCaption"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileType"
+					Value="none"
+				/>
+				<Property
+					Name="GridDownloadFileType"
+					Value="none"
+				/>
+				<Property
+					Name="New_Column_Fields"
+					Value=""
+				/>
+				<Property
+					Name="ObjectAttachmentMode"
+					Value="Editable"
+				/>
+				<Property
+					Name="ObjectAttachments"
+					Value="false"
+				/>
+				<Property
+					Name="showCopyPaste"
+					Value="true"
+				/>
+				<Property
+					Name="TimelineData"
+					Value="false"
+				/>
+				<Property
+					Name="UploadFileType"
+					Value="none"
+				/>
+			</ArchetypeExtendedProperties>
+			<Transition
+				FormTransNum="1"
+				Prefix="T1"
+				TargetFormName="pRefSTMTDEF"
+				IsTargetInitialQueryMode="False"
+				IsTargetInitialAddMode="False"
+				IsVisibleAppline="True"
+				IsAddedAfterGen="False"
+				FormTransCaption=" "
+				ClassName="PageNavigation"
+				TargetFramesetPage=""
+				TargetFrame=""
+				FrameNameInFramesetPage=""
+				RSID="4"
+				BusinessObject="STMT_DEF"
+				Relationship="StmtRowToStmtDef(STMT_DEF)-StmtDefToStmtRow(STMT_ROW)"
+				RelnIsFromParent="False"
+				>
+				<OrderByClause><![CDATA[ ]]></OrderByClause>
+				<ParameterizedWhereClause><![CDATA[ [STMT_FY] = [?STMT_FY] and [STMT_CD] = [?STMT_CD]]]></ParameterizedWhereClause>
+				<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			</Transition>
+		</RecordSource>
+	</RecordSource>
+</Form>

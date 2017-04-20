@@ -1,0 +1,452 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Notification Destination</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="pR_NOTIF_DEST">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Notification Destination">Notification Destination</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="Advantage" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+
+  <a name="T1R_NOTIF_DEST_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1R_NOTIF_DEST_Currency" >
+  <input type="hidden" name="T1R_NOTIF_DEST_Old_Currency" >
+  <table name="tblT1R_NOTIF_DEST" id="tblT1R_NOTIF_DEST" class="advgrid" vsds="T1R_NOTIF_DEST">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1R_NOTIF_DEST" 
+    vsdf="PROFILE_ID"
+ name="T1PROFILE_IDsort" id="T1PROFILE_IDsort" title="Sort By Profile ID">Profile ID</a></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1R_NOTIF_DEST" 
+    vsdf="PROVIDER_ID"
+ name="T1PROVIDER_IDsort" id="T1PROVIDER_IDsort" title="Sort By Provider ID">Provider ID</a></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1R_NOTIF_DEST" 
+    vsdf="DEST_ID"
+ name="T1DEST_IDsort" id="T1DEST_IDsort" title="Sort By Destination ID">Destination ID</a></th>
+      
+        <th 
+><span id="T1DEST_NMsortGridLabel" name="T1DEST_NMsortGridLabel" vsdf="DEST_NM" title="Destination Name">Destination Name</span></th>
+      
+        <th 
+><span id="T1DEST_TYPEsortGridLabel" name="T1DEST_TYPEsortGridLabel" vsdf="DEST_TYPE" title="Destination Type">Destination Type</span></th>
+      
+        <th 
+><span id="T1DEST_ADDRsortGridLabel" name="T1DEST_ADDRsortGridLabel" vsdf="DEST_ADDR" title="Destination">Destination</span></th>
+      
+        <th 
+><span id="T1USER_IDsortGridLabel" name="T1USER_IDsortGridLabel" vsdf="USER_ID" title="User ID">User ID</span></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1R_NOTIF_DEST" 
+    vsdf="DEPT_CD"
+ name="T1DEPT_CDsort" id="T1DEPT_CDsort" title="Sort By Department">Department</a></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1R_NOTIF_DEST" 
+    vsdf="UNIT_CD"
+ name="T1UNIT_CDsort" id="T1UNIT_CDsort" title="Sort By Unit">Unit</a></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr class="advgridoddrow" onclick="UTILS_SelectGridRow(this);return true;" ams_altclassname="advgridevenrow" vsprototyperow="true">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_NOTIF_DESTvscurrency" id="T1R_NOTIF_DESTvscurrency" title="Select Row" alt="Select Row" src="../AMSImages/ADVRowSel.gif"
+ vsds="T1R_NOTIF_DEST" vsaction="Currency">
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1PROFILE_ID" vsds="T1R_NOTIF_DEST" vsdf="PROFILE_ID" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1PROVIDER_ID" vsds="T1R_NOTIF_DEST" vsdf="PROVIDER_ID" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1DEST_ID" vsds="T1R_NOTIF_DEST" vsdf="DEST_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DEST_NM" vsds="T1R_NOTIF_DEST" vsdf="DEST_NM" 
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1R_NOTIF_DEST" vsdf="DEST_TYPE" vscodetable="CVL_DEST_TYPE">
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DEST_ADDR" vsds="T1R_NOTIF_DEST" vsdf="DEST_ADDR" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1USER_ID" vsds="T1R_NOTIF_DEST" vsdf="USER_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DEPT_CD" vsds="T1R_NOTIF_DEST" vsdf="DEPT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1UNIT_CD" vsds="T1R_NOTIF_DEST" vsdf="UNIT_CD" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="T1R_NOTIF_DESTGridNav" id="T1R_NOTIF_DESTGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="Advantage" vsds="T1R_NOTIF_DEST" vsaction="firstpage" name="T1R_NOTIF_DESTfirstpage" id="T1R_NOTIF_DESTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="Advantage" vsds="T1R_NOTIF_DEST" vsaction="prevpage" name="T1R_NOTIF_DESTprevpage" id="T1R_NOTIF_DESTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="Advantage" vsds="T1R_NOTIF_DEST" vsaction="nextpage" id="T1R_NOTIF_DESTnextpage" name="T1R_NOTIF_DESTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="Advantage" vsds="T1R_NOTIF_DEST" vsaction="lastpage" id="T1R_NOTIF_DESTlastpage" name="T1R_NOTIF_DESTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+
+  
+  
+
+  
+      <table class="advaction recsrc">
+        <tr>
+      
+         <td>
+<ams_map title="Update Actions" name="Update Actions">
+   
+         <a href="Advantage" vsds="T1R_NOTIF_DEST" vsaction="saveall" name="T1R_NOTIF_DESTSaveAll" id="T1R_NOTIF_DESTSaveAll" title="Save All" accesskey="5">Save</a>
+   
+		  <a href="Advantage" vsds="T1R_NOTIF_DEST" vsaction="undoall" name="T1R_NOTIF_DESTUndoAll" id="T1R_NOTIF_DESTUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+		  <a href="Advantage" vsds="T1R_NOTIF_DEST" vsaction="delete" id="IndexT1R_NOTIF_DESTdelete" name="T1R_NOTIF_DESTdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="Advantage" vsds="T1R_NOTIF_DEST" vsaction="insert" id="T1R_NOTIF_DESTinsert" name="T1R_NOTIF_DESTinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="Advantage" vsds="T1R_NOTIF_DEST" vsaction="11" name="T1R_NOTIF_DESTCopyRecord" id="T1R_NOTIF_DESTCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="Advantage" vsds="T1R_NOTIF_DEST" vsaction="12" name="T1R_NOTIF_DESTPasteLine" id="T1R_NOTIF_DESTPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+
+   
+      <td><vstext vsds=" " name="T1R_NOTIF_DESTSearchColList" vspreservetag="true"></td>
+
+   
+      <td><ams_map title="Section Controls" name="Section Controls">
+      
+  <a href="javascript:
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+      
+  <a href="javascript:
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+    
+        </tr>
+      </table>
+
+  <fieldset class="advscalar">
+    <div class="advpresection">
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+          
+  
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1PROFILE_ID" title="Profile ID">Profile ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1PROFILE_ID" id="txtT1PROFILE_ID" 
+      ams_max_len="10"
+ value="PROFILE_ID" 
+            size="15"
+ vsds="T1R_NOTIF_DEST" vsdf="PROFILE_ID" ShowCodeInfo="" title="Profile ID">
+          
+      <input type="image" vspick="T2R_NOTIF_PROFILE" vspicktext="txtT1PROFILE_ID" vsds="T1R_NOTIF_DEST" vsaction="pick" name="pckT1PROFILE_ID" id="pckT1PROFILE_ID" title="Select Profile ID" alt="Select Profile ID" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1PROVIDER_ID" title="Provider ID">Provider ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1PROVIDER_ID" id="txtT1PROVIDER_ID" 
+               ams_max_len="20"
+ value="PROVIDER_ID" 
+               size="15"
+ vsds="T1R_NOTIF_DEST" vsdf="PROVIDER_ID" ShowCodeInfo="" title="Provider ID">
+          
+      <input type="image" vspick="T3R_NOTIF_PROVIDER" vspicktext="txtT1PROVIDER_ID" vsds="T1R_NOTIF_DEST" vsaction="pick" name="pckT1PROVIDER_ID" id="pckT1PROVIDER_ID" title="Select Provider ID" alt="Select Provider ID" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+       
+        <tr>
+        
+      
+      <td class="label"><label for="txtT1DEST_NM" title="Destination Name">Destination Name :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1DEST_NM" id="txtT1DEST_NM" 
+               size="20"
+ vsds="T1R_NOTIF_DEST" vsdf="DEST_NM" 
+         ams_max_len="50"
+ ShowCodeInfo="" value="DEST_NM" title="Destination Name" >
+
+        
+
+        </td>
+        </tr>
+    
+    
+        
+      <tr>
+      
+      <td class="label"><label for="txtT1DEST_TYPE" title="Destination Type">Destination Type :</label></td>
+   
+        <td class="val">
+          <select name="txtT1DEST_TYPE" id="txtT1DEST_TYPE" vsds="T1R_NOTIF_DEST" vsdf="DEST_TYPE" size="1" vscodetable="CVL_DEST_TYPE" ShowCodeInfo="" title="Destination Type">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DEST_ADDR" title="Destination">Destination :</label></td>
+   
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1DEST_ADDR" id="txtT1DEST_ADDR" vsds="T1R_NOTIF_DEST" vsdf="DEST_ADDR" 
+ title="Destination"></textarea>
+        </td>
+      </tr>
+    
+       
+        <tr>
+        
+      
+      <td class="label"><label for="txtT1USER_ID" title="User ID">User ID :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1USER_ID" id="txtT1USER_ID" 
+               size="20"
+ vsds="T1R_NOTIF_DEST" vsdf="USER_ID" 
+         ams_max_len="16"
+ ShowCodeInfo="" value="USER_ID" title="User ID" >
+
+        
+
+        </td>
+        </tr>
+    
+    
+       
+        <tr>
+        
+      
+      <td class="label"><label for="txtT1DEPT_CD" title="Department">Department :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1DEPT_CD" id="txtT1DEPT_CD" 
+            size="6"
+ vsds="T1R_NOTIF_DEST" vsdf="DEPT_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="DEPT_CD" title="Department" >
+
+        
+
+        </td>
+        </tr>
+    
+    
+       
+        <tr>
+        
+      
+      <td class="label"><label for="txtT1UNIT_CD" title="Unit">Unit :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1UNIT_CD" id="txtT1UNIT_CD" 
+            size="6"
+ vsds="T1R_NOTIF_DEST" vsdf="UNIT_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="UNIT_CD" title="Unit" >
+
+        
+
+        </td>
+        </tr>
+    
+    
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+  
+      <br><br><table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T1R_NOTIF_DEST_Top');" title="Go To Top">Top</a></td></tr></table>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_NOTIF_DEST', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'PROFILE_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Profile ID' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'PROVIDER_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Provider ID' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'DEST_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Destination ID' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'DEPT_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Department' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'UNIT_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Unit' ;
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<a name="btnT4pR_NOTIF_PROFILE" href="Advantage" id="btnT4pR_NOTIF_PROFILE" title="Navigation to Notification Profile" vsaction="pagetransition" 
+           vsds=""
+ vsnavigation="T4pR_NOTIF_PROFILE">Notification Profile</a>
+<a name="btnT5pR_NOTIF_PROVIDER" href="Advantage" id="btnT5pR_NOTIF_PROVIDER" title="Navigation to Notification Provider" vsaction="pagetransition" 
+           vsds=""
+ vsnavigation="T5pR_NOTIF_PROVIDER">Notification Provider</a>
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

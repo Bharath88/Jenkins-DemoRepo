@@ -1,0 +1,597 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Security Role User Grants</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="SecurityAdmin" method="post" vsform="true" name="pRoleUserLink">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Security Role User Grants">Security Role User Grants</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="SecurityAdmin" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+
+
+
+  <INPUT type="hidden" name="T1R_SC_SEC_ROLEvscurrency" vsds="T1R_SC_SEC_ROLE" vscurrency="true">
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+</ams_map>
+      </td>
+
+<td><vstext vsds=" " name="T1R_SC_SEC_ROLESearchColList" vspreservetag="true"></td>
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="SecurityAdmin" vsds="T1R_SC_SEC_ROLE" vsaction="first" name="T1R_SC_SEC_ROLEfirst" id="T1R_SC_SEC_ROLEfirst" title="First Record" accesskey="0">First</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_SEC_ROLE" vsaction="prev" name="T1R_SC_SEC_ROLEprev" id="T1R_SC_SEC_ROLEprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_SEC_ROLE" vsaction="next" name="T1R_SC_SEC_ROLEnext" id="T1R_SC_SEC_ROLEnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_SEC_ROLE" vsaction="last" name="T1R_SC_SEC_ROLElast" id="T1R_SC_SEC_ROLElast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1SEC_ROLE_ID" title="Security Role ID">Security Role ID :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1SEC_ROLE_ID" id="txtT1SEC_ROLE_ID"
+               size="20"
+ vsds="T1R_SC_SEC_ROLE" vsdf="SEC_ROLE_ID"
+         ams_max_len="16"
+ ShowCodeInfo="" value="SEC_ROLE_ID" title="Security Role ID">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1SEC_ROLE_DSCR" title="Description">Description :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1SEC_ROLE_DSCR" id="txtT1SEC_ROLE_DSCR"
+               size="20"
+ vsds="T1R_SC_SEC_ROLE" vsdf="SEC_ROLE_DSCR"
+         ams_max_len="50"
+ ShowCodeInfo="" value="SEC_ROLE_DSCR" title="Description">
+        </td>
+      </tr>
+
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT1SEC_ROLE_DSCR_UP" id="txtT1SEC_ROLE_DSCR_UP"
+               size="20"
+           vsds="T1R_SC_SEC_ROLE" vsdf="SEC_ROLE_DSCR_UP"
+         ams_max_len="50"
+           ShowCodeInfo=""
+           value="SEC_ROLE_DSCR_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+<a name="btnT4pR_SC_SEC_ROLE" href="SecurityAdmin" id="btnT4pR_SC_SEC_ROLE" title="Navigation to Role Information" vsaction="pagetransition"
+           vsds="T1R_SC_SEC_ROLE"
+ vsnavigation="T4pR_SC_SEC_ROLE">Role Information</a>
+<a name="btnT7pR_SC_RSRC_ACCS" href="SecurityAdmin" id="btnT7pR_SC_RSRC_ACCS" title="Navigation to Access Control" vsaction="pagetransition"
+           vsds="T1R_SC_SEC_ROLE"
+ vsnavigation="T7pR_SC_RSRC_ACCS">Access Control</a>
+      </td>
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION -->
+  <table><tr><td class="advscalarcol">
+<!-- END CUSTOMIZATION -->
+  <a name="T2R_SC_USER_ROLE_LNK_Top"></a>
+
+
+    <h2 class="advrecsrctitle summary">Current Users</h2>
+
+  <input type="hidden" name="T2R_SC_USER_ROLE_LNK_Currency" value="">
+  <input type="hidden" name="T2R_SC_USER_ROLE_LNK_Old_Currency" value="">
+  <table name="tblT2R_SC_USER_ROLE_LNK" id="tblT2R_SC_USER_ROLE_LNK" class="advgrid" vsds="T2R_SC_USER_ROLE_LNK">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><a href="SecurityAdmin" vsaction="sort" vsds="T2R_SC_USER_ROLE_LNK"
+    vsdf="USER_ID_UP"
+ name="T2USER_IDsort" id="T2USER_IDsort" title="Sort By User ID">User ID</a></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T2R_SC_USER_ROLE_LNKvscurrency" id="T2R_SC_USER_ROLE_LNKvscurrency" title="Select Row" alt="Select Row" vsds="T2R_SC_USER_ROLE_LNK" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT2USER_ID" vsds="T2R_SC_USER_ROLE_LNK" vsdf="USER_ID"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="SecurityAdmin" vsds="T2R_SC_USER_ROLE_LNK" vsaction="firstpage" name="T2R_SC_USER_ROLE_LNKfirstpage" id="T2R_SC_USER_ROLE_LNKfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="SecurityAdmin" vsds="T2R_SC_USER_ROLE_LNK" vsaction="prevpage" name="T2R_SC_USER_ROLE_LNKprevpage" id="T2R_SC_USER_ROLE_LNKprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="SecurityAdmin" vsds="T2R_SC_USER_ROLE_LNK" vsaction="nextpage" id="T2R_SC_USER_ROLE_LNKnextpage" name="T2R_SC_USER_ROLE_LNKnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="SecurityAdmin" vsds="T2R_SC_USER_ROLE_LNK" vsaction="lastpage" id="T2R_SC_USER_ROLE_LNKlastpage" name="T2R_SC_USER_ROLE_LNKlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+<!-- BEGIN CUSTOMIZATION -->
+<td><vstext vsds=" " name="T2R_SC_USER_ROLE_LNKSearchColList" vspreservetag="true"></td>
+<!-- END CUSTOMIZATION -->
+
+    </tr>
+  </table>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<hr class="advsectsep"></hr>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="SecurityAdmin" vsds="T2R_SC_USER_ROLE_LNK" vsaction="delete" id="IndexT2R_SC_USER_ROLE_LNKdelete" name="T2R_SC_USER_ROLE_LNKdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="SecurityAdmin" vsds="T2R_SC_USER_ROLE_LNK" vsaction="insert" id="T2R_SC_USER_ROLE_LNKinsert" name="T2R_SC_USER_ROLE_LNKinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+      </td>
+
+<td><vstext vsds=" " name="T2R_SC_USER_ROLE_LNKSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT2USER_ID_UP" id="txtT2USER_ID_UP"
+               size="20"
+           vsds="T2R_SC_USER_ROLE_LNK" vsdf="USER_ID_UP"
+         ams_max_len="16"
+           ShowCodeInfo=""
+           value="USER_ID_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+-->
+<!-- END CUSTOMIZATION -->
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T2R_SC_USER_ROLE_LNK', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'USER_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'User ID' ;
+  -->
+  </script>
+
+<!-- BEGIN CUSTOMIZATION -->
+  </td><td>
+
+
+    <table class="advaction recsrc">
+      <tr>
+        <td>
+          <a href="SecurityAdmin" vsds="T3R_SC_USER_INFO" vsaction="14" name="T3R_SC_USER_INFOselect" id="T3R_SC_USER_INFOselect" title="Add Selected Available User"><img src="../AMSImages/ADVArrowLeft.gif" alt="Add Selected Available User" title="Add Selected Available User"></a>
+        </td>
+      </tr><tr>
+        <td>
+          <a href="SecurityAdmin" vsds="T2R_SC_USER_ROLE_LNK" vsaction="15" name="T2R_SC_USER_ROLE_LNKdelete" id="T2R_SC_USER_ROLE_LNKdelete" title="Remove Selected Current User"><img src="../AMSImages/ADVArrowRight.gif" alt="Remove Selected Current User" title="Remove Selected Current User"></a>
+        </td>
+      </tr>
+    </table>
+
+
+
+  </td><td class="advscalarcol">
+<!-- END CUSTOMIZATION -->
+  <a name="T3R_SC_USER_INFO_Top"></a>
+
+
+    <h2 class="advrecsrctitle summary">Available Users</h2>
+
+  <input type="hidden" name="T3R_SC_USER_INFO_Currency" value="">
+  <input type="hidden" name="T3R_SC_USER_INFO_Old_Currency" value="">
+  <table name="tblT3R_SC_USER_INFO" id="tblT3R_SC_USER_INFO" class="advgrid" vsds="T3R_SC_USER_INFO">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T3USER_IDsortGridLabel" name="T3USER_IDsortGridLabel" title="User ID">User ID</span></th>
+
+        <th
+><span id="T3HOME_GOVT_BRN_CDsortGridLabel" name="T3HOME_GOVT_BRN_CDsortGridLabel" title="Government Branch">Government Branch</span></th>
+
+        <th
+><span id="T3HOME_CAB_CDsortGridLabel" name="T3HOME_CAB_CDsortGridLabel" title="Cabinet">Cabinet</span></th>
+
+        <th
+><span id="T3HOME_DEPT_CDsortGridLabel" name="T3HOME_DEPT_CDsortGridLabel" title="Department">Department</span></th>
+
+        <th
+><span id="T3HOME_DIV_CDsortGridLabel" name="T3HOME_DIV_CDsortGridLabel" title="Division">Division</span></th>
+
+        <th
+><span id="T3HOME_GP_CDsortGridLabel" name="T3HOME_GP_CDsortGridLabel" title="Group">Group</span></th>
+
+        <th
+><span id="T3HOME_SECT_CDsortGridLabel" name="T3HOME_SECT_CDsortGridLabel" title="Section">Section</span></th>
+
+        <th
+><span id="T3HOME_DSTC_CDsortGridLabel" name="T3HOME_DSTC_CDsortGridLabel" title="District">District</span></th>
+
+        <th
+><span id="T3HOME_BUR_CDsortGridLabel" name="T3HOME_BUR_CDsortGridLabel" title="Bureau">Bureau</span></th>
+
+        <th
+><span id="T3HOME_UNIT_CDsortGridLabel" name="T3HOME_UNIT_CDsortGridLabel" title="Unit">Unit</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T3R_SC_USER_INFOvscurrency" id="T3R_SC_USER_INFOvscurrency" title="Select Row" alt="Select Row" vsds="T3R_SC_USER_INFO" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT3USER_ID" vsds="T3R_SC_USER_INFO" vsdf="USER_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3HOME_GOVT_BRN_CD" vsds="T3R_SC_USER_INFO" vsdf="HOME_GOVT_BRN_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3HOME_CAB_CD" vsds="T3R_SC_USER_INFO" vsdf="HOME_CAB_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3HOME_DEPT_CD" vsds="T3R_SC_USER_INFO" vsdf="HOME_DEPT_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3HOME_DIV_CD" vsds="T3R_SC_USER_INFO" vsdf="HOME_DIV_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3HOME_GP_CD" vsds="T3R_SC_USER_INFO" vsdf="HOME_GP_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3HOME_SECT_CD" vsds="T3R_SC_USER_INFO" vsdf="HOME_SECT_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3HOME_DSTC_CD" vsds="T3R_SC_USER_INFO" vsdf="HOME_DSTC_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3HOME_BUR_CD" vsds="T3R_SC_USER_INFO" vsdf="HOME_BUR_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3HOME_UNIT_CD" vsds="T3R_SC_USER_INFO" vsdf="HOME_UNIT_CD"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="SecurityAdmin" vsds="T3R_SC_USER_INFO" vsaction="firstpage" name="T3R_SC_USER_INFOfirstpage" id="T3R_SC_USER_INFOfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="SecurityAdmin" vsds="T3R_SC_USER_INFO" vsaction="prevpage" name="T3R_SC_USER_INFOprevpage" id="T3R_SC_USER_INFOprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="SecurityAdmin" vsds="T3R_SC_USER_INFO" vsaction="nextpage" id="T3R_SC_USER_INFOnextpage" name="T3R_SC_USER_INFOnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="SecurityAdmin" vsds="T3R_SC_USER_INFO" vsaction="lastpage" id="T3R_SC_USER_INFOlastpage" name="T3R_SC_USER_INFOlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+<!-- BEGIN CUSTOMIZATION -->
+<td><vstext vsds=" " name="T3R_SC_USER_INFOSearchColList" vspreservetag="true"></td>
+<!-- END CUSTOMIZATION -->
+
+    </tr>
+  </table>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<hr class="advsectsep"></hr>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="SecurityAdmin" vsds="T3R_SC_USER_INFO" vsaction="delete" id="IndexT3R_SC_USER_INFOdelete" name="T3R_SC_USER_INFOdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="SecurityAdmin" vsds="T3R_SC_USER_INFO" vsaction="insert" id="T3R_SC_USER_INFOinsert" name="T3R_SC_USER_INFOinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+      </td>
+
+<td><vstext vsds=" " name="T3R_SC_USER_INFOSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT3USER_ID_UP" id="txtT3USER_ID_UP"
+               size="20"
+           vsds="T3R_SC_USER_INFO" vsdf="USER_ID_UP"
+         ams_max_len="16"
+           ShowCodeInfo=""
+           value="USER_ID_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT3HOME_DEPT_CD" id="txtT3HOME_DEPT_CD"
+            size="6"
+           vsds="T3R_SC_USER_INFO" vsdf="HOME_DEPT_CD"
+         ams_max_len="4"
+           ShowCodeInfo=""
+           value="HOME_DEPT_CD" ams_readonly >
+          </div>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+-->
+<!-- END CUSTOMIZATION -->
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+<a name="btnT5pUserRoleLink" href="SecurityAdmin" id="btnT5pUserRoleLink" title="Navigation to User Security Role Grants" vsaction="pagetransition"
+           vsds="T3R_SC_USER_INFO"
+ vsnavigation="T5pUserRoleLink">User Security Role Grants</a>
+<a name="btnT6pUserInformation" href="SecurityAdmin" id="btnT6pUserInformation" title="Navigation to User Information" vsaction="pagetransition"
+           vsds="T3R_SC_USER_INFO"
+ vsnavigation="T6pUserInformation">User Information</a>
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T3R_SC_USER_INFO', new Array(), new Array() ) ;
+
+  -->
+  </script>
+<!-- BEGIN CUSTOMIZATION -->
+  </td></tr></table>
+<!-- END CUSTOMIZATION -->
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+
+<!-- BEGIN CUSTOMIZATION -->
+<div style="visibility:hidden;display:none;position:absolute;top:-1000em;left:-1000em;">
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT2USER_ID_UP" id="txtT2USER_ID_UP"
+               size="20"
+           vsds="T2R_SC_USER_ROLE_LNK" vsdf="USER_ID_UP"
+         ams_max_len="16"
+           ShowCodeInfo=""
+           value="USER_ID_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT3USER_ID_UP" id="txtT3USER_ID_UP"
+               size="20"
+           vsds="T3R_SC_USER_INFO" vsdf="USER_ID_UP"
+         ams_max_len="16"
+           ShowCodeInfo=""
+           value="USER_ID_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT3HOME_DEPT_CD" id="txtT3HOME_DEPT_CD"
+            size="6"
+           vsds="T3R_SC_USER_INFO" vsdf="HOME_DEPT_CD"
+         ams_max_len="4"
+           ShowCodeInfo=""
+           value="HOME_DEPT_CD" ams_readonly >
+          </div>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+</div>
+
+
+
+<fieldset class="advscalar">
+    <table><tr>
+	<td class="advscalarcol">
+      <table class="advscalar">
+	  
+      <td class="label"><label for="REVOKE_REASON" title="Revoke Reason">Revoke Reason :</label></td>
+   
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="REVOKE_REASON" id="REVOKE_REASON" vsds="" vsdf="REVOKE_REASON" 
+ title="Revoke Reason"></textarea>
+        </td>
+      </tr>
+	
+	</table>
+    </td>
+</tr></table>
+  </fieldset>
+<!-- END CUSTOMIZATION -->
+
+  </form>
+</body>
+</html>
+
+
+

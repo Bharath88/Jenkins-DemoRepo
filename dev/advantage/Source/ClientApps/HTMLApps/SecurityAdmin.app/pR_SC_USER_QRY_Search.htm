@@ -1,0 +1,379 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Select User By Name and Organization</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="SecurityAdmin" method="post" vsform="true" name="pR_SC_USER_QRY_Search">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Select User By Name and Organization">Select User By Name and Organization</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+
+<a href="SecurityAdmin" vsds="T1R_SC_USER_QRY" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_USER_QRY" vsaction="clearquery" name="T1R_SC_USER_QRYclearquery" id="T1R_SC_USER_QRYclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1USER_ID_UP" title="User ID">User ID :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1USER_ID_UP" id="txtT1USER_ID_UP"
+            size="20"
+ vsds="T1R_SC_USER_QRY" vsdf="USER_ID_UP" vsdisplaymode="Query"
+ value="USER_ID_UP" title="User ID">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1FRST_NM_TXT_UP" title="First Name">First Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1FRST_NM_TXT_UP" id="txtT1FRST_NM_TXT_UP"
+            size="20"
+ vsds="T1R_SC_USER_QRY" vsdf="FRST_NM_TXT_UP" vsdisplaymode="Query"
+ value="FRST_NM_TXT_UP" title="First Name">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1LAST_NM_TXT_UP" title="Last Name">Last Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1LAST_NM_TXT_UP" id="txtT1LAST_NM_TXT_UP"
+            size="20"
+ vsds="T1R_SC_USER_QRY" vsdf="LAST_NM_TXT_UP" vsdisplaymode="Query"
+ value="LAST_NM_TXT_UP" title="Last Name">
+        </td>
+      </tr>
+
+        </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1HOME_GOVT_BRN_CD" title="Branch">Branch :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1HOME_GOVT_BRN_CD" id="txtT1HOME_GOVT_BRN_CD"
+         size="6"
+ vsds="T1R_SC_USER_QRY" vsdf="HOME_GOVT_BRN_CD" vsdisplaymode="Query"
+ value="HOME_GOVT_BRN_CD" title="Branch">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1HOME_CAB_CD" title="Cabinet">Cabinet :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1HOME_CAB_CD" id="txtT1HOME_CAB_CD"
+         size="6"
+ vsds="T1R_SC_USER_QRY" vsdf="HOME_CAB_CD" vsdisplaymode="Query"
+ value="HOME_CAB_CD" title="Cabinet">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1HOME_DEPT_CD" title="Department">Department :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1HOME_DEPT_CD" id="txtT1HOME_DEPT_CD"
+         size="6"
+ vsds="T1R_SC_USER_QRY" vsdf="HOME_DEPT_CD" vsdisplaymode="Query"
+ value="HOME_DEPT_CD" title="Department">
+        </td>
+      </tr>
+
+        </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1HOME_DIV_CD" title="Division">Division :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1HOME_DIV_CD" id="txtT1HOME_DIV_CD"
+         size="6"
+ vsds="T1R_SC_USER_QRY" vsdf="HOME_DIV_CD" vsdisplaymode="Query"
+ value="HOME_DIV_CD" title="Division">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1HOME_GP_CD" title="Group">Group :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1HOME_GP_CD" id="txtT1HOME_GP_CD"
+         size="6"
+ vsds="T1R_SC_USER_QRY" vsdf="HOME_GP_CD" vsdisplaymode="Query"
+ value="HOME_GP_CD" title="Group">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1HOME_SECT_CD" title="Section">Section :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1HOME_SECT_CD" id="txtT1HOME_SECT_CD"
+         size="6"
+ vsds="T1R_SC_USER_QRY" vsdf="HOME_SECT_CD" vsdisplaymode="Query"
+ value="HOME_SECT_CD" title="Section">
+        </td>
+      </tr>
+
+        </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1HOME_DSTC_CD" title="District">District :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1HOME_DSTC_CD" id="txtT1HOME_DSTC_CD"
+         size="6"
+ vsds="T1R_SC_USER_QRY" vsdf="HOME_DSTC_CD" vsdisplaymode="Query"
+ value="HOME_DSTC_CD" title="District">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1HOME_BUR_CD" title="Bureau">Bureau :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1HOME_BUR_CD" id="txtT1HOME_BUR_CD"
+         size="6"
+ vsds="T1R_SC_USER_QRY" vsdf="HOME_BUR_CD" vsdisplaymode="Query"
+ value="HOME_BUR_CD" title="Bureau">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1HOME_UNIT_CD" title="Unit">Unit :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1HOME_UNIT_CD" id="txtT1HOME_UNIT_CD"
+            size="6"
+ vsds="T1R_SC_USER_QRY" vsdf="HOME_UNIT_CD" vsdisplaymode="Query"
+ value="HOME_UNIT_CD" title="Unit">
+        </td>
+      </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+  <input type="hidden" name="T1R_SC_USER_QRY_Currency" value="">
+  <input type="hidden" name="T1R_SC_USER_QRY_Old_Currency" value="">
+  <table name="tblT1R_SC_USER_QRY" id="tblT1R_SC_USER_QRY" class="advgrid" vsds="T1R_SC_USER_QRY">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1USER_IDsortGridLabel" name="T1USER_IDsortGridLabel" title="User ID">User ID</span></th>
+
+        <th
+><span id="T1FRST_NM_TXTsortGridLabel" name="T1FRST_NM_TXTsortGridLabel" title="First Name">First Name</span></th>
+
+        <th
+><span id="T1LAST_NM_TXTsortGridLabel" name="T1LAST_NM_TXTsortGridLabel" title="Last Name">Last Name</span></th>
+
+        <th
+><span id="T1HOME_GOVT_BRN_CDsortGridLabel" name="T1HOME_GOVT_BRN_CDsortGridLabel" title="Branch">Branch</span></th>
+
+        <th
+><span id="T1HOME_CAB_CDsortGridLabel" name="T1HOME_CAB_CDsortGridLabel" title="Cabinet">Cabinet</span></th>
+
+        <th
+><span id="T1HOME_DEPT_CDsortGridLabel" name="T1HOME_DEPT_CDsortGridLabel" title="Department">Department</span></th>
+
+        <th
+><span id="T1HOME_DIV_CDsortGridLabel" name="T1HOME_DIV_CDsortGridLabel" title="Division">Division</span></th>
+
+        <th
+><span id="T1HOME_GP_CDsortGridLabel" name="T1HOME_GP_CDsortGridLabel" title="Group">Group</span></th>
+
+        <th
+><span id="T1HOME_SECT_CDsortGridLabel" name="T1HOME_SECT_CDsortGridLabel" title="Section">Section</span></th>
+
+        <th
+><span id="T1HOME_DSTC_CDsortGridLabel" name="T1HOME_DSTC_CDsortGridLabel" title="District">District</span></th>
+
+        <th
+><span id="T1HOME_BUR_CDsortGridLabel" name="T1HOME_BUR_CDsortGridLabel" title="Bureau">Bureau</span></th>
+
+        <th
+><span id="T1HOME_UNIT_CDsortGridLabel" name="T1HOME_UNIT_CDsortGridLabel" title="Unit">Unit</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_SC_USER_QRYvscurrency" id="T1R_SC_USER_QRYvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1R_SC_USER_QRY" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1USER_ID" vsds="T1R_SC_USER_QRY" vsdf="USER_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1FRST_NM_TXT" vsds="T1R_SC_USER_QRY" vsdf="FRST_NM_TXT"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1LAST_NM_TXT" vsds="T1R_SC_USER_QRY" vsdf="LAST_NM_TXT"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1HOME_GOVT_BRN_CD" vsds="T1R_SC_USER_QRY" vsdf="HOME_GOVT_BRN_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1HOME_CAB_CD" vsds="T1R_SC_USER_QRY" vsdf="HOME_CAB_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1HOME_DEPT_CD" vsds="T1R_SC_USER_QRY" vsdf="HOME_DEPT_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1HOME_DIV_CD" vsds="T1R_SC_USER_QRY" vsdf="HOME_DIV_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1HOME_GP_CD" vsds="T1R_SC_USER_QRY" vsdf="HOME_GP_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1HOME_SECT_CD" vsds="T1R_SC_USER_QRY" vsdf="HOME_SECT_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1HOME_DSTC_CD" vsds="T1R_SC_USER_QRY" vsdf="HOME_DSTC_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1HOME_BUR_CD" vsds="T1R_SC_USER_QRY" vsdf="HOME_BUR_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1HOME_UNIT_CD" vsds="T1R_SC_USER_QRY" vsdf="HOME_UNIT_CD"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+      <a href="SecurityAdmin" vsds="T1R_SC_USER_QRY" vsaction="firstpage" name="T1R_SC_USER_QRYfirstpage" id="T1R_SC_USER_QRYfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_USER_QRY" vsaction="prevpage" name="T1R_SC_USER_QRYprevpage" id="T1R_SC_USER_QRYprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_USER_QRY" vsaction="nextpage" id="T1R_SC_USER_QRYnextpage" name="T1R_SC_USER_QRYnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_USER_QRY" vsaction="lastpage" id="T1R_SC_USER_QRYlastpage" name="T1R_SC_USER_QRYlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+<a name="btnT2pUserInformation" href="SecurityAdmin" vsaction="pagetransition" id="btnT2pUserInformation"
+           vsds="T1R_SC_USER_QRY"
+ vsnavigation="T2pUserInformation" title="Navigation to User Information">User Information</a>
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<a name="btnT3pR_SC_USER_INFO_Search" href="SecurityAdmin" id="btnT3pR_SC_USER_INFO_Search" title="Navigation to User Search By Organization" vsaction="pagetransition"
+           vsds=""
+ vsnavigation="T3pR_SC_USER_INFO_Search">User Search By Organization</a>
+<a name="btnT4pR_SC_USER_DIR_INFO_Search" href="SecurityAdmin" id="btnT4pR_SC_USER_DIR_INFO_Search" title="Navigation to User Search By Name" vsaction="pagetransition"
+           vsds=""
+ vsnavigation="T4pR_SC_USER_DIR_INFO_Search">User Search By Name</a>
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

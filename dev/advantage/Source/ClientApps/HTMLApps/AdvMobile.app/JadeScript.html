@@ -1,0 +1,86 @@
+/* This JavaScript is part of Jade Server system.  Be cautious if
+   you want to modify this script.  Please also note any changes
+   in this script will not be retained when user upgrades Jade.
+*/
+
+function submitForm(form, arg, tar) {
+   if(mboolNS5Up)
+   {
+
+    var loInputImg = document.createElement("input");
+    loInputImg.type = "image";
+    loInputImg.id = "TempImageForSyn";
+    loInputImg.name = "TempImageForSyn";
+    loInputImg.className = "hidden";
+
+   }
+   var oldTarget = form.target;
+   var oldFrame = form.frame_name.value;
+   var oldQryString = form.query_string.value;
+   form.query_string.value= arg;
+   form.target=tar;
+   form.frame_name.value=tar;
+
+   if (!UTILS_BeforeFormSubmit())
+   {
+      return;
+   }
+
+   //Show Loading Panel
+   var loLoader = document.getElementById("advpageloader");
+   if(loLoader)
+   {
+      loLoader.style.visibility = "visible";
+      loLoader.style.display = "";
+      var loLoaderDiv = document.getElementById("pageload");
+      if(loLoaderDiv && form)
+      {
+         loLoaderDiv.style.height = form.offsetHeight + "px";
+      }
+	}
+
+   form.submit();
+   if(mboolNS5Up)
+   {
+    loInputImg.src =  Math.random() + ".png";
+   }
+
+	   if ((navigator.userAgent.indexOf("MSIE")!=-1))
+	   {
+	      reset(form, oldTarget, oldFrame, oldQryString);
+	   }
+	   else
+	   {
+	      setTimeout(reset, 10, form, oldTarget, oldFrame, oldQryString);
+	   }
+	}
+    function reset(form, tar, frm, qry)
+    {
+       /*
+        * In case of requests where a new popup window is opened the loading
+        * panel needs to be made hidden in the source window.
+        */
+       if(this.frameElement.name != form.target)
+       {
+          var loLoader = document.getElementById("advpageloader");
+          if(loLoader)
+          {
+             loLoader.style.visibility = "hidden";
+             loLoader.style.display = "none";
+          }
+       }
+
+   form.target = tar;
+   form.frame_name.value = frm;
+   form.query_string.value = qry;
+   if(mboolNS5Up)
+   {
+      var loInputImg = document.createElement("input");
+      loInputImg.type = "image";
+      loInputImg.id = "TempImageForSyn";
+      loInputImg.name = "TempImageForSyn";
+      loInputImg.className = "hidden";
+      loInputImg.src =  Math.random() + ".png";
+   }
+}
+//

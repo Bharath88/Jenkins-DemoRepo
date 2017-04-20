@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="StmtRuleToStmtSrcCol"
+		ChildRoleName="StmtSrcColToStmtRule"
+		IsEnforce="True"
+		OnParentUpdate="UpdateChildren"
+		CountReplicates="2"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SRC_COL"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_RULE(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Rule%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:Source Column,v:Statement Source Column table%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

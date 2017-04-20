@@ -1,0 +1,208 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Edit Catalog Entry</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable dialog">
+  <vserror>
+  <form action="Reports_Sys_Admin_App" method="post" vsform="true" name="Edit_Catalog_Entry">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Edit Catalog Entry">Edit Catalog Entry</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+  <INPUT type="hidden" name="T1R_BS_CATALOGvscurrency" vsds="T1R_BS_CATALOG" vscurrency="true">
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+      </td>
+
+  <!-- BEGIN CUSTOMIZATION -->
+  <!--
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="first" name="T1R_BS_CATALOGfirst" id="T1R_BS_CATALOGfirst" title="First Record" accesskey="0">First</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="prev" name="T1R_BS_CATALOGprev" id="T1R_BS_CATALOGprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="next" name="T1R_BS_CATALOGnext" id="T1R_BS_CATALOGnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="last" name="T1R_BS_CATALOGlast" id="T1R_BS_CATALOGlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+
+  -->
+  <!-- END CUSTOMIZATION -->
+
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1CLS_NM" title="Class Name">Class Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1CLS_NM" id="txtT1CLS_NM"
+               size="20"
+ vsds="T1R_BS_CATALOG" vsdf="CLS_NM"
+         ams_max_len="30"
+ ShowCodeInfo="" value="CLS_NM" title="Class Name">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1ITM_TYP" title="Item Type">Item Type :</label></td>
+        <td class="val">
+          <select name="txtT1ITM_TYP" id="txtT1ITM_TYP" vsds="T1R_BS_CATALOG" vsdf="ITM_TYP" size="1" vscodetable="CVL_BS_NODE_TYPE" ShowCodeInfo="" title="Item Type">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1RSRC_ID" title="Resource ID">Resource ID :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1RSRC_ID" id="txtT1RSRC_ID"
+               size="20"
+ vsds="T1R_BS_CATALOG" vsdf="RSRC_ID"
+         ams_max_len="129"
+ ShowCodeInfo="" value="RSRC_ID" title="Resource ID">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1RQRS_APRV" title="Requires Approval">Requires Approval :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1RQRS_APRV" id="txtT1RQRS_APRV" value="RQRS_APRV" vsds="T1R_BS_CATALOG" vsdf="RQRS_APRV" title="Requires Approval">
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="label"><label for="txtT1CSTM_PARM_APPL_NM" title="Cust. Param. UI Package">Cust. Param. UI Package :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1CSTM_PARM_APPL_NM" id="txtT1CSTM_PARM_APPL_NM"
+               size="20"
+ vsds="T1R_BS_CATALOG" vsdf="CSTM_PARM_APPL_NM"
+         ams_max_len="50"
+ ShowCodeInfo="" value="CSTM_PARM_APPL_NM" title="Cust. Param. UI Package">
+        </td>
+      </tr>
+
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1PKG_NM" title="Package Name">Package Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1PKG_NM" id="txtT1PKG_NM"
+               size="20"
+ vsds="T1R_BS_CATALOG" vsdf="PKG_NM"
+         ams_max_len="100"
+ ShowCodeInfo="" value="PKG_NM" title="Package Name">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1CTLG_NM" title="Catalog Label">Catalog Label :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1CTLG_NM" id="txtT1CTLG_NM"
+               size="20"
+ vsds="T1R_BS_CATALOG" vsdf="CTLG_NM"
+         ams_max_len="50"
+ ShowCodeInfo="" value="CTLG_NM" title="Catalog Label">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1APPL_ID" title="Application">Application :</label></td>
+        <td class="val">
+          <select name="txtT1APPL_ID" id="txtT1APPL_ID" vsds="T1R_BS_CATALOG" vsdf="APPL_ID" size="1" vscodetable="R_SC_APPL" ShowCodeInfo="" title="Application">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="label"><label for="txtT1CSTM_PARM_PG_NM" title="Cust. Param. Page">Cust. Param. Page :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1CSTM_PARM_PG_NM" id="txtT1CSTM_PARM_PG_NM"
+               size="20"
+ vsds="T1R_BS_CATALOG" vsdf="CSTM_PARM_PG_NM"
+         ams_max_len="50"
+ ShowCodeInfo="" value="CSTM_PARM_PG_NM" title="Cust. Param. Page">
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+  <table class="advokcancel">
+    <tr>
+      <td>
+
+<input class="advbutton" type="submit" vsaction="ok" name="OK" value="OK" id="OK" title="OK">
+
+<input class="advbutton" type="submit" vsaction="cancel" name="Cancel" value="Cancel" id="Cancel" title="Cancel">
+      </td>
+    </tr>
+  </table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+<a href="Reports_Sys_Admin_App" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,426 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Advantage Worklist</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Workflow" method="post" vsform="true" name="pV_WF_ADM_Grid">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Advantage Worklist">Advantage Worklist</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="Workflow" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+
+  
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+      <a href="Workflow" vsds="T1V_WF_WRK_ADM_QRY" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+      <a href="Workflow" vsds="T1V_WF_WRK_ADM_QRY" vsaction="clearquery" name="T1V_WF_WRK_ADM_QRYclearquery" id="T1V_WF_WRK_ADM_QRYclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+           
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1APRV_RULE_ID" title="Approval Rule ID">Approval Rule ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1APRV_RULE_ID" id="txtT1APRV_RULE_ID" 
+               size="15"
+ vsds="T1V_WF_WRK_ADM_QRY" vsdf="APRV_RULE_ID" vsdisplaymode="Query" 
+ value="APRV_RULE_ID" title="Approval Rule ID">
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1LOCK_USID" title="Lock User ID">Lock User ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1LOCK_USID" id="txtT1LOCK_USID" 
+            size="20"
+ vsds="T1V_WF_WRK_ADM_QRY" vsdf="LOCK_USID" vsdisplaymode="Query" 
+ value="LOCK_USID" title="Lock User ID">
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_ID" title="ID">ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_ID" id="txtT1DOC_ID" 
+            size="20"
+ vsds="T1V_WF_WRK_ADM_QRY" vsdf="DOC_ID" vsdisplaymode="Query" 
+ value="DOC_ID" title="ID">
+        </td>
+      </tr>
+    
+    
+        </table></td><td class="advscalarcol"><table class="advscalar">
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1ASSIGNEE" title="Assignee">Assignee :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1ASSIGNEE" id="txtT1ASSIGNEE" 
+            size="20"
+ vsds="T1V_WF_WRK_ADM_QRY" vsdf="ASSIGNEE" vsdisplaymode="Query" 
+ value="ASSIGNEE" title="Assignee">
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_CD" title="Code">Code :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_CD" id="txtT1DOC_CD" 
+            size="15"
+ vsds="T1V_WF_WRK_ADM_QRY" vsdf="DOC_CD" vsdisplaymode="Query" 
+ value="DOC_CD" title="Code">
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_DEPT_CD" title="Doc Dept">Doc Dept :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_DEPT_CD" id="txtT1DOC_DEPT_CD" 
+         size="6"
+ vsds="T1V_WF_WRK_ADM_QRY" vsdf="DOC_DEPT_CD" vsdisplaymode="Query" 
+ value="DOC_DEPT_CD" title="Doc Dept">
+        </td>
+      </tr>
+    
+    
+        </table></td><td class="advscalarcol"><table class="advscalar">
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1APRV_LVL" title="Level">Level :</label></td>
+   
+        <td class="val">
+          <select name="txtT1APRV_LVL" id="txtT1APRV_LVL" vsds="T1V_WF_WRK_ADM_QRY" vsdf="APRV_LVL" vsdisplaymode="Query" size="1" vscodetable="CVL_WF_LVLS" title="Level">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_SBMT_ID" title="Submitter ID">Submitter ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_SBMT_ID" id="txtT1DOC_SBMT_ID" 
+            size="20"
+ vsds="T1V_WF_WRK_ADM_QRY" vsdf="DOC_SBMT_ID" vsdisplaymode="Query" 
+ value="DOC_SBMT_ID" title="Submitter ID">
+        </td>
+      </tr>
+    
+       <tr>
+        
+      
+      <td class="label"><label for="txtT1ESCL_ITEM" title="Escalated Item">Escalated Item :</label></td>
+   
+        <td class="val">
+          <select name="txtT1ESCL_ITEM" id="txtT1ESCL_ITEM" vsds="T1V_WF_WRK_ADM_QRY" vsdf="ESCL_ITEM" vsdisplaymode="Query" size="1" vscodetable="CVL_YES_NO" title="Escalated Item">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+	     
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  
+  
+
+  
+  <input type="hidden" name="T1V_WF_WRK_ADM_QRY_Currency" value="">
+  <input type="hidden" name="T1V_WF_WRK_ADM_QRY_Old_Currency" value="">
+  <table name="tblT1V_WF_WRK_ADM_QRY" id="tblT1V_WF_WRK_ADM_QRY" class="advgrid" vsds="T1V_WF_WRK_ADM_QRY">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+    class="wrap"
+><a href="Workflow" vsaction="sort" vsds="T1V_WF_WRK_ADM_QRY" 
+    vsdf="APRV_RULE_ID"
+ name="T1APRV_RULE_IDsort" id="T1APRV_RULE_IDsort" title="Sort By Approval Rule ID">Approval Rule ID</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1V_WF_WRK_ADM_QRY" 
+    vsdf="LOCK_USID"
+ name="T1LOCK_USIDsort" id="T1LOCK_USIDsort" title="Sort By Lock User ID">Lock User ID</a></th>
+      
+        <th 
+><span id="T1ASSIGNEEsortGridLabel" name="T1ASSIGNEEsortGridLabel" title="Assignee">Assignee</span></th>
+      
+        <th 
+><span id="T1ASSIGNEE_FLsortGridLabel" name="T1ASSIGNEE_FLsortGridLabel" title="Role?">Role?</span></th>
+      
+        <th 
+><span id="T1DOC_CREA_USIDsortGridLabel" name="T1DOC_CREA_USIDsortGridLabel" title="Creator ID">Creator ID</span></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1V_WF_WRK_ADM_QRY" 
+    vsdf="DOC_SBMT_ID"
+ name="T1DOC_SBMT_IDsort" id="T1DOC_SBMT_IDsort" title="Sort By Submitter ID">Submitter ID</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1V_WF_WRK_ADM_QRY" 
+    vsdf="ASGN_DT"
+ name="T1ASGN_DTsort" id="T1ASGN_DTsort" title="Sort By Date">Date</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1V_WF_WRK_ADM_QRY" 
+    vsdf="APRV_LVL"
+ name="T1APRV_LVLsort" id="T1APRV_LVLsort" title="Sort By Level">Level</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1V_WF_WRK_ADM_QRY" 
+    vsdf="DOC_CD"
+ name="T1DOC_CDsort" id="T1DOC_CDsort" title="Sort By Code">Code</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1V_WF_WRK_ADM_QRY" 
+    vsdf="DOC_DEPT_CD"
+ name="T1DOC_DEPT_CDsort" id="T1DOC_DEPT_CDsort" title="Sort By Doc Dept">Doc Dept</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1V_WF_WRK_ADM_QRY" 
+    vsdf="DOC_ID"
+ name="T1DOC_IDsort" id="T1DOC_IDsort" title="Sort By ID">ID</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1V_WF_WRK_ADM_QRY" 
+    vsdf="PRIORITY"
+ name="T1PRIORITYsort" id="T1PRIORITYsort" title="Sort By Priority">Priority</a></th>
+
+        <th 
+><span id="T1ESCL_ITEMsortGridLabel" name="T1ESCL_ITEMsortGridLabel" title="Escalated Item">Escalated Item</span></th>
+      
+        <th 
+><span id="T1PRIORITY_REASONsortGridLabel" name="T1PRIORITY_REASONsortGridLabel" title="Priority Reason">Priority Reason</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1V_WF_WRK_ADM_QRYvscurrency" id="T1V_WF_WRK_ADM_QRYvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1V_WF_WRK_ADM_QRY" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+      class="wrap right"
+
+>
+          <vstext name="txtT1APRV_RULE_ID" vsds="T1V_WF_WRK_ADM_QRY" vsdf="APRV_RULE_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1LOCK_USID" vsds="T1V_WF_WRK_ADM_QRY" vsdf="LOCK_USID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1ASSIGNEE" vsds="T1V_WF_WRK_ADM_QRY" vsdf="ASSIGNEE" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1ASSIGNEE_FL" vsds="T1V_WF_WRK_ADM_QRY" vsdf="ASSIGNEE_FL" 
+    vsformat="Yes/No"
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_CREA_USID" vsds="T1V_WF_WRK_ADM_QRY" vsdf="DOC_CREA_USID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_SBMT_ID" vsds="T1V_WF_WRK_ADM_QRY" vsdf="DOC_SBMT_ID" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1ASGN_DT" vsds="T1V_WF_WRK_ADM_QRY" vsdf="ASGN_DT" 
+    vsformat="M/d/yyyy h:mm:ss aa"
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1V_WF_WRK_ADM_QRY" vsdf="APRV_LVL" vscodetable="CVL_WF_LVLS">
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_CD" vsds="T1V_WF_WRK_ADM_QRY" vsdf="DOC_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_DEPT_CD" vsds="T1V_WF_WRK_ADM_QRY" vsdf="DOC_DEPT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_ID" vsds="T1V_WF_WRK_ADM_QRY" vsdf="DOC_ID" 
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1V_WF_WRK_ADM_QRY" vsdf="PRIORITY" vscodetable="CVL_WF_PRIORITY">
+        </td>
+      
+<td 
+>
+          <vstext vsds="T1V_WF_WRK_ADM_QRY" vsdf="ESCL_ITEM" vscodetable="CVL_YES_NO">
+
+        </td>
+
+        <td class="memo">
+           <textarea style="height:15px !important;" ams_readonly name="txtT1PRIORITY_REASON" vsds="T1V_WF_WRK_ADM_QRY" vsdf="PRIORITY_REASON" cols="20" rows="1" vsformat="" title="Priority Reason"></textarea>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+      
+<td><div name="T1V_WF_WRK_ADM_QRYGridNav" id="T1V_WF_WRK_ADM_QRYGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="Workflow" vsds="T1V_WF_WRK_ADM_QRY" vsaction="firstpage" name="T1V_WF_WRK_ADM_QRYfirstpage" id="T1V_WF_WRK_ADM_QRYfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="Workflow" vsds="T1V_WF_WRK_ADM_QRY" vsaction="prevpage" name="T1V_WF_WRK_ADM_QRYprevpage" id="T1V_WF_WRK_ADM_QRYprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="Workflow" vsds="T1V_WF_WRK_ADM_QRY" vsaction="nextpage" id="T1V_WF_WRK_ADM_QRYnextpage" name="T1V_WF_WRK_ADM_QRYnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="Workflow" vsds="T1V_WF_WRK_ADM_QRY" vsaction="lastpage" id="T1V_WF_WRK_ADM_QRYlastpage" name="T1V_WF_WRK_ADM_QRYlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Workflow" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,860 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="AMSRefTableGridDisplay"
+	PositionTop="144"
+	PositionLeft="923"
+	PositionWidth="170"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSRefTableGridDisplayPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="754240464"
+	>
+	<FormCaption><![CDATA[Forms Printing Access Control]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="true"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+		<Property
+			Name="SSCaptionImageFileNm"
+			Value=""
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="EditMode"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="PageCode"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="R_PRNT_ACCS"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGenericGridDisplay"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="USER_ID" />
+				<RSDefaultAttribute ID="2" Name="APPL_RSRC_ID" />
+				<RSDefaultAttribute ID="3" Name="PRNT_JOB_CD" />
+				<RSDefaultAttribute ID="4" Name="PRNT_RSRC_ID" />
+				<RSDefaultAttribute ID="5" Name="PRNT_JOB_NM" />
+				<RSDefaultAttribute ID="6" Name="PRNT_RSRC_NM" />
+				<RSDefaultAttribute ID="7" Name="DEPT_CD" />
+				<RSDefaultAttribute ID="8" Name="UNIT_CD" />
+				<RSDefaultAttribute ID="9" Name="PREF" />
+				<RSDefaultAttribute ID="10" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="11" Name="USER_ID_UP" />
+				<RSDefaultAttribute ID="12" Name="APPL_RSRC_ID_UP" />
+				<RSDefaultAttribute ID="13" Name="PRNT_JOB_CD_UP" />
+				<RSDefaultAttribute ID="14" Name="PRNT_RSRC_NM_UP" />
+				<RSDefaultAttribute ID="15" Name="TBL_LAST_DT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="USER_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="APPL_RSRC_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PRNT_JOB_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PRNT_JOB_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PRNT_RSRC_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PRNT_RSRC_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DEPT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="UNIT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PREF" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="USER_ID_UP" Displayed="True" UnPlaced="False" Archetype="AMSHiddenTextBox" />
+				<RSAttribute Name="APPL_RSRC_ID_UP" Displayed="True" UnPlaced="False" Archetype="AMSHiddenTextBox" />
+				<RSAttribute Name="PRNT_JOB_CD_UP" Displayed="True" UnPlaced="False" Archetype="AMSHiddenTextBox" />
+				<RSAttribute Name="PRNT_RSRC_NM_UP" Displayed="True" UnPlaced="False" Archetype="AMSHiddenTextBox" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="USER_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="APPL_RSRC_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PRNT_JOB_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PRNT_RSRC_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DEPT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="UNIT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PRNT_JOB_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PRNT_RSRC_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PREF" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="USER_ID_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APPL_RSRC_ID_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PRNT_JOB_CD_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PRNT_RSRC_NM_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value="&quot;USER_ID_UP, PRNT_JOB_CD_UP, PRNT_RSRC_NM_UP, APPL_RSRC_ID_UP&quot;"
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Adjacent_Fields"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value="%PRNT_RSRC_ID%"
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="SummaryCaption"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+		<PickObject
+			RSID="2"
+			Prefix="T2"
+			BusinessObject="R_SC_USER_DIR_INFO"
+			Relationship="R_SC_USER_DIR_INFO(R_SC_USER_DIR_INFO)-R_PRNT_ACCS(R_PRNT_ACCS)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [USER_ID] = [?USER_ID]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="USER_ID" />
+					<RSDefaultAttribute ID="2" Name="LAST_NM_TXT" />
+					<RSDefaultAttribute ID="3" Name="FRST_NM_TXT" />
+					<RSDefaultAttribute ID="4" Name="LCLTY_TXT" />
+					<RSDefaultAttribute ID="5" Name="EMAIL_AD_TXT" />
+					<RSDefaultAttribute ID="6" Name="PH_NO_TXT" />
+					<RSDefaultAttribute ID="7" Name="FAX_NO_TXT" />
+					<RSDefaultAttribute ID="8" Name="ROOM_NO_TXT" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="PH_EXT" />
+					<RSDefaultAttribute ID="11" Name="USER_NM" />
+					<RSDefaultAttribute ID="26" Name="GOVT_BRN_CD" />
+					<RSDefaultAttribute ID="13" Name="CAB_CD" />
+					<RSDefaultAttribute ID="14" Name="DEPT_CD" />
+					<RSDefaultAttribute ID="15" Name="DIV_CD" />
+					<RSDefaultAttribute ID="16" Name="GP_CD" />
+					<RSDefaultAttribute ID="17" Name="SECT_CD" />
+					<RSDefaultAttribute ID="18" Name="DSTC_CD" />
+					<RSDefaultAttribute ID="19" Name="BUR_CD" />
+					<RSDefaultAttribute ID="20" Name="UNIT_CD" />
+					<RSDefaultAttribute ID="21" Name="USER_ID_UP" />
+					<RSDefaultAttribute ID="22" Name="LAST_NM_TXT_UP" />
+					<RSDefaultAttribute ID="23" Name="FRST_NM_TXT_UP" />
+					<RSDefaultAttribute ID="24" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="25" Name="LAST_UPDATE_USERID" />
+					<RSDefaultAttribute ID="27" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="28" Name="USER_NM_UP" />
+				</DefaultAttributes>
+				<GridAttributes>
+					<RSAttribute Name="USER_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="LAST_NM_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FRST_NM_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="LCLTY_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="EMAIL_AD_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PH_NO_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FAX_NO_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ROOM_NO_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PH_EXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USER_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CAB_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DIV_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SECT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSTC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUR_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USER_ID_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_NM_TXT_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FRST_NM_TXT_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USER_NM_UP" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value="&quot;USER_ID_UP,LAST_NM_TXT_UP,FRST_NM_TXT_UP&quot;"
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+		<PickObject
+			RSID="3"
+			Prefix="T3"
+			BusinessObject="R_PRNT_JOB"
+			Relationship="R_PRNT_JOB(R_PRNT_JOB)-R_PRNT_ACCS(R_PRNT_ACCS)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [APPL_RSRC_ID] = [?APPL_RSRC_ID] and [PRNT_JOB_CD] = [?PRNT_JOB_CD]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="APPL_RSRC_ID" />
+					<RSDefaultAttribute ID="2" Name="PRNT_JOB_CD" />
+					<RSDefaultAttribute ID="3" Name="NM" />
+					<RSDefaultAttribute ID="4" Name="DSCR" />
+					<RSDefaultAttribute ID="5" Name="PRNT_SRV_ID" />
+					<RSDefaultAttribute ID="6" Name="SPOOL_JOB" />
+					<RSDefaultAttribute ID="7" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="8" Name="APPL_RSRC_ID_UP" />
+					<RSDefaultAttribute ID="9" Name="PRNT_JOB_CD_UP" />
+					<RSDefaultAttribute ID="10" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="11" Name="VIEW_FORMS" />
+					<RSDefaultAttribute ID="12" Name="DOC_PHASES_SUPRTED" />
+					<RSDefaultAttribute ID="13" Name="DOC_PHASES" />
+					<RSDefaultAttribute ID="14" Name="PRNT_CMNT_APRV_FL" />
+				</DefaultAttributes>
+				<GridAttributes>
+					<RSAttribute Name="APPL_RSRC_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="PRNT_JOB_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DSCR" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="PRNT_SRV_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SPOOL_JOB" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_RSRC_ID_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PRNT_JOB_CD_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="VIEW_FORMS" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_PHASES_SUPRTED" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_PHASES" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PRNT_CMNT_APRV_FL" Displayed="True" UnPlaced="True" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value="&quot;APPL_RSRC_ID_UP,PRNT_JOB_CD_UP&quot;"
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+		<PickObject
+			RSID="4"
+			Prefix="T4"
+			BusinessObject="R_PRNT_RSRC"
+			Relationship="R_PRNT_RSRC(R_PRNT_RSRC)-R_PRNT_ACCS(R_PRNT_ACCS)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [PRNT_RSRC_ID] = [?PRNT_RSRC_ID]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="PRNT_RSRC_ID" />
+					<RSDefaultAttribute ID="2" Name="NM" />
+					<RSDefaultAttribute ID="3" Name="TYP" />
+					<RSDefaultAttribute ID="4" Name="DSCR" />
+					<RSDefaultAttribute ID="5" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="6" Name="PRNT_RSRC_ID_UP" />
+					<RSDefaultAttribute ID="7" Name="TBL_LAST_DT" />
+				</DefaultAttributes>
+				<GridAttributes>
+					<RSAttribute Name="PRNT_RSRC_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="TYP" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DSCR" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PRNT_RSRC_ID_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value="&quot;PRNT_RSRC_ID_UP&quot;"
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+		<PickObject
+			RSID="5"
+			Prefix="T5"
+			BusinessObject="R_UNIT"
+			Relationship="R_UNIT(R_UNIT)-R_PRNT_ACCS(R_PRNT_ACCS)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="Pick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [DEPT_CD] = [?DEPT_CD]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="FY" />
+					<RSDefaultAttribute ID="2" Name="DEPT_CD" />
+					<RSDefaultAttribute ID="3" Name="UNIT_CD" />
+					<RSDefaultAttribute ID="4" Name="UNIT_NM" />
+					<RSDefaultAttribute ID="5" Name="UNIT_SH_NM" />
+					<RSDefaultAttribute ID="6" Name="UNIT_DSCR" />
+					<RSDefaultAttribute ID="7" Name="CNTAC_CD" />
+					<RSDefaultAttribute ID="8" Name="ACT_FL" />
+					<RSDefaultAttribute ID="9" Name="ALW_BUD_FL" />
+					<RSDefaultAttribute ID="10" Name="EFBGN_DT" />
+					<RSDefaultAttribute ID="11" Name="EFEND_DT" />
+					<RSDefaultAttribute ID="12" Name="GOVT_BRN_CD" />
+					<RSDefaultAttribute ID="13" Name="CAB_CD" />
+					<RSDefaultAttribute ID="14" Name="DIV_CD" />
+					<RSDefaultAttribute ID="15" Name="GP_CD" />
+					<RSDefaultAttribute ID="16" Name="SECT_CD" />
+					<RSDefaultAttribute ID="17" Name="DSTC_CD" />
+					<RSDefaultAttribute ID="18" Name="BUR_CD" />
+					<RSDefaultAttribute ID="19" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="20" Name="FLX_RPT_1_CD" />
+					<RSDefaultAttribute ID="21" Name="FLX_RPT_2_CD" />
+					<RSDefaultAttribute ID="22" Name="FLX_RPT_3_CD" />
+					<RSDefaultAttribute ID="23" Name="FLX_RPT_4_CD" />
+					<RSDefaultAttribute ID="24" Name="FLX_RPT_5_CD" />
+					<RSDefaultAttribute ID="25" Name="UNIT_NM_UP" />
+					<RSDefaultAttribute ID="26" Name="UNIT_SH_NM_UP" />
+					<RSDefaultAttribute ID="27" Name="DISB_CNTAC_CD" />
+					<RSDefaultAttribute ID="28" Name="BUYR_ID" />
+					<RSDefaultAttribute ID="29" Name="TEAM_ID" />
+					<RSDefaultAttribute ID="30" Name="DLGTD_BUYR_ID" />
+					<RSDefaultAttribute ID="31" Name="DLGTD_TEAM_ID" />
+					<RSDefaultAttribute ID="32" Name="ACTN_CD" />
+					<RSDefaultAttribute ID="33" Name="VSS_UNIT_FL" />
+					<RSDefaultAttribute ID="34" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="35" Name="DSCR_EXT" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="FY" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_SH_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_DSCR" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CNTAC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ACT_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ALW_BUD_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="EFBGN_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="EFEND_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CAB_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DIV_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SECT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSTC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUR_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_1_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_2_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_3_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_4_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_5_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_SH_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DISB_CNTAC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUYR_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TEAM_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DLGTD_BUYR_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DLGTD_TEAM_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ACTN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="VSS_UNIT_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSCR_EXT" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="DEPT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FY" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_SH_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_DSCR" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CNTAC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ACT_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ALW_BUD_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="EFBGN_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="EFEND_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CAB_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DIV_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SECT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSTC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUR_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_1_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_2_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_3_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_4_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_5_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_SH_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DISB_CNTAC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUYR_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TEAM_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DLGTD_BUYR_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DLGTD_TEAM_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ACTN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="VSS_UNIT_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSCR_EXT" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="6"
+			Prefix="T6"
+			BusinessObject="R_UNIT"
+			Relationship="R_UNIT_1(R_UNIT)-R_PRNT_ACCS_1(R_PRNT_ACCS)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="Pick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [UNIT_CD] = [?UNIT_CD]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="FY" />
+					<RSDefaultAttribute ID="2" Name="DEPT_CD" />
+					<RSDefaultAttribute ID="3" Name="UNIT_CD" />
+					<RSDefaultAttribute ID="4" Name="UNIT_NM" />
+					<RSDefaultAttribute ID="5" Name="UNIT_SH_NM" />
+					<RSDefaultAttribute ID="6" Name="UNIT_DSCR" />
+					<RSDefaultAttribute ID="7" Name="CNTAC_CD" />
+					<RSDefaultAttribute ID="8" Name="ACT_FL" />
+					<RSDefaultAttribute ID="9" Name="ALW_BUD_FL" />
+					<RSDefaultAttribute ID="10" Name="EFBGN_DT" />
+					<RSDefaultAttribute ID="11" Name="EFEND_DT" />
+					<RSDefaultAttribute ID="12" Name="GOVT_BRN_CD" />
+					<RSDefaultAttribute ID="13" Name="CAB_CD" />
+					<RSDefaultAttribute ID="14" Name="DIV_CD" />
+					<RSDefaultAttribute ID="15" Name="GP_CD" />
+					<RSDefaultAttribute ID="16" Name="SECT_CD" />
+					<RSDefaultAttribute ID="17" Name="DSTC_CD" />
+					<RSDefaultAttribute ID="18" Name="BUR_CD" />
+					<RSDefaultAttribute ID="19" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="20" Name="FLX_RPT_1_CD" />
+					<RSDefaultAttribute ID="21" Name="FLX_RPT_2_CD" />
+					<RSDefaultAttribute ID="22" Name="FLX_RPT_3_CD" />
+					<RSDefaultAttribute ID="23" Name="FLX_RPT_4_CD" />
+					<RSDefaultAttribute ID="24" Name="FLX_RPT_5_CD" />
+					<RSDefaultAttribute ID="25" Name="UNIT_NM_UP" />
+					<RSDefaultAttribute ID="26" Name="UNIT_SH_NM_UP" />
+					<RSDefaultAttribute ID="27" Name="DISB_CNTAC_CD" />
+					<RSDefaultAttribute ID="28" Name="BUYR_ID" />
+					<RSDefaultAttribute ID="29" Name="TEAM_ID" />
+					<RSDefaultAttribute ID="30" Name="DLGTD_BUYR_ID" />
+					<RSDefaultAttribute ID="31" Name="DLGTD_TEAM_ID" />
+					<RSDefaultAttribute ID="32" Name="ACTN_CD" />
+					<RSDefaultAttribute ID="33" Name="VSS_UNIT_FL" />
+					<RSDefaultAttribute ID="34" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="35" Name="DSCR_EXT" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="FY" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_SH_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_DSCR" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CNTAC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ACT_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ALW_BUD_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="EFBGN_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="EFEND_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CAB_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DIV_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SECT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSTC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUR_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_1_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_2_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_3_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_4_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_5_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_SH_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DISB_CNTAC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUYR_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TEAM_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DLGTD_BUYR_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DLGTD_TEAM_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ACTN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="VSS_UNIT_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSCR_EXT" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="UNIT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FY" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEPT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="UNIT_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_SH_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_DSCR" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CNTAC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ACT_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ALW_BUD_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="EFBGN_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="EFEND_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CAB_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DIV_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SECT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSTC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUR_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_1_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_2_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_3_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_4_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLX_RPT_5_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_SH_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DISB_CNTAC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUYR_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TEAM_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DLGTD_BUYR_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DLGTD_TEAM_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ACTN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="VSS_UNIT_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSCR_EXT" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+	</RecordSource>
+</Form>

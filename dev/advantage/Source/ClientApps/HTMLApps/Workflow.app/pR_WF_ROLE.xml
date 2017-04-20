@@ -1,0 +1,377 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="Default"
+	PositionTop="318"
+	PositionLeft="311"
+	PositionWidth="149"
+	PositionHeight="34"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSRefTableGridDisplayPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="173658208"
+	>
+	<FormCaption><![CDATA[Manage Approval Roles]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="false"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="R_WF_ROLE"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGenericGridDisplay"
+		MaxGridRowCount="20"
+		FetchedBlockRowCount="20"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="ROLEID" />
+				<RSDefaultAttribute ID="2" Name="ROLE_NM" />
+				<RSDefaultAttribute ID="18" Name="HOME_GOVT_BRN_CD" />
+				<RSDefaultAttribute ID="4" Name="HOME_CAB_CD" />
+				<RSDefaultAttribute ID="5" Name="HOME_DEPT_CD" />
+				<RSDefaultAttribute ID="6" Name="HOME_DIV_CD" />
+				<RSDefaultAttribute ID="7" Name="HOME_GP_CD" />
+				<RSDefaultAttribute ID="8" Name="HOME_SECT_CD" />
+				<RSDefaultAttribute ID="9" Name="HOME_DSTC_CD" />
+				<RSDefaultAttribute ID="10" Name="HOME_BUR_CD" />
+				<RSDefaultAttribute ID="11" Name="HOME_UNIT_CD" />
+				<RSDefaultAttribute ID="12" Name="DSCR" />
+				<RSDefaultAttribute ID="13" Name="MGRID" />
+				<RSDefaultAttribute ID="14" Name="COMB_ORG_CD" />
+				<RSDefaultAttribute ID="15" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="16" Name="ROLEID_UP" />
+				<RSDefaultAttribute ID="17" Name="ROLE_NM_UP" />
+				<RSDefaultAttribute ID="19" Name="TBL_LAST_DT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="ROLEID" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="HOME_GOVT_BRN_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_CAB_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_DEPT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_DIV_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_GP_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_SECT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ROLE_NM" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="HOME_DSTC_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_BUR_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_UNIT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DSCR" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ROLEID_UP" Displayed="True" UnPlaced="False" Archetype="AMSUpperCaseTextBox" />
+				<RSAttribute Name="ROLE_NM_UP" Displayed="True" UnPlaced="False" Archetype="AMSUpperCaseTextBox" />
+				<RSAttribute Name="MGRID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="COMB_ORG_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="ROLEID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ROLE_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_GOVT_BRN_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_CAB_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_DEPT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_DIV_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_GP_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_SECT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_DSTC_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_BUR_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_UNIT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DSCR" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="MGRID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="COMB_ORG_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ROLEID_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ROLE_NM_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value="&quot;ROLEID_UP,ROLE_NM_UP,HOME_GOVT_BRN_CD,HOME_CAB_CD,HOME_DEPT_CD,HOME_DIV_CD,HOME_GP_CD,HOME_SECT_CD,HOME_DSTC_CD,HOME_BUR_CD,HOME_UNIT_CD&quot;"
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Adjacent_Fields"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value="%ROLE_NM%"
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="SummaryCaption"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+		<Transition
+			FormTransNum="1"
+			Prefix="T2"
+			TargetFormName="pR_WF_USER_ROLE_AddApprover"
+			IsTargetInitialQueryMode="False"
+			IsTargetInitialAddMode="False"
+			IsVisibleAppline="True"
+			IsAddedAfterGen="False"
+			FormTransCaption="Approval Users"
+			ClassName="PageNavigation"
+			TargetFramesetPage=""
+			TargetFrame=""
+			FrameNameInFramesetPage=""
+			RSID="4"
+			BusinessObject="R_WF_USER_ROLE"
+			RelnIsFromParent="True"
+			>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<ParameterizedWhereClause><![CDATA[ [ROLEID] = [?ROLEID]]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		</Transition>
+		<Transition
+			FormTransNum="1"
+			Prefix="T3"
+			TargetFormName="pR_WF_ALT_APRV_ID"
+			IsTargetInitialQueryMode="False"
+			IsTargetInitialAddMode="False"
+			IsVisibleAppline="True"
+			IsAddedAfterGen="False"
+			FormTransCaption="Alternate Approval Assignments"
+			ClassName="PageNavigation"
+			TargetFramesetPage=""
+			TargetFrame=""
+			FrameNameInFramesetPage=""
+			RSID="5"
+			BusinessObject="R_WF_ALT_APRV_ID"
+			Relationship="R_WF_ROLE(R_WF_ROLE)-R_WF_ALT_APRV_IDs2(R_WF_ALT_APRV_ID)"
+			RelnIsFromParent="True"
+			>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<ParameterizedWhereClause><![CDATA[ [ROLEID] = [?ROLEID]]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		</Transition>
+	</RecordSource>
+</Form>

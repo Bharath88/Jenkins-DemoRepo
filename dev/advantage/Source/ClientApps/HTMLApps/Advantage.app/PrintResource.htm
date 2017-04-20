@@ -1,0 +1,300 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Print Resource Setup</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="PrintResource">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Print Resource Setup">Print Resource Setup</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="Advantage" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+
+  <INPUT type="hidden" name="T1R_PRNT_RSRCvscurrency" vsds="T1R_PRNT_RSRC" vscurrency="true">
+  
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+   
+      <a href="Advantage" vsds="T1R_PRNT_RSRC" vsaction="saveall" name="T1R_PRNT_RSRCSaveAll" id="T1R_PRNT_RSRCSaveAll" title="Save All" accesskey="5">Save</a>
+   
+      <a href="Advantage" vsds="T1R_PRNT_RSRC" vsaction="undoall" name="T1R_PRNT_RSRCUndoAll" id="T1R_PRNT_RSRCUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+      <a href="Advantage" vsds="T1R_PRNT_RSRC" vsaction="delete" id="IndexT1R_PRNT_RSRCdelete" name="T1R_PRNT_RSRCdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="Advantage" vsds="T1R_PRNT_RSRC" vsaction="insert" id="T1R_PRNT_RSRCinsert" name="T1R_PRNT_RSRCinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="Advantage" vsds="T1R_PRNT_RSRC" vsaction="11" name="T1R_PRNT_RSRCCopyRecord" id="T1R_PRNT_RSRCCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="Advantage" vsds="T1R_PRNT_RSRC" vsaction="12" name="T1R_PRNT_RSRCPasteLine" id="T1R_PRNT_RSRCPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+      
+   
+      <td><vstext vsds=" " name="T1R_PRNT_RSRCSearchColList" vspreservetag="true"></td>
+      
+<td><div name="T1R_PRNT_RSRCGridNav" id="T1R_PRNT_RSRCGridNav" vsds=""><ams_map title="Record Navigation" name="Record Navigation">
+      <a href="Advantage" vsds="T1R_PRNT_RSRC" vsaction="first" name="T1R_PRNT_RSRCfirst" id="T1R_PRNT_RSRCfirst" title="First Record" accesskey="0">First</a>
+ 
+   
+      <a href="Advantage" vsds="T1R_PRNT_RSRC" vsaction="prev" name="T1R_PRNT_RSRCprev" id="T1R_PRNT_RSRCprev" title="Previous Record" accesskey="1">Prev</a>
+ 
+   
+      <a href="Advantage" vsds="T1R_PRNT_RSRC" vsaction="next" name="T1R_PRNT_RSRCnext" id="T1R_PRNT_RSRCnext" title="Next Record" accesskey="2">Next</a>
+ 
+   
+      <a href="Advantage" vsds="T1R_PRNT_RSRC" vsaction="last" name="T1R_PRNT_RSRClast" id="T1R_PRNT_RSRClast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+      
+      
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1PRNT_RSRC_ID" title="Print Resource ID">Print Resource ID :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1PRNT_RSRC_ID" id="txtT1PRNT_RSRC_ID" 
+               size="20"
+ vsds="T1R_PRNT_RSRC" vsdf="PRNT_RSRC_ID" 
+         ams_max_len="20"
+ ShowCodeInfo="" value="PRNT_RSRC_ID" title="Print Resource ID" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1NM" title="Name">Name :</label></td>
+   
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1NM" id="txtT1NM" vsds="T1R_PRNT_RSRC" vsdf="NM" 
+ title="Name"></textarea>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1TYP" title="Type">Type :</label></td>
+   
+        <td class="val">
+          <select name="txtT1TYP" id="txtT1TYP" vsds="T1R_PRNT_RSRC" vsdf="TYP" size="1" vscodetable="CVL_PRNT_RSRC_TYP" ShowCodeInfo="" title="Type">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DSCR" title="Description">Description :</label></td>
+   
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1DSCR" id="txtT1DSCR" vsds="T1R_PRNT_RSRC" vsdf="DSCR" 
+ title="Description"></textarea>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtT1PRNT_RSRC_ID_UP" title="Print Resource ID">Print Resource ID :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1PRNT_RSRC_ID_UP" id="txtT1PRNT_RSRC_ID_UP" 
+               size="20"
+ vsds="T1R_PRNT_RSRC" vsdf="PRNT_RSRC_ID_UP" 
+         ams_max_len="20"
+ ShowCodeInfo="" title="Print Resource ID" value="PRNT_RSRC_ID_UP"></div>
+        </td>
+      </tr>
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+ 
+
+  <input type="hidden" name="T2R_PRNT_RSRC_PARM_Currency" value="">
+  <input type="hidden" name="T2R_PRNT_RSRC_PARM_Old_Currency" value="">
+  
+  
+  
+  <table name="tblT2R_PRNT_RSRC_PARM" id="tblT2R_PRNT_RSRC_PARM" class="advgrid" vsds="T2R_PRNT_RSRC_PARM">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><span id="T2PARM_NMsortGridLabel" name="T2PARM_NMsortGridLabel" title="Parameter Name">Parameter Name</span></th>
+      
+        <th 
+><span id="T2PARM_VLsortGridLabel" name="T2PARM_VLsortGridLabel" title="Parameter Value">Parameter Value</span></th>
+      
+        <th 
+><span id="T2PARM_DSCRsortGridLabel" name="T2PARM_DSCRsortGridLabel" title="Description">Description</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T2R_PRNT_RSRC_PARMvscurrency" id="T2R_PRNT_RSRC_PARMvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T2R_PRNT_RSRC_PARM" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td>
+          <input type="text" name="txtT2PARM_NM" 
+            size="20"
+      maxlength="50"
+ value="PARM_NM" vsds="T2R_PRNT_RSRC_PARM" vsdf="PARM_NM" 
+ ShowCodeInfo="" title="Parameter Name"
+>
+        </td>
+      
+        <td>
+          <input type="text" name="txtT2PARM_VL" 
+            size="20"
+      maxlength="255"
+ value="PARM_VL" vsds="T2R_PRNT_RSRC_PARM" vsdf="PARM_VL" 
+ ShowCodeInfo="" title="Parameter Value"
+>
+        </td>
+      
+        <td class="memo">
+           <textarea name="txtT2PARM_DSCR" vsds="T2R_PRNT_RSRC_PARM" vsdf="PARM_DSCR" cols="20" rows="2" vsformat="" title="Description"></textarea>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+    <td><ams_map title="Update Actions" name="Update Actions">
+<a href="Advantage" vsds="T2R_PRNT_RSRC_PARM" vsaction="delete" id="T2R_PRNT_RSRC_PARMdelete" name="T2R_PRNT_RSRC_PARMdelete" title="Delete Selected Row" accesskey="7">Delete</a>
+<a href="Advantage" vsds="T2R_PRNT_RSRC_PARM" vsaction="insert" id="T2R_PRNT_RSRC_PARMinsert" name="T2R_PRNT_RSRC_PARMinsert" title="Insert New Row" accesskey="I">Insert</a>
+    </ams_map></td>
+      
+  <td><ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="Advantage" vsds="T2R_PRNT_RSRC_PARM" vsaction="11" name="T2R_PRNT_RSRC_PARMCopyLine" id="T2R_PRNT_RSRC_PARMCopyLine" title="Copy Selected Row" accesskey="C">Copy</a>
+<a href="Advantage" vsds="T2R_PRNT_RSRC_PARM" vsaction="12" name="T2R_PRNT_RSRC_PARMPasteLine" id="T2R_PRNT_RSRC_PARMPasteLine" title="Paste Copied Row" accesskey="8">Paste</a>
+  </ams_map></td>
+      
+<td><div name="T2R_PRNT_RSRC_PARMGridNav" id="T2R_PRNT_RSRC_PARMGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+      <a href="Advantage" vsds="T2R_PRNT_RSRC_PARM" vsaction="firstpage" name="T2R_PRNT_RSRC_PARMfirstpage" id="T2R_PRNT_RSRC_PARMfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+      <a href="Advantage" vsds="T2R_PRNT_RSRC_PARM" vsaction="prevpage" name="T2R_PRNT_RSRC_PARMprevpage" id="T2R_PRNT_RSRC_PARMprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+      <a href="Advantage" vsds="T2R_PRNT_RSRC_PARM" vsaction="nextpage" id="T2R_PRNT_RSRC_PARMnextpage" name="T2R_PRNT_RSRC_PARMnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+      <a href="Advantage" vsds="T2R_PRNT_RSRC_PARM" vsaction="lastpage" id="T2R_PRNT_RSRC_PARMlastpage" name="T2R_PRNT_RSRC_PARMlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T2R_PRNT_RSRC_PARM', new Array(), new Array() ) ;
+    
+  -->
+  </script>
+ 
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

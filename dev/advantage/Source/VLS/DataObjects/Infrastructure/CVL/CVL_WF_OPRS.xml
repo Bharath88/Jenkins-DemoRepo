@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!DOCTYPE DataObject SYSTEM "DataObject.dtd">
+<DataObject
+	SurrId="0333117090.MFARRELL.0000"
+	CodedValuesList="True"
+	IsRemoteAccessible="False"
+	SuperClass="AMSDataObject"
+	UseQuotedIdentifiers="False"
+	LockMode="NoOptimisticLocking"
+	ImageReference=" "
+	XdaConnector="SQL"
+	DTDVersion="05.06.00"
+	>
+	<CodedValuesList
+		DisplayAttribute="APRV_OPR_DISP"
+		StoredAttribute="APRV_OPR_NO"
+	/>
+	<VLSDeployment
+		DeploySecurityInfo="False"
+	/>
+	<SingularCaption><![CDATA[*]]> </SingularCaption>
+	<PluralCaption><![CDATA[*]]> </PluralCaption>
+	<Description><![CDATA[ ]]> </Description>
+	<Comments><![CDATA[ ]]> </Comments>
+	<Attributes>
+		<Attribute
+			Name="APRV_OPR_NO"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Byte"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+		</Attribute>
+		<Attribute
+			Name="APRV_OPR_DISP"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="True"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="15"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<ExtendedProperties>
+				<Property
+					Name="AllowMixedCase"
+					Value="Y"
+				/>
+			</ExtendedProperties>
+			<Derivation
+				DerivationType="None"
+			/>
+		</Attribute>
+		<Attribute
+			Name="AMS_ROW_VERS_NO"
+			Persistent="True"
+			PreventUserUpdates="True"
+			ValueRequired="False"
+			LayoutByDefault="True"
+			>
+			<DataType
+				DataType="Long"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+		</Attribute>
+	</Attributes>
+	<Indexes>
+		<Index
+			Name="PK_CVLWFOPRS"
+			Primary="True"
+			Unique="True"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="APRV_OPR_NO"
+				Descending="False"
+			/>
+		</Index>
+	</Indexes>
+</DataObject>

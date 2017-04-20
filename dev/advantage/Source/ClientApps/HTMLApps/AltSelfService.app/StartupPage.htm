@@ -1,0 +1,313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+<title>StartupPage</title>
+  <base href>
+         <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSPortalStyle.css">
+         <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSStyle.css">
+         <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSAppStyle.css">
+         <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/ALTSS/ALTSSUtil.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+         <script type="text/javascript" language="JavaScript" src="JS/TabbedNavigation.js"></script>
+         <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+         <script type="text/javascript" language="JavaScript">
+  <!--
+     var mboolSelfServiceApp        = true;
+     var mboolStartRegTransactions  = false ;
+     var mboolTransactionInProgress = false ;
+     var moTransactionTargetWindow  = null ;
+     var moADVBrowserWindows        = new Array(0) ;
+     top.window.name = 'ADVANTAGE' ;
+
+     moADVBrowserWindows[0] = top ;
+
+     var mlSTARTPG_Timeout         = -1 ;
+     var mlSTARTPG_TimeoutWarn     = -1 ;
+     var moSTARTPG_Timeout         = null ;
+     var msMainHelpFilesLocation   = null ;
+     var msFieldHelpFilesLocation  = null ;
+     var msAccessHelpFilesLocation = null ;
+     var msMainWindowFAQFileName   = null ;
+     var msHelpWindowFAQFileName   = null ;
+
+     function STARTPG_Home()
+     {
+        var loSecondary = top.frames['Secondary'] ;
+
+        if ( loSecondary != null )
+        {
+           var loBFNav = loSecondary.frames['Secondary'] ;
+
+           if ( loBFNav != null )
+           {
+              if ( loBFNav.BFNAVPANEL_Close != null )
+              {
+                 loBFNav.BFNAVPANEL_Close() ;
+                 return ;
+              }
+           }
+        }
+        submitForm( document.StartupPage, 'T1HomePage=T1HomePage&vsnavigation=T1HomePage', 'Display' ) ;
+     }
+
+     function STARTPG_LoadHomePage()
+     {
+        submitForm(document.StartupPage,
+           'T1AltSSHomePage=T1AltSSHomePage&vsnavigation=T1AltSSHomePage','Display');
+     }
+     function STARTPG_LoadSiteMapPage()
+     {
+         submitForm( document.StartupPage,
+            'menu_action=menu_action&ams_action=OpenSiteMap','Display' );
+     }
+     function STARTPG_LoadDirectTransition(fsApplName, fsWhereClause, fsDestination, fsFramesetPageName, fsFrameName)
+     {
+        var lsDest = "InitialPageTran=InitialPageTran&vsnavigation=pagetransition" +
+              "&ams_applname=\"" + fsApplName + "\"" +
+              "&ams_whereclause=\"" + fsWhereClause + "\"" +
+              "&ams_destination=\"" + fsDestination + "\"" +
+              "&ams_framesetpagename=\"" + fsFramesetPageName + "\"" +
+              "&ams_framename=\"" + fsFrameName + "\"";
+
+        submitForm(document.StartupPage,lsDest,'Display');
+     }
+
+     function STARTPG_LoadSecondaryNavigator()
+     {
+        submitForm(document.StartupPage,
+           'T2AltSSSecondaryNav=T2AltSSSecondaryNav&vsnavigation=T2AltSSSecondaryNav',
+           'Secondary');
+     }
+
+     function STARTPG_SetTimeout( flTimeout, flTimeoutWarn )
+     {
+        mlSTARTPG_Timeout = flTimeout ;
+        mlSTARTPG_TimeoutWarn = flTimeoutWarn ;
+     }
+
+     function STARTPG_ResetSessionTimer()
+     {
+        if ( moSTARTPG_Timeout != null )
+        {
+           clearTimeout( moSTARTPG_Timeout ) ;
+           moSTARTPG_Timeout = null ;
+        }
+        if ( mlSTARTPG_Timeout != -1 )
+        {
+           moSTARTPG_Timeout = setTimeout( 'STARTPG_WarnTimeout();', (mlSTARTPG_Timeout - mlSTARTPG_TimeoutWarn) ) ;
+        }
+     }
+
+     function STARTPG_WarnTimeout()
+     {
+        var liMins = mlSTARTPG_TimeoutWarn / 60000 ;
+
+        if ( liMins > 1 )
+        {
+           alert( 'Your session will expire in ' + liMins + ' minutes. Click OK to continue working.' ) ;
+        }
+        else
+        {
+           alert( 'Your session will expire in ' + liMins + ' minute. Click OK to continue working.' ) ;
+        }
+        submitForm( document.StartupPage, 'menu_action=menu_action&ams_action=undoall', window.name ) ;
+     }
+
+     function STARTPG_Logout()
+     {
+        document.forms[0].target = '_parent';
+
+        if (mboolNS4)
+        {
+           document.forms[0].vslogoff.click();
+        }
+        else if (mbMinIE4 || mboolNS5Up)
+        {
+           var loElem = document.getElementById('vslogoff')
+
+           if (loElem != null)
+           {
+              loElem.click();
+           }
+        }
+     }
+
+     function STARTPG_ShowHelp()
+     {
+        var lsBaseTags = document.getElementsByTagName("BASE");
+        var lsBaseHref = lsBaseTags[0].getAttribute("HREF");
+
+        var lsHelpPage = lsBaseHref + msMainHelpFilesLocation ;
+
+        DHTMLLIB_OpenNewWin( lsHelpPage, '_Help', 'yes',
+                         'no', 'no', 'yes', 'no', 'yes', 'auto',
+                         UTILS_SECON_WIN_WIDTH, UTILS_SECON_WIN_HEIGHT,
+                             UTILS_SECON_WIN_LEFT, UTILS_SECON_WIN_TOP, true );
+     }
+
+     function STARTPG_ShowAccessHelp()
+     {
+        var lsBaseTags = document.getElementsByTagName("BASE");
+        var lsBaseHref = lsBaseTags[0].getAttribute("HREF");
+
+        var lsHelpPage = lsBaseHref + msAccessHelpFilesLocation ;
+
+        DHTMLLIB_OpenNewWin( lsHelpPage, '_Help', 'yes',
+                         'no', 'no', 'yes', 'no', 'yes', 'auto',
+                         UTILS_SECON_WIN_WIDTH, UTILS_SECON_WIN_HEIGHT,
+                             UTILS_SECON_WIN_LEFT, UTILS_SECON_WIN_TOP, true );
+     }
+
+     function STARTPG_SetPickElemYPos(fiPickElemYPos)
+     {
+        STARTPG_miPickElemYPos = fiPickElemYPos;
+     }
+
+     function STARTPG_GetPickElemYPos()
+     {
+        return STARTPG_miPickElemYPos;
+     }
+
+     function STARTPG_SetPickElem(fsPickElem)
+     {
+        STARTPG_msPickElem = fsPickElem;
+     }
+
+     function STARTPG_GetPickElem()
+     {
+        return STARTPG_msPickElem;
+     }
+
+     function STARTPG_SetMainHelpFilesLocation(fsMainHelpFilesLocation)
+     {
+        msMainHelpFilesLocation = fsMainHelpFilesLocation;
+     }
+
+     function STARTPG_GetMainHelpFilesLocation()
+     {
+        return msMainHelpFilesLocation;
+     }
+
+     function STARTPG_SetFieldHelpFilesLocation(fsFieldHelpFilesLocation)
+     {
+        msFieldHelpFilesLocation = fsFieldHelpFilesLocation;
+     }
+
+     function STARTPG_GetFieldHelpFilesLocation()
+     {
+        var lsBaseTags = document.getElementsByTagName("BASE");
+        var lsBaseHref = lsBaseTags[0].getAttribute("HREF");
+
+        var lsHelpFldLocation = lsBaseHref + msFieldHelpFilesLocation + "/";
+
+        return lsHelpFldLocation;
+     }
+
+     function STARTPG_SetAccessHelpFilesLocation(fsAccessHelpFilesLocation)
+     {
+        msAccessHelpFilesLocation = fsAccessHelpFilesLocation ;
+     }
+
+     function STARTPG_GetAccessHelpFilesLocation()
+     {
+        return msAccessHelpFilesLocation;
+     }
+  -->
+</script>
+  <vstext vsds=" " name="TABNAV" vspreservetag="true">
+</head>
+
+<body class="startup">
+
+  <form action="AltSelfService" name="StartupPage" vsform="true" method="post" target='Display'>
+
+    <table class="primarynav" cellspacing=0 cellpadding=0>
+      <tr>
+         <td class="leftlayout">
+            <table cellspacing=0 cellpadding=0>
+               <tr>
+                  <td class="appname">
+                     <!--
+                     <img id="AppName" name="App Name" alt="App Name"
+                     src="../AMSImages/SS/SSAppName.gif">
+                     -->
+                     Advantage<br>Self<br>Service
+                  </td>
+               </tr>
+               <tr>
+                  <td class="welcome">
+                     <vstext name="WELCOME" vsds=" " vspreservetag="true">
+                  </td>
+               </tr>
+            </table>
+         </td>
+
+         <td>
+
+            <table class="primarynav" cellspacing=0 cellpadding=0>
+               <tr class="globalmenu">
+                  <td class="globalmenu">
+                     <table>
+                        <tr>
+                           <td> </td>
+                           <td class="globalmenuitem">
+                              <a href="JavaScript:SSUTILS_OpenHelp( 'StartupPage','','OpenHelp','HelpMaster' );"
+                              name="OpenHelp" id="OpenHelp" title="Open HelpPage"> Help </a>
+                           </td>
+                           <td class="seperator"> | </td>
+
+                           <td class="globalmenuitem">
+                              <a href="JavaScript:SSUTILS_OpenHelp( 'StartupPage','','OpenAccessibleHelp','HelpMaster' );"
+                              name="OpenAccessibleHelp" id="OpenAccessibleHelp" title="Open Accessible HelpPage"> Accessible Help </a>
+                           </td>
+                           <td class="seperator"> | </td>
+
+                           <td class="globalmenuitem">
+                              <a href="JavaScript:submitForm( document.StartupPage,'menu_action=menu_action&ams_action=HideTab&ams_sub_action=OpenSiteMap','Startup' );"
+                              name="OpenSiteMap" id="OpenSiteMap" title="Open Site Map Page"> Site Map </a>
+                           </td>
+                           <td class="seperator"> | </td>
+
+                           <td class="globalmenuitem">
+                              <a href="javascript:STARTPG_Logout()" name="Logout" id="Logout" title="Logout"> Logout </a>
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+
+               <tr>
+                  <td>
+                     <script type="text/javascript" language="JavaScript">
+                     <!--
+                     	TABNAV_DisplayTabs();
+                     -->
+                     </script>
+                  </td>
+               </tr>
+            </table>
+
+         </td>
+      </tr>
+    </table>
+
+    <div style="visibility:hidden;display:none;position:absolute;top:-1000em;left:-1000em;">
+      <input id="vslogoff" type="submit" value="Logoff" name="vslogoff" alt="Logoff">
+      <a href="AltSelfService" target="Display" name="InitialPageTran" id="InitialPageTran" title="" vsaction="13" vsds=" "></a>
+      <a href="AltSelfService" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+      <a href="AltSelfService" target="Display" name="T1AltSSHomePage" id="T1AltSSHomePage" title="" vsaction="1" vsds=" " ams_destination="AltSSHomePage" ams_applname="AltSelfService"></a>
+      <a href="AltSelfService" target="Secondary" name="T2AltSSSecondaryNav" id="T2AltSSSecondaryNav" title="" vsaction="1" vsds=" " ams_destination="AltSSSecondaryNav" ams_applname="AltSelfService"></a>
+
+    </div>
+
+  </form>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Search Worklists</title>
+  <base href>
+</head>
+
+<body class="adv reftable">
+  <form action="AdvMobile" method="post" vsform="true" name="pMobileWorklistSearch">
+    <div class="metainfo" id="MetaData" name="MetaData">
+       <input type="hidden" id="AppId" name="AppId" value="WFAMobile">
+       <input type="hidden" id="PageName" name="PageName" value="pMobileWorklistSearch">
+       <input type="hidden" id="PageType" name="PageType" value="WorklistPage">
+       <input type="hidden" id="PageView" name="PageView" value="WorklistPageQuery">
+       <input type="hidden" name="Errors" value="" vsclass="com.amsinc.gems.adv.vfc.html.AdvMobileErrorElement">
+    </div>
+	  <div class="actions" id="QueryData" name="QueryData" mobile_container="true">
+		  <select name="txtT1WorkLists" id="txtT1WorkLists" vsds="" vsdf="" size="1" vscodetable="" class="adveditable" onchange="checkAndSubmit();" title="Worklist: ">
+			<option value="JADEStored">JADEDisplayed</option>
+		  </select>
+
+	     <select name="txtT1APRV_LVL" id="txtT1APRV_LVL" vsds="T1WF_WRK_LST_QRY" vsdf="APRV_LVL" vsdisplaymode="Query" size="1" vscodetable="CVL_WF_LVLS" title="Level: ">
+		             <option value="JADEStored">JADEDisplayed</option>
+          </select>
+
+         <input type="text" name="txtT1DOC_CD" id="txtT1DOC_CD" maxlength="30" value="DOC_CD" size="12" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_CD" vsdisplaymode="Query" title="Code: ">
+
+	     <input type="text" name="txtT1DOC_DEPT_CD" id="txtT1DOC_DEPT_CD" size="6" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_DEPT_CD" vsdisplaymode="Query" value="DOC_DEPT_CD" title="Dept: ">
+         <input type="text" name="txtT1DOC_ID" id="txtT1DOC_ID" size="20" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_ID" vsdisplaymode="Query" value="DOC_ID" title="ID: ">
+
+         <input type="text" name="txtT1DOC_SBMT_ID" id="txtT1DOC_SBMT_ID" size="20" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_SBMT_ID" vsdisplaymode="Query" value="DOC_SBMT_ID" title="Submitter ID: ">
+
+         <select name="txtT1ESCL_ITEM" id="txtT1ESCL_ITEM" vsds="T1WF_WRK_LST_QRY" vsdf="ESCL_ITEM" vsdisplaymode="Query" size="1" vscodetable="CVL_YES_NO" title="Escalated Item: ">
+		             <option value="JADEStored">JADEDisplayed</option>
+          </select>
+
+        </td>
+      </tr>
+	  </div>
+
+      <div class="actions" id="PageActions" name="PageActions" mobile_container="true">
+         <a href="AdvMobile" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+         <a href="AdvMobile" vsds=" " vsaction="mob_back" ams_action="301" name="mob_back" id="mob_back" title=""></a>
+         <a href="AdvMobile" vsds=" " vsaction="display_error" name="display_error" id="display_error" title=""></a>
+      </div>
+	  <div class="actions" id="QueryActions" name="QueryActions" mobile_container="true">
+		 <a href="AdvMobile" vsds="T1WF_WRK_LST_QRY" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+		 <a href="AdvMobile" vsds="T1WF_WRK_LST_QRY" vsaction="clearquery" name="T1WF_WRK_LST_QRYclearquery" id="T1WF_WRK_LST_QRYclearquery" title="Clear" accesskey="X">Clear</a>
+	  </div>
+  </form>
+</body>
+</html>

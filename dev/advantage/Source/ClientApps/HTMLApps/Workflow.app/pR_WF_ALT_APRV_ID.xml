@@ -1,0 +1,815 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="Default"
+	PositionTop="433"
+	PositionLeft="234"
+	PositionWidth="227"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSRefTableGridDisplayPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="1114619267"
+	>
+	<FormCaption><![CDATA[Alternate Approval Assignments]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="R_WF_ALT_APRV_ID"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGenericGridDisplay"
+		MaxGridRowCount="20"
+		FetchedBlockRowCount="20"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="USID" />
+				<RSDefaultAttribute ID="2" Name="ROLEID" />
+				<RSDefaultAttribute ID="3" Name="ASSIGNEE" />
+				<RSDefaultAttribute ID="4" Name="ASSIGNEE_FL" />
+				<RSDefaultAttribute ID="12" Name="EFBGN_DT" />
+				<RSDefaultAttribute ID="13" Name="EFEND_DT" />
+				<RSDefaultAttribute ID="7" Name="APRV_LVL" />
+				<RSDefaultAttribute ID="8" Name="ALT_USID" />
+				<RSDefaultAttribute ID="9" Name="ALT_ROLEID" />
+				<RSDefaultAttribute ID="10" Name="ALT_ASSIGNEE" />
+				<RSDefaultAttribute ID="11" Name="ALT_ASSIGNEE_FL" />
+				<RSDefaultAttribute ID="14" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="15" Name="USID_UP" />
+				<RSDefaultAttribute ID="16" Name="ROLEID_UP" />
+				<RSDefaultAttribute ID="17" Name="ALT_USID_UP" />
+				<RSDefaultAttribute ID="18" Name="ALT_ROLEID_UP" />
+				<RSDefaultAttribute ID="19" Name="TBL_LAST_DT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="APRV_LVL" Displayed="True" UnPlaced="False" Archetype="ComboboxReq" />
+				<RSAttribute Name="EFBGN_DT" Displayed="True" UnPlaced="False" Archetype="AMSDateChoiceCalendarReq" />
+				<RSAttribute Name="EFEND_DT" Displayed="True" UnPlaced="False" Archetype="AMSDateChoiceCalendarReq" />
+				<RSAttribute Name="ASSIGNEE" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="ASSIGNEE_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ALT_ASSIGNEE" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="ALT_ASSIGNEE_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="USID_UP" Displayed="True" UnPlaced="False" Archetype="AMSUpperCaseTextBox" />
+				<RSAttribute Name="ROLEID_UP" Displayed="True" UnPlaced="False" Archetype="AMSUpperCaseTextBox" />
+				<RSAttribute Name="ALT_USID_UP" Displayed="True" UnPlaced="False" Archetype="AMSUpperCaseTextBox" />
+				<RSAttribute Name="ALT_ROLEID_UP" Displayed="True" UnPlaced="False" Archetype="AMSUpperCaseTextBox" />
+				<RSAttribute Name="USID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ROLEID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ALT_USID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ALT_ROLEID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="APRV_LVL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="EFBGN_DT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="EFEND_DT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ASSIGNEE" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ALT_ASSIGNEE" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ROLEID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASSIGNEE_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ALT_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ALT_ROLEID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ALT_ASSIGNEE_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="USID_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ROLEID_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ALT_USID_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ALT_ROLEID_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value="&quot;USID_UP,ALT_USID_UP&quot;"
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value="%ASSIGNEE%"
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="SummaryCaption"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+		</ArchetypeExtendedProperties>
+		<PickObject
+			RSID="2"
+			Prefix="T2"
+			BusinessObject="R_WF_ROLE"
+			Relationship="R_WF_ROLE(R_WF_ROLE)-R_WF_ALT_APRV_IDs2(R_WF_ALT_APRV_ID)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [ROLEID] = [?ROLEID]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="ROLEID" />
+					<RSDefaultAttribute ID="2" Name="ROLE_NM" />
+					<RSDefaultAttribute ID="18" Name="HOME_GOVT_BRN_CD" />
+					<RSDefaultAttribute ID="4" Name="HOME_CAB_CD" />
+					<RSDefaultAttribute ID="5" Name="HOME_DEPT_CD" />
+					<RSDefaultAttribute ID="6" Name="HOME_DIV_CD" />
+					<RSDefaultAttribute ID="7" Name="HOME_GP_CD" />
+					<RSDefaultAttribute ID="8" Name="HOME_SECT_CD" />
+					<RSDefaultAttribute ID="9" Name="HOME_DSTC_CD" />
+					<RSDefaultAttribute ID="10" Name="HOME_BUR_CD" />
+					<RSDefaultAttribute ID="11" Name="HOME_UNIT_CD" />
+					<RSDefaultAttribute ID="12" Name="DSCR" />
+					<RSDefaultAttribute ID="13" Name="MGRID" />
+					<RSDefaultAttribute ID="14" Name="COMB_ORG_CD" />
+					<RSDefaultAttribute ID="15" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="16" Name="ROLEID_UP" />
+					<RSDefaultAttribute ID="17" Name="ROLE_NM_UP" />
+					<RSDefaultAttribute ID="19" Name="TBL_LAST_DT" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="ROLEID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="ROLE_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_CAB_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_DEPT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_DIV_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_GP_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_SECT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_DSTC_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_BUR_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_UNIT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DSCR" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="MGRID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COMB_ORG_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ROLEID_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ROLE_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="HOME_GOVT_BRN_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="ROLEID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="ROLE_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_CAB_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_DEPT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_DIV_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_GP_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_SECT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_DSTC_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_BUR_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_UNIT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DSCR" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="MGRID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COMB_ORG_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ROLEID_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ROLE_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="HOME_GOVT_BRN_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value="&quot;ROLEID_UP,ROLE_NM_UP&quot;"
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+		<PickObject
+			RSID="3"
+			Prefix="T3"
+			BusinessObject="R_WF_ROLE"
+			Relationship="R_WF_ROLE1(R_WF_ROLE)-R_WF_ALT_APRV_IDs3(R_WF_ALT_APRV_ID)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [ROLEID] = [?ALT_ROLEID]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="ROLEID" />
+					<RSDefaultAttribute ID="2" Name="ROLE_NM" />
+					<RSDefaultAttribute ID="18" Name="HOME_GOVT_BRN_CD" />
+					<RSDefaultAttribute ID="4" Name="HOME_CAB_CD" />
+					<RSDefaultAttribute ID="5" Name="HOME_DEPT_CD" />
+					<RSDefaultAttribute ID="6" Name="HOME_DIV_CD" />
+					<RSDefaultAttribute ID="7" Name="HOME_GP_CD" />
+					<RSDefaultAttribute ID="8" Name="HOME_SECT_CD" />
+					<RSDefaultAttribute ID="9" Name="HOME_DSTC_CD" />
+					<RSDefaultAttribute ID="10" Name="HOME_BUR_CD" />
+					<RSDefaultAttribute ID="11" Name="HOME_UNIT_CD" />
+					<RSDefaultAttribute ID="12" Name="DSCR" />
+					<RSDefaultAttribute ID="13" Name="MGRID" />
+					<RSDefaultAttribute ID="14" Name="COMB_ORG_CD" />
+					<RSDefaultAttribute ID="15" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="16" Name="ROLEID_UP" />
+					<RSDefaultAttribute ID="17" Name="ROLE_NM_UP" />
+					<RSDefaultAttribute ID="19" Name="TBL_LAST_DT" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="ROLEID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="ROLE_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_CAB_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_DEPT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_DIV_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_GP_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_SECT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_DSTC_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_BUR_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_UNIT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DSCR" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="MGRID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COMB_ORG_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ROLEID_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ROLE_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="HOME_GOVT_BRN_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="ROLEID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="ROLE_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_CAB_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_DEPT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_DIV_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_GP_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_SECT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_DSTC_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_BUR_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_UNIT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DSCR" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="MGRID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COMB_ORG_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ROLEID_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ROLE_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="HOME_GOVT_BRN_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value="&quot;ROLEID_UP,ROLE_NM_UP&quot;"
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+		<PickObject
+			RSID="4"
+			Prefix="T4"
+			BusinessObject="R_SC_USER_DIR_INFO"
+			Relationship="R_SC_USER_DIR_INFO9(R_SC_USER_DIR_INFO)-R_WF_ALT_APRV_IDs(R_WF_ALT_APRV_ID)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [USER_ID] = [?USID]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="USER_ID" />
+					<RSDefaultAttribute ID="2" Name="LAST_NM_TXT" />
+					<RSDefaultAttribute ID="3" Name="FRST_NM_TXT" />
+					<RSDefaultAttribute ID="4" Name="LCLTY_TXT" />
+					<RSDefaultAttribute ID="5" Name="EMAIL_AD_TXT" />
+					<RSDefaultAttribute ID="6" Name="PH_NO_TXT" />
+					<RSDefaultAttribute ID="7" Name="FAX_NO_TXT" />
+					<RSDefaultAttribute ID="8" Name="ROOM_NO_TXT" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="PH_EXT" />
+					<RSDefaultAttribute ID="11" Name="USER_NM" />
+					<RSDefaultAttribute ID="26" Name="GOVT_BRN_CD" />
+					<RSDefaultAttribute ID="13" Name="CAB_CD" />
+					<RSDefaultAttribute ID="14" Name="DEPT_CD" />
+					<RSDefaultAttribute ID="15" Name="DIV_CD" />
+					<RSDefaultAttribute ID="16" Name="GP_CD" />
+					<RSDefaultAttribute ID="17" Name="SECT_CD" />
+					<RSDefaultAttribute ID="18" Name="DSTC_CD" />
+					<RSDefaultAttribute ID="19" Name="BUR_CD" />
+					<RSDefaultAttribute ID="20" Name="UNIT_CD" />
+					<RSDefaultAttribute ID="21" Name="USER_ID_UP" />
+					<RSDefaultAttribute ID="22" Name="LAST_NM_TXT_UP" />
+					<RSDefaultAttribute ID="23" Name="FRST_NM_TXT_UP" />
+					<RSDefaultAttribute ID="24" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="25" Name="LAST_UPDATE_USERID" />
+					<RSDefaultAttribute ID="27" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="28" Name="USER_NM_UP" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="USER_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="LAST_NM_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FRST_NM_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="LCLTY_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="EMAIL_AD_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="PH_NO_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FAX_NO_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="ROOM_NO_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PH_EXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="USER_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CAB_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DIV_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SECT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSTC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUR_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USER_ID_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_NM_TXT_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FRST_NM_TXT_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+					<RSAttribute Name="USER_NM_UP" Displayed="True" UnPlaced="True" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="USER_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="LAST_NM_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FRST_NM_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="LCLTY_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="EMAIL_AD_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PH_NO_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FAX_NO_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ROOM_NO_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PH_EXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="USER_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CAB_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DIV_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SECT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSTC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUR_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USER_ID_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_NM_TXT_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FRST_NM_TXT_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USER_NM_UP" Displayed="True" UnPlaced="True" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value="&quot;USER_ID_UP,LAST_NM_TXT_UP,FRST_NM_TXT_UP&quot;"
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+		<PickObject
+			RSID="5"
+			Prefix="T5"
+			BusinessObject="R_SC_USER_DIR_INFO"
+			Relationship="R_SC_USER_DIR_INFO10(R_SC_USER_DIR_INFO)-R_WF_ALT_APRV_IDs1(R_WF_ALT_APRV_ID)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [USER_ID] = [?ALT_USID]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="USER_ID" />
+					<RSDefaultAttribute ID="2" Name="LAST_NM_TXT" />
+					<RSDefaultAttribute ID="3" Name="FRST_NM_TXT" />
+					<RSDefaultAttribute ID="4" Name="LCLTY_TXT" />
+					<RSDefaultAttribute ID="5" Name="EMAIL_AD_TXT" />
+					<RSDefaultAttribute ID="6" Name="PH_NO_TXT" />
+					<RSDefaultAttribute ID="7" Name="FAX_NO_TXT" />
+					<RSDefaultAttribute ID="8" Name="ROOM_NO_TXT" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="PH_EXT" />
+					<RSDefaultAttribute ID="11" Name="USER_NM" />
+					<RSDefaultAttribute ID="26" Name="GOVT_BRN_CD" />
+					<RSDefaultAttribute ID="13" Name="CAB_CD" />
+					<RSDefaultAttribute ID="14" Name="DEPT_CD" />
+					<RSDefaultAttribute ID="15" Name="DIV_CD" />
+					<RSDefaultAttribute ID="16" Name="GP_CD" />
+					<RSDefaultAttribute ID="17" Name="SECT_CD" />
+					<RSDefaultAttribute ID="18" Name="DSTC_CD" />
+					<RSDefaultAttribute ID="19" Name="BUR_CD" />
+					<RSDefaultAttribute ID="20" Name="UNIT_CD" />
+					<RSDefaultAttribute ID="21" Name="USER_ID_UP" />
+					<RSDefaultAttribute ID="22" Name="LAST_NM_TXT_UP" />
+					<RSDefaultAttribute ID="23" Name="FRST_NM_TXT_UP" />
+					<RSDefaultAttribute ID="24" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="25" Name="LAST_UPDATE_USERID" />
+					<RSDefaultAttribute ID="27" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="28" Name="USER_NM_UP" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="USER_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="LAST_NM_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FRST_NM_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="LCLTY_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="EMAIL_AD_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="PH_NO_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FAX_NO_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="ROOM_NO_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PH_EXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="USER_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CAB_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DIV_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SECT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSTC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUR_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USER_ID_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_NM_TXT_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FRST_NM_TXT_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+					<RSAttribute Name="USER_NM_UP" Displayed="True" UnPlaced="True" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="USER_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="LAST_NM_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FRST_NM_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="LCLTY_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="EMAIL_AD_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PH_NO_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FAX_NO_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ROOM_NO_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PH_EXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="USER_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CAB_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DIV_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SECT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSTC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUR_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USER_ID_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_NM_TXT_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FRST_NM_TXT_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USER_NM_UP" Displayed="True" UnPlaced="True" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value="&quot;USER_ID_UP,LAST_NM_TXT_UP,FRST_NM_TXT_UP&quot;"
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+	</RecordSource>
+	<Transition
+		FormTransNum="1"
+		Prefix="T6"
+		TargetFormName="pR_WF_SC_USER_DIR_INFO"
+		IsTargetInitialQueryMode="False"
+		IsTargetInitialAddMode="False"
+		IsVisibleAppline="True"
+		IsAddedAfterGen="False"
+		FormTransCaption="Approval Users"
+		ClassName="PageNavigation"
+		TargetFramesetPage=""
+		TargetFrame=""
+		FrameNameInFramesetPage=""
+		RSID="6"
+		BusinessObject="R_SC_USER_DIR_INFO"
+		RelnIsFromParent="True"
+		>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+	</Transition>
+	<Transition
+		FormTransNum="1"
+		Prefix="T7"
+		TargetFormName="pR_WF_ROLE"
+		IsTargetInitialQueryMode="False"
+		IsTargetInitialAddMode="False"
+		IsVisibleAppline="True"
+		IsAddedAfterGen="False"
+		FormTransCaption="Approval Roles"
+		ClassName="PageNavigation"
+		TargetFramesetPage=""
+		TargetFrame=""
+		FrameNameInFramesetPage=""
+		RSID="7"
+		BusinessObject="R_WF_ROLE"
+		RelnIsFromParent="True"
+		>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+	</Transition>
+</Form>

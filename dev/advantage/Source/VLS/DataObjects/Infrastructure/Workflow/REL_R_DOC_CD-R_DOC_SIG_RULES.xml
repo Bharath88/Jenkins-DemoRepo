@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="RDocSigRulesToRDocCD"
+		ChildRoleName="RDocCDToRDocSigRules"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="DOC_CD"
+				ChildAttribute="DOC_CD"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_DOC_CD]]></AscendCaption>
+		<DescendCaption><![CDATA[R_DOC_SIG_RULES(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_DOC_CD/DOC_CD],v:Document Code Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Document Signature Rule%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_DOC_CD/DOC_CD],v:Document Code Table%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

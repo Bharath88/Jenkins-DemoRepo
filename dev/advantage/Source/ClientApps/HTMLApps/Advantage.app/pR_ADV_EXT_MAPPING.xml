@@ -1,0 +1,1114 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="AMSRefTableGridDisplay"
+	PositionTop="812"
+	PositionLeft="812"
+	PositionWidth="150"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="False"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSRefTableGridDisplayPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-1483890027"
+	>
+	<FormCaption><![CDATA[ECM Metadata Mapping]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="true"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+		<Property
+			Name="SSCaptionImageFileNm"
+			Value=""
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="AddBackLink"
+			Value=""
+		/>
+		<Property
+			Name="ADVDTDType"
+			Value=""
+		/>
+		<Property
+			Name="ADVUIType"
+			Value=""
+		/>
+		<Property
+			Name="AjaxHandler"
+			Value=""
+		/>
+		<Property
+			Name="AttachmentTypeOptions"
+			Value=""
+		/>
+		<Property
+			Name="AttachmentTypes"
+			Value=""
+		/>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="DivMapToGen"
+			Value=""
+		/>
+		<Property
+			Name="DivToGenAction"
+			Value=""
+		/>
+		<Property
+			Name="EditMode"
+			Value=""
+		/>
+		<Property
+			Name="ErrorsFromPage"
+			Value=""
+		/>
+		<Property
+			Name="ExcludeCopyPasteAttributes"
+			Value=""
+		/>
+		<Property
+			Name="IsSearchMenuButton"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="PageCode"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="SearchDS"
+			Value=""
+		/>
+		<Property
+			Name="SearchPopupOnload"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="R_ADV_EXT_TYP"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGenericGridDisplay"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="6" Name="ADV_SYS_TYP" />
+				<RSDefaultAttribute ID="7" Name="ADV_SYS_TYP_UP" />
+				<RSDefaultAttribute ID="2" Name="EXT_SYS_TYP" />
+				<RSDefaultAttribute ID="5" Name="EXT_SYS_TYP_UP" />
+				<RSDefaultAttribute ID="3" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="4" Name="TBL_LAST_DT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="ADV_SYS_TYP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="EXT_SYS_TYP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ADV_SYS_TYP_UP" Displayed="True" UnPlaced="False" Archetype="AMSHiddenTextBox" />
+				<RSAttribute Name="EXT_SYS_TYP_UP" Displayed="True" UnPlaced="False" Archetype="AMSHiddenTextBox" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="ADV_SYS_TYP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="EXT_SYS_TYP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ADV_SYS_TYP_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="EXT_SYS_TYP_UP" Displayed="False" UnPlaced="False" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxCSVRowsBeforeZip"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="DynamicGridAttrib"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCount"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCountMsg"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="OverrideNumRowsPerPage"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value="&quot;ADV_SYS_TYP_UP,EXT_SYS_TYP_UP&quot;"
+			/>
+			<Property
+				Name="ShowSearchPopup"
+				Value=""
+			/>
+			<Property
+				Name="UseDBHint"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Adjacent_Fields"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value=""
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="SummaryCaption"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+		<PickObject
+			RSID="5"
+			Prefix="T5"
+			BusinessObject="R_EXT_SYS_TYP"
+			Relationship="R_EXT_SYS_TYP(R_EXT_SYS_TYP)-R_ADV_EXT_TYP(R_ADV_EXT_TYP)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [EXT_SYS_TYP] = [?EXT_SYS_TYP]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="EXT_SYS_TYP" />
+					<RSDefaultAttribute ID="5" Name="EXT_SYS_TYP_UP" />
+					<RSDefaultAttribute ID="2" Name="EXT_SYS_TYP_DSC" />
+					<RSDefaultAttribute ID="6" Name="EXT_SYS_TYP_DSC_UP" />
+					<RSDefaultAttribute ID="3" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="4" Name="TBL_LAST_DT" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="EXT_SYS_TYP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="EXT_SYS_TYP_DSC" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="EXT_SYS_TYP_UP" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="EXT_SYS_TYP_DSC_UP" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="EXT_SYS_TYP" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="EXT_SYS_TYP_DSC" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="EXT_SYS_TYP_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="EXT_SYS_TYP_DSC_UP" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="EnableVirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="InitialBrowse"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value="&quot;EXT_SYS_TYP_UP,EXT_SYS_TYP_DSC_UP&quot;"
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+				<Property
+					Name="TypeAheadDispCols"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+		<PickObject
+			RSID="6"
+			Prefix="T6"
+			BusinessObject="R_ADV_SYS_TYP"
+			Relationship="R_ADV_SYS_TYP(R_ADV_SYS_TYP)-R_ADV_EXT_TYP(R_ADV_EXT_TYP)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [ADV_SYS_TYP] = [?ADV_SYS_TYP]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="6" Name="ADV_SYS_TYP" />
+					<RSDefaultAttribute ID="7" Name="ADV_SYS_TYP_UP" />
+					<RSDefaultAttribute ID="8" Name="ADV_SYS_TYP_NM" />
+					<RSDefaultAttribute ID="9" Name="ADV_SYS_TYP_NM_UP" />
+					<RSDefaultAttribute ID="10" Name="ADV_SYS_TYP_SH_NM" />
+					<RSDefaultAttribute ID="11" Name="ADV_SYS_TYP_SH_NM_UP" />
+					<RSDefaultAttribute ID="4" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="5" Name="TBL_LAST_DT" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ADV_SYS_TYP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ADV_SYS_TYP_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ADV_SYS_TYP_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ADV_SYS_TYP_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ADV_SYS_TYP_SH_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ADV_SYS_TYP_SH_NM_UP" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="ADV_SYS_TYP" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="ADV_SYS_TYP_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ADV_SYS_TYP_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ADV_SYS_TYP_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ADV_SYS_TYP_SH_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ADV_SYS_TYP_SH_NM_UP" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="CustomPickFrame"
+					Value=""
+				/>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="EnableVirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="InitialBrowse"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value="&quot;ADV_SYS_TYP_UP,ADV_SYS_TYP_NM_UP&quot;"
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+				<Property
+					Name="TypeAheadDispCols"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+		<RecordSource
+			RSID="7"
+			Prefix="T2"
+			BusinessObject="R_ADV_EXT_MAPPING"
+			Relationship="R_ADV_EXT_TYP(R_ADV_EXT_TYP)-R_ADV_EXT_MAPPING(R_ADV_EXT_MAPPING)"
+			RelnIsFromParent="True"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+			RecordSourceArchetype="AMSGridEditable"
+			MaxGridRowCount="10"
+			FetchedBlockRowCount="16"
+			AllowDelete="True"
+			AllowInsert="True"
+			AllowUpdate="True"
+			SaveMode="Buffered"
+			PreFetchRowCount="False"
+			ParentAlias=""
+			ChildAlias=""
+			>
+			<ParameterizedWhereClause><![CDATA[ [ADV_SYS_TYP] = [?ADV_SYS_TYP] and [EXT_SYS_TYP] = [?EXT_SYS_TYP]]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="EXT_SYS_COL_NM" />
+					<RSDefaultAttribute ID="8" Name="ADV_ATTR" />
+					<RSDefaultAttribute ID="9" Name="ADV_COMP" />
+					<RSDefaultAttribute ID="10" Name="ADV_SYS_TYP" />
+					<RSDefaultAttribute ID="5" Name="EXT_SYS_TYP" />
+					<RSDefaultAttribute ID="6" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="7" Name="TBL_LAST_DT" />
+				</DefaultAttributes>
+				<GridAttributes>
+					<RSAttribute Name="EXT_SYS_COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="ADV_COMP" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="ADV_ATTR" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="EXT_SYS_TYP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ADV_SYS_TYP" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="ColumnProjectionLevel"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileName"
+					Value=""
+				/>
+				<Property
+					Name="DownloadMaxCSVRowsBeforeZip"
+					Value=""
+				/>
+				<Property
+					Name="DownloadMaxRows"
+					Value=""
+				/>
+				<Property
+					Name="DownloadProperties"
+					Value=""
+				/>
+				<Property
+					Name="DownloadTemplate"
+					Value=""
+				/>
+				<Property
+					Name="DynamicGridAttrib"
+					Value=""
+				/>
+				<Property
+					Name="maintenanceString"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCount"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCountMsg"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageEndWith"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageStartWith"
+					Value=""
+				/>
+				<Property
+					Name="MultiTableCurrentRow"
+					Value=""
+				/>
+				<Property
+					Name="OverrideNumRowsPerPage"
+					Value=""
+				/>
+				<Property
+					Name="PreFetchRowCount"
+					Value=""
+				/>
+				<Property
+					Name="SearchColList"
+					Value=""
+				/>
+				<Property
+					Name="ShowSearchPopup"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+				<Property
+					Name="VirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="ZoomDataSource"
+					Value=""
+				/>
+			</ExtendedProperties>
+			<ArchetypeExtendedProperties>
+				<Property
+					Name="Action_1_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_1_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_1_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_2_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_2_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_3_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_3_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_4_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_4_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_5_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_5_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="DetailsCaption"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileType"
+					Value="none"
+				/>
+				<Property
+					Name="GridDownloadFileType"
+					Value="none"
+				/>
+				<Property
+					Name="New_Column_Fields"
+					Value=""
+				/>
+				<Property
+					Name="ObjectAttachmentMode"
+					Value="Editable"
+				/>
+				<Property
+					Name="ObjectAttachments"
+					Value="false"
+				/>
+				<Property
+					Name="showCopyPaste"
+					Value="true"
+				/>
+				<Property
+					Name="TimelineData"
+					Value="false"
+				/>
+				<Property
+					Name="UploadFileType"
+					Value="none"
+				/>
+			</ArchetypeExtendedProperties>
+			<PickObject
+				RSID="8"
+				Prefix="T3"
+				BusinessObject="R_EXTERNAL_METADATA"
+				Relationship="R_EXTERNAL_METADATA(R_EXTERNAL_METADATA)-R_ADV_EXT_MAPPING(R_ADV_EXT_MAPPING)"
+				RelnIsFromParent="False"
+				DoesSourceAffectMe="False"
+				DoIAffectSource="False"
+				IsAddedAfterGen="False"
+				RsAttributesDefault="False"
+				ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+				OnScreenPick="False"
+				>
+				<FKeyParamsClause><![CDATA[ [EXT_SYS_TYP] = [?EXT_SYS_TYP] and [EXT_SYS_COL_NM] = [?EXT_SYS_COL_NM]]]></FKeyParamsClause>
+				<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+				<OrderByClause><![CDATA[ ]]></OrderByClause>
+				<RSAttributesMeta>
+					<DefaultAttributes>
+						<RSDefaultAttribute ID="1" Name="EXT_SYS_TYP" />
+						<RSDefaultAttribute ID="6" Name="EXT_SYS_TYP_UP" />
+						<RSDefaultAttribute ID="2" Name="EXT_SYS_COL_NM" />
+						<RSDefaultAttribute ID="7" Name="EXT_SYS_COL_NM_UP" />
+						<RSDefaultAttribute ID="3" Name="EXT_SYS_COL_DESC" />
+						<RSDefaultAttribute ID="8" Name="EXT_SYS_COL_DESC_UP" />
+						<RSDefaultAttribute ID="4" Name="AMS_ROW_VERS_NO" />
+						<RSDefaultAttribute ID="5" Name="TBL_LAST_DT" />
+					</DefaultAttributes>
+					<GridAttributes>
+						<RSAttribute Name="EXT_SYS_TYP" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="EXT_SYS_COL_NM" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="EXT_SYS_COL_DESC" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="EXT_SYS_TYP_UP" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="EXT_SYS_COL_NM_UP" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="EXT_SYS_COL_DESC_UP" Displayed="False" UnPlaced="False" />
+					</GridAttributes>
+				</RSAttributesMeta>
+				<ExtendedProperties>
+					<Property
+						Name="DataSource"
+						Value=""
+					/>
+					<Property
+						Name="DisableAutoPickFilter"
+						Value=""
+					/>
+					<Property
+						Name="EnableVirtualResultSet"
+						Value=""
+					/>
+					<Property
+						Name="InitialBrowse"
+						Value=""
+					/>
+					<Property
+						Name="ScalarColList"
+						Value="&quot;EXT_SYS_TYP_UP,EXT_SYS_COL_NM_UP&quot;"
+					/>
+					<Property
+						Name="StoreMultiRowsInSingleCol"
+						Value=""
+					/>
+					<Property
+						Name="TimelinePick"
+						Value=""
+					/>
+					<Property
+						Name="TypeAheadDispCols"
+						Value=""
+					/>
+					<Property
+						Name="UseDBHint"
+						Value=""
+					/>
+				</ExtendedProperties>
+			</PickObject>
+			<PickObject
+				RSID="9"
+				Prefix="T4"
+				BusinessObject="R_ADV_FLDS_INFO"
+				Relationship="R_ADV_FLDS_INFO(R_ADV_FLDS_INFO)-R_ADV_EXT_MAPPING(R_ADV_EXT_MAPPING)"
+				RelnIsFromParent="False"
+				DoesSourceAffectMe="False"
+				DoIAffectSource="False"
+				IsAddedAfterGen="False"
+				RsAttributesDefault="False"
+				ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+				OnScreenPick="False"
+				>
+				<FKeyParamsClause><![CDATA[ [ADV_SYS_TYP] = [?ADV_SYS_TYP] and [ADV_COMP] = [?ADV_COMP] and [ADV_ATTR] = [?ADV_ATTR]]]></FKeyParamsClause>
+				<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+				<OrderByClause><![CDATA[ ]]></OrderByClause>
+				<RSAttributesMeta>
+					<DefaultAttributes>
+						<RSDefaultAttribute ID="9" Name="ADV_SYS_TYP" />
+						<RSDefaultAttribute ID="10" Name="ADV_SYS_TYP_UP" />
+						<RSDefaultAttribute ID="11" Name="ADV_COMP" />
+						<RSDefaultAttribute ID="12" Name="ADV_COMP_UP" />
+						<RSDefaultAttribute ID="13" Name="ADV_ATTR" />
+						<RSDefaultAttribute ID="14" Name="ADV_ATTR_UP" />
+						<RSDefaultAttribute ID="15" Name="ADV_ATTR_NM" />
+						<RSDefaultAttribute ID="16" Name="ADV_ATTR_NM_UP" />
+						<RSDefaultAttribute ID="5" Name="DATA_TYP" />
+						<RSDefaultAttribute ID="6" Name="DATA_SIZE" />
+						<RSDefaultAttribute ID="7" Name="AMS_ROW_VERS_NO" />
+						<RSDefaultAttribute ID="8" Name="TBL_LAST_DT" />
+					</DefaultAttributes>
+					<GridAttributes>
+						<RSAttribute Name="DATA_TYP" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="DATA_SIZE" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="ADV_SYS_TYP" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="ADV_SYS_TYP_UP" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="ADV_COMP" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="ADV_COMP_UP" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="ADV_ATTR" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="ADV_ATTR_UP" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="ADV_ATTR_NM" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="ADV_ATTR_NM_UP" Displayed="False" UnPlaced="False" />
+					</GridAttributes>
+				</RSAttributesMeta>
+				<ExtendedProperties>
+					<Property
+						Name="CustomPickFrame"
+						Value=""
+					/>
+					<Property
+						Name="DataSource"
+						Value=""
+					/>
+					<Property
+						Name="DisableAutoPickFilter"
+						Value=""
+					/>
+					<Property
+						Name="EnableVirtualResultSet"
+						Value=""
+					/>
+					<Property
+						Name="InitialBrowse"
+						Value=""
+					/>
+					<Property
+						Name="ScalarColList"
+						Value="&quot;ADV_SYS_TYP_UP,ADV_COMP_UP,ADV_ATTR_UP,ADV_ATTR_NM_UP&quot;"
+					/>
+					<Property
+						Name="StoreMultiRowsInSingleCol"
+						Value=""
+					/>
+					<Property
+						Name="TimelinePick"
+						Value=""
+					/>
+					<Property
+						Name="TypeAheadDispCols"
+						Value=""
+					/>
+					<Property
+						Name="UseDBHint"
+						Value=""
+					/>
+				</ExtendedProperties>
+			</PickObject>
+		</RecordSource>
+		<Transition
+			FormTransNum="1"
+			Prefix="T7"
+			TargetFormName="pR_ADV_FLDS_INFO"
+			IsTargetInitialQueryMode="False"
+			IsTargetInitialAddMode="False"
+			IsVisibleAppline="True"
+			IsAddedAfterGen="False"
+			FormTransCaption="Advantage Metadata"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPageNavigation"
+			TargetFramesetPage=""
+			TargetFrame=""
+			FrameNameInFramesetPage=""
+			RSID="10"
+			BusinessObject="R_ADV_FLDS_INFO"
+			RelnIsFromParent="True"
+			>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ADV_SYS_TYP = [?ADV_SYS_TYP] ]]></AdditionalWhereClause>
+			<ExtendedProperties>
+				<Property
+					Name="DefaultPackageName"
+					Value=""
+				/>
+				<Property
+					Name="Dependent"
+					Value=""
+				/>
+				<Property
+					Name="LoadWithSave"
+					Value=""
+				/>
+				<Property
+					Name="MsgFlag"
+					Value=""
+				/>
+				<Property
+					Name="OverrideTargetPageTitle"
+					Value=""
+				/>
+				<Property
+					Name="TargetFormName"
+					Value=""
+				/>
+				<Property
+					Name="TargetPackageName"
+					Value=""
+				/>
+				<Property
+					Name="TargetPageAutoNavigationName"
+					Value=""
+				/>
+				<Property
+					Name="TargetPageAutoPickName"
+					Value=""
+				/>
+				<Property
+					Name="TargetPageCode"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</Transition>
+		<Transition
+			FormTransNum="1"
+			Prefix="T8"
+			TargetFormName="pR_EXTERNAL_METADATA"
+			IsTargetInitialQueryMode="False"
+			IsTargetInitialAddMode="False"
+			IsVisibleAppline="True"
+			IsAddedAfterGen="False"
+			FormTransCaption="ECM Metadata"
+			ClassName="PageNavigation"
+			TargetFramesetPage=""
+			TargetFrame=""
+			FrameNameInFramesetPage=""
+			RSID="11"
+			BusinessObject="R_EXTERNAL_METADATA"
+			RelnIsFromParent="True"
+			>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ EXT_SYS_TYP = [?EXT_SYS_TYP] ]]></AdditionalWhereClause>
+		</Transition>
+	</RecordSource>
+</Form>

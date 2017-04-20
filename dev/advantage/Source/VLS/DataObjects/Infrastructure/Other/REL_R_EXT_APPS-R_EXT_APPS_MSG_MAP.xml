@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="RExtAppsToRExAppsMsgMap"
+		ChildRoleName="RExtAppsMsgMapToRExtApps"
+		IsEnforce="True"
+		CountReplicates="2"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="EXT_APP_CD"
+				ChildAttribute="EXT_APP_CD"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_EXT_APPS]]></AscendCaption>
+		<DescendCaption><![CDATA[R_EXT_APPS_MSG_MAP(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b: R_EXT_APPS / EXT_APP_CD],v:Required [b: R_EXT_APPS / EXT_APP_CD] record%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Required [b: R_EXT_APPS / EXT_APP_CD] record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b: R_EXT_APPS / EXT_APP_CD],v:[b: EXT_APPS_MSG_MAP / EXT_APP_CD] Table%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

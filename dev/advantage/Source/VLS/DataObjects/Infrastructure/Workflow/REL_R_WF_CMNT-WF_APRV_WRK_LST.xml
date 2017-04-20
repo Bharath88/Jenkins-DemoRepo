@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="1"
+		ChildRoleName="WF_APRV_WRK_LSTs"
+		ParentRoleName="R_WF_CMNT10"
+		>
+		<AscendCaption><![CDATA[R_WF_CMNT]]> </AscendCaption>
+		<DescendCaption><![CDATA[WF_APRV_WRK_LST(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="CMNT"
+			/>
+		</AttributePairs>
+	</Relationship>
+</Relationships>

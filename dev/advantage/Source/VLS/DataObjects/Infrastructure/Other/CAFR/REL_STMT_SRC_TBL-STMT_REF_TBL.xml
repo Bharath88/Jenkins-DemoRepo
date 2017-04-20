@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="StmtRefTblToStmtSrcTbl"
+		ChildRoleName="StmtSrcTblToStmtRefTbl"
+		IsEnforce="False"
+		OnParentUpdate="UpdateChildren"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_TBL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_REF_TBL(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

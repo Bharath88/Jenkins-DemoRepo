@@ -1,0 +1,161 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <title>Welcome to CGI ADVANTAGE 3.0: LOGIN</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVPortalStyle.css">
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script language="javascript">
+  <!--
+  function PutAtTop()
+  {
+     if ( self != top )
+     {
+        top.location.href = self.location.href ;
+     } /* end if ( self != top ) */
+  } /* end PutAtTop() */
+
+  function LaunchApp()
+  {
+     var lsCurrWindowName = window.name;
+
+     if (lsCurrWindowName != null && lsCurrWindowName.indexOf('ADV') == -1)
+     {
+        var liAvailScreenHeight = window.screen.availHeight;
+        var liAvailScreenWidth = window.screen.availWidth;
+        var loNewWin;
+        var lsHref = location.protocol + '//' + location.host + '/'
+                      + 'advantage/AMSImages/Empty.htm';
+
+        var loDate = new Date();
+        var lsWindowName = 'ADV' + loDate.getTime();
+
+        if (liAvailScreenWidth == 1024)
+        {
+           liAvailScreenHeight = liAvailScreenHeight - 50;
+           liAvailScreenWidth = liAvailScreenWidth - 10;
+        }
+        else if (liAvailScreenWidth == 800)
+        {
+           liAvailScreenHeight = liAvailScreenHeight - 55;
+           liAvailScreenWidth = liAvailScreenWidth - 15;
+        }
+
+        loNewWin = DHTMLLIB_OpenNewWin(lsHref, lsWindowName,
+                          'no' , 'no' , 'no', 'yes' , 'no',
+                          'yes', 'yes', liAvailScreenWidth,
+                          liAvailScreenHeight, 0, 0, 'yes' );
+
+        document.forms[0].target = lsWindowName;
+        document.forms[0].submit;
+
+        window.location.replace(lsHref);
+     } /* end if (lsCurrWindowName != null && ... */
+     return false;
+  }
+  //-->
+  </script>
+
+
+</head>
+<body class="adv login" onload="PutAtTop();UTILS_SetupOnClickForPage();UTILS_SetFocusOnFirstField(document)">
+
+<form METHOD="POST" action="jade" vsloginform onsubmit="LaunchApp()">
+
+  <input type="hidden" name="vsparams" value>
+  <table  width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr class="startup">
+      <td colspan="2" class="startup" valign="top">
+        <img src="Images/PortalADVLogo.gif" border="0">
+      </td>
+    </tr>
+    <tr>
+      <td class="leftpanel">&nbsp;</td>
+      <td class="display">
+        <table cellspacing=5 cellpadding=0 width=100%>
+          <tr>
+            <td class="label">User Name :</td>
+            <td class="val">
+               <input type="text" value="" name="login" size="20" vlsuserid>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="label">Password :</td>
+            <td class="val">
+               <input type="password" name="password" size="20">
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="label">
+            <div class="vlsname">
+               Server Name :
+            </div>
+            </td>
+            <td class="val">
+               <div class="vlsname">
+                  <input type="text" value="BLS_?" name="serverName" size="20" vlsname>
+               </div>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>
+              <input type="submit" value="Login" name="vslogin"
+               id="vslogin" class="advbutton">&nbsp;
+              <input type="reset" value="Reset" name="reset" class="advbutton">
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+             <td></td>
+             <td>&nbsp;</td>
+             <td class="legal">
+              <br>Copyright © 2001-2013.<br>
+              CGI Technologies and Solutions, Inc.<br>
+              All rights reserved.<br><br>
+              Use of this software is subject to<br>
+              CGI Technologies and Solutions Inc. license agreement.<br><br>
+              CGI Advantage&reg; is a<br>
+              registered trademark of<br>
+              CGI Technologies and Solutions Inc.
+            </td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td colspan=3>
+              <script language="JavaScript">
+              <!--
+                if ( mboolIE4Up )
+                {
+                   document.write( '<br><a class="fav" href="" ' ) ;
+                   document.write( 'onclick="window.external.addFavorite(location.href, document.title);return false;">' ) ;
+                   document.write( 'Add CGI ADVANTAGE 3.0 to your Favorites</a>' ) ;
+                }
+                else if ( mboolNS4Up )
+                {
+                   document.write( '<br><a class="fav">' ) ;
+                   document.write( 'Press CTRL+D to bookmark CGI ADVANTAGE 3.0</a>' ) ;
+                }
+              -->
+              </script>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td class="leftpanel bottom">&nbsp;</td>
+      <td><login_error></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

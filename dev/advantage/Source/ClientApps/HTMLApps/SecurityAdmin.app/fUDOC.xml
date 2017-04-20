@@ -1,0 +1,4526 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="ADVDocTabs"
+	PositionTop="188"
+	PositionLeft="188"
+	PositionWidth="150"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AdvDocAccordionPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="2018580799"
+	>
+	<FormCaption><![CDATA[User Maintenance]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="MenuName"
+			Value="advantage.Advantage.AMSDocMenu"
+		/>
+		<Property
+			Name="PageType"
+			Value="DocStdUI"
+		/>
+		<Property
+			Name="Popup"
+			Value="true"
+		/>
+		<Property
+			Name="RootDataSource"
+			Value="T1USER_DOC_HDR"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+		<Property
+			Name="SSCaptionImageFileNm"
+			Value=""
+		/>
+		<Property
+			Name="Tab_Header_Rows"
+			Value="1"
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="AddBackLink"
+			Value=""
+		/>
+		<Property
+			Name="ADVDTDType"
+			Value=""
+		/>
+		<Property
+			Name="ADVUIType"
+			Value="&quot;DocStdUI&quot;"
+		/>
+		<Property
+			Name="AttachmentTypeOptions"
+			Value=""
+		/>
+		<Property
+			Name="AttachmentTypes"
+			Value=""
+		/>
+		<Property
+			Name="CheckEditMode"
+			Value=""
+		/>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="CurrentTabName"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="DivMapToGen"
+			Value=""
+		/>
+		<Property
+			Name="DivToGenAction"
+			Value=""
+		/>
+		<Property
+			Name="EditMode"
+			Value=""
+		/>
+		<Property
+			Name="ErrorsFromPage"
+			Value=""
+		/>
+		<Property
+			Name="ExcludeCopyPasteAttributes"
+			Value=""
+		/>
+		<Property
+			Name="GenTabPage"
+			Value=""
+		/>
+		<Property
+			Name="GridType"
+			Value=""
+		/>
+		<Property
+			Name="HiddenDataSourceList"
+			Value=""
+		/>
+		<Property
+			Name="IsSearchMenuButton"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="LastTabName"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="PageCode"
+			Value=""
+		/>
+		<Property
+			Name="PagePreferences"
+			Value=""
+		/>
+		<Property
+			Name="ParentTabGoToLineIndex"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="SearchDS"
+			Value=""
+		/>
+		<Property
+			Name="SearchPopupOnload"
+			Value=""
+		/>
+		<Property
+			Name="ShowDocComm"
+			Value=""
+		/>
+		<Property
+			Name="ShowDocHist"
+			Value=""
+		/>
+		<Property
+			Name="ShowDocRef"
+			Value=""
+		/>
+		<Property
+			Name="ShowFDT"
+			Value=""
+		/>
+		<Property
+			Name="ShowForm"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="USER_DOC_HDR"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="ADVDocHeaderDisplayTabs"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="DOC_CAT" />
+				<RSDefaultAttribute ID="2" Name="DOC_TYP" />
+				<RSDefaultAttribute ID="3" Name="DOC_CD" />
+				<RSDefaultAttribute ID="4" Name="DOC_DEPT_CD" />
+				<RSDefaultAttribute ID="5" Name="DOC_ID" />
+				<RSDefaultAttribute ID="6" Name="DOC_VERS_NO" />
+				<RSDefaultAttribute ID="7" Name="DOC_ACT_FL" />
+				<RSDefaultAttribute ID="8" Name="DOC_ACTN_CD" />
+				<RSDefaultAttribute ID="9" Name="DOC_S_ACTN_CD" />
+				<RSDefaultAttribute ID="10" Name="DOC_CMNT_FL" />
+				<RSDefaultAttribute ID="11" Name="DOC_CREA_DT" />
+				<RSDefaultAttribute ID="12" Name="DOC_CREA_USID" />
+				<RSDefaultAttribute ID="13" Name="DOC_FUNC_CD" />
+				<RSDefaultAttribute ID="14" Name="DOC_S_FUNC_CD" />
+				<RSDefaultAttribute ID="15" Name="DOC_LAST_DT" />
+				<RSDefaultAttribute ID="16" Name="DOC_LAST_USID" />
+				<RSDefaultAttribute ID="17" Name="DOC_MSG_FL" />
+				<RSDefaultAttribute ID="18" Name="DOC_MSG_TXT" />
+				<RSDefaultAttribute ID="19" Name="DOC_PHASE_CD" />
+				<RSDefaultAttribute ID="20" Name="DOC_STA_CD" />
+				<RSDefaultAttribute ID="21" Name="DOC_PREV_VERS_NO" />
+				<RSDefaultAttribute ID="22" Name="DOC_SCHED_FL" />
+				<RSDefaultAttribute ID="23" Name="WF_ACT_FL" />
+				<RSDefaultAttribute ID="24" Name="WF_FIN_APRV_FL" />
+				<RSDefaultAttribute ID="25" Name="DOC_BYPS_APRV_IND" />
+				<RSDefaultAttribute ID="26" Name="DOC_UNIT_CD" />
+				<RSDefaultAttribute ID="27" Name="OV_ERR_CD" />
+				<RSDefaultAttribute ID="28" Name="OBJ_ATT_PG_TOT" />
+				<RSDefaultAttribute ID="29" Name="OBJ_ATT_PG_UNID" />
+				<RSDefaultAttribute ID="30" Name="OBJ_ATT_SG_TOT" />
+				<RSDefaultAttribute ID="31" Name="OBJ_ATT_SG_UNID" />
+				<RSDefaultAttribute ID="32" Name="PAC_DOC_CD" />
+				<RSDefaultAttribute ID="33" Name="PAC_DEPT_CD" />
+				<RSDefaultAttribute ID="34" Name="PAC_DOC_ID" />
+				<RSDefaultAttribute ID="35" Name="SCHED_DOC_CD" />
+				<RSDefaultAttribute ID="36" Name="SCHED_DOC_ID" />
+				<RSDefaultAttribute ID="37" Name="DOC_CHLD_MAX_LN_NO" />
+				<RSDefaultAttribute ID="38" Name="WF_OV_ERR_IND" />
+				<RSDefaultAttribute ID="39" Name="OV_ERR_USID" />
+				<RSDefaultAttribute ID="40" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="78" Name="COMP_ACTN_CD" />
+				<RSDefaultAttribute ID="42" Name="USER_ID" />
+				<RSDefaultAttribute ID="43" Name="EMAIL_USER_FL" />
+				<RSDefaultAttribute ID="44" Name="LAST_NM_TXT" />
+				<RSDefaultAttribute ID="45" Name="FRST_NM_TXT" />
+				<RSDefaultAttribute ID="46" Name="LCLTY_TXT" />
+				<RSDefaultAttribute ID="47" Name="EMAIL_AD_TXT" />
+				<RSDefaultAttribute ID="48" Name="PH_NO_TXT" />
+				<RSDefaultAttribute ID="49" Name="FAX_NO_TXT" />
+				<RSDefaultAttribute ID="50" Name="ROOM_NO_TXT" />
+				<RSDefaultAttribute ID="51" Name="PH_EXT" />
+				<RSDefaultAttribute ID="52" Name="PSWD_TXT" />
+				<RSDefaultAttribute ID="53" Name="EXPIRE_PSWD_FL" />
+				<RSDefaultAttribute ID="54" Name="GEN_NEW_PSWD_FL" />
+				<RSDefaultAttribute ID="55" Name="RESET_PSWD_FL" />
+				<RSDefaultAttribute ID="56" Name="USER_OV_ERR_CD" />
+				<RSDefaultAttribute ID="57" Name="LOCK_FL" />
+				<RSDefaultAttribute ID="58" Name="BAD_LGN_CT" />
+				<RSDefaultAttribute ID="59" Name="LOG_FL" />
+				<RSDefaultAttribute ID="60" Name="MGR_ID" />
+				<RSDefaultAttribute ID="61" Name="MGR_ID_WF_GP_FL" />
+				<RSDefaultAttribute ID="79" Name="HOME_GOVT_BRN_CD" />
+				<RSDefaultAttribute ID="63" Name="HOME_CAB_CD" />
+				<RSDefaultAttribute ID="64" Name="HOME_DEPT_CD" />
+				<RSDefaultAttribute ID="65" Name="HOME_DIV_CD" />
+				<RSDefaultAttribute ID="66" Name="HOME_GP_CD" />
+				<RSDefaultAttribute ID="67" Name="HOME_SECT_CD" />
+				<RSDefaultAttribute ID="68" Name="HOME_DSTC_CD" />
+				<RSDefaultAttribute ID="69" Name="HOME_BUR_CD" />
+				<RSDefaultAttribute ID="70" Name="HOME_UNIT_CD" />
+				<RSDefaultAttribute ID="71" Name="EMAIL_PSWD_TXT" />
+				<RSDefaultAttribute ID="72" Name="BO_PSWD_TXT" />
+				<RSDefaultAttribute ID="73" Name="STD_RPT_USER_FL" />
+				<RSDefaultAttribute ID="74" Name="PWR_RPT_USER_FL" />
+				<RSDefaultAttribute ID="75" Name="PRIM_RPT_GP" />
+				<RSDefaultAttribute ID="76" Name="APPL_AUTH" />
+				<RSDefaultAttribute ID="77" Name="USE_DFLT_HMPG_WINS" />
+				<RSDefaultAttribute ID="80" Name="DOC_APPL_CREA_DT" />
+				<RSDefaultAttribute ID="81" Name="DOC_APPL_LAST_DT" />
+				<RSDefaultAttribute ID="82" Name="DOC_APPL_LAST_USID" />
+				<RSDefaultAttribute ID="83" Name="LAST_PRN_DT" />
+				<RSDefaultAttribute ID="84" Name="USER_SEC_REALM" />
+				<RSDefaultAttribute ID="85" Name="EXIST_LDAP_USER_FL" />
+				<RSDefaultAttribute ID="86" Name="MSS_USER_TYP" />
+				<RSDefaultAttribute ID="87" Name="EMAIL_ALERT_FL" />
+				<RSDefaultAttribute ID="90" Name="BAD_PSWD_RESET_CT" />
+				<RSDefaultAttribute ID="88" Name="EXT_DIR_ID" />
+				<RSDefaultAttribute ID="89" Name="ESS_USER_TYP" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="COMP_ACTN_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="USER_ID" Displayed="True" UnPlaced="False" Archetype="ADVPickWithAutocompleteReq" />
+				<RSAttribute Name="LAST_NM_TXT" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="FRST_NM_TXT" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="LCLTY_TXT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ROOM_NO_TXT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="EMAIL_AD_TXT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PH_NO_TXT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PH_EXT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="FAX_NO_TXT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_GOVT_BRN_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_CAB_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_DEPT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_DIV_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_GP_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_SECT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_DSTC_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_BUR_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_UNIT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="USER_OV_ERR_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="BAD_LGN_CT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="EXT_DIR_ID" Displayed="True" UnPlaced="True" Archetype="TextboxReq" />
+				<RSAttribute Name="LOCK_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="LOG_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="EMAIL_ALERT_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="USE_DFLT_HMPG_WINS" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="STD_RPT_USER_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PWR_RPT_USER_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PRIM_RPT_GP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="MSS_USER_TYP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ESS_USER_TYP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="RESET_PSWD_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="GEN_NEW_PSWD_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="EXPIRE_PSWD_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PSWD_TXT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="EMAIL_PSWD_TXT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="BO_PSWD_TXT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APPL_AUTH" Displayed="True" UnPlaced="False" Archetype="ADVAppList" />
+				<RSAttribute Name="MGR_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="MGR_ID_WF_GP_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CAT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_TYP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_DEPT_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_ACT_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_ACTN_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_S_ACTN_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CMNT_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CREA_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CREA_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_FUNC_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_S_FUNC_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_LAST_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_LAST_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_MSG_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_MSG_TXT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_PHASE_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_STA_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_PREV_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_SCHED_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="WF_ACT_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="WF_FIN_APRV_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_BYPS_APRV_IND" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_UNIT_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OV_ERR_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_PG_TOT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_PG_UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_SG_TOT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_SG_UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PAC_DOC_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PAC_DEPT_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PAC_DOC_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SCHED_DOC_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SCHED_DOC_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CHLD_MAX_LN_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="WF_OV_ERR_IND" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OV_ERR_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_APPL_CREA_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_APPL_LAST_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_APPL_LAST_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="EMAIL_USER_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LAST_PRN_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="USER_SEC_REALM" Displayed="True" UnPlaced="False" Archetype="Combobox" />
+				<RSAttribute Name="EXIST_LDAP_USER_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="BAD_PSWD_RESET_CT" Displayed="False" UnPlaced="True" />
+			</ScalerAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxCSVRowsBeforeZip"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="DynamicGridAttrib"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCount"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCountMsg"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="OverrideNumRowsPerPage"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="ShowSearchPopup"
+				Value=""
+			/>
+			<Property
+				Name="UseDBHint"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="AccessKey"
+				Value="H"
+			/>
+			<Property
+				Name="Action_10_AMSAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_10_AMSSubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_10_ID"
+				Value=""
+			/>
+			<Property
+				Name="Action_10_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_10_Title"
+				Value=""
+			/>
+			<Property
+				Name="Action_10_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_10_VSAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_AMSAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_AMSSubAction"
+				Value="940"
+			/>
+			<Property
+				Name="Action_1_ID"
+				Value="PopulateUser"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value="Populate From Existing User"
+			/>
+			<Property
+				Name="Action_1_Title"
+				Value="Populate From Existing User"
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value="T1USER_DOC_HDR"
+			/>
+			<Property
+				Name="Action_1_VSAction"
+				Value="200"
+			/>
+			<Property
+				Name="Action_2_AMSAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AMSSubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_ID"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_Title"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_VSAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AMSAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AMSSubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_ID"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_Title"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_VSAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AMSAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AMSSubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_ID"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_Title"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_VSAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AMSAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AMSSubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_ID"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_Title"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_VSAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_6_AMSAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_6_AMSSubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_6_ID"
+				Value=""
+			/>
+			<Property
+				Name="Action_6_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_6_Title"
+				Value=""
+			/>
+			<Property
+				Name="Action_6_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_6_VSAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_7_AMSAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_7_AMSSubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_7_ID"
+				Value=""
+			/>
+			<Property
+				Name="Action_7_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_7_Title"
+				Value=""
+			/>
+			<Property
+				Name="Action_7_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_7_VSAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_8_AMSAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_8_AMSSubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_8_ID"
+				Value=""
+			/>
+			<Property
+				Name="Action_8_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_8_Title"
+				Value=""
+			/>
+			<Property
+				Name="Action_8_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_8_VSAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_9_AMSAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_9_AMSSubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_9_ID"
+				Value=""
+			/>
+			<Property
+				Name="Action_9_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_9_Title"
+				Value=""
+			/>
+			<Property
+				Name="Action_9_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_9_VSAction"
+				Value=""
+			/>
+			<Property
+				Name="AttributeExtProps"
+				Value=""
+			/>
+			<Property
+				Name="ClassInfoIfSingleTab"
+				Value=""
+			/>
+			<Property
+				Name="componentlevel"
+				Value="0"
+			/>
+			<Property
+				Name="CustomActionsAsList"
+				Value="false"
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="Fields_Outside_Tabview_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Fields_Outside_Tabview_Delimiter"
+				Value="%COMP_ACTN_CD%"
+			/>
+			<Property
+				Name="Fields_Outside_Tabview_NoOfColumns"
+				Value="2"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value="%USER_ID%%LCLTY_TXT%%PH_NO_TXT%%HOME_DIV_CD%%HOME_DSTC_CD%%LOCK_FL%%STD_RPT_USER_FL%PSWD_TXT%"
+			/>
+			<Property
+				Name="NoOfColumnsIfSingleTab"
+				Value="3"
+			/>
+			<Property
+				Name="tabid"
+				Value="Header"
+			/>
+			<Property
+				Name="TabName"
+				Value="Header"
+			/>
+			<Property
+				Name="tabseqno"
+				Value="0"
+			/>
+			<Property
+				Name="Tab_10_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_10_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_10_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_10_NoOfColumns"
+				Value="3"
+			/>
+			<Property
+				Name="Tab_11_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_11_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_11_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_11_NoOfColumns"
+				Value="3"
+			/>
+			<Property
+				Name="Tab_12_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_12_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_12_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_12_NoOfColumns"
+				Value="3"
+			/>
+			<Property
+				Name="Tab_13_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_13_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_13_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_13_NoOfColumns"
+				Value="3"
+			/>
+			<Property
+				Name="Tab_14_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_14_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_14_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_14_NoOfColumns"
+				Value="3"
+			/>
+			<Property
+				Name="Tab_15_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_15_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_15_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_15_NoOfColumns"
+				Value="3"
+			/>
+			<Property
+				Name="Tab_16_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_16_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_16_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_16_NoOfColumns"
+				Value="3"
+			/>
+			<Property
+				Name="Tab_17_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_17_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_17_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_17_NoOfColumns"
+				Value="3"
+			/>
+			<Property
+				Name="Tab_18_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_18_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_18_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_18_NoOfColumns"
+				Value="3"
+			/>
+			<Property
+				Name="Tab_19_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_19_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_19_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_19_NoOfColumns"
+				Value="3"
+			/>
+			<Property
+				Name="Tab_1_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_1_Delimiter"
+				Value="%LAST_NM_TXT%"
+			/>
+			<Property
+				Name="Tab_1_Name"
+				Value="Directory Information"
+			/>
+			<Property
+				Name="Tab_1_NoOfColumns"
+				Value="3"
+			/>
+			<Property
+				Name="Tab_20_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_20_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_20_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_20_NoOfColumns"
+				Value="3"
+			/>
+			<Property
+				Name="Tab_2_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_2_Delimiter"
+				Value="%HOME_GOVT_BRN_CD%"
+			/>
+			<Property
+				Name="Tab_2_Name"
+				Value="Home Organization"
+			/>
+			<Property
+				Name="Tab_2_NoOfColumns"
+				Value="3"
+			/>
+			<Property
+				Name="Tab_3_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_3_Delimiter"
+				Value="%USER_OV_ERR_CD%"
+			/>
+			<Property
+				Name="Tab_3_Name"
+				Value="Account Options"
+			/>
+			<Property
+				Name="Tab_3_NoOfColumns"
+				Value="3"
+			/>
+			<Property
+				Name="Tab_4_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_4_Delimiter"
+				Value="%RESET_PSWD_FL%"
+			/>
+			<Property
+				Name="Tab_4_Name"
+				Value="Password Maintenance"
+			/>
+			<Property
+				Name="Tab_4_NoOfColumns"
+				Value="2"
+			/>
+			<Property
+				Name="Tab_5_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_5_Delimiter"
+				Value="%USER_SEC_REALM%"
+			/>
+			<Property
+				Name="Tab_5_Name"
+				Value="Applications"
+			/>
+			<Property
+				Name="Tab_5_NoOfColumns"
+				Value="3"
+			/>
+			<Property
+				Name="Tab_6_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_6_Delimiter"
+				Value="%EXT_DIR_ID%"
+			/>
+			<Property
+				Name="Tab_6_Name"
+				Value="External Directory ID"
+			/>
+			<Property
+				Name="Tab_6_NoOfColumns"
+				Value="2"
+			/>
+			<Property
+				Name="Tab_7_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_7_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_7_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_7_NoOfColumns"
+				Value="3"
+			/>
+			<Property
+				Name="Tab_8_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_8_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_8_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_8_NoOfColumns"
+				Value="3"
+			/>
+			<Property
+				Name="Tab_9_ClassInfo"
+				Value=""
+			/>
+			<Property
+				Name="Tab_9_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_9_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_9_NoOfColumns"
+				Value="3"
+			/>
+			<Property
+				Name="Tab_Delimiter_Fields"
+				Value=""
+			/>
+			<Property
+				Name="Tab_Header_Fields"
+				Value=""
+			/>
+			<Property
+				Name="Tab_Header_New_Column_Fields"
+				Value=""
+			/>
+		</ArchetypeExtendedProperties>
+		<RecordSource
+			RSID="2"
+			Prefix="T3"
+			BusinessObject="USER_DOC_SCROLE"
+			Relationship="Header(USER_DOC_HDR)-SCRoles(USER_DOC_SCROLE)"
+			RelnIsFromParent="True"
+			DoesSourceAffectMe="True"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+			RecordSourceArchetype="ADVDocTabGridDisplayTabs"
+			MaxGridRowCount="10"
+			FetchedBlockRowCount="16"
+			AllowDelete="True"
+			AllowInsert="True"
+			AllowUpdate="True"
+			SaveMode="Buffered"
+			PreFetchRowCount="False"
+			ParentAlias=""
+			ChildAlias=""
+			>
+			<ParameterizedWhereClause><![CDATA[ [DOC_CD] = [?DOC_CD] and [DOC_DEPT_CD] = [?DOC_DEPT_CD] and [DOC_ID] = [?DOC_ID] and [DOC_VERS_NO] = [?DOC_VERS_NO]]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="DOC_COMP_MOD_FL" />
+					<RSDefaultAttribute ID="2" Name="DOC_CAT" />
+					<RSDefaultAttribute ID="3" Name="DOC_TYP" />
+					<RSDefaultAttribute ID="4" Name="DOC_CD" />
+					<RSDefaultAttribute ID="5" Name="DOC_DEPT_CD" />
+					<RSDefaultAttribute ID="6" Name="DOC_ID" />
+					<RSDefaultAttribute ID="7" Name="DOC_VERS_NO" />
+					<RSDefaultAttribute ID="8" Name="DOC_SCROLE_NO" />
+					<RSDefaultAttribute ID="9" Name="DOC_SCROLE_LN_NO" />
+					<RSDefaultAttribute ID="10" Name="DOC_ACTN_CD" />
+					<RSDefaultAttribute ID="11" Name="DOC_S_ACTN_CD" />
+					<RSDefaultAttribute ID="12" Name="DOC_CREA_DT" />
+					<RSDefaultAttribute ID="13" Name="DOC_CREA_USID" />
+					<RSDefaultAttribute ID="14" Name="DOC_FUNC_CD" />
+					<RSDefaultAttribute ID="15" Name="DOC_S_FUNC_CD" />
+					<RSDefaultAttribute ID="16" Name="DOC_LAST_DT" />
+					<RSDefaultAttribute ID="17" Name="DOC_LAST_USID" />
+					<RSDefaultAttribute ID="18" Name="DOC_PHASE_CD" />
+					<RSDefaultAttribute ID="19" Name="DOC_PREV_VERS_NO" />
+					<RSDefaultAttribute ID="20" Name="DOC_UNIT_CD" />
+					<RSDefaultAttribute ID="21" Name="OBJ_ATT_PG_UNID" />
+					<RSDefaultAttribute ID="22" Name="OBJ_ATT_SG_TOT" />
+					<RSDefaultAttribute ID="23" Name="OBJ_ATT_SG_UNID" />
+					<RSDefaultAttribute ID="24" Name="DOC_CHLD_MAX_LN_NO" />
+					<RSDefaultAttribute ID="25" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="30" Name="COMP_ACTN_CD" />
+					<RSDefaultAttribute ID="27" Name="SEC_ROLE_ID" />
+					<RSDefaultAttribute ID="28" Name="SEC_ROLE_DSCR" />
+					<RSDefaultAttribute ID="29" Name="PREC_NO" />
+					<RSDefaultAttribute ID="31" Name="REASON" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="COMP_ACTN_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SEC_ROLE_ID" Displayed="True" UnPlaced="False" Archetype="ADVPickWithAutocompleteReq" />
+					<RSAttribute Name="SEC_ROLE_DSCR" Displayed="True" UnPlaced="False" Archetype="ADVDisplayOnlyText2" />
+					<RSAttribute Name="PREC_NO" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REASON" Displayed="True" UnPlaced="False" Archetype="TextBoxMemo" />
+					<RSAttribute Name="DOC_COMP_MOD_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CAT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_TYP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_SCROLE_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_SCROLE_LN_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_ACTN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_S_ACTN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CREA_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CREA_USID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_FUNC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_S_FUNC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_LAST_USID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_PHASE_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_PREV_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OBJ_ATT_PG_UNID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OBJ_ATT_SG_TOT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OBJ_ATT_SG_UNID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CHLD_MAX_LN_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="COMP_ACTN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SEC_ROLE_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SEC_ROLE_DSCR" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="PREC_NO" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_COMP_MOD_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CAT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_TYP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_SCROLE_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_SCROLE_LN_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_ACTN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_S_ACTN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CREA_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CREA_USID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_FUNC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_S_FUNC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_LAST_USID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_PHASE_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_PREV_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OBJ_ATT_PG_UNID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OBJ_ATT_SG_TOT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OBJ_ATT_SG_UNID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CHLD_MAX_LN_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REASON" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="ColumnProjectionLevel"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileName"
+					Value=""
+				/>
+				<Property
+					Name="DownloadMaxCSVRowsBeforeZip"
+					Value=""
+				/>
+				<Property
+					Name="DownloadMaxRows"
+					Value=""
+				/>
+				<Property
+					Name="DownloadProperties"
+					Value=""
+				/>
+				<Property
+					Name="DownloadTemplate"
+					Value=""
+				/>
+				<Property
+					Name="DynamicGridAttrib"
+					Value=""
+				/>
+				<Property
+					Name="maintenanceString"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCount"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCountMsg"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageEndWith"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageStartWith"
+					Value=""
+				/>
+				<Property
+					Name="MultiTableCurrentRow"
+					Value=""
+				/>
+				<Property
+					Name="OverrideNumRowsPerPage"
+					Value=""
+				/>
+				<Property
+					Name="PreFetchRowCount"
+					Value=""
+				/>
+				<Property
+					Name="SearchColList"
+					Value=""
+				/>
+				<Property
+					Name="ShowSearchPopup"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+				<Property
+					Name="VirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="ZoomDataSource"
+					Value=""
+				/>
+			</ExtendedProperties>
+			<ArchetypeExtendedProperties>
+				<Property
+					Name="AccessKey"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="AdtlTabId"
+					Value=""
+				/>
+				<Property
+					Name="AttributeExtProps"
+					Value=""
+				/>
+				<Property
+					Name="ClassInfoIfSingleTab"
+					Value=""
+				/>
+				<Property
+					Name="componentlevel"
+					Value="1"
+				/>
+				<Property
+					Name="Context_Fields"
+					Value="%SEC_ROLE_ID%"
+				/>
+				<Property
+					Name="CustomActionsAsList"
+					Value="true"
+				/>
+				<Property
+					Name="DetailsCaption"
+					Value=""
+				/>
+				<Property
+					Name="EditableGridAttrs"
+					Value="SCALAR"
+				/>
+				<Property
+					Name="EditGridExc"
+					Value="%COMP_ACTN_CD%%SEC_ROLE_DSCR%"
+				/>
+				<Property
+					Name="EditGridShowReadonlyFields"
+					Value="true"
+				/>
+				<Property
+					Name="Fields_Outside_Tabview_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Fields_Outside_Tabview_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Fields_Outside_Tabview_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="GridAllowInlineEditing"
+					Value="true"
+				/>
+				<Property
+					Name="GridPaginationFormat"
+					Value="DisplayPageNoOnly"
+				/>
+				<Property
+					Name="New_Column_Fields"
+					Value=""
+				/>
+				<Property
+					Name="NoOfColumnsIfSingleTab"
+					Value="1"
+				/>
+				<Property
+					Name="Parent_Attr1_1"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Attr1_2"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Attr2_1"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Attr2_2"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Attr3_1"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Attr3_2"
+					Value=""
+				/>
+				<Property
+					Name="Parent_DS_1"
+					Value=""
+				/>
+				<Property
+					Name="Parent_DS_2"
+					Value=""
+				/>
+				<Property
+					Name="Parent_DS_3"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Name_1"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Name_2"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Name_3"
+					Value=""
+				/>
+				<Property
+					Name="QuickSwitchAllowed"
+					Value="false"
+				/>
+				<Property
+					Name="QuickSwitch_Fields"
+					Value=""
+				/>
+				<Property
+					Name="RefreshDependents"
+					Value="1"
+				/>
+				<Property
+					Name="ScalarOnDemand"
+					Value="false"
+				/>
+				<Property
+					Name="showCopyPaste"
+					Value="true"
+				/>
+				<Property
+					Name="ShowGotoLine"
+					Value="true"
+				/>
+				<Property
+					Name="ShowLineNoInContext"
+					Value="false"
+				/>
+				<Property
+					Name="showSearchWin"
+					Value="false"
+				/>
+				<Property
+					Name="SummaryCaption"
+					Value=""
+				/>
+				<Property
+					Name="tabid"
+					Value="SCROLE"
+				/>
+				<Property
+					Name="TabName"
+					Value="Security Roles"
+				/>
+				<Property
+					Name="tabseqno"
+					Value="1"
+				/>
+				<Property
+					Name="Tab_10_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_10_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_10_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_10_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_11_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_11_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_11_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_11_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_12_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_12_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_12_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_12_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_13_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_13_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_13_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_13_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_14_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_14_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_14_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_14_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_15_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_15_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_15_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_15_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_16_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_16_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_16_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_16_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_17_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_17_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_17_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_17_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_18_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_18_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_18_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_18_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_19_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_19_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_19_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_19_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_1_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_1_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_1_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_1_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_20_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_20_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_20_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_20_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_2_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_2_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_2_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_2_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_3_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_3_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_3_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_3_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_4_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_4_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_4_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_4_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_5_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_5_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_5_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_5_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_6_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_6_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_6_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_6_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_7_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_7_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_7_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_7_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_8_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_8_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_8_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_8_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_9_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_9_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_9_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_9_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_Delimiter_Fields"
+					Value=""
+				/>
+			</ArchetypeExtendedProperties>
+			<PickObject
+				RSID="6"
+				Prefix="T4"
+				BusinessObject="R_SC_SEC_ROLE"
+				Relationship="R_SC_SEC_ROLE(R_SC_SEC_ROLE)-USER_DOC_SCROLE(USER_DOC_SCROLE)"
+				RelnIsFromParent="False"
+				DoesSourceAffectMe="False"
+				DoIAffectSource="False"
+				IsAddedAfterGen="False"
+				RsAttributesDefault="False"
+				ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+				OnScreenPick="False"
+				>
+				<FKeyParamsClause><![CDATA[ [SEC_ROLE_ID] = [?SEC_ROLE_ID]]]></FKeyParamsClause>
+				<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+				<OrderByClause><![CDATA[ ]]></OrderByClause>
+				<RSAttributesMeta>
+					<DefaultAttributes>
+						<RSDefaultAttribute ID="1" Name="SEC_ROLE_ID" />
+						<RSDefaultAttribute ID="2" Name="SEC_ROLE_DSCR" />
+						<RSDefaultAttribute ID="3" Name="AMS_ROW_VERS_NO" />
+						<RSDefaultAttribute ID="4" Name="SEC_ROLE_DSCR_UP" />
+						<RSDefaultAttribute ID="5" Name="TBL_LAST_DT" />
+						<RSDefaultAttribute ID="7" Name="OV_ERR_CD" />
+						<RSDefaultAttribute ID="8" Name="FGN_ORG_RSTR" />
+						<RSDefaultAttribute ID="9" Name="INTG_SEC_ROLE_FL" />
+					</DefaultAttributes>
+					<ScalerAttributes>
+						<RSAttribute Name="SEC_ROLE_ID" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="SEC_ROLE_DSCR" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="SEC_ROLE_DSCR_UP" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="OV_ERR_CD" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="FGN_ORG_RSTR" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="INTG_SEC_ROLE_FL" Displayed="False" UnPlaced="True" />
+					</ScalerAttributes>
+					<GridAttributes>
+						<RSAttribute Name="SEC_ROLE_ID" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="SEC_ROLE_DSCR" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="SEC_ROLE_DSCR_UP" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="OV_ERR_CD" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="FGN_ORG_RSTR" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="INTG_SEC_ROLE_FL" Displayed="False" UnPlaced="False" />
+					</GridAttributes>
+				</RSAttributesMeta>
+				<ExtendedProperties>
+					<Property
+						Name="DataSource"
+						Value=""
+					/>
+					<Property
+						Name="DisableAutoPickFilter"
+						Value=""
+					/>
+					<Property
+						Name="EnableVirtualResultSet"
+						Value=""
+					/>
+					<Property
+						Name="InitialBrowse"
+						Value=""
+					/>
+					<Property
+						Name="ScalarColList"
+						Value="&quot;SEC_ROLE_ID&quot;"
+					/>
+					<Property
+						Name="StoreMultiRowsInSingleCol"
+						Value=""
+					/>
+					<Property
+						Name="TimelinePick"
+						Value=""
+					/>
+					<Property
+						Name="TypeAheadDispCols"
+						Value="&quot;SEC_ROLE_ID,SEC_ROLE_DSCR;&quot;"
+					/>
+					<Property
+						Name="UseDBHint"
+						Value=""
+					/>
+				</ExtendedProperties>
+			</PickObject>
+		</RecordSource>
+		<RecordSource
+			RSID="3"
+			Prefix="T5"
+			BusinessObject="USER_DOC_WFROLE"
+			Relationship="Header(USER_DOC_HDR)-WFRoles(USER_DOC_WFROLE)"
+			RelnIsFromParent="True"
+			DoesSourceAffectMe="True"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+			RecordSourceArchetype="ADVDocTabGridDisplayTabs"
+			MaxGridRowCount="10"
+			FetchedBlockRowCount="16"
+			AllowDelete="True"
+			AllowInsert="True"
+			AllowUpdate="True"
+			SaveMode="Buffered"
+			PreFetchRowCount="False"
+			ParentAlias=""
+			ChildAlias=""
+			>
+			<ParameterizedWhereClause><![CDATA[ [DOC_CD] = [?DOC_CD] and [DOC_DEPT_CD] = [?DOC_DEPT_CD] and [DOC_ID] = [?DOC_ID] and [DOC_VERS_NO] = [?DOC_VERS_NO]]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="DOC_COMP_MOD_FL" />
+					<RSDefaultAttribute ID="2" Name="DOC_CAT" />
+					<RSDefaultAttribute ID="3" Name="DOC_TYP" />
+					<RSDefaultAttribute ID="4" Name="DOC_CD" />
+					<RSDefaultAttribute ID="5" Name="DOC_DEPT_CD" />
+					<RSDefaultAttribute ID="6" Name="DOC_ID" />
+					<RSDefaultAttribute ID="7" Name="DOC_VERS_NO" />
+					<RSDefaultAttribute ID="8" Name="DOC_WFROLE_NO" />
+					<RSDefaultAttribute ID="9" Name="DOC_WFROLE_LN_NO" />
+					<RSDefaultAttribute ID="10" Name="DOC_ACTN_CD" />
+					<RSDefaultAttribute ID="11" Name="DOC_S_ACTN_CD" />
+					<RSDefaultAttribute ID="12" Name="DOC_CREA_DT" />
+					<RSDefaultAttribute ID="13" Name="DOC_CREA_USID" />
+					<RSDefaultAttribute ID="14" Name="DOC_FUNC_CD" />
+					<RSDefaultAttribute ID="15" Name="DOC_S_FUNC_CD" />
+					<RSDefaultAttribute ID="16" Name="DOC_LAST_DT" />
+					<RSDefaultAttribute ID="17" Name="DOC_LAST_USID" />
+					<RSDefaultAttribute ID="18" Name="DOC_PHASE_CD" />
+					<RSDefaultAttribute ID="19" Name="DOC_PREV_VERS_NO" />
+					<RSDefaultAttribute ID="20" Name="DOC_UNIT_CD" />
+					<RSDefaultAttribute ID="21" Name="OBJ_ATT_PG_UNID" />
+					<RSDefaultAttribute ID="22" Name="OBJ_ATT_SG_TOT" />
+					<RSDefaultAttribute ID="23" Name="OBJ_ATT_SG_UNID" />
+					<RSDefaultAttribute ID="24" Name="DOC_CHLD_MAX_LN_NO" />
+					<RSDefaultAttribute ID="25" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="30" Name="COMP_ACTN_CD" />
+					<RSDefaultAttribute ID="27" Name="WF_ROLE_ID" />
+					<RSDefaultAttribute ID="28" Name="WF_ROLE_NM" />
+					<RSDefaultAttribute ID="29" Name="WF_ROLE_MGR_FL" />
+					<RSDefaultAttribute ID="32" Name="REASON" />
+					<RSDefaultAttribute ID="31" Name="DISP_SEQ_NO" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="COMP_ACTN_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="WF_ROLE_ID" Displayed="True" UnPlaced="False" Archetype="ADVPickWithAutocompleteReq" />
+					<RSAttribute Name="WF_ROLE_NM" Displayed="True" UnPlaced="False" Archetype="ADVDisplayOnlyText2" />
+					<RSAttribute Name="WF_ROLE_MGR_FL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REASON" Displayed="True" UnPlaced="False" Archetype="TextBoxMemo" />
+					<RSAttribute Name="DOC_COMP_MOD_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CAT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_TYP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_WFROLE_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_WFROLE_LN_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_ACTN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_S_ACTN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CREA_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CREA_USID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_FUNC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_S_FUNC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_LAST_USID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_PHASE_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_PREV_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OBJ_ATT_PG_UNID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OBJ_ATT_SG_TOT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OBJ_ATT_SG_UNID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CHLD_MAX_LN_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DISP_SEQ_NO" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="COMP_ACTN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="WF_ROLE_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="WF_ROLE_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="WF_ROLE_MGR_FL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_COMP_MOD_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CAT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_TYP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_WFROLE_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_WFROLE_LN_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_ACTN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_S_ACTN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CREA_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CREA_USID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_FUNC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_S_FUNC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_LAST_USID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_PHASE_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_PREV_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OBJ_ATT_PG_UNID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OBJ_ATT_SG_TOT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OBJ_ATT_SG_UNID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CHLD_MAX_LN_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REASON" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DISP_SEQ_NO" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="ColumnProjectionLevel"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileName"
+					Value=""
+				/>
+				<Property
+					Name="DownloadMaxCSVRowsBeforeZip"
+					Value=""
+				/>
+				<Property
+					Name="DownloadMaxRows"
+					Value=""
+				/>
+				<Property
+					Name="DownloadProperties"
+					Value=""
+				/>
+				<Property
+					Name="DownloadTemplate"
+					Value=""
+				/>
+				<Property
+					Name="DynamicGridAttrib"
+					Value=""
+				/>
+				<Property
+					Name="maintenanceString"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCount"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCountMsg"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageEndWith"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageStartWith"
+					Value=""
+				/>
+				<Property
+					Name="MultiTableCurrentRow"
+					Value=""
+				/>
+				<Property
+					Name="OverrideNumRowsPerPage"
+					Value=""
+				/>
+				<Property
+					Name="PreFetchRowCount"
+					Value=""
+				/>
+				<Property
+					Name="SearchColList"
+					Value=""
+				/>
+				<Property
+					Name="ShowSearchPopup"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+				<Property
+					Name="VirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="ZoomDataSource"
+					Value=""
+				/>
+			</ExtendedProperties>
+			<ArchetypeExtendedProperties>
+				<Property
+					Name="AccessKey"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="AdtlTabId"
+					Value=""
+				/>
+				<Property
+					Name="AttributeExtProps"
+					Value=""
+				/>
+				<Property
+					Name="ClassInfoIfSingleTab"
+					Value=""
+				/>
+				<Property
+					Name="componentlevel"
+					Value="1"
+				/>
+				<Property
+					Name="Context_Fields"
+					Value="%WF_ROLE_ID%"
+				/>
+				<Property
+					Name="CustomActionsAsList"
+					Value="true"
+				/>
+				<Property
+					Name="DetailsCaption"
+					Value=""
+				/>
+				<Property
+					Name="EditableGridAttrs"
+					Value="SCALAR"
+				/>
+				<Property
+					Name="EditGridExc"
+					Value=""
+				/>
+				<Property
+					Name="EditGridShowReadonlyFields"
+					Value="true"
+				/>
+				<Property
+					Name="Fields_Outside_Tabview_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Fields_Outside_Tabview_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Fields_Outside_Tabview_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="GridAllowInlineEditing"
+					Value="true"
+				/>
+				<Property
+					Name="GridPaginationFormat"
+					Value="DisplayPageNoOnly"
+				/>
+				<Property
+					Name="New_Column_Fields"
+					Value=""
+				/>
+				<Property
+					Name="NoOfColumnsIfSingleTab"
+					Value="1"
+				/>
+				<Property
+					Name="Parent_Attr1_1"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Attr1_2"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Attr2_1"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Attr2_2"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Attr3_1"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Attr3_2"
+					Value=""
+				/>
+				<Property
+					Name="Parent_DS_1"
+					Value=""
+				/>
+				<Property
+					Name="Parent_DS_2"
+					Value=""
+				/>
+				<Property
+					Name="Parent_DS_3"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Name_1"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Name_2"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Name_3"
+					Value=""
+				/>
+				<Property
+					Name="QuickSwitchAllowed"
+					Value="false"
+				/>
+				<Property
+					Name="QuickSwitch_Fields"
+					Value=""
+				/>
+				<Property
+					Name="RefreshDependents"
+					Value="1"
+				/>
+				<Property
+					Name="ScalarOnDemand"
+					Value="false"
+				/>
+				<Property
+					Name="showCopyPaste"
+					Value="true"
+				/>
+				<Property
+					Name="ShowGotoLine"
+					Value="true"
+				/>
+				<Property
+					Name="ShowLineNoInContext"
+					Value="false"
+				/>
+				<Property
+					Name="showSearchWin"
+					Value="false"
+				/>
+				<Property
+					Name="SummaryCaption"
+					Value=""
+				/>
+				<Property
+					Name="tabid"
+					Value="WFROLE"
+				/>
+				<Property
+					Name="TabName"
+					Value="Workflow Roles"
+				/>
+				<Property
+					Name="tabseqno"
+					Value="2"
+				/>
+				<Property
+					Name="Tab_10_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_10_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_10_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_10_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_11_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_11_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_11_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_11_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_12_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_12_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_12_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_12_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_13_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_13_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_13_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_13_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_14_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_14_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_14_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_14_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_15_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_15_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_15_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_15_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_16_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_16_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_16_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_16_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_17_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_17_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_17_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_17_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_18_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_18_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_18_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_18_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_19_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_19_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_19_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_19_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_1_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_1_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_1_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_1_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_20_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_20_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_20_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_20_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_2_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_2_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_2_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_2_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_3_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_3_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_3_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_3_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_4_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_4_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_4_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_4_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_5_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_5_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_5_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_5_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_6_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_6_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_6_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_6_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_7_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_7_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_7_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_7_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_8_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_8_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_8_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_8_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_9_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_9_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_9_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_9_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_Delimiter_Fields"
+					Value=""
+				/>
+			</ArchetypeExtendedProperties>
+			<PickObject
+				RSID="7"
+				Prefix="T6"
+				BusinessObject="R_WF_ROLE"
+				Relationship="R_WF_ROLE(R_WF_ROLE)-USER_DOC_WFROLE(USER_DOC_WFROLE)"
+				RelnIsFromParent="False"
+				DoesSourceAffectMe="False"
+				DoIAffectSource="False"
+				IsAddedAfterGen="False"
+				RsAttributesDefault="False"
+				ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+				OnScreenPick="False"
+				>
+				<FKeyParamsClause><![CDATA[ [ROLEID] = [?WF_ROLE_ID]]]></FKeyParamsClause>
+				<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+				<OrderByClause><![CDATA[ ]]></OrderByClause>
+				<RSAttributesMeta>
+					<DefaultAttributes>
+						<RSDefaultAttribute ID="1" Name="ROLEID" />
+						<RSDefaultAttribute ID="2" Name="ROLE_NM" />
+						<RSDefaultAttribute ID="18" Name="HOME_GOVT_BRN_CD" />
+						<RSDefaultAttribute ID="4" Name="HOME_CAB_CD" />
+						<RSDefaultAttribute ID="5" Name="HOME_DEPT_CD" />
+						<RSDefaultAttribute ID="6" Name="HOME_DIV_CD" />
+						<RSDefaultAttribute ID="7" Name="HOME_GP_CD" />
+						<RSDefaultAttribute ID="8" Name="HOME_SECT_CD" />
+						<RSDefaultAttribute ID="9" Name="HOME_DSTC_CD" />
+						<RSDefaultAttribute ID="10" Name="HOME_BUR_CD" />
+						<RSDefaultAttribute ID="11" Name="HOME_UNIT_CD" />
+						<RSDefaultAttribute ID="12" Name="DSCR" />
+						<RSDefaultAttribute ID="13" Name="MGRID" />
+						<RSDefaultAttribute ID="14" Name="COMB_ORG_CD" />
+						<RSDefaultAttribute ID="15" Name="AMS_ROW_VERS_NO" />
+						<RSDefaultAttribute ID="16" Name="ROLEID_UP" />
+						<RSDefaultAttribute ID="17" Name="ROLE_NM_UP" />
+						<RSDefaultAttribute ID="19" Name="TBL_LAST_DT" />
+					</DefaultAttributes>
+					<ScalerAttributes>
+						<RSAttribute Name="ROLEID" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="ROLE_NM" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="HOME_CAB_CD" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="HOME_DEPT_CD" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="HOME_DIV_CD" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="HOME_GP_CD" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="HOME_SECT_CD" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="HOME_DSTC_CD" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="HOME_BUR_CD" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="HOME_UNIT_CD" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="DSCR" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="MGRID" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="COMB_ORG_CD" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="ROLEID_UP" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="ROLE_NM_UP" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="HOME_GOVT_BRN_CD" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					</ScalerAttributes>
+					<GridAttributes>
+						<RSAttribute Name="ROLEID" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="ROLE_NM" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="HOME_GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="HOME_CAB_CD" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="HOME_DEPT_CD" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="HOME_DIV_CD" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="HOME_GP_CD" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="HOME_SECT_CD" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="HOME_DSTC_CD" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="HOME_BUR_CD" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="HOME_UNIT_CD" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="DSCR" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="MGRID" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="COMB_ORG_CD" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="ROLEID_UP" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="ROLE_NM_UP" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					</GridAttributes>
+				</RSAttributesMeta>
+				<ExtendedProperties>
+					<Property
+						Name="DataSource"
+						Value=""
+					/>
+					<Property
+						Name="DisableAutoPickFilter"
+						Value=""
+					/>
+					<Property
+						Name="EnableVirtualResultSet"
+						Value=""
+					/>
+					<Property
+						Name="InitialBrowse"
+						Value=""
+					/>
+					<Property
+						Name="ScalarColList"
+						Value="&quot;ROLEID_UP&quot;"
+					/>
+					<Property
+						Name="StoreMultiRowsInSingleCol"
+						Value=""
+					/>
+					<Property
+						Name="TimelinePick"
+						Value=""
+					/>
+					<Property
+						Name="TypeAheadDispCols"
+						Value="&quot;ROLEID,ROLE_NM&quot;"
+					/>
+					<Property
+						Name="UseDBHint"
+						Value=""
+					/>
+				</ExtendedProperties>
+			</PickObject>
+		</RecordSource>
+		<RecordSource
+			RSID="4"
+			Prefix="T7"
+			BusinessObject="USER_DOC_WKGP"
+			Relationship="Header(USER_DOC_HDR)-Workgroups(USER_DOC_WKGP)"
+			RelnIsFromParent="True"
+			DoesSourceAffectMe="True"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+			RecordSourceArchetype="ADVDocTabGridDisplayTabs"
+			MaxGridRowCount="10"
+			FetchedBlockRowCount="16"
+			AllowDelete="True"
+			AllowInsert="True"
+			AllowUpdate="True"
+			SaveMode="Buffered"
+			PreFetchRowCount="False"
+			ParentAlias=""
+			ChildAlias=""
+			>
+			<ParameterizedWhereClause><![CDATA[ [DOC_CD] = [?DOC_CD] and [DOC_DEPT_CD] = [?DOC_DEPT_CD] and [DOC_ID] = [?DOC_ID] and [DOC_VERS_NO] = [?DOC_VERS_NO]]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="DOC_COMP_MOD_FL" />
+					<RSDefaultAttribute ID="2" Name="DOC_CAT" />
+					<RSDefaultAttribute ID="3" Name="DOC_TYP" />
+					<RSDefaultAttribute ID="4" Name="DOC_CD" />
+					<RSDefaultAttribute ID="5" Name="DOC_DEPT_CD" />
+					<RSDefaultAttribute ID="6" Name="DOC_ID" />
+					<RSDefaultAttribute ID="7" Name="DOC_VERS_NO" />
+					<RSDefaultAttribute ID="8" Name="DOC_WKGP_NO" />
+					<RSDefaultAttribute ID="9" Name="DOC_WKGP_LN_NO" />
+					<RSDefaultAttribute ID="10" Name="DOC_ACTN_CD" />
+					<RSDefaultAttribute ID="11" Name="DOC_S_ACTN_CD" />
+					<RSDefaultAttribute ID="12" Name="DOC_CREA_DT" />
+					<RSDefaultAttribute ID="13" Name="DOC_CREA_USID" />
+					<RSDefaultAttribute ID="14" Name="DOC_FUNC_CD" />
+					<RSDefaultAttribute ID="15" Name="DOC_S_FUNC_CD" />
+					<RSDefaultAttribute ID="16" Name="DOC_LAST_DT" />
+					<RSDefaultAttribute ID="17" Name="DOC_LAST_USID" />
+					<RSDefaultAttribute ID="18" Name="DOC_PHASE_CD" />
+					<RSDefaultAttribute ID="19" Name="DOC_PREV_VERS_NO" />
+					<RSDefaultAttribute ID="20" Name="DOC_UNIT_CD" />
+					<RSDefaultAttribute ID="21" Name="OBJ_ATT_PG_UNID" />
+					<RSDefaultAttribute ID="22" Name="OBJ_ATT_SG_TOT" />
+					<RSDefaultAttribute ID="23" Name="OBJ_ATT_SG_UNID" />
+					<RSDefaultAttribute ID="24" Name="DOC_CHLD_MAX_LN_NO" />
+					<RSDefaultAttribute ID="25" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="31" Name="COMP_ACTN_CD" />
+					<RSDefaultAttribute ID="27" Name="WKGP_UNID" />
+					<RSDefaultAttribute ID="28" Name="WKGP_NM" />
+					<RSDefaultAttribute ID="29" Name="WKGP_DESC" />
+					<RSDefaultAttribute ID="30" Name="DFLT_WKGP_FL" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="COMP_ACTN_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="WKGP_UNID" Displayed="True" UnPlaced="False" Archetype="ADVPickWithAutocompleteReq" />
+					<RSAttribute Name="WKGP_NM" Displayed="True" UnPlaced="False" Archetype="ADVDisplayOnlyText2" />
+					<RSAttribute Name="WKGP_DESC" Displayed="True" UnPlaced="False" Archetype="ADVDisplayOnlyText2" />
+					<RSAttribute Name="DFLT_WKGP_FL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_COMP_MOD_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CAT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_TYP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_WKGP_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_WKGP_LN_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_ACTN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_S_ACTN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CREA_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CREA_USID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_FUNC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_S_FUNC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_LAST_USID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_PHASE_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_PREV_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OBJ_ATT_PG_UNID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OBJ_ATT_SG_TOT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OBJ_ATT_SG_UNID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CHLD_MAX_LN_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="COMP_ACTN_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="WKGP_UNID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="WKGP_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="WKGP_DESC" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DFLT_WKGP_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_COMP_MOD_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CAT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_TYP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_WKGP_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_WKGP_LN_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_ACTN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_S_ACTN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CREA_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CREA_USID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_FUNC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_S_FUNC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_LAST_USID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_PHASE_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_PREV_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OBJ_ATT_PG_UNID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OBJ_ATT_SG_TOT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OBJ_ATT_SG_UNID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CHLD_MAX_LN_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="ColumnProjectionLevel"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileName"
+					Value=""
+				/>
+				<Property
+					Name="DownloadMaxCSVRowsBeforeZip"
+					Value=""
+				/>
+				<Property
+					Name="DownloadMaxRows"
+					Value=""
+				/>
+				<Property
+					Name="DownloadProperties"
+					Value=""
+				/>
+				<Property
+					Name="DownloadTemplate"
+					Value=""
+				/>
+				<Property
+					Name="DynamicGridAttrib"
+					Value=""
+				/>
+				<Property
+					Name="maintenanceString"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCount"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCountMsg"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageEndWith"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageStartWith"
+					Value=""
+				/>
+				<Property
+					Name="MultiTableCurrentRow"
+					Value=""
+				/>
+				<Property
+					Name="OverrideNumRowsPerPage"
+					Value=""
+				/>
+				<Property
+					Name="PreFetchRowCount"
+					Value=""
+				/>
+				<Property
+					Name="SearchColList"
+					Value=""
+				/>
+				<Property
+					Name="ShowSearchPopup"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+				<Property
+					Name="VirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="ZoomDataSource"
+					Value=""
+				/>
+			</ExtendedProperties>
+			<ArchetypeExtendedProperties>
+				<Property
+					Name="AccessKey"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_10_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_6_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_7_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_8_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_AMSAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_AMSSubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_ID"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_Title"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_9_VSAction"
+					Value=""
+				/>
+				<Property
+					Name="AdtlTabId"
+					Value=""
+				/>
+				<Property
+					Name="AttributeExtProps"
+					Value=""
+				/>
+				<Property
+					Name="ClassInfoIfSingleTab"
+					Value=""
+				/>
+				<Property
+					Name="componentlevel"
+					Value="1"
+				/>
+				<Property
+					Name="Context_Fields"
+					Value="%COMP_ACTN_CD%"
+				/>
+				<Property
+					Name="CustomActionsAsList"
+					Value="true"
+				/>
+				<Property
+					Name="DetailsCaption"
+					Value=""
+				/>
+				<Property
+					Name="EditableGridAttrs"
+					Value="SCALAR"
+				/>
+				<Property
+					Name="EditGridExc"
+					Value="%COMP_ACTN_CD%%DFLT_WKGP_FL%"
+				/>
+				<Property
+					Name="EditGridShowReadonlyFields"
+					Value="true"
+				/>
+				<Property
+					Name="Fields_Outside_Tabview_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Fields_Outside_Tabview_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Fields_Outside_Tabview_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="GridAllowInlineEditing"
+					Value="true"
+				/>
+				<Property
+					Name="GridPaginationFormat"
+					Value="DisplayPageNoOnly"
+				/>
+				<Property
+					Name="New_Column_Fields"
+					Value=""
+				/>
+				<Property
+					Name="NoOfColumnsIfSingleTab"
+					Value="1"
+				/>
+				<Property
+					Name="Parent_Attr1_1"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Attr1_2"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Attr2_1"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Attr2_2"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Attr3_1"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Attr3_2"
+					Value=""
+				/>
+				<Property
+					Name="Parent_DS_1"
+					Value=""
+				/>
+				<Property
+					Name="Parent_DS_2"
+					Value=""
+				/>
+				<Property
+					Name="Parent_DS_3"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Name_1"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Name_2"
+					Value=""
+				/>
+				<Property
+					Name="Parent_Name_3"
+					Value=""
+				/>
+				<Property
+					Name="QuickSwitchAllowed"
+					Value="false"
+				/>
+				<Property
+					Name="QuickSwitch_Fields"
+					Value=""
+				/>
+				<Property
+					Name="RefreshDependents"
+					Value="1"
+				/>
+				<Property
+					Name="ScalarOnDemand"
+					Value="false"
+				/>
+				<Property
+					Name="showCopyPaste"
+					Value="true"
+				/>
+				<Property
+					Name="ShowGotoLine"
+					Value="true"
+				/>
+				<Property
+					Name="ShowLineNoInContext"
+					Value="false"
+				/>
+				<Property
+					Name="showSearchWin"
+					Value="false"
+				/>
+				<Property
+					Name="SummaryCaption"
+					Value=""
+				/>
+				<Property
+					Name="tabid"
+					Value="WKGP"
+				/>
+				<Property
+					Name="TabName"
+					Value="Workgroups"
+				/>
+				<Property
+					Name="tabseqno"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_10_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_10_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_10_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_10_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_11_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_11_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_11_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_11_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_12_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_12_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_12_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_12_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_13_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_13_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_13_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_13_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_14_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_14_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_14_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_14_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_15_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_15_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_15_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_15_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_16_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_16_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_16_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_16_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_17_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_17_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_17_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_17_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_18_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_18_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_18_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_18_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_19_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_19_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_19_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_19_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_1_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_1_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_1_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_1_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_20_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_20_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_20_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_20_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_2_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_2_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_2_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_2_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_3_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_3_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_3_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_3_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_4_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_4_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_4_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_4_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_5_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_5_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_5_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_5_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_6_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_6_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_6_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_6_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_7_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_7_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_7_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_7_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_8_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_8_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_8_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_8_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_9_ClassInfo"
+					Value=""
+				/>
+				<Property
+					Name="Tab_9_Delimiter"
+					Value=""
+				/>
+				<Property
+					Name="Tab_9_Name"
+					Value=""
+				/>
+				<Property
+					Name="Tab_9_NoOfColumns"
+					Value="3"
+				/>
+				<Property
+					Name="Tab_Delimiter_Fields"
+					Value=""
+				/>
+			</ArchetypeExtendedProperties>
+			<PickObject
+				RSID="8"
+				Prefix="T8"
+				BusinessObject="IN_WKGP"
+				Relationship="IN_WKGP(IN_WKGP)-USER_DOC_WKGP(USER_DOC_WKGP)"
+				RelnIsFromParent="False"
+				DoesSourceAffectMe="False"
+				DoIAffectSource="False"
+				IsAddedAfterGen="False"
+				RsAttributesDefault="False"
+				ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+				OnScreenPick="False"
+				>
+				<FKeyParamsClause><![CDATA[ [WKGP_UNID] = [?WKGP_UNID]]]></FKeyParamsClause>
+				<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+				<OrderByClause><![CDATA[ ]]></OrderByClause>
+				<RSAttributesMeta>
+					<DefaultAttributes>
+						<RSDefaultAttribute ID="1" Name="WKGP_UNID" />
+						<RSDefaultAttribute ID="2" Name="WKGP_NM" />
+						<RSDefaultAttribute ID="3" Name="WKGP_DESC" />
+						<RSDefaultAttribute ID="4" Name="AMS_ROW_VERS_NO" />
+						<RSDefaultAttribute ID="5" Name="WKGP_NM_UP" />
+						<RSDefaultAttribute ID="6" Name="TBL_LAST_DT" />
+					</DefaultAttributes>
+					<ScalerAttributes>
+						<RSAttribute Name="WKGP_UNID" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="WKGP_NM" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="WKGP_DESC" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="WKGP_NM_UP" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					</ScalerAttributes>
+					<GridAttributes>
+						<RSAttribute Name="WKGP_UNID" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="WKGP_NM" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="WKGP_DESC" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="WKGP_NM_UP" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					</GridAttributes>
+				</RSAttributesMeta>
+				<ExtendedProperties>
+					<Property
+						Name="DataSource"
+						Value=""
+					/>
+					<Property
+						Name="DisableAutoPickFilter"
+						Value=""
+					/>
+					<Property
+						Name="EnableVirtualResultSet"
+						Value=""
+					/>
+					<Property
+						Name="InitialBrowse"
+						Value=""
+					/>
+					<Property
+						Name="ScalarColList"
+						Value="&quot;WKGP_UNID,WKGP_NM_UP&quot;"
+					/>
+					<Property
+						Name="StoreMultiRowsInSingleCol"
+						Value=""
+					/>
+					<Property
+						Name="TimelinePick"
+						Value=""
+					/>
+					<Property
+						Name="TypeAheadDispCols"
+						Value="&quot;WKGP_UNID,WKGP_NM;&quot;"
+					/>
+					<Property
+						Name="UseDBHint"
+						Value=""
+					/>
+				</ExtendedProperties>
+			</PickObject>
+		</RecordSource>
+		<PickObject
+			RSID="5"
+			Prefix="T2"
+			BusinessObject="R_SC_USER_DIR_INFO"
+			Relationship="R_SC_USER_DIR_INFO(R_SC_USER_DIR_INFO)-USER_DOC_HDR(USER_DOC_HDR)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [USER_ID] = [?USER_ID]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="USER_ID" />
+					<RSDefaultAttribute ID="2" Name="LAST_NM_TXT" />
+					<RSDefaultAttribute ID="3" Name="FRST_NM_TXT" />
+					<RSDefaultAttribute ID="4" Name="LCLTY_TXT" />
+					<RSDefaultAttribute ID="5" Name="EMAIL_AD_TXT" />
+					<RSDefaultAttribute ID="6" Name="PH_NO_TXT" />
+					<RSDefaultAttribute ID="7" Name="FAX_NO_TXT" />
+					<RSDefaultAttribute ID="8" Name="ROOM_NO_TXT" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="PH_EXT" />
+					<RSDefaultAttribute ID="11" Name="USER_NM" />
+					<RSDefaultAttribute ID="26" Name="GOVT_BRN_CD" />
+					<RSDefaultAttribute ID="13" Name="CAB_CD" />
+					<RSDefaultAttribute ID="14" Name="DEPT_CD" />
+					<RSDefaultAttribute ID="15" Name="DIV_CD" />
+					<RSDefaultAttribute ID="16" Name="GP_CD" />
+					<RSDefaultAttribute ID="17" Name="SECT_CD" />
+					<RSDefaultAttribute ID="18" Name="DSTC_CD" />
+					<RSDefaultAttribute ID="19" Name="BUR_CD" />
+					<RSDefaultAttribute ID="20" Name="UNIT_CD" />
+					<RSDefaultAttribute ID="21" Name="USER_ID_UP" />
+					<RSDefaultAttribute ID="22" Name="LAST_NM_TXT_UP" />
+					<RSDefaultAttribute ID="23" Name="FRST_NM_TXT_UP" />
+					<RSDefaultAttribute ID="24" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="25" Name="LAST_UPDATE_USERID" />
+					<RSDefaultAttribute ID="27" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="28" Name="USER_NM_UP" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="USER_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="LAST_NM_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FRST_NM_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="LCLTY_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="EMAIL_AD_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="PH_NO_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FAX_NO_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="ROOM_NO_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PH_EXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="USER_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CAB_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DIV_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SECT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSTC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUR_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USER_ID_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_NM_TXT_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FRST_NM_TXT_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USER_NM_UP" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="USER_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="LAST_NM_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FRST_NM_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="LCLTY_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="EMAIL_AD_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PH_NO_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FAX_NO_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ROOM_NO_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PH_EXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USER_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CAB_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DIV_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SECT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSTC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUR_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USER_ID_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_NM_TXT_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FRST_NM_TXT_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USER_NM_UP" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="EnableVirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="InitialBrowse"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value="&quot;USER_ID_UP,LAST_NM_TXT_UP,FRST_NM_TXT_UP&quot;"
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+				<Property
+					Name="TypeAheadDispCols"
+					Value="&quot;USER_ID,LAST_NM_TXT;&quot;"
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+	</RecordSource>
+</Form>

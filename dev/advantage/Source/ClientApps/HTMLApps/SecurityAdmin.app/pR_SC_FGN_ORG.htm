@@ -1,0 +1,595 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Foreign Organization</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="SecurityAdmin" method="post" vsform="true" name="pR_SC_FGN_ORG">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Foreign Organization">Foreign Organization</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="SecurityAdmin" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+  <a name="T1R_SC_FGN_ORG_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1R_SC_FGN_ORG_Currency" value="">
+  <input type="hidden" name="T1R_SC_FGN_ORG_Old_Currency" value="">
+  <table name="tblT1R_SC_FGN_ORG" id="tblT1R_SC_FGN_ORG" class="advgrid" vsds="T1R_SC_FGN_ORG">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="SecurityAdmin" vsaction="sort" vsds="T1R_SC_FGN_ORG" 
+    vsdf="SEC_ROLE_ID"
+ name="T1SEC_ROLE_IDsort" id="T1SEC_ROLE_IDsort" title="Sort By Security Role ID">Security Role ID</a></th>
+      
+        <th 
+><a href="SecurityAdmin" vsaction="sort" vsds="T1R_SC_FGN_ORG" 
+    vsdf="USER_ID"
+ name="T1USER_IDsort" id="T1USER_IDsort" title="Sort By User ID">User ID</a></th>
+      
+        <th 
+><a href="SecurityAdmin" vsaction="sort" vsds="T1R_SC_FGN_ORG" 
+    vsdf="HOME_DEPT_CD"
+ name="T1HOME_DEPT_CDsort" id="T1HOME_DEPT_CDsort" title="Sort By Home Department">Home Department</a></th>
+      
+        <th 
+><a href="SecurityAdmin" vsaction="sort" vsds="T1R_SC_FGN_ORG" 
+    vsdf="RSRC_GP_ID"
+ name="T1RSRC_GP_IDsort" id="T1RSRC_GP_IDsort" title="Sort By Resource Group ID">Resource Group ID</a></th>
+      
+        <th 
+><span id="T1FGN_GOVT_BRN_CDsortGridLabel" name="T1FGN_GOVT_BRN_CDsortGridLabel" title="Government Branch">Government Branch</span></th>
+      
+        <th 
+><span id="T1FGN_CAB_CDsortGridLabel" name="T1FGN_CAB_CDsortGridLabel" title="Cabinet">Cabinet</span></th>
+      
+        <th 
+><span id="T1FGN_DEPT_CDsortGridLabel" name="T1FGN_DEPT_CDsortGridLabel" title="Department">Department</span></th>
+      
+        <th 
+><span id="T1FGN_DIV_CDsortGridLabel" name="T1FGN_DIV_CDsortGridLabel" title="Division">Division</span></th>
+      
+        <th 
+><span id="T1FGN_GP_CDsortGridLabel" name="T1FGN_GP_CDsortGridLabel" title="Group">Group</span></th>
+      
+        <th 
+><span id="T1FGN_SECT_CDsortGridLabel" name="T1FGN_SECT_CDsortGridLabel" title="Section">Section</span></th>
+      
+        <th 
+><span id="T1FGN_DSTC_CDsortGridLabel" name="T1FGN_DSTC_CDsortGridLabel" title="District">District</span></th>
+      
+        <th 
+><span id="T1FGN_BUR_CDsortGridLabel" name="T1FGN_BUR_CDsortGridLabel" title="Bureau">Bureau</span></th>
+      
+        <th 
+><span id="T1FGN_UNIT_CDsortGridLabel" name="T1FGN_UNIT_CDsortGridLabel" title="Unit">Unit</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_SC_FGN_ORGvscurrency" id="T1R_SC_FGN_ORGvscurrency" title="Select Row" alt="Select Row" vsds="T1R_SC_FGN_ORG" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1SEC_ROLE_ID" vsds="T1R_SC_FGN_ORG" vsdf="SEC_ROLE_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1USER_ID" vsds="T1R_SC_FGN_ORG" vsdf="USER_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1HOME_DEPT_CD" vsds="T1R_SC_FGN_ORG" vsdf="HOME_DEPT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1RSRC_GP_ID" vsds="T1R_SC_FGN_ORG" vsdf="RSRC_GP_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1FGN_GOVT_BRN_CD" vsds="T1R_SC_FGN_ORG" vsdf="FGN_GOVT_BRN_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1FGN_CAB_CD" vsds="T1R_SC_FGN_ORG" vsdf="FGN_CAB_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1FGN_DEPT_CD" vsds="T1R_SC_FGN_ORG" vsdf="FGN_DEPT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1FGN_DIV_CD" vsds="T1R_SC_FGN_ORG" vsdf="FGN_DIV_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1FGN_GP_CD" vsds="T1R_SC_FGN_ORG" vsdf="FGN_GP_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1FGN_SECT_CD" vsds="T1R_SC_FGN_ORG" vsdf="FGN_SECT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1FGN_DSTC_CD" vsds="T1R_SC_FGN_ORG" vsdf="FGN_DSTC_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1FGN_BUR_CD" vsds="T1R_SC_FGN_ORG" vsdf="FGN_BUR_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1FGN_UNIT_CD" vsds="T1R_SC_FGN_ORG" vsdf="FGN_UNIT_CD" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="T1R_SC_FGN_ORGGridNav" id="T1R_SC_FGN_ORGGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+
+
+
+      <a href="SecurityAdmin" vsds="T1R_SC_FGN_ORG" vsaction="firstpage" name="T1R_SC_FGN_ORGfirstpage" id="T1R_SC_FGN_ORGfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+
+   
+      <a href="SecurityAdmin" vsds="T1R_SC_FGN_ORG" vsaction="prevpage" name="T1R_SC_FGN_ORGprevpage" id="T1R_SC_FGN_ORGprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+      <a href="SecurityAdmin" vsds="T1R_SC_FGN_ORG" vsaction="nextpage" id="T1R_SC_FGN_ORGnextpage" name="T1R_SC_FGN_ORGnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+      <a href="SecurityAdmin" vsds="T1R_SC_FGN_ORG" vsaction="lastpage" id="T1R_SC_FGN_ORGlastpage" name="T1R_SC_FGN_ORGlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+  
+  
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+   
+      <a href="SecurityAdmin" vsds="T1R_SC_FGN_ORG" vsaction="saveall" name="T1R_SC_FGN_ORGSaveAll" id="T1R_SC_FGN_ORGSaveAll" title="Save All" accesskey="5">Save</a>
+   
+      <a href="SecurityAdmin" vsds="T1R_SC_FGN_ORG" vsaction="undoall" name="T1R_SC_FGN_ORGUndoAll" id="T1R_SC_FGN_ORGUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+      <a href="SecurityAdmin" vsds="T1R_SC_FGN_ORG" vsaction="delete" id="IndexT1R_SC_FGN_ORGdelete" name="T1R_SC_FGN_ORGdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="SecurityAdmin" vsds="T1R_SC_FGN_ORG" vsaction="insert" id="T1R_SC_FGN_ORGinsert" name="T1R_SC_FGN_ORGinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="SecurityAdmin" vsds="T1R_SC_FGN_ORG" vsaction="11" name="T1R_SC_FGN_ORGCopyRecord" id="T1R_SC_FGN_ORGCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="SecurityAdmin" vsds="T1R_SC_FGN_ORG" vsaction="12" name="T1R_SC_FGN_ORGPasteLine" id="T1R_SC_FGN_ORGPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+      
+   
+      <td><vstext vsds=" " name="T1R_SC_FGN_ORGSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1SEC_ROLE_ID" title="Security Role ID (Required)">Security Role ID :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1SEC_ROLE_ID" id="txtT1SEC_ROLE_ID" 
+      ams_max_len="16"
+ value="SEC_ROLE_ID" 
+            size="20"
+ vsds="T1R_SC_FGN_ORG" vsdf="SEC_ROLE_ID" ShowCodeInfo="" title="Security Role ID (Required)">
+
+      <input type="image" vspick="T3R_SC_SEC_ROLE" vspicktext="txtT1SEC_ROLE_ID" vsds="T1R_SC_FGN_ORG" vsaction="pick" name="pckT1SEC_ROLE_ID" id="pckT1SEC_ROLE_ID" title="Select Security Role ID" alt="Select Security Role ID" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1USER_ID" title="User ID (Required)">User ID :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1USER_ID" id="txtT1USER_ID" 
+      ams_max_len="16"
+ value="USER_ID" 
+            size="20"
+ vsds="T1R_SC_FGN_ORG" vsdf="USER_ID" ShowCodeInfo="" title="User ID (Required)">
+      <input type="image" vspick="T7R_SC_USER_ROLE_LNK" vspicktext="txtT1USER_ID" vsds="T1R_SC_FGN_ORG" vsaction="pick" name="pckT1USER_ID" id="pckT1USER_ID" title="Select User ID" alt="Select User ID" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+        
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1HOME_DEPT_CD" title="Home Department (Required)">Home Department :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1HOME_DEPT_CD" id="txtT1HOME_DEPT_CD" 
+      ams_max_len="4"
+ value="HOME_DEPT_CD" 
+         size="6"
+ vsds="T1R_SC_FGN_ORG" vsdf="HOME_DEPT_CD" ShowCodeInfo="" title="Home Department">
+          
+      <input type="image" vspick="T8R_SC_USER_INFO" vspicktext="txtT1HOME_DEPT_CD" vsds="T1R_SC_FGN_ORG" vsaction="pick" name="pckT1HOME_DEPT_CD" id="pckT1HOME_DEPT_CD" title="Select Home Department" alt="Select Home Department" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1RSRC_GP_ID" title="Resource Group ID (Required)">Resource Group ID :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1RSRC_GP_ID" id="txtT1RSRC_GP_ID" 
+      ams_max_len="8"
+ value="RSRC_GP_ID" 
+            size="15"
+ vsds="T1R_SC_FGN_ORG" vsdf="RSRC_GP_ID" ShowCodeInfo="" title="Resource Group ID (Required)">
+          <input type="image" vspick="T2R_SC_RSRC_GP" vspicktext="txtT1RSRC_GP_ID" vsds="T1R_SC_FGN_ORG" vsaction="pick" name="pckT1RSRC_GP_ID" id="pckT1RSRC_GP_ID" title="Select Resource Group ID" alt="Select Resource Group ID" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+    
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1FGN_GOVT_BRN_CD" title="Government Branch">Government Branch :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1FGN_GOVT_BRN_CD" id="txtT1FGN_GOVT_BRN_CD" 
+            size="6"
+ vsds="T1R_SC_FGN_ORG" vsdf="FGN_GOVT_BRN_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="FGN_GOVT_BRN_CD" title="Government Branch" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1FGN_CAB_CD" title="Cabinet">Cabinet :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1FGN_CAB_CD" id="txtT1FGN_CAB_CD" 
+            size="6"
+ vsds="T1R_SC_FGN_ORG" vsdf="FGN_CAB_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="FGN_CAB_CD" title="Cabinet" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1FGN_DEPT_CD" title="Department">Department :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1FGN_DEPT_CD" id="txtT1FGN_DEPT_CD" 
+            size="6"
+ vsds="T1R_SC_FGN_ORG" vsdf="FGN_DEPT_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="FGN_DEPT_CD" title="Department" >
+
+		  
+
+        </td>
+      </tr>
+    
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1FGN_DIV_CD" title="Division">Division :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1FGN_DIV_CD" id="txtT1FGN_DIV_CD" 
+            size="6"
+ vsds="T1R_SC_FGN_ORG" vsdf="FGN_DIV_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="FGN_DIV_CD" title="Division" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1FGN_GP_CD" title="Group">Group :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1FGN_GP_CD" id="txtT1FGN_GP_CD" 
+            size="6"
+ vsds="T1R_SC_FGN_ORG" vsdf="FGN_GP_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="FGN_GP_CD" title="Group" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1FGN_SECT_CD" title="Section">Section :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1FGN_SECT_CD" id="txtT1FGN_SECT_CD" 
+            size="6"
+ vsds="T1R_SC_FGN_ORG" vsdf="FGN_SECT_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="FGN_SECT_CD" title="Section" >
+
+		  
+
+        </td>
+      </tr>
+    
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1FGN_DSTC_CD" title="District">District :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1FGN_DSTC_CD" id="txtT1FGN_DSTC_CD" 
+            size="6"
+ vsds="T1R_SC_FGN_ORG" vsdf="FGN_DSTC_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="FGN_DSTC_CD" title="District" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1FGN_BUR_CD" title="Bureau">Bureau :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1FGN_BUR_CD" id="txtT1FGN_BUR_CD" 
+            size="6"
+ vsds="T1R_SC_FGN_ORG" vsdf="FGN_BUR_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="FGN_BUR_CD" title="Bureau" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1FGN_UNIT_CD" title="Unit">Unit :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1FGN_UNIT_CD" id="txtT1FGN_UNIT_CD" 
+            size="6"
+ vsds="T1R_SC_FGN_ORG" vsdf="FGN_UNIT_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="FGN_UNIT_CD" title="Unit" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT1USER_ID_UP" id="txtT1USER_ID_UP" 
+               size="20"
+           vsds="T1R_SC_FGN_ORG" vsdf="USER_ID_UP"
+         ams_max_len="16"
+           ShowCodeInfo=""
+           value="USER_ID_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+<a name="btnT4pR_SC_SEC_ROLE" href="SecurityAdmin" id="btnT4pR_SC_SEC_ROLE" title="Navigation to Role Information" vsaction="pagetransition" 
+           vsds="T1R_SC_FGN_ORG"
+ vsnavigation="T4pR_SC_SEC_ROLE">Role Information</a>
+<a name="btnT5pR_SC_RSRC_GP" href="SecurityAdmin" id="btnT5pR_SC_RSRC_GP" title="Navigation to Resource Group Information" vsaction="pagetransition" 
+           vsds="T1R_SC_FGN_ORG"
+ vsnavigation="T5pR_SC_RSRC_GP">Resource Group Information</a>
+<a name="btnT6pR_SC_RSRC_ACCS" href="SecurityAdmin" id="btnT6pR_SC_RSRC_ACCS" title="Navigation to Access Control" vsaction="pagetransition" 
+           vsds="T1R_SC_FGN_ORG"
+ vsnavigation="T6pR_SC_RSRC_ACCS">Access Control</a>
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_SC_FGN_ORG', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'SEC_ROLE_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Security Role ID' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'USER_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'User ID' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'RSRC_GP_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Resource Group ID' ;
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Document Attachments</title>
+  <base href>
+
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="pAllAttachments_Grid">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Document Attachments">Document Attachments</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+  <input type="hidden" name="T1IN_OBJ_ATT_CTLG_Currency" value="">
+  <input type="hidden" name="T1IN_OBJ_ATT_CTLG_Old_Currency" value="">
+  <table name="tblT1IN_OBJ_ATT_CTLG" id="tblT1IN_OBJ_ATT_CTLG" class="advgrid" vsds="T1IN_OBJ_ATT_CTLG">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><a href="Advantage" vsaction="sort" vsds="T1IN_OBJ_ATT_CTLG"
+    vsdf="OBJ_ATT_COMP_NM"
+ name="T1OBJ_ATT_COMP_NMsort" id="T1OBJ_ATT_COMP_NMsort" title="Sort By Component">Component</a></th>
+
+        <th
+    class="wrap"
+><a href="Advantage" vsaction="sort" vsds="T1IN_OBJ_ATT_CTLG"
+    vsdf="OBJ_ATT_COMP_DESC"
+ name="T1OBJ_ATT_COMP_DESCsort" id="T1OBJ_ATT_COMP_DESCsort" title="Sort By Context">Context</a></th>
+
+        <th
+><span id="T1OBJ_ATT_NMsortGridLabel" name="T1OBJ_ATT_NMsortGridLabel" title="File Name">File Name</span></th>
+
+        <th
+><span id="T1OBJ_ATT_DTsortGridLabel" name="T1OBJ_ATT_DTsortGridLabel" title="Date">Date</span></th>
+
+        <th
+><span id="T1OBJ_ATT_USER_IDsortGridLabel" name="T1OBJ_ATT_USER_IDsortGridLabel" title="User ID">User ID</span></th>
+
+        <th
+><span id="T1OBJ_ATT_STsortGridLabel" name="T1OBJ_ATT_STsortGridLabel" title="Primary State">Primary State</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IN_OBJ_ATT_CTLGvscurrency" id="T1IN_OBJ_ATT_CTLGvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1IN_OBJ_ATT_CTLG" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1OBJ_ATT_COMP_NM" vsds="T1IN_OBJ_ATT_CTLG" vsdf="OBJ_ATT_COMP_NM"
+>
+        </td>
+
+        <td
+      class="wrap"
+
+>
+          <vstext name="txtT1OBJ_ATT_COMP_DESC" vsds="T1IN_OBJ_ATT_CTLG" vsdf="OBJ_ATT_COMP_DESC"
+>
+        </td>
+
+        <td
+
+>
+<!-- BEGIN CUSTOMIZATION -->
+<a href="javascript:{}"
+  name="T1IN_OBJ_ATT_CTLGDownload" id="T1IN_OBJ_ATT_CTLGDownload" title="Download Current Record" accesskey="6"
+  onclick="UTILS_DownloadAttachment(document.pAllAttachments_Grid,this);
+  	      if (!UTILS_CheckForTransaction()){event.returnValue = false};" >
+          <vstext name="txtT1OBJ_ATT_NM" vsds="T1IN_OBJ_ATT_CTLG" vsdf="OBJ_ATT_NM"
+>
+</a>
+<!-- END CUSTOMIZATION -->
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1OBJ_ATT_DT" vsds="T1IN_OBJ_ATT_CTLG" vsdf="OBJ_ATT_DT"
+      vsformat="Short Date"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1OBJ_ATT_USER_ID" vsds="T1IN_OBJ_ATT_CTLG" vsdf="OBJ_ATT_USER_ID"
+>
+        </td>
+
+        <td
+>
+          <vstext vsds="T1IN_OBJ_ATT_CTLG" vsdf="OBJ_ATT_ST" vscodetable="CVL_IN_OBJ_ATT_ST">
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+
+<td><div name="T1IN_OBJ_ATT_CTLGGridNav" id="T1IN_OBJ_ATT_CTLGGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+      <a href="Advantage" vsds="T1IN_OBJ_ATT_CTLG" vsaction="firstpage" name="T1IN_OBJ_ATT_CTLGfirstpage" id="T1IN_OBJ_ATT_CTLGfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+      <a href="Advantage" vsds="T1IN_OBJ_ATT_CTLG" vsaction="prevpage" name="T1IN_OBJ_ATT_CTLGprevpage" id="T1IN_OBJ_ATT_CTLGprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+      <a href="Advantage" vsds="T1IN_OBJ_ATT_CTLG" vsaction="nextpage" id="T1IN_OBJ_ATT_CTLGnextpage" name="T1IN_OBJ_ATT_CTLGnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+      <a href="Advantage" vsds="T1IN_OBJ_ATT_CTLG" vsaction="lastpage" id="T1IN_OBJ_ATT_CTLGlastpage" name="T1IN_OBJ_ATT_CTLGlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+    </tr>
+  </table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1IN_OBJ_ATT_CTLG', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'OBJ_ATT_COMP_NM' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Component' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'OBJ_ATT_COMP_DESC' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Context' ;
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<!-- BEGIN CUSTOMIZATION -->
+<a href="Advantage" vsds=" " vsaction="undoall" name="ReturnToDoc" id="ReturnToDoc" title="Return To Document" accesskey="R">Return to Document</a>
+<a href="Advantage" vsds=" " vsaction="undoall" name="DownloadAttachment" id="DownloadAttachment" title="DownloadAttachment" accesskey="6"></a>
+
+<!-- END CUSTOMIZATION -->
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

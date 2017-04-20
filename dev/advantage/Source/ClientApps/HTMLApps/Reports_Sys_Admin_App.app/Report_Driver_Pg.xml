@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="NoDataDefault"
+	PositionTop="25"
+	PositionLeft="25"
+	PositionWidth="150"
+	PositionHeight="43.75"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="True"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-1"
+	>
+	<FormCaption><![CDATA[Report_Driver_Pg]]></FormCaption>
+	<ExtendedProperties>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+	</ExtendedProperties>
+</Form>

@@ -1,0 +1,271 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Application Parameters</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="pIN_APP_CTRL">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Application Parameters">Application Parameters</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+      
+      
+ 
+  <a name="T1IN_APP_CTRL_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1IN_APP_CTRL_Currency" value="">
+  <input type="hidden" name="T1IN_APP_CTRL_Old_Currency" value="">
+  <table name="tblT1IN_APP_CTRL" id="tblT1IN_APP_CTRL" class="advgrid" vsds="T1IN_APP_CTRL">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><span id="T1PARM_NMsortGridLabel" name="T1PARM_NMsortGridLabel" title="Parameter Name">Parameter Name</span></th>
+      
+        <th 
+><span id="T1PARM_SH_DESCsortGridLabel" name="T1PARM_SH_DESCsortGridLabel" title="Parameter Short Description">Parameter Short Description</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IN_APP_CTRLvscurrency" id="T1IN_APP_CTRLvscurrency" title="Select Row" alt="Select Row" vsds="T1IN_APP_CTRL" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1PARM_NM" vsds="T1IN_APP_CTRL" vsdf="PARM_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1PARM_SH_DESC" vsds="T1IN_APP_CTRL" vsdf="PARM_SH_DESC" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="T1IN_APP_CTRLGridNav" id="T1IN_APP_CTRLGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="Advantage" vsds="T1IN_APP_CTRL" vsaction="firstpage" name="T1IN_APP_CTRLfirstpage" id="T1IN_APP_CTRLfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="Advantage" vsds="T1IN_APP_CTRL" vsaction="prevpage" name="T1IN_APP_CTRLprevpage" id="T1IN_APP_CTRLprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="Advantage" vsds="T1IN_APP_CTRL" vsaction="nextpage" id="T1IN_APP_CTRLnextpage" name="T1IN_APP_CTRLnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="Advantage" vsds="T1IN_APP_CTRL" vsaction="lastpage" id="T1IN_APP_CTRLlastpage" name="T1IN_APP_CTRLlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+  
+  
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+   
+         <a href="Advantage" vsds="T1IN_APP_CTRL" vsaction="saveall" name="T1IN_APP_CTRLSaveAll" id="T1IN_APP_CTRLSaveAll" title="Save All" accesskey="5">Save</a>
+   
+		  <a href="Advantage" vsds="T1IN_APP_CTRL" vsaction="undoall" name="T1IN_APP_CTRLUndoAll" id="T1IN_APP_CTRLUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+		  <a href="Advantage" vsds="T1IN_APP_CTRL" vsaction="delete" id="IndexT1IN_APP_CTRLdelete" name="T1IN_APP_CTRLdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="Advantage" vsds="T1IN_APP_CTRL" vsaction="insert" id="T1IN_APP_CTRLinsert" name="T1IN_APP_CTRLinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="Advantage" vsds="T1IN_APP_CTRL" vsaction="11" name="T1IN_APP_CTRLCopyRecord" id="T1IN_APP_CTRLCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="Advantage" vsds="T1IN_APP_CTRL" vsaction="12" name="T1IN_APP_CTRLPasteLine" id="T1IN_APP_CTRLPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+      
+   
+      <td><vstext vsds=" " name="T1IN_APP_CTRLSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+       
+        <tr>
+        
+      
+      <td class="label"><label for="txtT1PARM_NM" title="Parameter Name">Parameter Name :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1PARM_NM" id="txtT1PARM_NM" 
+               size="20"
+ vsds="T1IN_APP_CTRL" vsdf="PARM_NM" 
+         ams_max_len="64"
+ ShowCodeInfo="" value="PARM_NM" title="Parameter Name" >
+
+        
+
+        </td>
+        </tr>
+    
+    
+       
+        <tr>
+        
+      
+      <td class="label"><label for="txtT1PARM_SH_DESC" title="Parameter Short Description">Parameter Short Description :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1PARM_SH_DESC" id="txtT1PARM_SH_DESC" 
+               size="20"
+ vsds="T1IN_APP_CTRL" vsdf="PARM_SH_DESC" 
+         ams_max_len="64"
+ ShowCodeInfo="" value="PARM_SH_DESC" title="Parameter Short Description" >
+
+        
+
+        </td>
+        </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1PARM_VL" title="Parameter Value">Parameter Value :</label></td>
+   
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1PARM_VL" id="txtT1PARM_VL" vsds="T1IN_APP_CTRL" vsdf="PARM_VL" 
+ title="Parameter Value"></textarea>
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1PARM_DESC" title="Parameter Description">Parameter Description :</label></td>
+   
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1PARM_DESC" id="txtT1PARM_DESC" vsds="T1IN_APP_CTRL" vsdf="PARM_DESC" 
+ title="Parameter Description"></textarea>
+        </td>
+      </tr>
+    
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtT1PARM_NM_UP" title="Parameter Name">Parameter Name :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1PARM_NM_UP" id="txtT1PARM_NM_UP" 
+               size="20"
+ vsds="T1IN_APP_CTRL" vsdf="PARM_NM_UP" 
+         ams_max_len="64"
+ ShowCodeInfo="" title="Parameter Name" value="PARM_NM_UP"></div>
+        </td>
+      </tr>
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1IN_APP_CTRL', new Array(), new Array() ) ;
+    
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

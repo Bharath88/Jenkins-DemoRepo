@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Security Logs</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+<!-- BEGIN CUSTOMIZATION -->
+  <script language = "JavaScript">
+  <!--
+    function SECURITYLOG_ShowLayer(fsTabName)
+    {
+       var loTabLayer = DHTMLLIB_GetLayer(fsTabName);
+       DHTMLLIB_SetClassName(loTabLayer,'Selected');
+    }
+
+    function SECURITYLOG_HideLayer(fsTabName)
+    {
+       var loTabLayer = DHTMLLIB_GetLayer(fsTabName);
+       DHTMLLIB_SetClassName(loTabLayer,'');
+    }
+  -->
+  </script>
+  <style>
+  <!--
+    TABLE.ADVDCTab
+    {
+       BACKGROUND : #CCCCFF ;
+       WIDTH      : 75%;
+    }
+
+    /*
+     * This is the general style class for second-level tabs.
+     */
+    TABLE.ADVDCTab TD
+    {
+       BACKGROUND   : #CCCCFF ;
+       FONT-FAMILY  : sans-serif ;
+       FONT-STYLE   : normal ;
+       FONT-VARIANT : normal ;
+       FONT-WEIGHT  : bold ;
+       FONT-SIZE    : 12px ;
+       HEIGHT       : 20px;
+    }
+
+    TABLE.ADVDCTab TD A
+    {
+       COLOR        : #666699 ;
+    }
+
+    /*
+     * This is the style class for the selected tab in second-level tabs.
+     */
+    TABLE.ADVDCTab TD.Selected
+    {
+       BACKGROUND : #CCCCFF ;
+    }
+
+    TABLE.ADVDCTab TD.Selected A
+    {
+       COLOR      : #333366 ;
+    }
+  -->
+  </style>
+<!-- END CUSTOMIZATION -->
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<body class="adv">
+-->
+<body class="adv" onload="javascript:submitForm(document.SecurityLogTabsPg,'btnT3TableSecurityLog=btnT3TableSecurityLog&amp;vsnavigation=T3TableSecurityLog', 'Detail');javascript:SECURITYLOG_ShowLayer('ActionLog')">
+<!-- END CUSTOMIZATION -->
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="SecurityLogTabsPg">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Security Logs">Security Logs</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<a name="btnT2DocCompSecurityLog" href="Advantage" id="btnT2DocCompSecurityLog" title="Navigation to Document Violations" vsaction="pagetransition"
+           vsds=""
+ vsnavigation="T2DocCompSecurityLog">Document Violations</a>
+<a name="btnT3TableSecurityLog" href="Advantage" id="btnT3TableSecurityLog" title="Navigation to Login Violations" vsaction="pagetransition"
+           vsds=""
+ vsnavigation="T3TableSecurityLog">Login Violations</a>
+<a name="btnT4TableSecurityLog" href="Advantage" id="btnT4TableSecurityLog" title="Navigation to Table Violations" vsaction="pagetransition"
+           vsds=""
+ vsnavigation="T4TableSecurityLog">Table Violations</a>
+</ams_map></td></tr></table>
+ -->
+<table class="advdctab">
+  <tr>
+    <td nowrap align="left" width="1%"></td>
+    <td name="ActionLog" id="ActionLog" align="left" width="18%">
+      <a name="btnT3TableSecurityLog" href="Advantage" id="btnT3TableSecurityLog" title="Navigation to Login Violations" vsaction="pagetransition"
+         vsds="" onclick="SECURITYLOG_ShowLayer('ActionLog');SECURITYLOG_HideLayer('DocLog');SECURITYLOG_HideLayer('TableLog')"
+         vsnavigation="T3TableSecurityLog">Login Violations</a>
+    </td>
+
+    <td nowrap align="left" width="1%">|</td>
+
+    <td name="DocLog" id="DocLog" align="left" width="23%">
+      <a name="btnT2DocCompSecurityLog" href="Advantage" id="btnT2DocCompSecurityLog" title="Navigation to Document Violations" vsaction="pagetransition"
+         vsds="" onclick="SECURITYLOG_ShowLayer('DocLog');SECURITYLOG_HideLayer('ActionLog');SECURITYLOG_HideLayer('TableLog')"
+         vsnavigation="T2DocCompSecurityLog">Document Violations</a>
+    </td>
+
+    <td nowrap align="left" width="1%">|</td>
+
+    <td name="TableLog" id="TableLog" align="left" width="18%">
+      <a name="btnT4TableSecurityLog" href="Advantage" id="btnT4TableSecurityLog" title="Navigation to Table Violations" vsaction="pagetransition"
+         vsds="" onclick="SECURITYLOG_ShowLayer('TableLog');SECURITYLOG_HideLayer('ActionLog');SECURITYLOG_HideLayer('DocLog')"
+         vsnavigation="T4TableSecurityLog">Table Violations</a>
+    </td>
+
+    <td nowrap align="left" width="38%"></td>
+
+  </tr>
+</table>
+<!-- END CUSTOMIZATION -->
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+   </div>
+  </form>
+
+</body>
+</html>
+
+
+

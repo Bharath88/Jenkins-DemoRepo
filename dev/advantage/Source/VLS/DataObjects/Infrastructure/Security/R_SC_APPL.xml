@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<!DOCTYPE DataObject SYSTEM "DataObject.dtd">
+<DataObject
+	SurrId="0402601485.KiranH.0000"
+	CodedValuesList="True"
+	IsRemoteAccessible="False"
+	UseQuotedIdentifiers="False"
+	SuperClass="AMSDataObject"
+	LockMode="NoOptimisticLocking"
+	ImageReference=" "
+	XdaConnector="SQL"
+	DTDVersion="05.06.00"
+	>
+	<CodedValuesList
+		DisplayAttribute="APPL_NM"
+		StoredAttribute="APPL_ID"
+	/>
+	<VLSDeployment
+		DeploySecurityInfo="False"
+	/>
+	<SingularCaption><![CDATA[*]]> </SingularCaption>
+	<PluralCaption><![CDATA[*]]> </PluralCaption>
+	<Description><![CDATA[ ]]> </Description>
+	<Comments><![CDATA[ ]]> </Comments>
+	<Attributes>
+		<Attribute
+			Name="APPL_ID"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Integer"
+			/>
+			<Validation
+				ValidationType="Condition"
+				>
+				<Condition><![CDATA[ (APPL_ID  >=  1) AND (APPL_ID <=  63)]]> </Condition>
+				<ErrorMessage><![CDATA[Application ID must be in the range of 1 - 63.]]> </ErrorMessage>
+			</Validation>
+			<Caption><![CDATA[ID]]> </Caption>
+			<Derivation
+				DerivationType="None"
+			/>
+		</Attribute>
+		<Attribute
+			Name="APPL_NM"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="50"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Name]]> </Caption>
+			<ExtendedProperties>
+				<Property
+					Name="AllowMixedCase"
+					Value="Y"
+				/>
+			</ExtendedProperties>
+		</Attribute>
+		<Attribute
+			Name="ACTV_FL"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			>
+			<DataType
+				DataType="Boolean"
+			/>
+			<Derivation
+				DerivationType="Default"
+				>
+				<DefaultValue><![CDATA[true]]> </DefaultValue>
+			</Derivation>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Active]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="STND_ALONE"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="Boolean"
+			/>
+			<Derivation
+				DerivationType="Default"
+				>
+				<DefaultValue><![CDATA[false]]> </DefaultValue>
+			</Derivation>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Stand Alone]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="STATELESS_FL"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			>
+			<DataType
+				DataType="Boolean"
+			/>
+			<Derivation
+				DerivationType="Default"
+				>
+				<DefaultValue><![CDATA[false]]> </DefaultValue>
+			</Derivation>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Stateless]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="APPL_NM_UP"
+			Persistent="True"
+			PreventUserUpdates="True"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="50"
+			/>
+			<Derivation
+				DerivationType="Formula"
+				>
+				<Formula><![CDATA[AMSDataObject.toUpperCaseString( APPL_NM ) ]]> </Formula>
+			</Derivation>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Name]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="AMS_ROW_VERS_NO"
+			Persistent="True"
+			PreventUserUpdates="True"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="Long"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+		</Attribute>
+	</Attributes>
+	<Indexes>
+		<Index
+			Name="PK_RSCAPPL"
+			Primary="True"
+			Unique="True"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="APPL_ID"
+				Descending="False"
+			/>
+		</Index>
+		<Index
+			Name="U1RSCAPPL"
+			Primary="False"
+			Unique="True"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="APPL_NM"
+				Descending="False"
+			/>
+		</Index>
+		<Index
+			Name="U2RSCAPPL"
+			Primary="False"
+			Unique="True"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="APPL_NM_UP"
+				Descending="False"
+			/>
+		</Index>
+	</Indexes>
+	<Constraints>
+		<Constraint
+			Name="CHECK_STND_ALONE"
+			ConditionType="RejectWhen"
+			>
+			<ErrorMessage><![CDATA[A Stateless application must also be a Stand-Alone Application]]></ErrorMessage>
+			<Condition><![CDATA[ STND_ALONE  =  False /* No */   AND  STATELESS_FL  =  True /* Yes */  ]]></Condition>
+		</Constraint>
+	</Constraints>
+	<ExtendedProperties>
+		<Property
+			Name="FuncAreaName"
+			Value="FUNC_AREA_SECURITY"
+		/>
+	</ExtendedProperties>
+</DataObject>

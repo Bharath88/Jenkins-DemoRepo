@@ -1,0 +1,1 @@
+page with application name and transition elements.  May only be used on Start page and should not host recordsources.

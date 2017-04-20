@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="StmtCwlkToStmtSrcTbl"
+		ChildRoleName="StmtSrcTblToStmtCwlk"
+		IsEnforce="True"
+		CountReplicates="1"
+		OnParentUpdate="UpdateChildren"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_TBL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:Source Table Name,v:Source Table%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

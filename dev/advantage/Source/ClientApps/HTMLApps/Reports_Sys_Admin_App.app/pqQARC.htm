@@ -1,0 +1,357 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Archive Facilitator Inquiry</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Reports_Sys_Admin_App" method="post" vsform="true" name="pqQARC">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Archive Facilitator Inquiry">Archive Facilitator Inquiry</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="Reports_Sys_Admin_App" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+  <a name="rs01FACILITATOR_QRY_Top"></a>
+  
+  
+  
+  <input type="hidden" name="rs01FACILITATOR_QRY_Currency" value="">
+  <input type="hidden" name="rs01FACILITATOR_QRY_Old_Currency" value="">
+  <table name="tblrs01FACILITATOR_QRY" id="tblrs01FACILITATOR_QRY" class="advgrid" vsds="rs01FACILITATOR_QRY">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="Reports_Sys_Admin_App" vsaction="sort" vsds="rs01FACILITATOR_QRY" 
+    vsdf="RUN_NO"
+ name="rs01RUN_NOsort" id="rs01RUN_NOsort" title="Sort By Run Number">Run Number</a></th>
+      
+        <th 
+><span id="rs01SEQ_NOsortGridLabel" name="rs01SEQ_NOsortGridLabel" title="Seq Number">Seq Number</span></th>
+      
+        <th 
+><a href="Reports_Sys_Admin_App" vsaction="sort" vsds="rs01FACILITATOR_QRY" 
+    vsdf="STATUS"
+ name="rs01STATUSsort" id="rs01STATUSsort" title="Sort By Facilitator Status">Facilitator Status</a></th>
+      
+        <th 
+><a href="Reports_Sys_Admin_App" vsaction="sort" vsds="rs01FACILITATOR_QRY" 
+    vsdf="ARCH_TYP"
+ name="rs01ARCH_TYPsort" id="rs01ARCH_TYPsort" title="Sort By Archive Type">Archive Type</a></th>
+      
+        <th 
+><a href="Reports_Sys_Admin_App" vsaction="sort" vsds="rs01FACILITATOR_QRY" 
+    vsdf="LAST_UPDATE_DT"
+ name="rs01LAST_UPDATE_DTsort" id="rs01LAST_UPDATE_DTsort" title="Sort By Update Date/Time">Update Date/Time</a></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="rs01FACILITATOR_QRYvscurrency" id="rs01FACILITATOR_QRYvscurrency" title="Select Row" alt="Select Row" vsds="rs01FACILITATOR_QRY" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtrs01RUN_NO" vsds="rs01FACILITATOR_QRY" vsdf="RUN_NO" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtrs01SEQ_NO" vsds="rs01FACILITATOR_QRY" vsdf="SEQ_NO" 
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="rs01FACILITATOR_QRY" vsdf="STATUS" vscodetable="CVL_FCLTR_STAT">
+        </td>
+      
+        <td 
+>
+          <vstext vsds="rs01FACILITATOR_QRY" vsdf="ARCH_TYP" vscodetable="CVL_ARCH_TYP">
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtrs01LAST_UPDATE_DT" vsds="rs01FACILITATOR_QRY" vsdf="LAST_UPDATE_DT" 
+    vsformat="MM/dd/yyyy HH:mm"
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="rs01FACILITATOR_QRYGridNav" id="rs01FACILITATOR_QRYGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+      <a href="Reports_Sys_Admin_App" vsds="rs01FACILITATOR_QRY" vsaction="firstpage" name="rs01FACILITATOR_QRYfirstpage" id="rs01FACILITATOR_QRYfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+      <a href="Reports_Sys_Admin_App" vsds="rs01FACILITATOR_QRY" vsaction="prevpage" name="rs01FACILITATOR_QRYprevpage" id="rs01FACILITATOR_QRYprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+      <a href="Reports_Sys_Admin_App" vsds="rs01FACILITATOR_QRY" vsaction="nextpage" id="rs01FACILITATOR_QRYnextpage" name="rs01FACILITATOR_QRYnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+      <a href="Reports_Sys_Admin_App" vsds="rs01FACILITATOR_QRY" vsaction="lastpage" id="rs01FACILITATOR_QRYlastpage" name="rs01FACILITATOR_QRYlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+  
+  
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+</ams_map>
+      </td>
+      
+   
+      <td><vstext vsds=" " name="rs01FACILITATOR_QRYSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+          
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01RUN_NO" title="Run Number">Run Number :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01RUN_NO" id="txtrs01RUN_NO" 
+               size="15"
+ vsds="rs01FACILITATOR_QRY" vsdf="RUN_NO" 
+ value="RUN_NO" ams_readonly ShowCodeInfo="" title="Run Number">
+        </td>
+      </tr>
+    
+        
+          
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SEQ_NO" title="Seq Number">Seq Number :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SEQ_NO" id="txtrs01SEQ_NO" 
+               size="15"
+ vsds="rs01FACILITATOR_QRY" vsdf="SEQ_NO" fhdf="FCLTR_SEQ_NO"
+ value="SEQ_NO" ams_readonly ShowCodeInfo="" title="Seq Number">
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01STATUS" title="Facilitator Status">Facilitator Status :</label></td>
+   
+        <td class="val">
+          <select name="txtrs01STATUS" id="txtrs01STATUS" vsds="rs01FACILITATOR_QRY" vsdf="STATUS" fhdf="FCLTR_STAT" size="1" vscodetable="CVL_FCLTR_STAT" ShowCodeInfo="" title="Facilitator Status">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01PARM_FILE_LOC" title="Parm File Location">Parm File Location :</label></td>
+   
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtrs01PARM_FILE_LOC" id="txtrs01PARM_FILE_LOC" vsds="rs01FACILITATOR_QRY" vsdf="PARM_FILE_LOC" 
+ title="Parm File Location"></textarea>
+        </td>
+      </tr>
+    
+      </table></td><td class="advscalarcol"><table class="advscalar">
+          
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01ORIG_ARCH_DT" title="Original Archive Date">Original Archive Date :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01ORIG_ARCH_DT" id="txtrs01ORIG_ARCH_DT" 
+                                 size="15"
+ vsds="rs01FACILITATOR_QRY" vsdf="ORIG_ARCH_DT" 
+      vsformat="MM/dd/yyyy HH:mm"
+ value="ORIG_ARCH_DT" ams_readonly ShowCodeInfo="" title="Original Archive Date">
+        </td>
+      </tr>
+    
+        
+          
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01LAST_UPDATE_DT" title="Update Date/Time">Update Date/Time :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01LAST_UPDATE_DT" id="txtrs01LAST_UPDATE_DT" 
+                                 size="15"
+ vsds="rs01FACILITATOR_QRY" vsdf="LAST_UPDATE_DT" 
+      vsformat="MM/dd/yyyy HH:mm"
+ value="LAST_UPDATE_DT" ams_readonly ShowCodeInfo="" title="Update Date/Time">
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01ARCH_TYP" title="Archive Type">Archive Type :</label></td>
+   
+        <td class="val">
+          <select name="txtrs01ARCH_TYP" id="txtrs01ARCH_TYP" vsds="rs01FACILITATOR_QRY" vsdf="ARCH_TYP" size="1" vscodetable="CVL_ARCH_TYP" ShowCodeInfo="" title="Archive Type">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+          
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01AGNT_ID" title="Agent ID">Agent ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01AGNT_ID" id="txtrs01AGNT_ID" 
+               size="15"
+ vsds="rs01FACILITATOR_QRY" vsdf="AGNT_ID" 
+ value="AGNT_ID" ams_readonly ShowCodeInfo="" title="Agent ID">
+        </td>
+      </tr>
+    
+        
+      <tr>
+        <td class="label"><label for="txtrs01XML_FILE_LOC" title="File Location">File Location :</label></td>
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtrs01XML_FILE_LOC" id="txtrs01XML_FILE_LOC" vsds="rs01FACILITATOR_QRY" vsdf="XML_FILE_LOC" 
+ title="File Location"></textarea>
+        </td>
+      </tr>
+    
+          
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01ARCH_CNT" title="Archive Count">Archive Count :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01ARCH_CNT" id="txtrs01ARCH_CNT" 
+               size="15"
+ vsds="rs01FACILITATOR_QRY" vsdf="ARCH_CNT" 
+ value="ARCH_CNT" ams_readonly ShowCodeInfo="" title="Archive Count">
+        </td>
+      </tr>
+    
+        
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+<a name="btnT1Job_Log_Entries" href="Reports_Sys_Admin_App" id="btnT1Job_Log_Entries" title="Navigation to View Log" vsaction="pagetransition" 
+           vsds="rs01FACILITATOR_QRY"
+ vsnavigation="T1Job_Log_Entries">View Log</a>
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'rs01FACILITATOR_QRY', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'RUN_NO' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Run Number' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'STATUS' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Facilitator Status' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'ARCH_TYP' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Archive Type' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'LAST_UPDATE_DT' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Update Date/Time' ;
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Reports_Sys_Admin_App" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Error Details</title>
+  <base href>
+
+         <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSStyle.css">
+         <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSAppStyle.css">
+         <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSMenuStyle.css">
+         <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/ALTSS/ALTSSUtil.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<!--BEGIN CUSTOMIZATION -->
+<!--
+<body class="adv reftable">
+-->
+<body class="adv reftable" onload="UTILS_StartRegisteringTransactions()">
+<!-- END CUSTOMIZATION -->
+  <vserror>
+  <form action="AltSelfService" method="post" vsform="true" name="AltSSErrorDetail">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+<!--BEGIN CUSTOMIZATION -->
+<!--
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+-->
+<!-- END CUSTOMIZATION -->
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+<!--BEGIN CUSTOMIZATION -->
+<!--
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+-->
+<!-- END CUSTOMIZATION -->
+
+
+
+  <INPUT type="hidden" name="T1R_MSGvscurrency" vsds="T1R_MSG" vscurrency="true">
+
+<!--BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="AltSelfService" vsds="T1R_MSG" vsaction="saveall" name="T1R_MSGSaveAll" id="T1R_MSGSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="AltSelfService" vsds="T1R_MSG" vsaction="undoall" name="T1R_MSGUndoAll" id="T1R_MSGUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="AltSelfService" vsds="T1R_MSG" vsaction="delete" id="IndexT1R_MSGdelete" name="T1R_MSGdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="AltSelfService" vsds="T1R_MSG" vsaction="insert" id="T1R_MSGinsert" name="T1R_MSGinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+      </td>
+
+<td><vstext vsds=" " name="T1R_MSGSearchColList" vspreservetag="true"></td>
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+         <input class="advbutton" type="submit" value="First" vsds="T1R_MSG" vsaction="first" name="T1R_MSGfirst" id="T1R_MSGfirst" title="First Record" accesskey="0">
+
+         <input class="advbutton" type="submit" value="Prev" vsds="T1R_MSG" vsaction="prev" name="T1R_MSGprev" id="T1R_MSGprev" title="Previous Record" accesskey="1">
+
+         <input class="advbutton" type="submit" value="Next" vsds="T1R_MSG" vsaction="next" name="T1R_MSGnext" id="T1R_MSGnext" title="Next Record" accesskey="2">
+
+         <input class="advbutton" type="submit" value="Last" vsds="T1R_MSG" vsaction="last" name="T1R_MSGlast" id="T1R_MSGlast" title="Last Record" accesskey="3">
+</ams_map></td>
+
+
+    </tr>
+  </table>
+-->
+<!-- END CUSTOMIZATION -->
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+<!--BEGIN CUSTOMIZATION -->
+<!--
+      <tr>
+        <td class="label"><label title="Code">Code :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1MSG_CD" vsds="T1R_MSG" vsdf="MSG_CD"
+            size="5"
+>
+        </td>
+      </tr>
+-->
+<!-- END CUSTOMIZATION -->
+      <tr>
+<!--BEGIN CUSTOMIZATION -->
+<!--
+        <td class="label"><label for="txtT1MSG_EXPL" title="Explanation">Explanation :</label></td>
+-->
+<!-- END CUSTOMIZATION -->
+        <td class="val memo">
+<!--BEGIN CUSTOMIZATION -->
+          <textarea ams_readonly cols="60" rows="10" name="txtT1MSG_EXPL" id="txtT1MSG_EXPL" vsds="T1R_MSG" vsdf="MSG_EXPL"
+ title="Explanation"></textarea>
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="AltSelfService" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

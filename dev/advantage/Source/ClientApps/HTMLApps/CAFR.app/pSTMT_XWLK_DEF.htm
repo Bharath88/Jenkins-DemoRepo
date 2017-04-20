@@ -1,0 +1,858 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Statement Crosswalk</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="CAFR" method="post" vsform="true" name="pSTMT_XWLK_DEF">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Statement Crosswalk">Statement Crosswalk</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="CAFR" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+
+  <a name="rs01STMT_XWLK_DEF_Top"></a>
+  
+  
+  
+  <input type="hidden" name="rs01STMT_XWLK_DEF_Currency" >
+  <input type="hidden" name="rs01STMT_XWLK_DEF_Old_Currency" >
+  <table name="tblrs01STMT_XWLK_DEF" id="tblrs01STMT_XWLK_DEF" class="advgrid" vsds="rs01STMT_XWLK_DEF">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs01STMT_XWLK_DEF" 
+    vsdf="STMT_CD"
+ name="rs01STMT_CDsort" id="rs01STMT_CDsort" title="Sort By Statement Code">Statement Code</a></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs01STMT_XWLK_DEF" 
+    vsdf="STMT_NM"
+ name="rs01STMT_NMsort" id="rs01STMT_NMsort" title="Sort By Statement Name">Statement Name</a></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs01STMT_XWLK_DEF" 
+    vsdf="SRC_TBL_NM"
+ name="rs01SRC_TBL_NMsort" id="rs01SRC_TBL_NMsort" title="Sort By Statement Source">Statement Source</a></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr class="advgridoddrow" onclick="UTILS_SelectGridRow(this);return true;" ams_altclassname="advgridevenrow" vsprototyperow="true">
+      <td class="advgridrowselect">
+        <input type="image" name="rs01STMT_XWLK_DEFvscurrency" id="rs01STMT_XWLK_DEFvscurrency" title="Select Row" alt="Select Row" src="../AMSImages/ADVRowSel.gif"
+ vsds="rs01STMT_XWLK_DEF" vsaction="Currency">
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtrs01STMT_CD" vsds="rs01STMT_XWLK_DEF" vsdf="STMT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtrs01STMT_NM" vsds="rs01STMT_XWLK_DEF" vsdf="STMT_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtrs01SRC_TBL_NM" vsds="rs01STMT_XWLK_DEF" vsdf="SRC_TBL_NM" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="rs01STMT_XWLK_DEFGridNav" id="rs01STMT_XWLK_DEFGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="CAFR" vsds="rs01STMT_XWLK_DEF" vsaction="firstpage" name="rs01STMT_XWLK_DEFfirstpage" id="rs01STMT_XWLK_DEFfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="CAFR" vsds="rs01STMT_XWLK_DEF" vsaction="prevpage" name="rs01STMT_XWLK_DEFprevpage" id="rs01STMT_XWLK_DEFprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="CAFR" vsds="rs01STMT_XWLK_DEF" vsaction="nextpage" id="rs01STMT_XWLK_DEFnextpage" name="rs01STMT_XWLK_DEFnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="CAFR" vsds="rs01STMT_XWLK_DEF" vsaction="lastpage" id="rs01STMT_XWLK_DEFlastpage" name="rs01STMT_XWLK_DEFlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+
+  
+  
+
+  
+      <table class="advaction recsrc">
+        <tr>
+      
+         <td>
+<ams_map title="Update Actions" name="Update Actions">
+   
+         <a href="CAFR" vsds="rs01STMT_XWLK_DEF" vsaction="saveall" name="rs01STMT_XWLK_DEFSaveAll" id="rs01STMT_XWLK_DEFSaveAll" title="Save All" accesskey="5">Save</a>
+   
+		  <a href="CAFR" vsds="rs01STMT_XWLK_DEF" vsaction="undoall" name="rs01STMT_XWLK_DEFUndoAll" id="rs01STMT_XWLK_DEFUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+		  <a href="CAFR" vsds="rs01STMT_XWLK_DEF" vsaction="delete" id="Indexrs01STMT_XWLK_DEFdelete" name="rs01STMT_XWLK_DEFdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="CAFR" vsds="rs01STMT_XWLK_DEF" vsaction="insert" id="rs01STMT_XWLK_DEFinsert" name="rs01STMT_XWLK_DEFinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="CAFR" vsds="rs01STMT_XWLK_DEF" vsaction="11" name="rs01STMT_XWLK_DEFCopyRecord" id="rs01STMT_XWLK_DEFCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="CAFR" vsds="rs01STMT_XWLK_DEF" vsaction="12" name="rs01STMT_XWLK_DEFPasteLine" id="rs01STMT_XWLK_DEFPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+
+   
+      <td><vstext vsds=" " name="rs01STMT_XWLK_DEFSearchColList" vspreservetag="true"></td>
+
+   
+      <td><ams_map title="Section Controls" name="Section Controls">
+      
+  <a href="javascript:
+        AMSTAB_ExpandSection('rs01STMT_XWLK_DEF_Section1','rs01STMT_XWLK_DEF_Section1_Button');
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+      
+  <a href="javascript:
+        AMSTAB_CollapseSection('rs01STMT_XWLK_DEF_Section1','rs01STMT_XWLK_DEF_Section1_Button');
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+    
+        </tr>
+      </table>
+
+  <fieldset class="advscalar">
+    <div class="advpresection">
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+          
+  
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtrs01STMT_CD" title="Statement Code (Required)">Statement Code :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtrs01STMT_CD" id="txtrs01STMT_CD" 
+      ams_max_len="10"
+ value="STMT_CD" 
+            size="15"
+ vsds="rs01STMT_XWLK_DEF" vsdf="STMT_CD" ShowCodeInfo="" title="Statement Code (Required)">
+          
+      <input type="image" vspick="T1STMT_DEF" vspicktext="txtrs01STMT_CD" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01STMT_CD" id="pckrs01STMT_CD" title="Select Statement Code" alt="Select Statement Code" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+        <tr>
+        
+      
+      <td class="label"><label for="txtrs01STMT_NM" title="Statement Name">Statement Name :</label></td>
+   
+        <td class="val">
+
+
+
+          <input type="text" name="txtrs01STMT_NM" id="txtrs01STMT_NM" size="100" vsds="rs01STMT_XWLK_DEF" vsdf="STMT_NM" ams_max_len="100" vsformat="" ShowCodeInfo="" value="STMT_NM" title="Statement Name" >
+
+
+
+        </td>
+        </tr>
+    
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtrs01SRC_TBL" title="Statement Source (Required)">Statement Source :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtrs01SRC_TBL" id="txtrs01SRC_TBL" 
+      ams_max_len="30"
+ value="SRC_TBL" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SRC_TBL" ShowCodeInfo="" title="Statement Source (Required)">
+          
+      <input type="image" vspick="T2STMT_SRC_TBL" vspicktext="txtrs01SRC_TBL" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SRC_TBL" id="pckrs01SRC_TBL" title="Select Statement Source" alt="Select Statement Source" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SRC_TBL_NM" vsds="rs01STMT_XWLK_DEF" vsdf="SRC_TBL_NM" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        </table></td></tr></table></div></fieldset><a name="rs01STMT_XWLK_DEF_Section1_Top"></a><fieldset class="advscalar section">
+        <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('rs01STMT_XWLK_DEF_Section1','rs01STMT_XWLK_DEF_Section1_Button');" title="Expand/Collapse Summary Columns"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="rs01STMT_XWLK_DEF_Section1_Button"> Summary Columns</a></legend>
+        <div id="rs01STMT_XWLK_DEF_Section1" class="advsection">
+        <table><tr><td class="advscalarcol"><table class="advscalar">
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_1" title="Summary Column 1">Summary Column 1 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_1" id="txtrs01SMRY_COL_CD_1" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_1" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_1" ShowCodeInfo="" title="Summary Column 1">
+          
+      <input type="image" vspick="T3STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_1" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_1" id="pckrs01SMRY_COL_CD_1" title="Select Summary Column 1" alt="Select Summary Column 1" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_1" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_1" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_2" title="Summary Column 2">Summary Column 2 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_2" id="txtrs01SMRY_COL_CD_2" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_2" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_2" ShowCodeInfo="" title="Summary Column 2">
+          
+      <input type="image" vspick="T4STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_2" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_2" id="pckrs01SMRY_COL_CD_2" title="Select Summary Column 2" alt="Select Summary Column 2" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_2" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_2" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_3" title="Summary Column 3">Summary Column 3 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_3" id="txtrs01SMRY_COL_CD_3" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_3" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_3" ShowCodeInfo="" title="Summary Column 3">
+          
+      <input type="image" vspick="T5STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_3" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_3" id="pckrs01SMRY_COL_CD_3" title="Select Summary Column 3" alt="Select Summary Column 3" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_3" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_3" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_4" title="Summary Column 4">Summary Column 4 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_4" id="txtrs01SMRY_COL_CD_4" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_4" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_4" ShowCodeInfo="" title="Summary Column 4">
+          
+      <input type="image" vspick="T6STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_4" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_4" id="pckrs01SMRY_COL_CD_4" title="Select Summary Column 4" alt="Select Summary Column 4" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_4" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_4" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_5" title="Summary Column 5">Summary Column 5 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_5" id="txtrs01SMRY_COL_CD_5" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_5" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_5" ShowCodeInfo="" title="Summary Column 5">
+          
+      <input type="image" vspick="T7STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_5" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_5" id="pckrs01SMRY_COL_CD_5" title="Select Summary Column 5" alt="Select Summary Column 5" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_5" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_5" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_6" title="Summary Column 6">Summary Column 6 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_6" id="txtrs01SMRY_COL_CD_6" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_6" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_6" ShowCodeInfo="" title="Summary Column 6">
+          
+      <input type="image" vspick="T8STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_6" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_6" id="pckrs01SMRY_COL_CD_6" title="Select Summary Column 6" alt="Select Summary Column 6" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_6" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_6" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_7" title="Summary Column 7">Summary Column 7 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_7" id="txtrs01SMRY_COL_CD_7" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_7" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_7" ShowCodeInfo="" title="Summary Column 7">
+          
+      <input type="image" vspick="T9STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_7" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_7" id="pckrs01SMRY_COL_CD_7" title="Select Summary Column 7" alt="Select Summary Column 7" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_7" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_7" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_8" title="Summary Column 8">Summary Column 8 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_8" id="txtrs01SMRY_COL_CD_8" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_8" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_8" ShowCodeInfo="" title="Summary Column 8">
+          
+      <input type="image" vspick="T10STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_8" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_8" id="pckrs01SMRY_COL_CD_8" title="Select Summary Column 8" alt="Select Summary Column 8" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_8" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_8" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_9" title="Summary Column 9">Summary Column 9 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_9" id="txtrs01SMRY_COL_CD_9" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_9" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_9" ShowCodeInfo="" title="Summary Column 9">
+          
+      <input type="image" vspick="T11STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_9" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_9" id="pckrs01SMRY_COL_CD_9" title="Select Summary Column 9" alt="Select Summary Column 9" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_9" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_9" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_10" title="Summary Column 10">Summary Column 10 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_10" id="txtrs01SMRY_COL_CD_10" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_10" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_10" ShowCodeInfo="" title="Summary Column 10">
+          
+      <input type="image" vspick="T12STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_10" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_10" id="pckrs01SMRY_COL_CD_10" title="Select Summary Column 10" alt="Select Summary Column 10" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_10" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_10" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+							                    </table></td><td class="advscalarcol"><table class="advscalar">
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_11" title="Summary Column 11">Summary Column 11 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_11" id="txtrs01SMRY_COL_CD_11" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_11" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_11" ShowCodeInfo="" title="Summary Column 11">
+          
+      <input type="image" vspick="T13STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_11" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_11" id="pckrs01SMRY_COL_CD_11" title="Select Summary Column 11" alt="Select Summary Column 11" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_11" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_11" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_12" title="Summary Column 12">Summary Column 12 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_12" id="txtrs01SMRY_COL_CD_12" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_12" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_12" ShowCodeInfo="" title="Summary Column 12">
+          
+      <input type="image" vspick="T14STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_12" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_12" id="pckrs01SMRY_COL_CD_12" title="Select Summary Column 12" alt="Select Summary Column 12" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_12" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_12" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_13" title="Summary Column 13">Summary Column 13 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_13" id="txtrs01SMRY_COL_CD_13" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_13" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_13" ShowCodeInfo="" title="Summary Column 13">
+          
+      <input type="image" vspick="T15STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_13" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_13" id="pckrs01SMRY_COL_CD_13" title="Select Summary Column 13" alt="Select Summary Column 13" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_13" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_13" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_14" title="Summary Column 14">Summary Column 14 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_14" id="txtrs01SMRY_COL_CD_14" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_14" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_14" ShowCodeInfo="" title="Summary Column 14">
+          
+      <input type="image" vspick="T16STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_14" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_14" id="pckrs01SMRY_COL_CD_14" title="Select Summary Column 14" alt="Select Summary Column 14" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_14" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_14" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_15" title="Summary Column 15">Summary Column 15 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_15" id="txtrs01SMRY_COL_CD_15" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_15" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_15" ShowCodeInfo="" title="Summary Column 15">
+          
+      <input type="image" vspick="T17STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_15" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_15" id="pckrs01SMRY_COL_CD_15" title="Select Summary Column 15" alt="Select Summary Column 15" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_15" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_15" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_16" title="Summary Column 16">Summary Column 16 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_16" id="txtrs01SMRY_COL_CD_16" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_16" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_16" ShowCodeInfo="" title="Summary Column 16">
+          
+      <input type="image" vspick="T18STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_16" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_16" id="pckrs01SMRY_COL_CD_16" title="Select Summary Column 16" alt="Select Summary Column 16" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_16" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_16" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_17" title="Summary Column 17">Summary Column 17 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_17" id="txtrs01SMRY_COL_CD_17" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_17" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_17" ShowCodeInfo="" title="Summary Column 17">
+          
+      <input type="image" vspick="T19STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_17" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_17" id="pckrs01SMRY_COL_CD_17" title="Select Summary Column 17" alt="Select Summary Column 17" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_17" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_17" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_18" title="Summary Column 18">Summary Column 18 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_18" id="txtrs01SMRY_COL_CD_18" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_18" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_18" ShowCodeInfo="" title="Summary Column 18">
+          
+      <input type="image" vspick="T20STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_18" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_18" id="pckrs01SMRY_COL_CD_18" title="Select Summary Column 18" alt="Select Summary Column 18" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_18" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_18" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_19" title="Summary Column 19">Summary Column 19 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_19" id="txtrs01SMRY_COL_CD_19" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_19" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_19" ShowCodeInfo="" title="Summary Column 19">
+          
+      <input type="image" vspick="T21STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_19" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_19" id="pckrs01SMRY_COL_CD_19" title="Select Summary Column 19" alt="Select Summary Column 19" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_19" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_19" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01SMRY_COL_CD_20" title="Summary Column 20">Summary Column 20 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01SMRY_COL_CD_20" id="txtrs01SMRY_COL_CD_20" 
+      ams_max_len="30"
+ value="SMRY_COL_CD_20" 
+            size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_CD_20" ShowCodeInfo="" title="Summary Column 20">
+          
+      <input type="image" vspick="T22STMT_SRC_COL" vspicktext="txtrs01SMRY_COL_CD_20" vsds="rs01STMT_XWLK_DEF" vsaction="pick" name="pckrs01SMRY_COL_CD_20" id="pckrs01SMRY_COL_CD_20" title="Select Summary Column 20" alt="Select Summary Column 20" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtrs01SMRY_COL_NM_20" vsds="rs01STMT_XWLK_DEF" vsdf="SMRY_COL_NM_20" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtrs01STMT_NM_UP" title="Statement Name">Statement Name :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtrs01STMT_NM_UP" id="txtrs01STMT_NM_UP" 
+               size="20"
+ vsds="rs01STMT_XWLK_DEF" vsdf="STMT_NM_UP" 
+         ams_max_len="100"
+ ShowCodeInfo="" title="Statement Name" value="STMT_NM_UP"></div>
+        </td>
+      </tr>
+    
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+  
+      <br><br><table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('rs01STMT_XWLK_DEF_Top');" title="Go To Top">Top</a></td></tr></table>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'rs01STMT_XWLK_DEF', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'STMT_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Statement Code' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'STMT_NM' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Statement Name' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'SRC_TBL_NM' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Statement Source' ;
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<a name="btnT23pRefSTMTDEF" href="CAFR" id="btnT23pRefSTMTDEF" title="Navigation to Statement Definition" vsaction="pagetransition" 
+           vsds=""
+ vsnavigation="T23pRefSTMTDEF">Statement Definition</a>
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="CAFR" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

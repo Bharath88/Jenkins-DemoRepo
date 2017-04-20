@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="StmtCellToStmtColumn"
+		ChildRoleName="StmtColumnToStmtCell"
+		IsEnforce="True"
+		CountReplicates="2"
+		OnParentUpdate="UpdateChildren"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="STMT_FY"
+				ChildAttribute="STMT_FY"
+			/>
+			<AttributePair
+				ParentAttribute="STMT_CD"
+				ChildAttribute="STMT_CD"
+			/>
+			<AttributePair
+				ParentAttribute="STMT_COL"
+				ChildAttribute="STMT_COL"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_COLUMN]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_CELL(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Cell%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:Statement Column,v:Statement Column Table%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Assemble</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="DocAssembleDialog">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Assemble">Assemble</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+<!-- DataSource T1DOC_HDR //-->
+
+  <a name="T2PRNT_ASEM_JOB_QRY_Top"></a>
+
+
+
+  <input type="hidden" name="T2PRNT_ASEM_JOB_QRY_Currency" value="">
+  <input type="hidden" name="T2PRNT_ASEM_JOB_QRY_Old_Currency" value="">
+  <table name="tblT2PRNT_ASEM_JOB_QRY" id="tblT2PRNT_ASEM_JOB_QRY" class="advgrid" vsds="T2PRNT_ASEM_JOB_QRY">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T2PRNT_JOB_CDsortGridLabel" name="T2PRNT_JOB_CDsortGridLabel" title="Print Job Code">Print Job Code</span></th>
+
+        <th
+><span id="T2NMsortGridLabel" name="T2NMsortGridLabel" title="Print Job Name">Print Job Name</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T2PRNT_ASEM_JOB_QRYvscurrency" id="T2PRNT_ASEM_JOB_QRYvscurrency" title="Select Row" alt="Select Row" vsds="T2PRNT_ASEM_JOB_QRY" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT2PRNT_JOB_CD" vsds="T2PRNT_ASEM_JOB_QRY" vsdf="PRNT_JOB_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT2NM" vsds="T2PRNT_ASEM_JOB_QRY" vsdf="NM"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Advantage" vsds="T2PRNT_ASEM_JOB_QRY" vsaction="firstpage" name="T2PRNT_ASEM_JOB_QRYfirstpage" id="T2PRNT_ASEM_JOB_QRYfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T2PRNT_ASEM_JOB_QRY" vsaction="prevpage" name="T2PRNT_ASEM_JOB_QRYprevpage" id="T2PRNT_ASEM_JOB_QRYprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T2PRNT_ASEM_JOB_QRY" vsaction="nextpage" id="T2PRNT_ASEM_JOB_QRYnextpage" name="T2PRNT_ASEM_JOB_QRYnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T2PRNT_ASEM_JOB_QRY" vsaction="lastpage" id="T2PRNT_ASEM_JOB_QRYlastpage" name="T2PRNT_ASEM_JOB_QRYlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+
+<hr class="advsectsep"></hr>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+</ams_map>
+      </td>
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<td><vstext vsds=" " name="T2PRNT_ASEM_JOB_QRYSearchColList" vspreservetag="true"></td>
+-->
+<!-- END CUSTOMIZATION -->
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+
+      <tr>
+        <td class="label"><label for="txtT2APPL_RSRC_ID" title="Application Resource ID">Application Resource ID :</label></td>
+        <td class="val">
+          <input type="text" name="txtT2APPL_RSRC_ID" id="txtT2APPL_RSRC_ID"
+            size="20"
+ vsds="T2PRNT_ASEM_JOB_QRY" vsdf="APPL_RSRC_ID"
+ value="APPL_RSRC_ID" ams_readonly ShowCodeInfo="" title="Application Resource ID">
+        </td>
+      </tr>
+
+
+
+      <tr>
+        <td class="label"><label for="txtT2PRNT_JOB_CD" title="Print Job Code">Print Job Code :</label></td>
+        <td class="val">
+          <input type="text" name="txtT2PRNT_JOB_CD" id="txtT2PRNT_JOB_CD"
+            size="20"
+ vsds="T2PRNT_ASEM_JOB_QRY" vsdf="PRNT_JOB_CD"
+ value="PRNT_JOB_CD" ams_readonly ShowCodeInfo="" title="Print Job Code">
+        </td>
+      </tr>
+
+
+
+      <tr>
+        <td class="label"><label for="txtT2NM" title="Print Job Name">Print Job Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT2NM" id="txtT2NM"
+            size="20"
+ vsds="T2PRNT_ASEM_JOB_QRY" vsdf="NM"
+ value="NM" ams_readonly ShowCodeInfo="" title="Print Job Name">
+        </td>
+      </tr>
+
+
+
+      <tr>
+        <td class="label"><label for="txtT2DSCR" title="Print Job Description">Print Job Description :</label></td>
+        <td class="val">
+          <input type="text" name="txtT2DSCR" id="txtT2DSCR"
+            size="20"
+ vsds="T2PRNT_ASEM_JOB_QRY" vsdf="DSCR"
+ value="DSCR" ams_readonly ShowCodeInfo="" title="Print Job Description">
+        </td>
+      </tr>
+
+<!-- BEGIN CUSTOMIZATION -->
+<vstext vsds=" " name="PrintActions" vspreservetag="true">
+<!-- END CUSTOMIZATION -->
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T2PRNT_ASEM_JOB_QRY', new Array(), new Array() ) ;
+
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<!-- BEGIN CUSTOMIZATION -->
+
+     <a href="Advantage" class="advnavlink" vsds="T1DOC_HDR" vsaction="91"
+       name="PrintDoc" id="PrintDoc" title="Print" accesskey="P">Submit Assemble Request</a>
+
+     <a href="Advantage" class="advnavlink" vsds="T1DOC_HDR" vsaction="cancel"
+       name="CancelPrint" id="CancelPrint" title="Cancel" accesskey="C">Cancel</a>
+
+<!-- END CUSTOMIZATION -->
+
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Manage Approvers</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Workflow" method="post" vsform="true" name="pR_WF_SC_USER_DIR_INFO">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Manage Approvers">Manage Approvers</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+
+<a href="Workflow" vsds="T1R_SC_USER_DIR_INFO" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+
+<a href="Workflow" vsds="T1R_SC_USER_DIR_INFO" vsaction="clearquery" name="T1R_SC_USER_DIR_INFOclearquery" id="T1R_SC_USER_DIR_INFOclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1USER_ID_UP" title="User ID">User ID :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1USER_ID_UP" id="txtT1USER_ID_UP"
+            size="20"
+ vsds="T1R_SC_USER_DIR_INFO" vsdf="USER_ID_UP" vsdisplaymode="Query"
+ value="USER_ID_UP" title="User ID">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1LAST_NM_TXT_UP" title="Last Name">Last Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1LAST_NM_TXT_UP" id="txtT1LAST_NM_TXT_UP"
+            size="20"
+ vsds="T1R_SC_USER_DIR_INFO" vsdf="LAST_NM_TXT_UP" vsdisplaymode="Query"
+ value="LAST_NM_TXT_UP" title="Last Name">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1FRST_NM_TXT_UP" title="First Name">First Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1FRST_NM_TXT_UP" id="txtT1FRST_NM_TXT_UP"
+            size="20"
+ vsds="T1R_SC_USER_DIR_INFO" vsdf="FRST_NM_TXT_UP" vsdisplaymode="Query"
+ value="FRST_NM_TXT_UP" title="First Name">
+        </td>
+      </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+  <input type="hidden" name="T1R_SC_USER_DIR_INFO_Currency" value="">
+  <input type="hidden" name="T1R_SC_USER_DIR_INFO_Old_Currency" value="">
+  <table name="tblT1R_SC_USER_DIR_INFO" id="tblT1R_SC_USER_DIR_INFO" class="advgrid" vsds="T1R_SC_USER_DIR_INFO">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1USER_IDsortGridLabel" name="T1USER_IDsortGridLabel" title="User ID">User ID</span></th>
+
+        <th
+><span id="T1GOVT_BRN_CDsortGridLabel" name="T1GOVT_BRN_CDsortGridLabel" title="Government Branch">Government Branch</span></th>
+
+        <th
+><span id="T1CAB_CDsortGridLabel" name="T1CAB_CDsortGridLabel" title="Cabinet">Cabinet</span></th>
+
+        <th
+><span id="T1DEPT_CDsortGridLabel" name="T1DEPT_CDsortGridLabel" title="Department">Department</span></th>
+
+        <th
+><span id="T1DIV_CDsortGridLabel" name="T1DIV_CDsortGridLabel" title="Division">Division</span></th>
+
+        <th
+><span id="T1GP_CDsortGridLabel" name="T1GP_CDsortGridLabel" title="Group">Group</span></th>
+
+        <th
+><span id="T1SECT_CDsortGridLabel" name="T1SECT_CDsortGridLabel" title="Section">Section</span></th>
+
+        <th
+><span id="T1DSTC_CDsortGridLabel" name="T1DSTC_CDsortGridLabel" title="District">District</span></th>
+
+        <th
+><span id="T1BUR_CDsortGridLabel" name="T1BUR_CDsortGridLabel" title="Bureau">Bureau</span></th>
+
+        <th
+><span id="T1UNIT_CDsortGridLabel" name="T1UNIT_CDsortGridLabel" title="Unit">Unit</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_SC_USER_DIR_INFOvscurrency" id="T1R_SC_USER_DIR_INFOvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1R_SC_USER_DIR_INFO" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1USER_ID" vsds="T1R_SC_USER_DIR_INFO" vsdf="USER_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1GOVT_BRN_CD" vsds="T1R_SC_USER_DIR_INFO" vsdf="GOVT_BRN_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1CAB_CD" vsds="T1R_SC_USER_DIR_INFO" vsdf="CAB_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1DEPT_CD" vsds="T1R_SC_USER_DIR_INFO" vsdf="DEPT_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1DIV_CD" vsds="T1R_SC_USER_DIR_INFO" vsdf="DIV_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1GP_CD" vsds="T1R_SC_USER_DIR_INFO" vsdf="GP_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1SECT_CD" vsds="T1R_SC_USER_DIR_INFO" vsdf="SECT_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1DSTC_CD" vsds="T1R_SC_USER_DIR_INFO" vsdf="DSTC_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1BUR_CD" vsds="T1R_SC_USER_DIR_INFO" vsdf="BUR_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1UNIT_CD" vsds="T1R_SC_USER_DIR_INFO" vsdf="UNIT_CD"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Workflow" vsds="T1R_SC_USER_DIR_INFO" vsaction="firstpage" name="T1R_SC_USER_DIR_INFOfirstpage" id="T1R_SC_USER_DIR_INFOfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Workflow" vsds="T1R_SC_USER_DIR_INFO" vsaction="prevpage" name="T1R_SC_USER_DIR_INFOprevpage" id="T1R_SC_USER_DIR_INFOprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Workflow" vsds="T1R_SC_USER_DIR_INFO" vsaction="nextpage" id="T1R_SC_USER_DIR_INFOnextpage" name="T1R_SC_USER_DIR_INFOnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Workflow" vsds="T1R_SC_USER_DIR_INFO" vsaction="lastpage" id="T1R_SC_USER_DIR_INFOlastpage" name="T1R_SC_USER_DIR_INFOlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+<a name="btnT2pR_WF_USER_ROLE_AddRole" href="Workflow" vsaction="pagetransition" id="btnT2pR_WF_USER_ROLE_AddRole"
+           vsds="T1R_SC_USER_DIR_INFO"
+ vsnavigation="T2pR_WF_USER_ROLE_AddRole" title="Navigation to Assign Roles">Assign Roles</a>
+<a name="btnT3pR_WF_ALT_APRV_ID" href="Workflow" vsaction="pagetransition" id="btnT3pR_WF_ALT_APRV_ID"
+           vsds="T1R_SC_USER_DIR_INFO"
+ vsnavigation="T3pR_WF_ALT_APRV_ID" title="Navigation to Alternate Approval Assignments">Alternate Approval Assignments</a>
+<a name="btnT4pCopyWorkflowRoles" href="Workflow" vsaction="pagetransition" id="btnT4pCopyWorkflowRoles"
+           vsds="T1R_SC_USER_DIR_INFO"
+ vsnavigation="T4pCopyWorkflowRoles" title="Navigation to Copy Workflow Roles">Copy Workflow Roles</a>
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Workflow" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

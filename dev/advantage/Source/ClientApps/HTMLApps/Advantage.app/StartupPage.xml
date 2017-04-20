@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="Startup"
+	PositionTop="9"
+	PositionLeft="169"
+	PositionWidth="150"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSStartupPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="274988452"
+	>
+	<FormCaption><![CDATA[CGI ADVANTAGE]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="DirectTransition"
+			Value="true"
+		/>
+		<Property
+			Name="HomePage"
+			Value="true"
+		/>
+		<Property
+			Name="Personalize"
+			Value="true"
+		/>
+		<Property
+			Name="SecondaryNavigator"
+			Value="true"
+		/>
+		<Property
+			Name="Workspaces"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="CopyRow"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="EditMode"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastAppPage"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="PageCode"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<Transition
+		FormTransNum="1"
+		Prefix="T1"
+		TargetFormName="HomePage"
+		IsTargetInitialQueryMode="False"
+		IsTargetInitialAddMode="False"
+		IsVisibleAppline="True"
+		IsAddedAfterGen="False"
+		FormTransCaption="Home Page"
+		ClassName="PageNavigation"
+		TargetFramesetPage=""
+		TargetFrame="Display"
+		FrameNameInFramesetPage=""
+		RSID="6"
+		BusinessObject="NoData"
+		RelnIsFromParent="True"
+		>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+	</Transition>
+	<Transition
+		FormTransNum="1"
+		Prefix="T2"
+		TargetFormName="SecondaryNavigator"
+		IsTargetInitialQueryMode="False"
+		IsTargetInitialAddMode="False"
+		IsVisibleAppline="True"
+		IsAddedAfterGen="False"
+		FormTransCaption="Secondary Navigator"
+		ClassName="PageNavigation"
+		TargetFramesetPage=""
+		TargetFrame="Display"
+		FrameNameInFramesetPage=""
+		RSID="8"
+		BusinessObject="NoData"
+		RelnIsFromParent="True"
+		>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+	</Transition>
+</Form>

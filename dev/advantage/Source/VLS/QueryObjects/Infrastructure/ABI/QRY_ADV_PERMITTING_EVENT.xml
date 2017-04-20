@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0651285372.Administrator.0013"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="False"
+	ChildMostDataObject="ADV_PERMITTING_EVENT_ERROR"
+	DistinctRowsOnly="False"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[SELECT ADV_PERMITTING_EVENT.DIRECTION AS DIRECTION, ADV_PERMITTING_EVENT.CLIENT_ID AS CLIENT_ID, ADV_PERMITTING_EVENT.TRANSACT_ID AS TRANSACT_ID, ADV_PERMITTING_EVENT.PACKET_ID AS PACKET_ID, ADV_PERMITTING_EVENT.SENDER_ID AS SENDER_ID, ADV_PERMITTING_EVENT.RECIPIENT_ID AS RECIPIENT_ID, ADV_PERMITTING_EVENT.PACKET_ACT_CD AS PACKET_ACT_CD, ADV_PERMITTING_EVENT.PACKET_MANIFEST_CD AS PACKET_MANIFEST_CD, ADV_PERMITTING_EVENT.EVENT_STATUS AS EVENT_STATUS, ADV_PERMITTING_EVENT.EVENT_DETAIL AS EVENT_DETAIL, ADV_PERMITTING_EVENT.UPDATE_TIMESTAMP AS UPDATE_TIMESTAMP, ADV_PERMITTING_EVENT.REFERENCE AS REFERENCE, ADV_PERMITTING_EVENT_ERROR.ERROR_SEQUENCE AS ERROR_SEQUENCE, ADV_PERMITTING_EVENT_ERROR.EVENT_ERROR_DATE AS EVENT_ERROR_DATE, ADV_PERMITTING_EVENT_ERROR.EVENT_ERROR_MESSAGE AS EVENT_ERROR_MESSAGE, ADV_PERMITTING_EVENT.SOURCE_TRANSACT_ID AS SOURCE_TRANSACT_ID, ' ' AS RPRC_CNT, ' ' AS RPRC_SUCCS_CNT FROM <dbschema>.ADV_PERMITTING_EVENT_ERROR ADV_PERMITTING_EVENT_ERROR RIGHT OUTER JOIN <dbschema>.ADV_PERMITTING_EVENT ADV_PERMITTING_EVENT ON ADV_PERMITTING_EVENT_ERROR.DIRECTION  =  ADV_PERMITTING_EVENT.DIRECTION and ADV_PERMITTING_EVENT_ERROR.CLIENT_ID  =  ADV_PERMITTING_EVENT.CLIENT_ID and ADV_PERMITTING_EVENT_ERROR.TRANSACT_ID  =  ADV_PERMITTING_EVENT.TRANSACT_ID and ADV_PERMITTING_EVENT_ERROR.PACKET_ID  =  ADV_PERMITTING_EVENT.PACKET_ID   ORDER BY ADV_PERMITTING_EVENT.DIRECTION, ADV_PERMITTING_EVENT.CLIENT_ID, ADV_PERMITTING_EVENT.EVENT_STATUS, ADV_PERMITTING_EVENT.UPDATE_TIMESTAMP]]></RuntimeSql>
+	<Where><![CDATA[]]></Where>
+	<OrderBy>
+	<OrderByAttribute
+		Name="ADV_PERMITTING_EVENT.DIRECTION"
+	/>
+	<OrderByAttribute
+		Name="ADV_PERMITTING_EVENT.CLIENT_ID"
+	/>
+	<OrderByAttribute
+		Name="ADV_PERMITTING_EVENT.EVENT_STATUS"
+	/>
+	<OrderByAttribute
+		Name="ADV_PERMITTING_EVENT.UPDATE_TIMESTAMP"
+	/>
+	</OrderBy>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="ADV_PERMITTING_EVENT"
+			Alias="ADV_PERMITTING_EVENT"
+		/>
+
+		<DataObject
+			DataObjectName="ADV_PERMITTING_EVENT_ERROR"
+			Alias="ADV_PERMITTING_EVENT_ERROR"
+		/>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="DIRECTION"
+			Alias="DIRECTION"
+			AggregationType="None"
+			SourceDataObject="ADV_PERMITTING_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="CLIENT_ID"
+			Alias="CLIENT_ID"
+			AggregationType="None"
+			SourceDataObject="ADV_PERMITTING_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="TRANSACT_ID"
+			Alias="TRANSACT_ID"
+			AggregationType="None"
+			SourceDataObject="ADV_PERMITTING_EVENT"
+			Persistent="True"
+			IdentityColumnsElement="True"
+		/>
+
+		<Attribute
+			Name="PACKET_ID"
+			Alias="PACKET_ID"
+			AggregationType="None"
+			SourceDataObject="ADV_PERMITTING_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="SENDER_ID"
+			Alias="SENDER_ID"
+			AggregationType="None"
+			SourceDataObject="ADV_PERMITTING_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="RECIPIENT_ID"
+			Alias="RECIPIENT_ID"
+			AggregationType="None"
+			SourceDataObject="ADV_PERMITTING_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="PACKET_ACT_CD"
+			Alias="PACKET_ACT_CD"
+			AggregationType="None"
+			SourceDataObject="ADV_PERMITTING_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="PACKET_MANIFEST_CD"
+			Alias="PACKET_MANIFEST_CD"
+			AggregationType="None"
+			SourceDataObject="ADV_PERMITTING_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_STATUS"
+			Alias="EVENT_STATUS"
+			AggregationType="None"
+			SourceDataObject="ADV_PERMITTING_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_DETAIL"
+			Alias="EVENT_DETAIL"
+			AggregationType="None"
+			SourceDataObject="ADV_PERMITTING_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="UPDATE_TIMESTAMP"
+			Alias="UPDATE_TIMESTAMP"
+			AggregationType="None"
+			SourceDataObject="ADV_PERMITTING_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="REFERENCE"
+			Alias="REFERENCE"
+			AggregationType="None"
+			SourceDataObject="ADV_PERMITTING_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ERROR_SEQUENCE"
+			Alias="ERROR_SEQUENCE"
+			AggregationType="None"
+			SourceDataObject="ADV_PERMITTING_EVENT_ERROR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_ERROR_DATE"
+			Alias="EVENT_ERROR_DATE"
+			AggregationType="None"
+			SourceDataObject="ADV_PERMITTING_EVENT_ERROR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_ERROR_MESSAGE"
+			Alias="EVENT_ERROR_MESSAGE"
+			AggregationType="None"
+			SourceDataObject="ADV_PERMITTING_EVENT_ERROR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="SOURCE_TRANSACT_ID"
+			Alias="SOURCE_TRANSACT_ID"
+			AggregationType="None"
+			SourceDataObject="ADV_PERMITTING_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="RPRC_CNT"
+			Alias="RPRC_CNT"
+			AggregationType="None"
+			>
+			<DataType
+				Type="Integer"
+			/>
+			<Formula><![CDATA[' ']]></Formula>
+		</Attribute>
+
+		<Attribute
+			Name="RPRC_SUCCS_CNT"
+			Alias="RPRC_SUCCS_CNT"
+			AggregationType="None"
+			>
+			<DataType
+				Type="Integer"
+			/>
+			<Formula><![CDATA[' ']]></Formula>
+		</Attribute>
+
+	</Attributes>
+	<Joins
+		LeftDataObject="ADV_PERMITTING_EVENT_ERROR"
+		RightDataObject="ADV_PERMITTING_EVENT"
+		JoinType="Right"
+		>
+		<ColumnSet
+			LeftAttribute="ADV_PERMITTING_EVENT_ERROR.DIRECTION"
+			RightAttribute="ADV_PERMITTING_EVENT.DIRECTION"
+		/>
+		<ColumnSet
+			LeftAttribute="ADV_PERMITTING_EVENT_ERROR.CLIENT_ID"
+			RightAttribute="ADV_PERMITTING_EVENT.CLIENT_ID"
+		/>
+		<ColumnSet
+			LeftAttribute="ADV_PERMITTING_EVENT_ERROR.TRANSACT_ID"
+			RightAttribute="ADV_PERMITTING_EVENT.TRANSACT_ID"
+		/>
+		<ColumnSet
+			LeftAttribute="ADV_PERMITTING_EVENT_ERROR.PACKET_ID"
+			RightAttribute="ADV_PERMITTING_EVENT.PACKET_ID"
+		/>
+	</Joins>
+
+</QueryObject>

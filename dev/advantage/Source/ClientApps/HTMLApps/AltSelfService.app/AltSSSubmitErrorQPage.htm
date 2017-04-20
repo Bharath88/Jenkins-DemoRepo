@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Question about Error Messages</title>
+  <base href>
+
+         <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSStyle.css">
+         <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSAppStyle.css">
+         <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/ALTSS/ALTSSUtil.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="AltSelfService" method="post" vsform="true" name="AltSSSubmitErrorQPage">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+<!--BEGIN CUSTOMIZATION -->
+<!--
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+-->
+<!-- END CUSTOMIZATION -->
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Question about Error Messages">Question about Error Messages</vstitle>
+    </h1>
+<!--BEGIN CUSTOMIZATION -->
+<!--
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+-->
+<!-- END CUSTOMIZATION -->
+   <div name="PageDesc" id="PageDesc" class="advpagedesc">
+      If you have a question specific to the errors you have received, you may submit a question below.
+The error code(s) and message(s) you received will be sent along with the question you provide below. Our representative will respond to you by the email or phone number that is listed in your profile.
+   </div>
+
+
+
+  <INPUT type="hidden" name="T1R_EMAIL_LTR_GENvscurrency" vsds="T1R_EMAIL_LTR_GEN" vscurrency="true">
+<!--BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="AltSelfService" vsds="T1R_EMAIL_LTR_GEN" vsaction="saveall" name="T1R_EMAIL_LTR_GENSaveAll" id="T1R_EMAIL_LTR_GENSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="AltSelfService" vsds="T1R_EMAIL_LTR_GEN" vsaction="undoall" name="T1R_EMAIL_LTR_GENUndoAll" id="T1R_EMAIL_LTR_GENUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="AltSelfService" vsds="T1R_EMAIL_LTR_GEN" vsaction="delete" id="IndexT1R_EMAIL_LTR_GENdelete" name="T1R_EMAIL_LTR_GENdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="AltSelfService" vsds="T1R_EMAIL_LTR_GEN" vsaction="insert" id="T1R_EMAIL_LTR_GENinsert" name="T1R_EMAIL_LTR_GENinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+      </td>
+
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+         <input class="advbutton" type="submit" value="First" vsds="T1R_EMAIL_LTR_GEN" vsaction="first" name="T1R_EMAIL_LTR_GENfirst" id="T1R_EMAIL_LTR_GENfirst" title="First Record" accesskey="0">
+
+         <input class="advbutton" type="submit" value="Prev" vsds="T1R_EMAIL_LTR_GEN" vsaction="prev" name="T1R_EMAIL_LTR_GENprev" id="T1R_EMAIL_LTR_GENprev" title="Previous Record" accesskey="1">
+
+         <input class="advbutton" type="submit" value="Next" vsds="T1R_EMAIL_LTR_GEN" vsaction="next" name="T1R_EMAIL_LTR_GENnext" id="T1R_EMAIL_LTR_GENnext" title="Next Record" accesskey="2">
+
+         <input class="advbutton" type="submit" value="Last" vsds="T1R_EMAIL_LTR_GEN" vsaction="last" name="T1R_EMAIL_LTR_GENlast" id="T1R_EMAIL_LTR_GENlast" title="Last Record" accesskey="3">
+</ams_map></td>
+
+
+    </tr>
+  </table>
+-->
+<!--END CUSTOMIZATION -->
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+<!--BEGIN CUSTOMIZATION -->
+        <tr>
+          <td class="val">
+            Question:<br>
+            <textarea name="txtQuestion" id="txtQuestion"
+            cols="50" rows="5" vsds=" "
+            title="Question">Enter you question text here</textarea>
+          </td>
+        </tr>
+<!-- END CUSTOMIZATION -->
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+<!-- BEGIN CUSTOMIZATION -->
+  <table id="ErrorMsgGrid" name="ErrorMsgGrid" title="Error Messages Table" class="advgrid" cellpadding=0 cellspacing=0>
+    <tr class="advgridhdr">
+      <vstext vsds=" " name="ErrorMsgGridHeader" vspreservetag="true">
+    </tr>
+    <vstext vsds=" " name="ErrorMsgGridData" vspreservetag="true">
+  </table>
+   <br>
+<!-- END CUSTOMIZATION -->
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+<!--BEGIN CUSTOMIZATION -->
+     <table class="advokcancel">
+       <tr>
+         <td>
+            <input class="advbutton" type="button" vsaction="saveall" name="btnSubmitErrorQ" value="Submit" id="btnSubmitErrorQ" title="Submit" onClick="javascript:submitForm(document.AltSSSubmitErrorQPage,'btnSubmitErrorQ=btnSubmitErrorQ', 'ErrorQ'); ">
+            <input class="advbutton" type="reset" name="btnClear" value="Clear" id="Clear" title="Clear">
+         </td>
+       </tr>
+     </table>
+<!-- END CUSTOMIZATION -->
+<a href="AltSelfService" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

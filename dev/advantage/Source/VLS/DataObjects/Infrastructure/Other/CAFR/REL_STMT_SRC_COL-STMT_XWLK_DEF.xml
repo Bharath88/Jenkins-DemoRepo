@@ -1,0 +1,446 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl1"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef1"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_1"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_1] and [b:STMT_XWLK_DEF/SMRY_COL_NM_1],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl2"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef2"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_2"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_2] and [b:STMT_XWLK_DEF/SMRY_COL_NM_2],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl3"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef3"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_3"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_3] and [b:STMT_XWLK_DEF/SMRY_COL_NM_3],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl4"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef4"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_4"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_4] and [b:STMT_XWLK_DEF/SMRY_COL_NM_4],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl5"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef5"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_5"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_5] and [b:STMT_XWLK_DEF/SMRY_COL_NM_5],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl6"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef6"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_6"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_6] and [b:STMT_XWLK_DEF/SMRY_COL_NM_6],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl7"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef7"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_7"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_7] and [b:STMT_XWLK_DEF/SMRY_COL_NM_7],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl8"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef8"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_8"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_8] and [b:STMT_XWLK_DEF/SMRY_COL_NM_8],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl9"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef9"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_9"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_9] and [b:STMT_XWLK_DEF/SMRY_COL_NM_9],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl10"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef10"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_10"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_10] and [b:STMT_XWLK_DEF/SMRY_COL_NM_10],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl11"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef11"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_11"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_11] and [b:STMT_XWLK_DEF/SMRY_COL_NM_11],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl12"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef12"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_12"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_12] and [b:STMT_XWLK_DEF/SMRY_COL_NM_12],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl13"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef13"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_13"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_13] and [b:STMT_XWLK_DEF/SMRY_COL_NM_13],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl14"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef14"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_14"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_14] and [b:STMT_XWLK_DEF/SMRY_COL_NM_14],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl15"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef15"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_15"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_15] and [b:STMT_XWLK_DEF/SMRY_COL_NM_15],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl16"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef16"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_16"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_16] and [b:STMT_XWLK_DEF/SMRY_COL_NM_16],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl17"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef17"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_17"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_17] and [b:STMT_XWLK_DEF/SMRY_COL_NM_17],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl18"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef18"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_18"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_18] and [b:STMT_XWLK_DEF/SMRY_COL_NM_18],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl19"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef19"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_19"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_19] and [b:STMT_XWLK_DEF/SMRY_COL_NM_19],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="StmtXwlkDefToStmtSrcColl20"
+		ChildRoleName="StmtSrcCollToStmtXwlkDef20"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="SMRY_COL_CD_20"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_XWLK_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A1714,v:[b:STMT_SRC_TBL/SRC_TBL], [b:STMT_SRC_TBL/SRC_TBL_NM], [b:STMT_SRC_TBL/COLL_CD] and [b:STMT_SRC_TBL/COLL_NM],v:Statement Crosswalk Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A1713,v:[b:STMT_XWLK_DEF/SRC_TBL], [b:STMT_XWLK_DEF/SRC_TBL_NM], [b:STMT_XWLK_DEF/SMRY_COL_CD_20] and [b:STMT_XWLK_DEF/SMRY_COL_NM_20],v: Statement Source Column record%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

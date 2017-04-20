@@ -1,0 +1,311 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>View Forms</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+   <!-- BEGIN CUSTOMIZATION -->
+
+   <script language = "JavaScript">
+   <!--
+
+     function openWindowPDF()
+     {
+
+        var loQueryStr = 'show_pdf=showpdf';
+
+        //Generate new name because report should be opened in a new window
+        var lsNewWinName = "AdvPdfViewer" + new Date().getTime();
+        if (mbMinIE4)
+        {
+           //First close any opened window with given window name,
+           //else problems later while re-opening the window with the same name
+           //and with pdf contents
+           UTILS_CloseViewer(lsNewWinName);
+           //Open new window to view the pdf contents
+           submitForm(document.pView_Forms, loQueryStr, lsNewWinName, false);
+        }
+        else if (mboolNS5Up)
+        {
+           if ( miGeckoMajor < 1 )
+           {
+              submitForm(document.pView_Forms, loQueryStr, window.name, false);
+           }
+           else
+           {
+              //First close any opened window with with given window name,
+              //else problems later while re-opening the window with the same name
+              //and with pdf contents
+              UTILS_CloseViewer(lsNewWinName);
+              //Open new window to view the pdf contents
+              submitForm(document.pView_Forms, loQueryStr, lsNewWinName, false);
+           }
+        }
+
+        UTILS_InitPage();
+     }
+   -->
+   </script>
+
+   <!-- END CUSTOMIZATION -->
+
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Reports_Sys_Admin_App" method="post" vsform="true" name="pView_Forms">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="View Forms">View Forms</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="Reports_Sys_Admin_App" vsds="" vsaction="84" title="Back to Previous Page" name="QueryBack" id="QueryBack" accesskey="Z">Back</a>
+  </div>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+
+<!-- BEGIN CUSTOMIZATION -->
+<div name="Browse" vsds="">
+<!-- END CUSTOMIZATION -->
+
+<a href="Reports_Sys_Admin_App" vsds="T1VW_FORMS_MGMT" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1VW_FORMS_MGMT" vsaction="clearquery" name="T1VW_FORMS_MGMTclearquery" id="T1VW_FORMS_MGMTclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+
+<!-- BEGIN CUSTOMIZATION -->
+</div>
+<!-- END CUSTOMIZATION -->
+
+<!-- BEGIN CUSTOMIZATION -->
+<td>
+<a name="btnT2pView_Forms" href="Reports_Sys_Admin_App" vsaction="pagetransition" id="btnT2pView_Forms"
+           vsds="T1VW_FORMS_MGMT"
+ vsnavigation="T2pView_Forms" title="Refresh the Page">Refresh</a>
+ </td>
+<!-- END CUSTOMIZATION -->
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+      <!-- BEGIN CUSTOMIZATION -->
+      <div name="SearchCols" vsds="">
+      <!-- END CUSTOMIZATION -->
+        <table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1DOC_CD" title="Doc Code">Doc Code :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_CD" id="txtT1DOC_CD"
+            size="15"
+ vsds="T1VW_FORMS_MGMT" vsdf="DOC_CD" vsdisplaymode="Query"
+ value="DOC_CD" title="Doc Code">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1DOC_DEPT_CD" title="Doc Dept">Doc Dept :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_DEPT_CD" id="txtT1DOC_DEPT_CD"
+         size="6"
+ vsds="T1VW_FORMS_MGMT" vsdf="DOC_DEPT_CD" vsdisplaymode="Query"
+ value="DOC_DEPT_CD" title="Doc Dept">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1DOC_ID" title="Document ID">Document ID :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_ID" id="txtT1DOC_ID"
+            size="20"
+ vsds="T1VW_FORMS_MGMT" vsdf="DOC_ID" vsdisplaymode="Query"
+ value="DOC_ID" title="Document ID">
+        </td>
+      </tr>
+
+      <tr>
+      <td class="label"><label for="txtT1DSCR_UP" title="Description">Description :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DSCR_UP" id="txtT1DSCR_UP"
+            size="20"
+ vsds="T1VW_FORMS_MGMT" vsdf="DSCR_UP" vsdisplaymode="Query"
+ value="DSCR_UP" title="Description">
+        </td>
+      </tr>
+
+        </table>
+      <!-- BEGIN CUSTOMIZATION -->
+      </div>
+      <!-- END CUSTOMIZATION -->
+      </td>
+    </tr>
+  </table>
+
+
+  <input type="hidden" name="T1VW_FORMS_MGMT_Currency" value="">
+  <input type="hidden" name="T1VW_FORMS_MGMT_Old_Currency" value="">
+  <table name="tblT1VW_FORMS_MGMT" id="tblT1VW_FORMS_MGMT" class="advgrid" vsds="T1VW_FORMS_MGMT">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1PRNT_STAsortGridLabel" name="T1PRNT_STAsortGridLabel" title="Status">Status</span></th>
+
+        <th
+><span id="T1DSCRsortGridLabel" name="T1DSCRsortGridLabel" title="Description">Description</span></th>
+
+        <th
+><span id="T1DOC_CDsortGridLabel" name="T1DOC_CDsortGridLabel" title="Doc Code">Doc Code</span></th>
+
+        <th
+><span id="T1DOC_DEPT_CDsortGridLabel" name="T1DOC_DEPT_CDsortGridLabel" title="Doc Dept">Doc Dept</span></th>
+
+        <th
+><span id="T1DOC_IDsortGridLabel" name="T1DOC_IDsortGridLabel" title="Document ID">Document ID</span></th>
+
+        <th
+><span id="T1FILE_NMsortGridLabel" name="T1FILE_NMsortGridLabel" title="File Name">File Name</span></th>
+
+      <th></th>
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1VW_FORMS_MGMTvscurrency" id="T1VW_FORMS_MGMTvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1VW_FORMS_MGMT" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+>
+          <vstext vsds="T1VW_FORMS_MGMT" vsdf="PRNT_STA" vscodetable="CVL_VW_FORM_STA">
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1DSCR" vsds="T1VW_FORMS_MGMT" vsdf="DSCR"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1DOC_CD" vsds="T1VW_FORMS_MGMT" vsdf="DOC_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1DOC_DEPT_CD" vsds="T1VW_FORMS_MGMT" vsdf="DOC_DEPT_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1DOC_ID" vsds="T1VW_FORMS_MGMT" vsdf="DOC_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1FILE_NM" vsds="T1VW_FORMS_MGMT" vsdf="FILE_NM"
+>
+        </td>
+
+	<!-- BEGIN CUSTOMIZATION -->
+	<TD class="advnavlink"><a title="View PDF Report"href="javascript:openWindowPDF();">View PDF </a></TD>
+	<!-- END CUSTOMIZATION -->
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Reports_Sys_Admin_App" vsds="T1VW_FORMS_MGMT" vsaction="firstpage" name="T1VW_FORMS_MGMTfirstpage" id="T1VW_FORMS_MGMTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1VW_FORMS_MGMT" vsaction="prevpage" name="T1VW_FORMS_MGMTprevpage" id="T1VW_FORMS_MGMTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1VW_FORMS_MGMT" vsaction="nextpage" id="T1VW_FORMS_MGMTnextpage" name="T1VW_FORMS_MGMTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1VW_FORMS_MGMT" vsaction="lastpage" id="T1VW_FORMS_MGMTlastpage" name="T1VW_FORMS_MGMTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+<a name="btnT2pView_Forms" href="Reports_Sys_Admin_App" vsaction="pagetransition" id="btnT2pView_Forms"
+           vsds="T1VW_FORMS_MGMT"
+ vsnavigation="T2pView_Forms" title="Navigation to Refresh">Refresh</a>
+      </td>
+
+    </tr>
+  </table>
+-->
+<!-- END CUSTOMIZATION -->
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Reports_Sys_Admin_App" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+  	<!-- BEGIN CUSTOMIZATION -->
+    <table>
+      <tr>
+
+        <td><a vsds=" " title="View PDF Report" name="show_pdf" onclick="if (!UTILS_CheckForTransaction()){event.returnValue = false;return false};" href="javascript:submitForm(document.pView_Forms,'show_pdf=show_pdf', 'Display');" vsaction="show_pdf"> </a></td>
+      </tr>
+    </table>
+    <!-- END CUSTOMIZATION -->
+</body>
+</html>
+
+
+

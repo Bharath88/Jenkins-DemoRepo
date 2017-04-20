@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Content Search</title>
+  <base href>
+
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+
+      <script type="text/javascript" language="JavaScript">
+
+      <!--
+
+ function disablePickField()
+ {
+
+ document.getElementById('txtT1ADV_SYS_TYP').disabled=true;
+
+ }
+function setRowIndex(foRowIndex)
+{
+document.getElementById('selectedrowindex').value =foRowIndex;
+}
+
+function downloadAttachment()
+{
+
+submitForm( document.pContentSearch, 'ECMDownload=ECMDownload', 'Display' ) ;
+
+}
+
+
+      -->
+  </script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<!-- BEGIN CUSTOMIZATION -->
+<body class="adv reftable pick" onload="disablePickField();">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="pContentSearch">
+    <input type="hidden" name="AMSPageVersNo" value="">
+        <input type="hidden" name="selectedrowindex" id="selectedrowindex" value="">
+        <input type="hidden" name="txtT1ADV_SYS_TYPhidden" id="txtT1ADV_SYS_TYPhidden" value="">
+<!-- END CUSTOMIZATION -->
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Content Search">Content Search</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+
+      <a href="Advantage" vsds="T1CONTENT_SRCH" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+
+      <a href="Advantage" vsds="T1CONTENT_SRCH" vsaction="clearquery" name="T1CONTENT_SRCHclearquery" id="T1CONTENT_SRCHclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+
+      <tr>
+
+
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1ADV_SYS_TYP" title="Advantage Type (Required)">Advantage Type :</label>
+      </td>
+
+        <td class="val required">
+		<!-- BEGIN CUSTOMIZATION -->
+          <input type="text" name="txtT1ADV_SYS_TYP" class="disabled" id="txtT1ADV_SYS_TYP"
+      ams_max_len="20" vsdisplaymode="Query"
+ value="ADV_SYS_TYP"
+            size="20"
+ vsds="T1CONTENT_SRCH" vsdf="ADV_SYS_TYP" ShowCodeInfo="" title="Advantage Type (Required)" readonly="true">
+<!-- END CUSTOMIZATION -->
+      <input type="image" vspick="T2R_ADV_SYS_TYP" vspicktext="txtT1ADV_SYS_TYP" vsds="T1CONTENT_SRCH" vsaction="pick" name="pckT1ADV_SYS_TYP" id="pckT1ADV_SYS_TYP" title="Select Advantage Type" alt="Select Advantage Type" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+<!-- BEGIN CUSTOMIZATION -->
+<vstext vsclass="com.amsinc.gems.adv.vfc.html.AdvECMSearchFields" name="txtT1ECM_SEARCH" vsds="T1CONTENT_SRCH" vsdf="" vspreservetag="true"></vstext>
+<!-- END CUSTOMIZATION -->
+
+
+        </table>
+      </td>
+    </tr>
+
+   </table>
+
+    <!-- BEGIN CUSTOMIZATION -->
+  <vstext vsclass="com.amsinc.gems.adv.vfc.html.AdvECMSearchGrid" name="txtT1ECM_SEARCHGrid" id="txtT1ECM_SEARCHGrid" vsds="T1CONTENT_SRCH" vsdf="" vspreservetag="true"></vstext>
+
+ <!--
+
+  <table name="tblT1CONTENT_SRCH" id="tblT1CONTENT_SRCH" class="advgrid" vsds="T1CONTENT_SRCH">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow">
+      <td class="pickselect">
+        <input type="checkbox" name="rowT1CONTENT_SRCH" id="rowT1CONTENT_SRCH" vsds="T1CONTENT_SRCH" vsaction="Currency" value="ON" title="Select Row">
+
+
+	  </td>
+
+      <td></td>
+     </tr>
+  </table>
+
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><div name="T1CONTENT_SRCHGridNav" id="T1CONTENT_SRCHGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+         <a href="Advantage" vsds="T1CONTENT_SRCH" vsaction="firstpage" name="T1CONTENT_SRCHfirstpage" id="T1CONTENT_SRCHfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+         <a href="Advantage" vsds="T1CONTENT_SRCH" vsaction="prevpage" name="T1CONTENT_SRCHprevpage" id="T1CONTENT_SRCHprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+         <a href="Advantage" vsds="T1CONTENT_SRCH" vsaction="nextpage" id="T1CONTENT_SRCHnextpage" name="T1CONTENT_SRCHnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+         <a href="Advantage" vsds="T1CONTENT_SRCH" vsaction="lastpage" id="T1CONTENT_SRCHlastpage" name="T1CONTENT_SRCHlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+
+
+</ams_map></div></td>
+    </tr>
+  </table>
+  -->
+
+<p>&nbsp;</p>
+<!-- END CUSTOMIZATION -->
+
+
+
+  <table class="advokcancel">
+    <tr>
+      <td>
+      <!-- BEGIN CUSTOMIZATION -->
+<!--
+<input class="advbutton" type="submit" vspickaccept="true" onclick="UTILS_ClosePickWindow(document.forms[0], this);" vsaction="acceptpick" name="PickOK" id="PickOK" value="OK" title="OK">
+-->
+<input class="advbutton" onclick="UTILS_ClosePickWindow(document.forms[0], this);" type="submit" vsaction="cancel" name="PickOK" value="Attach" id="PickOK" title="Attach">
+
+
+    <!-- END CUSTOMIZATION -->
+
+<input class="advbutton" onclick="UTILS_ClosePickWindow(document.forms[0], this);" type="submit" vsaction="cancel" name="pickcancel" value="Cancel" id="pickcancel" title="Cancel">
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+<!-- BEGIN CUSTOMIZATION -->
+<a href="ECM" vsds=" " vsaction="unknown" ams_action="" name="ECMDownload" id="ECMDownload" title=""  style="display:none;visibility:hidden"></a>
+<!-- END CUSTOMIZATION -->
+    </div>
+  </form>
+</body>
+</html>
+
+
+

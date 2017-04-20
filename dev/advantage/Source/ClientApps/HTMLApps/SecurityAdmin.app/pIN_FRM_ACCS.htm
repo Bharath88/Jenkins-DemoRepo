@@ -1,0 +1,426 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Forms Access Control</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="SecurityAdmin" method="post" vsform="true" name="pIN_FRM_ACCS">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Forms Access Control">Forms Access Control</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="SecurityAdmin" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+  <a name="T1IN_FRM_ACCS_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1IN_FRM_ACCS_Currency" >
+  <input type="hidden" name="T1IN_FRM_ACCS_Old_Currency" >
+  <table name="tblT1IN_FRM_ACCS" id="tblT1IN_FRM_ACCS" class="advgrid" vsds="T1IN_FRM_ACCS">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><span id="T1USER_IDsortGridLabel" name="T1USER_IDsortGridLabel" vsdf="USER_ID" title="User ID">User ID</span></th>
+      
+        <th 
+><span id="T1APPL_RSRC_IDsortGridLabel" name="T1APPL_RSRC_IDsortGridLabel" vsdf="APPL_RSRC_ID" title="Application Resource ID">Application Resource ID</span></th>
+      
+        <th 
+><span id="T1FRM_FILE_NMsortGridLabel" name="T1FRM_FILE_NMsortGridLabel" vsdf="FRM_FILE_NM" title="Form File Name">Form File Name</span></th>
+      
+        <th 
+><span id="T1FRM_NMsortGridLabel" name="T1FRM_NMsortGridLabel" vsdf="FRM_NM" title="Form Name">Form Name</span></th>
+      
+        <th 
+><span id="T1DEPT_CDsortGridLabel" name="T1DEPT_CDsortGridLabel" vsdf="DEPT_CD" title="Department">Department</span></th>
+      
+        <th 
+><span id="T1UNIT_CDsortGridLabel" name="T1UNIT_CDsortGridLabel" vsdf="UNIT_CD" title="Unit">Unit</span></th>
+      
+        <th 
+><span id="T1GENERATE_FLsortGridLabel" name="T1GENERATE_FLsortGridLabel" vsdf="GENERATE_FL" title="Generate Flag">Generate Flag</span></th>
+      
+        <th 
+><span id="T1UPLOAD_FLsortGridLabel" name="T1UPLOAD_FLsortGridLabel" vsdf="UPLOAD_FL" title="Upload Flag">Upload Flag</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr class="advgridoddrow" onclick="UTILS_SelectGridRow(this);return true;" ams_altclassname="advgridevenrow" vsprototyperow="true">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IN_FRM_ACCSvscurrency" id="T1IN_FRM_ACCSvscurrency" title="Select Row" alt="Select Row" src="../AMSImages/ADVRowSel.gif"
+ vsds="T1IN_FRM_ACCS" vsaction="Currency">
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1USER_ID" vsds="T1IN_FRM_ACCS" vsdf="USER_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1APPL_RSRC_ID" vsds="T1IN_FRM_ACCS" vsdf="APPL_RSRC_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1FRM_FILE_NM" vsds="T1IN_FRM_ACCS" vsdf="FRM_FILE_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1FRM_NM" vsds="T1IN_FRM_ACCS" vsdf="FRM_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DEPT_CD" vsds="T1IN_FRM_ACCS" vsdf="DEPT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1UNIT_CD" vsds="T1IN_FRM_ACCS" vsdf="UNIT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1GENERATE_FL" vsds="T1IN_FRM_ACCS" vsdf="GENERATE_FL" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1UPLOAD_FL" vsds="T1IN_FRM_ACCS" vsdf="UPLOAD_FL" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="T1IN_FRM_ACCSGridNav" id="T1IN_FRM_ACCSGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="SecurityAdmin" vsds="T1IN_FRM_ACCS" vsaction="firstpage" name="T1IN_FRM_ACCSfirstpage" id="T1IN_FRM_ACCSfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="SecurityAdmin" vsds="T1IN_FRM_ACCS" vsaction="prevpage" name="T1IN_FRM_ACCSprevpage" id="T1IN_FRM_ACCSprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="SecurityAdmin" vsds="T1IN_FRM_ACCS" vsaction="nextpage" id="T1IN_FRM_ACCSnextpage" name="T1IN_FRM_ACCSnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="SecurityAdmin" vsds="T1IN_FRM_ACCS" vsaction="lastpage" id="T1IN_FRM_ACCSlastpage" name="T1IN_FRM_ACCSlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+  
+  
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+   
+         <a href="SecurityAdmin" vsds="T1IN_FRM_ACCS" vsaction="saveall" name="T1IN_FRM_ACCSSaveAll" id="T1IN_FRM_ACCSSaveAll" title="Save All" accesskey="5">Save</a>
+   
+		  <a href="SecurityAdmin" vsds="T1IN_FRM_ACCS" vsaction="undoall" name="T1IN_FRM_ACCSUndoAll" id="T1IN_FRM_ACCSUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+		  <a href="SecurityAdmin" vsds="T1IN_FRM_ACCS" vsaction="delete" id="IndexT1IN_FRM_ACCSdelete" name="T1IN_FRM_ACCSdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="SecurityAdmin" vsds="T1IN_FRM_ACCS" vsaction="insert" id="T1IN_FRM_ACCSinsert" name="T1IN_FRM_ACCSinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="SecurityAdmin" vsds="T1IN_FRM_ACCS" vsaction="11" name="T1IN_FRM_ACCSCopyRecord" id="T1IN_FRM_ACCSCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="SecurityAdmin" vsds="T1IN_FRM_ACCS" vsaction="12" name="T1IN_FRM_ACCSPasteLine" id="T1IN_FRM_ACCSPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+      
+   
+      <td><vstext vsds=" " name="T1IN_FRM_ACCSSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1USER_ID" title="User ID">User ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1USER_ID" id="txtT1USER_ID" 
+      ams_max_len="16"
+ value="USER_ID" 
+            size="20"
+ vsds="T1IN_FRM_ACCS" vsdf="USER_ID" ShowCodeInfo="" title="User ID">
+          
+      <input type="image" vspick="T3R_SC_USER_DIR_INFO" vspicktext="txtT1USER_ID" vsds="T1IN_FRM_ACCS" vsaction="pick" name="pckT1USER_ID" id="pckT1USER_ID" title="Select User ID" alt="Select User ID" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1APPL_RSRC_ID" title="Application Resource ID">Application Resource ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1APPL_RSRC_ID" id="txtT1APPL_RSRC_ID" 
+      ams_max_len="129"
+ value="APPL_RSRC_ID" 
+            size="20"
+ vsds="T1IN_FRM_ACCS" vsdf="APPL_RSRC_ID" ShowCodeInfo="" title="Application Resource ID">
+          
+      <input type="image" vspick="T2IN_FORM_DEF" vspicktext="txtT1APPL_RSRC_ID" vsds="T1IN_FRM_ACCS" vsaction="pick" name="pckT1APPL_RSRC_ID" id="pckT1APPL_RSRC_ID" title="Select Application Resource ID" alt="Select Application Resource ID" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1FRM_FILE_NM" title="Form File Name">Form File Name :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1FRM_FILE_NM" id="txtT1FRM_FILE_NM" 
+      ams_max_len="60"
+ value="FRM_FILE_NM" 
+            size="20"
+ vsds="T1IN_FRM_ACCS" vsdf="FRM_FILE_NM" ShowCodeInfo="" title="Form File Name">
+          
+      <input type="image" vspick="T2IN_FORM_DEF" vspicktext="txtT1FRM_FILE_NM" vsds="T1IN_FRM_ACCS" vsaction="pick" name="pckT1FRM_FILE_NM" id="pckT1FRM_FILE_NM" title="Select Form File Name" alt="Select Form File Name" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1FRM_NM" title="Form Name">Form Name :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1FRM_NM" id="txtT1FRM_NM" 
+            size="20"
+ vsds="T1IN_FRM_ACCS" vsdf="FRM_NM" 
+ value="FRM_NM" ams_readonly ShowCodeInfo="" title="Form Name">
+        </td>
+      </tr>
+    
+    
+        
+       
+        <tr>
+        
+      
+      <td class="label"><label for="txtT1DEPT_CD" title="Department">Department :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1DEPT_CD" id="txtT1DEPT_CD" 
+            size="6"
+ vsds="T1IN_FRM_ACCS" vsdf="DEPT_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="DEPT_CD" title="Department" >
+
+        
+
+        </td>
+        </tr>
+    
+    
+       
+        <tr>
+        
+      
+      <td class="label"><label for="txtT1UNIT_CD" title="Unit">Unit :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1UNIT_CD" id="txtT1UNIT_CD" 
+            size="6"
+ vsds="T1IN_FRM_ACCS" vsdf="UNIT_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="UNIT_CD" title="Unit" >
+
+        
+
+        </td>
+        </tr>
+    
+    
+        
+      <tr>
+      
+      <td class="label"><label for="txtT1GENERATE_FL" title="Generate Flag">Generate Flag :</label></td>
+   
+        <td class="val">
+          <input type="checkbox" name="txtT1GENERATE_FL" id="txtT1GENERATE_FL" value="GENERATE_FL" vsds="T1IN_FRM_ACCS" vsdf="GENERATE_FL" title="Generate Flag">
+        </td>
+      </tr>
+    
+        
+      <tr>
+      
+      <td class="label"><label for="txtT1UPLOAD_FL" title="Upload Flag">Upload Flag :</label></td>
+   
+        <td class="val">
+          <input type="checkbox" name="txtT1UPLOAD_FL" id="txtT1UPLOAD_FL" value="UPLOAD_FL" vsds="T1IN_FRM_ACCS" vsdf="UPLOAD_FL" title="Upload Flag">
+        </td>
+      </tr>
+    
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT1USER_ID_UP" id="txtT1USER_ID_UP" 
+               size="20"
+           vsds="T1IN_FRM_ACCS" vsdf="USER_ID_UP"
+         ams_max_len="16"
+           ShowCodeInfo=""
+           value="USER_ID_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+    
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT1FRM_NM_UP" id="txtT1FRM_NM_UP" 
+               size="20"
+           vsds="T1IN_FRM_ACCS" vsdf="FRM_NM_UP"
+         ams_max_len="60"
+           ShowCodeInfo=""
+           value="FRM_NM_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+    
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT1FRM_FILE_NM_UP" id="txtT1FRM_FILE_NM_UP" 
+               size="20"
+           vsds="T1IN_FRM_ACCS" vsdf="FRM_FILE_NM_UP"
+         ams_max_len="60"
+           ShowCodeInfo=""
+           value="FRM_FILE_NM_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1IN_FRM_ACCS', new Array(), new Array() ) ;
+    
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

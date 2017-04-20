@@ -1,0 +1,494 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="GridSelect"
+	PositionTop="255"
+	PositionLeft="162"
+	PositionWidth="150"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSGridSelectPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-423293550"
+	>
+	<FormCaption><![CDATA[Job Inquiry]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="false"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="VIEW_ENT_JOBS_QRY"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="GridSelect"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="-1"
+		AllowDelete="False"
+		AllowInsert="False"
+		AllowUpdate="False"
+		SaveMode="Immediate"
+		PreFetchRowCount="True"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="AGNT_ID" />
+				<RSDefaultAttribute ID="2" Name="USID" />
+				<RSDefaultAttribute ID="3" Name="JOB_NM" />
+				<RSDefaultAttribute ID="4" Name="CTLG_ID" />
+				<RSDefaultAttribute ID="5" Name="CTLG_NM" />
+				<RSDefaultAttribute ID="6" Name="RUN_STRT_TS" />
+				<RSDefaultAttribute ID="7" Name="RUN_END_TS" />
+				<RSDefaultAttribute ID="8" Name="RUN_STA" />
+				<RSDefaultAttribute ID="9" Name="USID_UP" />
+				<RSDefaultAttribute ID="10" Name="BASE_TMPL_PATH" />
+				<RSDefaultAttribute ID="11" Name="ITM_TYP" />
+				<RSDefaultAttribute ID="12" Name="ID" />
+				<RSDefaultAttribute ID="14" Name="RET_CD" />
+				<RSDefaultAttribute ID="13" Name="APPL_ID" />
+				<RSDefaultAttribute ID="15" Name="RUN_DT_TM" />
+				<RSDefaultAttribute ID="16" Name="APPL_SRV_NM" />
+				<RSDefaultAttribute ID="17" Name="CHK_PT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="AGNT_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="RUN_STRT_TS" Displayed="True" UnPlaced="False" Archetype="AMSQueryDateChoiceCalendar" />
+				<RSAttribute Name="RUN_STA" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="CTLG_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ITM_TYP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="JOB_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="RUN_END_TS" Displayed="True" UnPlaced="False" Archetype="AMSQueryDateChoiceCalendar" />
+				<RSAttribute Name="USID_UP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="CTLG_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="BASE_TMPL_PATH" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RET_CD" Displayed="True" UnPlaced="True" />
+				<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RUN_DT_TM" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="APPL_SRV_NM" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="CHK_PT" Displayed="False" UnPlaced="True" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="AGNT_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ITM_TYP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="CTLG_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="CTLG_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="JOB_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="USID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="RUN_STRT_TS" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="RUN_END_TS" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="RUN_STA" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="RET_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="BASE_TMPL_PATH" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="USID_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RUN_DT_TM" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="APPL_SRV_NM" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="CHK_PT" Displayed="False" UnPlaced="True" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DataSource"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="Name"
+				Value=""
+			/>
+			<Property
+				Name="NumRowsPerPage"
+				Value=""
+			/>
+			<Property
+				Name="Page"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="QueryInfo"
+				Value=""
+			/>
+			<Property
+				Name="QueryMode"
+				Value=""
+			/>
+			<Property
+				Name="ResultSet"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="Session"
+				Value=""
+			/>
+			<Property
+				Name="ShowSearchPopup"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value="%JOB_NM%"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="false"
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+		<PickObject
+			RSID="2"
+			Prefix="T2"
+			BusinessObject="R_BS_CATALOG"
+			Relationship="R_BS_CATALOG(R_BS_CATALOG)-V_BS_AGENTs1(V_BS_AGENT)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [CTLG_ID] = [?CTLG_ID]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[( ITM_TYP IN ( 1, 3, 4 ) )]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ CTLG_ID ASC]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="CTLG_ID" />
+					<RSDefaultAttribute ID="2" Name="CLS_NM" />
+					<RSDefaultAttribute ID="3" Name="PKG_NM" />
+					<RSDefaultAttribute ID="4" Name="RQRS_APRV" />
+					<RSDefaultAttribute ID="5" Name="ITM_TYP" />
+					<RSDefaultAttribute ID="6" Name="APPL_SRV_NM" />
+					<RSDefaultAttribute ID="7" Name="CTLG_NM" />
+					<RSDefaultAttribute ID="8" Name="PNT_ID" />
+					<RSDefaultAttribute ID="9" Name="SEQ_NO" />
+					<RSDefaultAttribute ID="10" Name="PRE_CN_RET_CD" />
+					<RSDefaultAttribute ID="11" Name="LAST_RUN_DT" />
+					<RSDefaultAttribute ID="12" Name="SNGL_RUN_PROC" />
+					<RSDefaultAttribute ID="13" Name="PROC_RUNNING" />
+					<RSDefaultAttribute ID="14" Name="CSTM_PARM_APPL_NM" />
+					<RSDefaultAttribute ID="15" Name="CSTM_PARM_PG_NM" />
+					<RSDefaultAttribute ID="16" Name="LAST_STRT_DT" />
+					<RSDefaultAttribute ID="17" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="18" Name="CTLG_NM_UP" />
+					<RSDefaultAttribute ID="19" Name="APPL_ID" />
+					<RSDefaultAttribute ID="20" Name="Q_ID" />
+					<RSDefaultAttribute ID="21" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="22" Name="RSRC_ID" />
+				</DefaultAttributes>
+				<GridAttributes>
+					<RSAttribute Name="CTLG_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="CTLG_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="CLS_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PKG_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="RQRS_APRV" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ITM_TYP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_SRV_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PNT_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SEQ_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PRE_CN_RET_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_RUN_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SNGL_RUN_PROC" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PROC_RUNNING" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CSTM_PARM_APPL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CSTM_PARM_PG_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_STRT_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CTLG_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="Q_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="RSRC_ID" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value="&quot;CTLG_ID,CTLG_NM&quot;"
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+		<Transition
+			FormTransNum="1"
+			Prefix="T3"
+			TargetFormName="Job_Log_Entries"
+			IsTargetInitialQueryMode="False"
+			IsTargetInitialAddMode="False"
+			IsVisibleAppline="True"
+			IsAddedAfterGen="False"
+			FormTransCaption=" "
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPageNavigation"
+			TargetFramesetPage=""
+			TargetFrame=""
+			FrameNameInFramesetPage=""
+			RSID="3"
+			BusinessObject="V_BS_AGENT_LOG"
+			Relationship="V_BS_AGENT(V_BS_AGENT)-V_BS_AGENT_LOG(V_BS_AGENT_LOG)"
+			RelnIsFromParent="True"
+			>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<ParameterizedWhereClause><![CDATA[ [AGNT_ID] = [?AGNT_ID]]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<ExtendedProperties>
+				<Property
+					Name="DefaultPackageName"
+					Value=""
+				/>
+				<Property
+					Name="OverrideTargetPageTitle"
+					Value=""
+				/>
+				<Property
+					Name="TargetFormName"
+					Value=""
+				/>
+				<Property
+					Name="TargetPackageName"
+					Value=""
+				/>
+				<Property
+					Name="TargetPageAutoNavigationName"
+					Value=""
+				/>
+				<Property
+					Name="TargetPageAutoPickName"
+					Value=""
+				/>
+				<Property
+					Name="TargetPageCategory"
+					Value=""
+				/>
+				<Property
+					Name="TargetPageCode"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</Transition>
+	</RecordSource>
+</Form>

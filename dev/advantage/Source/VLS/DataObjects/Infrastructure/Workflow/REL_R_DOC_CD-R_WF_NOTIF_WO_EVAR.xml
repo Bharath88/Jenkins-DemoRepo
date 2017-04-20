@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="R_DOC_CD"
+		ChildRoleName="R_WF_NOTIF_WO_EVAR"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="DOC_CD"
+				ChildAttribute="DOC_CD"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[*]]></AscendCaption>
+		<DescendCaption><![CDATA[*]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

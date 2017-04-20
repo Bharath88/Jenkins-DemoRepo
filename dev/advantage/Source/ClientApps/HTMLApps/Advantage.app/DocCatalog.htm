@@ -1,0 +1,548 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Document Catalog</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+<!-- BEGIN CUSTOMIZATION -->
+  <script type="text/javascript" language="JavaScript">
+  <!--
+      function DOCSRCH_CheckKeyPress( foTextBox, foEvent )
+      {
+         var liKeyPressed = 0;
+
+         if (mboolIE4Up)
+         {
+            liKeyPressed = foEvent.keyCode;
+         }
+         else if (mboolNS5Up)
+         {
+            liKeyPressed = foEvent.which;
+         }
+
+         /**
+          * In Netscape6, the default behaviour is not
+          * blur for textfields when you press "ENTER"
+          * key, hence this change was required.
+          */
+         if (liKeyPressed == 13) // Enter Key
+         {
+            //foTextBox.blur();
+            UTILS_OnBlurUpperCaseAndTrim( foTextBox, true, true );
+         }
+
+         return true;
+      }
+  -->
+  </script>
+<!-- END CUSTOMIZATION -->
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+<!-- BEGIN CUSTOMIZATION -->
+  <style>
+  <!--
+   DIV.ADVHdrActns.DC
+   {
+      BACKGROUND    : #CCCCFF ;
+      FONT-SIZE     : 1em ;
+      FONT-WEIGHT   : bold ;
+      TEXT-ALIGN    : left ;
+      PADDING       : .2em ;
+   }
+
+   DIV.ADVHdrActns.DC A, DIV.ADVHdrActns.DC A:HOVER
+   {
+      MARGIN-LEFT : .5em ;
+      COLOR       : #333366 ;
+   }
+   DIV.ADVContent
+   {
+      MARGIN  : 0em ;
+      BORDER  : 0em none ;
+      PADDING : 0em ;
+   }
+   -->
+   </style>
+<!-- END CUSTOMIZATION -->
+</head>
+
+<body ams_popup="true" class="adv reftable" ams_menu="advantage.Advantage.AMSDocCtlgMenu" onsubmit="return true">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="DocCatalog">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+<!-- BEGIN CUSTOMIZATION -->
+    <input value="false" type="hidden" name="OpenInBF">
+    <input value="-1" type="hidden" name="BFPageNum">
+    <input value="" type="hidden" name="BFDocCode">
+    <input value="" type="hidden" name="BFDocDeptCd">
+    <input value="" type="hidden" name="BFDocUnitCd">
+    <input value="" type="hidden" name="BFDocId">
+<!-- END CUSTOMIZATION -->
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+      <h1 class="advpagetitle">
+<vstitle vstitle="Document Catalog">Document Catalog</vstitle>
+</h1>
+      <div class="advhdractns dc">
+<!-- BEGIN CUSTOMIZATION -->
+        <div vsds="T1DOC_HDR" id="SearchModeActn" name="SearchModeActn" vsvisible="false" class="advcontent">
+          <a name="DocSearchSearchMode" id="DocSearchSearchMode" href="Advantage" vsaction="searchmode" vsds="" title="Search Mode">Search</a>
+        </div>
+
+        <div vsds="T1DOC_HDR" id="CreateModeActn" name="CreateModeActn" vsvisible="false" class="advcontent">
+          <a name="DocSearchCreateMode" id="DocSearchCreateMode" href="Advantage" vsaction="createmode" vsds="" title="Create Mode">Create</a>
+        </div>
+<!-- END CUSTOMIZATION -->
+      </div>
+
+      
+ 
+
+  <table class="advaction recsrc">
+    <tr>
+      
+      <td><ams_map title="Section Controls" name="Section Controls">
+<!-- BEGIN CUSTOMIZATION -->
+
+          <div vsds="T1DOC_HDR" id="SearchSctnCtrl" name="SearchSctnCtrl" vsvisible="false" class="advcontent">
+  <a href="javascript:
+        AMSTAB_ExpandSection('T1DOC_HDR_Section1','T1DOC_HDR_Section1_Button');
+          AMSTAB_ExpandSection('T1DOC_HDR_Section2','T1DOC_HDR_Section2_Button');
+            AMSTAB_ExpandSection('T1DOC_HDR_Section3','T1DOC_HDR_Section3_Button');
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+      
+  <a href="javascript:
+        AMSTAB_CollapseSection('T1DOC_HDR_Section1','T1DOC_HDR_Section1_Button');
+          AMSTAB_CollapseSection('T1DOC_HDR_Section2','T1DOC_HDR_Section2_Button');
+            AMSTAB_CollapseSection('T1DOC_HDR_Section3','T1DOC_HDR_Section3_Button');
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+          </div>
+
+          <div vsds="T1DOC_HDR" id="CreateSctnCtrl" name="CreateSctnCtrl" vsvisible="false" class="advcontent">
+  <a href="javascript:
+        AMSTAB_ExpandSection('T1DOC_HDR_Section1','T1DOC_HDR_Section1_Button');
+            AMSTAB_ExpandSection('T1DOC_HDR_Section4','T1DOC_HDR_Section4_Button');
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+
+  <a href="javascript:
+        AMSTAB_CollapseSection('T1DOC_HDR_Section1','T1DOC_HDR_Section1_Button');
+            AMSTAB_CollapseSection('T1DOC_HDR_Section4','T1DOC_HDR_Section4_Button');
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+          </div>
+
+<!-- END CUSTOMIZATION -->
+      </ams_map></td>
+    
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <div>
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+          
+  
+          </table></td></tr></table></div></fieldset><a name="T1DOC_HDR_Section1_Top"></a><fieldset class="advscalar section">
+          <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1DOC_HDR_Section1','T1DOC_HDR_Section1_Button');" title="Expand/Collapse Document Identifier"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1DOC_HDR_Section1_Button"> Document Identifier</a></legend>
+          <div id="T1DOC_HDR_Section1" class="advsection">
+          <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+<!-- BEGIN CUSTOMIZATION -->
+        <td class="label"><label for="DOC_CD" title="Code">Code :</label></td>
+        <td class="val">
+          <input type="text" name="DOC_CD" id="DOC_CD" maxlength="30" value="DOC_CD" size="12" vsds="T1DOC_HDR" vsdf="DOC_CD" vsdisplaymode="Query" title="Code" onkeypress="DOCSRCH_CheckKeyPress(this, event);">
+          <input type="image" vspick="T2R_GEN_DOC_CTRL" vspicktext="DOC_CD" vsds="T1DOC_HDR" vsaction="pick" name="pckT1DOC_CD" id="pckT1DOC_CD" title="Select Code" alt="Select Code" src="../AMSImages/ADVPick.gif">
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+    
+      <tr>
+<!-- BEGIN CUSTOMIZATION -->
+        <td class="label"><label for="DOC_DEPT_CD" title="Dept.">Dept. :</label></td>
+        <td class="val">
+          <input type="text" name="DOC_DEPT_CD" id="DOC_DEPT_CD" size="6" vsds="T1DOC_HDR" vsdf="DOC_DEPT_CD" vsdisplaymode="Query" value="DOC_DEPT_CD" title="Dept." onkeypress="DOCSRCH_CheckKeyPress(this, event)">
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+    
+                              </table></td><td class="advscalarcol"><table class="advscalar">
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+<!-- BEGIN CUSTOMIZATION -->
+        <td class="label"><label for="DOC_UNIT_CD" title="Unit">Unit :</label></td>
+        <td class="val">
+          <input type="text" name="DOC_UNIT_CD" id="DOC_UNIT_CD" size="6" vsds="T1DOC_HDR" vsdf="DOC_UNIT_CD" vsdisplaymode="Query" value="DOC_UNIT_CD" title="Unit" onkeypress="DOCSRCH_CheckKeyPress(this, event)">
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+    
+      <tr>
+<!-- BEGIN CUSTOMIZATION -->
+        <td class="label"><label for="DOC_ID" title="ID">ID :</label></td>
+        <td class="val">
+          <input type="text" name="DOC_ID" id="DOC_ID" size="40" vsds="T1DOC_HDR" vsdf="DOC_ID" vsdisplaymode="Query" value="DOC_ID" title="ID" onkeypress="DOCSRCH_CheckKeyPress(this, event)">
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+            </table></td></tr></table></div></fieldset>
+
+<!-- BEGIN CUSTOMIZATION -->
+  <div vsds="T1DOC_HDR" id="SearchSctn" name="SearchSctn" vsvisible="false" class="advcontent">
+<!-- END CUSTOMIZATION -->
+            <br><br><a name="T1DOC_HDR_Section2_Top"></a><fieldset class="advscalar section">
+            <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1DOC_HDR_Section2','T1DOC_HDR_Section2_Button');" title="Expand/Collapse User Information"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1DOC_HDR_Section2_Button"> User Information</a></legend>
+            <div id="T1DOC_HDR_Section2" class="advsection">
+            <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1DOC_CREA_USID_UP" title="Create User ID">Create User ID :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_CREA_USID_UP" id="txtT1DOC_CREA_USID_UP" 
+            size="20"
+ vsds="T1DOC_HDR" vsdf="DOC_CREA_USID_UP" vsdisplaymode="Query" 
+ value="DOC_CREA_USID_UP" title="Create User ID">
+        </td>
+      </tr>
+    
+                              </table></td><td class="advscalarcol"><table class="advscalar">
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1DOC_APPL_CREA_DT" title="Create Date">Create Date :</label></td>
+        <td class="val">
+          <input type="text" id="txtT1DOC_APPL_CREA_DT" name="txtT1DOC_APPL_CREA_DT" size="11" vsds="T1DOC_HDR" vsdisplaymode="Query" vsdf="DOC_APPL_CREA_DT" 
+    vsformat="Short Date"
+ value="DOC_APPL_CREA_DT" title="Create Date">
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.DocCatalog.txtT1DOC_APPL_CREA_DT.value, 'txtT1DOC_APPL_CREA_DT', document.DocCatalog.txtT1DOC_APPL_CREA_DT);event.returnValue=false;return false;" title="Select Create Date: Will open in a new window">
+            <img src="../AMSImages/ADVCalendar.gif"
+ alt="Select Create Date: Will open in a new window" title="Select Create Date: Will open in a new window">
+          </a>
+        </td>
+      </tr>
+    
+              </table></td></tr></table></div></fieldset><br><br><a name="T1DOC_HDR_Section3_Top"></a><fieldset class="advscalar section">
+              <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1DOC_HDR_Section3','T1DOC_HDR_Section3_Button');" title="Expand/Collapse Document State"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1DOC_HDR_Section3_Button"> Document State</a></legend>
+              <div id="T1DOC_HDR_Section3" class="advsection">
+              <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1DOC_FUNC_CD" title="Function">Function :</label></td>
+        <td class="val">
+          <select name="txtT1DOC_FUNC_CD" id="txtT1DOC_FUNC_CD" vsds="T1DOC_HDR" vsdf="DOC_FUNC_CD" vsdisplaymode="Query" size="1" vscodetable="CVL_DOC_FUNC_CD" title="Function">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label for="txtT1DOC_PHASE_CD" title="Phase">Phase :</label></td>
+        <td class="val">
+          <select name="txtT1DOC_PHASE_CD" id="txtT1DOC_PHASE_CD" vsds="T1DOC_HDR" vsdf="DOC_PHASE_CD" vsdisplaymode="Query" size="1" vscodetable="CVL_DOC_PHASE_CD" title="Phase">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+                              </table></td><td class="advscalarcol"><table class="advscalar">
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1DOC_STA_CD" title="Status">Status :</label></td>
+        <td class="val">
+          <select name="txtT1DOC_STA_CD" id="txtT1DOC_STA_CD" vsds="T1DOC_HDR" vsdf="DOC_STA_CD" vsdisplaymode="Query" size="1" vscodetable="CVL_DOC_STA_CD" title="Status">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+<!-- BEGIN CUSTOMIZATION -->
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+  </div>
+
+  <div vsds="T1DOC_HDR" id="CreateSctn" name="CreateSctn" vsvisible="false" class="advcontent">
+    <br><br><a name="T1DOC_HDR_Section4_Top"></a><fieldset class="advscalar section">
+                <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1DOC_HDR_Section4','T1DOC_HDR_Section4_Button');" title="Expand/Collapse Document State"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1DOC_HDR_Section4_Button"> Other Options</a></legend>
+                <div id="T1DOC_HDR_Section4" class="advsection">
+                <table><tr><td class="advscalarcol"><table class="advscalar">
+        <tr>
+          <td class="label"><label for="DOC_AUTO_NUM" title="Auto Numbering">Auto Numbering :</label></td>
+          <td class="val">
+            <input type="checkbox" name="DOC_AUTO_NUM" id="DOC_AUTO_NUM" title="Auto Numbering">
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label"><label for="CREATE_TMPL" title="Create Template">Create Template :</label></td>
+          <td class="val">
+            <input type="checkbox" name="CREATE_TMPL" id="CREATE_TMPL" title="Create Template">
+          </td>
+        </tr>
+
+          </table>
+        </td></tr></table>
+      </div>
+    </fieldset>
+  </div>
+<!-- END CUSTOMIZATION -->
+
+<!-- BEGIN CUSTOMIZATION -->
+  <div vsds="T1DOC_HDR" id="CreateModeCreate" name="CreateModeCreate" vsvisible="false" class="advcontent">
+  <p>
+  <table class="advaction recsrc">
+    <tr>
+        <td><a href="Advantage" vsds="T1DOC_HDR" vsaction="151" name="T1DOC_HDRinsert" id="T1DOC_HDRinsert" title="Create Document">Create</a></td>
+      </tr>
+    </table>
+  </div>
+<!-- END CUSTOMIZATION -->
+
+
+<!-- BEGIN CUSTOMIZATION -->
+  <div vsds="T1DOC_HDR" id="SearchModeRslt" name="SearchModeRslt" vsvisible="false" class="advcontent">
+<!-- END CUSTOMIZATION -->
+  <p>
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+          
+<a href="Advantage" vsds="T1DOC_HDR" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+          
+<a href="Advantage" vsds="T1DOC_HDR" vsaction="clearquery" name="T1DOC_HDRclearquery" id="T1DOC_HDRclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+  <div class="advmenuactns">
+    <a href="javascript:{}" onclick="MNU_ShowPopup('DOC_MENU', event);event.returnValue=false;return false;" title="Action Menu" name="DocMenuActions" id="DocMenuActions" accesskey="M">
+      <img src="../AMSImages/ADVMenuActions.gif"
+ alt="Action Menu" name="DocMenuActionsImg" id="DocMenuActionsImg">
+    </a>
+  </div>
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Document Actions" name="Document Actions">
+          <a vsds="T1DOC_HDR" vsaction="121" name="T1DOC_HDROpen" id="T1DOC_HDROpen" href="Advantage" title="Open Selected Document">Open</a>
+          <a vsds="T1DOC_HDR" vsaction="161" name="T1DOC_HDRValidate" id="T1DOC_HDRValidate" href="Advantage" title="Validate Selected Document(s)" accesskey="L">Validate</a>
+          <a vsds="T1DOC_HDR" vsaction="162" name="T1DOC_HDRSubmit" id="T1DOC_HDRSubmit" href="Advantage" title="Submit Selected Document(s)" accesskey="S">Submit</a>
+          <a vsds="T1DOC_HDR" vsaction="48" name="T1DOC_HDRCopy" id="T1DOC_HDRCopy" href="Advantage" title="Copy Selected Document">Copy</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <input type="hidden" name="T1DOC_HDR_Currency" value="">
+  <input type="hidden" name="T1DOC_HDR_Old_Currency" value="">
+  <table name="tblT1DOC_HDR" class="advgrid" vsds="T1DOC_HDR" cellpadding=0 cellspacing=0>
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><span id="T1DOC_CDsortGridLabel" name="T1DOC_CDsortGridLabel" title="Code">Code</span></th>
+      
+<!-- BEGIN CUSTOMIZATION -->
+        <th
+><span id="T1DOC_DEPT_CDsortGridLabel" name="T1DOC_DEPT_CDsortGridLabel" title="Dept.">Dept.</span></th>
+
+        <th
+><span id="T1DOC_UNIT_CDsortGridLabel" name="T1DOC_UNIT_CDsortGridLabel" title="Unit">Unit</span></th>
+<!-- END CUSTOMIZATION -->
+      
+        <th 
+><span id="T1DOC_IDsortGridLabel" name="T1DOC_IDsortGridLabel" title="ID">ID</span></th>
+      
+        <th 
+><span id="T1DOC_CMNT_FLsortGridLabel" name="T1DOC_CMNT_FLsortGridLabel" title="Comments">Comments</span></th>
+        <th
+><span id="T1DOC_VERS_NOsortGridLabel" name="T1DOC_VERS_NOsortGridLabel" title="Version">Version</span></th>
+      
+        <th 
+><span id="T1DOC_FUNC_CDsortGridLabel" name="T1DOC_FUNC_CDsortGridLabel" title="Function">Function</span></th>
+      
+        <th 
+><span id="T1DOC_PHASE_CDsortGridLabel" name="T1DOC_PHASE_CDsortGridLabel" title="Phase">Phase</span></th>
+      
+        <th 
+><span id="T1DOC_STA_CDsortGridLabel" name="T1DOC_STA_CDsortGridLabel" title="Status">Status</span></th>
+      
+<!-- BEGIN CUSTOMIZATION -->
+        <th 
+><span id="T1DOC_APPL_CREA_DTsortGridLabel" name="T1DOC_APPL_CREA_DTsortGridLabel" title="Date">Date</span></th>
+      
+        <th 
+><span id="T1DOC_CREA_USIDsortGridLabel" name="T1DOC_CREA_USIDsortGridLabel" title="User ID">User ID</span></th>
+<!-- END CUSTOMIZATION -->
+      
+        <th 
+><span id="T1DOC_ACTU_AMsortGridLabel" name="T1DOC_ACTU_AMsortGridLabel" title="Amount">Amount</span></th>
+      
+        <th 
+><span id="T1DOC_ACT_FLsortGridLabel" name="T1DOC_ACT_FLsortGridLabel" title="Active">Active</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="radio">
+         <input type="checkbox" value="OFF" name="T1DOC_HDRcheckbox" id="T1DOC_HDRcheckbox" vsds="T1DOC_HDR" vsaction="Currency" title="Select Row">
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_CD" vsds="T1DOC_HDR" vsdf="DOC_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_DEPT_CD" vsds="T1DOC_HDR" vsdf="DOC_DEPT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_UNIT_CD" vsds="T1DOC_HDR" vsdf="DOC_UNIT_CD" 
+>
+        </td>
+      
+        <td>
+          <a href="Advantage" vsaction="pagetransition" ams_doc_ref="DOC_ID" vsnavigation="DocCatalog">
+            <vstext name="btnT1DOC_ID" ams_doc_ref="DOC_ID" vsds="T1DOC_HDR" vsdf="DOC_ID">
+          </a>
+        </td>
+      
+<td>
+          <vstext name="txtT1DOC_CMNT_FL" vsds="T1DOC_HDR" vsdf="DOC_CMNT_FL" vsformat="Yes/No"
+>
+        </td>
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1DOC_VERS_NO" vsds="T1DOC_HDR" vsdf="DOC_VERS_NO" 
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1DOC_HDR" vsdf="DOC_FUNC_CD" vscodetable="CVL_DOC_FUNC_CD">
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1DOC_HDR" vsdf="DOC_PHASE_CD" vscodetable="CVL_DOC_PHASE_CD">
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1DOC_HDR" vsdf="DOC_STA_CD" vscodetable="CVL_DOC_STA_CD">
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1DOC_APPL_CREA_DT" vsds="T1DOC_HDR" vsdf="DOC_APPL_CREA_DT" 
+    vsformat="Short Date"
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_CREA_USID" vsds="T1DOC_HDR" vsdf="DOC_CREA_USID" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1DOC_ACTU_AM" vsds="T1DOC_HDR" vsdf="DOC_ACTU_AM" 
+          vsformat="$#,##0.00;($#,##0.00)"
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_ACT_FL" vsds="T1DOC_HDR" vsdf="DOC_ACT_FL" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Advantage" vsds="T1DOC_HDR" vsaction="firstpage" name="T1DOC_HDRfirstpage" id="T1DOC_HDRfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+<a href="Advantage" vsds="T1DOC_HDR" vsaction="prevpage" name="T1DOC_HDRprevpage" id="T1DOC_HDRprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+<a href="Advantage" vsds="T1DOC_HDR" vsaction="nextpage" id="T1DOC_HDRnextpage" name="T1DOC_HDRnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+<a href="Advantage" vsds="T1DOC_HDR" vsaction="lastpage" id="T1DOC_HDRlastpage" name="T1DOC_HDRlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+    </tr>
+  </table>
+<!-- BEGIN CUSTOMIZATION -->
+  </div>
+<!-- END CUSTOMIZATION -->
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+ 
+
+      <table class="advtrans form">
+        <tr>
+          <td>
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+</td>
+          <td>
+</td>
+        </tr>
+      </table>
+
+      <vstext name="DocCtlgMenu" vsds="" vspreservetag="true">
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

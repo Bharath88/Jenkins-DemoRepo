@@ -1,0 +1,109 @@
+<!-- ARCHETYPE_COMMENT
+/*
+ *  NoDataFormArchetypeAMSHomePage.htm           05/16/2000
+ *
+ * Copyright (c) 2000 American Management Systems (AMS)
+ * All rights reserved.
+ *
+ * This software is the confidential and proprietary information of AMS
+ * ("Confidential Information").  You shall not disclose such Confidential
+ * Information and shall use it only in accordance with the terms of the
+ * license agreement you entered into with AMS.
+ *
+ *-----------------------------------------------------------------------------
+ * This archetype is used to generate the Home Page in the ADVANTAGE system.
+ *
+ * PVCS Modification Log:
+ *
+ * $Log:   N:/ASG/Projects/AMS_ADVANTAGE_Technical_Architecture/archives/dev/advantage/Source/ClientApps/HTMLApps/Advantage.app/Archetypes/NoDataFormArchetypeAMSHomePage.htm-arc  $
+
+   Rev 1.2   11 May 2004 14:04:20   scoloney
+Conversion due to Versata 5.6.2 - Updated xml, Impl.java, page java, and archetype files.
+
+   Rev 1.1   19 Oct 2003 11:52:24   mshipley
+Accessibility changes
+
+   Rev 1.0   20 Aug 2002 15:11:54   SCOLONEY
+Initial revision.
+
+   Rev 1.1   01 May 2002 17:31:46   SNaikoti
+IR-NFFX003003: Changes related to Help Popup window.
+
+   Rev 1.0   Apr 13 2002 14:19:32   SColoney
+Initial revision.
+
+   Rev 1.2   Oct 08 2001 23:42:40   RApparaj
+Advantage EJB conversion (Build 5)
+
+   Rev 1.1   Oct 08 2001 20:31:58   RApparaj
+Versata EJB changes(Build 5)
+
+   Rev 1.0   Jun 24 2001 09:05:30   SColoney
+Initial revision.
+
+   Rev 1.11   Dec 15 2000 11:07:16   MShipley
+updated home page functionality
+
+   Rev 1.10   08 Nov 2000 19:59:16   ssurabhi
+First cut of version 5.0 CORBA files Build 16B
+
+   Rev 1.9   Oct 10 2000 18:54:14   mshipley
+Remove jade class for all hyperlinks since it is now set through the AMSHTMLDocument class
+
+   Rev 1.8   Oct 05 2000 16:57:00   MShipley
+Verify JavaScript and style sheet inclusion
+
+   Rev 1.7   Oct 05 2000 13:00:12   MShipley
+Reference AMSDHTMLLib instead of dhtmllib
+
+   Rev 1.6   Oct 04 2000 15:41:52   mshipley
+Reference ADVHomePage instead of HomePage
+
+   Rev 1.5   Sep 28 2000 09:03:40   mshipley
+Removed href destination string from the base tag so that the generated pages will display the style correctly
+
+   Rev 1.4   Aug 30 2000 17:56:50   mshipley
+Changed location of style sheet files
+
+   Rev 1.3   Aug 29 2000 17:12:38   mshipley
+Applied new style changes to all archetypes
+
+   Rev 1.2   Jul 08 2000 16:34:20   PGoel
+Fixed directory names for JavaScripts
+
+   Rev 1.1   Jul 05 2000 19:20:38   pgoel
+Referenced the Style Sheet
+
+   Rev 1.0   May 18 2000 17:22:52   SCOLONEY
+Initial revision.
+ *
+ */
+ARCHETYPE_COMMENT-->
+<JADEArchetype>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>CGI ADVANTAGE 3.0 Home Page</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVPortalStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="JS/ADVHomePage.js"></script>
+</head>
+<body class="adv homepage">
+  <form action="Advantage" name="HomePage" vsform="true" method="POST" target='Display'>
+    <a href="" name="OpenPage" vsds=" " vsaction="13"></a>
+    <vstext name="HOME_PAGE_WINDOWS" vsds=" " vspreservetag="true">
+    <JADEInclude Archetype="MiscArchetypeAMSPopupWin"></JADEInclude>
+  </form>
+</body>
+</html>
+</JADEArchetype>
+<!--JADE_MACRO
+<<ArchetypeVersion 05.06.02.52>>
+<<SetProperty ClassName=com.amsinc.gems.adv.vfc.html.AMSPage>>
+JADE_MACRO-->

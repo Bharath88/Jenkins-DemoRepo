@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Notification Profile</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="pR_NOTIF_PROFILE">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Notification Profile">Notification Profile</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="Advantage" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+
+  <a name="T1R_NOTIF_PROFILE_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1R_NOTIF_PROFILE_Currency" >
+  <input type="hidden" name="T1R_NOTIF_PROFILE_Old_Currency" >
+  <table name="tblT1R_NOTIF_PROFILE" id="tblT1R_NOTIF_PROFILE" class="advgrid" vsds="T1R_NOTIF_PROFILE">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1R_NOTIF_PROFILE" 
+    vsdf="PROFILE_ID"
+ name="T1PROFILE_IDsort" id="T1PROFILE_IDsort" title="Sort By Profile ID">Profile ID</a></th>
+      
+        <th 
+><span id="T1PROFILE_NMsortGridLabel" name="T1PROFILE_NMsortGridLabel" vsdf="PROFILE_NM" title="Profile Name">Profile Name</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr class="advgridoddrow" onclick="UTILS_SelectGridRow(this);return true;" ams_altclassname="advgridevenrow" vsprototyperow="true">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_NOTIF_PROFILEvscurrency" id="T1R_NOTIF_PROFILEvscurrency" title="Select Row" alt="Select Row" src="../AMSImages/ADVRowSel.gif"
+ vsds="T1R_NOTIF_PROFILE" vsaction="Currency">
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1PROFILE_ID" vsds="T1R_NOTIF_PROFILE" vsdf="PROFILE_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1PROFILE_NM" vsds="T1R_NOTIF_PROFILE" vsdf="PROFILE_NM" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="T1R_NOTIF_PROFILEGridNav" id="T1R_NOTIF_PROFILEGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="Advantage" vsds="T1R_NOTIF_PROFILE" vsaction="firstpage" name="T1R_NOTIF_PROFILEfirstpage" id="T1R_NOTIF_PROFILEfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="Advantage" vsds="T1R_NOTIF_PROFILE" vsaction="prevpage" name="T1R_NOTIF_PROFILEprevpage" id="T1R_NOTIF_PROFILEprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="Advantage" vsds="T1R_NOTIF_PROFILE" vsaction="nextpage" id="T1R_NOTIF_PROFILEnextpage" name="T1R_NOTIF_PROFILEnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="Advantage" vsds="T1R_NOTIF_PROFILE" vsaction="lastpage" id="T1R_NOTIF_PROFILElastpage" name="T1R_NOTIF_PROFILElastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+
+  
+  
+
+  
+      <table class="advaction recsrc">
+        <tr>
+      
+         <td>
+<ams_map title="Update Actions" name="Update Actions">
+   
+         <a href="Advantage" vsds="T1R_NOTIF_PROFILE" vsaction="saveall" name="T1R_NOTIF_PROFILESaveAll" id="T1R_NOTIF_PROFILESaveAll" title="Save All" accesskey="5">Save</a>
+   
+		  <a href="Advantage" vsds="T1R_NOTIF_PROFILE" vsaction="undoall" name="T1R_NOTIF_PROFILEUndoAll" id="T1R_NOTIF_PROFILEUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+		  <a href="Advantage" vsds="T1R_NOTIF_PROFILE" vsaction="delete" id="IndexT1R_NOTIF_PROFILEdelete" name="T1R_NOTIF_PROFILEdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="Advantage" vsds="T1R_NOTIF_PROFILE" vsaction="insert" id="T1R_NOTIF_PROFILEinsert" name="T1R_NOTIF_PROFILEinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="Advantage" vsds="T1R_NOTIF_PROFILE" vsaction="11" name="T1R_NOTIF_PROFILECopyRecord" id="T1R_NOTIF_PROFILECopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="Advantage" vsds="T1R_NOTIF_PROFILE" vsaction="12" name="T1R_NOTIF_PROFILEPasteLine" id="T1R_NOTIF_PROFILEPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+
+   
+      <td><vstext vsds=" " name="T1R_NOTIF_PROFILESearchColList" vspreservetag="true"></td>
+
+   
+      <td><ams_map title="Section Controls" name="Section Controls">
+      
+  <a href="javascript:
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+      
+  <a href="javascript:
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+    
+        </tr>
+      </table>
+
+  <fieldset class="advscalar">
+    <div class="advpresection">
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+          
+  
+       
+        <tr>
+        
+      
+      <td class="label"><label for="txtT1PROFILE_ID" title="Profile ID">Profile ID :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1PROFILE_ID" id="txtT1PROFILE_ID" 
+               size="15"
+ vsds="T1R_NOTIF_PROFILE" vsdf="PROFILE_ID" 
+         ams_max_len="10"
+ ShowCodeInfo="" value="PROFILE_ID" title="Profile ID" >
+
+        
+
+        </td>
+        </tr>
+    
+    
+       
+        <tr>
+        
+      
+      <td class="label"><label for="txtT1PROFILE_NM" title="Profile Name">Profile Name :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1PROFILE_NM" id="txtT1PROFILE_NM" 
+               size="20"
+ vsds="T1R_NOTIF_PROFILE" vsdf="PROFILE_NM" 
+         ams_max_len="50"
+ ShowCodeInfo="" value="PROFILE_NM" title="Profile Name" >
+
+        
+
+        </td>
+        </tr>
+    
+    
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+  
+      <br><br><table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T1R_NOTIF_PROFILE_Top');" title="Go To Top">Top</a></td></tr></table>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_NOTIF_PROFILE', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'PROFILE_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Profile ID' ;
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,281 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Statement Condition Group</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="CAFR" method="post" vsform="true" name="pRefSTMTCONDGRP">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Statement Condition Group">Statement Condition Group</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="CAFR" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+
+  <a name="rs01STMT_COND_GROUP_Top"></a>
+  
+  
+  
+  <input type="hidden" name="rs01STMT_COND_GROUP_Currency" >
+  <input type="hidden" name="rs01STMT_COND_GROUP_Old_Currency" >
+  <table name="tblrs01STMT_COND_GROUP" id="tblrs01STMT_COND_GROUP" class="advgrid" vsds="rs01STMT_COND_GROUP">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs01STMT_COND_GROUP" 
+    vsdf="STMT_COND_GRP_CD"
+ name="rs01STMT_COND_GRP_CDsort" id="rs01STMT_COND_GRP_CDsort" title="Sort By Condition Group Code">Condition Group Code</a></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs01STMT_COND_GROUP" 
+    vsdf="PARENT_GRP_CD"
+ name="rs01PARENT_GRP_CDsort" id="rs01PARENT_GRP_CDsort" title="Sort By Parent Group Code">Parent Group Code</a></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs01STMT_COND_GROUP" 
+    vsdf="GRP_TYP"
+ name="rs01GRP_TYPsort" id="rs01GRP_TYPsort" title="Sort By Group Type">Group Type</a></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr class="advgridoddrow" onclick="UTILS_SelectGridRow(this);return true;" vsprototyperow="true" ams_altclassname="advgridevenrow">
+      <td class="advgridrowselect">
+        <input type="image" name="rs01STMT_COND_GROUPvscurrency" id="rs01STMT_COND_GROUPvscurrency" title="Select Row" alt="Select Row" src="../AMSImages/ADVRowSel.gif"
+ vsds="rs01STMT_COND_GROUP" vsaction="Currency">
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtrs01STMT_COND_GRP_CD" vsds="rs01STMT_COND_GROUP" vsdf="STMT_COND_GRP_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtrs01PARENT_GRP_CD" vsds="rs01STMT_COND_GROUP" vsdf="PARENT_GRP_CD" 
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="rs01STMT_COND_GROUP" vsdf="GRP_TYP" vscodetable="CVL_AND_OR">
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="rs01STMT_COND_GROUPGridNav" id="rs01STMT_COND_GROUPGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="CAFR" vsds="rs01STMT_COND_GROUP" vsaction="firstpage" name="rs01STMT_COND_GROUPfirstpage" id="rs01STMT_COND_GROUPfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="CAFR" vsds="rs01STMT_COND_GROUP" vsaction="prevpage" name="rs01STMT_COND_GROUPprevpage" id="rs01STMT_COND_GROUPprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="CAFR" vsds="rs01STMT_COND_GROUP" vsaction="nextpage" id="rs01STMT_COND_GROUPnextpage" name="rs01STMT_COND_GROUPnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="CAFR" vsds="rs01STMT_COND_GROUP" vsaction="lastpage" id="rs01STMT_COND_GROUPlastpage" name="rs01STMT_COND_GROUPlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+	  
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+
+  
+  
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+   
+         <a href="CAFR" vsds="rs01STMT_COND_GROUP" vsaction="saveall" name="rs01STMT_COND_GROUPSaveAll" id="rs01STMT_COND_GROUPSaveAll" title="Save All" accesskey="5">Save</a>
+   
+		  <a href="CAFR" vsds="rs01STMT_COND_GROUP" vsaction="undoall" name="rs01STMT_COND_GROUPUndoAll" id="rs01STMT_COND_GROUPUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+		  <a href="CAFR" vsds="rs01STMT_COND_GROUP" vsaction="delete" id="Indexrs01STMT_COND_GROUPdelete" name="rs01STMT_COND_GROUPdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="CAFR" vsds="rs01STMT_COND_GROUP" vsaction="insert" id="rs01STMT_COND_GROUPinsert" name="rs01STMT_COND_GROUPinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="CAFR" vsds="rs01STMT_COND_GROUP" vsaction="11" name="rs01STMT_COND_GROUPCopyRecord" id="rs01STMT_COND_GROUPCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="CAFR" vsds="rs01STMT_COND_GROUP" vsaction="12" name="rs01STMT_COND_GROUPPasteLine" id="rs01STMT_COND_GROUPPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+      
+   
+      <td><vstext vsds=" " name="rs01STMT_COND_GROUPSearchColList" vspreservetag="true"></td>
+      
+      <td><ams_map title="Section Controls" name="Section Controls">
+      
+  <a href="javascript:
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+      
+  <a href="javascript:
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+    
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <div class="advpresection">
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+          
+  
+       
+        <tr>
+        
+      
+      <td class="label"><label for="txtrs01STMT_COND_GRP_CD" title="Condition Group Code">Condition Group Code :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtrs01STMT_COND_GRP_CD" id="txtrs01STMT_COND_GRP_CD" 
+               size="15"
+ vsds="rs01STMT_COND_GROUP" vsdf="STMT_COND_GRP_CD" 
+         ams_max_len="10"
+ ShowCodeInfo="" value="STMT_COND_GRP_CD" title="Condition Group Code" >
+
+        
+
+        </td>
+        </tr>
+    
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01PARENT_GRP_CD" title="Parent Group Code">Parent Group Code :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01PARENT_GRP_CD" id="txtrs01PARENT_GRP_CD" 
+      ams_max_len="10"
+ value="PARENT_GRP_CD" 
+            size="15"
+ vsds="rs01STMT_COND_GROUP" vsdf="PARENT_GRP_CD" ShowCodeInfo="" title="Parent Group Code">
+          
+      <input type="image" vspick="pk01STMT_COND_GROUP" vspicktext="txtrs01PARENT_GRP_CD" vsds="rs01STMT_COND_GROUP" vsaction="pick" name="pckrs01PARENT_GRP_CD" id="pckrs01PARENT_GRP_CD" title="Select Parent Group Code" alt="Select Parent Group Code" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+          
+      <tr>
+      
+      <td class="label"><label for="txtrs01GRP_TYP" title="Group Type">Group Type :</label></td>
+   
+        <td class="val">
+          <select name="txtrs01GRP_TYP" id="txtrs01GRP_TYP" vsds="rs01STMT_COND_GROUP" vsdf="GRP_TYP" size="1" vscodetable="CVL_AND_OR" ShowCodeInfo="" ams_show_es="NO" title="Group Type">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+  <br><br><table class="advaction recsrc"><tr><td><A title="Go To Top" href="javascript:UTILS_ScrollToAnchor('rs01STMT_COND_GROUP_Top');" >Top</A></td></tr></table>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'rs01STMT_COND_GROUP', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'STMT_COND_GRP_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Condition Group Code' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'PARENT_GRP_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Parent Group Code' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'GRP_TYP' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Group Type' ;
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<a name="btnT1pRefSTMTRULE" href="CAFR" id="btnT1pRefSTMTRULE" title="Navigation to Statement Rules & Conditions" vsaction="pagetransition" 
+           vsds=""
+ vsnavigation="T1pRefSTMTRULE">Statement Rules & Conditions</a>
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="CAFR" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,319 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Job Server Control</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Reports_Sys_Admin_App" method="post" vsform="true" name="Admin_Panel1">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Job Server Control">Job Server Control</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+
+
+  <input type="hidden" name="T1IN_APPSRV_LST_Currency" value="">
+  <input type="hidden" name="T1IN_APPSRV_LST_Old_Currency" value="">
+  <table name="tblT1IN_APPSRV_LST" id="tblT1IN_APPSRV_LST" class="advgrid" vsds="T1IN_APPSRV_LST">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1APPSRV_NMsortGridLabel" name="T1APPSRV_NMsortGridLabel" title="App Server Host Name">App Server Host Name</span></th>
+
+        <th
+><span id="T1VLS_NMsortGridLabel" name="T1VLS_NMsortGridLabel" title="Application Server">Application Server</span></th>
+
+        <th
+><span id="T1JOB_MGRsortGridLabel" name="T1JOB_MGRsortGridLabel" title="Job Manager Name">Job Manager Name</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IN_APPSRV_LSTvscurrency" id="T1IN_APPSRV_LSTvscurrency" title="Select Row" alt="Select Row" vsds="T1IN_APPSRV_LST" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1APPSRV_NM" vsds="T1IN_APPSRV_LST" vsdf="APPSRV_NM"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1VLS_NM" vsds="T1IN_APPSRV_LST" vsdf="VLS_NM"
+>
+        </td>
+<!-- BEGIN CUSTOMIZATION -->
+        <td class="memo">
+          <textarea ams_readonly cols="20" rows="2" style="width: 90%;" name="txtT1JOB_MGR" vsds="T1IN_APPSRV_LST" vsdf="JOB_MGR"
+ title="Job Manager Name"></textarea>
+        </td>
+<!-- END CUSTOMIZATION -->
+
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+
+<!-- BEGIN CUSTOMIZATION -->
+
+<a name="btnT2Edit_AppServer_List" href="Reports_Sys_Admin_App" id="btnT2Edit_AppServer_List" title="Navigation to Edit AppServer List" vsaction="pagetransition"
+           vsds=""
+ vsnavigation="T2Edit_AppServer_List">Edit AppServer List</a>
+
+
+<!-- END CUSTOMIZATION -->
+
+<a href="Reports_Sys_Admin_App" vsds="T1IN_APPSRV_LST" vsaction="firstpage" name="T1IN_APPSRV_LSTfirstpage" id="T1IN_APPSRV_LSTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1IN_APPSRV_LST" vsaction="prevpage" name="T1IN_APPSRV_LSTprevpage" id="T1IN_APPSRV_LSTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1IN_APPSRV_LST" vsaction="nextpage" id="T1IN_APPSRV_LSTnextpage" name="T1IN_APPSRV_LSTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1IN_APPSRV_LST" vsaction="lastpage" id="T1IN_APPSRV_LSTlastpage" name="T1IN_APPSRV_LSTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+
+<!-- BEGIN CUSTOMIZATION -->
+
+
+ <a href="Reports_Sys_Admin_App"
+           vsds="T1IN_APPSRV_LST" vsaction=" " name="startReg" id="startReg" title="Start Registering Jobs">Start Registering Jobs</a>
+<a href="Reports_Sys_Admin_App" vsds="T1IN_APPSRV_LST" vsaction=" " name="stopReg" title="Stop Registering Jobs">Stop Registering Jobs</a>
+
+
+
+<!-- END CUSTOMIZATION -->
+
+
+</ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+
+
+  <!-- BEGIN CUSTOMIZATION -->
+
+  <table class="advsectsep">
+    <tr>
+      <td></td>
+    </tr>
+  </table>
+  <table class="advsecthdr1">
+    <tr>
+      <td><vstitle vstitle="Job Server Parameters"> Job Server Parameters</vstitle> </td>
+    </tr>
+  </table>
+  <!--END CUSTOMIZATION -->
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+       <!-- BEGIN CUSTOMIZATION -->
+
+          <a href="Reports_Sys_Admin_App" vsds="T1IN_APPSRV_LST" vsaction=" "
+      name="updateBtn" id="updateBtn" title="update job server settings">Update Instance Settings</a>
+      <!--END CUSTOMIZATION -->
+
+      </td>
+    </tr>
+  </table>
+
+
+
+  <!-- BEGIN CUSTOMIZATION -->
+
+  <table>
+      <tr>
+        <td valign="top"><table class="advscalar">
+          <tr>
+            <td class="label"><label for="getAgentServerStatusField" title="Job Polling On ?">Polling ? : </label></td>
+            <td class="val"><input type="text" size="10" vsds=" " class="advreadonly"
+            name="getAgentServerStatusField" id="getAgentServerStatusField" readonly="READONLY"
+             title="job server pollig for jobs ?" fhdf="JOBMGR_POLLNG_ON"> </td>
+          </tr>
+          <tr>
+            <td class="label">
+            <label for="setMaxThreadCountField" title="maximum number of concurrent jobs threads allowed">
+            Maximum Jobs Allowed :
+            </label>
+            </td>
+            <td class="val"><input type="text" size="10" vsds=" " class="displayfield"
+            name="setMaxThreadCountField" maxlength="3" title="maximum number of concurrent jobs threads allowed" fhdf="JOBMGR_MAX_THRDCNT"> </td>
+          </tr>
+          <tr>
+            <td class="label">
+            <label for="pickTargetedJobsField" title="process only jobs assigned to the selected job server">
+            Process Assigned Jobs Only :
+            </label>
+            </td>
+            <td class="val"><input name="pickTargetedJobsField" vsdf=" " vsds=" "
+            type="checkbox" value="ON" title="process only jobs assigned to the selected job server" fhdf="JOBMGR_PCK_TGT_JOB"></td>
+          </tr>
+
+
+          <tr>
+            <td class="label">
+            <label for="isApplDateJobQueueActive" title="is the application date job queue active ?">
+            Application Date Job Queue Active ? :
+            </label>
+            </td>
+            <td class="val"><input name="isApplDateJobQueueActive" vsdf=" " vsds=" "
+            type="checkbox" value="ON" title="is the application date job queue active ?" fhdf="JOB_Q_ID"></td>
+          </tr>
+
+          <tr>
+            <td class="label"><label for="ApplicationID" title="Application">Application :</label></td>
+            <td class="val">
+              <select name="ApplicationID" id="ApplicationID" vsds=" " vsdf=" " size="1" ShowCodeInfo="" title="Application" fhdf="APPL_NM" ams_readonly="ams_readonly" class="advreadonly" disabled="disabled">
+                <option value="JADEStored">JADEDisplayed</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr style="visibility:hidden;display:none">
+            <td class="label">Job Activate Rate (seconds) : </td>
+            <td class="val"><input type="text" size="10" vsds=" " name="setJobActivateRateField"
+            maxlength="10"> </td>
+          </tr>
+
+        </table>
+        </td>
+        <td valign="top"><table class="advscalar">
+          <tr>
+            <td class="label">
+            <label for="getCurrentThreadCountField" title="number of jobs currently running on the selected job server">
+            Current Job Count :
+            </label>
+            </td>
+            <td class="val"><input type="text" size="10" vsds=" " class="advreadonly"
+            name="getCurrentThreadCountField" readonly="READONLY" title="number of jobs currently running on the selected job server" fhdf="JOBMGR_CURR_THRDCNT"> </td>
+          </tr>
+          <tr>
+            <td class="label">
+            <label for="getCurrentThreadCountField" title="frequency (per second) of job polling">
+            Job Poll Rate (seconds) :
+            </label>
+            </td>
+            <td class="val"><input type="text" size="10" vsds=" " name="setJobPollRateField"
+            maxlength="10" title="frequency (per second) of job polling" fhdf="JOBMGR_POLLNG_RT" > </td>
+          </tr>
+
+          <tr>
+            <td class="label">
+            <label for="isDefaultJobQueueActive" title="is the default job queue active ?">
+            Default Job Queue Active ? :
+            </label>
+            </td>
+            <td class="val"><input name="isDefaultJobQueueActive" vsdf=" " vsds=" "
+            type="checkbox" value="ON" title="is the default job queue active ?" fhdf="JOB_Q_ID"></td>
+          </tr>
+
+
+          <tr>
+            <td class="label">
+            <label for="isNightlyJobQueueActive" title="is the nightly job queue active ?">
+            Nightly Job Queue Active ? :
+            </label>
+            </td>
+            <td class="val"><input name="isNightlyJobQueueActive" vsdf=" " vsds=" "
+            type="checkbox" value="ON" title="is the nightly job queue active ?" fhdf="JOB_Q_ID" ></td>
+          </tr>
+
+
+        </table>
+        </td>
+      </tr>
+    </table>
+
+
+
+
+  <!--END CUSTOMIZATION -->
+
+
+
+
+
+
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1IN_APPSRV_LST', new Array(), new Array() ) ;
+
+  -->
+  </script>
+
+
+
+ <!-- BEGIN CUSTOMIZATION -->
+ <!--
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<a name="btnT2Edit_AppServer_List" href="Reports_Sys_Admin_App" id="btnT2Edit_AppServer_List" title="Navigation to Edit AppServer List" vsaction="pagetransition"
+           vsds=""
+ vsnavigation="T2Edit_AppServer_List">Edit AppServer List</a>
+</ams_map></td></tr></table>
+-->
+<!-- END CUSTOMIZATION -->
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Reports_Sys_Admin_App" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

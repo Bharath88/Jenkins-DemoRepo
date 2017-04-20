@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ParentRoleName="R_SC_SEC_ROLE"
+		ChildRoleName="SC_LDAP_NEW_USER"
+		>
+		<AscendCaption><![CDATA[Security Role]]> </AscendCaption>
+		<DescendCaption><![CDATA[SC_LDAP_NEW_USER(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0112,v:Security Role ID 1,v:Security Role Table%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SEC_ROLE_ID"
+				ChildAttribute="SEC_ROLE_ID_1"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ParentRoleName="R_SC_SEC_ROLE1"
+		ChildRoleName="SC_LDAP_NEW_USER1"
+		>
+		<AscendCaption><![CDATA[Security Role]]> </AscendCaption>
+		<DescendCaption><![CDATA[SC_LDAP_NEW_USER(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0112,v:Security Role ID 2,v:Security Role Table%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SEC_ROLE_ID"
+				ChildAttribute="SEC_ROLE_ID_2"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ParentRoleName="R_SC_SEC_ROLE2"
+		ChildRoleName="SC_LDAP_NEW_USER2"
+		>
+		<AscendCaption><![CDATA[Security Role]]> </AscendCaption>
+		<DescendCaption><![CDATA[SC_LDAP_NEW_USER(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0112,v:Security Role ID 3,v:Security Role Table%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SEC_ROLE_ID"
+				ChildAttribute="SEC_ROLE_ID_3"
+			/>
+		</AttributePairs>
+	</Relationship>
+</Relationships>

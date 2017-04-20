@@ -1,0 +1,343 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Report Search</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+<!-- BEGIN CUSTOMIZATION -->
+   <script language = "JavaScript">
+   <!--
+      function RSRCH_AppendStar( foTextBox )
+      {
+         var loTextBoxValue = foTextBox.value;
+
+         if (loTextBoxValue == null)
+         {
+            loTextBoxValue="*";
+         }
+         else if (loTextBoxValue.charAt(loTextBoxValue.length-1) != "*")
+         {
+            loTextBoxValue+="*";
+         }
+
+         foTextBox.value = loTextBoxValue.toUpperCase();
+
+         return true;
+      }
+
+      function RSRCH_CheckKeyPress( foTextBox, foEvent )
+      {
+         var liKeyPressed = 0;
+
+         if (mboolIE4Up)
+         {
+            liKeyPressed = foEvent.keyCode;
+         }
+         else if (mboolNS5Up)
+         {
+            liKeyPressed = foEvent.which;
+         }
+
+         /**
+          * In Netscape6, the default behaviour is not
+          * blur for textfields when you press "ENTER"
+          * key, hence this change was required.
+          */
+         if (liKeyPressed == 13) // Enter Key
+         {
+            foTextBox.blur();
+         }
+
+         return true;
+      }
+
+      function RSRCH_CheckFormSubmit( foEvent )
+      {
+      	if (mboolNS5Up)
+      	{
+      		if (foEvent.target.tagName == 'FORM')
+      		{
+      			return false;
+      		}
+      	}
+      	else if (mboolIE4Up)
+      	{
+      		if (foEvent.srcElement.tagName == 'FORM')
+      		{
+      			return false;
+      		}
+      	}
+
+      	return true;
+      }
+   -->
+   </script>
+<!-- END CUSTOMIZATION -->
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<!-- BEGIN CUSTOMIZATION -->
+<body class="adv reftable" onsubmit="return RSRCH_CheckFormSubmit(event)">
+<!-- END CUSTOMIZATION -->
+  <vserror>
+  <form action="Reports_Sys_Admin_App" method="post" vsform="true" name="ReportSearchPg">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Report Search">Report Search</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+
+<a href="Reports_Sys_Admin_App" vsds="T1RPT_SRCH_TBL_QRY" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1RPT_SRCH_TBL_QRY" vsaction="clearquery" name="T1RPT_SRCH_TBL_QRYclearquery" id="T1RPT_SRCH_TBL_QRYclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+      <tr>
+
+      <!-- BEGIN CUSTOMIZATION -->
+        <td class="label"><label for="txtT1FOLDER_NAME" title="Catalog Label">Folder :</label></td>
+        <td class="val">
+
+        <!--
+          <input type="text" name="txtT1FOLDER_NAME" id="txtT1FOLDER_NAME"
+            size="20"
+ vsds="T1RPT_SRCH_TBL_QRY" vsdf="FOLDER_NAME" vsdisplaymode="Query"
+ value="FOLDER_NAME" title="Catalog Label">
+
+ -->
+
+
+      <select name="showFolderCombo" size="1" vsds="T1RPT_SRCH_TBL_QRY"
+              vsdf="FOLDER_NAME" vsdisplaymode="Query" title="Search by parent folder name">
+            </select>
+        </td>
+
+        <!-- END CUSTOMIZATION -->
+
+      </tr>
+
+      <tr>
+      <!-- BEGIN CUSTOMIZATION -->
+        <td class="label"><label for="txtT1REPORT_NAME_UP" title="Report">Report :</label></td>
+        <td class="val">
+
+        <!--
+          <input type="text" name="txtT1REPORT_NAME_UP" id="txtT1REPORT_NAME_UP"
+            size="20"
+ vsds="T1RPT_SRCH_TBL_QRY" vsdf="REPORT_NAME_UP" vsdisplaymode="Query"
+ value="REPORT_NAME_UP" title="Catalog Label">
+ -->
+
+ <input type="text" name="txtT1REPORT_NAME_UP"
+             size="20"
+  vsds="T1RPT_SRCH_TBL_QRY" vsdf="REPORT_NAME_UP"
+               vsdisplaymode="Query" title="Search by Report Name"
+ value="REPORT_NAME_UP" onblur="RSRCH_AppendStar(this)" onkeypress="RSRCH_CheckKeyPress(this, event)">
+
+
+        </td>
+
+
+        <!-- END CUSTOMIZATION -->
+      </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+  <input type="hidden" name="T1RPT_SRCH_TBL_QRY_Currency" value="">
+  <input type="hidden" name="T1RPT_SRCH_TBL_QRY_Old_Currency" value="">
+  <table name="tblT1RPT_SRCH_TBL_QRY" id="tblT1RPT_SRCH_TBL_QRY" class="advgrid" vsds="T1RPT_SRCH_TBL_QRY">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+<!-- BEGIN CUSTOMIZATION -->
+        <th
+><span id="T1REPORT_NAMEsortGridLabel" name="T1REPORT_NAMEsortGridLabel" title="Report Name">Report</span></th>
+
+        <th
+><span id="T1FOLDER_NAMEsortGridLabel" name="T1FOLDER_NAMEsortGridLabel" title="Folder">Folder</span></th>
+
+<!-- END CUSTOMIZATION -->
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1RPT_SRCH_TBL_QRYvscurrency" id="T1RPT_SRCH_TBL_QRYvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1RPT_SRCH_TBL_QRY" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+<!-- BEGIN CUSTOMIZATION -->
+      <a name="btnT2Report_Completed_User" href="Reports_Sys_Admin_App" vsaction="pagetransition"
+		           vsds="(None)"
+ vsnavigation="T2Report_Completed_User" title="Report Name" onclick="UTILS_GridRowAnchorClicked()">
+          <vstext name="txtT1REPORT_NAME" vsds="T1RPT_SRCH_TBL_QRY" vsdf="REPORT_NAME"
+>
+        </a>
+
+<!-- END CUSTOMIZATION -->
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1FOLDER_NAME" vsds="T1RPT_SRCH_TBL_QRY" vsdf="FOLDER_NAME"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Reports_Sys_Admin_App" vsds="T1RPT_SRCH_TBL_QRY" vsaction="firstpage" name="T1RPT_SRCH_TBL_QRYfirstpage" id="T1RPT_SRCH_TBL_QRYfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1RPT_SRCH_TBL_QRY" vsaction="prevpage" name="T1RPT_SRCH_TBL_QRYprevpage" id="T1RPT_SRCH_TBL_QRYprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1RPT_SRCH_TBL_QRY" vsaction="nextpage" id="T1RPT_SRCH_TBL_QRYnextpage" name="T1RPT_SRCH_TBL_QRYnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1RPT_SRCH_TBL_QRY" vsaction="lastpage" id="T1RPT_SRCH_TBL_QRYlastpage" name="T1RPT_SRCH_TBL_QRYlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <!-- BEGIN CUSTOMIZATION -->
+<!--
+
+  <INPUT type="hidden" name="T3RPT_SRCH_FLDR_QRYvscurrency" vsds="T3RPT_SRCH_FLDR_QRY" vscurrency="true">
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Reports_Sys_Admin_App" vsds="T3RPT_SRCH_FLDR_QRY" vsaction="delete" id="IndexT3RPT_SRCH_FLDR_QRYdelete" name="T3RPT_SRCH_FLDR_QRYdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="Reports_Sys_Admin_App" vsds="T3RPT_SRCH_FLDR_QRY" vsaction="insert" id="T3RPT_SRCH_FLDR_QRYinsert" name="T3RPT_SRCH_FLDR_QRYinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+      </td>
+
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="Reports_Sys_Admin_App" vsds="T3RPT_SRCH_FLDR_QRY" vsaction="first" name="T3RPT_SRCH_FLDR_QRYfirst" id="T3RPT_SRCH_FLDR_QRYfirst" title="First Record" accesskey="0">First</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T3RPT_SRCH_FLDR_QRY" vsaction="prev" name="T3RPT_SRCH_FLDR_QRYprev" id="T3RPT_SRCH_FLDR_QRYprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T3RPT_SRCH_FLDR_QRY" vsaction="next" name="T3RPT_SRCH_FLDR_QRYnext" id="T3RPT_SRCH_FLDR_QRYnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T3RPT_SRCH_FLDR_QRY" vsaction="last" name="T3RPT_SRCH_FLDR_QRYlast" id="T3RPT_SRCH_FLDR_QRYlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT3FOLDER_NAME" title="Catalog Label">Catalog Label :</label></td>
+        <td class="val">
+          <select name="txtT3FOLDER_NAME" id="txtT3FOLDER_NAME" vsds="T3RPT_SRCH_FLDR_QRY" vsdf="FOLDER_NAME" vsdisplaymode="Query" size="1" vscodetable="" title="Catalog Label">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<a name="btnT2Report_Completed_User" href="Reports_Sys_Admin_App" id="btnT2Report_Completed_User" title="Navigation to Report Summary" vsaction="pagetransition"
+           vsds=""
+ vsnavigation="T2Report_Completed_User">Report Summary</a>
+</ams_map></td></tr></table>
+
+
+-->
+<!-- END CUSTOMIZATION -->
+
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Reports_Sys_Admin_App" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

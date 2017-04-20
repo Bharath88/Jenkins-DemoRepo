@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>New Job</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <!-- BEGIN CUSTOMIZATION -->
+
+
+  <script type="text/javascript" language="JavaScript" src="../Reports_Sys_Admin_App/JS/Batch.js"></script>
+  <!-- END CUSTOMIZATION -->
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+  <!-- BEGIN CUSTOMIZATION -->
+
+<body class="adv reftable" onload="Add_New_Job_View_Ctrl()">
+
+  <!-- END CUSTOMIZATION -->
+  <vserror>
+  <form action="Reports_Sys_Admin_App" method="post" vsform="true" name="Add_New_Job">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+  <!-- BEGIN CUSTOMIZATION -->
+
+  <input name="ConfirmDelete" type="hidden" value="No">
+  <input name="CustomRun" type="hidden" value="No">
+  <!-- END CUSTOMIZATION -->
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="New Job">New Job</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+      
+ 
+  <INPUT type="hidden" name="T1BS_AGENTvscurrency" vsds="T1BS_AGENT" vscurrency="true">
+
+  <a name="T1BS_AGENT_Top"></a>
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Reports_Sys_Admin_App" vsds="T1BS_AGENT" vsaction="saveall" name="T1BS_AGENTSaveAll" id="T1BS_AGENTSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Reports_Sys_Admin_App" vsds="T1BS_AGENT" vsaction="undoall" name="T1BS_AGENTUndoAll" id="T1BS_AGENTUndoAll" title="Undo All" accesskey="6">Undo</a>
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+
+<a href="Reports_Sys_Admin_App" vsds="T1BS_AGENT" vsaction="delete" id="IndexT1BS_AGENTdelete" name="T1BS_AGENTdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="Reports_Sys_Admin_App" vsds="T1BS_AGENT" vsaction="insert" id="T1BS_AGENTinsert" name="T1BS_AGENTinsert" title="Insert New Record" accesskey="I">Insert</a>
+-->
+<!-- END CUSTOMIZATION -->
+</ams_map>
+      </td>
+      
+      
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="Reports_Sys_Admin_App" vsds="T1BS_AGENT" vsaction="first" name="T1BS_AGENTfirst" id="T1BS_AGENTfirst" title="First Record" accesskey="0">First</a>
+ 
+<a href="Reports_Sys_Admin_App" vsds="T1BS_AGENT" vsaction="prev" name="T1BS_AGENTprev" id="T1BS_AGENTprev" title="Previous Record" accesskey="1">Prev</a>
+ 
+<a href="Reports_Sys_Admin_App" vsds="T1BS_AGENT" vsaction="next" name="T1BS_AGENTnext" id="T1BS_AGENTnext" title="Next Record" accesskey="2">Next</a>
+ 
+<a href="Reports_Sys_Admin_App" vsds="T1BS_AGENT" vsaction="last" name="T1BS_AGENTlast" id="T1BS_AGENTlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+-->
+<!-- END CUSTOMIZATION -->
+      
+      <td><ams_map title="Section Controls" name="Section Controls">
+      
+  <a href="javascript:
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+      
+  <a href="javascript:
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+    
+      
+      
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <div class="advpresection">
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+          
+          
+  
+      <tr>
+        <td class="label"><label for="txtT1AGNT_ID" title="Job ID">Job ID :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1AGNT_ID" id="txtT1AGNT_ID" 
+               size="15"
+ vsds="T1BS_AGENT" vsdf="AGNT_ID" 
+ value="AGNT_ID" ams_readonly ShowCodeInfo="" title="Job ID">
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label for="txtT1JOB_NM" title="Job Name">Job Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1JOB_NM" id="txtT1JOB_NM" 
+               size="20"
+ vsds="T1BS_AGENT" vsdf="JOB_NM" 
+         ams_max_len="50"
+ ShowCodeInfo="" value="JOB_NM" title="Job Name">
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label for="txtT1APPL_SRV_NM" title="App Server Id">App Server Id :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1APPL_SRV_NM" id="txtT1APPL_SRV_NM" 
+               ams_max_len="20"
+ value="APPL_SRV_NM" 
+               size="15"
+ vsds="T1BS_AGENT" vsdf="APPL_SRV_NM" ShowCodeInfo="" title="App Server Id">
+          <input type="image" vspick="T4IN_APPSRV_LST" vspicktext="txtT1APPL_SRV_NM" vsds="T1BS_AGENT" vsaction="pick" name="pckT1APPL_SRV_NM" id="pckT1APPL_SRV_NM" title="Select App Server Id" alt="Select App Server Id" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1RUN_DT_TM" title="Scheduled Date/Time (Required)">Scheduled Date/Time :</label></td>
+        <td class="val required">
+          <input type="text" id="txtT1RUN_DT_TM" name="txtT1RUN_DT_TM" size="11" vsds="T1BS_AGENT" vsdf="RUN_DT_TM" 
+    vsformat="MM-dd-yyyy HH:mm"
+ value="RUN_DT_TM" title="Scheduled Date/Time (Required)">
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.Add_New_Job.txtT1RUN_DT_TM.value, 'txtT1RUN_DT_TM', document.Add_New_Job.txtT1RUN_DT_TM);event.returnValue=false;return false;" title="Select Scheduled Date/Time: Will open in a new window"><img src="../AMSImages/ADVCalendar.gif"
+ alt="Select Scheduled Date/Time: Will open in a new window" title="Select Scheduled Date/Time: Will open in a new window"></a>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label for="txtT1RPET_NO" title="Number of Runs">Number of Runs :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1RPET_NO" id="txtT1RPET_NO" 
+                  size="15"
+ vsds="T1BS_AGENT" vsdf="RPET_NO" 
+                  ams_max_len="20"
+ ShowCodeInfo="" value="RPET_NO" title="Number of Runs">
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label for="txtT1PRE_CN" title="Run After Completing Job">Run After Completing Job :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1PRE_CN" id="txtT1PRE_CN" 
+               ams_max_len="20"
+ value="PRE_CN" 
+               size="15"
+ vsds="T1BS_AGENT" vsdf="PRE_CN" ShowCodeInfo="" title="Run After Completing Job">
+          <input type="image" vspick="T2BS_AGENT" vspicktext="txtT1PRE_CN" vsds="T1BS_AGENT" vsaction="pick" name="pckT1PRE_CN" id="pckT1PRE_CN" title="Select Run After Completing Job" alt="Select Run After Completing Job" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+    
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1JOB_LBL" title="Job">Job :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1JOB_LBL" id="txtT1JOB_LBL" 
+            size="20"
+ vsds="T1BS_AGENT" vsdf="JOB_LBL" 
+ value="JOB_LBL" ams_readonly ShowCodeInfo="" title="Job">
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label for="txtT1RUN_PLCY" title="Run Option">Run Option :</label></td>
+        <td class="val">
+          <select name="txtT1RUN_PLCY" id="txtT1RUN_PLCY" vsds="T1BS_AGENT" vsdf="RUN_PLCY" size="1" vscodetable="CVL_BS_RUNPOLICY" ShowCodeInfo="" title="Run Option">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label for="txtT1VLS_NM" title="App Server Name">App Server Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1VLS_NM" id="txtT1VLS_NM" 
+            size="20"
+ vsds="T1BS_AGENT" vsdf="VLS_NM" 
+ value="VLS_NM" ams_readonly ShowCodeInfo="" title="App Server Name">
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label">
+
+        <!-- BEGIN CUSTOMIZATION -->
+
+        <label for="txtT1RUN_EXPR_TM" title="Expire Time">Don't Schedule After :</label>
+
+        <!-- END CUSTOMIZATION -->
+        </td>
+        <td class="val">
+          <input type="text" id="txtT1RUN_EXPR_TM" name="txtT1RUN_EXPR_TM" size="11" vsds="T1BS_AGENT" vsdf="RUN_EXPR_TM" 
+    vsformat="MM-dd-yyyy HH:mm"
+ value="RUN_EXPR_TM" title="Expire Time">
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.Add_New_Job.txtT1RUN_EXPR_TM.value, 'txtT1RUN_EXPR_TM', document.Add_New_Job.txtT1RUN_EXPR_TM);event.returnValue=false;return false;" title="Select Expire Time: Will open in a new window"><img src="../AMSImages/ADVCalendar.gif"
+ alt="Select Expire Time: Will open in a new window" title="Select Expire Time: Will open in a new window"></a>
+        </td>
+      </tr>
+    
+   <!-- BEGIN CUSTOMIZATION -->
+      <tr>
+        <td class="label">
+        <div id="CustomLabel" style="visibility:hidden">
+        <label for="txtT1RUN_ITVL" title="Run Interval  (minutes)">Run Interval  (minutes) :</label>
+                    </div>
+                  </td>
+        <td class="val">
+                    <div id="CustomField" style="visibility:hidden">
+          <input type="text" name="txtT1RUN_ITVL" id="txtT1RUN_ITVL" 
+                  size="15"
+ vsds="T1BS_AGENT" vsdf="RUN_ITVL" 
+                  ams_max_len="20"
+ ShowCodeInfo="" value="RUN_ITVL" title="Run Interval  (minutes)">
+        </div>
+        </td>
+      </tr>
+    
+   <!-- END CUSTOMIZATION -->
+      <tr>
+        <td class="label"><label for="txtT1PRE_CN_RET_CD" title="Pre Condition Return Code">Pre Condition Return Code :</label></td>
+        <td class="val">
+          <select name="txtT1PRE_CN_RET_CD" id="txtT1PRE_CN_RET_CD" vsds="T1BS_AGENT" vsdf="PRE_CN_RET_CD" size="1" vscodetable="CVL_JOB_RET_CD" ShowCodeInfo="" title="Pre Condition Return Code">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+      <tr>
+
+	       <!-- BEGIN CUSTOMIZATION -->
+
+	          <td class="label">
+	          <div vsds="" name="PUBLIC_FL_LABEL">
+	          <label for="txtT1PUBLIC_FL" title="Viewable by All Users ?">Viewable by All Users ? :</label>
+	          </div>
+	          </td>
+	          <td class="val">
+	            <div vsds="" name="PUBLIC_FL_FIELD">
+	            <input type="checkbox" name="txtT1PUBLIC_FL" id="txtT1PUBLIC_FL" value="PUBLIC_FL" vsds="T1BS_AGENT" vsdf="PUBLIC_FL" title="Viewable by All Users flag">
+	            </div>
+	          </td>
+
+	       <!-- END CUSTOMIZATION -->
+      </tr>
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+  <table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T1BS_AGENT_Top');">Top</a></td></tr></table>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<a name="btnT3User_AgentParm_Grid" href="Reports_Sys_Admin_App" id="btnT3User_AgentParm_Grid" title="Navigation to Setup Parameters" vsaction="pagetransition" 
+           vsds=""
+ vsnavigation="T3User_AgentParm_Grid">Setup Parameters</a>
+<!-- BEGIN CUSTOMIZATION -->
+
+ <a href="Reports_Sys_Admin_App" vsds="T1BS_AGENT" vsaction="ok" name="Ok" id="Ok" title="Submit Job Request">Submit Request</a>
+
+<!-- END CUSTOMIZATION -->
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Reports_Sys_Admin_App" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

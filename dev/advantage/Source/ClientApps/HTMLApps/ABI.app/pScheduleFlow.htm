@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Schedule Flow</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="ABI" method="post" vsform="true" name="pScheduleFlow">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Schedule Flow">Schedule Flow</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+      
+      
+ 
+  <a name="T1BS_AGENT_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1BS_AGENT_Currency" >
+  <input type="hidden" name="T1BS_AGENT_Old_Currency" >
+  <table name="tblT1BS_AGENT" id="tblT1BS_AGENT" class="advgrid" vsds="T1BS_AGENT">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="ABI" vsaction="sort" vsds="T1BS_AGENT" 
+    vsdf="AGNT_ID"
+ name="T1AGNT_IDsort" id="T1AGNT_IDsort" title="Sort By Job ID">Job ID</a></th>
+      
+        <th 
+><span id="T1RUN_DT_TMsortGridLabel" name="T1RUN_DT_TMsortGridLabel" vsdf="RUN_DT_TM" title="Scheduled Date/Time">Scheduled Date/Time</span></th>
+      
+        <th 
+><span id="T1RUN_STAsortGridLabel" name="T1RUN_STAsortGridLabel" vsdf="RUN_STA" title="Status">Status</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr class="advgridoddrow" onclick="UTILS_SelectGridRow(this);return true;" ams_altclassname="advgridevenrow" vsprototyperow="true">
+      <td class="advgridrowselect">
+        <input type="image" name="T1BS_AGENTvscurrency" id="T1BS_AGENTvscurrency" title="Select Row" alt="Select Row" src="../AMSImages/ADVRowSel.gif"
+ vsds="T1BS_AGENT" vsaction="Currency">
+      </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1AGNT_ID" vsds="T1BS_AGENT" vsdf="AGNT_ID" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1RUN_DT_TM" vsds="T1BS_AGENT" vsdf="RUN_DT_TM" 
+    vsformat="MM-dd-yyyy HH:mm"
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1BS_AGENT" vsdf="RUN_STA" vscodetable="CVL_JOB_STATUS">
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="T1BS_AGENTGridNav" id="T1BS_AGENTGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="ABI" vsds="T1BS_AGENT" vsaction="firstpage" name="T1BS_AGENTfirstpage" id="T1BS_AGENTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="ABI" vsds="T1BS_AGENT" vsaction="prevpage" name="T1BS_AGENTprevpage" id="T1BS_AGENTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="ABI" vsds="T1BS_AGENT" vsaction="nextpage" id="T1BS_AGENTnextpage" name="T1BS_AGENTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="ABI" vsds="T1BS_AGENT" vsaction="lastpage" id="T1BS_AGENTlastpage" name="T1BS_AGENTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+  
+  
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+   
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+         <a href="ABI" vsds="T1BS_AGENT" vsaction="saveall" name="T1BS_AGENTSaveAll" id="T1BS_AGENTSaveAll" title="Save All" accesskey="5">Save</a>
+         <a href="ABI" vsds="T1BS_AGENT" vsaction="undoall" name="T1BS_AGENTUndoAll" id="T1BS_AGENTUndoAll" title="Undo All" accesskey="6">Undo</a>		 
+		 <a href="ABI" vsds="T1BS_AGENT" vsaction="insert" id="T1BS_AGENTinsert" name="T1BS_AGENTinsert" title="Insert New Record" accesskey="I">Insert</a>
+-->
+         <a href="Reports_Sys_Admin_App" vsds="T1BS_AGENT" vsaction="ok" name="Ok" id="Ok" title="Submit">Submit</a>
+         <a href="Reports_Sys_Admin_App" vsds="T1BS_AGENT" vsaction="84" name="DeleteJob" id="DeleteJob" title="Delete Job">Delete Job</a>
+<!-- END CUSTOMIZATION -->
+</ams_map>
+      </td>
+      
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1AGNT_ID" title="Job ID">Job ID :</label></td>
+   
+        <td class="val">
+          <vstext name="disptxtT1AGNT_ID" vsds="T1BS_AGENT" vsdf="AGNT_ID" 
+               size="15"
+>
+        </td>
+      </tr>
+    
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1RUN_DT_TM" title="Scheduled Date/Time">Scheduled Date/Time :</label></td>
+   
+        <td class="val">
+          <input type="text" id="txtT1RUN_DT_TM" name="txtT1RUN_DT_TM" size="11" vsds="T1BS_AGENT" vsdf="RUN_DT_TM" 
+    vsformat="MM-dd-yyyy HH:mm"
+ value="RUN_DT_TM" title="Scheduled Date/Time">
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.pScheduleFlow.txtT1RUN_DT_TM.value, 'txtT1RUN_DT_TM', document.pScheduleFlow.txtT1RUN_DT_TM);event.returnValue=false;return false;" title="Select Scheduled Date/Time: Will open in a new window"><img src="../AMSImages/ADVCalendar.gif"
+ alt="Select Scheduled Date/Time: Will open in a new window" title="Select Scheduled Date/Time: Will open in a new window"></a>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1RUN_EXPR_TM" title="Expire Time">Expire Time :</label></td>
+   
+        <td class="val">
+          <input type="text" id="txtT1RUN_EXPR_TM" name="txtT1RUN_EXPR_TM" size="11" vsds="T1BS_AGENT" vsdf="RUN_EXPR_TM" 
+    vsformat="MM-dd-yyyy HH:mm"
+ value="RUN_EXPR_TM" title="Expire Time">
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.pScheduleFlow.txtT1RUN_EXPR_TM.value, 'txtT1RUN_EXPR_TM', document.pScheduleFlow.txtT1RUN_EXPR_TM);event.returnValue=false;return false;" title="Select Expire Time: Will open in a new window"><img src="../AMSImages/ADVCalendar.gif"
+ alt="Select Expire Time: Will open in a new window" title="Select Expire Time: Will open in a new window"></a>
+        </td>
+      </tr>
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1BS_AGENT', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'AGNT_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Job ID' ;
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<a name="btnT2pIM_SRVC_FLOW_PARM_Grid" href="ABI" id="btnT2pIM_SRVC_FLOW_PARM_Grid" title="Navigation to Edit Parameters" vsaction="pagetransition" 
+           vsds=""
+ vsnavigation="T2pIM_SRVC_FLOW_PARM_Grid">Edit Parameters</a>
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="ABI" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

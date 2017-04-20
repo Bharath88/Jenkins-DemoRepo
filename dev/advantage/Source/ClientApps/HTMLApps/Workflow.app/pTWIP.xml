@@ -1,0 +1,880 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="Default"
+	PositionTop="60"
+	PositionLeft="60"
+	PositionWidth="150"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSOtherPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-1422084414"
+	>
+	<FormCaption><![CDATA[Track Work in Progress]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="true"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="false"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="EditMode"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="PageCode"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="WF_TWIP_QRY"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="Display"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="False"
+		AllowInsert="False"
+		AllowUpdate="False"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="DOC_CD" />
+				<RSDefaultAttribute ID="2" Name="DOC_DEPT_CD" />
+				<RSDefaultAttribute ID="3" Name="DOC_ID" />
+				<RSDefaultAttribute ID="4" Name="DOC_VERS_NO" />
+				<RSDefaultAttribute ID="5" Name="SEQ_NO" />
+				<RSDefaultAttribute ID="6" Name="DOC_TYP" />
+				<RSDefaultAttribute ID="7" Name="STRT_DT" />
+				<RSDefaultAttribute ID="8" Name="SBMT_ID" />
+				<RSDefaultAttribute ID="9" Name="SBMT_NM" />
+				<RSDefaultAttribute ID="10" Name="ORD_NO_1" />
+				<RSDefaultAttribute ID="11" Name="APRV_ASGN_1" />
+				<RSDefaultAttribute ID="12" Name="APRV_ASGN_FL_1" />
+				<RSDefaultAttribute ID="13" Name="APRV_ASGN_NM_1" />
+				<RSDefaultAttribute ID="14" Name="ASGN_CMNT_1" />
+				<RSDefaultAttribute ID="15" Name="ASGN_EMAIL_FL_1" />
+				<RSDefaultAttribute ID="16" Name="ASGN_DT_1" />
+				<RSDefaultAttribute ID="17" Name="APRV_ACTN_STA_1" />
+				<RSDefaultAttribute ID="18" Name="APRV_ACTN_USID_1" />
+				<RSDefaultAttribute ID="19" Name="APRV_ACTN_NM_1" />
+				<RSDefaultAttribute ID="20" Name="ORD_NO_2" />
+				<RSDefaultAttribute ID="21" Name="APRV_ASGN_2" />
+				<RSDefaultAttribute ID="22" Name="APRV_ASGN_FL_2" />
+				<RSDefaultAttribute ID="23" Name="APRV_ASGN_NM_2" />
+				<RSDefaultAttribute ID="24" Name="ASGN_CMNT_2" />
+				<RSDefaultAttribute ID="25" Name="ASGN_EMAIL_FL_2" />
+				<RSDefaultAttribute ID="26" Name="ASGN_DT_2" />
+				<RSDefaultAttribute ID="27" Name="APRV_ACTN_STA_2" />
+				<RSDefaultAttribute ID="28" Name="APRV_ACTN_USID_2" />
+				<RSDefaultAttribute ID="29" Name="APRV_ACTN_NM_2" />
+				<RSDefaultAttribute ID="30" Name="ORD_NO_3" />
+				<RSDefaultAttribute ID="31" Name="APRV_ASGN_3" />
+				<RSDefaultAttribute ID="32" Name="APRV_ASGN_FL_3" />
+				<RSDefaultAttribute ID="33" Name="APRV_ASGN_NM_3" />
+				<RSDefaultAttribute ID="34" Name="ASGN_CMNT_3" />
+				<RSDefaultAttribute ID="35" Name="ASGN_EMAIL_FL_3" />
+				<RSDefaultAttribute ID="36" Name="ASGN_DT_3" />
+				<RSDefaultAttribute ID="37" Name="APRV_ACTN_STA_3" />
+				<RSDefaultAttribute ID="38" Name="APRV_ACTN_USID_3" />
+				<RSDefaultAttribute ID="39" Name="APRV_ACTN_NM_3" />
+				<RSDefaultAttribute ID="40" Name="ORD_NO_4" />
+				<RSDefaultAttribute ID="41" Name="APRV_ASGN_4" />
+				<RSDefaultAttribute ID="42" Name="APRV_ASGN_FL_4" />
+				<RSDefaultAttribute ID="43" Name="APRV_ASGN_NM_4" />
+				<RSDefaultAttribute ID="44" Name="ASGN_CMNT_4" />
+				<RSDefaultAttribute ID="45" Name="ASGN_EMAIL_FL_4" />
+				<RSDefaultAttribute ID="46" Name="ASGN_DT_4" />
+				<RSDefaultAttribute ID="47" Name="APRV_ACTN_STA_4" />
+				<RSDefaultAttribute ID="48" Name="APRV_ACTN_USID_4" />
+				<RSDefaultAttribute ID="49" Name="APRV_ACTN_NM_4" />
+				<RSDefaultAttribute ID="50" Name="ORD_NO_5" />
+				<RSDefaultAttribute ID="51" Name="APRV_ASGN_5" />
+				<RSDefaultAttribute ID="52" Name="APRV_ASGN_FL_5" />
+				<RSDefaultAttribute ID="53" Name="APRV_ASGN_NM_5" />
+				<RSDefaultAttribute ID="54" Name="ASGN_CMNT_5" />
+				<RSDefaultAttribute ID="55" Name="ASGN_EMAIL_FL_5" />
+				<RSDefaultAttribute ID="56" Name="ASGN_DT_5" />
+				<RSDefaultAttribute ID="57" Name="APRV_ACTN_STA_5" />
+				<RSDefaultAttribute ID="58" Name="APRV_ACTN_USID_5" />
+				<RSDefaultAttribute ID="59" Name="APRV_ACTN_NM_5" />
+				<RSDefaultAttribute ID="60" Name="ORD_NO_6" />
+				<RSDefaultAttribute ID="61" Name="APRV_ASGN_6" />
+				<RSDefaultAttribute ID="62" Name="APRV_ASGN_FL_6" />
+				<RSDefaultAttribute ID="63" Name="APRV_ASGN_NM_6" />
+				<RSDefaultAttribute ID="64" Name="ASGN_CMNT_6" />
+				<RSDefaultAttribute ID="65" Name="ASGN_EMAIL_FL_6" />
+				<RSDefaultAttribute ID="66" Name="ASGN_DT_6" />
+				<RSDefaultAttribute ID="67" Name="APRV_ACTN_STA_6" />
+				<RSDefaultAttribute ID="68" Name="APRV_ACTN_USID_6" />
+				<RSDefaultAttribute ID="69" Name="APRV_ACTN_NM_6" />
+				<RSDefaultAttribute ID="70" Name="ORD_NO_7" />
+				<RSDefaultAttribute ID="71" Name="APRV_ASGN_7" />
+				<RSDefaultAttribute ID="72" Name="APRV_ASGN_FL_7" />
+				<RSDefaultAttribute ID="73" Name="APRV_ASGN_NM_7" />
+				<RSDefaultAttribute ID="74" Name="ASGN_CMNT_7" />
+				<RSDefaultAttribute ID="75" Name="ASGN_EMAIL_FL_7" />
+				<RSDefaultAttribute ID="76" Name="ASGN_DT_7" />
+				<RSDefaultAttribute ID="77" Name="APRV_ACTN_STA_7" />
+				<RSDefaultAttribute ID="78" Name="APRV_ACTN_USID_7" />
+				<RSDefaultAttribute ID="79" Name="APRV_ACTN_NM_7" />
+				<RSDefaultAttribute ID="80" Name="ORD_NO_8" />
+				<RSDefaultAttribute ID="81" Name="APRV_ASGN_8" />
+				<RSDefaultAttribute ID="82" Name="APRV_ASGN_FL_8" />
+				<RSDefaultAttribute ID="83" Name="APRV_ASGN_NM_8" />
+				<RSDefaultAttribute ID="84" Name="ASGN_CMNT_8" />
+				<RSDefaultAttribute ID="85" Name="ASGN_EMAIL_FL_8" />
+				<RSDefaultAttribute ID="86" Name="ASGN_DT_8" />
+				<RSDefaultAttribute ID="87" Name="APRV_ACTN_STA_8" />
+				<RSDefaultAttribute ID="88" Name="APRV_ACTN_USID_8" />
+				<RSDefaultAttribute ID="89" Name="APRV_ACTN_NM_8" />
+				<RSDefaultAttribute ID="90" Name="ORD_NO_9" />
+				<RSDefaultAttribute ID="91" Name="APRV_ASGN_9" />
+				<RSDefaultAttribute ID="92" Name="APRV_ASGN_FL_9" />
+				<RSDefaultAttribute ID="93" Name="APRV_ASGN_NM_9" />
+				<RSDefaultAttribute ID="94" Name="ASGN_CMNT_9" />
+				<RSDefaultAttribute ID="95" Name="ASGN_EMAIL_FL_9" />
+				<RSDefaultAttribute ID="96" Name="ASGN_DT_9" />
+				<RSDefaultAttribute ID="97" Name="APRV_ACTN_STA_9" />
+				<RSDefaultAttribute ID="98" Name="APRV_ACTN_USID_9" />
+				<RSDefaultAttribute ID="99" Name="APRV_ACTN_NM_9" />
+				<RSDefaultAttribute ID="100" Name="ORD_NO_10" />
+				<RSDefaultAttribute ID="101" Name="APRV_ASGN_10" />
+				<RSDefaultAttribute ID="102" Name="APRV_ASGN_FL_10" />
+				<RSDefaultAttribute ID="103" Name="APRV_ASGN_NM_10" />
+				<RSDefaultAttribute ID="104" Name="ASGN_CMNT_10" />
+				<RSDefaultAttribute ID="105" Name="ASGN_EMAIL_FL_10" />
+				<RSDefaultAttribute ID="106" Name="ASGN_DT_10" />
+				<RSDefaultAttribute ID="107" Name="APRV_ACTN_STA_10" />
+				<RSDefaultAttribute ID="108" Name="APRV_ACTN_USID_10" />
+				<RSDefaultAttribute ID="109" Name="APRV_ACTN_NM_10" />
+				<RSDefaultAttribute ID="110" Name="CURR_ORD_NO" />
+				<RSDefaultAttribute ID="111" Name="ORD_NO_1_MAP" />
+				<RSDefaultAttribute ID="112" Name="ORD_NO_2_MAP" />
+				<RSDefaultAttribute ID="113" Name="ORD_NO_3_MAP" />
+				<RSDefaultAttribute ID="114" Name="ORD_NO_4_MAP" />
+				<RSDefaultAttribute ID="115" Name="ORD_NO_5_MAP" />
+				<RSDefaultAttribute ID="116" Name="ORD_NO_6_MAP" />
+				<RSDefaultAttribute ID="117" Name="ORD_NO_7_MAP" />
+				<RSDefaultAttribute ID="118" Name="ORD_NO_8_MAP" />
+				<RSDefaultAttribute ID="119" Name="ORD_NO_9_MAP" />
+				<RSDefaultAttribute ID="120" Name="ORD_NO_10_MAP" />
+				<RSDefaultAttribute ID="121" Name="LAST_ACTN_STA" />
+				<RSDefaultAttribute ID="122" Name="LAST_ACTN_USID" />
+				<RSDefaultAttribute ID="123" Name="LAST_ACTN_APRV_LVL" />
+				<RSDefaultAttribute ID="124" Name="DOC_CAT" />
+				<RSDefaultAttribute ID="125" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="126" Name="APRV_RULE_ID" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="STRT_DT" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="SBMT_NM" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="DOC_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_DEPT_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SEQ_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_TYP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SBMT_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_1" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_1" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_FL_1" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_NM_1" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_CMNT_1" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_EMAIL_FL_1" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_DT_1" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_STA_1" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_USID_1" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_NM_1" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_2" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_2" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_FL_2" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_NM_2" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_CMNT_2" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_EMAIL_FL_2" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_DT_2" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_STA_2" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_USID_2" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_NM_2" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_3" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_3" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_FL_3" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_NM_3" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_CMNT_3" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_EMAIL_FL_3" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_DT_3" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_STA_3" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_USID_3" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_NM_3" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_4" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_4" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_FL_4" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_NM_4" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_CMNT_4" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_EMAIL_FL_4" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_DT_4" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_STA_4" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_USID_4" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_NM_4" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_5" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_5" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_FL_5" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_NM_5" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_CMNT_5" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_EMAIL_FL_5" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_DT_5" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_STA_5" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_USID_5" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_NM_5" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_6" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_6" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_FL_6" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_NM_6" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_CMNT_6" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_EMAIL_FL_6" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_DT_6" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_STA_6" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_USID_6" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_NM_6" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_7" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_7" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_FL_7" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_NM_7" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_CMNT_7" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_EMAIL_FL_7" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_DT_7" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_STA_7" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_USID_7" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_NM_7" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_8" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_8" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_FL_8" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_NM_8" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_CMNT_8" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_EMAIL_FL_8" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_DT_8" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_STA_8" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_USID_8" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_NM_8" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_9" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_9" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_FL_9" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_NM_9" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_CMNT_9" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_EMAIL_FL_9" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_DT_9" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_STA_9" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_USID_9" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_NM_9" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_10" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_10" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_FL_10" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ASGN_NM_10" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_CMNT_10" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_EMAIL_FL_10" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_DT_10" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_STA_10" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_USID_10" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_ACTN_NM_10" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CURR_ORD_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_1_MAP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_2_MAP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_3_MAP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_4_MAP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_5_MAP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_6_MAP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_7_MAP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_8_MAP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_9_MAP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORD_NO_10_MAP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LAST_ACTN_STA" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LAST_ACTN_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LAST_ACTN_APRV_LVL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CAT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_RULE_ID" Displayed="False" UnPlaced="False" />
+			</ScalerAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value="%SBMT_NM%"
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="false"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="false"
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+		</ArchetypeExtendedProperties>
+		<Transition
+			FormTransNum="1"
+			Prefix="T2"
+			TargetFormName="pTWIP_Log"
+			IsTargetInitialQueryMode="False"
+			IsTargetInitialAddMode="False"
+			IsVisibleAppline="True"
+			IsAddedAfterGen="False"
+			FormTransCaption="View Log"
+			ClassName="PageNavigation"
+			TargetFramesetPage=""
+			TargetFrame=""
+			FrameNameInFramesetPage=""
+			RSID="2"
+			BusinessObject="WF_APRV_LOG"
+			RelnIsFromParent="True"
+			>
+			<OrderByClause><![CDATA[ EVNT_DT DESC]]></OrderByClause>
+			<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ DOC_CD = [?DOC_CD] AND DOC_DEPT_CD= [?DOC_DEPT_CD] AND DOC_ID = [?DOC_ID] AND DOC_VERS_NO = [?DOC_VERS_NO] ]]></AdditionalWhereClause>
+		</Transition>
+		<RecordSource
+			RSID="3"
+			Prefix="T3"
+			BusinessObject="WF_APRV_WRK_LST"
+			RelnIsFromParent="True"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+			RecordSourceArchetype="AMSGridNonEditable"
+			MaxGridRowCount="10"
+			FetchedBlockRowCount="16"
+			AllowDelete="False"
+			AllowInsert="False"
+			AllowUpdate="False"
+			SaveMode="Buffered"
+			PreFetchRowCount="False"
+			>
+			<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[DOC_CD = [?DOC_CD] AND DOC_DEPT_CD = [?DOC_DEPT_CD] AND DOC_ID = [?DOC_ID] AND DOC_VERS_NO = [?DOC_VERS_NO] ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="WRK_LST_TYP" />
+					<RSDefaultAttribute ID="2" Name="WRK_LST_ID" />
+					<RSDefaultAttribute ID="3" Name="ASSIGNEE" />
+					<RSDefaultAttribute ID="4" Name="ASSIGNEE_FL" />
+					<RSDefaultAttribute ID="5" Name="ASSIGNEE_NM" />
+					<RSDefaultAttribute ID="6" Name="APRV_LVL" />
+					<RSDefaultAttribute ID="7" Name="DISP_PG" />
+					<RSDefaultAttribute ID="8" Name="REAS" />
+					<RSDefaultAttribute ID="9" Name="CMNT" />
+					<RSDefaultAttribute ID="10" Name="CMNT_TXT" />
+					<RSDefaultAttribute ID="11" Name="CMNT_DISP" />
+					<RSDefaultAttribute ID="12" Name="ASGN_DT" />
+					<RSDefaultAttribute ID="13" Name="FWD_USID" />
+					<RSDefaultAttribute ID="14" Name="FWD_DT" />
+					<RSDefaultAttribute ID="15" Name="LOCK_USID" />
+					<RSDefaultAttribute ID="16" Name="DOC_CD" />
+					<RSDefaultAttribute ID="17" Name="DOC_ID" />
+					<RSDefaultAttribute ID="18" Name="DOC_VERS_NO" />
+					<RSDefaultAttribute ID="19" Name="DOC_DEPT_CD" />
+					<RSDefaultAttribute ID="20" Name="DOC_TYP" />
+					<RSDefaultAttribute ID="21" Name="DOC_CAT" />
+					<RSDefaultAttribute ID="22" Name="APPL_ID" />
+					<RSDefaultAttribute ID="23" Name="ASSIGNEE_UP" />
+					<RSDefaultAttribute ID="24" Name="LOCK_USID_UP" />
+					<RSDefaultAttribute ID="25" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="26" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="27" Name="SLF_APRV_RSCT" />
+					<RSDefaultAttribute ID="28" Name="DOC_CREA_USID" />
+					<RSDefaultAttribute ID="29" Name="DOC_SBMT_ID" />
+					<RSDefaultAttribute ID="30" Name="APRV_RULE_ID" />
+					<RSDefaultAttribute ID="31" Name="LOCK_USER_NM" />
+					<RSDefaultAttribute ID="32" Name="ESCL_ITEM" />
+					<RSDefaultAttribute ID="33" Name="ESCL_LEVEL" />
+					<RSDefaultAttribute ID="34" Name="WARN_ELIG_DT" />
+					<RSDefaultAttribute ID="35" Name="ESCL_1_ELIG_DT" />
+					<RSDefaultAttribute ID="36" Name="ESCL_2_ELIG_DT" />
+					<RSDefaultAttribute ID="37" Name="PRIORITY" />
+					<RSDefaultAttribute ID="38" Name="PRIORITY_REASON" />
+				</DefaultAttributes>
+				<GridAttributes>
+					<RSAttribute Name="WRK_LST_TYP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="WRK_LST_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APRV_RULE_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APRV_LVL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="ASSIGNEE" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ASSIGNEE_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ASSIGNEE_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DISP_PG" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REAS" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CMNT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CMNT_TXT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CMNT_DISP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ASGN_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FWD_USID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FWD_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LOCK_USID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_TYP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CAT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ASSIGNEE_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LOCK_USID_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SLF_APRV_RSCT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CREA_USID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_SBMT_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LOCK_USER_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ESCL_ITEM" Displayed="False" UnPlaced="True" />
+					<RSAttribute Name="ESCL_LEVEL" Displayed="False" UnPlaced="True" />
+					<RSAttribute Name="WARN_ELIG_DT" Displayed="False" UnPlaced="True" />
+					<RSAttribute Name="ESCL_1_ELIG_DT" Displayed="False" UnPlaced="True" />
+					<RSAttribute Name="ESCL_2_ELIG_DT" Displayed="False" UnPlaced="True" />
+					<RSAttribute Name="PRIORITY" Displayed="False" UnPlaced="True" />
+					<RSAttribute Name="PRIORITY_REASON" Displayed="False" UnPlaced="True" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="ColumnProjectionLevel"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileName"
+					Value=""
+				/>
+				<Property
+					Name="DownloadMaxRows"
+					Value=""
+				/>
+				<Property
+					Name="DownloadProperties"
+					Value=""
+				/>
+				<Property
+					Name="DownloadTemplate"
+					Value=""
+				/>
+				<Property
+					Name="DynamicGridAttrib"
+					Value=""
+				/>
+				<Property
+					Name="maintenanceString"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCount"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCountMsg"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageEndWith"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageStartWith"
+					Value=""
+				/>
+				<Property
+					Name="MultiTableCurrentRow"
+					Value=""
+				/>
+				<Property
+					Name="PreFetchRowCount"
+					Value=""
+				/>
+				<Property
+					Name="SearchColList"
+					Value=""
+				/>
+				<Property
+					Name="ShowSearchPopup"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+				<Property
+					Name="VirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="ZoomDataSource"
+					Value=""
+				/>
+			</ExtendedProperties>
+			<ArchetypeExtendedProperties>
+				<Property
+					Name="Action_1_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_1_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_1_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_2_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_2_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_3_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_3_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_4_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_4_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_5_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_5_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="DetailsCaption"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileType"
+					Value="none"
+				/>
+				<Property
+					Name="GridDownloadFileType"
+					Value="none"
+				/>
+				<Property
+					Name="ObjectAttachmentMode"
+					Value="Editable"
+				/>
+				<Property
+					Name="ObjectAttachments"
+					Value="false"
+				/>
+				<Property
+					Name="showCopyPaste"
+					Value="true"
+				/>
+				<Property
+					Name="TimelineData"
+					Value="false"
+				/>
+				<Property
+					Name="UploadFileType"
+					Value="none"
+				/>
+			</ArchetypeExtendedProperties>
+		</RecordSource>
+	</RecordSource>
+</Form>

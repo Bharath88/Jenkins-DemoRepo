@@ -1,0 +1,318 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="Default"
+	PositionTop="76"
+	PositionLeft="208"
+	PositionWidth="198"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSRefTablePage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-878121373"
+	>
+	<FormCaption><![CDATA[Question about Error Messages]]></FormCaption>
+	<Description><![CDATA[If you have a question specific to the errors you have received, you may submit a question below.
+The error code(s) and message(s) you received will be sent along with the question you provide below. Our representative will respond to you by the email or phone number that is listed in your profile.]]></Description>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="AltSelfService"
+		/>
+		<Property
+			Name="PageDescription"
+			Value="If you have a question specific to the errors you have received, you may submit a question below. The error code(s) and message(s) you received will be sent along with the question you provide below. Our representative will respond to you by the email or phone number that is listed in your profile."
+		/>
+		<Property
+			Name="Search"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="EditMode"
+			Value=""
+		/>
+		<Property
+			Name="ErrorsFromPage"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="PageCode"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="SearchDS"
+			Value=""
+		/>
+		<Property
+			Name="SearchPopupOnload"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="R_EMAIL_LTR_GEN"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="Display"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="UNID" />
+				<RSDefaultAttribute ID="2" Name="LTR_EMAIL_IND" />
+				<RSDefaultAttribute ID="3" Name="SEND_TO" />
+				<RSDefaultAttribute ID="4" Name="SUBJECT" />
+				<RSDefaultAttribute ID="5" Name="EMAIL_LTRTXT" />
+				<RSDefaultAttribute ID="6" Name="UPD_VEND_NOTIF_TBL" />
+				<RSDefaultAttribute ID="7" Name="EMAIL_SPFC_DATA" />
+				<RSDefaultAttribute ID="8" Name="DT_TS" />
+				<RSDefaultAttribute ID="9" Name="AUTO_SEND_EMAIL_AD" />
+				<RSDefaultAttribute ID="10" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="11" Name="TBL_LAST_DT" />
+				<RSDefaultAttribute ID="13" Name="SYNC_EMAIL_FL" />
+				<RSDefaultAttribute ID="12" Name="PAGE_DATA" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="AUTO_SEND_EMAIL_AD" Displayed="False" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="SEND_TO" Displayed="False" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="SUBJECT" Displayed="False" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LTR_EMAIL_IND" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="EMAIL_LTRTXT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="UPD_VEND_NOTIF_TBL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="EMAIL_SPFC_DATA" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DT_TS" Displayed="False" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PAGE_DATA" Displayed="False" UnPlaced="False" Archetype="DisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SYNC_EMAIL_FL" Displayed="False" UnPlaced="False" />
+			</ScalerAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="ShowSearchPopup"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value=""
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="false"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="false"
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+		</ArchetypeExtendedProperties>
+	</RecordSource>
+</Form>

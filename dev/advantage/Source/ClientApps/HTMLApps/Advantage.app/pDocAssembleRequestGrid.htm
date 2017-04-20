@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Assemble Request</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="pDocAssembleRequestGrid">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Assemble Request">Assemble Request</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="Advantage" vsds="" vsaction="84" title="Back to Previous Page" name="QueryBack" id="QueryBack" accesskey="Z">Back</a>
+      <!-- BEGIN CUSTOMIZATION -->
+      
+
+      
+         <a href="" id="Refresh_Page" name="Refresh_Page" title="Refresh Page"
+             
+            onclick="submitForm(document.forms[0],'refresh_page=refresh_page','');return false;" 
+          >Refresh</a>
+        
+
+      
+      
+      <!-- END CUSTOMIZATION -->
+  </div>
+      
+ 
+  
+  
+  
+  <input type="hidden" name="T1R_ASEM_REQ_Currency" value="">
+  <input type="hidden" name="T1R_ASEM_REQ_Old_Currency" value="">
+  <table name="tblT1R_ASEM_REQ" id="tblT1R_ASEM_REQ" class="advgrid" vsds="T1R_ASEM_REQ">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><span id="T1REQ_IDsortGridLabel" name="T1REQ_IDsortGridLabel" title="Request Id">Request Id</span></th>
+      
+        <th 
+><span id="T1AGNT_IDsortGridLabel" name="T1AGNT_IDsortGridLabel" title="Job Id">Job Id</span></th>
+      
+        <th 
+><span id="T1USIDsortGridLabel" name="T1USIDsortGridLabel" title="User Id">User Id</span></th>
+      
+        <th 
+><span id="T1STRT_TMsortGridLabel" name="T1STRT_TMsortGridLabel" title="Start Time">Start Time</span></th>
+      
+        <th 
+><span id="T1END_TMsortGridLabel" name="T1END_TMsortGridLabel" title="End Time">End Time</span></th>
+      
+        <th 
+><span id="T1STA_CDsortGridLabel" name="T1STA_CDsortGridLabel" title="Status">Status</span></th>
+      
+        <th 
+><span id="T1SHORT_MSGsortGridLabel" name="T1SHORT_MSGsortGridLabel" title="Message">Message</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_ASEM_REQvscurrency" id="T1R_ASEM_REQvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1R_ASEM_REQ" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1REQ_ID" vsds="T1R_ASEM_REQ" vsdf="REQ_ID" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1AGNT_ID" vsds="T1R_ASEM_REQ" vsdf="AGNT_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1USID" vsds="T1R_ASEM_REQ" vsdf="USID" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1STRT_TM" vsds="T1R_ASEM_REQ" vsdf="STRT_TM" 
+    vsformat="MM-dd-yyyy HH:mm:ss"
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1END_TM" vsds="T1R_ASEM_REQ" vsdf="END_TM" 
+    vsformat="MM-dd-yyyy HH:mm:ss"
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1R_ASEM_REQ" vsdf="STA_CD" vscodetable="CVL_ASEM_STA_CD">
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1SHORT_MSG" vsds="T1R_ASEM_REQ" vsdf="SHORT_MSG" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+      
+      
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Advantage" vsds="T1R_ASEM_REQ" vsaction="firstpage" name="T1R_ASEM_REQfirstpage" id="T1R_ASEM_REQfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+<a href="Advantage" vsds="T1R_ASEM_REQ" vsaction="prevpage" name="T1R_ASEM_REQprevpage" id="T1R_ASEM_REQprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+<a href="Advantage" vsds="T1R_ASEM_REQ" vsaction="nextpage" id="T1R_ASEM_REQnextpage" name="T1R_ASEM_REQnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+<a href="Advantage" vsds="T1R_ASEM_REQ" vsaction="lastpage" id="T1R_ASEM_REQlastpage" name="T1R_ASEM_REQlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+<a name="btnT2pDocAssembleRequestGrid" href="Advantage" vsaction="pagetransition" id="btnT2pDocAssembleRequestGrid" 
+           vsds="T1R_ASEM_REQ"
+ vsnavigation="T2pDocAssembleRequestGrid" title="Navigation to View Job Log Messages">View Job Log Messages</a>
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_ASEM_REQ', new Array(), new Array() ) ;
+    
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

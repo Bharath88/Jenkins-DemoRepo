@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="UIFSToScFld"
+		ChildRoleName="ScFldToUIFS"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="FLD_ID"
+				ChildAttribute="FLD_ID"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[Field]]></AscendCaption>
+		<DescendCaption><![CDATA[R_SC_UI_FLD_SEC(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_FLD/FLD_ID],v:User Interface Field Security%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:User Interface Field Security record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_SC_UI_FLD_SEC/FLD_ID],v:Secured Fields page%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

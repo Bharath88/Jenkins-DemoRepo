@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="IN_LEAFs"
+		ParentRoleName="CVL_IN_LEAF_AT"
+		>
+		<AscendCaption><![CDATA[CVL_IN_LEAF_AT]]> </AscendCaption>
+		<DescendCaption><![CDATA[IN_LEAF(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[ ]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[ ]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[ ]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="LEAF_AT_NM"
+				ChildAttribute="LEAF_AT_NM"
+			/>
+		</AttributePairs>
+	</Relationship>
+</Relationships>

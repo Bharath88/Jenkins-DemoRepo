@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="Startup"
+	PositionTop="0"
+	PositionLeft="0"
+	PositionWidth="150"
+	PositionHeight="44"
+	IsAddedAfterGen="True"
+	HasCustomFormLayout="False"
+	ObjectsUnusedByFormLayout="True"
+	External="False"
+	NoDataForm="False"
+	ClassName="VSPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="1636842315"
+	>
+	<FormCaption><![CDATA[StartupPage]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+	</ArchetypeExtendedProperties>
+	<Transition
+		FormTransNum="1"
+		Prefix="T1"
+		TargetFormName="pPageList"
+		IsTargetInitialQueryMode="False"
+		IsTargetInitialAddMode="False"
+		IsVisibleAppline="True"
+		IsAddedAfterGen="True"
+		FormTransCaption="Mobile Apps"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSPageNavigation"
+		TargetFramesetPage=""
+		TargetFrame=""
+		FrameNameInFramesetPage=""
+		RSID="1"
+		BusinessObject="NoData"
+		RelnIsFromParent="True"
+		>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+	</Transition>
+</Form>

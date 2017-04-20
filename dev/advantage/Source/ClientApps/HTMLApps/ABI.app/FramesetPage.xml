@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="DefaultStartupFrameset"
+	PositionTop="10"
+	PositionLeft="635"
+	PositionWidth="150"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="True"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="1348302610"
+	>
+	<FormCaption><![CDATA[FramesetPage]]></FormCaption>
+</Form>

@@ -1,0 +1,575 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>ABI Meridian Event Detail</title>
+  <base href>
+
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="ABI" method="post" vsform="true" name="pQRY_MERIDIAN_EVENT">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="ABI Meridian Event Detail">ABI Meridian Event Detail</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+
+      <a href="ABI" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+
+
+
+
+  <a name="T1QRY_MERIDIAN_EVENT_Top"></a>
+
+
+
+  <input type="hidden" name="T1QRY_MERIDIAN_EVENT_Currency" >
+  <input type="hidden" name="T1QRY_MERIDIAN_EVENT_Old_Currency" >
+  <table name="tblT1QRY_MERIDIAN_EVENT" id="tblT1QRY_MERIDIAN_EVENT" class="advgrid" vsds="T1QRY_MERIDIAN_EVENT">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1DIRECTIONsortGridLabel" name="T1DIRECTIONsortGridLabel" title="Direction">Direction</span></th>
+
+        <th
+><span id="T1TRANSACT_IDsortGridLabel" name="T1TRANSACT_IDsortGridLabel" title="Transaction ID">Transaction ID</span></th>
+
+        <th
+><span id="T1EVENT_STATUSsortGridLabel" name="T1EVENT_STATUSsortGridLabel" title="Status">Status</span></th>
+
+        <th
+><span id="T1UPDATE_TIMESTAMPsortGridLabel" name="T1UPDATE_TIMESTAMPsortGridLabel" title="Update Timestamp">Update Timestamp</span></th>
+<!-- BEGIN CUSTOMIZATION -->
+        <th
+><span id="T1RPRC_CNTsortGridLabel" name="T1RPRC_CNTsortGridLabel" vsdf="RPRC_CNT" title="RPRC_CNT">Reprocessing Count</span></th>
+        <th
+><span id="T1RPRC_SUCCS_CNTsortGridLabel" name="T1RPRC_SUCCS_CNTsortGridLabel" vsdf="RPRC_SUCCS_CNT" title="RPRC_SUCCS_CNT">Reprocessing Success Count</span></th>
+ <!-- END CUSTOMIZATION -->
+      <th class="advcorner right"></th>
+    </tr>
+    <tr class="advgridoddrow" onclick="UTILS_SelectGridRow(this);return true;" ams_altclassname="advgridevenrow" vsprototyperow="true">
+      <td class="advgridrowselect">
+        <input type="image" name="T1QRY_MERIDIAN_EVENTvscurrency" id="T1QRY_MERIDIAN_EVENTvscurrency" title="Select Row" alt="Select Row" src="../AMSImages/ADVRowSel.gif"
+ vsds="T1QRY_MERIDIAN_EVENT" vsaction="Currency">
+      </td>
+
+        <td
+>
+          <vstext vsds="T1QRY_MERIDIAN_EVENT" vsdf="DIRECTION" vscodetable="CVL_DIRECTION">
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1TRANSACT_ID" vsds="T1QRY_MERIDIAN_EVENT" vsdf="TRANSACT_ID"
+>
+        </td>
+
+        <td
+>
+          <vstext vsds="T1QRY_MERIDIAN_EVENT" vsdf="EVENT_STATUS" vscodetable="CVL_EVENT_STATUS">
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1UPDATE_TIMESTAMP" vsds="T1QRY_MERIDIAN_EVENT" vsdf="UPDATE_TIMESTAMP"
+    vsformat="MM/dd/yyyy HH:mm:ss"
+>
+        </td>
+        <td
+      class="right"
+>
+          <vstext name="txtT1RPRC_CNT" vsds="T1QRY_MERIDIAN_EVENT" vsdf="RPRC_CNT"
+>
+        </td>
+        <td
+      class="right"
+>
+          <vstext name="txtT1RPRC_SUCCS_CNT" vsds="T1QRY_MERIDIAN_EVENT" vsdf="RPRC_SUCCS_CNT"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><div name="T1QRY_MERIDIAN_EVENTGridNav" id="T1QRY_MERIDIAN_EVENTGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+         <a href="ABI" vsds="T1QRY_MERIDIAN_EVENT" vsaction="firstpage" name="T1QRY_MERIDIAN_EVENTfirstpage" id="T1QRY_MERIDIAN_EVENTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+         <a href="ABI" vsds="T1QRY_MERIDIAN_EVENT" vsaction="prevpage" name="T1QRY_MERIDIAN_EVENTprevpage" id="T1QRY_MERIDIAN_EVENTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+         <a href="ABI" vsds="T1QRY_MERIDIAN_EVENT" vsaction="nextpage" id="T1QRY_MERIDIAN_EVENTnextpage" name="T1QRY_MERIDIAN_EVENTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+         <a href="ABI" vsds="T1QRY_MERIDIAN_EVENT" vsaction="lastpage" id="T1QRY_MERIDIAN_EVENTlastpage" name="T1QRY_MERIDIAN_EVENTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+
+    </tr>
+  </table>
+
+
+<hr class="advsectsep"></hr>
+
+
+
+
+
+      <table class="advaction recsrc">
+        <tr>
+
+         <td>
+<ams_map title="Update Actions" name="Update Actions">
+
+      <a href="ABI" vsds="T1QRY_MERIDIAN_EVENT" vsaction="saveall" name="T1QRY_MERIDIAN_EVENTSaveAll" id="T1QRY_MERIDIAN_EVENTSaveAll" title="Save All" accesskey="5">Save</a>
+
+      <a href="ABI" vsds="T1QRY_MERIDIAN_EVENT" vsaction="undoall" name="T1QRY_MERIDIAN_EVENTUndoAll" id="T1QRY_MERIDIAN_EVENTUndoAll" title="Undo All" accesskey="6">Undo</a>
+</ams_map>
+
+
+      </td>
+
+
+      <td><vstext vsds=" " name="T1QRY_MERIDIAN_EVENTSearchColList" vspreservetag="true"></td>
+
+
+      <td><ams_map title="Section Controls" name="Section Controls">
+
+  <a href="javascript:
+        AMSTAB_ExpandSection('T1QRY_MERIDIAN_EVENT_Section1','T1QRY_MERIDIAN_EVENT_Section1_Button');
+          AMSTAB_ExpandSection('T1QRY_MERIDIAN_EVENT_Section2','T1QRY_MERIDIAN_EVENT_Section2_Button');
+            AMSTAB_ExpandSection('T1QRY_MERIDIAN_EVENT_Section3','T1QRY_MERIDIAN_EVENT_Section3_Button');
+              AMSTAB_ExpandSection('T1QRY_MERIDIAN_EVENT_Section4','T1QRY_MERIDIAN_EVENT_Section4_Button');
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+
+  <a href="javascript:
+        AMSTAB_CollapseSection('T1QRY_MERIDIAN_EVENT_Section1','T1QRY_MERIDIAN_EVENT_Section1_Button');
+          AMSTAB_CollapseSection('T1QRY_MERIDIAN_EVENT_Section2','T1QRY_MERIDIAN_EVENT_Section2_Button');
+            AMSTAB_CollapseSection('T1QRY_MERIDIAN_EVENT_Section3','T1QRY_MERIDIAN_EVENT_Section3_Button');
+              AMSTAB_CollapseSection('T1QRY_MERIDIAN_EVENT_Section4','T1QRY_MERIDIAN_EVENT_Section4_Button');
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+
+<!--BEGIN CUSTOMIZATION-->
+<a href="ABI" vsds="T1QRY_MERIDIAN_EVENT" vsaction="T1QRY_MERIDIAN_EVENT_ViewSource" id="T1QRY_MERIDIAN_EVENT_ViewSource" name="T1QRY_MERIDIAN_EVENT_ViewSource" title="View Source">View Source</a>
+<a href="ABI" vsds="T1QRY_MERIDIAN_EVENT" vsaction="T1QRY_MERIDIAN_EVENT_Refresh" id="T1QRY_MERIDIAN_EVENT_Refresh" name="T1QRY_MERIDIAN_EVENT_Refresh" title="Refresh">Refresh</a>
+<!--END CUSTOMIZATION-->
+        </tr>
+      </table>
+
+  <fieldset class="advscalar">
+    <div class="advpresection">
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+
+
+        </table></td></tr></table></div></fieldset><a name="T1QRY_MERIDIAN_EVENT_Section1_Top"></a><fieldset class="advscalar section">
+        <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1QRY_MERIDIAN_EVENT_Section1','T1QRY_MERIDIAN_EVENT_Section1_Button');" title="Expand/Collapse General"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1QRY_MERIDIAN_EVENT_Section1_Button"> General</a></legend>
+        <div id="T1QRY_MERIDIAN_EVENT_Section1" class="advsection">
+        <table><tr><td class="advscalarcol"><table class="advscalar">
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1TRANSACT_ID" title="Transaction ID">Transaction ID :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1TRANSACT_ID" id="txtT1TRANSACT_ID"
+            size="20"
+ vsds="T1QRY_MERIDIAN_EVENT" vsdf="TRANSACT_ID"
+ value="TRANSACT_ID" ams_readonly ShowCodeInfo="" title="Transaction ID">
+        </td>
+      </tr>
+
+
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1TRANSACT_ST_CD" title="Transaction CD">Transaction CD :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1TRANSACT_ST_CD" id="txtT1TRANSACT_ST_CD"
+            size="20"
+ vsds="T1QRY_MERIDIAN_EVENT" vsdf="TRANSACT_ST_CD"
+ value="TRANSACT_ST_CD" ams_readonly ShowCodeInfo="" title="Transaction CD">
+        </td>
+      </tr>
+
+
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1TRANSACT_ST_SD" title="Transaction Short Desc">Transaction Short Desc :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1TRANSACT_ST_SD" id="txtT1TRANSACT_ST_SD"
+            size="20"
+ vsds="T1QRY_MERIDIAN_EVENT" vsdf="TRANSACT_ST_SD"
+ value="TRANSACT_ST_SD" ams_readonly ShowCodeInfo="" title="Transaction Short Desc">
+        </td>
+      </tr>
+
+
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1TRANSACT_ST_LD" title="Transaction Long Desc">Transaction Long Desc :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1TRANSACT_ST_LD" id="txtT1TRANSACT_ST_LD"
+            size="20"
+ vsds="T1QRY_MERIDIAN_EVENT" vsdf="TRANSACT_ST_LD"
+ value="TRANSACT_ST_LD" ams_readonly ShowCodeInfo="" title="Transaction Long Desc">
+        </td>
+      </tr>
+
+
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1SENDER_ID" title="Sender ID">Sender ID :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1SENDER_ID" id="txtT1SENDER_ID"
+            size="20"
+ vsds="T1QRY_MERIDIAN_EVENT" vsdf="SENDER_ID"
+ value="SENDER_ID" ams_readonly ShowCodeInfo="" title="Sender ID">
+        </td>
+      </tr>
+
+
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1REFERENCE" title="Reference">Reference :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1REFERENCE" id="txtT1REFERENCE"
+            size="20"
+ vsds="T1QRY_MERIDIAN_EVENT" vsdf="REFERENCE"
+ value="REFERENCE" ams_readonly ShowCodeInfo="" title="Reference">
+        </td>
+      </tr>
+
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+
+      <tr>
+
+      <td class="label"><label for="txtT1DIRECTION" title="Direction">Direction :</label></td>
+
+        <td class="val">
+          <select name="txtT1DIRECTION" id="txtT1DIRECTION" vsds="T1QRY_MERIDIAN_EVENT" vsdf="DIRECTION" size="1" vscodetable="CVL_DIRECTION" ShowCodeInfo="" title="Direction" ams_readonly>
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+
+      <tr>
+
+      <td class="label"><label for="txtT1EVENT_STATUS" title="Status">Status :</label></td>
+
+        <td class="val">
+          <select name="txtT1EVENT_STATUS" id="txtT1EVENT_STATUS" vsds="T1QRY_MERIDIAN_EVENT" vsdf="EVENT_STATUS" size="1" vscodetable="CVL_EVENT_STATUS" ShowCodeInfo="" title="Status">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1CLIENT_ID" title="Client ID">Client ID :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1CLIENT_ID" id="txtT1CLIENT_ID"
+            size="20"
+ vsds="T1QRY_MERIDIAN_EVENT" vsdf="CLIENT_ID"
+ value="CLIENT_ID" ams_readonly ShowCodeInfo="" title="Client ID">
+        </td>
+      </tr>
+
+
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1UPDATE_TIMESTAMP" title="Update Timestamp">Update Timestamp :</label></td>
+
+        <td class="val">
+          <input type="text" id="txtT1UPDATE_TIMESTAMP" name="txtT1UPDATE_TIMESTAMP" size="15" vsds="T1QRY_MERIDIAN_EVENT" vsdf="UPDATE_TIMESTAMP"
+    vsformat="MM/dd/yyyy HH:mm:ss"
+ value="UPDATE_TIMESTAMP" title="Update Timestamp" ams_readonly >
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.pQRY_MERIDIAN_EVENT.txtT1UPDATE_TIMESTAMP.value, 'txtT1UPDATE_TIMESTAMP', document.pQRY_MERIDIAN_EVENT.txtT1UPDATE_TIMESTAMP);event.returnValue=false;return false;" title="Select Update Timestamp: Will open in a new window"><img src="../AMSImages/ADVCalendar.gif"
+ alt="Select Update Timestamp: Will open in a new window" title="Select Update Timestamp: Will open in a new window"></a>
+        </td>
+      </tr>
+
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1RECIPIENT_ID" title="Recipient ID">Recipient ID :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1RECIPIENT_ID" id="txtT1RECIPIENT_ID"
+            size="20"
+ vsds="T1QRY_MERIDIAN_EVENT" vsdf="RECIPIENT_ID"
+ value="RECIPIENT_ID" ams_readonly ShowCodeInfo="" title="Recipient ID">
+        </td>
+      </tr>
+      <tr>
+      <td class="label"><label for="txtT1SOURCE_TRANSACT_ID" title="Source">Source :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1SOURCE_TRANSACT_ID" id="txtT1SOURCE_TRANSACT_ID"
+            size="20"
+ vsds="T1QRY_MERIDIAN_EVENT" vsdf="SOURCE_TRANSACT_ID"
+ value="SOURCE_TRANSACT_ID" ams_readonly ShowCodeInfo="" title="Source">
+        </td>
+      </tr>
+</table></td>
+<!-- BEGIN CUSTOMIZATION -->
+
+<td class="advscalarcol"><table class="advscalar">
+      <td class="label"><label for="txtT1RPRC_CNT" title="RPRC_CNT">Reprocessing Count :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1RPRC_CNT" id="txtT1RPRC_CNT"
+            size="10"
+ vsds="T1QRY_MERIDIAN_EVENT" vsdf="RPRC_CNT"
+ value="RPRC_CNT" ams_readonly ShowCodeInfo="" title="RPRC_CNT">
+        </td>
+      </tr>
+      <tr>
+      <td class="label"><label for="txtT1RPRC_SUCCS_CNT" title="RPRC_SUCCS_CNT">Reprocessing Success Count :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1RPRC_SUCCS_CNT" id="txtT1RPRC_SUCCS_CNT"
+            size="10"
+ vsds="T1QRY_MERIDIAN_EVENT" vsdf="RPRC_SUCCS_CNT"
+ value="RPRC_SUCCS_CNT" ams_readonly ShowCodeInfo="" title="RPRC_SUCCS_CNT">
+        </td>
+      </tr>
+</table></td>
+
+
+
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+          </table></td></tr></table></div></fieldset><br><br><a name="T1QRY_MERIDIAN_EVENT_Section2_Top"></a><fieldset class="advscalar section">
+          <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1QRY_MERIDIAN_EVENT_Section2','T1QRY_MERIDIAN_EVENT_Section2_Button');" title="Expand/Collapse Packet Information"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1QRY_MERIDIAN_EVENT_Section2_Button"> Packet Information</a></legend>
+          <div id="T1QRY_MERIDIAN_EVENT_Section2" class="advsection">
+          <table><tr><td class="advscalarcol"><table class="advscalar">
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1PACKET_ID" title="Packet ID">Packet ID :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1PACKET_ID" id="txtT1PACKET_ID"
+            size="20"
+ vsds="T1QRY_MERIDIAN_EVENT" vsdf="PACKET_ID"
+ value="PACKET_ID" ams_readonly ShowCodeInfo="" title="Packet ID">
+        </td>
+      </tr>
+
+
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1PACKET_MANIFEST_CD" title="Packet Manifest CD">Packet Manifest CD :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1PACKET_MANIFEST_CD" id="txtT1PACKET_MANIFEST_CD"
+            size="20"
+ vsds="T1QRY_MERIDIAN_EVENT" vsdf="PACKET_MANIFEST_CD"
+ value="PACKET_MANIFEST_CD" ams_readonly ShowCodeInfo="" title="Packet Manifest CD">
+        </td>
+      </tr>
+
+
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1PACKET_ST_SD" title="Packet Short Desc">Packet Short Desc :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1PACKET_ST_SD" id="txtT1PACKET_ST_SD"
+            size="20"
+ vsds="T1QRY_MERIDIAN_EVENT" vsdf="PACKET_ST_SD"
+ value="PACKET_ST_SD" ams_readonly ShowCodeInfo="" title="Packet Short Desc">
+        </td>
+      </tr>
+
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1PACKET_ACT_CD" title="Packet Action">Packet Action :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1PACKET_ACT_CD" id="txtT1PACKET_ACT_CD"
+            size="20"
+ vsds="T1QRY_MERIDIAN_EVENT" vsdf="PACKET_ACT_CD"
+ value="PACKET_ACT_CD" ams_readonly ShowCodeInfo="" title="Packet Action">
+        </td>
+      </tr>
+
+
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1PACKET_ST_CD" title="Packet CD">Packet CD :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1PACKET_ST_CD" id="txtT1PACKET_ST_CD"
+            size="20"
+ vsds="T1QRY_MERIDIAN_EVENT" vsdf="PACKET_ST_CD"
+ value="PACKET_ST_CD" ams_readonly ShowCodeInfo="" title="Packet CD">
+        </td>
+      </tr>
+
+
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1PACKET_ST_LD" title="Packet Long Desc">Packet Long Desc :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1PACKET_ST_LD" id="txtT1PACKET_ST_LD"
+            size="20"
+ vsds="T1QRY_MERIDIAN_EVENT" vsdf="PACKET_ST_LD"
+ value="PACKET_ST_LD" ams_readonly ShowCodeInfo="" title="Packet Long Desc">
+        </td>
+      </tr>
+
+
+            </table></td></tr></table></div></fieldset><br><br><a name="T1QRY_MERIDIAN_EVENT_Section3_Top"></a><fieldset class="advscalar section">
+            <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1QRY_MERIDIAN_EVENT_Section3','T1QRY_MERIDIAN_EVENT_Section3_Button');" title="Expand/Collapse Event Detail"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1QRY_MERIDIAN_EVENT_Section3_Button"> Event Detail</a></legend>
+            <div id="T1QRY_MERIDIAN_EVENT_Section3" class="advsection">
+            <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+
+
+      <td class="label"><label for="txtT1EVENT_DETAIL" title="Detail">Detail :</label></td>
+
+        <td class="val memo">
+          <textarea cols="60" class="disabled" readonly="readonly" rows="10" name="txtT1EVENT_DETAIL" id="txtT1EVENT_DETAIL" vsds="T1QRY_MERIDIAN_EVENT" vsdf="EVENT_DETAIL"
+ title="Detail"></textarea>
+        </td>
+      </tr>
+
+              </table></td></tr></table></div></fieldset><br><br><a name="T1QRY_MERIDIAN_EVENT_Section4_Top"></a><fieldset class="advscalar section">
+              <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1QRY_MERIDIAN_EVENT_Section4','T1QRY_MERIDIAN_EVENT_Section4_Button');" title="Expand/Collapse Error Detail"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1QRY_MERIDIAN_EVENT_Section4_Button"> Error Detail</a></legend>
+              <div id="T1QRY_MERIDIAN_EVENT_Section4" class="advsection">
+              <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+
+
+      <td class="label"><label for="txtT1EVENT_ERROR_MESSAGE" title="Error">Error :</label></td>
+
+        <td class="val memo">
+          <textarea cols="60" class="disabled" readonly="readonly" rows="10" name="txtT1EVENT_ERROR_MESSAGE" id="txtT1EVENT_ERROR_MESSAGE" vsds="T1QRY_MERIDIAN_EVENT" vsdf="EVENT_ERROR_MESSAGE"
+ title="Error"></textarea>
+        </td>
+      </tr>
+
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+
+      <br><br><table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T1QRY_MERIDIAN_EVENT_Top');" title="Go To Top">Top</a></td></tr></table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1QRY_MERIDIAN_EVENT', new Array(), new Array() ) ;
+
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<!-- BEGIN CUSTOMIZATION -->
+ <a href="ABI" vsds="" vsaction="relatedEvents" name="relatedEvents" id="relatedEvents" title="Related Events" accesskey="V">Related Events</a>
+ <a href="ABI" vsds="" vsaction="serviceFlows" name="serviceFlows" id="serviceFlows" title="Service Flows" accesskey="V">Service Flows</a>
+<!-- END CUSTOMIZATION -->
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="ABI" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

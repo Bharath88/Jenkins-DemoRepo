@@ -1,0 +1,566 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="Default"
+	PositionTop="527"
+	PositionLeft="20"
+	PositionWidth="270"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-405816256"
+	>
+	<FormCaption><![CDATA[Favorite Folder Properties]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value="&quot;MIPageHelp&quot;"
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="IN_FAV"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="Display"
+		MaxGridRowCount="1"
+		FetchedBlockRowCount="1"
+		AllowDelete="False"
+		AllowInsert="False"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="FAV_UNID" />
+				<RSDefaultAttribute ID="2" Name="USER_ID" />
+				<RSDefaultAttribute ID="26" Name="SEQ_NO" />
+				<RSDefaultAttribute ID="8" Name="FAV_NM" />
+				<RSDefaultAttribute ID="27" Name="FAV_FLDR_FL" />
+				<RSDefaultAttribute ID="12" Name="PARENT_UNID" />
+				<RSDefaultAttribute ID="13" Name="PARENT_NM" />
+				<RSDefaultAttribute ID="17" Name="PAGE_CD" />
+				<RSDefaultAttribute ID="18" Name="PAGE_TYP_CD" />
+				<RSDefaultAttribute ID="15" Name="APPL_NM" />
+				<RSDefaultAttribute ID="14" Name="DEST_PG" />
+				<RSDefaultAttribute ID="4" Name="DEST_FRAMESET" />
+				<RSDefaultAttribute ID="5" Name="DEST_FRAME" />
+				<RSDefaultAttribute ID="19" Name="DOC_CAT" />
+				<RSDefaultAttribute ID="20" Name="DOC_TYP" />
+				<RSDefaultAttribute ID="36" Name="DOC_CD" />
+				<RSDefaultAttribute ID="22" Name="DOC_DEPT_CD" />
+				<RSDefaultAttribute ID="23" Name="DOC_ID" />
+				<RSDefaultAttribute ID="24" Name="DOC_VERS_NO" />
+				<RSDefaultAttribute ID="28" Name="WHERE_CLAUSE" />
+				<RSDefaultAttribute ID="25" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="29" Name="FAV_ROOT" />
+				<RSDefaultAttribute ID="30" Name="APPL_ID" />
+				<RSDefaultAttribute ID="32" Name="TARGET_FRAME" />
+				<RSDefaultAttribute ID="33" Name="MODE_IND" />
+				<RSDefaultAttribute ID="34" Name="ORDER_BY" />
+				<RSDefaultAttribute ID="35" Name="QBF_DATA" />
+				<RSDefaultAttribute ID="37" Name="TBL_LAST_DT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="FAV_NM" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="PARENT_NM" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="FAV_UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="USER_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DEST_FRAMESET" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DEST_FRAME" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PARENT_UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DEST_PG" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APPL_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PAGE_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PAGE_TYP_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CAT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_TYP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_DEPT_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SEQ_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FAV_FLDR_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="WHERE_CLAUSE" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FAV_ROOT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TARGET_FRAME" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="MODE_IND" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORDER_BY" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="QBF_DATA" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+			</ScalerAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value=""
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="false"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="false"
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+		</ArchetypeExtendedProperties>
+		<RecordSource
+			RSID="2"
+			Prefix="T2"
+			BusinessObject="IN_FAV"
+			Relationship="IN_FAV_PARENT(IN_FAV)-IN_FAV_CHILD(IN_FAV)"
+			RelnIsFromParent="True"
+			DoesSourceAffectMe="True"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+			RecordSourceArchetype="AMSGridNonEditable"
+			MaxGridRowCount="1000"
+			FetchedBlockRowCount="1000"
+			AllowDelete="True"
+			AllowInsert="True"
+			AllowUpdate="True"
+			SaveMode="Immediate"
+			PreFetchRowCount="False"
+			ParentAlias=""
+			ChildAlias=""
+			>
+			<ParameterizedWhereClause><![CDATA[ [PARENT_UNID] = [?FAV_UNID]]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ SEQ_NO]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="FAV_UNID" />
+					<RSDefaultAttribute ID="2" Name="USER_ID" />
+					<RSDefaultAttribute ID="26" Name="SEQ_NO" />
+					<RSDefaultAttribute ID="8" Name="FAV_NM" />
+					<RSDefaultAttribute ID="27" Name="FAV_FLDR_FL" />
+					<RSDefaultAttribute ID="12" Name="PARENT_UNID" />
+					<RSDefaultAttribute ID="13" Name="PARENT_NM" />
+					<RSDefaultAttribute ID="17" Name="PAGE_CD" />
+					<RSDefaultAttribute ID="18" Name="PAGE_TYP_CD" />
+					<RSDefaultAttribute ID="15" Name="APPL_NM" />
+					<RSDefaultAttribute ID="14" Name="DEST_PG" />
+					<RSDefaultAttribute ID="4" Name="DEST_FRAMESET" />
+					<RSDefaultAttribute ID="5" Name="DEST_FRAME" />
+					<RSDefaultAttribute ID="19" Name="DOC_CAT" />
+					<RSDefaultAttribute ID="20" Name="DOC_TYP" />
+					<RSDefaultAttribute ID="36" Name="DOC_CD" />
+					<RSDefaultAttribute ID="22" Name="DOC_DEPT_CD" />
+					<RSDefaultAttribute ID="23" Name="DOC_ID" />
+					<RSDefaultAttribute ID="24" Name="DOC_VERS_NO" />
+					<RSDefaultAttribute ID="28" Name="WHERE_CLAUSE" />
+					<RSDefaultAttribute ID="25" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="29" Name="FAV_ROOT" />
+					<RSDefaultAttribute ID="30" Name="APPL_ID" />
+					<RSDefaultAttribute ID="32" Name="TARGET_FRAME" />
+					<RSDefaultAttribute ID="33" Name="MODE_IND" />
+					<RSDefaultAttribute ID="34" Name="ORDER_BY" />
+					<RSDefaultAttribute ID="35" Name="QBF_DATA" />
+					<RSDefaultAttribute ID="37" Name="TBL_LAST_DT" />
+				</DefaultAttributes>
+				<GridAttributes>
+					<RSAttribute Name="FAV_FLDR_FL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FAV_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FAV_UNID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USER_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEST_FRAMESET" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEST_FRAME" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PARENT_UNID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PARENT_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEST_PG" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PAGE_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PAGE_TYP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CAT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_TYP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SEQ_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="WHERE_CLAUSE" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FAV_ROOT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TARGET_FRAME" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="MODE_IND" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ORDER_BY" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="QBF_DATA" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="ColumnProjectionLevel"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileName"
+					Value=""
+				/>
+				<Property
+					Name="DownloadMaxRows"
+					Value=""
+				/>
+				<Property
+					Name="DownloadProperties"
+					Value=""
+				/>
+				<Property
+					Name="DownloadTemplate"
+					Value=""
+				/>
+				<Property
+					Name="maintenanceString"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageEndWith"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageStartWith"
+					Value=""
+				/>
+				<Property
+					Name="MultiTableCurrentRow"
+					Value=""
+				/>
+				<Property
+					Name="PreFetchRowCount"
+					Value=""
+				/>
+				<Property
+					Name="SearchColList"
+					Value=""
+				/>
+				<Property
+					Name="VirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="ZoomDataSource"
+					Value=""
+				/>
+			</ExtendedProperties>
+			<ArchetypeExtendedProperties>
+				<Property
+					Name="Action_1_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_1_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_2_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_3_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_4_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_5_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="DetailsCaption"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileType"
+					Value="none"
+				/>
+				<Property
+					Name="ObjectAttachmentMode"
+					Value="Editable"
+				/>
+				<Property
+					Name="ObjectAttachments"
+					Value="false"
+				/>
+				<Property
+					Name="showCopyPaste"
+					Value="false"
+				/>
+				<Property
+					Name="TimelineData"
+					Value="false"
+				/>
+			</ArchetypeExtendedProperties>
+		</RecordSource>
+	</RecordSource>
+</Form>

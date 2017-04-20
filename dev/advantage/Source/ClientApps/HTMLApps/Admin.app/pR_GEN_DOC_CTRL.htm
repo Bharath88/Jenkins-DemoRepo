@@ -1,0 +1,656 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Document Control</title>
+  <base href>
+
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Admin" method="post" vsform="true" name="pR_GEN_DOC_CTRL">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Document Control">Document Control</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+
+      <a href="Admin" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+
+
+
+
+  <a name="T1R_GEN_DOC_CTRL_Top"></a>
+
+
+
+  <input type="hidden" name="T1R_GEN_DOC_CTRL_Currency" value="">
+  <input type="hidden" name="T1R_GEN_DOC_CTRL_Old_Currency" value="">
+  <table name="tblT1R_GEN_DOC_CTRL" id="tblT1R_GEN_DOC_CTRL" class="advgrid" vsds="T1R_GEN_DOC_CTRL">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><a href="Admin" vsaction="sort" vsds="T1R_GEN_DOC_CTRL"
+    vsdf="DOC_TYP"
+ name="T1DOC_TYPsort" id="T1DOC_TYPsort" title="Sort By Document Type">Document Type</a></th>
+
+        <th
+><span id="T1DOC_CDsortGridLabel" name="T1DOC_CDsortGridLabel" title="Document Code">Document Code</span></th>
+
+        <th
+><a href="Admin" vsaction="sort" vsds="T1R_GEN_DOC_CTRL"
+    vsdf="DOC_CD_NM_UP"
+ name="T1DOC_CD_NMsort" id="T1DOC_CD_NMsort" title="Sort By Document Name">Document Name</a></th>
+
+        <th
+><span id="T1ACT_FLsortGridLabel" name="T1ACT_FLsortGridLabel" title="Active">Active</span></th>
+
+        <th
+><span id="T1EFBGN_DTsortGridLabel" name="T1EFBGN_DTsortGridLabel" title="Effective From">Effective From</span></th>
+
+        <th
+><span id="T1EFEND_DTsortGridLabel" name="T1EFEND_DTsortGridLabel" title="Effective To">Effective To</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_GEN_DOC_CTRLvscurrency" id="T1R_GEN_DOC_CTRLvscurrency" title="Select Row" alt="Select Row" vsds="T1R_GEN_DOC_CTRL" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1DOC_TYP" vsds="T1R_GEN_DOC_CTRL" vsdf="DOC_TYP"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1DOC_CD" vsds="T1R_GEN_DOC_CTRL" vsdf="DOC_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1DOC_CD_NM" vsds="T1R_GEN_DOC_CTRL" vsdf="DOC_CD_NM"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1ACT_FL" vsds="T1R_GEN_DOC_CTRL" vsdf="ACT_FL"
+    vsformat="Yes/No"
+>
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1EFBGN_DT" vsds="T1R_GEN_DOC_CTRL" vsdf="EFBGN_DT"
+    vsformat="Short Date"
+>
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1EFEND_DT" vsds="T1R_GEN_DOC_CTRL" vsdf="EFEND_DT"
+    vsformat="Short Date"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><div name="T1R_GEN_DOC_CTRLGridNav" id="T1R_GEN_DOC_CTRLGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+      <a href="Admin" vsds="T1R_GEN_DOC_CTRL" vsaction="firstpage" name="T1R_GEN_DOC_CTRLfirstpage" id="T1R_GEN_DOC_CTRLfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+      <a href="Admin" vsds="T1R_GEN_DOC_CTRL" vsaction="prevpage" name="T1R_GEN_DOC_CTRLprevpage" id="T1R_GEN_DOC_CTRLprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+      <a href="Admin" vsds="T1R_GEN_DOC_CTRL" vsaction="nextpage" id="T1R_GEN_DOC_CTRLnextpage" name="T1R_GEN_DOC_CTRLnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+      <a href="Admin" vsds="T1R_GEN_DOC_CTRL" vsaction="lastpage" id="T1R_GEN_DOC_CTRLlastpage" name="T1R_GEN_DOC_CTRLlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+    </tr>
+  </table>
+
+
+<hr class="advsectsep"></hr>
+
+
+
+
+
+      <table class="advaction recsrc">
+        <tr>
+
+         <td>
+<ams_map title="Update Actions" name="Update Actions">
+
+      <a href="Admin" vsds="T1R_GEN_DOC_CTRL" vsaction="saveall" name="T1R_GEN_DOC_CTRLSaveAll" id="T1R_GEN_DOC_CTRLSaveAll" title="Save All" accesskey="5">Save</a>
+
+      <a href="Admin" vsds="T1R_GEN_DOC_CTRL" vsaction="undoall" name="T1R_GEN_DOC_CTRLUndoAll" id="T1R_GEN_DOC_CTRLUndoAll" title="Undo All" accesskey="6">Undo</a>
+
+      <a href="Admin" vsds="T1R_GEN_DOC_CTRL" vsaction="delete" id="IndexT1R_GEN_DOC_CTRLdelete" name="T1R_GEN_DOC_CTRLdelete" title="Delete Current Record" accesskey="7">Delete</a>
+
+      <a href="Admin" vsds="T1R_GEN_DOC_CTRL" vsaction="insert" id="T1R_GEN_DOC_CTRLinsert" name="T1R_GEN_DOC_CTRLinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+
+      <a href="Admin" vsds="T1R_GEN_DOC_CTRL" vsaction="11" name="T1R_GEN_DOC_CTRLCopyRecord" id="T1R_GEN_DOC_CTRLCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+
+
+      <a href="Admin" vsds="T1R_GEN_DOC_CTRL" vsaction="12" name="T1R_GEN_DOC_CTRLPasteLine" id="T1R_GEN_DOC_CTRLPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+
+
+      <td><vstext vsds=" " name="T1R_GEN_DOC_CTRLSearchColList" vspreservetag="true"></td>
+
+
+      <td><ams_map title="Section Controls" name="Section Controls">
+
+  <a href="javascript:
+        AMSTAB_ExpandSection('T1R_GEN_DOC_CTRL_Section1','T1R_GEN_DOC_CTRL_Section1_Button');
+          AMSTAB_ExpandSection('T1R_GEN_DOC_CTRL_Section2','T1R_GEN_DOC_CTRL_Section2_Button');
+            AMSTAB_ExpandSection('T1R_GEN_DOC_CTRL_Section3','T1R_GEN_DOC_CTRL_Section3_Button');
+              AMSTAB_ExpandSection('T1R_GEN_DOC_CTRL_Section4','T1R_GEN_DOC_CTRL_Section4_Button');
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+
+  <a href="javascript:
+        AMSTAB_CollapseSection('T1R_GEN_DOC_CTRL_Section1','T1R_GEN_DOC_CTRL_Section1_Button');
+          AMSTAB_CollapseSection('T1R_GEN_DOC_CTRL_Section2','T1R_GEN_DOC_CTRL_Section2_Button');
+            AMSTAB_CollapseSection('T1R_GEN_DOC_CTRL_Section3','T1R_GEN_DOC_CTRL_Section3_Button');
+              AMSTAB_CollapseSection('T1R_GEN_DOC_CTRL_Section4','T1R_GEN_DOC_CTRL_Section4_Button');
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+
+        </tr>
+      </table>
+
+  <fieldset class="advscalar">
+    <div class="advpresection">
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+
+
+        </table></td></tr></table></div></fieldset><a name="T1R_GEN_DOC_CTRL_Section1_Top"></a><fieldset class="advscalar section">
+        <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1R_GEN_DOC_CTRL_Section1','T1R_GEN_DOC_CTRL_Section1_Button');" title="Expand/Collapse General Information"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1R_GEN_DOC_CTRL_Section1_Button"> General Information</a></legend>
+        <div id="T1R_GEN_DOC_CTRL_Section1" class="advsection">
+        <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+
+
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1DOC_CAT" title="Document Category (Required)">Document Category :</label>
+      </td>
+
+        <td class="val required">
+          <input type="text" name="txtT1DOC_CAT" id="txtT1DOC_CAT"
+               size="15"
+ vsds="T1R_GEN_DOC_CTRL" vsdf="DOC_CAT"
+         ams_max_len="8"
+ ShowCodeInfo="" value="DOC_CAT"title="Document Category (Required)">
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1DOC_TYP" title="Document Type (Required)">Document Type :</label>
+      </td>
+
+        <td class="val required">
+          <input type="text" name="txtT1DOC_TYP" id="txtT1DOC_TYP"
+      ams_max_len="8"
+ value="DOC_TYP"
+            size="15"
+ vsds="T1R_GEN_DOC_CTRL" vsdf="DOC_TYP" ShowCodeInfo="" title="Document Type (Required)">
+          <input type="image" vspick="T2R_DOC_TYP" vspicktext="txtT1DOC_TYP" vsds="T1R_GEN_DOC_CTRL" vsaction="pick" name="pckT1DOC_TYP" id="pckT1DOC_TYP" title="Select Document Type" alt="Select Document Type" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1DOC_CD" title="Document Code (Required)">Document Code :</label>
+      </td>
+
+        <td class="val required">
+          <input type="text" name="txtT1DOC_CD" id="txtT1DOC_CD"
+               size="15"
+ vsds="T1R_GEN_DOC_CTRL" vsdf="DOC_CD"
+         ams_max_len="8"
+ ShowCodeInfo="" value="DOC_CD"title="Document Code (Required)">
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1DOC_CD_NM" title="Document Name (Required)">Document Name :</label>
+      </td>
+
+        <td class="val required">
+          <input type="text" name="txtT1DOC_CD_NM" id="txtT1DOC_CD_NM"
+               size="20"
+ vsds="T1R_GEN_DOC_CTRL" vsdf="DOC_CD_NM"
+         ams_max_len="60"
+ ShowCodeInfo="" value="DOC_CD_NM"title="Document Name (Required)">
+        </td>
+      </tr>
+
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT1DOC_CD_NM_UP" id="txtT1DOC_CD_NM_UP"
+               size="20"
+           vsds="T1R_GEN_DOC_CTRL" vsdf="DOC_CD_NM_UP"
+         ams_max_len="60"
+           ShowCodeInfo=""
+           value="DOC_CD_NM_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+
+
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1APPL_ID" title="Home Application (Required)">Home Application :</label>
+      </td>
+
+        <td class="val required">
+          <select name="txtT1APPL_ID" id="txtT1APPL_ID" vsds="T1R_GEN_DOC_CTRL" vsdf="APPL_ID" size="1" vscodetable="R_SC_APPL" ShowCodeInfo="" title="Home Application (Required)">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1EFBGN_DT" title="Effective From">Effective From :</label></td>
+
+        <td class="val">
+
+
+
+          <input type="text" name="txtT1EFBGN_DT" id="txtT1EFBGN_DT"
+                                 size="10"
+ vsds="T1R_GEN_DOC_CTRL" vsdf="EFBGN_DT"
+                                 ams_max_len="10"
+         vsformat="Short Date"
+ ShowCodeInfo="" value="EFBGN_DT" title="Effective From" >
+
+
+
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1EFEND_DT" title="Effective To">Effective To :</label></td>
+
+        <td class="val">
+
+
+
+          <input type="text" name="txtT1EFEND_DT" id="txtT1EFEND_DT"
+                                 size="10"
+ vsds="T1R_GEN_DOC_CTRL" vsdf="EFEND_DT"
+                                 ams_max_len="10"
+         vsformat="Short Date"
+ ShowCodeInfo="" value="EFEND_DT" title="Effective To" >
+
+
+
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1ACT_FL" title="Active">Active :</label></td>
+
+        <td class="val checkbox">
+          <input type="checkbox" name="txtT1ACT_FL" id="txtT1ACT_FL" value="ACT_FL" vsds="T1R_GEN_DOC_CTRL" vsdf="ACT_FL" title="Active">
+        </td>
+      </tr>
+
+          </table></td></tr></table></div></fieldset><br><br><a name="T1R_GEN_DOC_CTRL_Section2_Top"></a><fieldset class="advscalar section">
+          <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1R_GEN_DOC_CTRL_Section2','T1R_GEN_DOC_CTRL_Section2_Button');" title="Expand/Collapse General Options"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1R_GEN_DOC_CTRL_Section2_Button"> General Options</a></legend>
+          <div id="T1R_GEN_DOC_CTRL_Section2" class="advsection">
+          <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+
+
+      <td class="label"><label for="txtT1DOC_AM_MAX" title="Maximum Amt">Maximum Amt :</label></td>
+
+        <td class="val">
+
+
+
+          <input type="text" name="txtT1DOC_AM_MAX" id="txtT1DOC_AM_MAX"
+                     size="22"
+ vsds="T1R_GEN_DOC_CTRL" vsdf="DOC_AM_MAX"
+                     ams_max_len="18"
+ ShowCodeInfo="" value="DOC_AM_MAX" title="Maximum Amt" >
+
+
+
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1OV_PEND_PHASE_IND" title="Override Pend Phase Ind">Override Pend Phase Ind :</label></td>
+
+        <td class="val">
+          <select name="txtT1OV_PEND_PHASE_IND" id="txtT1OV_PEND_PHASE_IND" vsds="T1R_GEN_DOC_CTRL" vsdf="OV_PEND_PHASE_IND" size="1" vscodetable="CVL_PEND_OV_ALW" ShowCodeInfo="" title="Override Pend Phase Ind">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1DOC_SBMT_PHASE_CD" title="Submit Phase">Submit Phase :</label></td>
+
+        <td class="val">
+          <select name="txtT1DOC_SBMT_PHASE_CD" id="txtT1DOC_SBMT_PHASE_CD" vsds="T1R_GEN_DOC_CTRL" vsdf="DOC_SBMT_PHASE_CD" size="1" vscodetable="CVL_DOC_PHASE_CD" ShowCodeInfo="" title="Submit Phase">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1ADN_TYP" title="Auto Numbering">Auto Numbering :</label></td>
+        <td class="val">
+          <select name="txtT1ADN_TYP" id="txtT1ADN_TYP" vsds="T1R_GEN_DOC_CTRL" vsdf="ADN_TYP" size="1" vscodetable="CVL_ADN_TYP" ShowCodeInfo="" ams_show_es="NO" title="Auto Numbering">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1MIN_DOC_ID" title="Min Doc ID Length">Min Doc ID Length :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1MIN_DOC_ID" id="txtT1MIN_DOC_ID"
+               size="10"
+ vsds="T1R_GEN_DOC_CTRL" vsdf="MIN_DOC_ID"
+               ams_max_len="10"
+ ShowCodeInfo="" value="MIN_DOC_ID" title="Min Doc ID Length">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1MAX_DOC_ID" title="Max Doc ID Length">Max Doc ID Length :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1MAX_DOC_ID" id="txtT1MAX_DOC_ID"
+               size="10"
+ vsds="T1R_GEN_DOC_CTRL" vsdf="MAX_DOC_ID"
+               ams_max_len="10"
+ ShowCodeInfo="" value="MAX_DOC_ID" title="Max Doc ID Length">
+        </td>
+      </tr>
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+
+
+      <td class="label"><label for="txtT1WF_PROC_IND" title="Workflow Process Indicator">Workflow Process Indicator :</label></td>
+
+        <td class="val">
+          <select name="txtT1WF_PROC_IND" id="txtT1WF_PROC_IND" vsds="T1R_GEN_DOC_CTRL" vsdf="WF_PROC_IND" size="1" vscodetable="CVL_WF_PROC_IND" ShowCodeInfo="" title="Workflow Process Indicator">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1WF_ASYNC_PROC_FL" title="Workflow Asynchronous Processing">Workflow Asynchronous Processing :</label></td>
+
+        <td class="val">
+          <input type="checkbox" name="txtT1WF_ASYNC_PROC_FL" id="txtT1WF_ASYNC_PROC_FL" value="WF_ASYNC_PROC_FL" vsds="T1R_GEN_DOC_CTRL" vsdf="WF_ASYNC_PROC_FL" title="Workflow Asynchronous Processing">
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1WF_APRV_SNG_FL" title="Single Approvals Enforced">Single Approvals Enforced :</label></td>
+
+        <td class="val">
+          <input type="checkbox" name="txtT1WF_APRV_SNG_FL" id="txtT1WF_APRV_SNG_FL" value="WF_APRV_SNG_FL" vsds="T1R_GEN_DOC_CTRL" vsdf="WF_APRV_SNG_FL" title="Single Approvals Enforced">
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1WF_ERR_SBMT_FL" title="Workflow Error Submit Flag">Workflow Error Submit Flag :</label></td>
+
+        <td class="val">
+          <input type="checkbox" name="txtT1WF_ERR_SBMT_FL" id="txtT1WF_ERR_SBMT_FL" value="WF_ERR_SBMT_FL" vsds="T1R_GEN_DOC_CTRL" vsdf="WF_ERR_SBMT_FL" title="Workflow Error Submit Flag">
+        </td>
+      </tr>
+      <tr>
+      
+      <td class="label"><label for="txtT1DOC_DISC_LOG_FL" title="Log Document Discard">Log Document Discard :</label></td>
+   
+        <td class="val">
+          <input type="checkbox" name="txtT1DOC_DISC_LOG_FL" id="txtT1DOC_DISC_LOG_FL" value="DOC_DISC_LOG_FL" vsds="T1R_GEN_DOC_CTRL" vsdf="DOC_DISC_LOG_FL" title="Log Document Discard">
+        </td>
+      </tr>
+            </table></td></tr></table></div></fieldset><br><br><a name="T1R_GEN_DOC_CTRL_Section3_Top"></a><fieldset class="advscalar section">
+            <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1R_GEN_DOC_CTRL_Section3','T1R_GEN_DOC_CTRL_Section3_Button');" title="Expand/Collapse Required Elements"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1R_GEN_DOC_CTRL_Section3_Button"> Required Elements</a></legend>
+            <div id="T1R_GEN_DOC_CTRL_Section3" class="advsection">
+            <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+
+
+      <td class="label"><label for="txtT1OFFLN_CREA_RQD_FL" title="Offline Required">Offline Required :</label></td>
+
+        <td class="val checkbox">
+          <input type="checkbox" name="txtT1OFFLN_CREA_RQD_FL" id="txtT1OFFLN_CREA_RQD_FL" value="OFFLN_CREA_RQD_FL" vsds="T1R_GEN_DOC_CTRL" vsdf="OFFLN_CREA_RQD_FL" title="Offline Required">
+        </td>
+      </tr>
+
+      <tr>
+      <td class="label"><label for="txtT1DOC_DLO_RQD_FL" title="Document Unit Code Required">Document Unit Code Required :</label></td>
+
+        <td class="val checkbox">
+          <input type="checkbox" name="txtT1DOC_DLO_RQD_FL" id="txtT1DOC_DLO_RQD_FL" value="DOC_DLO_RQD_FL" vsds="T1R_GEN_DOC_CTRL" vsdf="DOC_DLO_RQD_FL" title="Document Unit Code Required">
+        </td>
+      </tr>
+
+              </table></td></tr></table></div></fieldset><br><br><a name="T1R_GEN_DOC_CTRL_Section4_Top"></a><fieldset class="advscalar section">
+              <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1R_GEN_DOC_CTRL_Section4','T1R_GEN_DOC_CTRL_Section4_Button');" title="Expand/Collapse Allowable Elements"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1R_GEN_DOC_CTRL_Section4_Button"> Allowable Elements</a></legend>
+              <div id="T1R_GEN_DOC_CTRL_Section4" class="advsection">
+              <table><tr><td class="advscalarcol"><table class="advscalar">
+
+
+      <tr>
+        
+      <td class="label"><label for="txtT1DOC_ACTN_NEW_FL" title="New Action Allowed">New Action Allowed :</label></td>
+
+        <td class="val checkbox">
+          <input type="checkbox" name="txtT1DOC_ACTN_NEW_FL" id="txtT1DOC_ACTN_NEW_FL" value="DOC_ACTN_NEW_FL" vsds="T1R_GEN_DOC_CTRL" vsdf="DOC_ACTN_NEW_FL" title="New Action Allowed">
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1DOC_ACTN_SBMT_FL" title="Submit Action Allowed">Submit Action Allowed :</label></td>
+
+        <td class="val checkbox">
+          <input type="checkbox" name="txtT1DOC_ACTN_SBMT_FL" id="txtT1DOC_ACTN_SBMT_FL" value="DOC_ACTN_SBMT_FL" vsds="T1R_GEN_DOC_CTRL" vsdf="DOC_ACTN_SBMT_FL" title="Submit Action Allowed">
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1DOC_ACTN_CAN_FL" title="Cancellations Allowed">Cancellations Allowed :</label></td>
+
+        <td class="val checkbox">
+          <input type="checkbox" name="txtT1DOC_ACTN_CAN_FL" id="txtT1DOC_ACTN_CAN_FL" value="DOC_ACTN_CAN_FL" vsds="T1R_GEN_DOC_CTRL" vsdf="DOC_ACTN_CAN_FL" title="Cancellations Allowed">
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1RCUR_TRAN_ALW_FL" title="Recurring Transaction Allowed">Recurring Transaction Allowed :</label></td>
+
+        <td class="val checkbox">
+          <input type="checkbox" name="txtT1RCUR_TRAN_ALW_FL" id="txtT1RCUR_TRAN_ALW_FL" value="RCUR_TRAN_ALW_FL" vsds="T1R_GEN_DOC_CTRL" vsdf="RCUR_TRAN_ALW_FL" title="Recurring Transaction Allowed">
+        </td>
+      </tr>
+      <tr>
+	        <td class="label"><label for="txtT1COMP_RSRC_ALW_FL" title="Component specific Application Resource Allowed">Component specific Application Resource Allowed :</label></td>
+	          <td class="val">
+	            <input type="checkbox" name="txtT1COMP_RSRC_ALW_FL" id="txtT1COMP_RSRC_ALW_FL" value="COMP_RSRC_ALW_FL" vsds="T1R_GEN_DOC_CTRL" vsdf="COMP_RSRC_ALW_FL" title="Component specific Application Resource Allowed">
+        </td>
+      </tr>
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+
+
+      <td class="label"><label for="txtT1DOC_ACTN_MOD_FL" title="Modifications Allowed">Modifications Allowed :</label></td>
+
+        <td class="val checkbox">
+          <input type="checkbox" name="txtT1DOC_ACTN_MOD_FL" id="txtT1DOC_ACTN_MOD_FL" value="DOC_ACTN_MOD_FL" vsds="T1R_GEN_DOC_CTRL" vsdf="DOC_ACTN_MOD_FL" title="Modifications Allowed">
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1DOC_ACTN_BY_AP_FL" title="Bypass Approvals Allowed">Bypass Approvals Allowed :</label></td>
+
+        <td class="val checkbox">
+          <input type="checkbox" name="txtT1DOC_ACTN_BY_AP_FL" id="txtT1DOC_ACTN_BY_AP_FL" value="DOC_ACTN_BY_AP_FL" vsds="T1R_GEN_DOC_CTRL" vsdf="DOC_ACTN_BY_AP_FL" title="Bypass Approvals Allowed">
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1DOC_ONLN_CTLG_FL" title="Online Catalog Creation Allowed">Online Catalog Creation Allowed :</label></td>
+
+        <td class="val checkbox">
+          <input type="checkbox" name="txtT1DOC_ONLN_CTLG_FL" id="txtT1DOC_ONLN_CTLG_FL" value="DOC_ONLN_CTLG_FL" vsds="T1R_GEN_DOC_CTRL" vsdf="DOC_ONLN_CTLG_FL" title="Online Catalog Creation Allowed">
+        </td>
+      </tr>
+
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+
+      <br><br><table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T1R_GEN_DOC_CTRL_Top');" title="Go To Top">Top</a></td></tr></table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_GEN_DOC_CTRL', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'DOC_TYP' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Document Type' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'DOC_CD_NM' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Document Name' ;
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Admin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

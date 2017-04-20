@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+<title></title>
+   <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+   <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+   <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+   <script type="text/javascript" language="JavaScript" src="JS/AboutUtils.js"></script>
+   <script type="text/javascript" language="JavaScript" src="JS/ApplicationData.js"></script>
+   <style>
+   p
+   {
+      margin:6px;
+   }
+   .copyrighttext
+   {
+      text-align:left;
+   }
+   </style>
+</head>
+
+<body onload="UTILS_SetupOnClickForPage();UTILS_SetFocusOnFirstField(document)"
+ class="adv">
+
+<form name="about" METHOD="POST">
+  <div align="center">
+    <table width="450" BORDER="0" cellpadding="4" cellspacing="4">
+         <tr class="layoutmiddle">
+            <td align="left">
+               <h2>
+               <script type="text/javascript" language="JavaScript">
+                  var lodiv = document.createElement("div");
+                  lodiv.innerHTML = "About " + msAPPNAME;
+                  document.title = lodiv.innerHTML;
+                  <!--
+                     ABOUTUTILS_PopulateAppName( msAPPNAME );
+                  //-->
+               </script>
+
+
+               <script type="text/javascript" language="JavaScript">
+                  <!--
+                     ABOUTUTILS_PopulateAboutData( maAPPLICATION );
+                  //-->
+               </script>
+            </td>
+
+         </tr>
+    </table><br><br>
+                <div class="copyrighttext">
+                  <p>Copyright &copy; 2001, 2014 CGI Technologies and Solutions Inc. All Rights Reserved.</p>
+                  <p>Use of this software is subject to CGI Technologies and Solutions Inc. license agreement.</p>
+                  <p>CGI Advantage&reg; is a registered trademark of CGI Technologies and Solutions Inc</p>
+                  <p>
+                </div>
+    <table>
+      <tr>
+         <td align="center">
+            <input type="submit" class="advbutton" title="Closes the window" name="Close" value="Close" onClick="JavaScript:window.close();">
+         </td>
+      </tr>
+    </table>
+
+  </div>
+</form>
+</body>
+</html>

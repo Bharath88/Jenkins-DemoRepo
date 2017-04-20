@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0366892287.GHodum.0011"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="False"
+	ChildMostDataObject="R_SC_USER_ROLE_LNK"
+	DistinctRowsOnly="False"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[SELECT R_SC_USER_ROLE_LNK.USER_ID AS USER_ID, R_SC_USER_ROLE_LNK.SEC_ROLE_ID AS SEC_ROLE_ID, R_SC_SEC_ROLE.SEC_ROLE_DSCR AS SEC_ROLE_DSCR, R_SC_USER_ROLE_LNK.PREC_NO AS PREC_NO FROM <dbschema>.R_SC_USER_ROLE_LNK R_SC_USER_ROLE_LNK, <dbschema>.R_SC_SEC_ROLE R_SC_SEC_ROLE  WHERE R_SC_SEC_ROLE.SEC_ROLE_ID = R_SC_USER_ROLE_LNK.SEC_ROLE_ID ]]></RuntimeSql>
+	<Where><![CDATA[]]></Where>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="R_SC_USER_ROLE_LNK"
+			Alias="R_SC_USER_ROLE_LNK"
+		/>
+
+		<DataObject
+			DataObjectName="R_SC_SEC_ROLE"
+			Alias="R_SC_SEC_ROLE"
+		/>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="USER_ID"
+			Alias="USER_ID"
+			AggregationType="None"
+			SourceDataObject="R_SC_USER_ROLE_LNK"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="SEC_ROLE_ID"
+			Alias="SEC_ROLE_ID"
+			AggregationType="None"
+			SourceDataObject="R_SC_USER_ROLE_LNK"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="SEC_ROLE_DSCR"
+			Alias="SEC_ROLE_DSCR"
+			AggregationType="None"
+			SourceDataObject="R_SC_SEC_ROLE"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="PREC_NO"
+			Alias="PREC_NO"
+			AggregationType="None"
+			SourceDataObject="R_SC_USER_ROLE_LNK"
+			Persistent="True"
+		/>
+
+	</Attributes>
+	<Joins
+		LeftDataObject="R_SC_SEC_ROLE"
+		RightDataObject="R_SC_USER_ROLE_LNK"
+		JoinType="Equal"
+		>
+		<ColumnSet
+			LeftAttribute="R_SC_SEC_ROLE.SEC_ROLE_ID"
+			RightAttribute="R_SC_USER_ROLE_LNK.SEC_ROLE_ID"
+		/>
+	</Joins>
+
+	<RelsToParentDataObjects>
+		<RelToParentDO
+			RelToParentDO="SecurityRole3(R_SC_SEC_ROLE)-UsertoSecurityGroupLinks(R_SC_USER_ROLE_LNK)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_SC_USER_ROLE_LNK"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="SEC_ROLE_ID"
+							ChildAttribute="SEC_ROLE_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+		<RelToParentDO
+			RelToParentDO="UserInformation2(R_SC_USER_INFO)-UsertoSecurityGroupLinks1(R_SC_USER_ROLE_LNK)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_SC_USER_ROLE_LNK"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="USER_ID"
+							ChildAttribute="USER_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+	</RelsToParentDataObjects>
+
+	<RelsToChildDataObjects>
+		<RelToChildDO
+			RelToChildDO="R_SC_USER_ROLE_LNK(R_SC_USER_ROLE_LNK)-R_SC_FGN_ORG(R_SC_FGN_ORG)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_SC_USER_ROLE_LNK"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="USER_ID"
+							ChildAttribute="USER_ID"
+							/>
+				<AttributePair
+							ParentAttribute="SEC_ROLE_ID"
+							ChildAttribute="SEC_ROLE_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+	</RelsToChildDataObjects>
+
+	<PickSupportedRels>
+		<PickSupportedRel
+			PickSupportedRel="R_SC_USER_ROLE_LNK(R_SC_USER_ROLE_LNK)-R_SC_FGN_ORG(R_SC_FGN_ORG)"
+		/>
+	</PickSupportedRels >
+
+</QueryObject>

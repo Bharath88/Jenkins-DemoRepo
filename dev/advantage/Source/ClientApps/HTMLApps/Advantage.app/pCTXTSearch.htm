@@ -1,0 +1,274 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Context Sensitive Search</title>
+  <base href>
+
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+    <script type="text/javascript" language="JavaScript">
+        <!--
+      	 function Leaf()
+          {
+
+             var lsQueryString = 'menu_action=' + 'menu_action' + '&ams_action=209&gotocode=LEAF';
+             submitForm( document.forms[0], lsQueryString, 'Display' ) ;
+
+
+          }
+      	 -->
+    </script>
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="pCTXTSearch">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Context Sensitive Search">Context Sensitive Search</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="Advantage" vsds="" vsaction="84" title="Back to Previous Page" name="QueryBack" id="QueryBack" accesskey="Z">Back</a>
+<a href="Advantage" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+
+
+
+  <a name="T1IN_LEAF_CTXT_Top"></a>
+
+
+
+  <input type="hidden" name="T1IN_LEAF_CTXT_Currency" value="">
+  <input type="hidden" name="T1IN_LEAF_CTXT_Old_Currency" value="">
+  <table name="tblT1IN_LEAF_CTXT" id="tblT1IN_LEAF_CTXT" class="advgrid" vsds="T1IN_LEAF_CTXT">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><a href="Advantage" vsaction="sort" vsds="T1IN_LEAF_CTXT"
+    vsdf="LEAF_AT_NM"
+ name="T1LEAF_AT_NMsort" id="T1LEAF_AT_NMsort" title="Sort By Leaf Name">Leaf Name</a></th>
+
+        <th
+><a href="Advantage" vsaction="sort" vsds="T1IN_LEAF_CTXT"
+    vsdf="PAGE_CD"
+ name="T1PAGE_CDsort" id="T1PAGE_CDsort" title="Sort By Target Page">Target Page</a></th>
+
+        <th
+><span id="T1TGT_DESC_COLUMNsortGridLabel" name="T1TGT_DESC_COLUMNsortGridLabel" title="Description Column Name">Description Column Name</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IN_LEAF_CTXTvscurrency" id="T1IN_LEAF_CTXTvscurrency" title="Select Row" alt="Select Row" vsds="T1IN_LEAF_CTXT" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1LEAF_AT_NM" vsds="T1IN_LEAF_CTXT" vsdf="LEAF_AT_NM"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1PAGE_CD" vsds="T1IN_LEAF_CTXT" vsdf="PAGE_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1TGT_DESC_COLUMN" vsds="T1IN_LEAF_CTXT" vsdf="TGT_DESC_COLUMN"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Advantage" vsds="T1IN_LEAF_CTXT" vsaction="firstpage" name="T1IN_LEAF_CTXTfirstpage" id="T1IN_LEAF_CTXTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T1IN_LEAF_CTXT" vsaction="prevpage" name="T1IN_LEAF_CTXTprevpage" id="T1IN_LEAF_CTXTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T1IN_LEAF_CTXT" vsaction="nextpage" id="T1IN_LEAF_CTXTnextpage" name="T1IN_LEAF_CTXTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T1IN_LEAF_CTXT" vsaction="lastpage" id="T1IN_LEAF_CTXTlastpage" name="T1IN_LEAF_CTXTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+
+<hr class="advsectsep"></hr>
+
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Advantage" vsds="T1IN_LEAF_CTXT" vsaction="saveall" name="T1IN_LEAF_CTXTSaveAll" id="T1IN_LEAF_CTXTSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Advantage" vsds="T1IN_LEAF_CTXT" vsaction="undoall" name="T1IN_LEAF_CTXTUndoAll" id="T1IN_LEAF_CTXTUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="Advantage" vsds="T1IN_LEAF_CTXT" vsaction="delete" id="IndexT1IN_LEAF_CTXTdelete" name="T1IN_LEAF_CTXTdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="Advantage" vsds="T1IN_LEAF_CTXT" vsaction="insert" id="T1IN_LEAF_CTXTinsert" name="T1IN_LEAF_CTXTinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="Advantage" vsds="T1IN_LEAF_CTXT" vsaction="11" name="T1IN_LEAF_CTXTCopyRecord" id="T1IN_LEAF_CTXTCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+
+<a href="Advantage" vsds="T1IN_LEAF_CTXT" vsaction="12" name="T1IN_LEAF_CTXTPasteLine" id="T1IN_LEAF_CTXTPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+
+<td><vstext vsds=" " name="T1IN_LEAF_CTXTSearchColList" vspreservetag="true"></td>
+
+      <td><ams_map title="Section Controls" name="Section Controls">
+
+  <a href="javascript:
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+
+  <a href="javascript:
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <div class="advpresection">
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+
+
+      <tr>
+        <td class="label"><label for="txtT1LEAF_AT_NM" title="Leaf Name">Leaf Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1LEAF_AT_NM" id="txtT1LEAF_AT_NM"
+      ams_max_len="30"
+ value="LEAF_AT_NM"
+            size="20"
+ vsds="T1IN_LEAF_CTXT" vsdf="LEAF_AT_NM" ShowCodeInfo="" title="Leaf Name">
+          <input type="image" vspick="T3IN_LEAF" vspicktext="txtT1LEAF_AT_NM" vsds="T1IN_LEAF_CTXT" vsaction="pick" name="pckT1LEAF_AT_NM" id="pckT1LEAF_AT_NM" title="Select Leaf Name" alt="Select Leaf Name" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1PAGE_CD" title="Target Page">Target Page :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1PAGE_CD" id="txtT1PAGE_CD"
+      ams_max_len="8"
+ value="PAGE_CD"
+            size="15"
+ vsds="T1IN_LEAF_CTXT" vsdf="PAGE_CD" ShowCodeInfo="" title="Target Page">
+          <input type="image" vspick="T2IN_PAGES" vspicktext="txtT1PAGE_CD" vsds="T1IN_LEAF_CTXT" vsaction="pick" name="pckT1PAGE_CD" id="pckT1PAGE_CD" title="Select Target Page" alt="Select Target Page" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT1LEAF_AT_NM_UP" id="txtT1LEAF_AT_NM_UP"
+               size="20"
+           vsds="T1IN_LEAF_CTXT" vsdf="LEAF_AT_NM_UP"
+         ams_max_len="30"
+           ShowCodeInfo=""
+           value="LEAF_AT_NM_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1TGT_DESC_COLUMN" title="Description Column Name">Description Column Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1TGT_DESC_COLUMN" id="txtT1TGT_DESC_COLUMN"
+               size="20"
+ vsds="T1IN_LEAF_CTXT" vsdf="TGT_DESC_COLUMN"
+         ams_max_len="50"
+ ShowCodeInfo="" value="TGT_DESC_COLUMN" title="Description Column Name">
+        </td>
+      </tr>
+
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+  <br><br><table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T1IN_LEAF_CTXT_Top');" title="Go To Top">Top</a></td></tr></table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1IN_LEAF_CTXT', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'LEAF_AT_NM' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Leaf Name' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'PAGE_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Target Page' ;
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+<a href="javascript:Leaf();" name="toLeaf" id="toLeaf" title="">Leaf</a>
+
+
+    </div>
+  </form>
+</body>
+</html>
+

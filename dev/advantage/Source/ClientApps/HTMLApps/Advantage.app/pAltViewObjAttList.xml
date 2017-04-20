@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="Default"
+	PositionTop="928.125"
+	PositionLeft="928.125"
+	PositionWidth="148.4375"
+	PositionHeight="43.75"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSOtherPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-1660643601"
+	>
+	<FormCaption><![CDATA[Attachments]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="Search"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="OBJ_ATT_ALT_QRY"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGenericGridDisplay"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="OBJ_ATT_UNID" />
+				<RSDefaultAttribute ID="16" Name="DOC_CAT" />
+				<RSDefaultAttribute ID="17" Name="DOC_TYP" />
+				<RSDefaultAttribute ID="18" Name="DOC_CD" />
+				<RSDefaultAttribute ID="19" Name="DOC_DEPT_CD" />
+				<RSDefaultAttribute ID="20" Name="DOC_ID" />
+				<RSDefaultAttribute ID="4" Name="OBJ_ATT_NM" />
+				<RSDefaultAttribute ID="5" Name="OBJ_ATT_DT" />
+				<RSDefaultAttribute ID="6" Name="OBJ_ATT_USER_ID" />
+				<RSDefaultAttribute ID="7" Name="OBJ_ATT_DSCR" />
+				<RSDefaultAttribute ID="8" Name="OBJ_ATT_ST" />
+				<RSDefaultAttribute ID="10" Name="OBJ_ATT_TYP" />
+				<RSDefaultAttribute ID="11" Name="OBJ_ATT_SEQ_NO" />
+				<RSDefaultAttribute ID="12" Name="OBJ_ATT_ALT_UNID" />
+				<RSDefaultAttribute ID="13" Name="OBJ_ATT_ALT_ST" />
+				<RSDefaultAttribute ID="14" Name="OBJ_ATT_DEL_USID" />
+				<RSDefaultAttribute ID="15" Name="OBJ_ATT_DEL_DT" />
+				<RSDefaultAttribute ID="21" Name="DOC_VERS_NO" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="OBJ_ATT_UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CAT" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="DOC_TYP" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="DOC_DEPT_CD" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="DOC_ID" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="DOC_VERS_NO" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="OBJ_ATT_NM" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="OBJ_ATT_TYP" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="OBJ_ATT_DT" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="OBJ_ATT_USER_ID" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="OBJ_ATT_DSCR" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyMemo" />
+				<RSAttribute Name="OBJ_ATT_ST" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_SEQ_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_ALT_UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_ALT_ST" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_DEL_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_DEL_DT" Displayed="False" UnPlaced="False" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="OBJ_ATT_UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CAT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_TYP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_DEPT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_ID" Displayed="True" UnPlaced="False" Archetype="AMSDocRefForGrid" />
+				<RSAttribute Name="DOC_VERS_NO" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_TYP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_DT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_USER_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_DSCR" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_ST" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_SEQ_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_ALT_UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_ALT_ST" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_DEL_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_DEL_DT" Displayed="False" UnPlaced="False" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value=""
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="SummaryCaption"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+		</ArchetypeExtendedProperties>
+	</RecordSource>
+</Form>

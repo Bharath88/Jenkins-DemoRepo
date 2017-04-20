@@ -1,0 +1,585 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="AMSRefTableGridDisplay"
+	PositionTop="226"
+	PositionLeft="564"
+	PositionWidth="203"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSRefTableGridDisplayPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-20610760"
+	>
+	<FormCaption><![CDATA[ABI Meridian Event Detail]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="true"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+		<Property
+			Name="SSCaptionImageFileNm"
+			Value=""
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="AddBackLink"
+			Value="true"
+		/>
+		<Property
+			Name="ADVDTDType"
+			Value=""
+		/>
+		<Property
+			Name="ADVUIType"
+			Value=""
+		/>
+		<Property
+			Name="AjaxHandler"
+			Value=""
+		/>
+		<Property
+			Name="AttachmentTypeOptions"
+			Value=""
+		/>
+		<Property
+			Name="AttachmentTypes"
+			Value=""
+		/>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="DivMapToGen"
+			Value=""
+		/>
+		<Property
+			Name="DivToGenAction"
+			Value=""
+		/>
+		<Property
+			Name="EditMode"
+			Value=""
+		/>
+		<Property
+			Name="ErrorsFromPage"
+			Value=""
+		/>
+		<Property
+			Name="ExcludeCopyPasteAttributes"
+			Value=""
+		/>
+		<Property
+			Name="IsSearchMenuButton"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="PageCode"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="SearchDS"
+			Value=""
+		/>
+		<Property
+			Name="SearchPopupOnload"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="QRY_MERIDIAN_EVENT"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGenericGridDisplayTabs"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="-1"
+		AllowDelete="False"
+		AllowInsert="False"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="True"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="DIRECTION" />
+				<RSDefaultAttribute ID="2" Name="CLIENT_ID" />
+				<RSDefaultAttribute ID="3" Name="TRANSACT_ID" />
+				<RSDefaultAttribute ID="4" Name="PACKET_ID" />
+				<RSDefaultAttribute ID="5" Name="CORR_CLIENT_ID" />
+				<RSDefaultAttribute ID="6" Name="CORR_TRANSACT_ID" />
+				<RSDefaultAttribute ID="7" Name="CORR_PACKET_ID" />
+				<RSDefaultAttribute ID="8" Name="SENDER_ID" />
+				<RSDefaultAttribute ID="9" Name="RECIPIENT_ID" />
+				<RSDefaultAttribute ID="10" Name="TRANSACT_TS" />
+				<RSDefaultAttribute ID="11" Name="TRANSACT_ST_CD" />
+				<RSDefaultAttribute ID="12" Name="TRANSACT_ST_SD" />
+				<RSDefaultAttribute ID="13" Name="TRANSACT_ST_LD" />
+				<RSDefaultAttribute ID="14" Name="PACKET_ACT_CD" />
+				<RSDefaultAttribute ID="15" Name="PACKET_MANIFEST_CD" />
+				<RSDefaultAttribute ID="16" Name="PACKET_ST_CD" />
+				<RSDefaultAttribute ID="17" Name="PACKET_ST_SD" />
+				<RSDefaultAttribute ID="18" Name="PACKET_ST_LD" />
+				<RSDefaultAttribute ID="19" Name="VERSION" />
+				<RSDefaultAttribute ID="20" Name="DESTINATION" />
+				<RSDefaultAttribute ID="21" Name="RECORDTYPE" />
+				<RSDefaultAttribute ID="22" Name="EVENT_STATUS" />
+				<RSDefaultAttribute ID="23" Name="EVENT_DETAIL" />
+				<RSDefaultAttribute ID="28" Name="UPDATE_TIMESTAMP" />
+				<RSDefaultAttribute ID="24" Name="REFERENCE" />
+				<RSDefaultAttribute ID="25" Name="ERROR_SEQUENCE" />
+				<RSDefaultAttribute ID="26" Name="EVENT_ERROR_DATE" />
+				<RSDefaultAttribute ID="27" Name="EVENT_ERROR_MESSAGE" />
+				<RSDefaultAttribute ID="29" Name="SOURCE_TRANSACT_ID" />
+				<RSDefaultAttribute ID="30" Name="RPRC_CNT" />
+				<RSDefaultAttribute ID="31" Name="RPRC_SUCCS_CNT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="TRANSACT_ID" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="TRANSACT_ST_CD" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="TRANSACT_ST_SD" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="TRANSACT_ST_LD" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="SENDER_ID" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="REFERENCE" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="DIRECTION" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyCombobox" />
+				<RSAttribute Name="EVENT_STATUS" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="CLIENT_ID" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="UPDATE_TIMESTAMP" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyDateChoiceCalendar" />
+				<RSAttribute Name="RECIPIENT_ID" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="SOURCE_TRANSACT_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="RPRC_CNT" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="RPRC_SUCCS_CNT" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="PACKET_ID" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="PACKET_MANIFEST_CD" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="PACKET_ST_SD" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="PACKET_ACT_CD" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="PACKET_ST_CD" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="PACKET_ST_LD" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="EVENT_DETAIL" Displayed="True" UnPlaced="False" Archetype="AMSTextBoxMemoWideDisplayOnly" />
+				<RSAttribute Name="EVENT_ERROR_MESSAGE" Displayed="True" UnPlaced="False" Archetype="AMSTextBoxMemoWideDisplayOnly" />
+				<RSAttribute Name="CORR_CLIENT_ID" Displayed="False" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="CORR_TRANSACT_ID" Displayed="False" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="CORR_PACKET_ID" Displayed="False" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="TRANSACT_TS" Displayed="False" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="VERSION" Displayed="False" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="DESTINATION" Displayed="False" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="RECORDTYPE" Displayed="False" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="ERROR_SEQUENCE" Displayed="False" UnPlaced="False" Archetype="DisplayOnlyText" />
+				<RSAttribute Name="EVENT_ERROR_DATE" Displayed="False" UnPlaced="False" Archetype="DisplayOnlyText" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="DIRECTION" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="TRANSACT_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="EVENT_STATUS" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="UPDATE_TIMESTAMP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="EVENT_ERROR_DATE" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CLIENT_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PACKET_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CORR_CLIENT_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CORR_TRANSACT_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CORR_PACKET_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SENDER_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RECIPIENT_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TRANSACT_TS" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TRANSACT_ST_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TRANSACT_ST_SD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TRANSACT_ST_LD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PACKET_ACT_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PACKET_MANIFEST_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PACKET_ST_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PACKET_ST_SD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PACKET_ST_LD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="VERSION" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DESTINATION" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RECORDTYPE" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="EVENT_DETAIL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="REFERENCE" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ERROR_SEQUENCE" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="EVENT_ERROR_MESSAGE" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SOURCE_TRANSACT_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RPRC_CNT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="RPRC_SUCCS_CNT" Displayed="True" UnPlaced="False" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxCSVRowsBeforeZip"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="DynamicGridAttrib"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCount"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCountMsg"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="OverrideNumRowsPerPage"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value="true"
+			/>
+			<Property
+				Name="SearchColList"
+				Value="&quot;TRANSACT_ID, PACKET_MANIFEST_CD, EVENT_STATUS,UPDATE_TIMESTAMP&quot;"
+			/>
+			<Property
+				Name="ShowSearchPopup"
+				Value=""
+			/>
+			<Property
+				Name="UseDBHint"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value="%DIRECTION%%PACKET_ACT_CD%"
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="false"
+			/>
+			<Property
+				Name="ShowGridNav"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="SummaryCaption"
+				Value=""
+			/>
+			<Property
+				Name="Tab_10_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_10_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_1_Delimiter"
+				Value="%TRANSACT_ID%"
+			/>
+			<Property
+				Name="Tab_1_Name"
+				Value="General"
+			/>
+			<Property
+				Name="Tab_2_Delimiter"
+				Value="%PACKET_ID%"
+			/>
+			<Property
+				Name="Tab_2_Name"
+				Value="Packet Information"
+			/>
+			<Property
+				Name="Tab_3_Delimiter"
+				Value="%EVENT_DETAIL%"
+			/>
+			<Property
+				Name="Tab_3_Name"
+				Value="Event Detail"
+			/>
+			<Property
+				Name="Tab_4_Delimiter"
+				Value="%EVENT_ERROR_MESSAGE%"
+			/>
+			<Property
+				Name="Tab_4_Name"
+				Value="Error Detail"
+			/>
+			<Property
+				Name="Tab_5_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_5_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_6_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_6_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_7_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_7_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_8_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_8_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_9_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_9_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_Delimiter_Fields"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+	</RecordSource>
+</Form>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="DeleteChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_PRNT_RSRC_PARMs"
+		ParentRoleName="R_PRNT_RSRC1"
+		>
+		<AscendCaption><![CDATA[R_PRNT_RSRC]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_PRNT_RSRC_PARM(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[ ]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[ ]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[ ]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="PRNT_RSRC_ID"
+				ChildAttribute="PRNT_RSRC_ID"
+			/>
+		</AttributePairs>
+	</Relationship>
+</Relationships>

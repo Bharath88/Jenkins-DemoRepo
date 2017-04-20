@@ -1,0 +1,384 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>System Processes</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="pR_PROC">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="System Processes">System Processes</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="Advantage" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+  <a name="T1R_PROC_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1R_PROC_Currency" value="">
+  <input type="hidden" name="T1R_PROC_Old_Currency" value="">
+  <table name="tblT1R_PROC" id="tblT1R_PROC" class="advgrid" vsds="T1R_PROC">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1R_PROC" 
+    vsdf="PROC_ID"
+ name="T1PROC_IDsort" id="T1PROC_IDsort" title="Sort By Process ID">Process ID</a></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1R_PROC" 
+    vsdf="PROC_SHORT_DD"
+ name="T1PROC_SHORT_DDsort" id="T1PROC_SHORT_DDsort" title="Sort By Short Description">Short Description</a></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1R_PROC" 
+    vsdf="IN_PROG_FL"
+ name="T1IN_PROG_FLsort" id="T1IN_PROG_FLsort" title="Sort By In Progress">In Progress</a></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_PROCvscurrency" id="T1R_PROCvscurrency" title="Select Row" alt="Select Row" vsds="T1R_PROC" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1PROC_ID" vsds="T1R_PROC" vsdf="PROC_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1PROC_SHORT_DD" vsds="T1R_PROC" vsdf="PROC_SHORT_DD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1IN_PROG_FL" vsds="T1R_PROC" vsdf="IN_PROG_FL" 
+    vsformat="Yes/No"
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="T1R_PROCGridNav" id="T1R_PROCGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+      <a href="Advantage" vsds="T1R_PROC" vsaction="firstpage" name="T1R_PROCfirstpage" id="T1R_PROCfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+      <a href="Advantage" vsds="T1R_PROC" vsaction="prevpage" name="T1R_PROCprevpage" id="T1R_PROCprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+      <a href="Advantage" vsds="T1R_PROC" vsaction="nextpage" id="T1R_PROCnextpage" name="T1R_PROCnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+      <a href="Advantage" vsds="T1R_PROC" vsaction="lastpage" id="T1R_PROClastpage" name="T1R_PROClastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+  
+  
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+   
+      <a href="Advantage" vsds="T1R_PROC" vsaction="saveall" name="T1R_PROCSaveAll" id="T1R_PROCSaveAll" title="Save All" accesskey="5">Save</a>
+   
+      <a href="Advantage" vsds="T1R_PROC" vsaction="undoall" name="T1R_PROCUndoAll" id="T1R_PROCUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+      <a href="Advantage" vsds="T1R_PROC" vsaction="delete" id="IndexT1R_PROCdelete" name="T1R_PROCdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="Advantage" vsds="T1R_PROC" vsaction="insert" id="T1R_PROCinsert" name="T1R_PROCinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="Advantage" vsds="T1R_PROC" vsaction="11" name="T1R_PROCCopyRecord" id="T1R_PROCCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="Advantage" vsds="T1R_PROC" vsaction="12" name="T1R_PROCPasteLine" id="T1R_PROCPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+      
+   
+      <td><vstext vsds=" " name="T1R_PROCSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1PROC_ID" title="Process ID (Required)">Process ID :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1PROC_ID" id="txtT1PROC_ID" 
+               size="15"
+ vsds="T1R_PROC" vsdf="PROC_ID" 
+         ams_max_len="8"
+ ShowCodeInfo="" value="PROC_ID"title="Process ID (Required)">
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1PROC_SHORT_DD" title="Short Description (Required)">Short Description :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1PROC_SHORT_DD" id="txtT1PROC_SHORT_DD" 
+            size="15"
+ vsds="T1R_PROC" vsdf="PROC_SHORT_DD" 
+         ams_max_len="15"
+ ShowCodeInfo="" title="Short Description (Required)" value="PROC_SHORT_DD">
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1PROC_LONG_DD" title="Long Description">Long Description :</label></td>
+   
+        <td class="val memo">
+          <textarea cols="60" rows="6" name="txtT1PROC_LONG_DD" id="txtT1PROC_LONG_DD" vsds="T1R_PROC" vsdf="PROC_LONG_DD" 
+ title="Long Description"></textarea>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1IN_PROG_FL" title="In Progress">In Progress :</label></td>
+   
+        <td class="val checkbox">
+          <input type="checkbox" name="txtT1IN_PROG_FL" id="txtT1IN_PROG_FL" value="IN_PROG_FL" vsds="T1R_PROC" vsdf="IN_PROG_FL" title="In Progress">
+        </td>
+      </tr>
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_PROC', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'PROC_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Process ID' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'PROC_SHORT_DD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Short Description' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'IN_PROG_FL' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'In Progress' ;
+  -->
+  </script>
+ 
+
+  <input type="hidden" name="T2R_RSRC_PROC_LNK_Currency" value="">
+  <input type="hidden" name="T2R_RSRC_PROC_LNK_Old_Currency" value="">
+  
+  
+  
+  <table name="tblT2R_RSRC_PROC_LNK" id="tblT2R_RSRC_PROC_LNK" class="advgrid" vsds="T2R_RSRC_PROC_LNK">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T2R_RSRC_PROC_LNK" 
+    vsdf="RSRC_ID_UP"
+ name="T2RSRC_IDsort" id="T2RSRC_IDsort" title="Sort By Resource ID">Resource ID</a></th>
+      
+        <th 
+><span id="T2INS_ALW_FLsortGridLabel" name="T2INS_ALW_FLsortGridLabel" title="Insert Allowed">Insert Allowed</span></th>
+      
+        <th 
+><span id="T2UPD_ALW_FLsortGridLabel" name="T2UPD_ALW_FLsortGridLabel" title="Update Allowed">Update Allowed</span></th>
+      
+        <th 
+><span id="T2DEL_ALW_FLsortGridLabel" name="T2DEL_ALW_FLsortGridLabel" title="Delete Allowed">Delete Allowed</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T2R_RSRC_PROC_LNKvscurrency" id="T2R_RSRC_PROC_LNKvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T2R_RSRC_PROC_LNK" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td class="advcolimage">
+          <input type="text" name="txtT2RSRC_ID" 
+            size="20"
+      maxlength="129"
+ value="RSRC_ID" vsds="T2R_RSRC_PROC_LNK" vsdf="RSRC_ID" ShowCodeInfo="" 
+ title="Resource ID">
+          <a href="javascript:{}" onclick="UTILS_GridPickExecute(this,'IndexT2RSRC_ID','pckT2RSRC_ID','T2R_RSRC_PROC_LNK');event.returnValue=false;return false;" title="Select Resource ID"><img src= "../AMSImages/ADVPick.gif"
+ title="Select Resource ID" alt="Select Resource ID" class="advimage"></a>
+        </td>
+      
+        <td class="center">
+          <input type="checkbox" name="txtT2INS_ALW_FL" value="INS_ALW_FL" vsds="T2R_RSRC_PROC_LNK" vsdf="INS_ALW_FL" title="Insert Allowed">
+        </td>
+      
+        <td class="center">
+          <input type="checkbox" name="txtT2UPD_ALW_FL" value="UPD_ALW_FL" vsds="T2R_RSRC_PROC_LNK" vsdf="UPD_ALW_FL" title="Update Allowed">
+        </td>
+      
+        <td class="center">
+          <input type="checkbox" name="txtT2DEL_ALW_FL" value="DEL_ALW_FL" vsds="T2R_RSRC_PROC_LNK" vsdf="DEL_ALW_FL" title="Delete Allowed">
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+    <td><ams_map title="Update Actions" name="Update Actions">
+<a href="Advantage" vsds="T2R_RSRC_PROC_LNK" vsaction="delete" id="T2R_RSRC_PROC_LNKdelete" name="T2R_RSRC_PROC_LNKdelete" title="Delete Selected Row" accesskey="7">Delete</a>
+<a href="Advantage" vsds="T2R_RSRC_PROC_LNK" vsaction="insert" id="T2R_RSRC_PROC_LNKinsert" name="T2R_RSRC_PROC_LNKinsert" title="Insert New Row" accesskey="I">Insert</a>
+    </ams_map></td>
+      
+  <td><ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="Advantage" vsds="T2R_RSRC_PROC_LNK" vsaction="11" name="T2R_RSRC_PROC_LNKCopyLine" id="T2R_RSRC_PROC_LNKCopyLine" title="Copy Selected Row" accesskey="C">Copy</a>
+<a href="Advantage" vsds="T2R_RSRC_PROC_LNK" vsaction="12" name="T2R_RSRC_PROC_LNKPasteLine" id="T2R_RSRC_PROC_LNKPasteLine" title="Paste Copied Row" accesskey="8">Paste</a>
+  </ams_map></td>
+      
+<td><div name="T2R_RSRC_PROC_LNKGridNav" id="T2R_RSRC_PROC_LNKGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+      <a href="Advantage" vsds="T2R_RSRC_PROC_LNK" vsaction="firstpage" name="T2R_RSRC_PROC_LNKfirstpage" id="T2R_RSRC_PROC_LNKfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+      <a href="Advantage" vsds="T2R_RSRC_PROC_LNK" vsaction="prevpage" name="T2R_RSRC_PROC_LNKprevpage" id="T2R_RSRC_PROC_LNKprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+      <a href="Advantage" vsds="T2R_RSRC_PROC_LNK" vsaction="nextpage" id="T2R_RSRC_PROC_LNKnextpage" name="T2R_RSRC_PROC_LNKnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+      <a href="Advantage" vsds="T2R_RSRC_PROC_LNK" vsaction="lastpage" id="T2R_RSRC_PROC_LNKlastpage" name="T2R_RSRC_PROC_LNKlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+<!-- ***************** Start txtT2RSRC_ID Pick ******************* -->
+<div style="visibility:hidden;display:none;position:absolute;">
+  <input id="IndexT2RSRC_ID" type="image" vspick="T3R_SC_APPL_RSRC" vspicktext="txtT2RSRC_ID" vsds="T2R_RSRC_PROC_LNK" vsaction="pick" name="pckT2RSRC_ID" src="../AMSImages/ADVPick.gif"
+ alt="" title="">
+</div>
+<!-- ***************** End txtT2RSRC_ID Pick ******************* -->
+        
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T2R_RSRC_PROC_LNK', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'RSRC_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Resource ID' ;
+  -->
+  </script>
+ 
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

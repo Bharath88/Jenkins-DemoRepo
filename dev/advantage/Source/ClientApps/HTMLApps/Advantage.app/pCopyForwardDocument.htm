@@ -1,0 +1,302 @@
+<!doctype HTML PUBLIC -//W3C//DTD HTML 4.0 Transitional//EN http://www.w3.org/TR/REC-html40/loose.dtd>
+<html lang="en">
+  <head>
+  <title>Copy Forward  </title>
+  <base href>
+  <link href="../AMSImages/ADVStyle.css" type="text/css" rel="STYLESHEET">
+  <link href="../AMSImages/ADVMenuStyle.css" type="text/css" rel="STYLESHEET">
+  <link href="../AMSImages/ADVAppStyle.css" type="text/css" rel="STYLESHEET">
+
+
+  <script language="JavaScript" type="text/javascript" vsscript="true">
+
+</script>
+  <script language="JavaScript" type="text/javascript" src="../AMSJS/AMSDHTMLLib.js">
+
+</script>
+  <script language="JavaScript" type="text/javascript" src="../AMSJS/AMSUtils.js">
+
+</script>
+  <script language="JavaScript" type="text/javascript" src="../AMSJS/AMSMenuArray.js">
+
+</script>
+  <script language="JavaScript" type="text/javascript" src="../AMSJS/AMSMenu.js">
+
+</script>
+  <script language="JavaScript" type="text/javascript" src="../AMSJS/AMSCalendar.js">
+
+</script>
+  <script language="JavaScript" type="text/javascript" src="../AMSJS/AMSTab.js">
+
+</script>
+  <vstext vspreservetag="true" name="InitPageTransaction" vsds=" ">
+  </head>
+
+
+  <body class="adv reftable dialog">
+    <vserror>
+
+
+    <form action="Advantage" name="pCopyForwardDocument" method="post" vsform="true">
+      <input value="" name="ExpandedSections" type="hidden">
+      <input value="" name="AMSPageVersNo" type="hidden">
+      <input value="" name="refreshScalar" type="hidden">
+
+
+      <div vsds="" id="MsgDisplay" vsvisible="true" name="MsgDisplay" class="advmsgdisplay" ams_type="msg_disp" title="Messages">
+        <vstext vspreservetag="true" name="MsgDispContent" vsds="">
+
+</div>
+      <div class="advpgcont" name="PageContent" id="PageContent">
+        <h1 class="advpagetitle">
+          <vstitle vstitle="Copy Forward">
+            Copy Forward</vstitle>
+        </h1>
+        <div class="advhdractns">
+          <vstext vspreservetag="true" name="PopupMenuLink" vsds=" ">
+
+</div>
+        <!-- BEGIN CUSTOMIZATION -->
+
+
+        <table class="advsecthdr1">
+          <tr>
+            <td>From Document</td>
+          </tr>
+        </table>
+        <!-- END CUSTOMIZATION -->
+        <input name="T1DOC_HDRvscurrency" type="hidden" vsds="T1DOC_HDR" vscurrency="true">
+        <!-- BEGIN CUSTOMIZATION -->
+        <!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<a href="Advantage" vsds="T1DOC_HDR" vsaction="11" name="T1DOC_HDRCopyRecord" id="T1DOC_HDRCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+      </td>
+
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="Advantage" vsds="T1DOC_HDR" vsaction="first" name="T1DOC_HDRfirst" id="T1DOC_HDRfirst" title="First Record" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T1DOC_HDR" vsaction="prev" name="T1DOC_HDRprev" id="T1DOC_HDRprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T1DOC_HDR" vsaction="next" name="T1DOC_HDRnext" id="T1DOC_HDRnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T1DOC_HDR" vsaction="last" name="T1DOC_HDRlast" id="T1DOC_HDRlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+-->
+        <!-- END CUSTOMIZATION -->
+        <fieldset class="advscalar">
+
+
+        <table>
+          <tr>
+            <td class="advscalarcol">
+              <table class="advscalar">
+                <tr>
+                  <td class="label"><label title="Category" for="txtT1DOC_CAT">Category :</label></td>
+                  <td class="val"><input vsds="T1DOC_HDR" value="DOC_CAT" id="txtT1DOC_CAT" name="txtT1DOC_CAT" showcodeinfo="" size="15" ams_max_len="8" type="text" vsdf="DOC_CAT" title="DOC_CAT"></td>
+                </tr>
+                <tr>
+                  <td class="label"><label title="Type" for="txtT1DOC_TYP">Type :</label></td>
+                  <td class="val"><input vsds="T1DOC_HDR" value="DOC_TYP" id="txtT1DOC_TYP" name="txtT1DOC_TYP" showcodeinfo="" size="15" ams_max_len="8" type="text" vsdf="DOC_TYP" title="DOC_TYP"></td>
+                </tr>
+                <!-- BEGIN CUSTOMIZATION -->
+                <!--
+      <tr>
+        <td class="label"><label for="txtT1DOC_CD" title="Code">Code :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_CD" id="txtT1DOC_CD"
+               size="15"
+ vsds="T1DOC_HDR" vsdf="DOC_CD"
+         ams_max_len="8"
+ ShowCodeInfo="" value="DOC_CD" title="Code">
+        </td>
+      </tr>
+-->
+
+
+                <tr>
+                  <td class="label"><label title="Code" for="txtT1DOC_CD">Code :</label></td>
+                  <td class="val"><input title="Code" showcodeinfo="" value="DOC_CD" type="text" size="15" vsds="T1DOC_HDR" ams_max_len="8" ams_readonly name="txtT1DOC_CD" id="txtT1DOC_CD" vsdf="DOC_CD"></td>
+                </tr>
+                <tr>
+                  <td class="label"><label title="Select Entire Document" for="DOC_SEL_ALL">Select Entire Document :</label></td>
+                  <td class="val"><input vsds="DOC_HDR" value="ON" id="DOC_SEL_ALL" name="DOC_SEL_ALL" checked vsdf="DOC_SEL_ALL" title="Select Entire Document" type="checkbox"></td>
+                </tr>
+                <!-- END CUSTOMIZATION -->
+
+</table>
+            </td>
+            <td class="advscalarcol">
+              <table class="advscalar">
+                <tr>
+                  <td class="label"><label title="Doc Dept" for="txtT1DOC_DEPT_CD">Doc Dept :</label></td>
+                  <td class=" val"><input vsds="T1DOC_HDR" value="DOC_DEPT_CD" id="txtT1DOC_DEPT_CD" name="txtT1DOC_DEPT_CD" showcodeinfo="" size="6" ams_max_len="4" vsdf="DOC_DEPT_CD" type="text" title="Doc Dept"></td>
+                </tr>
+                <tr>
+                  <td class="label"><label title=" Doc Unit" for="txtT1DOC_UNIT_CD"> Doc Unit :</label></td>
+                  <td class="val"><input vsds="T1DOC_HDR" value="DOC_UNIT_CD" id="txtT1DOC_UNIT_CD" name="txtT1DOC_UNIT_CD" showcodeinfo="" size="6" ams_max_len="4" vsdf="DOC_UNIT_CD" type="text" title=" Doc Unit"></td>
+                </tr>
+                <tr>
+                  <td class="label"><label title="ID" for="txtT1DOC_ID">ID :</label></td>
+                  <td class="val"><input vsds="T1DOC_HDR" value="DOC_ID" id="txtT1DOC_ID" name="txtT1DOC_ID" showcodeinfo="" size="20" ams_max_len="20" vsdf="DOC_ID" type="text" title="ID"></td>
+                </tr>
+                <tr>
+                  <td class="label"><label title="Version" for="txtT1DOC_VERS_NO">Version :</label></td>
+                  <td class="val"><input vsds="T1DOC_HDR" value="DOC_VERS_NO" id="txtT1DOC_VERS_NO" name="txtT1DOC_VERS_NO" showcodeinfo="" size="10" ams_max_len="10" vsdf="DOC_VERS_NO" type="text" title="Version"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        </fieldset>
+
+
+        <table class="advtrans recsrc">
+          <tr>
+            <td>
+</td>
+          </tr>
+        </table>
+        <!-- BEGIN CUSTOMIZATION -->
+
+
+        <table class="advsecthdr1">
+          <tr>
+            <td>To Document</td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td valign="top">
+              <table class="advscalar">
+                <tr>
+                  <td class="label reqlabel"><label title="Doc. Department Code" for="DOC_DEPT_CD">Doc. Department Code :</label></td>
+                  <td class="val"><input title="Doc. Department Code" showcodeinfo="" value="" type="text" size="6" vsds="DOC_HDR" ams_max_len="4" onblur="UTILS_OnBlurUpperCaseAndTrim( this, true, true )" maxlength="4" name="DOC_DEPT_CD" id="DOC_DEPT_CD" class="adveditable" vsdf="DOC_DEPT_CD"></td>
+                </tr>
+                <tr>
+                  <td class="label"><label title="Unit Code" for="DOC_UNIT_CD">Unit Code :</label></td>
+                  <td class="val"><input title="Unit Code" type="text" size="6" vsds="DOC_HDR" ams_max_len="4" onblur="UTILS_OnBlurUpperCaseAndTrim( this, true, true )" maxlength="4" name="DOC_UNIT_CD" id="DOC_UNIT_CD" class="adveditable" vsdf="DOC_UNIT_CD"></td>
+                </tr>
+              </table>
+            </td>
+            <td valign="top">
+              <table class="advscalar">
+                <tr>
+                  <td class="label"><label title="Document Id" for="DOC_ID">Document Id :</label></td>
+                  <td class="val"><input title="Document Id" showcodeinfo="" type="text" size="20" vsds="DOC_HDR" ams_max_len="20" onblur="UTILS_OnBlurUpperCaseAndTrim( this, true, true )" maxlength="20" name="DOC_ID" id="DOC_ID" class="adveditable" vsdf="DOC_ID"></td>
+                </tr>
+                <tr>
+                  <td class="label"><label title="Auto Numbering" for="DOC_AUTO_NUM">Auto Numbering :</label></td>
+                  <td name="Val"><input vsds="DOC_HDR" id="DOC_AUTO_NUM" name="DOC_AUTO_NUM" vsdf="DOC_AUTO_NUM" title="Auto Numbering" type="checkbox"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!-- END CUSTOMIZATION -->
+        <input value="" name="T2R_GEN_CPY_FWD_Currency" type="hidden">
+        <input value="" name="T2R_GEN_CPY_FWD_Old_Currency" type="hidden">
+
+
+        <table class="advgrid" name="tblT2R_GEN_CPY_FWD" id="tblT2R_GEN_CPY_FWD" vsds="T2R_GEN_CPY_FWD">
+          <tr class="advgridhdr">
+            <th class="advcorner left">
+
+</th>
+            <th>
+              <span name="T2DOC_TYP_TGTsortGridLabel" id="T2DOC_TYP_TGTsortGridLabel" title="Target Doc Type">
+              Target Doc Type</span>
+</th>
+            <th>
+<a vsds="T2R_GEN_CPY_FWD" href="Advantage" id="T2DOC_CD_TGTsort" name="T2DOC_CD_TGTsort" vsaction="sort" vsdf="DOC_CD_TGT" title="Sort By Target Doc Code">Target Doc Code</a></th>
+            <th>
+              <span name="T2CPY_FWD_DESCsortGridLabel" id="T2CPY_FWD_DESCsortGridLabel" title="Description">
+              Description</span>
+</th>
+            <th class="advcorner right">
+
+</th>
+          </tr>
+          <tr onclick="UTILS_SelectGridRow(this);return true;" vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow">
+            <td class="advgridrowselect"><input ams_no_scalar_refresh="ams_no_scalar_refresh" src="../AMSImages/ADVRowSel.gif" vsds="T2R_GEN_CPY_FWD" id="T2R_GEN_CPY_FWDvscurrency" name="T2R_GEN_CPY_FWDvscurrency" alt="Select Row" vsaction="Currency" title="Select Row" type="image"></td>
+            <td><vstext vsdf="DOC_TYP_TGT" name="txtT2DOC_TYP_TGT" vsds="T2R_GEN_CPY_FWD"></td>
+            <td><vstext vsdf="DOC_CD_TGT" name="txtT2DOC_CD_TGT" vsds="T2R_GEN_CPY_FWD"></td>
+            <td><vstext vsdf="CPY_FWD_DESC" name="txtT2CPY_FWD_DESC" vsds="T2R_GEN_CPY_FWD"></td>
+            <td>
+</td>
+        </table>
+        <table class="advaction recsrc">
+          <tr>
+            <!-- BEGIN CUSTOMIZATION -->
+            <!--
+      <td>
+<a href="Advantage" vsds="T2R_GEN_CPY_FWD" vsaction="11" name="T2R_GEN_CPY_FWDCopyLine" id="T2R_GEN_CPY_FWDCopyLine" title="Copy Selected Row" accesskey="C">Copy</a>
+      </td>
+-->
+            <!-- END CUSTOMIZATION -->
+
+            <td><ams_map name="Grid Navigation" title="Grid Navigation">
+<a vsds="T2R_GEN_CPY_FWD" href="Advantage" id="T2R_GEN_CPY_FWDfirstpage" name="T2R_GEN_CPY_FWDfirstpage" accesskey="0" vsaction="firstpage" title="First Block of Rows">First</a>
+<a vsds="T2R_GEN_CPY_FWD" href="Advantage" id="T2R_GEN_CPY_FWDprevpage" name="T2R_GEN_CPY_FWDprevpage" accesskey="1" vsaction="prevpage" title="Previous Block of Rows">Prev</a>
+<a vsds="T2R_GEN_CPY_FWD" href="Advantage" id="T2R_GEN_CPY_FWDnextpage" name="T2R_GEN_CPY_FWDnextpage" accesskey="2" vsaction="nextpage" title="Next Block of Rows">Next</a>
+<a vsds="T2R_GEN_CPY_FWD" href="Advantage" id="T2R_GEN_CPY_FWDlastpage" name="T2R_GEN_CPY_FWDlastpage" accesskey="3" vsaction="lastpage" title="Last Block of Rows">Last</a> </ams_map></td>
+          </tr>
+        </table>
+        <table class="advtrans recsrc">
+          <tr>
+            <td>
+</td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <script language="JavaScript" type="text/javascript">
+                <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T2R_GEN_CPY_FWD', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'DOC_CD_TGT' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Target Doc Code' ;
+  -->
+
+</script>
+            </td>
+          </tr>
+        </table>
+        <table class="advtrans form" name="FormTrans" id="FormTrans" title="Page Navigations">
+          <tr>
+            <td><ams_map name="Page Navigations" title="Page Navigations"></ams_map></td>
+          </tr>
+        </table>
+        <table class="advokcancel">
+          <tr>
+            <td><!-- BEGIN CUSTOMIZATION -->
+<!--
+<input class="advbutton" type="submit" vsaction="ok" name="OK" value="OK" id="OK" title="OK">
+
+<input class="advbutton" type="submit" vsaction="cancel" name="Cancel" value="Cancel" id="Cancel" title="Cancel">
+-->
+<input value="OK" id="OK" name="OK" class="advbutton" onclick="javascript:submitForm(document.pCopyForwardDocument,'T2R_GEN_CPY_FWDCopy=T2R_GEN_CPY_FWDCopy', 'Display');" title="OK" type="button"><input value="Cancel" id="Cancel" name="Cancel" class="advbutton" vsaction="cancel" title="Cancel" type="submit">
+<a vsds="T2R_GEN_CPY_FWD" href="Advantage" id="T2R_GEN_CPY_FWDCopy" name="T2R_GEN_CPY_FWDCopy" class="advnavlink" vsaction="53" title="Copy Forward"> <!-- END CUSTOMIZATION --></a></td>
+          </tr>
+        </table>
+        <div class="advpopupwin" name="AMSPopupWin" id="AMSPopupWin">
+          <iframe src="../AMSImages/Empty.htm" height="100%" id="AMSPopupWinBody" name="AMSPopupWinBody" frameborder="0" width="100%" scrolling="no" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" title="Popup Menu">
+          </iframe>
+
+</div>
+<a vsds=" " href="Advantage" ams_action="" id="menu_action" name="menu_action" vsaction="menu_action" title="">
+</a></div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,736 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs"
+		ParentRoleName="R_SC_USER_DIR_INFO11"
+		>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/USID_1],v:User Information%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="USID_1"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs1"
+		ParentRoleName="R_SC_USER_DIR_INFO12"
+		>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/USID_2],v:User Information%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="USID_2"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs2"
+		ParentRoleName="R_SC_USER_DIR_INFO13"
+		>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/USID_3],v:User Information%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="USID_3"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs3"
+		ParentRoleName="R_SC_USER_DIR_INFO14"
+		>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/USID_4],v:User Information%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="USID_4"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs4"
+		ParentRoleName="R_SC_USER_DIR_INFO15"
+		>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/USID_5],v:User Information%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="USID_5"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs5"
+		ParentRoleName="R_SC_USER_DIR_INFO16"
+		>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/USID_6],v:User Information%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="USID_6"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs6"
+		ParentRoleName="R_SC_USER_DIR_INFO17"
+		>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/USID_7],v:User Information%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="USID_7"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs7"
+		ParentRoleName="R_SC_USER_DIR_INFO18"
+		>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/USID_8],v:User Information%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="USID_8"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs8"
+		ParentRoleName="R_SC_USER_DIR_INFO19"
+		>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/USID_9],v:User Information%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="USID_9"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs9"
+		ParentRoleName="R_SC_USER_DIR_INFO20"
+		>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/USID_10],v:User Information%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="USID_10"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_SC_USER_DIR_INFO_1"
+		ChildRoleName="R_WF_APRVsU1"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="NOTIF_WO_UID_1"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:User ID,p:PG_APRV_LVL_1%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_SC_USER_DIR_INFO_2"
+		ChildRoleName="R_WF_APRVsU2"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="NOTIF_WO_UID_2"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:User ID,p:PG_APRV_LVL_2%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_SC_USER_DIR_INFO_3"
+		ChildRoleName="R_WF_APRVsU3"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="NOTIF_WO_UID_3"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:User ID,p:PG_APRV_LVL_3%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_SC_USER_DIR_INFO_4"
+		ChildRoleName="R_WF_APRVsU4"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="NOTIF_WO_UID_4"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:User ID,p:PG_APRV_LVL_4%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_SC_USER_DIR_INFO_5"
+		ChildRoleName="R_WF_APRVsU5"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="NOTIF_WO_UID_5"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:User ID,p:PG_APRV_LVL_5%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_SC_USER_DIR_INFO_6"
+		ChildRoleName="R_WF_APRVsU6"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="NOTIF_WO_UID_6"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:User ID,p:PG_APRV_LVL_6%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_SC_USER_DIR_INFO_7"
+		ChildRoleName="R_WF_APRVsU7"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="NOTIF_WO_UID_7"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:User ID,p:PG_APRV_LVL_7%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_SC_USER_DIR_INFO_8"
+		ChildRoleName="R_WF_APRVsU8"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="NOTIF_WO_UID_8"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:User ID,p:PG_APRV_LVL_8%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_SC_USER_DIR_INFO_9"
+		ChildRoleName="R_WF_APRVsU9"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="NOTIF_WO_UID_9"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:User ID,p:PG_APRV_LVL_9%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_SC_USER_DIR_INFO_10"
+		ChildRoleName="R_WF_APRVsU10"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="NOTIF_WO_UID_10"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:User ID,p:PG_APRV_LVL_10%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId1_1ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId1_1"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID1_1"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID1_1] for Approval Level 1,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId1_2ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId1_2"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID1_2"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID1_2] for Approval Level 2,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId1_3ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId1_3"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID1_3"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID1_3] for Approval Level 3,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId1_4ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId1_4"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID1_4"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID1_4] for Approval Level 4,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId1_5ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId1_5"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID1_5"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID1_5] for Approval Level 5,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId1_6ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId1_6"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID1_6"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID1_6] for Approval Level 6,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId1_7ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId1_7"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID1_7"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID1_7] for Approval Level 7,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId1_8ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId1_8"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID1_8"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID1_8] for Approval Level 8,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId1_9ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId1_9"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID1_9"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID1_9] for Approval Level 9,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId1_10ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId1_10"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID1_10"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID1_10] for Approval Level 10,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId2_1ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId2_1"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID2_1"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID2_1] for Approval Level 1,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId2_2ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId2_2"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID2_2"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID2_2] for Approval Level 2,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId2_3ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId2_3"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID2_3"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID2_3] for Approval Level 3,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId2_4ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId2_4"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID2_4"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID2_4] for Approval Level 4,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId2_5ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId2_5"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID2_5"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID2_5] for Approval Level 5,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId2_6ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId2_6"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID2_6"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID2_6] for Approval Level 6,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId2_7ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId2_7"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID2_7"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID2_7] for Approval Level 7,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId2_8ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId2_8"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID2_8"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID2_8] for Approval Level 8,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId2_9ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId2_9"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID2_9"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID2_9] for Approval Level 9,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnUserId2_10ToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToRWfAprvEsclAsgnUserId2_10"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="ESCL_ASGN_USER_ID2_10"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_SC_USER_DIR_INFO/USER_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_USER_ID2_10] for Approval Level 10,v:User Information%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

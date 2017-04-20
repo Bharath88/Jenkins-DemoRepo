@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE DataObject SYSTEM "DataObject.dtd">
+<DataObject
+	DTDVersion="05.06.00"
+	SurrId="07328180570036"
+	CodedValuesList="True"
+	ImageReference=" "
+	IsRemoteAccessible="False"
+	UseQuotedIdentifiers="False"
+	XdaConnector="SQL"
+	SuperClass="AMSDataObject"
+	LockMode="AllApplicableAttributes"
+	>
+	<Attributes>
+		<Attribute
+			Name="IM_COMP_NM_SV"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			Persistent="True"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="128"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Component Name Stored Value]]></Caption>
+		</Attribute>
+		<Attribute
+			Name="IM_COMP_NM_DV"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			Persistent="True"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="128"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Component Name Display Value]]></Caption>
+			<ExtendedProperties>
+				<Property
+					Name="AllowMixedCase"
+					Value="Y"
+				/>
+			</ExtendedProperties>
+		</Attribute>
+		<Attribute
+			Name="AMS_ROW_VERS_NO"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Long"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Row Version Number]]></Caption>
+		</Attribute>
+	</Attributes>
+	<Indexes>
+		<Index
+			Name="PK_CVLIMCOMPNM"
+			Primary="True"
+			Unique="True"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="IM_COMP_NM_SV"
+				Descending="False"
+			/>
+		</Index>
+	</Indexes>
+	<SingularCaption><![CDATA[*]]></SingularCaption>
+	<PluralCaption><![CDATA[*]]></PluralCaption>
+	<VLSDeployment
+		DeploySecurityInfo="False"
+	/>
+	<Description><![CDATA[ ]]></Description>
+	<Comments><![CDATA[ ]]></Comments>
+	<CodedValuesList
+		StoredAttribute="IM_COMP_NM_SV"
+		DisplayAttribute="IM_COMP_NM_DV"
+	/>
+</DataObject>

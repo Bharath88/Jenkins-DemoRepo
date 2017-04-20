@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_EMAIL_INFOs"
+		ParentRoleName="R_SC_USER_DIR_INFO21"
+		>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_EMAIL_INFO(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="WF_MSG_ID"
+			/>
+		</AttributePairs>
+	</Relationship>
+</Relationships>

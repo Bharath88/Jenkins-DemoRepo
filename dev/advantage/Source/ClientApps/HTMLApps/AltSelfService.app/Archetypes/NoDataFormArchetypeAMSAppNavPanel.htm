@@ -1,0 +1,94 @@
+<!-- ARCHETYPE_COMMENT
+/*
+ *  NoDataFormArchetypeAMSAppNavPanel.htm           11/30/2000
+ *
+ * Copyright (c) 2000 American Management Systems (AMS)
+ * All rights reserved.
+ *
+ * This software is the confidential and proprietary information of AMS
+ * ("Confidential Information").  You shall not disclose such Confidential
+ * Information and shall use it only in accordance with the terms of the
+ * license agreement you entered into with AMS.
+ *
+ *-----------------------------------------------------------------------------
+ * This archetype is used to generate the application navigation panel page
+ * in the ADVANTAGE system.
+ *
+ * PVCS Modification Log:
+ *
+ * $Log:   N:/ASG/Projects/AMS_ADVANTAGE_Technical_Architecture/archives/dev/advantage/Source/ClientApps/HTMLApps/Advantage.app/Archetypes/NoDataFormArchetypeAMSAppNavPanel.htm-arc  $
+
+   Rev 1.2   11 May 2004 14:04:20   scoloney
+Conversion due to Versata 5.6.2 - Updated xml, Impl.java, page java, and archetype files.
+
+   Rev 1.1   19 Oct 2003 11:52:22   mshipley
+Accessibility changes
+
+   Rev 1.0   20 Aug 2002 15:11:46   SCOLONEY
+Initial revision.
+
+   Rev 1.1   01 May 2002 17:30:32   SNaikoti
+IR-NFFX003003: Changes related to Help Popup window.
+
+   Rev 1.0   Apr 13 2002 14:19:24   SColoney
+Initial revision.
+
+   Rev 1.2   Oct 08 2001 23:42:32   RApparaj
+Advantage EJB conversion (Build 5)
+
+   Rev 1.1   Oct 08 2001 20:31:52   RApparaj
+Versata EJB changes(Build 5)
+
+   Rev 1.0   Jun 24 2001 09:05:24   SColoney
+Initial revision.
+
+   Rev 1.3   May 23 2001 16:25:06   MShipley
+Removed favorites menu option
+
+   Rev 1.2   Feb 15 2001 16:15:52   MShipley
+Added AMS background image
+
+   Rev 1.1   Feb 13 2001 16:56:04   MShipley
+New Portal look
+
+   Rev 1.0   Dec 01 2000 16:54:50   SCOLONEY
+Initial revision.
+ *
+ */
+ARCHETYPE_COMMENT-->
+<JADEArchetype>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>FormCaption</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSPortalStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/ALTSS/ALTSSUtil.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+</head>
+
+<body class="advnavtree app" onload="this.focus()">
+
+  <form action="JadeAppName" method="post" vsform="true" name="FormName">
+    <div name="NavigationTree" id="NavigationTree" title="Navigation Tree" class="advnavtree" vsds=" " vsclass="com.amsinc.gems.adv.vfc.html.AMSAppNavTree" vsdf=" "></div>
+    <JADEInclude Archetype="MiscArchetypeAMSPopupWin"></JADEInclude>
+    <div style="visibility:hidden;display:none;position:absolute;top:-1000em;left:-1000em;">
+      <a href="JadeAppName" name="OpenDocument" id="OpenDocument" title="" target="Display" vsds=" " vsaction="49"></a>
+      <a href="JadeAppName" name="OpenHistDocument" id="OpenHistDocument" title="" target="Display" vsds=" " vsaction="64"></a>
+    </div>
+  </form>
+
+</body>
+
+</html>
+</JADEArchetype>
+<!--JADE_MACRO
+<<ArchetypeVersion 05.06.02.52>>
+<<SetProperty ClassName=com.amsinc.gems.adv.vfc.html.AMSNavigationTreePage>>
+JADE_MACRO-->

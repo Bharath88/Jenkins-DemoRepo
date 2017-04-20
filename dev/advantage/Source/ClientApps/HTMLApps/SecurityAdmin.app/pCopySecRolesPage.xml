@@ -1,0 +1,1480 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="Default"
+	PositionTop="375"
+	PositionLeft="375"
+	PositionWidth="150"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="True"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSOtherPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-1292267019"
+	>
+	<FormCaption><![CDATA[Copy Security Role]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="false"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="AddBackLink"
+			Value=""
+		/>
+		<Property
+			Name="AttachmentTypeOptions"
+			Value=""
+		/>
+		<Property
+			Name="AttachmentTypes"
+			Value=""
+		/>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="EditMode"
+			Value=""
+		/>
+		<Property
+			Name="ErrorsFromPage"
+			Value=""
+		/>
+		<Property
+			Name="ExcludeCopyPasteAttributes"
+			Value=""
+		/>
+		<Property
+			Name="IsSearchMenuButton"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="PageCode"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="SearchDS"
+			Value=""
+		/>
+		<Property
+			Name="SearchPopupOnload"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="R_SC_SEC_ROLE"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="True"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="Display"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="False"
+		AllowInsert="False"
+		AllowUpdate="False"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="SEC_ROLE_ID" />
+				<RSDefaultAttribute ID="2" Name="SEC_ROLE_DSCR" />
+				<RSDefaultAttribute ID="3" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="4" Name="SEC_ROLE_DSCR_UP" />
+				<RSDefaultAttribute ID="5" Name="TBL_LAST_DT" />
+				<RSDefaultAttribute ID="7" Name="OV_ERR_CD" />
+				<RSDefaultAttribute ID="8" Name="FGN_ORG_RSTR" />
+				<RSDefaultAttribute ID="9" Name="INTG_SEC_ROLE_FL" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="SEC_ROLE_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SEC_ROLE_DSCR" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SEC_ROLE_DSCR_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FGN_ORG_RSTR" Displayed="True" UnPlaced="False" Archetype="ComboboxReq" />
+				<RSAttribute Name="OV_ERR_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="INTG_SEC_ROLE_FL" Displayed="False" UnPlaced="True" />
+			</ScalerAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="DynamicGridAttrib"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCount"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCountMsg"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="ShowSearchPopup"
+				Value=""
+			/>
+			<Property
+				Name="UseDBHint"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value=""
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="false"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+		</ArchetypeExtendedProperties>
+		<RecordSource
+			RSID="2"
+			Prefix="T2"
+			BusinessObject="R_SC_RSRC_ACCS"
+			Relationship="SecurityRole2(R_SC_SEC_ROLE)-ResourceAccesses1(R_SC_RSRC_ACCS)"
+			RelnIsFromParent="True"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+			RecordSourceArchetype="AMSPickGridSelectMulti"
+			MaxGridRowCount="10"
+			FetchedBlockRowCount="16"
+			AllowDelete="False"
+			AllowInsert="False"
+			AllowUpdate="False"
+			SaveMode="Buffered"
+			PreFetchRowCount="False"
+			ParentAlias=""
+			ChildAlias=""
+			>
+			<ParameterizedWhereClause><![CDATA[ [SEC_ROLE_ID] = [?SEC_ROLE_ID]]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="RSRC_GP_ID" />
+					<RSDefaultAttribute ID="2" Name="SEC_ROLE_ID" />
+					<RSDefaultAttribute ID="3" Name="ORG_SEC_IND" />
+					<RSDefaultAttribute ID="4" Name="APRV_LVL_CD" />
+					<RSDefaultAttribute ID="5" Name="COMB_ACTN1_CD" />
+					<RSDefaultAttribute ID="6" Name="COMB_ACTN2_CD" />
+					<RSDefaultAttribute ID="7" Name="APPL_ACTN1_CD" />
+					<RSDefaultAttribute ID="8" Name="APPL_ACTN2_CD" />
+					<RSDefaultAttribute ID="9" Name="APPL_ACTN3_CD" />
+					<RSDefaultAttribute ID="10" Name="APPL_ACTN4_CD" />
+					<RSDefaultAttribute ID="11" Name="APPL_ACTN5_CD" />
+					<RSDefaultAttribute ID="12" Name="APPL_ACTN6_CD" />
+					<RSDefaultAttribute ID="13" Name="APPL_ACTN7_CD" />
+					<RSDefaultAttribute ID="14" Name="APPL_ACTN8_CD" />
+					<RSDefaultAttribute ID="15" Name="APPL_ACTN9_CD" />
+					<RSDefaultAttribute ID="16" Name="APPL_ACTN10_CD" />
+					<RSDefaultAttribute ID="17" Name="APPL_ACTN11_CD" />
+					<RSDefaultAttribute ID="18" Name="APPL_ACTN12_CD" />
+					<RSDefaultAttribute ID="19" Name="FLD_SEC_IND" />
+					<RSDefaultAttribute ID="20" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="21" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="22" Name="UI_FLD_SEC_IND" />
+					<RSDefaultAttribute ID="23" Name="USE_ROLE_OV_FL" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="RSRC_GP_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SEC_ROLE_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ORG_SEC_IND" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APRV_LVL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COMB_ACTN1_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COMB_ACTN2_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN1_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN2_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN3_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN4_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN5_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN6_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN7_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN8_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN9_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN10_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN11_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN12_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLD_SEC_IND" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UI_FLD_SEC_IND" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USE_ROLE_OV_FL" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="RSRC_GP_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SEC_ROLE_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ORG_SEC_IND" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="APRV_LVL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COMB_ACTN1_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COMB_ACTN2_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN1_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN2_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN3_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN4_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN5_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN6_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN7_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN8_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN9_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN10_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN11_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ACTN12_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLD_SEC_IND" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UI_FLD_SEC_IND" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USE_ROLE_OV_FL" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="ColumnProjectionLevel"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileName"
+					Value=""
+				/>
+				<Property
+					Name="DownloadMaxRows"
+					Value=""
+				/>
+				<Property
+					Name="DownloadProperties"
+					Value=""
+				/>
+				<Property
+					Name="DownloadTemplate"
+					Value=""
+				/>
+				<Property
+					Name="DynamicGridAttrib"
+					Value=""
+				/>
+				<Property
+					Name="maintenanceString"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCount"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCountMsg"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageEndWith"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageStartWith"
+					Value=""
+				/>
+				<Property
+					Name="MultiTableCurrentRow"
+					Value=""
+				/>
+				<Property
+					Name="PreFetchRowCount"
+					Value=""
+				/>
+				<Property
+					Name="SearchColList"
+					Value=""
+				/>
+				<Property
+					Name="ShowSearchPopup"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+				<Property
+					Name="VirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="ZoomDataSource"
+					Value=""
+				/>
+			</ExtendedProperties>
+			<ArchetypeExtendedProperties>
+				<Property
+					Name="New_Column_Fields"
+					Value=""
+				/>
+			</ArchetypeExtendedProperties>
+		</RecordSource>
+		<RecordSource
+			RSID="3"
+			Prefix="T3"
+			BusinessObject="R_SC_FGN_ORG"
+			Relationship="SecurityRole(R_SC_SEC_ROLE)-ForeignOrganizations1(R_SC_FGN_ORG)"
+			RelnIsFromParent="True"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+			RecordSourceArchetype="AMSGridNonEditable"
+			MaxGridRowCount="10"
+			FetchedBlockRowCount="16"
+			AllowDelete="False"
+			AllowInsert="False"
+			AllowUpdate="False"
+			SaveMode="Buffered"
+			PreFetchRowCount="False"
+			ParentAlias=""
+			ChildAlias=""
+			>
+			<ParameterizedWhereClause><![CDATA[ [SEC_ROLE_ID] = [?SEC_ROLE_ID]]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SEC_ROLE_ID" />
+					<RSDefaultAttribute ID="2" Name="USER_ID" />
+					<RSDefaultAttribute ID="3" Name="RSRC_GP_ID" />
+					<RSDefaultAttribute ID="17" Name="HOME_DEPT_CD" />
+					<RSDefaultAttribute ID="4" Name="COMB_ORG_CD" />
+					<RSDefaultAttribute ID="5" Name="FGN_GOVT_BRN_CD" />
+					<RSDefaultAttribute ID="6" Name="FGN_CAB_CD" />
+					<RSDefaultAttribute ID="7" Name="FGN_DEPT_CD" />
+					<RSDefaultAttribute ID="8" Name="FGN_DIV_CD" />
+					<RSDefaultAttribute ID="9" Name="FGN_GP_CD" />
+					<RSDefaultAttribute ID="10" Name="FGN_SECT_CD" />
+					<RSDefaultAttribute ID="11" Name="FGN_DSTC_CD" />
+					<RSDefaultAttribute ID="12" Name="FGN_BUR_CD" />
+					<RSDefaultAttribute ID="13" Name="FGN_UNIT_CD" />
+					<RSDefaultAttribute ID="14" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="15" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="16" Name="USER_ID_UP" />
+				</DefaultAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SEC_ROLE_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USER_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="HOME_DEPT_CD" Displayed="True" UnPlaced="True" />
+					<RSAttribute Name="RSRC_GP_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COMB_ORG_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FGN_GOVT_BRN_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FGN_CAB_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FGN_DEPT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FGN_DIV_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FGN_GP_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FGN_SECT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FGN_DSTC_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FGN_BUR_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="FGN_UNIT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="USER_ID_UP" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="ColumnProjectionLevel"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileName"
+					Value=""
+				/>
+				<Property
+					Name="DownloadMaxRows"
+					Value=""
+				/>
+				<Property
+					Name="DownloadProperties"
+					Value=""
+				/>
+				<Property
+					Name="DownloadTemplate"
+					Value=""
+				/>
+				<Property
+					Name="DynamicGridAttrib"
+					Value=""
+				/>
+				<Property
+					Name="maintenanceString"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCount"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCountMsg"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageEndWith"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageStartWith"
+					Value=""
+				/>
+				<Property
+					Name="MultiTableCurrentRow"
+					Value=""
+				/>
+				<Property
+					Name="PreFetchRowCount"
+					Value=""
+				/>
+				<Property
+					Name="SearchColList"
+					Value=""
+				/>
+				<Property
+					Name="ShowSearchPopup"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+				<Property
+					Name="VirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="ZoomDataSource"
+					Value=""
+				/>
+			</ExtendedProperties>
+			<ArchetypeExtendedProperties>
+				<Property
+					Name="Action_1_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_1_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_1_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_2_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_2_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_3_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_3_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_4_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_4_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_5_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_5_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="DetailsCaption"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileType"
+					Value="none"
+				/>
+				<Property
+					Name="GridDownloadFileType"
+					Value="none"
+				/>
+				<Property
+					Name="ObjectAttachmentMode"
+					Value="ReadOnly"
+				/>
+				<Property
+					Name="ObjectAttachments"
+					Value="false"
+				/>
+				<Property
+					Name="showCopyPaste"
+					Value="false"
+				/>
+				<Property
+					Name="TimelineData"
+					Value="false"
+				/>
+				<Property
+					Name="UploadFileType"
+					Value="none"
+				/>
+			</ArchetypeExtendedProperties>
+		</RecordSource>
+		<RecordSource
+			RSID="4"
+			Prefix="T4"
+			BusinessObject="R_SC_VALID_ROLES"
+			Relationship="SecurityRole4(R_SC_SEC_ROLE)-ValidSecurityRoles(R_SC_VALID_ROLES)"
+			RelnIsFromParent="True"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+			RecordSourceArchetype="AMSPickGridSelectMulti"
+			MaxGridRowCount="10"
+			FetchedBlockRowCount="16"
+			AllowDelete="False"
+			AllowInsert="False"
+			AllowUpdate="False"
+			SaveMode="Buffered"
+			PreFetchRowCount="False"
+			ParentAlias=""
+			ChildAlias=""
+			>
+			<ParameterizedWhereClause><![CDATA[ [SEC_ROLE_ID] = [?SEC_ROLE_ID]]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SEC_ROLE_ID" />
+					<RSDefaultAttribute ID="2" Name="DEPT_CD" />
+					<RSDefaultAttribute ID="3" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="4" Name="TBL_LAST_DT" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SEC_ROLE_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SEC_ROLE_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEPT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="ColumnProjectionLevel"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileName"
+					Value=""
+				/>
+				<Property
+					Name="DownloadMaxRows"
+					Value=""
+				/>
+				<Property
+					Name="DownloadProperties"
+					Value=""
+				/>
+				<Property
+					Name="DownloadTemplate"
+					Value=""
+				/>
+				<Property
+					Name="DynamicGridAttrib"
+					Value=""
+				/>
+				<Property
+					Name="maintenanceString"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCount"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCountMsg"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageEndWith"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageStartWith"
+					Value=""
+				/>
+				<Property
+					Name="MultiTableCurrentRow"
+					Value=""
+				/>
+				<Property
+					Name="PreFetchRowCount"
+					Value=""
+				/>
+				<Property
+					Name="SearchColList"
+					Value=""
+				/>
+				<Property
+					Name="ShowSearchPopup"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+				<Property
+					Name="VirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="ZoomDataSource"
+					Value=""
+				/>
+			</ExtendedProperties>
+			<ArchetypeExtendedProperties>
+				<Property
+					Name="New_Column_Fields"
+					Value=""
+				/>
+			</ArchetypeExtendedProperties>
+		</RecordSource>
+		<RecordSource
+			RSID="5"
+			Prefix="T5"
+			BusinessObject="R_SC_FLD_ACCS"
+			Relationship="SecurityRole1(R_SC_SEC_ROLE)-FieldAccess2(R_SC_FLD_ACCS)"
+			RelnIsFromParent="True"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+			RecordSourceArchetype="AMSGenericGridDisplay"
+			MaxGridRowCount="10"
+			FetchedBlockRowCount="16"
+			AllowDelete="True"
+			AllowInsert="True"
+			AllowUpdate="True"
+			SaveMode="Buffered"
+			PreFetchRowCount="False"
+			ParentAlias=""
+			ChildAlias=""
+			>
+			<ParameterizedWhereClause><![CDATA[ [SEC_ROLE_ID] = [?SEC_ROLE_ID]]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SEC_ROLE_ID" />
+					<RSDefaultAttribute ID="2" Name="FLD_ID" />
+					<RSDefaultAttribute ID="3" Name="CMPR_TYP_CD" />
+					<RSDefaultAttribute ID="4" Name="EDIT_MODE_CD" />
+					<RSDefaultAttribute ID="5" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="6" Name="FLD_ID_UP" />
+					<RSDefaultAttribute ID="7" Name="TBL_LAST_DT" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SEC_ROLE_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLD_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CMPR_TYP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="EDIT_MODE_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLD_ID_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SEC_ROLE_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLD_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="CMPR_TYP_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="EDIT_MODE_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FLD_ID_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="ColumnProjectionLevel"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileName"
+					Value=""
+				/>
+				<Property
+					Name="DownloadMaxRows"
+					Value=""
+				/>
+				<Property
+					Name="DownloadProperties"
+					Value=""
+				/>
+				<Property
+					Name="DownloadTemplate"
+					Value=""
+				/>
+				<Property
+					Name="DynamicGridAttrib"
+					Value=""
+				/>
+				<Property
+					Name="maintenanceString"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCount"
+					Value=""
+				/>
+				<Property
+					Name="MaxRowCountMsg"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageEndWith"
+					Value=""
+				/>
+				<Property
+					Name="MirrorPageStartWith"
+					Value=""
+				/>
+				<Property
+					Name="MultiTableCurrentRow"
+					Value=""
+				/>
+				<Property
+					Name="PreFetchRowCount"
+					Value=""
+				/>
+				<Property
+					Name="SearchColList"
+					Value=""
+				/>
+				<Property
+					Name="ShowSearchPopup"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+				<Property
+					Name="VirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="ZoomDataSource"
+					Value=""
+				/>
+			</ExtendedProperties>
+			<ArchetypeExtendedProperties>
+				<Property
+					Name="Action_1_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_1_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_1_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_1_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_2_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_2_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_2_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_3_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_3_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_3_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_4_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_4_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_4_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_AutoDocInfo"
+					Value="true"
+				/>
+				<Property
+					Name="Action_5_Label"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_OpenDoc"
+					Value="true"
+				/>
+				<Property
+					Name="Action_5_SubAction"
+					Value=""
+				/>
+				<Property
+					Name="Action_5_TrueDataSource"
+					Value=""
+				/>
+				<Property
+					Name="Adjacent_Fields"
+					Value=""
+				/>
+				<Property
+					Name="DetailsCaption"
+					Value=""
+				/>
+				<Property
+					Name="DownloadFileType"
+					Value="none"
+				/>
+				<Property
+					Name="GridDownloadFileType"
+					Value="none"
+				/>
+				<Property
+					Name="New_Column_Fields"
+					Value=""
+				/>
+				<Property
+					Name="ObjectAttachmentMode"
+					Value="ReadOnly"
+				/>
+				<Property
+					Name="ObjectAttachments"
+					Value="false"
+				/>
+				<Property
+					Name="showCopyPaste"
+					Value="false"
+				/>
+				<Property
+					Name="showSearchWin"
+					Value="false"
+				/>
+				<Property
+					Name="SummaryCaption"
+					Value=""
+				/>
+				<Property
+					Name="TimelineData"
+					Value="false"
+				/>
+				<Property
+					Name="UploadFileType"
+					Value="none"
+				/>
+			</ArchetypeExtendedProperties>
+			<RecordSource
+				RSID="6"
+				Prefix="T6"
+				BusinessObject="R_SC_FLD_CMPR"
+				Relationship="FieldAccess1(R_SC_FLD_ACCS)-FieldComparisons(R_SC_FLD_CMPR)"
+				RelnIsFromParent="True"
+				DoesSourceAffectMe="False"
+				DoIAffectSource="False"
+				IsAddedAfterGen="False"
+				RsAttributesDefault="False"
+				ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+				RecordSourceArchetype="AMSGridNonEditable"
+				MaxGridRowCount="10"
+				FetchedBlockRowCount="16"
+				AllowDelete="False"
+				AllowInsert="False"
+				AllowUpdate="False"
+				SaveMode="Buffered"
+				PreFetchRowCount="False"
+				ParentAlias=""
+				ChildAlias=""
+				>
+				<ParameterizedWhereClause><![CDATA[ [SEC_ROLE_ID] = [?SEC_ROLE_ID] and [FLD_ID] = [?FLD_ID]]]></ParameterizedWhereClause>
+				<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+				<OrderByClause><![CDATA[ ]]></OrderByClause>
+				<RSAttributesMeta>
+					<DefaultAttributes>
+						<RSDefaultAttribute ID="1" Name="SEC_ROLE_ID" />
+						<RSDefaultAttribute ID="2" Name="FLD_ID" />
+						<RSDefaultAttribute ID="3" Name="CMPR_1_TXT" />
+						<RSDefaultAttribute ID="4" Name="CMPR_2_TXT" />
+						<RSDefaultAttribute ID="5" Name="AMS_ROW_VERS_NO" />
+						<RSDefaultAttribute ID="6" Name="TBL_LAST_DT" />
+					</DefaultAttributes>
+					<GridAttributes>
+						<RSAttribute Name="SEC_ROLE_ID" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="FLD_ID" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="CMPR_1_TXT" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="CMPR_2_TXT" Displayed="True" UnPlaced="False" />
+						<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+						<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					</GridAttributes>
+				</RSAttributesMeta>
+				<ExtendedProperties>
+					<Property
+						Name="ColumnProjectionLevel"
+						Value=""
+					/>
+					<Property
+						Name="DownloadFileName"
+						Value=""
+					/>
+					<Property
+						Name="DownloadMaxRows"
+						Value=""
+					/>
+					<Property
+						Name="DownloadProperties"
+						Value=""
+					/>
+					<Property
+						Name="DownloadTemplate"
+						Value=""
+					/>
+					<Property
+						Name="DynamicGridAttrib"
+						Value=""
+					/>
+					<Property
+						Name="maintenanceString"
+						Value=""
+					/>
+					<Property
+						Name="MaxRowCount"
+						Value=""
+					/>
+					<Property
+						Name="MaxRowCountMsg"
+						Value=""
+					/>
+					<Property
+						Name="MirrorPageEndWith"
+						Value=""
+					/>
+					<Property
+						Name="MirrorPageStartWith"
+						Value=""
+					/>
+					<Property
+						Name="MultiTableCurrentRow"
+						Value=""
+					/>
+					<Property
+						Name="PreFetchRowCount"
+						Value=""
+					/>
+					<Property
+						Name="SearchColList"
+						Value=""
+					/>
+					<Property
+						Name="ShowSearchPopup"
+						Value=""
+					/>
+					<Property
+						Name="UseDBHint"
+						Value=""
+					/>
+					<Property
+						Name="VirtualResultSet"
+						Value=""
+					/>
+					<Property
+						Name="ZoomDataSource"
+						Value=""
+					/>
+				</ExtendedProperties>
+				<ArchetypeExtendedProperties>
+					<Property
+						Name="Action_1_AutoDocInfo"
+						Value="true"
+					/>
+					<Property
+						Name="Action_1_Label"
+						Value=""
+					/>
+					<Property
+						Name="Action_1_OpenDoc"
+						Value="true"
+					/>
+					<Property
+						Name="Action_1_SubAction"
+						Value=""
+					/>
+					<Property
+						Name="Action_1_TrueDataSource"
+						Value=""
+					/>
+					<Property
+						Name="Action_2_AutoDocInfo"
+						Value="true"
+					/>
+					<Property
+						Name="Action_2_Label"
+						Value=""
+					/>
+					<Property
+						Name="Action_2_OpenDoc"
+						Value="true"
+					/>
+					<Property
+						Name="Action_2_SubAction"
+						Value=""
+					/>
+					<Property
+						Name="Action_2_TrueDataSource"
+						Value=""
+					/>
+					<Property
+						Name="Action_3_AutoDocInfo"
+						Value="true"
+					/>
+					<Property
+						Name="Action_3_Label"
+						Value=""
+					/>
+					<Property
+						Name="Action_3_OpenDoc"
+						Value="true"
+					/>
+					<Property
+						Name="Action_3_SubAction"
+						Value=""
+					/>
+					<Property
+						Name="Action_3_TrueDataSource"
+						Value=""
+					/>
+					<Property
+						Name="Action_4_AutoDocInfo"
+						Value="true"
+					/>
+					<Property
+						Name="Action_4_Label"
+						Value=""
+					/>
+					<Property
+						Name="Action_4_OpenDoc"
+						Value="true"
+					/>
+					<Property
+						Name="Action_4_SubAction"
+						Value=""
+					/>
+					<Property
+						Name="Action_4_TrueDataSource"
+						Value=""
+					/>
+					<Property
+						Name="Action_5_AutoDocInfo"
+						Value="true"
+					/>
+					<Property
+						Name="Action_5_Label"
+						Value=""
+					/>
+					<Property
+						Name="Action_5_OpenDoc"
+						Value="true"
+					/>
+					<Property
+						Name="Action_5_SubAction"
+						Value=""
+					/>
+					<Property
+						Name="Action_5_TrueDataSource"
+						Value=""
+					/>
+					<Property
+						Name="DetailsCaption"
+						Value=""
+					/>
+					<Property
+						Name="DownloadFileType"
+						Value="none"
+					/>
+					<Property
+						Name="GridDownloadFileType"
+						Value="none"
+					/>
+					<Property
+						Name="ObjectAttachmentMode"
+						Value="ReadOnly"
+					/>
+					<Property
+						Name="ObjectAttachments"
+						Value="false"
+					/>
+					<Property
+						Name="showCopyPaste"
+						Value="false"
+					/>
+					<Property
+						Name="TimelineData"
+						Value="false"
+					/>
+					<Property
+						Name="UploadFileType"
+						Value="none"
+					/>
+				</ArchetypeExtendedProperties>
+			</RecordSource>
+		</RecordSource>
+	</RecordSource>
+</Form>

@@ -1,0 +1,1535 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Related Events</title>
+  <base href>
+
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="ABI" method="post" vsform="true" name="pRELATED_EVENTS">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+    <!-- BEGIN CUSTOMIZATION -->
+	    <a href="ABI" style="visibility:hidden" vsds=" " vsaction=""
+	      name="selectPartner" id="selectPartner" title="Select Partner"></a>
+	<!-- END CUSTOMIZATION -->
+
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+    <!-- BEGIN CUSTOMIZATION -->
+       <a name="T1ADV_FIN_EVENT_Top"></a>
+    <!-- END CUSTOMIZATION -->
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Related Events">Related Events</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+
+  </div>
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+      <a href="ABI" vsds="T1ADV_FIN_EVENT" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+      <a href="ABI" vsds="T1ADV_FIN_EVENT" vsaction="clearquery" name="T1ADV_FIN_EVENTclearquery" id="T1ADV_FIN_EVENTclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION -->
+<div title="Section Controls" name="Section Controls">
+
+    <a href="javascript:
+          AMSTAB_ExpandSection('T1ADV_FIN_EVENT_Section1','T1ADV_FIN_EVENT_Section1_Button');
+          	AMSTAB_ExpandSection('T2ADV_HRM_EVENT_Section2','T2ADV_HRM_EVENT_Section2_Button');
+		    	AMSTAB_ExpandSection('T3BRASSRING_EVENT_Section3','T3BRASSRING_EVENT_Section3_Button');
+		    	    AMSTAB_ExpandSection('T4INFOADVANTAGE_EVENT_Section4','T4INFOADVANTAGE_EVENT_Section4_Button');
+		    	        AMSTAB_ExpandSection('T5MAXIMO_EVENT_Section5','T5MAXIMO_EVENT_Section5_Button');
+		      		        AMSTAB_ExpandSection('T6MERIDIAN_EVENT_Section6','T6MERIDIAN_EVENT_Section6_Button');
+		    	                AMSTAB_ExpandSection('T14ADV_PERMITTING_EVENT_Section7','T14ADV_PERMITTING_EVENT_Section7_Button');
+		    	                 	AMSTAB_ExpandSection('T13NEOGOV_EVENT_Section8','T13NEOGOV_EVENT_Section8_Button');
+
+
+    " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+
+    <a href="javascript:
+          AMSTAB_CollapseSection('T1ADV_FIN_EVENT_Section1','T1ADV_FIN_EVENT_Section1_Button');
+          	AMSTAB_CollapseSection('T2ADV_HRM_EVENT_Section2','T2ADV_HRM_EVENT_Section2_Button');
+		  		AMSTAB_CollapseSection('T3BRASSRING_EVENT_Section3','T3BRASSRING_EVENT_Section3_Button');
+		        	AMSTAB_CollapseSection('T4INFOADVANTAGE_EVENT_Section4','T4INFOADVANTAGE_EVENT_Section4_Button');
+		            	AMSTAB_CollapseSection('T5MAXIMO_EVENT_Section5','T5MAXIMO_EVENT_Section5_Button');
+		    		    	AMSTAB_CollapseSection('T6MERIDIAN_EVENT_Section6','T6MERIDIAN_EVENT_Section6_Button');
+		                    	AMSTAB_CollapseSection('T14ADV_PERMITTING_EVENT_Section7','T14ADV_PERMITTING_EVENT_Section7_Button');
+		                      		AMSTAB_CollapseSection('T13NEOGOV_EVENT_Section8','T13NEOGOV_EVENT_Section8_Button');
+
+
+
+    " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+        </div>
+
+<!-- END CUSTOMIZATION -->
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<div>
+
+  <tr>
+    <td class="label"><label>Event Partner :</label></td>
+      <td class="val">
+        <select name="txtT1EVENT_PARTNER" id="txtT1EVENT_PARTNER" vsds="" vsdf="EVENT_PARTNER" vsdisplaymode="Query" size="1" vscodetable="CVL_PARTNERS" onchange="submitForm(document.forms[0],'selectPartner=selectPartner','');"  >
+          <option value="JADEStored">JADEDisplayed</option>
+        </select>
+      </td>
+  </tr>
+
+  <td>
+    <tr>
+      <td class="label"><label for="txtT1DIRECTION" title="Direction">Direction :</label></td>
+        <td class="val">
+          <select name="txtT1DIRECTION" id="txtT1DIRECTION" vsds="" vsdf="" vsdisplaymode="Query" size="1" vscodetable="CVL_DIRECTION" title="Direction" >
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+    </tr>
+
+    <tr>
+      <td class="label"><label for="txtT1EVENT_STATUS" title="Status">Status :</label></td>
+        <td class="val">
+          <select name="txtT1EVENT_STATUS" id="txtT1EVENT_STATUS" vsds="" vsdf="" vsdisplaymode="Query" size="1" vscodetable="CVL_EVENT_STATUS" title="Status">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+    </tr>
+</div>
+
+  <tr>
+    <td>
+      <div id="EventId" name="EventId" vsds="" class="label" vsvisible="false">
+        <label for="txtT1EVENT_ID" title="Event ID">Event Id: </label>
+      </div>
+    </td>
+
+    <td>
+      <div id="inputEventId" name="inputEventId" vsds="" vsvisible="false">
+        <input type="text" name="txtT1EVENT_ID" id="txtT1EVENT_ID"
+         size="15" vsds="" vsdf="" vsdisplaymode="Query"
+         value="" title="EVENT ID">
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <div id="MessageId" name="MessageId" vsds="" class="label" vsvisible="false">
+        <label for="txtT1MESSAGEID" title="MESSAGE ID">Message Id: </label>
+      </div>
+    </td>
+    <td>
+      <div id="InputMessageId" name="InputMessageId" vsds="" class="val" vsvisible="false">
+        <input type="text" name="txtT1MESSAGEID" id="txtT1MESSAGEID"
+         size="15" vsds="" vsdf="MESSAGEID" vsdisplaymode="Query"
+         value="" title="MESSAGE ID">
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <div id="ClientId" name="ClientId" vsds="" class="label" vsvisible="false">
+        <label for="txtT1CLIENT_ID" title="CLIENT ID">Client Id: </label>
+      </div>
+    </td>
+    <td>
+      <div id="inputClientId" name="inputClientId" vsds="" class="val" vsvisible="false">
+        <input type="text" name="txtT1CLIENT_ID" id="txtT1CLIENT_ID"
+         size="15" vsds="" vsdf="CLIENT_ID" vsdisplaymode="Query"
+         value="" title="CLIENT ID">
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <div id="TransactId" name="TransactId" vsds="" class="label" vsvisible="false">
+         <label for="txtT1TRANSACT_ID" title="TRANSACT ID">Transact Id: </label>
+      </div>
+    </td>
+    <td>
+      <div id="inputTransactId" name="inputTransactId" vsds="" class="val" vsvisible="false">
+        <input type="text" name="txtT1TRANSACT_ID" id="txtT1TRANSACT_ID"
+         size="15" vsds="" vsdf="TRANSACT_ID" vsdisplaymode="Query"
+         value="" title="TRANSACT ID">
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div id="PacketId" name="PacketId" vsds="" class="label" vsvisible="false">
+         <label for="txtT1PACKET_ID" title="PACKET ID">Packet Id: </label>
+       </div>
+    </td>
+    <td>
+      <div id="inputPacketId" name="inputPacketId" vsds="" class="val" vsvisible="false">
+        <input type="text" name="txtT1PACKET_ID" id="txtT1PACKET_ID"
+          size="15" vsds="" vsdf="PACKET_ID" vsdisplaymode="Query"
+          value="" title="PACKET ID">
+      </div>
+    </td>
+  </tr>
+<!-- END CUSTOMIZATION -->
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+  <input type="hidden" name="T1ADV_FIN_EVENT_Currency" value="">
+  <input type="hidden" name="T1ADV_FIN_EVENT_Old_Currency" value="">
+  <!-- BEGIN CUSTOMIZATION -->
+  <a name="T1ADV_FIN_EVENT_Section1_Top"></a>
+    <fieldset class="advscalar section">
+      <legend class="advscalar section">
+        <a href="javascript:AMSTAB_ToggleSection('T1ADV_FIN_EVENT_Section1','T1ADV_FIN_EVENT_Section1_Button');" title="Expand/Collapse General">
+          <img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1ADV_FIN_EVENT_Section1_Button"> ADVFIN</a>
+      </legend>
+      <div id="T1ADV_FIN_EVENT_Section1" class="advsection">
+         <table name="tblT1ADV_FIN_EVENT" id="tblT1ADV_FIN_EVENT" class="advgrid" vsds="T1ADV_FIN_EVENT"
+  vsds="T1ADV_FIN_EVENT" vsclass="">
+   <!-- END CUSTOMIZATION -->
+	<tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1DIRECTIONsortGridLabel" name="T1DIRECTIONsortGridLabel" vsdf="DIRECTION" title="Direction">Direction</span></th>
+
+        <th
+><span id="T1EVENT_IDsortGridLabel" name="T1EVENT_IDsortGridLabel" vsdf="EVENT_ID" title="Event ID">Event ID</span></th>
+
+        <th
+><span id="T1CORR_EVENT_IDsortGridLabel" name="T1CORR_EVENT_IDsortGridLabel" vsdf="CORR_EVENT_ID" title="Corresponding Event ID">Corresponding Event ID</span></th>
+
+        <th
+><span id="T1EVENT_FUNCTIONsortGridLabel" name="T1EVENT_FUNCTIONsortGridLabel" vsdf="EVENT_FUNCTION" title="Function">Function</span></th>
+
+        <th
+><span id="T1EVENT_OBJECTsortGridLabel" name="T1EVENT_OBJECTsortGridLabel" vsdf="EVENT_OBJECT" title="Object">Object</span></th>
+
+        <th
+><span id="T1EVENT_DATEsortGridLabel" name="T1EVENT_DATEsortGridLabel" vsdf="EVENT_DATE" title="Date">Date</span></th>
+
+        <th
+><span id="T1EVENT_STATUSsortGridLabel" name="T1EVENT_STATUSsortGridLabel" vsdf="EVENT_STATUS" title="Status">Status</span></th>
+
+        <th
+><span id="T1SOURCE_EVENT_IDsortGridLabel" name="T1SOURCE_EVENT_IDsortGridLabel" vsdf="SOURCE_EVENT_ID" title="Source">Source</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1ADV_FIN_EVENTvscurrency" id="T1ADV_FIN_EVENTvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1ADV_FIN_EVENT" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+>
+          <vstext vsds="T1ADV_FIN_EVENT" vsdf="DIRECTION" vscodetable="CVL_DIRECTION">
+        </td>
+
+        <td
+      class="right"
+<!-- BEGIN CUSTOMIZATION -->
+          <a name="VIEW_EVENT_ID" href="ABI" id="VIEW_EVENT_ID" title="Event Id" vsaction="pagetransition"
+           vsds="T1ADV_FIN_EVENT"  vsdf="" vsnavigation="T7pQRY_ADV_FIN_EVENT"
+           onclick="UTILS_GridRowAnchorClicked()"><vstext vsds="T1ADV_FIN_EVENT"
+           vsdf="EVENT_ID" ></a>
+<!-- END CUSTOMIZATION -->
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1CORR_EVENT_ID" vsds="T1ADV_FIN_EVENT" vsdf="CORR_EVENT_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1EVENT_FUNCTION" vsds="T1ADV_FIN_EVENT" vsdf="EVENT_FUNCTION"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1EVENT_OBJECT" vsds="T1ADV_FIN_EVENT" vsdf="EVENT_OBJECT"
+>
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1EVENT_DATE" vsds="T1ADV_FIN_EVENT" vsdf="EVENT_DATE"
+      vsformat="Short Date"
+>
+        </td>
+
+        <td
+>
+          <vstext vsds="T1ADV_FIN_EVENT" vsdf="EVENT_STATUS" vscodetable="CVL_EVENT_STATUS">
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1SOURCE_EVENT_ID" vsds="T1ADV_FIN_EVENT" vsdf="SOURCE_EVENT_ID"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+<td><div name="T1ADV_FIN_EVENTGridNav" id="T1ADV_FIN_EVENTGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+         <a href="ABI" vsds="T1ADV_FIN_EVENT" vsaction="firstpage" name="T1ADV_FIN_EVENTfirstpage" id="T1ADV_FIN_EVENTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+         <a href="ABI" vsds="T1ADV_FIN_EVENT" vsaction="prevpage" name="T1ADV_FIN_EVENTprevpage" id="T1ADV_FIN_EVENTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+         <a href="ABI" vsds="T1ADV_FIN_EVENT" vsaction="nextpage" id="T1ADV_FIN_EVENTnextpage" name="T1ADV_FIN_EVENTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+         <a href="ABI" vsds="T1ADV_FIN_EVENT" vsaction="lastpage" id="T1ADV_FIN_EVENTlastpage" name="T1ADV_FIN_EVENTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+    </tr>
+  </table>
+<!-- BEGIN CUSTOMIZATION -->
+      </div>
+    </fieldset>
+<!-- END CUSTOMIZATION -->
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+      <a href="ABI" vsds="T2ADV_HRM_EVENT" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+      <a href="ABI" vsds="T2ADV_HRM_EVENT" vsaction="clearquery" name="T2ADV_HRM_EVENTclearquery" id="T2ADV_HRM_EVENTclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+-->
+<!-- END CUSTOMIZATION -->
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+
+
+
+  <input type="hidden" name="T2ADV_HRM_EVENT_Currency" value="">
+  <input type="hidden" name="T2ADV_HRM_EVENT_Old_Currency" value="">
+<!-- BEGIN CUSTOMIZATION -->
+  <a name="T2ADV_HRM_EVENT_Section2_Top"></a>
+    <fieldset class="advscalar section">
+      <legend class="advscalar section">
+        <a href="javascript:AMSTAB_ToggleSection('T2ADV_HRM_EVENT_Section2','T2ADV_HRM_EVENT_Section2_Button');" title="Expand/Collapse General">
+          <img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T2ADV_HRM_EVENT_Section2_Button"> ADVHRM</a>
+      </legend>
+      <div id="T2ADV_HRM_EVENT_Section2" class="advsection">
+<!-- END CUSTOMIZATION -->
+  <table name="tblT2ADV_HRM_EVENT" id="tblT2ADV_HRM_EVENT" class="advgrid" vsds="T2ADV_HRM_EVENT">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T2DIRECTIONsortGridLabel" name="T2DIRECTIONsortGridLabel" vsdf="DIRECTION" title="Direction">Direction</span></th>
+
+        <th
+><span id="T2EVENT_IDsortGridLabel" name="T2EVENT_IDsortGridLabel" vsdf="EVENT_ID" title="Event ID">Event ID</span></th>
+
+        <th
+><span id="T2CORR_EVENT_IDsortGridLabel" name="T2CORR_EVENT_IDsortGridLabel" vsdf="CORR_EVENT_ID" title="Corresponding Event ID">Corresponding Event ID</span></th>
+
+        <th
+><span id="T2EVENT_FUNCTIONsortGridLabel" name="T2EVENT_FUNCTIONsortGridLabel" vsdf="EVENT_FUNCTION" title="Function">Function</span></th>
+
+        <th
+><span id="T2EVENT_OBJECTsortGridLabel" name="T2EVENT_OBJECTsortGridLabel" vsdf="EVENT_OBJECT" title="Object">Object</span></th>
+
+        <th
+><span id="T2EVENT_DATEsortGridLabel" name="T2EVENT_DATEsortGridLabel" vsdf="EVENT_DATE" title="Date">Date</span></th>
+
+        <th
+><span id="T2EVENT_STATUSsortGridLabel" name="T2EVENT_STATUSsortGridLabel" vsdf="EVENT_STATUS" title="Status">Status</span></th>
+
+        <th
+><span id="T2SOURCE_EVENT_IDsortGridLabel" name="T2SOURCE_EVENT_IDsortGridLabel" vsdf="SOURCE_EVENT_ID" title="Source">Source</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T2ADV_HRM_EVENTvscurrency" id="T2ADV_HRM_EVENTvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T2ADV_HRM_EVENT" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+>
+          <vstext vsds="T2ADV_HRM_EVENT" vsdf="DIRECTION" vscodetable="CVL_DIRECTION">
+        </td>
+
+        <td
+      class="right"
+<!-- BEGIN CUSTOMIZATION -->
+          <a name="VIEW_EVENT_ID" href="ABI" id="VIEW_EVENT_ID" title="Event Id" vsaction="pagetransition"
+            vsds="T2ADV_HRM_EVENT"  vsdf="" vsnavigation="T8pQRY_ADV_HRM_EVENT"
+            onclick="UTILS_GridRowAnchorClicked()"><vstext vsds="T1ADV_FIN_EVENT"
+            vsdf="EVENT_ID" ></a>
+<!-- END CUSTOMIZATION -->
+
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT2CORR_EVENT_ID" vsds="T2ADV_HRM_EVENT" vsdf="CORR_EVENT_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT2EVENT_FUNCTION" vsds="T2ADV_HRM_EVENT" vsdf="EVENT_FUNCTION"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT2EVENT_OBJECT" vsds="T2ADV_HRM_EVENT" vsdf="EVENT_OBJECT"
+>
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT2EVENT_DATE" vsds="T2ADV_HRM_EVENT" vsdf="EVENT_DATE"
+      vsformat="Short Date"
+>
+        </td>
+
+        <td
+>
+          <vstext vsds="T2ADV_HRM_EVENT" vsdf="EVENT_STATUS" vscodetable="CVL_EVENT_STATUS">
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT2SOURCE_EVENT_ID" vsds="T2ADV_HRM_EVENT" vsdf="SOURCE_EVENT_ID"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+<td><div name="T2ADV_HRM_EVENTGridNav" id="T2ADV_HRM_EVENTGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+         <a href="ABI" vsds="T2ADV_HRM_EVENT" vsaction="firstpage" name="T2ADV_HRM_EVENTfirstpage" id="T2ADV_HRM_EVENTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+         <a href="ABI" vsds="T2ADV_HRM_EVENT" vsaction="prevpage" name="T2ADV_HRM_EVENTprevpage" id="T2ADV_HRM_EVENTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+         <a href="ABI" vsds="T2ADV_HRM_EVENT" vsaction="nextpage" id="T2ADV_HRM_EVENTnextpage" name="T2ADV_HRM_EVENTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+         <a href="ABI" vsds="T2ADV_HRM_EVENT" vsaction="lastpage" id="T2ADV_HRM_EVENTlastpage" name="T2ADV_HRM_EVENTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION -->
+      </div>
+    </fieldset>
+<!-- END CUSTOMIZATION -->
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+      <a href="ABI" vsds="T3BRASSRING_EVENT" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+      <a href="ABI" vsds="T3BRASSRING_EVENT" vsaction="clearquery" name="T3BRASSRING_EVENTclearquery" id="T3BRASSRING_EVENTclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+-->
+<!-- END CUSTOMIZATION -->
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+
+
+
+  <input type="hidden" name="T3BRASSRING_EVENT_Currency" value="">
+  <input type="hidden" name="T3BRASSRING_EVENT_Old_Currency" value="">
+<!-- BEGIN CUSTOMIZATION -->
+  <a name="T3BRASSRING_EVENT_Section3_Top"></a>
+     <fieldset class="advscalar section">
+        <legend class="advscalar section">
+          <a href="javascript:AMSTAB_ToggleSection('T3BRASSRING_EVENT_Section3','T3BRASSRING_EVENT_Section3_Button');" title="Expand/Collapse General">
+            <img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T3BRASSRING_EVENT_Section3_Button"> BRASSRING</a>
+        </legend>
+        <div id="T3BRASSRING_EVENT_Section3" class="advsection">
+<!-- END CUSTOMIZATION -->
+  <table name="tblT3BRASSRING_EVENT" id="tblT3BRASSRING_EVENT" class="advgrid" vsds="T3BRASSRING_EVENT">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T3DIRECTIONsortGridLabel" name="T3DIRECTIONsortGridLabel" vsdf="DIRECTION" title="Direction">Direction</span></th>
+
+        <th
+><span id="T3CLIENT_IDsortGridLabel" name="T3CLIENT_IDsortGridLabel" vsdf="CLIENT_ID" title="Client ID">Client ID</span></th>
+
+        <th
+><span id="T3TRANSACT_IDsortGridLabel" name="T3TRANSACT_IDsortGridLabel" vsdf="TRANSACT_ID" title="Transaction ID">Transaction ID</span></th>
+
+        <th
+><span id="T3PACKET_IDsortGridLabel" name="T3PACKET_IDsortGridLabel" vsdf="PACKET_ID" title="Packet ID">Packet ID</span></th>
+
+        <th
+><span id="T3CORR_CLIENT_IDsortGridLabel" name="T3CORR_CLIENT_IDsortGridLabel" vsdf="CORR_CLIENT_ID" title="Corresponding Client ID">Corresponding Client ID</span></th>
+
+        <th
+><span id="T3CORR_TRANSACT_IDsortGridLabel" name="T3CORR_TRANSACT_IDsortGridLabel" vsdf="CORR_TRANSACT_ID" title="Corresponding Transact ID">Corresponding Transact ID</span></th>
+
+        <th
+><span id="T3CORR_PACKET_IDsortGridLabel" name="T3CORR_PACKET_IDsortGridLabel" vsdf="CORR_PACKET_ID" title="Corresponding Packet ID">Corresponding Packet ID</span></th>
+
+        <th
+><span id="T3EVENT_STATUSsortGridLabel" name="T3EVENT_STATUSsortGridLabel" vsdf="EVENT_STATUS" title="Status">Status</span></th>
+
+
+
+        <th
+><span id="T3SOURCE_TRANSACT_IDsortGridLabel" name="T3SOURCE_TRANSACT_IDsortGridLabel" vsdf="SOURCE_TRANSACT_ID" title="Source">Source</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T3BRASSRING_EVENTvscurrency" id="T3BRASSRING_EVENTvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T3BRASSRING_EVENT" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+>
+          <vstext vsds="T3BRASSRING_EVENT" vsdf="DIRECTION" vscodetable="CVL_DIRECTION">
+        </td>
+
+        <td
+      class="right"
+<!-- BEGIN CUSTOMIZATION -->
+  <a name="VIEW_CLIENT_ID" href="ABI" id="VIEW_CLIENT_ID" title="Client Id" vsaction="pagetransition"
+   vsds="T3BRASSRING_EVENT" vsdf="" vsnavigation="T9pQRY_BRASSRING_EVENT"
+   onclick="UTILS_GridRowAnchorClicked()"><vstext vsds="T3BRASSRING_EVENT"
+   vsdf="CLIENT_ID"></a>
+<!-- END CUSTOMIZATION -->
+         </td>
+
+        <td
+
+>
+          <vstext name="txtT3TRANSACT_ID" vsds="T3BRASSRING_EVENT" vsdf="TRANSACT_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3PACKET_ID" vsds="T3BRASSRING_EVENT" vsdf="PACKET_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3CORR_CLIENT_ID" vsds="T3BRASSRING_EVENT" vsdf="CORR_CLIENT_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3CORR_TRANSACT_ID" vsds="T3BRASSRING_EVENT" vsdf="CORR_TRANSACT_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3CORR_PACKET_ID" vsds="T3BRASSRING_EVENT" vsdf="CORR_PACKET_ID"
+>
+        </td>
+
+        <td
+>
+          <vstext vsds="T3BRASSRING_EVENT" vsdf="EVENT_STATUS" vscodetable="CVL_EVENT_STATUS">
+        </td>
+
+
+
+        <td
+
+>
+          <vstext name="txtT3SOURCE_TRANSACT_ID" vsds="T3BRASSRING_EVENT" vsdf="SOURCE_TRANSACT_ID"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+<td><div name="T3BRASSRING_EVENTGridNav" id="T3BRASSRING_EVENTGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+         <a href="ABI" vsds="T3BRASSRING_EVENT" vsaction="firstpage" name="T3BRASSRING_EVENTfirstpage" id="T3BRASSRING_EVENTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+         <a href="ABI" vsds="T3BRASSRING_EVENT" vsaction="prevpage" name="T3BRASSRING_EVENTprevpage" id="T3BRASSRING_EVENTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+         <a href="ABI" vsds="T3BRASSRING_EVENT" vsaction="nextpage" id="T3BRASSRING_EVENTnextpage" name="T3BRASSRING_EVENTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+         <a href="ABI" vsds="T3BRASSRING_EVENT" vsaction="lastpage" id="T3BRASSRING_EVENTlastpage" name="T3BRASSRING_EVENTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION -->
+      </div>
+    </fieldset>
+<!-- END CUSTOMIZATION -->
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+      <a href="ABI" vsds="T4INFOADVANTAGE_EVENT" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+      <a href="ABI" vsds="T4INFOADVANTAGE_EVENT" vsaction="clearquery" name="T4INFOADVANTAGE_EVENTclearquery" id="T4INFOADVANTAGE_EVENTclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+  -->
+  <!-- END CUSTOMIZATION -->
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+
+
+
+  <input type="hidden" name="T4INFOADVANTAGE_EVENT_Currency" value="">
+  <input type="hidden" name="T4INFOADVANTAGE_EVENT_Old_Currency" value="">
+<!-- BEGIN CUSTOMIZATION -->
+   <a name="T4INFOADVANTAGE_EVENT_Section4_Top"></a>
+     <fieldset class="advscalar section">
+        <legend class="advscalar section">
+          <a href="javascript:AMSTAB_ToggleSection('T4INFOADVANTAGE_EVENT_Section4','T4INFOADVANTAGE_EVENT_Section4_Button');" title="Expand/Collapse General">
+            <img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T4INFOADVANTAGE_EVENT_Section4_Button"> INFOADVANTAGE</a>
+        </legend>
+        <div id="T4INFOADVANTAGE_EVENT_Section4" class="advsection">
+  <!-- END CUSTOMIZATION -->
+  <table name="tblT4INFOADVANTAGE_EVENT" id="tblT4INFOADVANTAGE_EVENT" class="advgrid" vsds="T4INFOADVANTAGE_EVENT">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T4DIRECTIONsortGridLabel" name="T4DIRECTIONsortGridLabel" vsdf="DIRECTION" title="Direction">Direction</span></th>
+
+        <th
+><span id="T4EVENT_IDsortGridLabel" name="T4EVENT_IDsortGridLabel" vsdf="EVENT_ID" title="Event ID">Event ID</span></th>
+
+        <th
+><span id="T4CORR_EVENT_IDsortGridLabel" name="T4CORR_EVENT_IDsortGridLabel" vsdf="CORR_EVENT_ID" title="Corresponding Event ID">Corresponding Event ID</span></th>
+
+        <th
+><span id="T4EVENT_FUNCTIONsortGridLabel" name="T4EVENT_FUNCTIONsortGridLabel" vsdf="EVENT_FUNCTION" title="Function">Function</span></th>
+
+        <th
+><span id="T4EVENT_OBJECTsortGridLabel" name="T4EVENT_OBJECTsortGridLabel" vsdf="EVENT_OBJECT" title="Object">Object</span></th>
+
+        <th
+><span id="T4EVENT_DATEsortGridLabel" name="T4EVENT_DATEsortGridLabel" vsdf="EVENT_DATE" title="Date">Date</span></th>
+
+        <th
+><span id="T4EVENT_STATUSsortGridLabel" name="T4EVENT_STATUSsortGridLabel" vsdf="EVENT_STATUS" title="Status">Status</span></th>
+        <th
+><span id="T4SOURCE_EVENT_IDsortGridLabel" name="T4SOURCE_EVENT_IDsortGridLabel" vsdf="SOURCE_EVENT_ID" title="Source">Source</span></th>
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T4INFOADVANTAGE_EVENTvscurrency" id="T4INFOADVANTAGE_EVENTvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T4INFOADVANTAGE_EVENT" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+>
+          <vstext vsds="T4INFOADVANTAGE_EVENT" vsdf="DIRECTION" vscodetable="CVL_DIRECTION">
+        </td>
+
+        <td
+      class="right"
+<!-- BEGIN CUSTOMIZATION -->
+          <a name="VIEW_EVENT_ID" href="ABI" id="VIEW_EVENT_ID" title="Event Id" vsaction="pagetransition"
+           vsds="T4INFOADVANTAGE_EVENT" vsdf=""vsnavigation="T10pQRY_INFOADVANTAGE_EVENT"
+           onclick="UTILS_GridRowAnchorClicked()"><vstext vsds="T4INFOADVANTAGE_EVENT"
+           vsdf="EVENT_ID"></a>
+<!-- END CUSTOMIZATION -->
+       </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT4CORR_EVENT_ID" vsds="T4INFOADVANTAGE_EVENT" vsdf="CORR_EVENT_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT4EVENT_FUNCTION" vsds="T4INFOADVANTAGE_EVENT" vsdf="EVENT_FUNCTION"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT4EVENT_OBJECT" vsds="T4INFOADVANTAGE_EVENT" vsdf="EVENT_OBJECT"
+>
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT4EVENT_DATE" vsds="T4INFOADVANTAGE_EVENT" vsdf="EVENT_DATE"
+      vsformat="Short Date"
+>
+        </td>
+
+        <td
+>
+          <vstext vsds="T4INFOADVANTAGE_EVENT" vsdf="EVENT_STATUS" vscodetable="CVL_EVENT_STATUS">
+        </td>
+        <td
+      class="right"
+
+>
+          <vstext name="txtT4SOURCE_EVENT_ID" vsds="T4INFOADVANTAGE_EVENT" vsdf="SOURCE_EVENT_ID"
+>
+        </td>
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+<td><div name="T4INFOADVANTAGE_EVENTGridNav" id="T4INFOADVANTAGE_EVENTGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+         <a href="ABI" vsds="T4INFOADVANTAGE_EVENT" vsaction="firstpage" name="T4INFOADVANTAGE_EVENTfirstpage" id="T4INFOADVANTAGE_EVENTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+         <a href="ABI" vsds="T4INFOADVANTAGE_EVENT" vsaction="prevpage" name="T4INFOADVANTAGE_EVENTprevpage" id="T4INFOADVANTAGE_EVENTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+         <a href="ABI" vsds="T4INFOADVANTAGE_EVENT" vsaction="nextpage" id="T4INFOADVANTAGE_EVENTnextpage" name="T4INFOADVANTAGE_EVENTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+         <a href="ABI" vsds="T4INFOADVANTAGE_EVENT" vsaction="lastpage" id="T4INFOADVANTAGE_EVENTlastpage" name="T4INFOADVANTAGE_EVENTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION -->
+      </div>
+    </fieldset>
+<!-- END CUSTOMIZATION -->
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+      <a href="ABI" vsds="T5MAXIMO_EVENT" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+      <a href="ABI" vsds="T5MAXIMO_EVENT" vsaction="clearquery" name="T5MAXIMO_EVENTclearquery" id="T5MAXIMO_EVENTclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+  -->
+<!-- END CUSTOMIZATION -->
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+
+
+
+  <input type="hidden" name="T5MAXIMO_EVENT_Currency" value="">
+  <input type="hidden" name="T5MAXIMO_EVENT_Old_Currency" value="">
+<!-- BEGIN CUSTOMIZATION -->
+  <a name="T5MAXIMO_EVENT_Section5_Top"></a>
+    <fieldset class="advscalar section">
+      <legend class="advscalar section">
+        <a href="javascript:AMSTAB_ToggleSection('T5MAXIMO_EVENT_Section5','T5MAXIMO_EVENT_Section5_Button');" title="Expand/Collapse General">
+          <img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T5MAXIMO_EVENT_Section5_Button"> MAXIMO</a>
+      </legend>
+      <div id="T5MAXIMO_EVENT_Section5" class="advsection">
+<!-- END CUSTOMIZATION -->
+  <table name="tblT5MAXIMO_EVENT" id="tblT5MAXIMO_EVENT" class="advgrid" vsds="T5MAXIMO_EVENT">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T5DIRECTIONsortGridLabel" name="T5DIRECTIONsortGridLabel" vsdf="DIRECTION" title="Direction">Direction</span></th>
+
+        <th
+><span id="T5MESSAGEIDsortGridLabel" name="T5MESSAGEIDsortGridLabel" vsdf="MESSAGEID" title="Message ID">Message ID</span></th>
+
+        <th
+><span id="T5EVENT_STATUSsortGridLabel" name="T5EVENT_STATUSsortGridLabel" vsdf="EVENT_STATUS" title="Status">Status</span></th>
+
+        <th
+><span id="T5SOURCE_MESSAGEIDsortGridLabel" name="T5SOURCE_MESSAGEIDsortGridLabel" vsdf="SOURCE_MESSAGEID" title="Source">Source</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T5MAXIMO_EVENTvscurrency" id="T5MAXIMO_EVENTvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T5MAXIMO_EVENT" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+>
+          <vstext vsds="T5MAXIMO_EVENT" vsdf="DIRECTION" vscodetable="CVL_DIRECTION">
+        </td>
+
+        <td
+      class="right"
+<!-- BEGIN CUSTOMIZATION -->
+         <a name="VIEW_MESSAGEID" href="ABI" id="VIEW_MESSAGEID" title="Message Id"
+         vsaction="pagetransition" vsds="T5MAXIMO_EVENT" vsdf="" vsnavigation="T11pQRY_MAXIMO_EVENT"
+         onclick="UTILS_GridRowAnchorClicked()"><vstext vsds="T5MAXIMO_EVENT"
+         vsdf="MESSAGEID"></a>
+<!-- END CUSTOMIZATION -->
+           </td>
+
+           <td
+>
+          <vstext vsds="T5MAXIMO_EVENT" vsdf="EVENT_STATUS" vscodetable="CVL_EVENT_STATUS">
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT5SOURCE_MESSAGEID" vsds="T5MAXIMO_EVENT" vsdf="SOURCE_MESSAGEID"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+<td><div name="T5MAXIMO_EVENTGridNav" id="T5MAXIMO_EVENTGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+         <a href="ABI" vsds="T5MAXIMO_EVENT" vsaction="firstpage" name="T5MAXIMO_EVENTfirstpage" id="T5MAXIMO_EVENTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+         <a href="ABI" vsds="T5MAXIMO_EVENT" vsaction="prevpage" name="T5MAXIMO_EVENTprevpage" id="T5MAXIMO_EVENTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+         <a href="ABI" vsds="T5MAXIMO_EVENT" vsaction="nextpage" id="T5MAXIMO_EVENTnextpage" name="T5MAXIMO_EVENTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+         <a href="ABI" vsds="T5MAXIMO_EVENT" vsaction="lastpage" id="T5MAXIMO_EVENTlastpage" name="T5MAXIMO_EVENTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION -->
+      </div>
+    </fieldset>
+<!-- END CUSTOMIZATION -->
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+      <a href="ABI" vsds="T6MERIDIAN_EVENT" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+      <a href="ABI" vsds="T6MERIDIAN_EVENT" vsaction="clearquery" name="T6MERIDIAN_EVENTclearquery" id="T6MERIDIAN_EVENTclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+-->
+<!-- END CUSTOMIZATION -->
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+
+
+
+  <input type="hidden" name="T6MERIDIAN_EVENT_Currency" value="">
+  <input type="hidden" name="T6MERIDIAN_EVENT_Old_Currency" value="">
+<!-- BEGIN CUSTOMIZATION -->
+  <a name="T6MERIDIAN_EVENT_Section6_Top"></a>
+    <fieldset class="advscalar section">
+      <legend class="advscalar section">
+        <a href="javascript:AMSTAB_ToggleSection('T6MERIDIAN_EVENT_Section6','T6MERIDIAN_EVENT_Section6_Button');" title="Expand/Collapse General">
+          <img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T6MERIDIAN_EVENT_Section6_Button"> MERIDIAN</a>
+      </legend>
+      <div id="T6MERIDIAN_EVENT_Section6" class="advsection">
+<!-- END CUSTOMIZATION -->
+  <table name="tblT6MERIDIAN_EVENT" id="tblT6MERIDIAN_EVENT" class="advgrid" vsds="T6MERIDIAN_EVENT">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T6DIRECTIONsortGridLabel" name="T6DIRECTIONsortGridLabel" vsdf="DIRECTION" title="Direction">Direction</span></th>
+
+        <th
+><span id="T6CLIENT_IDsortGridLabel" name="T6CLIENT_IDsortGridLabel" vsdf="CLIENT_ID" title="Client ID">Client ID</span></th>
+
+        <th
+><span id="T6TRANSACT_IDsortGridLabel" name="T6TRANSACT_IDsortGridLabel" vsdf="TRANSACT_ID" title="Transaction ID">Transaction ID</span></th>
+
+        <th
+><span id="T6PACKET_IDsortGridLabel" name="T6PACKET_IDsortGridLabel" vsdf="PACKET_ID" title="Packet ID">Packet ID</span></th>
+
+        <th
+><span id="T6CORR_CLIENT_IDsortGridLabel" name="T6CORR_CLIENT_IDsortGridLabel" vsdf="CORR_CLIENT_ID" title="Corresponding Client ID">Corresponding Client ID</span></th>
+
+        <th
+><span id="T6CORR_TRANSACT_IDsortGridLabel" name="T6CORR_TRANSACT_IDsortGridLabel" vsdf="CORR_TRANSACT_ID" title="Corresponding Transact ID">Corresponding Transact ID</span></th>
+
+        <th
+><span id="T6CORR_PACKET_IDsortGridLabel" name="T6CORR_PACKET_IDsortGridLabel" vsdf="CORR_PACKET_ID" title="Corresponding Packet ID">Corresponding Packet ID</span></th>
+
+        <th
+
+><span id="T6EVENT_STATUSsortGridLabel" name="T6EVENT_STATUSsortGridLabel" vsdf="EVENT_STATUS" title="Status">Status</span></th>
+
+        <th
+><span id="T6SOURCE_TRANSACT_IDsortGridLabel" name="T6SOURCE_TRANSACT_IDsortGridLabel" vsdf="SOURCE_TRANSACT_ID" title="Source">Source</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T6MERIDIAN_EVENTvscurrency" id="T6MERIDIAN_EVENTvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T6MERIDIAN_EVENT" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+>
+          <vstext vsds="T6MERIDIAN_EVENT" vsdf="DIRECTION" vscodetable="CVL_DIRECTION">
+        </td>
+
+       <td
+      class="right"
+<!-- BEGIN CUSTOMIZATION -->
+          <a name="VIEW_CLIENT_ID" href="ABI" id="VIEW_CLIENT_ID" title="Client Id" vsaction="pagetransition"
+          vsds="T6MERIDIAN_EVENT" vsdf="" vsnavigation="T12pQRY_MERIDIAN_EVENT"
+          onclick="UTILS_GridRowAnchorClicked()"><vstext vsds="T6MERIDIAN_EVENT"
+          vsdf="CLIENT_ID"></a>
+<!-- END CUSTOMIZATION -->
+        </td>
+
+
+
+        <td
+
+>
+          <vstext name="txtT6TRANSACT_ID" vsds="T6MERIDIAN_EVENT" vsdf="TRANSACT_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT6PACKET_ID" vsds="T6MERIDIAN_EVENT" vsdf="PACKET_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT6CORR_CLIENT_ID" vsds="T6MERIDIAN_EVENT" vsdf="CORR_CLIENT_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT6CORR_TRANSACT_ID" vsds="T6MERIDIAN_EVENT" vsdf="CORR_TRANSACT_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT6CORR_PACKET_ID" vsds="T6MERIDIAN_EVENT" vsdf="CORR_PACKET_ID"
+>
+        </td>
+
+        <td
+
+>
+
+          <vstext vsds="T6MERIDIAN_EVENT" vsdf="EVENT_STATUS" vscodetable="CVL_EVENT_STATUS">
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT6SOURCE_TRANSACT_ID" vsds="T6MERIDIAN_EVENT" vsdf="SOURCE_TRANSACT_ID"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+<td><div name="T6MERIDIAN_EVENTGridNav" id="T6MERIDIAN_EVENTGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+         <a href="ABI" vsds="T6MERIDIAN_EVENT" vsaction="firstpage" name="T6MERIDIAN_EVENTfirstpage" id="T6MERIDIAN_EVENTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+         <a href="ABI" vsds="T6MERIDIAN_EVENT" vsaction="prevpage" name="T6MERIDIAN_EVENTprevpage" id="T6MERIDIAN_EVENTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+         <a href="ABI" vsds="T6MERIDIAN_EVENT" vsaction="nextpage" id="T6MERIDIAN_EVENTnextpage" name="T6MERIDIAN_EVENTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+         <a href="ABI" vsds="T6MERIDIAN_EVENT" vsaction="lastpage" id="T6MERIDIAN_EVENTlastpage" name="T6MERIDIAN_EVENTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+    </tr>
+  </table>
+  <!-- BEGIN CUSTOMIZATION -->
+
+        </div>
+  </fieldset>
+      <!-- END CUSTOMIZATION -->
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+ <!-- BEGIN CUSTOMIZATION -->
+  <!--  <table class="advaction recsrc">
+      <tr>
+        <td>
+          <ams_map title="Query Actions" name="Query Actions">
+        <a href="ABI" vsds="T14ADV_PERMITTING_EVENT" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+        <a href="ABI" vsds="T14ADV_PERMITTING_EVENT" vsaction="clearquery" name="T14ADV_PERMITTING_EVENTclearquery" id="T14ADV_PERMITTING_EVENTclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+          </ams_map>
+        </td>
+      </tr>
+    </table>
+    -->
+    <!-- END CUSTOMIZATION -->
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+
+
+
+  <input type="hidden" name="T14ADV_PERMITTING_EVENT_Currency" value="">
+  <input type="hidden" name="T14ADV_PERMITTING_EVENT_Old_Currency" value="">
+
+<!-- BEGIN CUSTOMIZATION -->
+  <a name="T14ADV_PERMITTING_EVENT_Section7_Top"></a>
+    <fieldset class="advscalar section">
+      <legend class="advscalar section">
+        <a href="javascript:AMSTAB_ToggleSection('T14ADV_PERMITTING_EVENT_Section7','T14ADV_PERMITTING_EVENT_Section7_Button');" title="Expand/Collapse General">
+          <img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T14ADV_PERMITTING_EVENT_Section7_Button"> ADVPERMITTING</a>
+      </legend>
+      <div id="T14ADV_PERMITTING_EVENT_Section7" class="advsection">
+<!-- END CUSTOMIZATION -->
+  <table name="tblT14ADV_PERMITTING_EVENT" id="tblT14ADV_PERMITTING_EVENT" class="advgrid" vsds="T14ADV_PERMITTING_EVENT">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T14DIRECTIONsortGridLabel" name="T14DIRECTIONsortGridLabel" vsdf="DIRECTION" title="Direction">Direction</span></th>
+
+        <th
+><span id="T14CLIENT_IDsortGridLabel" name="T14CLIENT_IDsortGridLabel" vsdf="CLIENT_ID" title="Client ID">Client ID</span></th>
+
+        <th
+><span id="T14TRANSACT_IDsortGridLabel" name="T14TRANSACT_IDsortGridLabel" vsdf="TRANSACT_ID" title="Transaction ID">Transaction ID</span></th>
+
+        <th
+><span id="T14PACKET_IDsortGridLabel" name="T14PACKET_IDsortGridLabel" vsdf="PACKET_ID" title="Packet ID">Packet ID</span></th>
+
+        <th
+><span id="T14EVENT_STATUSsortGridLabel" name="T14EVENT_STATUSsortGridLabel" vsdf="EVENT_STATUS" title="Status">Status</span></th>
+
+
+        <th
+><span id="T14SOURCE_TRANSACT_IDsortGridLabel" name="T14SOURCE_TRANSACT_IDsortGridLabel" vsdf="SOURCE_TRANSACT_ID" title="Source">Source</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T14ADV_PERMITTING_EVENTvscurrency" id="T14ADV_PERMITTING_EVENTvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T14ADV_PERMITTING_EVENT" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+>
+          <vstext vsds="T14ADV_PERMITTING_EVENT" vsdf="DIRECTION" vscodetable="CVL_DIRECTION">
+        </td>
+
+        <td
+       class="right"
+<!-- BEGIN CUSTOMIZATION -->
+          <a name="VIEW_CLIENT_ID" href="ABI" id="VIEW_CLIENT_ID" title="Client Id" vsaction="pagetransition"
+          vsds="T14ADV_PERMITTING_EVENT" vsdf="" vsnavigation="T15pQRY_ADV_PERMITTING_EVENT"
+          onclick="UTILS_GridRowAnchorClicked()"><vstext vsds="T14ADV_PERMITTING_EVENT"
+          vsdf="CLIENT_ID"></a>
+<!-- END CUSTOMIZATION -->
+        </td>
+
+
+        <td
+
+>
+          <vstext name="txtT14TRANSACT_ID" vsds="T14ADV_PERMITTING_EVENT" vsdf="TRANSACT_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT14PACKET_ID" vsds="T14ADV_PERMITTING_EVENT" vsdf="PACKET_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext vsds="T14ADV_PERMITTING_EVENT" vsdf="EVENT_STATUS" vscodetable="CVL_EVENT_STATUS">
+        </td>
+
+        <td 
+
+>
+          <vstext name="txtT14SOURCE_TRANSACT_ID" vsds="T14ADV_PERMITTING_EVENT" vsdf="SOURCE_TRANSACT_ID"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+<td><div name="T14ADV_PERMITTING_EVENTGridNav" id="T14ADV_PERMITTING_EVENTGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+         <a href="ABI" vsds="T14ADV_PERMITTING_EVENT" vsaction="firstpage" name="T14ADV_PERMITTING_EVENTfirstpage" id="T14ADV_PERMITTING_EVENTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+         <a href="ABI" vsds="T14ADV_PERMITTING_EVENT" vsaction="prevpage" name="T14ADV_PERMITTING_EVENTprevpage" id="T14ADV_PERMITTING_EVENTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+         <a href="ABI" vsds="T14ADV_PERMITTING_EVENT" vsaction="nextpage" id="T14ADV_PERMITTING_EVENTnextpage" name="T14ADV_PERMITTING_EVENTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+         <a href="ABI" vsds="T14ADV_PERMITTING_EVENT" vsaction="lastpage" id="T14ADV_PERMITTING_EVENTlastpage" name="T14ADV_PERMITTING_EVENTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+    </tr>
+  </table>
+<!-- BEGIN CUSTOMIZATION -->
+      </div>
+    </fieldset>
+<!-- END CUSTOMIZATION -->
+ <table class="advtrans recsrc">
+    <tr>
+      <td>
+      </td>
+    </tr>
+  </table>
+
+  <!-- BEGIN CUSTOMIZATION -->
+  <!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+      <a href="ABI" vsds="T13NEOGOV_EVENT" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+      <a href="ABI" vsds="T13NEOGOV_EVENT" vsaction="clearquery" name="T13NEOGOV_EVENTclearquery" id="T13NEOGOV_EVENTclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+  -->
+  <!-- END CUSTOMIZATION -->
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+        </table>
+      </td>
+    </tr>
+  </table>
+  <input type="hidden" name="T13NEOGOV_EVENT_Currency" value="">
+  <input type="hidden" name="T13NEOGOV_EVENT_Old_Currency" value="">
+  <!-- BEGIN CUSTOMIZATION -->
+    <a name="T13NEOGOV_EVENT_Section8_Top"></a>
+      <fieldset class="advscalar section">
+        <legend class="advscalar section">
+          <a href="javascript:AMSTAB_ToggleSection('T13NEOGOV_EVENT_Section8','T13NEOGOV_EVENT_Section8_Button');" title="Expand/Collapse General">
+            <img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T13NEOGOV_EVENT_Section8_Button"> NEOGOV</a>
+        </legend>
+        <div id="T13NEOGOV_EVENT_Section8" class="advsection">
+  <!-- END CUSTOMIZATION -->
+
+  <table name="tblT13NEOGOV_EVENT" id="tblT13NEOGOV_EVENT" class="advgrid" vsds="T13NEOGOV_EVENT">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T13DIRECTIONsortGridLabel" name="T13DIRECTIONsortGridLabel" vsdf="DIRECTION" title="Direction">Direction</span></th>
+
+        <th
+><span id="T13CLIENT_IDsortGridLabel" name="T13CLIENT_IDsortGridLabel" vsdf="CLIENT_ID" title="Client ID">Client ID</span></th>
+
+        <th
+><span id="T13TRANSACT_IDsortGridLabel" name="T13TRANSACT_IDsortGridLabel" vsdf="TRANSACT_ID" title="Transaction ID">Transaction ID</span></th>
+
+        <th
+><span id="T13PACKET_IDsortGridLabel" name="T13PACKET_IDsortGridLabel" vsdf="PACKET_ID" title="Packet ID">Packet ID</span></th>
+
+        <th
+><span id="T13EVENT_STATUSsortGridLabel" name="T13EVENT_STATUSsortGridLabel" vsdf="EVENT_STATUS" title="Status">Status</span></th>
+
+        <th
+><span id="T13SOURCE_TRANSACT_IDsortGridLabel" name="T13SOURCE_TRANSACT_IDsortGridLabel" vsdf="SOURCE_TRANSACT_ID" title="Source">Source</span></th>
+
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T13NEOGOV_EVENTvscurrency" id="T13NEOGOV_EVENTvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T13NEOGOV_EVENT" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+>
+          <vstext vsds="T13NEOGOV_EVENT" vsdf="DIRECTION" vscodetable="CVL_DIRECTION">
+        </td>
+
+        <td
+
+>
+
+          <!-- BEGIN CUSTOMIZATION -->
+		            <a name="VIEW_CLIENT_ID" href="ABI" id="VIEW_CLIENT_ID" title="Client Id" vsaction="pagetransition"
+		            vsds="T13NEOGOV_EVENT" vsdf="" vsnavigation="T16pQRY_NEOGOV_EVENT"
+		            onclick="UTILS_GridRowAnchorClicked()"><vstext vsds="T13NEOGOV_EVENT"
+		            vsdf="CLIENT_ID"></a>
+          <!-- END CUSTOMIZATION -->
+
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT13TRANSACT_ID" vsds="T13NEOGOV_EVENT" vsdf="TRANSACT_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT13PACKET_ID" vsds="T13NEOGOV_EVENT" vsdf="PACKET_ID"
+>
+        </td>
+
+        <td
+>
+          <vstext vsds="T13NEOGOV_EVENT" vsdf="EVENT_STATUS" vscodetable="CVL_EVENT_STATUS">
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT13SOURCE_TRANSACT_ID" vsds="T13NEOGOV_EVENT" vsdf="SOURCE_TRANSACT_ID"
+>
+        </td>
+
+
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+<td><div name="T13NEOGOV_EVENTGridNav" id="T13NEOGOV_EVENTGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+         <a href="ABI" vsds="T13NEOGOV_EVENT" vsaction="firstpage" name="T13NEOGOV_EVENTfirstpage" id="T13NEOGOV_EVENTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+         <a href="ABI" vsds="T13NEOGOV_EVENT" vsaction="prevpage" name="T13NEOGOV_EVENTprevpage" id="T13NEOGOV_EVENTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+         <a href="ABI" vsds="T13NEOGOV_EVENT" vsaction="nextpage" id="T13NEOGOV_EVENTnextpage" name="T13NEOGOV_EVENTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+         <a href="ABI" vsds="T13NEOGOV_EVENT" vsaction="lastpage" id="T13NEOGOV_EVENTlastpage" name="T13NEOGOV_EVENTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+    </tr>
+  </table>
+  <!-- BEGIN CUSTOMIZATION -->
+        </div>
+      </fieldset>
+  <!-- END CUSTOMIZATION -->
+
+ <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <!-- BEGIN CUSTOMIZATION -->
+  <br><br><table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T1ADV_FIN_EVENT_Top');" title="Go To Top">Top</a></td></tr></table>
+  <!-- END CUSTOMIZATION -->
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1QRY_ADV_FIN_EVENT', new Array(), new Array() ) ;
+
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="ABI" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

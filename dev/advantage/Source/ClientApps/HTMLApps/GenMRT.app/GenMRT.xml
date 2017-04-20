@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE Application SYSTEM "Application.dtd">
+<Application
+	SurrId="0333216666.sganapur.0004"
+	TargetLanguage="HTML"
+	DefaultLogonUserId=""
+	ExecutionEnvironment="Browser"
+	AppletHeight="575"
+	AppletWidth="725"
+	ClassId="D92D92B5-1074-11D4-ACAD-00C04F98D5BD"
+	SuppressDefaultLoginScreen="False"
+	InitialFramesetPage="FramesetPage"
+	StartupPageFrameName="Startup"
+	InitialFrameNameForStartupTrans="Display"
+	AppRepositoryVersion="05.06.01"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.00"
+	>
+	<ServerLocation><![CDATA[<localBlsServer>]]></ServerLocation>
+	<Description><![CDATA[sganapur application 1]]></Description>
+	<!-- APPLICATION FORMS -->
+	<Forms>
+		<Form>StartupPage</Form>
+		<Form>pR_FS_MRT_BUILD</Form>
+		<Form>pNoData</Form>
+		<Form>FramesetPage</Form>
+	</Forms>
+	<SourceFiles>
+		<SourceFile
+			PackageName="advantage.GenMRT"
+			>
+			<FileName><![CDATA[GenerateMRT.java]]></FileName>
+			<Path><![CDATA[]]></Path>
+		</SourceFile>
+		<SourceFile
+			PackageName="advantage.GenMRT"
+			>
+			<FileName><![CDATA[PLSDataTable.java]]></FileName>
+			<Path><![CDATA[]]></Path>
+		</SourceFile>
+		<SourceFile
+			PackageName="advantage.GenMRT"
+			>
+			<FileName><![CDATA[PLSMRTFormatter.java]]></FileName>
+			<Path><![CDATA[]]></Path>
+		</SourceFile>
+	</SourceFiles>
+</Application>

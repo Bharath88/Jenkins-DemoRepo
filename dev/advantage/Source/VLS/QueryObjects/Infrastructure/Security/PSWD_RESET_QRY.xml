@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0428618644.KiranH.0000"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="False"
+	ChildMostDataObject="R_SC_USER_INFO"
+	DistinctRowsOnly="False"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[SELECT R_SC_USER_INFO.USER_ID AS USER_ID, R_SC_USER_INFO.PSWD_QUERY AS PSWD_QUERY, R_SC_USER_INFO.PSWD_QUERY_ANSW AS PSWD_QUERY_ANSW, '' AS RESET_FL FROM <dbschema>.R_SC_USER_INFO R_SC_USER_INFO ]]></RuntimeSql>
+	<Where><![CDATA[]]></Where>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="R_SC_USER_INFO"
+			Alias="R_SC_USER_INFO"
+		/>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="USER_ID"
+			Alias="USER_ID"
+			AggregationType="None"
+			SourceDataObject="R_SC_USER_INFO"
+			Persistent="True"
+			>
+			<Description><![CDATA[The user id]]></Description>
+			<Caption><![CDATA[User ID]]></Caption>
+		</Attribute>
+
+		<Attribute
+			Name="PSWD_QUERY"
+			Alias="PSWD_QUERY"
+			AggregationType="None"
+			SourceDataObject="R_SC_USER_INFO"
+			Persistent="True"
+			>
+			<Description><![CDATA[The password question to be displayed to the user when requesting the password hint.]]></Description>
+			<Caption><![CDATA[Password Hint]]></Caption>
+		</Attribute>
+
+		<Attribute
+			Name="PSWD_QUERY_ANSW"
+			Alias="PSWD_QUERY_ANSW"
+			AggregationType="None"
+			SourceDataObject="R_SC_USER_INFO"
+			Persistent="True"
+			>
+			<Description><![CDATA[The password question reply.]]></Description>
+			<Caption><![CDATA[Password Hint Reply]]></Caption>
+		</Attribute>
+
+		<Attribute
+			Name=""
+			Alias="RESET_FL"
+			AggregationType="None"
+			>
+			<DataType
+				Type="Boolean"
+			/>
+			<Formula><![CDATA['']]></Formula>
+			<Description><![CDATA[Indicates if a password reset operation is in progress.]]></Description>
+			<Caption><![CDATA[Reset in Progress]]></Caption>
+		</Attribute>
+
+	</Attributes>
+	<RelsToParentDataObjects>
+		<RelToParentDO
+			RelToParentDO="UsersDirectoryInformation(R_SC_USER_DIR_INFO)-UserInformation(R_SC_USER_INFO)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_SC_USER_INFO"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="USER_ID"
+							ChildAttribute="USER_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+	</RelsToParentDataObjects>
+
+	<RelsToChildDataObjects>
+		<RelToChildDO
+			RelToChildDO="R_SC_USER_INFO(R_SC_USER_INFO)-R_SC_EFF_USER(R_SC_EFF_USER)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_SC_USER_INFO"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="USER_ID"
+							ChildAttribute="USER_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+		<RelToChildDO
+			RelToChildDO="R_SC_USER_INFO_1(R_SC_USER_INFO)-R_SC_EFF_USER_1(R_SC_EFF_USER)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_SC_USER_INFO"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="USER_ID"
+							ChildAttribute="EFF_USER_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+		<RelToChildDO
+			RelToChildDO="UserInformation2(R_SC_USER_INFO)-UsertoSecurityGroupLinks1(R_SC_USER_ROLE_LNK)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_SC_USER_INFO"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="USER_ID"
+							ChildAttribute="USER_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+		<RelToChildDO
+			RelToChildDO="UserInformation3(R_SC_USER_INFO)-ActionLog1(SC_ACTN_LOG)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_SC_USER_INFO"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="USER_ID"
+							ChildAttribute="USER_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+		<RelToChildDO
+			RelToChildDO="UserInformation4(R_SC_USER_INFO)-PasswordHistory(SC_PSWD_HIST)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_SC_USER_INFO"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="USER_ID"
+							ChildAttribute="USER_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+	</RelsToChildDataObjects>
+
+	<PickSupportedRels>
+		<PickSupportedRel
+			PickSupportedRel="R_SC_USER_INFO(R_SC_USER_INFO)-R_SC_EFF_USER(R_SC_EFF_USER)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="R_SC_USER_INFO_1(R_SC_USER_INFO)-R_SC_EFF_USER_1(R_SC_EFF_USER)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="UserInfo(R_SC_USER_INFO)-ForeignOrgHomeDept(R_SC_FGN_ORG)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="UserInformation2(R_SC_USER_INFO)-UsertoSecurityGroupLinks1(R_SC_USER_ROLE_LNK)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="UserInformation3(R_SC_USER_INFO)-ActionLog1(SC_ACTN_LOG)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="UserInformation4(R_SC_USER_INFO)-PasswordHistory(SC_PSWD_HIST)"
+		/>
+	</PickSupportedRels >
+
+</QueryObject>

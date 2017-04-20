@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!DOCTYPE DataObject SYSTEM "DataObject.dtd">
+<DataObject
+	SurrId="0383514195.MGupta.0001"
+	CodedValuesList="True"
+	IsRemoteAccessible="False"
+	UseQuotedIdentifiers="False"
+	SuperClass="AMSDataObject"
+	LockMode="NoOptimisticLocking"
+	ImageReference=" "
+	XdaConnector="SQL"
+	DTDVersion="05.06.00"
+	>
+	<CodedValuesList
+		DisplayAttribute="RPT_GP_NM"
+		StoredAttribute="RPT_GP_ID"
+	/>
+	<VLSDeployment
+		DeploySecurityInfo="False"
+	/>
+	<SingularCaption><![CDATA[*]]> </SingularCaption>
+	<PluralCaption><![CDATA[*]]> </PluralCaption>
+	<Description><![CDATA[ ]]> </Description>
+	<Comments><![CDATA[ ]]> </Comments>
+	<Attributes>
+		<Attribute
+			Name="RPT_GP_ID"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			>
+			<DataType
+				DataType="Integer"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Report Group Id]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="RPT_GP_NM"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="32"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Report Group Name]]> </Caption>
+			<ExtendedProperties>
+				<Property
+					Name="AllowMixedCase"
+					Value="Y"
+				/>
+			</ExtendedProperties>
+		</Attribute>
+		<Attribute
+			Name="AMS_ROW_VERS_NO"
+			Persistent="True"
+			PreventUserUpdates="True"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="Long"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[AMS Row Vers No]]> </Caption>
+		</Attribute>
+	</Attributes>
+	<Indexes>
+		<Index
+			Name="PK_CVLRPTGP"
+			Primary="True"
+			Unique="True"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="RPT_GP_ID"
+				Descending="False"
+			/>
+		</Index>
+	</Indexes>
+</DataObject>

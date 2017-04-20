@@ -1,0 +1,245 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Parameters For Print</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+<!-- BEGIN CUSTOMIZATION -->
+  <script type="text/javascript" language="JavaScript" >
+  <!--
+  	 function NTFY_CheckForNotifications()
+     {
+        document.Gen_Batch_Page_Param.flag.value = "1";
+        document.Gen_Batch_Page_Param.T1Gen_Batch_Pageprint1.click();
+     }
+  	 function NTFY_SetNoNotifications()
+     {
+        document.Gen_Batch_Page_Param.flag.value = "0";
+     }
+  -->
+  </script>
+<!-- END CUSTOMIZATION -->
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="Gen_Batch_Page_Param">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+<!-- BEGIN CUSTOMIZATION -->
+    <input type="hidden" name="flag" value="0">
+    <a style="visibility:hidden; display: none;" href="Advantage" vsds=" " vsaction=""
+       name="selectPrintJob" id="selectPrintJob" title="Select Print Job">Back</a>
+<!-- END CUSTOMIZATION -->
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Parameters For Print">Parameters For Print</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="Advantage" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+
+
+
+  <INPUT type="hidden" name="T1R_PRNT_JOBvscurrency" vsds="T1R_PRNT_JOB" vscurrency="true">
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Advantage" vsds="T1R_PRNT_JOB" vsaction="saveall" name="T1R_PRNT_JOBSaveAll" id="T1R_PRNT_JOBSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Advantage" vsds="T1R_PRNT_JOB" vsaction="undoall" name="T1R_PRNT_JOBUndoAll" id="T1R_PRNT_JOBUndoAll" title="Undo All" accesskey="6">Undo</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="Advantage" vsds="T1R_PRNT_JOB" vsaction="11" name="T1R_PRNT_JOBCopyRecord" id="T1R_PRNT_JOBCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+
+</ams_map>
+      </td>
+
+<td><vstext vsds=" " name="T1R_PRNT_JOBSearchColList" vspreservetag="true"></td>
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="Advantage" vsds="T1R_PRNT_JOB" vsaction="first" name="T1R_PRNT_JOBfirst" id="T1R_PRNT_JOBfirst" title="First Record" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T1R_PRNT_JOB" vsaction="prev" name="T1R_PRNT_JOBprev" id="T1R_PRNT_JOBprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T1R_PRNT_JOB" vsaction="next" name="T1R_PRNT_JOBnext" id="T1R_PRNT_JOBnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T1R_PRNT_JOB" vsaction="last" name="T1R_PRNT_JOBlast" id="T1R_PRNT_JOBlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+-->
+<!-- END CUSTOMIZATION -->
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+      <tr>
+        <td class="label"><label for="txtT1APPL_RSRC_ID" title="Application Resource ID">Application Resource ID :</label></td>
+        <td class="val">
+          <select name="txtT1APPL_RSRC_ID" id="txtT1APPL_RSRC_ID" vsds="T1R_PRNT_JOB" vsdf="APPL_RSRC_ID" size="1" vscodetable=" " ShowCodeInfo="" title="Application Resource ID">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1PRNT_JOB_CD" title="Print Job Code">Print Job Code :</label></td>
+        <td class="val">
+          <select name="txtT1PRNT_JOB_CD" id="txtT1PRNT_JOB_CD" vsds="T1R_PRNT_JOB" vsdf="PRNT_JOB_CD" size="1" vscodetable=" " ShowCodeInfo="" title="Print Job Code">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+-->
+      <tr>
+        <td class="label"><label for="txtT1PRNT_JOB_CD" title="Print Job Code">Print Job Code :</label></td>
+        <td class="val">
+          <select name="txtT1PRNT_JOB_CD" id="txtT1PRNT_JOB_CD" vsds="T1R_PRNT_JOB" vsdf="PRNT_JOB_CD" vsdisplaymode="Query" size="1" vscodetable=" " ams_show_es="NO" title="Print Job Code" onchange="submitForm(document.forms[0],'selectPrintJob=selectPrintJob','');">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+<!-- END CUSTOMIZATION -->
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <INPUT type="hidden" name="T2R_PRNT_RSRCvscurrency" vsds="T2R_PRNT_RSRC" vscurrency="true">
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="Advantage" vsds="T2R_PRNT_RSRC" vsaction="11" name="T2R_PRNT_RSRCCopyRecord" id="T2R_PRNT_RSRCCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+
+</ams_map>
+      </td>
+
+<td><vstext vsds=" " name="T2R_PRNT_RSRCSearchColList" vspreservetag="true"></td>
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="Advantage" vsds="T2R_PRNT_RSRC" vsaction="first" name="T2R_PRNT_RSRCfirst" id="T2R_PRNT_RSRCfirst" title="First Record" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T2R_PRNT_RSRC" vsaction="prev" name="T2R_PRNT_RSRCprev" id="T2R_PRNT_RSRCprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T2R_PRNT_RSRC" vsaction="next" name="T2R_PRNT_RSRCnext" id="T2R_PRNT_RSRCnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T2R_PRNT_RSRC" vsaction="last" name="T2R_PRNT_RSRClast" id="T2R_PRNT_RSRClast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+-->
+<!-- END CUSTOMIZATION -->
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT2PRNT_RSRC_ID" title="Print Resource ID">Print Resource ID :</label></td>
+        <td class="val">
+          <select name="txtT2PRNT_RSRC_ID" id="txtT2PRNT_RSRC_ID" vsds="T2R_PRNT_RSRC" vsdf="PRNT_RSRC_ID" vsdisplaymode="Query" size="1" vscodetable=" " ams_show_es="NO" title="Print Resource ID">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+<!-- BEGIN CUSTOMIZATION -->
+      <tr>
+        <td class="label"><label for="txtT1VIEW_FORMS" title="View Forms">View Forms :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1VIEW_FORMS" id="txtT1VIEW_FORMS" value="true" vsds="T1R_PRNT_JOB" vsdf="VIEW_FORMS" title="View Forms">
+        </td>
+      </tr>
+
+
+    <tr>
+      <td class="fieldlabel"><label for="txtT1FORMS_DSCR" title="View Forms Description">View Forms Description :</label></td>
+      <td class="tdwidth">
+      	   <input type="text" name="txtT1FORMS_DSCR" id="txtT1FORMS_DSCR" size="70" maxlength="60"
+            vsds="" vsdf="FORMS_DSCR" value="" title="View Forms Description" class="adveditable">
+      </td>
+    </tr>
+<!-- END CUSTOMIZATION -->
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<!-- BEGIN CUSTOMIZATION -->
+<input type="submit" class="advbutton" vsaction="print" value="OK" name="T1Gen_Batch_Pageprint1" id="T1Gen_Batch_Pageprint1" title="Print">
+<input type="submit" class="advbutton" vsaction="cancel" value="Cancel" name="Cancel" id="Cancel" title="Cancel">
+<!-- END CUSTOMIZATION -->
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,286 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Document Copy Forward Control</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="DocCopyFwdCtrl">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Document Copy Forward Control">Document Copy Forward Control</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+      
+ 
+  <a name="T1R_GEN_CPY_FWD_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1R_GEN_CPY_FWD_Currency" value="">
+  <input type="hidden" name="T1R_GEN_CPY_FWD_Old_Currency" value="">
+  <table name="tblT1R_GEN_CPY_FWD" id="tblT1R_GEN_CPY_FWD" class="advgrid" vsds="T1R_GEN_CPY_FWD">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1R_GEN_CPY_FWD" 
+    vsdf="ACTN_CD"
+ name="T1ACTN_CDsort" id="T1ACTN_CDsort" title="Sort By Sub Action Code">Sub Action Code</a></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1R_GEN_CPY_FWD" 
+    vsdf="DOC_TYP_SRC"
+ name="T1DOC_TYP_SRCsort" id="T1DOC_TYP_SRCsort" title="Sort By Source Doc Type">Source Doc Type</a></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1R_GEN_CPY_FWD" 
+    vsdf="DOC_CD_SRC"
+ name="T1DOC_CD_SRCsort" id="T1DOC_CD_SRCsort" title="Sort By Source Doc Code">Source Doc Code</a></th>
+      
+        <th 
+><span id="T1DOC_TYP_TGTsortGridLabel" name="T1DOC_TYP_TGTsortGridLabel" title="Target Doc Type">Target Doc Type</span></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1R_GEN_CPY_FWD" 
+    vsdf="DOC_CD_TGT"
+ name="T1DOC_CD_TGTsort" id="T1DOC_CD_TGTsort" title="Sort By Target Doc Code">Target Doc Code</a></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_GEN_CPY_FWDvscurrency" id="T1R_GEN_CPY_FWDvscurrency" title="Select Row" alt="Select Row" vsds="T1R_GEN_CPY_FWD" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1ACTN_CD" vsds="T1R_GEN_CPY_FWD" vsdf="ACTN_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_TYP_SRC" vsds="T1R_GEN_CPY_FWD" vsdf="DOC_TYP_SRC" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_CD_SRC" vsds="T1R_GEN_CPY_FWD" vsdf="DOC_CD_SRC" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_TYP_TGT" vsds="T1R_GEN_CPY_FWD" vsdf="DOC_TYP_TGT" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_CD_TGT" vsds="T1R_GEN_CPY_FWD" vsdf="DOC_CD_TGT" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+      <a href="Advantage" vsds="T1R_GEN_CPY_FWD" vsaction="firstpage" name="T1R_GEN_CPY_FWDfirstpage" id="T1R_GEN_CPY_FWDfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+<a href="Advantage" vsds="T1R_GEN_CPY_FWD" vsaction="prevpage" name="T1R_GEN_CPY_FWDprevpage" id="T1R_GEN_CPY_FWDprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+<a href="Advantage" vsds="T1R_GEN_CPY_FWD" vsaction="nextpage" id="T1R_GEN_CPY_FWDnextpage" name="T1R_GEN_CPY_FWDnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+<a href="Advantage" vsds="T1R_GEN_CPY_FWD" vsaction="lastpage" id="T1R_GEN_CPY_FWDlastpage" name="T1R_GEN_CPY_FWDlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+  
+  
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Advantage" vsds="T1R_GEN_CPY_FWD" vsaction="saveall" name="T1R_GEN_CPY_FWDSaveAll" id="T1R_GEN_CPY_FWDSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Advantage" vsds="T1R_GEN_CPY_FWD" vsaction="undoall" name="T1R_GEN_CPY_FWDUndoAll" id="T1R_GEN_CPY_FWDUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="Advantage" vsds="T1R_GEN_CPY_FWD" vsaction="delete" id="IndexT1R_GEN_CPY_FWDdelete" name="T1R_GEN_CPY_FWDdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="Advantage" vsds="T1R_GEN_CPY_FWD" vsaction="insert" id="T1R_GEN_CPY_FWDinsert" name="T1R_GEN_CPY_FWDinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="Advantage" vsds="T1R_GEN_CPY_FWD" vsaction="11" name="T1R_GEN_CPY_FWDCopyRecord" id="T1R_GEN_CPY_FWDCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+<a href="Advantage" vsds="T1R_GEN_CPY_FWD" vsaction="12" name="T1R_GEN_CPY_FWDPasteLine" id="T1R_GEN_CPY_FWDPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+      
+<td><vstext vsds=" " name="T1R_GEN_CPY_FWDSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+      <tr>
+        <td class="label"><label for="txtT1ACTN_CD" title="Sub Action Code">Sub Action Code :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1ACTN_CD" id="txtT1ACTN_CD" 
+               size="10"
+ vsds="T1R_GEN_CPY_FWD" vsdf="ACTN_CD" 
+               ams_max_len="10"
+ ShowCodeInfo="Security currently permits 300 sub-action codes.  The numbers begin at 300.  All sub-action codes will not appear on this table.  Copy forward is not the only type of sub-action." value="ACTN_CD" title="Sub Action Code">
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label for="txtT1DOC_TYP_SRC" title="Source Doc Type">Source Doc Type :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_TYP_SRC" id="txtT1DOC_TYP_SRC" 
+               size="15"
+ vsds="T1R_GEN_CPY_FWD" vsdf="DOC_TYP_SRC" 
+         ams_max_len="8"
+ ShowCodeInfo="" value="DOC_TYP_SRC" title="Source Doc Type">
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label for="txtT1DOC_TYP_TGT" title="Target Doc Type">Target Doc Type :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_TYP_TGT" id="txtT1DOC_TYP_TGT" 
+               size="15"
+ vsds="T1R_GEN_CPY_FWD" vsdf="DOC_TYP_TGT" 
+         ams_max_len="8"
+ ShowCodeInfo="" value="DOC_TYP_TGT" title="Target Doc Type">
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label for="txtT1DOC_CD_SRC" title="Source Doc Code">Source Doc Code :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_CD_SRC" id="txtT1DOC_CD_SRC" 
+               size="15"
+ vsds="T1R_GEN_CPY_FWD" vsdf="DOC_CD_SRC" 
+         ams_max_len="8"
+ ShowCodeInfo="" value="DOC_CD_SRC" title="Source Doc Code">
+        </td>
+      </tr>
+    
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1DOC_CD_TGT" title="Target Doc Code">Target Doc Code :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_CD_TGT" id="txtT1DOC_CD_TGT" 
+               size="15"
+ vsds="T1R_GEN_CPY_FWD" vsdf="DOC_CD_TGT" 
+         ams_max_len="8"
+ ShowCodeInfo="" value="DOC_CD_TGT" title="Target Doc Code">
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label for="txtT1CPY_FWD_DESC" title="Description">Description :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1CPY_FWD_DESC" id="txtT1CPY_FWD_DESC" 
+               size="20"
+ vsds="T1R_GEN_CPY_FWD" vsdf="CPY_FWD_DESC" 
+         ams_max_len="30"
+ ShowCodeInfo="" value="CPY_FWD_DESC" title="Description">
+        </td>
+      </tr>
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_GEN_CPY_FWD', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'ACTN_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Sub Action Code' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'DOC_TYP_SRC' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Source Doc Type' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'DOC_CD_SRC' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Source Doc Code' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'DOC_CD_TGT' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Target Doc Code' ;
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

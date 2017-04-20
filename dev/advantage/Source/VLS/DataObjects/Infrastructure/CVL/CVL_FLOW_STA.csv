@@ -1,0 +1,6 @@
+"CVL_FLOW_STA_DV","CVL_FLOW_STA_SV","AMS_ROW_VERS_NO"
+"Inactive",1,1
+"Active",2,1
+"Pending",3,1
+"Running",4,1
+"Complete",5,1

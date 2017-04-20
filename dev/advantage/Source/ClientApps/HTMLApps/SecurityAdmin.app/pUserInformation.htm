@@ -1,0 +1,707 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>User Information</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="SecurityAdmin" method="post" vsform="true" name="pUserInformation">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="User Information">User Information</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="SecurityAdmin" vsds="" vsaction="84" title="Back to Previous Page" name="QueryBack" id="QueryBack" accesskey="Z">Back</a>
+<a href="SecurityAdmin" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+
+
+  <INPUT type="hidden" name="T1R_SC_USER_INFOvscurrency" vsds="T1R_SC_USER_INFO" vscurrency="true">
+
+  <a name="T1R_SC_USER_INFO_Top"></a>
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="SecurityAdmin" vsds="T1R_SC_USER_INFO" vsaction="saveall" name="T1R_SC_USER_INFOSaveAll" id="T1R_SC_USER_INFOSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="SecurityAdmin" vsds="T1R_SC_USER_INFO" vsaction="undoall" name="T1R_SC_USER_INFOUndoAll" id="T1R_SC_USER_INFOUndoAll" title="Undo All" accesskey="6">Undo</a>
+<!-- BEGIN CUSTOMIZATION -->
+<a href="SecurityAdmin" vsds="T2R_SC_USER_DIR_INFO" vsaction="delete" id="IndexT2R_SC_USER_DIR_INFOdelete" name="T2R_SC_USER_DIR_INFOdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<!--
+<a href="SecurityAdmin" vsds="T1R_SC_USER_INFO" vsaction="delete" id="IndexT1R_SC_USER_INFOdelete" name="T1R_SC_USER_INFOdelete" title="Delete Current Record" accesskey="7">Delete</a>
+-->
+<!-- END CUSTOMIZATION -->
+</ams_map>
+      </td>
+
+<td><vstext vsds=" " name="T1R_SC_USER_INFOSearchColList" vspreservetag="true"></td>
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="SecurityAdmin" vsds="T1R_SC_USER_INFO" vsaction="first" name="T1R_SC_USER_INFOfirst" id="T1R_SC_USER_INFOfirst" title="First Record" accesskey="0">First</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_USER_INFO" vsaction="prev" name="T1R_SC_USER_INFOprev" id="T1R_SC_USER_INFOprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_USER_INFO" vsaction="next" name="T1R_SC_USER_INFOnext" id="T1R_SC_USER_INFOnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_USER_INFO" vsaction="last" name="T1R_SC_USER_INFOlast" id="T1R_SC_USER_INFOlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+
+      <td><ams_map title="Section Controls" name="Section Controls">
+
+<!-- BEGIN CUSTOMIZATION -->
+  <a href="javascript:
+        AMSTAB_ExpandSection('T2R_SC_USER_DIR_INFO_Section1','T2R_SC_USER_DIR_INFO_Section1_Button');
+        AMSTAB_ExpandSection('T1R_SC_USER_INFO_Section1','T1R_SC_USER_INFO_Section1_Button');
+          AMSTAB_ExpandSection('T1R_SC_USER_INFO_Section2','T1R_SC_USER_INFO_Section2_Button');
+            AMSTAB_ExpandSection('T1R_SC_USER_INFO_Section3','T1R_SC_USER_INFO_Section3_Button');
+              AMSTAB_ExpandSection('T1R_SC_USER_INFO_Section4','T1R_SC_USER_INFO_Section4_Button');
+              AMSTAB_ExpandSection('T1R_SC_USER_INFO_Section5','T1R_SC_USER_INFO_Section5_Button');
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+
+  <a href="javascript:
+        AMSTAB_ExpandSection('T2R_SC_USER_DIR_INFO_Section1','T2R_SC_USER_DIR_INFO_Section1_Button');
+        AMSTAB_CollapseSection('T1R_SC_USER_INFO_Section1','T1R_SC_USER_INFO_Section1_Button');
+          AMSTAB_CollapseSection('T1R_SC_USER_INFO_Section2','T1R_SC_USER_INFO_Section2_Button');
+            AMSTAB_CollapseSection('T1R_SC_USER_INFO_Section3','T1R_SC_USER_INFO_Section3_Button');
+              AMSTAB_CollapseSection('T1R_SC_USER_INFO_Section4','T1R_SC_USER_INFO_Section4_Button');
+              AMSTAB_CollapseSection('T1R_SC_USER_INFO_Section5','T1R_SC_USER_INFO_Section5_Button');
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+<!-- END CUSTOMIZATION -->
+      </ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <div>
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+
+
+
+      <tr>
+        <td class="label"><label for="txtT1USER_ID" title="User ID">User ID :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1USER_ID" id="txtT1USER_ID"
+               size="20"
+ vsds="T1R_SC_USER_INFO" vsdf="USER_ID"
+         ams_max_len="16"
+ ShowCodeInfo="" value="USER_ID" title="User ID">
+        </td>
+      </tr>
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+<!-- BEGIN CUSTOMIZATION -->
+      <tr>
+        <td class="label"><label for="txtT2USER_NM" title="Name">Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT2USER_NM" id="txtT2USER_NM"
+            size="20"
+ vsds="T2R_SC_USER_DIR_INFO" vsdf="USER_NM"
+ value="USER_NM" ams_readonly ShowCodeInfo="" title="Name">
+        </td>
+      </tr>
+<!-- END CUSTOMIZATION -->
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT1USER_ID_UP" id="txtT1USER_ID_UP"
+               size="20"
+           vsds="T1R_SC_USER_INFO" vsdf="USER_ID_UP"
+         ams_max_len="16"
+           ShowCodeInfo=""
+           value="USER_ID_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+
+<!-- BEGIN CUSTOMIZATION -->
+        </table></td></tr></table></div></fieldset><a name="T2R_SC_USER_DIR_INFO_Section1_Top"></a><fieldset class="advscalar section">
+        <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T2R_SC_USER_DIR_INFO_Section1','T2R_SC_USER_DIR_INFO_Section1_Button');" title="Expand/Collapse Directory Information"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T2R_SC_USER_DIR_INFO_Section1_Button"> Directory Information</a></legend>
+        <div id="T2R_SC_USER_DIR_INFO_Section1" class="advsection">
+        <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT2LAST_NM_TXT" title="Last Name">Last Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT2LAST_NM_TXT" id="txtT2LAST_NM_TXT"
+               size="20"
+ vsds="T2R_SC_USER_DIR_INFO" vsdf="LAST_NM_TXT"
+         ams_max_len="30"
+ ShowCodeInfo="" value="LAST_NM_TXT" title="Last Name">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT2FRST_NM_TXT" title="First Name">First Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT2FRST_NM_TXT" id="txtT2FRST_NM_TXT"
+               size="20"
+ vsds="T2R_SC_USER_DIR_INFO" vsdf="FRST_NM_TXT"
+         ams_max_len="30"
+ ShowCodeInfo="" value="FRST_NM_TXT" title="First Name">
+        </td>
+      </tr>
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT2LCLTY_TXT" title="Locality">Locality :</label></td>
+        <td class="val">
+          <input type="text" name="txtT2LCLTY_TXT" id="txtT2LCLTY_TXT"
+               size="20"
+ vsds="T2R_SC_USER_DIR_INFO" vsdf="LCLTY_TXT"
+         ams_max_len="30"
+ ShowCodeInfo="" value="LCLTY_TXT" title="Locality">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT2ROOM_NO_TXT" title="Room Number">Room Number :</label></td>
+        <td class="val">
+          <input type="text" name="txtT2ROOM_NO_TXT" id="txtT2ROOM_NO_TXT"
+               size="20"
+ vsds="T2R_SC_USER_DIR_INFO" vsdf="ROOM_NO_TXT"
+         ams_max_len="20"
+ ShowCodeInfo="" value="ROOM_NO_TXT" title="Room Number">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT2EMAIL_AD_TXT" title="Email Address">Email Address :</label></td>
+        <td class="val">
+          <input type="text" name="txtT2EMAIL_AD_TXT" id="txtT2EMAIL_AD_TXT"
+               size="20"
+ vsds="T2R_SC_USER_DIR_INFO" vsdf="EMAIL_AD_TXT"
+         ams_max_len="100"
+ ShowCodeInfo="" value="EMAIL_AD_TXT" title="Email Address">
+        </td>
+      </tr>
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT2PH_NO_TXT" title="Phone Number">Phone Number :</label></td>
+        <td class="val">
+          <input type="text" name="txtT2PH_NO_TXT" id="txtT2PH_NO_TXT"
+               size="20"
+ vsds="T2R_SC_USER_DIR_INFO" vsdf="PH_NO_TXT"
+         ams_max_len="30"
+ ShowCodeInfo="" value="PH_NO_TXT" title="Phone Number">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT2PH_EXT" title="Ext.">Ext. :</label></td>
+        <td class="val">
+          <input type="text" name="txtT2PH_EXT" id="txtT2PH_EXT"
+            size="6"
+ vsds="T2R_SC_USER_DIR_INFO" vsdf="PH_EXT"
+         ams_max_len="6"
+ ShowCodeInfo="" value="PH_EXT" title="Ext.">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT2FAX_NO_TXT" title="Fax Number">Fax Number :</label></td>
+        <td class="val">
+          <input type="text" name="txtT2FAX_NO_TXT" id="txtT2FAX_NO_TXT"
+               size="20"
+ vsds="T2R_SC_USER_DIR_INFO" vsdf="FAX_NO_TXT"
+         ams_max_len="30"
+ ShowCodeInfo="" value="FAX_NO_TXT" title="Fax Number">
+        </td>
+      </tr>
+<!-- END CUSTOMIZATION -->
+
+        </table></td></tr></table></div></fieldset>
+
+        <a name="T1R_SC_USER_INFO_Section1_Top"></a><fieldset class="advscalar section">
+        <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1R_SC_USER_INFO_Section1','T1R_SC_USER_INFO_Section1_Button');" title="Expand/Collapse Home Organization"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1R_SC_USER_INFO_Section1_Button"> Home Organization</a></legend>
+        <div id="T1R_SC_USER_INFO_Section1" class="advsection">
+        <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1HOME_GOVT_BRN_CD" title="Government Branch">Government Branch :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1HOME_GOVT_BRN_CD" id="txtT1HOME_GOVT_BRN_CD"
+            size="6"
+ vsds="T1R_SC_USER_INFO" vsdf="HOME_GOVT_BRN_CD"
+         ams_max_len="4"
+ ShowCodeInfo="" value="HOME_GOVT_BRN_CD" title="Government Branch">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1HOME_CAB_CD" title="Cabinet">Cabinet :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1HOME_CAB_CD" id="txtT1HOME_CAB_CD"
+            size="6"
+ vsds="T1R_SC_USER_INFO" vsdf="HOME_CAB_CD"
+         ams_max_len="4"
+ ShowCodeInfo="" value="HOME_CAB_CD" title="Cabinet">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1HOME_DEPT_CD" title="Department">Department :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1HOME_DEPT_CD" id="txtT1HOME_DEPT_CD"
+            size="6"
+ vsds="T1R_SC_USER_INFO" vsdf="HOME_DEPT_CD"
+         ams_max_len="4"
+ ShowCodeInfo="" value="HOME_DEPT_CD" title="Department">
+        </td>
+      </tr>
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1HOME_DIV_CD" title="Division">Division :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1HOME_DIV_CD" id="txtT1HOME_DIV_CD"
+            size="6"
+ vsds="T1R_SC_USER_INFO" vsdf="HOME_DIV_CD"
+         ams_max_len="4"
+ ShowCodeInfo="" value="HOME_DIV_CD" title="Division">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1HOME_GP_CD" title="Group">Group :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1HOME_GP_CD" id="txtT1HOME_GP_CD"
+            size="6"
+ vsds="T1R_SC_USER_INFO" vsdf="HOME_GP_CD"
+         ams_max_len="4"
+ ShowCodeInfo="" value="HOME_GP_CD" title="Group">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1HOME_SECT_CD" title="Section">Section :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1HOME_SECT_CD" id="txtT1HOME_SECT_CD"
+            size="6"
+ vsds="T1R_SC_USER_INFO" vsdf="HOME_SECT_CD"
+         ams_max_len="4"
+ ShowCodeInfo="" value="HOME_SECT_CD" title="Section">
+        </td>
+      </tr>
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1HOME_DSTC_CD" title="District">District :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1HOME_DSTC_CD" id="txtT1HOME_DSTC_CD"
+            size="6"
+ vsds="T1R_SC_USER_INFO" vsdf="HOME_DSTC_CD"
+         ams_max_len="4"
+ ShowCodeInfo="" value="HOME_DSTC_CD" title="District">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1HOME_BUR_CD" title="Bureau">Bureau :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1HOME_BUR_CD" id="txtT1HOME_BUR_CD"
+            size="6"
+ vsds="T1R_SC_USER_INFO" vsdf="HOME_BUR_CD"
+         ams_max_len="4"
+ ShowCodeInfo="" value="HOME_BUR_CD" title="Bureau">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1HOME_UNIT_CD" title="Unit">Unit :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1HOME_UNIT_CD" id="txtT1HOME_UNIT_CD"
+            size="6"
+ vsds="T1R_SC_USER_INFO" vsdf="HOME_UNIT_CD"
+         ams_max_len="4"
+ ShowCodeInfo="" value="HOME_UNIT_CD" title="Unit">
+        </td>
+      </tr>
+
+          </table></td></tr></table></div></fieldset><br><br><a name="T1R_SC_USER_INFO_Section2_Top"></a><fieldset class="advscalar section">
+          <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1R_SC_USER_INFO_Section2','T1R_SC_USER_INFO_Section2_Button');" title="Expand/Collapse Account Options"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1R_SC_USER_INFO_Section2_Button"> Account Options</a></legend>
+          <div id="T1R_SC_USER_INFO_Section2" class="advsection">
+          <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1OV_ERR_CD" title="Override Errors">Override Errors :</label></td>
+        <td class="val">
+          <select name="txtT1OV_ERR_CD" id="txtT1OV_ERR_CD" vsds="T1R_SC_USER_INFO" vsdf="OV_ERR_CD" size="1" vscodetable="CVL_OV_ERR_CD" ShowCodeInfo="" title="Override Errors">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1BAD_LGN_CT" title="Bad Logins Count">Bad Logins Count :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1BAD_LGN_CT" id="txtT1BAD_LGN_CT"
+            size="3"
+ vsds="T1R_SC_USER_INFO" vsdf="BAD_LGN_CT"
+            ams_max_len="3"
+ ShowCodeInfo="" value="BAD_LGN_CT" title="Bad Logins Count">
+        </td>
+      </tr>
+
+        <tr>
+      <td class="label"><label for="txtT1BAD_PSWD_RESET_CT" title="Bad Password Reset Count">Bad Password Reset Count :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1BAD_PSWD_RESET_CT" id="txtT1BAD_PSWD_RESET_CT"
+            size="10"
+ vsds="T1R_SC_USER_INFO" vsdf="BAD_PSWD_RESET_CT"
+            ams_max_len="10"
+ ShowCodeInfo="" value="BAD_PSWD_RESET_CT" title="Bad Password Reset Count" >
+        </td>
+        </tr>
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1LOCK_FL" title="Locked out">Locked out :</label></td>
+          <td class="val">
+            <select vsds="T1R_SC_USER_INFO" id="txtT1LOCK_FL" name="txtT1LOCK_FL" vscodetable="CVL_USER_LOCK_STA" showcodeinfo="" size="1" vsdf="LOCK_FL" title="Locked out">
+              <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1LOG_FL" title="Logging">Logging :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1LOG_FL" id="txtT1LOG_FL" value="LOG_FL" vsds="T1R_SC_USER_INFO" vsdf="LOG_FL" title="Logging">
+        </td>
+      </tr>
+
+
+      <tr>
+
+      <td class="label"><label for="txtT1EMAIL_ALERT_FL" title="Alert Email Notification">Alert Email Notification :</label></td>
+
+        <td class="val">
+          <input type="checkbox" name="txtT1EMAIL_ALERT_FL" id="txtT1EMAIL_ALERT_FL" value="EMAIL_ALERT_FL" vsds="T1R_SC_USER_INFO" vsdf="EMAIL_ALERT_FL" title="Alert Email Notification">
+        </td>
+      </tr>
+
+
+
+
+
+            </table></td>
+
+        <td class="advscalarcol">
+          <table class="advscalar">
+            <tr>
+
+            <td class="label"><label for="txtT1MSS_USER_TYP" title="MSS User Type">MSS User Type :</label></td>
+
+              <td class="val">
+                <select name="txtT1MSS_USER_TYP" id="txtT1MSS_USER_TYP" vsds="T1R_SC_USER_INFO" vsdf="MSS_USER_TYP" size="1" vscodetable="CVL_MSS_USER_TYP" ShowCodeInfo="" title="MSS User Type">
+                  <option value="JADEStored">JADEDisplayed</option>
+                </select>
+              </td>
+            </tr>
+
+
+      <tr>
+
+      <td class="label"><label for="txtT1ESS_USER_TYP" title="ESS User Type">ESS User Type :</label></td>
+
+        <td class="val">
+          <select name="txtT1ESS_USER_TYP" id="txtT1ESS_USER_TYP" vsds="T1R_SC_USER_INFO" vsdf="ESS_USER_TYP" size="1" vscodetable="CVL_ESS_USER_TYP" ShowCodeInfo="" title="ESS User Type">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+            </table></td></tr></table></div></fieldset><br><br><a name="T1R_SC_USER_INFO_Section3_Top"></a><fieldset class="advscalar section">
+            <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1R_SC_USER_INFO_Section3','T1R_SC_USER_INFO_Section3_Button');" title="Expand/Collapse Password Maintenance"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1R_SC_USER_INFO_Section3_Button"> Password Maintenance</a></legend>
+            <div id="T1R_SC_USER_INFO_Section3" class="advsection">
+            <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1PSWD_CHG_DT" title="Last Password Change Date">Last Password Change Date :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1PSWD_CHG_DT" id="txtT1PSWD_CHG_DT"
+                                 size="15"
+ vsds="T1R_SC_USER_INFO" vsdf="PSWD_CHG_DT"
+         vsformat="Short Date"
+ value="PSWD_CHG_DT" ams_readonly ShowCodeInfo="" title="Last Password Change Date">
+        </td>
+      </tr>
+
+      <tr>
+<!-- BEGIN CUSTOMIZATION -->
+        <td class="label"><label for="userPassword" title="Password">Password :</label></td>
+        <td class="val">
+          <input type="password" name="userPassword" id="userPassword"
+               size="20" ams_max_len="32" title="Password" fhdf="PSWD_TXT" onfocus="UTILS_SetColReference(this);">
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+<!-- BEGIN CUSTOMIZATION -->
+      <tr>
+        <td class="label"><label for="userPasswordConfirm" title="Confirm Password">Confirm Password :</label></td>
+        <td class="val">
+          <input type="password" name="userPasswordConfirm" id="userPasswordConfirm"
+               size="20" ams_max_len="32" title="Confirm Password" fhdf="PSWD_TXT" onfocus="UTILS_SetColReference(this);">
+        </td>
+      </tr>
+
+
+
+      <tr>
+        <td class="label"></td>
+        <td class="val"><a vsds="T1R_SC_USER_INFO" name="changePassword" id="changePassword" href="SecurityAdmin" vsaction="changePassword" title="Change User Password">Change User Password</a></td>
+      </tr>
+<!-- END CUSTOMIZATION -->
+
+      <tr>
+<!-- BEGIN CUSTOMIZATION -->
+        <td class="label"><label for="emailPassword" title="Email Password">Email Password :</label></td>
+        <td class="val">
+          <input type="password" name="emailPassword" id="emailPassword"
+               size="20" ams_max_len="32" title="Email Password" fhdf="EMAIL_PSWD_TXT" onfocus="UTILS_SetColReference(this);">
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+<!-- BEGIN CUSTOMIZATION -->
+      <tr>
+        <td class="label"><label for="emailPasswordConfirm" title="Confirm Email Password">Confirm Email Password :</label></td>
+        <td class="val">
+          <input type="password" name="emailPasswordConfirm" id="emailPasswordConfirm"
+               size="20" ams_max_len="32" title="Confirm Email Password" fhdf="EMAIL_PSWD_TXT" onfocus="UTILS_SetColReference(this);">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"></td>
+        <td class="val"><a vsds="T1R_SC_USER_INFO" name="changeEmailPassword" id="changeEmailPassword" href="SecurityAdmin" vsaction="changeEmailPassword" title="Change Email Password">Change Email Password</a></td>
+      </tr>
+
+
+	  </table></td><td class="advscalarcol"><table class="advscalar">
+	        <tr>
+	          <td class="label"><label for="expireNewPassword" title="Expire New Password">Expire New Password :</label></td>
+	          <td class="val">
+	            <input type="checkbox" name="expireNewPassword" vsds="T1R_SC_USER_INFO" vsdf="EXPIRE_NEW_PSWD_FL" id="expireNewPassword" title="Expire New Password">
+	          </td>
+	        </tr>
+	  	    <tr>
+              <td class="label"><label title="User Security Realm" for="txtT1USER_SEC_REALM">User Security Realm :</label></td>
+              <td class="val">
+        	     <select vsds="T1R_SC_USER_INFO" id="txtT1USER_SEC_REALM" name="txtT1USER_SEC_REALM" vscodetable=" " showcodeinfo="" ams_show_es="NO" size="1" vsdf="USER_SEC_REALM" title="User Security Realm">
+        		     <option value="JADEStored">JADEDisplayed</option>
+                 </select>
+              </td>
+           </tr>
+      </table></td>
+
+<!-- END CUSTOMIZATION -->
+<!-- BEGIN CUSTOMIZATION -->
+<!-- infoADVANTAGE password not maintained -->
+<!--
+      <tr>
+
+        <td class="label"><label for="BOPassword" title="infoADVANTAGE Password">infoADVANTAGE Password :</label></td>
+        <td class="val">
+          <input type="password" name="BOPassword" id="BOPassword"
+               size="20" ams_max_len="32" title="infoADVANTAGE Password">
+
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="label"><label for="BOPasswordConfirm" title="Confirm infoADVANTAGE Password">Confirm infoADVANTAGE Password :</label></td>
+        <td class="val">
+          <input type="password" name="BOPasswordConfirm" id="BOPasswordConfirm"
+               size="20" ams_max_len="32" title="Confirm infoADVANTAGE Password">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"></td>
+        <td class="val"><a vsds="T1R_SC_USER_INFO" name="changeBOPassword" id="changeBOPassword" href="SecurityAdmin" vsaction="changeBOPassword" title="Change infoADVANTAGE Password">Change infoADVANTAGE Password</a></td>
+      </tr>
+
+-->
+<!-- END CUSTOMIZATION -->
+
+              </table></td></tr></table></div></fieldset><br><br><a name="T1R_SC_USER_INFO_Section4_Top"></a><fieldset class="advscalar section">
+              <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1R_SC_USER_INFO_Section4','T1R_SC_USER_INFO_Section4_Button');" title="Expand/Collapse Applications"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1R_SC_USER_INFO_Section4_Button"> Applications</a></legend>
+              <div id="T1R_SC_USER_INFO_Section4" class="advsection">
+              <table><tr><td class="advscalarcol"><table class="advscalar">
+
+  <vstext vsclass="com.amsinc.gems.adv.vfc.html.AMSAppListTextContentElement" name="txtT1APPL_AUTH" vsds="T1R_SC_USER_INFO" vsdf="APPL_AUTH" vspreservetag="true">
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+
+  <a name="T1R_SC_USER_INFO_Section5_Top"></a>
+  <fieldset class="advscalar section">
+          <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1R_SC_USER_INFO_Section5','T1R_SC_USER_INFO_Section5_Button');"
+          title="Expand/Collapse Home Organization"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand"
+          name="T1R_SC_USER_INFO_Section5_Button"> External Directory Information</a></legend>
+          <div id="T1R_SC_USER_INFO_Section5" class="advsection">
+          <table><tr><td class="advscalarcol"><table class="advscalar">
+		      <tr>
+		        <td class="label"><label for="txtT1EXT_DIR_ID" title="External Directory">External Directory Information :</label></td>
+		        <td class="val">
+		          <input type="text" name="txtT1EXT_DIR_ID" id="txtT1EXT_DIR_ID"
+		            size="40"
+		 vsds="T1R_SC_USER_INFO" vsdf="EXT_DIR_ID"
+		         ams_max_len="100"
+		 ShowCodeInfo="" value="EXT_DIR_ID" title="External Directory Informaion">
+		        </td>
+      </tr>
+
+
+
+  </table></td></tr></table></div></fieldset>
+
+
+  <table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T1R_SC_USER_INFO_Top');">Top</a></td></tr></table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+<a name="btnT3pUserRoleLink" href="SecurityAdmin" id="btnT3pUserRoleLink" title="Navigation to Security Role Grants" vsaction="pagetransition"
+           vsds="T1R_SC_USER_INFO"
+ vsnavigation="T3pUserRoleLink">Security Role Grants</a>
+<a name="btnT4pSC_ACTN_LOG_Grid" href="SecurityAdmin" id="btnT4pSC_ACTN_LOG_Grid" title="Navigation to Action Log" vsaction="pagetransition"
+           vsds="T1R_SC_USER_INFO"
+ vsnavigation="T4pSC_ACTN_LOG_Grid">Action Log</a>
+      </td>
+    </tr>
+  </table>
+
+  <INPUT type="hidden" name="T2R_SC_USER_DIR_INFOvscurrency" vsds="T2R_SC_USER_DIR_INFO" vscurrency="true">
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <a name="T2R_SC_USER_DIR_INFO_Top"></a>
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="SecurityAdmin" vsds="T2R_SC_USER_DIR_INFO" vsaction="delete" id="IndexT2R_SC_USER_DIR_INFOdelete" name="T2R_SC_USER_DIR_INFOdelete" title="Delete Current Record" accesskey="7">Delete</a>
+</ams_map>
+      </td>
+
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="SecurityAdmin" vsds="T2R_SC_USER_DIR_INFO" vsaction="first" name="T2R_SC_USER_DIR_INFOfirst" id="T2R_SC_USER_DIR_INFOfirst" title="First Record" accesskey="0">First</a>
+
+<a href="SecurityAdmin" vsds="T2R_SC_USER_DIR_INFO" vsaction="prev" name="T2R_SC_USER_DIR_INFOprev" id="T2R_SC_USER_DIR_INFOprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="SecurityAdmin" vsds="T2R_SC_USER_DIR_INFO" vsaction="next" name="T2R_SC_USER_DIR_INFOnext" id="T2R_SC_USER_DIR_INFOnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="SecurityAdmin" vsds="T2R_SC_USER_DIR_INFO" vsaction="last" name="T2R_SC_USER_DIR_INFOlast" id="T2R_SC_USER_DIR_INFOlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+
+      <td><ams_map title="Section Controls" name="Section Controls">
+
+  <a href="javascript:
+        AMSTAB_ExpandSection('T2R_SC_USER_DIR_INFO_Section1','T2R_SC_USER_DIR_INFO_Section1_Button');
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+
+  <a href="javascript:
+        AMSTAB_CollapseSection('T2R_SC_USER_DIR_INFO_Section1','T2R_SC_USER_DIR_INFO_Section1_Button');
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <div>
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+
+
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT2USER_NM" title="Name">Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT2USER_NM" id="txtT2USER_NM"
+            size="20"
+ vsds="T2R_SC_USER_DIR_INFO" vsdf="USER_NM"
+ value="USER_NM" ams_readonly ShowCodeInfo="" title="Name">
+        </td>
+      </tr>
+
+
+
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+  <table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T2R_SC_USER_DIR_INFO_Top');">Top</a></td></tr></table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+-->
+<!-- END CUSTOMIZATION -->
+
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

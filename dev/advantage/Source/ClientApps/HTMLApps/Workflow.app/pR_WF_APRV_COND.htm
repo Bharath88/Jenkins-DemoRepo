@@ -1,0 +1,504 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Manage Approval Conditions</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Workflow" method="post" vsform="true" name="pR_WF_APRV_COND">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Manage Approval Conditions">Manage Approval Conditions</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+  <a name="T1R_WF_COND_QRY_Top"></a>
+
+
+
+  <input type="hidden" name="T1R_WF_COND_QRY_Currency" value="">
+  <input type="hidden" name="T1R_WF_COND_QRY_Old_Currency" value="">
+  <input type="hidden" name="RHSRefreshColumn" value="">
+  <table name="tblT1R_WF_COND_QRY" id="tblT1R_WF_COND_QRY" class="advgrid" vsds="T1R_WF_COND_QRY">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_COND_QRY"
+    vsdf="COND_ID"
+ name="T1COND_IDsort" id="T1COND_IDsort" title="Sort By Condition ID">Condition ID</a></th>
+
+        <th
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_COND_QRY"
+    vsdf="DOC_CD"
+ name="T1DOC_CDsort" id="T1DOC_CDsort" title="Sort By Document Code">Document Code</a></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_WF_COND_QRYvscurrency" id="T1R_WF_COND_QRYvscurrency" title="Select Row" alt="Select Row" vsds="T1R_WF_COND_QRY" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1COND_ID" vsds="T1R_WF_COND_QRY" vsdf="COND_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1DOC_CD" vsds="T1R_WF_COND_QRY" vsdf="DOC_CD"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Workflow" vsds="T1R_WF_COND_QRY" vsaction="firstpage" name="T1R_WF_COND_QRYfirstpage" id="T1R_WF_COND_QRYfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Workflow" vsds="T1R_WF_COND_QRY" vsaction="prevpage" name="T1R_WF_COND_QRYprevpage" id="T1R_WF_COND_QRYprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Workflow" vsds="T1R_WF_COND_QRY" vsaction="nextpage" id="T1R_WF_COND_QRYnextpage" name="T1R_WF_COND_QRYnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Workflow" vsds="T1R_WF_COND_QRY" vsaction="lastpage" id="T1R_WF_COND_QRYlastpage" name="T1R_WF_COND_QRYlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+
+<hr class="advsectsep"></hr>
+
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Workflow" vsds="T1R_WF_COND_QRY" vsaction="saveall" name="T1R_WF_COND_QRYSaveAll" id="T1R_WF_COND_QRYSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Workflow" vsds="T1R_WF_COND_QRY" vsaction="undoall" name="T1R_WF_COND_QRYUndoAll" id="T1R_WF_COND_QRYUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="Workflow" vsds="T1R_WF_COND_QRY" vsaction="delete" id="IndexT1R_WF_COND_QRYdelete" name="T1R_WF_COND_QRYdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="Workflow" vsds="T1R_WF_COND_QRY" vsaction="insert" id="T1R_WF_COND_QRYinsert" name="T1R_WF_COND_QRYinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="Workflow" vsds="T1R_WF_COND_QRY" vsaction="11" name="T1R_WF_COND_QRYCopyRecord" id="T1R_WF_COND_QRYCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+
+<a href="Workflow" vsds="T1R_WF_COND_QRY" vsaction="12" name="T1R_WF_COND_QRYPasteLine" id="T1R_WF_COND_QRYPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+
+<td><vstext vsds=" " name="T1R_WF_COND_QRYSearchColList" vspreservetag="true"></td>
+
+      <td><ams_map title="Section Controls" name="Section Controls">
+
+  <a href="javascript:
+        AMSTAB_ExpandSection('T1R_WF_COND_QRY_Section1','T1R_WF_COND_QRY_Section1_Button');
+          AMSTAB_ExpandSection('T1R_WF_COND_QRY_Section2','T1R_WF_COND_QRY_Section2_Button');
+            AMSTAB_ExpandSection('T1R_WF_COND_QRY_Section3','T1R_WF_COND_QRY_Section3_Button');
+              AMSTAB_ExpandSection('T1R_WF_COND_QRY_Section4','T1R_WF_COND_QRY_Section4_Button');
+                AMSTAB_ExpandSection('T1R_WF_COND_QRY_Section5','T1R_WF_COND_QRY_Section5_Button');
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+
+  <a href="javascript:
+        AMSTAB_CollapseSection('T1R_WF_COND_QRY_Section1','T1R_WF_COND_QRY_Section1_Button');
+          AMSTAB_CollapseSection('T1R_WF_COND_QRY_Section2','T1R_WF_COND_QRY_Section2_Button');
+            AMSTAB_CollapseSection('T1R_WF_COND_QRY_Section3','T1R_WF_COND_QRY_Section3_Button');
+              AMSTAB_CollapseSection('T1R_WF_COND_QRY_Section4','T1R_WF_COND_QRY_Section4_Button');
+                AMSTAB_CollapseSection('T1R_WF_COND_QRY_Section5','T1R_WF_COND_QRY_Section5_Button');
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <div>
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1COND_ID" title="Condition ID (Required)">Condition ID :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1COND_ID" id="txtT1COND_ID"
+               size="15"
+ vsds="T1R_WF_COND_QRY" vsdf="COND_ID"
+         ams_max_len="8"
+ ShowCodeInfo="" value="COND_ID"title="Condition ID (Required)">
+        </td>
+      </tr>
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1DOC_CD" title="Document Code (Required)">Document Code :</label></td>
+        <td class="val required">
+<!-- BEGIN CUSTOMIZATION -->
+          <input type="text" name="txtT1DOC_CD" id="txtT1DOC_CD"
+      ams_max_len="8"
+ value="DOC_CD"
+            size="15" onchange="UTILS_OnBlurUpperCaseAndTrim( this, true, true );document.forms[0].refreshScalar.value='T1R_WF_COND_QRY';submitForm(document.forms[0],'','');"
+ vsds="T1R_WF_COND_QRY" vsdf="DOC_CD" ShowCodeInfo="" title="Document Code (Required)">
+          <input type="image" vspick="T3R_DOC_CD" vspicktext="txtT1DOC_CD" vsds="T1R_WF_COND_QRY" vsaction="pick" name="pckT1DOC_CD" id="pckT1DOC_CD" title="Select Document Code" alt="Select Document Code" src="../AMSImages/ADVPick.gif"
+><!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+        </table></td></tr></table></div></fieldset><a name="T1R_WF_COND_QRY_Section1_Top"></a><fieldset class="advscalar section">
+        <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1R_WF_COND_QRY_Section1','T1R_WF_COND_QRY_Section1_Button');" title="Expand/Collapse Condition 1"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1R_WF_COND_QRY_Section1_Button"> Condition 1</a></legend>
+        <div id="T1R_WF_COND_QRY_Section1" class="advsection">
+        <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_TYP_1" title="Type">Type :</label></td>
+        <td class="val">
+          <select name="txtT1AND_COND_TYP_1" id="txtT1AND_COND_TYP_1" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_TYP_1" size="1" vscodetable="CVL_WF_COND_TYP" ShowCodeInfo="" title="Type">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_LHS_1" title="Left Hand Side">Left Hand Side :</label></td>
+        <td class="val">
+<!-- BEGIN CUSTOMIZATION -->
+          <select name="txtT1AND_COND_LHS_1" id="txtT1AND_COND_LHS_1" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_LHS_1" size="1" vscodetable="R_WF_APRV_COND" ShowCodeInfo="" title="Left Hand Side" onchange="UTILS_OnBlurUpperCaseAndTrim( this, true, true );document.forms[0].refreshScalar.value='T1R_WF_COND_QRY';document.forms[0].RHSRefreshColumn.value='1';submitForm(document.forms[0],'','');">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_OPR_1" title="Operator">Operator :</label></td>
+        <td class="val">
+          <select name="txtT1AND_COND_OPR_1" id="txtT1AND_COND_OPR_1" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_OPR_1" size="1" vscodetable="CVL_WF_OPRS" ShowCodeInfo="" title="Operator">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_RHS_1" title="Right Hand Side Value">Right Hand Side Value:</label></td>
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1AND_COND_RHS_1" id="txtT1AND_COND_RHS_1" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_RHS_1"
+ title="Right Hand Side Value"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+		<td class="label"><label for="txtT1AND_COND_RHS_FLD_1" title="Right Hand Side Field">Right Hand Side Field :</label></td>
+		<td class="val">
+		<!-- BEGIN CUSTOMIZATION -->
+			<select name="txtT1AND_COND_RHS_FLD_1" id="txtT1AND_COND_RHS_FLD_1" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_RHS_FLD_1" size="1"  ShowCodeInfo="" title="Right Hand Side Field" >
+				<option value="JADEStored">JADEDisplayed</option>
+			</select>
+		<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+          </table></td></tr></table></div></fieldset><br><br><a name="T1R_WF_COND_QRY_Section2_Top"></a><fieldset class="advscalar section">
+          <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1R_WF_COND_QRY_Section2','T1R_WF_COND_QRY_Section2_Button');" title="Expand/Collapse Condition 2"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1R_WF_COND_QRY_Section2_Button"> Condition 2</a></legend>
+          <div id="T1R_WF_COND_QRY_Section2" class="advsection">
+          <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_TYP_2" title="Type">Type :</label></td>
+        <td class="val">
+          <select name="txtT1AND_COND_TYP_2" id="txtT1AND_COND_TYP_2" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_TYP_2" size="1" vscodetable="CVL_WF_COND_TYP" ShowCodeInfo="" title="Type">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_LHS_2" title="Left Hand Side">Left Hand Side :</label></td>
+        <td class="val">
+<!-- BEGIN CUSTOMIZATION -->
+          <select name="txtT1AND_COND_LHS_2" id="txtT1AND_COND_LHS_2" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_LHS_2" size="1" vscodetable="R_WF_APRV_COND" ShowCodeInfo="" title="Left Hand Side" onchange="UTILS_OnBlurUpperCaseAndTrim( this, true, true );document.forms[0].refreshScalar.value='T1R_WF_COND_QRY';document.forms[0].RHSRefreshColumn.value='2';submitForm(document.forms[0],'','');">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_OPR_2" title="Operator">Operator :</label></td>
+        <td class="val">
+          <select name="txtT1AND_COND_OPR_2" id="txtT1AND_COND_OPR_2" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_OPR_2" size="1" vscodetable="CVL_WF_OPRS" ShowCodeInfo="" title="Operator">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_RHS_2" title="Right Hand Side Value">Right Hand Side Value :</label></td>
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1AND_COND_RHS_2" id="txtT1AND_COND_RHS_2" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_RHS_2"
+ title="Right Hand Side Value"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+		<td class="label"><label for="txtT1AND_COND_RHS_FLD_2" title="Right Hand Side Field">Right Hand Side Field :</label></td>
+		<td class="val">
+		<!-- BEGIN CUSTOMIZATION -->
+			<select name="txtT1AND_COND_RHS_FLD_2" id="txtT1AND_COND_RHS_FLD_2" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_RHS_FLD_2" size="1"  ShowCodeInfo="" title="Right Hand Side Field" >
+				<option value="JADEStored">JADEDisplayed</option>
+			</select>
+		<!-- END CUSTOMIZATION -->
+		</td>
+      </tr>
+
+
+            </table></td></tr></table></div></fieldset><br><br><a name="T1R_WF_COND_QRY_Section3_Top"></a><fieldset class="advscalar section">
+            <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1R_WF_COND_QRY_Section3','T1R_WF_COND_QRY_Section3_Button');" title="Expand/Collapse Condition 3"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1R_WF_COND_QRY_Section3_Button"> Condition 3</a></legend>
+            <div id="T1R_WF_COND_QRY_Section3" class="advsection">
+            <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_TYP_3" title="Type">Type :</label></td>
+        <td class="val">
+          <select name="txtT1AND_COND_TYP_3" id="txtT1AND_COND_TYP_3" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_TYP_3" size="1" vscodetable="CVL_WF_COND_TYP" ShowCodeInfo="" title="Type">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_LHS_3" title="Left Hand Side">Left Hand Side :</label></td>
+        <td class="val">
+<!-- BEGIN CUSTOMIZATION -->
+          <select name="txtT1AND_COND_LHS_3" id="txtT1AND_COND_LHS_3" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_LHS_3" size="1" vscodetable="R_WF_APRV_COND" ShowCodeInfo="" title="Left Hand Side" onchange="UTILS_OnBlurUpperCaseAndTrim( this, true, true );document.forms[0].refreshScalar.value='T1R_WF_COND_QRY';document.forms[0].RHSRefreshColumn.value='3';submitForm(document.forms[0],'','');">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_OPR_3" title="Operator">Operator :</label></td>
+        <td class="val">
+          <select name="txtT1AND_COND_OPR_3" id="txtT1AND_COND_OPR_3" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_OPR_3" size="1" vscodetable="CVL_WF_OPRS" ShowCodeInfo="" title="Operator">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_RHS_3" title="Right Hand Side Value">Right Hand Side Value :</label></td>
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1AND_COND_RHS_3" id="txtT1AND_COND_RHS_3" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_RHS_3"
+ title="Right Hand Side Value"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+		<td class="label"><label for="txtT1AND_COND_RHS_FLD_3" title="Right Hand Side Field">Right Hand Side Field :</label></td>
+		<td class="val">
+		<!-- BEGIN CUSTOMIZATION -->
+		  <select name="txtT1AND_COND_RHS_FLD_3" id="txtT1AND_COND_RHS_FLD_3" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_RHS_FLD_3" size="1"  ShowCodeInfo="" title="Right Hand Side Field" >
+			<option value="JADEStored">JADEDisplayed</option>
+		  </select>
+		<!-- END CUSTOMIZATION -->
+		</td>
+	  </tr>
+
+
+              </table></td></tr></table></div></fieldset><br><br><a name="T1R_WF_COND_QRY_Section4_Top"></a><fieldset class="advscalar section">
+              <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1R_WF_COND_QRY_Section4','T1R_WF_COND_QRY_Section4_Button');" title="Expand/Collapse Condition 4"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1R_WF_COND_QRY_Section4_Button"> Condition 4</a></legend>
+              <div id="T1R_WF_COND_QRY_Section4" class="advsection">
+              <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_TYP_4" title="Type">Type :</label></td>
+        <td class="val">
+          <select name="txtT1AND_COND_TYP_4" id="txtT1AND_COND_TYP_4" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_TYP_4" size="1" vscodetable="CVL_WF_COND_TYP" ShowCodeInfo="" title="Type">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_LHS_4" title="Left Hand Side">Left Hand Side :</label></td>
+        <td class="val">
+<!-- BEGIN CUSTOMIZATION -->
+          <select name="txtT1AND_COND_LHS_4" id="txtT1AND_COND_LHS_4" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_LHS_4" size="1" vscodetable="R_WF_APRV_COND" ShowCodeInfo="" title="Left Hand Side" onchange="UTILS_OnBlurUpperCaseAndTrim( this, true, true );document.forms[0].refreshScalar.value='T1R_WF_COND_QRY';document.forms[0].RHSRefreshColumn.value='4';submitForm(document.forms[0],'','');">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_OPR_4" title="Operator">Operator :</label></td>
+        <td class="val">
+          <select name="txtT1AND_COND_OPR_4" id="txtT1AND_COND_OPR_4" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_OPR_4" size="1" vscodetable="CVL_WF_OPRS" ShowCodeInfo="" title="Operator">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_RHS_4" title="Right Hand Side Value">Right Hand Side Value :</label></td>
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1AND_COND_RHS_4" id="txtT1AND_COND_RHS_4" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_RHS_4"
+ title="Right Hand Side Value"></textarea>
+        </td>
+      </tr>
+
+     <tr>
+	    <td class="label"><label for="txtT1AND_COND_RHS_FLD_4" title="Right Hand Side Field">Right Hand Side Field :</label></td>
+	    <td class="val">
+	    <!-- BEGIN CUSTOMIZATION -->
+	      <select name="txtT1AND_COND_RHS_FLD_4" id="txtT1AND_COND_RHS_FLD_4" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_RHS_FLD_4" size="1"  ShowCodeInfo="" title="Right Hand Side Field" >
+	        <option value="JADEStored">JADEDisplayed</option>
+	      </select>
+	    <!-- END CUSTOMIZATION -->
+	    </td>
+	 </tr>
+
+
+                </table></td></tr></table></div></fieldset><br><br><a name="T1R_WF_COND_QRY_Section5_Top"></a><fieldset class="advscalar section">
+                <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1R_WF_COND_QRY_Section5','T1R_WF_COND_QRY_Section5_Button');" title="Expand/Collapse Condition 5"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1R_WF_COND_QRY_Section5_Button"> Condition 5</a></legend>
+                <div id="T1R_WF_COND_QRY_Section5" class="advsection">
+                <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_TYP_5" title="Type">Type :</label></td>
+        <td class="val">
+          <select name="txtT1AND_COND_TYP_5" id="txtT1AND_COND_TYP_5" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_TYP_5" size="1" vscodetable="CVL_WF_COND_TYP" ShowCodeInfo="" title="Type">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_LHS_5" title="Left Hand Side">Left Hand Side :</label></td>
+        <td class="val">
+<!-- BEGIN CUSTOMIZATION -->
+           <select name="txtT1AND_COND_LHS_5" id="txtT1AND_COND_LHS_5" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_LHS_5" size="1" vscodetable="R_WF_APRV_COND" ShowCodeInfo="" title="Left Hand Side" onchange="UTILS_OnBlurUpperCaseAndTrim( this, true, true );document.forms[0].refreshScalar.value='T1R_WF_COND_QRY';document.forms[0].RHSRefreshColumn.value='5';submitForm(document.forms[0],'','');">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_OPR_5" title="Operator">Operator :</label></td>
+        <td class="val">
+          <select name="txtT1AND_COND_OPR_5" id="txtT1AND_COND_OPR_5" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_OPR_5" size="1" vscodetable="CVL_WF_OPRS" ShowCodeInfo="" title="Operator">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1AND_COND_RHS_5" title="Right Hand Side Value">Right Hand Side Value :</label></td>
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1AND_COND_RHS_5" id="txtT1AND_COND_RHS_5" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_RHS_5"
+ title="Right Hand Side Value"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+		<td class="label"><label for="txtT1AND_COND_RHS_FLD_5" title="Right Hand Side Field">Right Hand Side Field :</label></td>
+		<td class="val">
+		<!-- BEGIN CUSTOMIZATION -->
+			<select name="txtT1AND_COND_RHS_FLD_5" id="txtT1AND_COND_RHS_FLD_5" vsds="T1R_WF_COND_QRY" vsdf="AND_COND_RHS_FLD_5" size="1"  ShowCodeInfo="" title="Right Hand Side Field" >
+				<option value="JADEStored">JADEDisplayed</option>
+			</select>
+		<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+  <br><br><table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T1R_WF_COND_QRY_Top');" title="Go To Top">Top</a></td></tr></table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+<a name="btnT2pR_WF_APRV_FLD" href="Workflow" id="btnT2pR_WF_APRV_FLD" title="Navigation to Approval Fields" vsaction="pagetransition"
+           vsds="T1R_WF_COND_QRY"
+ vsnavigation="T2pR_WF_APRV_FLD">Approval Fields</a>
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_WF_COND_QRY', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'COND_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Condition ID' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'DOC_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Document Code' ;
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Workflow" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

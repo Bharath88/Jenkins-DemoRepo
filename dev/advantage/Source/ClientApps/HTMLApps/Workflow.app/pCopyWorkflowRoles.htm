@@ -1,0 +1,520 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Copy Workflow Roles</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <!-- BEGIN CUSTOMIZATION -->
+  <script language="JavaScript">
+  <!--
+  /*
+   * Either select  or Deselect all the checkbox,
+   * @parm val The value which decides 'SelectAll' or 'DeselectAll'
+   *       val = 1 for 'SelectAll'
+   *       val = 0 for 'DeselectAll'
+   * @return none.
+   */
+
+  function setCheckboxValue(val)
+  {
+     var docObject = document.pCopyWorkflowRoles;
+     var formLength = docObject.elements.length;
+     for ( i = 0 ; i < formLength; i++ )
+     {
+        if (docObject.elements[i].name.substring(0,4) == 'TE1_')
+        {
+           docObject.elements[i].checked = val;
+        }
+     }
+  }
+  /*
+   * To get the copymode value
+   * @parm copyMode  Used to get the type of copy selection.
+           copyMode = 0 means  'Append to the Existing Role'
+           copyMode = 1 means  'Replace the Existing Role'
+   * @return none.
+
+   */
+
+  function getCopyModeValue(copyMode)
+  {
+
+	 var docObject = document.pCopyWorkflowRoles;
+     var formLength = docObject.elements.length;
+     for( i=0 ; i < formLength; i++)
+	 {
+	     if(docObject.elements[i].type == "radio") {
+	     if(docObject.elements[i].checked == true)
+	     {
+	        docObject.hdnCopyMode.value = docObject.elements[i].value;
+	     }
+	     }
+	  }
+
+
+   }
+  -->
+  </script>
+  <!-- END CUSTOMIZATION -->
+
+
+
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Workflow" method="post" vsform="true" name="pCopyWorkflowRoles">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    <!-- BEGIN CUSTOMIZATION -->
+    <input type="hidden" name="hdnCopyMode" value="0">
+    <!-- END CUSTOMIZATION -->
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Copy Workflow Roles">Copy Workflow Roles</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+<!-- BEGIN CUSTOMIZATION -->
+  <h2 class="advrecsrctitle details"><vstext vsds="" name="CurrStepTitle"></h2>
+<!-- END CUSTOMIZATION -->
+
+<!-- BEGIN CUSTOMIZATION -->
+  <div vsds="" id="Step1Cont" name="Step1Cont" vsvisible="false">
+<!-- END CUSTOMIZATION -->
+
+  <INPUT type="hidden" name="T1R_SC_USER_INFOvscurrency" vsds="T1R_SC_USER_INFO" vscurrency="true">
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+</ams_map>
+</td>
+
+<td><vstext vsds=" " name="T1R_SC_USER_INFOSearchColList" vspreservetag="true"></td>
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="Workflow" vsds="T1R_SC_USER_INFO" vsaction="first" name="T1R_SC_USER_INFOfirst" id="T1R_SC_USER_INFOfirst" title="First Record" accesskey="0">First</a>
+
+<a href="Workflow" vsds="T1R_SC_USER_INFO" vsaction="prev" name="T1R_SC_USER_INFOprev" id="T1R_SC_USER_INFOprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="Workflow" vsds="T1R_SC_USER_INFO" vsaction="next" name="T1R_SC_USER_INFOnext" id="T1R_SC_USER_INFOnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="Workflow" vsds="T1R_SC_USER_INFO" vsaction="last" name="T1R_SC_USER_INFOlast" id="T1R_SC_USER_INFOlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!-- <fieldset class="advscalar"> -->
+<!-- END CUSTOMIZATION -->
+
+<table>
+ <tr>
+  <td class="advscalarcol">
+    <table class="advscalar">
+     <tr>
+      <td class="label"><label for="txtT1USER_ID" title="User ID">
+ User ID :</label></td>
+       <td class="val">
+        <input type="text" name="txtT1USER_ID" id="txtT1USER_ID" size="20"
+ vsds="T1R_SC_USER_INFO" vsdf="USER_ID"  ams_max_len="16"
+ ShowCodeInfo="" value="USER_ID" title="User ID">
+       </td>
+     </tr>
+
+     <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT1USER_ID_UP" id="txtT1USER_ID_UP"
+               size="20"
+           vsds="T1R_SC_USER_INFO" vsdf="USER_ID_UP"
+         ams_max_len="16"
+           ShowCodeInfo=""
+           value="USER_ID_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+<!-- BEGIN CUSTOMIZATION -->
+<!--  </fieldset> -->
+<!-- END CUSTOMIZATION -->
+
+
+
+
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+
+<a href="Workflow" vsds="T2R_USER_WF_ROLES_QRY" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+
+<a href="Workflow" vsds="T2R_USER_WF_ROLES_QRY" vsaction="clearquery" name="T2R_USER_WF_ROLES_QRYclearquery" id="T2R_USER_WF_ROLES_QRYclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <table name="tblT2R_USER_WF_ROLES_QRY" id="tblT2R_USER_WF_ROLES_QRY" class="advgrid" vsds="T2R_USER_WF_ROLES_QRY">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+<th
+><span title="Role ID">Role ID</span></th></JADEInclude>
+<th
+><span title="Role Name">Role Name</span></th></JADEInclude>
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow">
+      <td class="pickselect">
+        <input type="checkbox" name="rowT2R_USER_WF_ROLES_QRY" id="rowT2R_USER_WF_ROLES_QRY" vsds="T2R_USER_WF_ROLES_QRY" vsaction="Currency" value="ON" title="Select Row">
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT2ROLEID" vsds="T2R_USER_WF_ROLES_QRY" vsdf="ROLEID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT2ROLE_NM" vsds="T2R_USER_WF_ROLES_QRY" vsdf="ROLE_NM"
+>
+        </td>
+
+      <td></td>
+     </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Workflow" vsds="T2R_USER_WF_ROLES_QRY" vsaction="firstpage" name="T2R_USER_WF_ROLES_QRYfirstpage" id="T2R_USER_WF_ROLES_QRYfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Workflow" vsds="T2R_USER_WF_ROLES_QRY" vsaction="prevpage" name="T2R_USER_WF_ROLES_QRYprevpage" id="T2R_USER_WF_ROLES_QRYprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Workflow" vsds="T2R_USER_WF_ROLES_QRY" vsaction="nextpage" id="T2R_USER_WF_ROLES_QRYnextpage" name="T2R_USER_WF_ROLES_QRYnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Workflow" vsds="T2R_USER_WF_ROLES_QRY" vsaction="lastpage" id="T2R_USER_WF_ROLES_QRYlastpage" name="T2R_USER_WF_ROLES_QRYlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+<!-- BEGIN CUSTOMIZATION -->
+  <td>
+    <a href="javascript: setCheckboxValue(1)">Select All (On This Page)</a>
+  </td>
+  <td>
+    <a href="javascript: setCheckboxValue(0)">Deselect All (On This Page)</a>
+  </td>
+<!-- END CUSTOMIZATION -->
+    </tr>
+  </table>
+
+
+    <table class="advtrans recsrc">
+      <tr>
+        <td>
+
+  <a name="btnT5pR_WF_SC_USER_DIR_INFO" href="Workflow" id="btnT5pR_WF_SC_USER_DIR_INFO" title="Navigation to Manage Approvers" vsaction="pagetransition"
+             vsds="T1R_SC_USER_INFO"
+   vsnavigation="T5pR_WF_SC_USER_DIR_INFO">Manage Approvers</a>
+        </td>
+      </tr>
+    </table>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advokcancel">
+    <tr>
+      <td>
+
+<input class="advbutton" type="submit" vspickaccept="true" onclick="UTILS_ClosePickWindow(document.forms[0], this);" vsaction="acceptpick" name="PickOK" id="PickOK" value="OK" title="OK">
+
+<input class="advbutton" onclick="UTILS_ClosePickWindow(document.forms[0], this);" type="submit" vsaction="cancel" name="pickcancel" value="Cancel" id="pickcancel" title="Cancel">
+      </td>
+    </tr>
+  </table>
+  -->
+<!-- END CUSTOMIZATION -->
+
+<!-- BEGIN CUSTOMIZATION -->
+  <table class="advokcancel">
+    <tr>
+      <td>
+
+      </td>
+      <td><input class="advbutton" type="submit" vsaction="undoall" name="next" value="Next >" id="next" title="Next Step">
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div vsds="" id="Step2Cont" name="Step2Cont" vsvisible="false">
+<!-- END CUSTOMIZATION -->
+  <INPUT type="hidden" name="T3R_SC_USER_INFOvscurrency" vsds="T3R_SC_USER_INFO" vscurrency="true">
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+</ams_map>
+
+
+
+
+      </td>
+
+<td><vstext vsds=" " name="T3R_SC_USER_INFOSearchColList" vspreservetag="true"></td>
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="Workflow" vsds="T3R_SC_USER_INFO" vsaction="first" name="T3R_SC_USER_INFOfirst" id="T3R_SC_USER_INFOfirst" title="First Record" accesskey="0">First</a>
+
+<a href="Workflow" vsds="T3R_SC_USER_INFO" vsaction="prev" name="T3R_SC_USER_INFOprev" id="T3R_SC_USER_INFOprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="Workflow" vsds="T3R_SC_USER_INFO" vsaction="next" name="T3R_SC_USER_INFOnext" id="T3R_SC_USER_INFOnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="Workflow" vsds="T3R_SC_USER_INFO" vsaction="last" name="T3R_SC_USER_INFOlast" id="T3R_SC_USER_INFOlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+
+<fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT3USER_ID" title="User ID">User ID :</label></td>
+        <td class="val">
+          <input type="text" name="txtT3USER_ID" id="txtT3USER_ID"
+               size="20"
+ vsds="T3R_SC_USER_INFO" vsdf="USER_ID"
+         ams_max_len="16"
+ ShowCodeInfo="" value="USER_ID" title="User ID">
+        </td>
+      </tr>
+
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT3USER_ID_UP" id="txtT3USER_ID_UP"
+               size="20"
+           vsds="T3R_SC_USER_INFO" vsdf="USER_ID_UP"
+         ams_max_len="16"
+           ShowCodeInfo=""
+           value="USER_ID_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+
+
+  <input type="hidden" name="T4R_USER_WF_ROLES_QRY_Currency" value="">
+  <input type="hidden" name="T4R_USER_WF_ROLES_QRY_Old_Currency" value="">
+  <table name="tblT4R_USER_WF_ROLES_QRY" id="tblT4R_USER_WF_ROLES_QRY" class="advgrid" vsds="T4R_USER_WF_ROLES_QRY">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><a href="Workflow" vsaction="sort" vsds="T4R_USER_WF_ROLES_QRY"
+    vsdf="ROLEID"
+ name="T4ROLEIDsort" id="T4ROLEIDsort" title="Sort By Role ID">Role ID</a></th>
+
+        <th
+><span id="T4ROLE_NMsortGridLabel" name="T4ROLE_NMsortGridLabel" title="Role Name">Role Name</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T4R_USER_WF_ROLES_QRYvscurrency" id="T4R_USER_WF_ROLES_QRYvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T4R_USER_WF_ROLES_QRY" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT4ROLEID" vsds="T4R_USER_WF_ROLES_QRY" vsdf="ROLEID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT4ROLE_NM" vsds="T4R_USER_WF_ROLES_QRY" vsdf="ROLE_NM"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+
+
+
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Workflow" vsds="T4R_USER_WF_ROLES_QRY" vsaction="firstpage" name="T4R_USER_WF_ROLES_QRYfirstpage" id="T4R_USER_WF_ROLES_QRYfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Workflow" vsds="T4R_USER_WF_ROLES_QRY" vsaction="prevpage" name="T4R_USER_WF_ROLES_QRYprevpage" id="T4R_USER_WF_ROLES_QRYprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Workflow" vsds="T4R_USER_WF_ROLES_QRY" vsaction="nextpage" id="T4R_USER_WF_ROLES_QRYnextpage" name="T4R_USER_WF_ROLES_QRYnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Workflow" vsds="T4R_USER_WF_ROLES_QRY" vsaction="lastpage" id="T4R_USER_WF_ROLES_QRYlastpage" name="T4R_USER_WF_ROLES_QRYlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+
+
+<!-- BEGIN CUSTOMIZATION -->
+  <table class="advokcancel">
+    <tr>
+      <td>
+        <input class="advbutton" type="submit" vsaction="undoall" name="back" value="< Back" id="back" title="Back to Previous Step">
+      </td>
+      <td>
+        <input class="advbutton" type="submit" vsaction="undoall" name="next" value="Next >" id="next" title="Next Step">
+      </td>
+    </tr>
+  </table>
+  </div>
+  <div vsds="" id="Step3Cont" name="Step3Cont" vsvisible="false">
+    <table>
+      <tr>
+        <td class="advscalarcol">
+          <table class="advscalar">
+            <tr>
+              <td class="label">
+                <label for="fromUserID" title="Copy Roles From User">Copy Roles From User :</label>
+              </td>
+              <td class="val">
+  	            <input vsds="" type="text" name="fromUserID" id="fromUserID" size="20" title="Copy Roles From User" class="advreadonly" readonly="readonly">
+              </td>
+            </tr>
+      <tr>
+        <td class="label">
+          <label for="toUserID" title="Copy Roles To User">Copy Roles To User :</label>
+        </td>
+        <td class="val">
+          <input vsds="" type="text" name="toUserID" id="toUserID" size="20" title="Copy Roles To User" class="advreadonly" readonly="readonly">
+        </td>
+      </tr>
+    <table class="advscalar">
+      <tr>
+        <td class="val option">
+          <input type="radio" name="CopyAction" id="CopyAction" value = "0" vsds="" title="Append to existing Roles" onClick=getCopyModeValue(0) CHECKED>
+        </td>
+        <td class="val option">Append to existing Roles</td>
+      </tr>
+       <tr>
+	          <td class="val option">
+	            <input type="radio" name="CopyAction" id="CopyAction" value = "1"  vsds="" title="Replace existing Roles" onClick=getCopyModeValue(1)>
+	          </td>
+	          <td class="val option">Replace existing Roles</td>
+      </tr>
+    </table>
+  </table>
+ </td>
+</tr>
+</table>
+  <table class="advokcancel">
+    <tr>
+      <td>
+        <input class="advbutton" type="submit" vsaction="undoall" name="back" value="Back" id="back" title="Back to Previous Step">
+      </td>
+      <td class="label"></td>
+      <td class="val">
+        <input class="advbutton" type="submit" vsaction="undoall" name="copyWFRoles" value="Finish" id="copyWFRoles" title="Finish">
+      </td>
+    </tr>
+  </table>
+  </div>
+<!-- END CUSTOMIZATION -->
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Workflow" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

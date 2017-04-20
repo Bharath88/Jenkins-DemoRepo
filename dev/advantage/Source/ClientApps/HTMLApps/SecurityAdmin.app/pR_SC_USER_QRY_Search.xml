@@ -1,0 +1,392 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="GridSelect"
+	PositionTop="219"
+	PositionLeft="219"
+	PositionWidth="150"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSGridSelectPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-1486405004"
+	>
+	<FormCaption><![CDATA[Select User By Name and Organization]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="false"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="EditMode"
+			Value=""
+		/>
+		<Property
+			Name="ErrorsFromPage"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="PageCode"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="R_SC_USER_QRY"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="GridSelect"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="False"
+		AllowInsert="False"
+		AllowUpdate="False"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="USER_ID" />
+				<RSDefaultAttribute ID="15" Name="USER_ID_UP" />
+				<RSDefaultAttribute ID="12" Name="FRST_NM_TXT" />
+				<RSDefaultAttribute ID="14" Name="FRST_NM_TXT_UP" />
+				<RSDefaultAttribute ID="11" Name="LAST_NM_TXT" />
+				<RSDefaultAttribute ID="13" Name="LAST_NM_TXT_UP" />
+				<RSDefaultAttribute ID="2" Name="HOME_GOVT_BRN_CD" />
+				<RSDefaultAttribute ID="3" Name="HOME_CAB_CD" />
+				<RSDefaultAttribute ID="4" Name="HOME_DEPT_CD" />
+				<RSDefaultAttribute ID="5" Name="HOME_DIV_CD" />
+				<RSDefaultAttribute ID="6" Name="HOME_GP_CD" />
+				<RSDefaultAttribute ID="7" Name="HOME_SECT_CD" />
+				<RSDefaultAttribute ID="8" Name="HOME_DSTC_CD" />
+				<RSDefaultAttribute ID="9" Name="HOME_BUR_CD" />
+				<RSDefaultAttribute ID="10" Name="HOME_UNIT_CD" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="USER_ID_UP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="FRST_NM_TXT_UP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="LAST_NM_TXT_UP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="USER_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FRST_NM_TXT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LAST_NM_TXT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="HOME_GOVT_BRN_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_CAB_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_DEPT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_DIV_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_GP_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_SECT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_DSTC_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_BUR_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_UNIT_CD" Displayed="True" UnPlaced="False" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="USER_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="FRST_NM_TXT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="LAST_NM_TXT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_GOVT_BRN_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_CAB_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_DEPT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_DIV_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_GP_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_SECT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_DSTC_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_BUR_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_UNIT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="LAST_NM_TXT_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FRST_NM_TXT_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="USER_ID_UP" Displayed="False" UnPlaced="False" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value="&quot;USER_ID_UP, FRST_NM_TXT_UP,LAST_NM_TXT_UP&quot;"
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value="%HOME_GOVT_BRN_CD%%HOME_DIV_CD%%HOME_DSTC_CD%"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="false"
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+		<Transition
+			FormTransNum="1"
+			Prefix="T2"
+			TargetFormName="pUserInformation"
+			IsTargetInitialQueryMode="False"
+			IsTargetInitialAddMode="False"
+			IsVisibleAppline="True"
+			IsAddedAfterGen="False"
+			FormTransCaption=" "
+			ClassName="PageNavigation"
+			TargetFramesetPage=""
+			TargetFrame=""
+			FrameNameInFramesetPage=""
+			RSID="2"
+			BusinessObject="R_SC_USER_INFO"
+			RelnIsFromParent="True"
+			>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ USER_ID = [?USER_ID] ]]></AdditionalWhereClause>
+		</Transition>
+	</RecordSource>
+	<Transition
+		FormTransNum="1"
+		Prefix="T3"
+		TargetFormName="pR_SC_USER_INFO_Search"
+		IsTargetInitialQueryMode="False"
+		IsTargetInitialAddMode="False"
+		IsVisibleAppline="True"
+		IsAddedAfterGen="False"
+		FormTransCaption="User Search By Organization"
+		ClassName="PageNavigation"
+		TargetFramesetPage=""
+		TargetFrame=""
+		FrameNameInFramesetPage=""
+		RSID="3"
+		BusinessObject="R_SC_USER_INFO"
+		RelnIsFromParent="True"
+		>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+	</Transition>
+	<Transition
+		FormTransNum="1"
+		Prefix="T4"
+		TargetFormName="pR_SC_USER_DIR_INFO_Search"
+		IsTargetInitialQueryMode="False"
+		IsTargetInitialAddMode="False"
+		IsVisibleAppline="True"
+		IsAddedAfterGen="False"
+		FormTransCaption="User Search By Name"
+		ClassName="PageNavigation"
+		TargetFramesetPage=""
+		TargetFrame=""
+		FrameNameInFramesetPage=""
+		RSID="4"
+		BusinessObject="R_SC_USER_DIR_INFO"
+		RelnIsFromParent="True"
+		>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+	</Transition>
+</Form>

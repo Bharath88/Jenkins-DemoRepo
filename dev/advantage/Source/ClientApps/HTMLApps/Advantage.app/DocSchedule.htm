@@ -1,0 +1,364 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Document Schedule</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+<!-- BEGIN CUSTOMIZATION -->
+  <script type="text/javascript" language="JavaScript">
+  <!--
+     function DOCSCHEDULE_updateSubAction()
+     {
+        var actionValue = document.DocSchedule.txtT1ACTN_CD.value;
+
+        if ( actionValue == 200 )
+        {
+       	   document.DocSchedule.txtT1DOC_S_ACTN_CD.className = "" ;
+           document.DocSchedule.txtT1DOC_S_ACTN_CD.disabled = false;
+        }
+        else
+        {
+           document.DocSchedule.txtT1DOC_S_ACTN_CD.className = "ADVReadOnly" ;
+           document.DocSchedule.txtT1DOC_S_ACTN_CD.disabled = true;
+           document.DocSchedule.txtT1DOC_S_ACTN_CD.value = "" ;
+        }
+     }
+  -->
+  </script>
+<!-- END CUSTOMIZATION -->
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<body class="adv reftable">
+-->
+<body class="adv reftable" onload="DOCSCHEDULE_updateSubAction()">
+<!-- END CUSTOMIZATION -->
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="DocSchedule">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+<!-- BEGIN CUSTOMIZATION -->
+    <input type="hidden" name="vsds" value="T1BS_AGENT">
+<!-- END CUSTOMIZATION -->
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Document Schedule">Document Schedule</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+  <a name="T1BS_AGENT_Top"></a>
+
+
+
+  <input type="hidden" name="T1BS_AGENT_Currency" value="">
+  <input type="hidden" name="T1BS_AGENT_Old_Currency" value="">
+  <table name="tblT1BS_AGENT" id="tblT1BS_AGENT" class="advgrid" vsds="T1BS_AGENT">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1DOC_CDsortGridLabel" name="T1DOC_CDsortGridLabel" title="Code">Code</span></th>
+
+        <th
+><span id="T1DOC_DEPT_CDsortGridLabel" name="T1DOC_DEPT_CDsortGridLabel" title="Doc Dept">Doc Dept</span></th>
+
+        <th
+><span id="T1DOC_IDsortGridLabel" name="T1DOC_IDsortGridLabel" title="ID">ID</span></th>
+
+        <th
+><span id="T1DOC_VERS_NOsortGridLabel" name="T1DOC_VERS_NOsortGridLabel" title="Version">Version</span></th>
+
+        <th
+><span id="T1RUN_DT_TMsortGridLabel" name="T1RUN_DT_TMsortGridLabel" title="Scheduled Date/Time">Scheduled Date/Time</span></th>
+
+        <th
+><span id="T1ACTN_CDsortGridLabel" name="T1ACTN_CDsortGridLabel" title="Action">Action</span></th>
+
+        <th
+><span id="T1RUN_STAsortGridLabel" name="T1RUN_STAsortGridLabel" title="Status">Status</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1BS_AGENTvscurrency" id="T1BS_AGENTvscurrency" title="Select Row" alt="Select Row" vsds="T1BS_AGENT" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1DOC_CD" vsds="T1BS_AGENT" vsdf="DOC_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1DOC_DEPT_CD" vsds="T1BS_AGENT" vsdf="DOC_DEPT_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1DOC_ID" vsds="T1BS_AGENT" vsdf="DOC_ID"
+>
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1DOC_VERS_NO" vsds="T1BS_AGENT" vsdf="DOC_VERS_NO"
+>
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1RUN_DT_TM" vsds="T1BS_AGENT" vsdf="RUN_DT_TM"
+    vsformat="MM-dd-yyyy HH:mm"
+>
+        </td>
+
+        <td
+      class="right"
+
+>
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+          <vstext name="txtT1ACTN_CD" vsds="T1BS_AGENT" vsdf="ACTN_CD"
+>
+-->
+          <vstext name="txtT1ACTN_CD" vsds="T1BS_AGENT" vsdf="ACTN_CD" vscodetable="CVL_DOC_SCHED_ACTN">
+<!-- END CUSTOMIZATION -->
+        </td>
+
+        <td
+>
+          <vstext vsds="T1BS_AGENT" vsdf="RUN_STA" vscodetable="CVL_JOB_STATUS">
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Advantage" vsds="T1BS_AGENT" vsaction="firstpage" name="T1BS_AGENTfirstpage" id="T1BS_AGENTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T1BS_AGENT" vsaction="prevpage" name="T1BS_AGENTprevpage" id="T1BS_AGENTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T1BS_AGENT" vsaction="nextpage" id="T1BS_AGENTnextpage" name="T1BS_AGENTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T1BS_AGENT" vsaction="lastpage" id="T1BS_AGENTlastpage" name="T1BS_AGENTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+
+<hr class="advsectsep"></hr>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Advantage" vsds="T1BS_AGENT" vsaction="saveall" name="T1BS_AGENTSaveAll" id="T1BS_AGENTSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Advantage" vsds="T1BS_AGENT" vsaction="undoall" name="T1BS_AGENTUndoAll" id="T1BS_AGENTUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="Advantage" vsds="T1BS_AGENT" vsaction="delete" id="IndexT1BS_AGENTdelete" name="T1BS_AGENTdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="Advantage" vsds="T1BS_AGENT" vsaction="insert" id="T1BS_AGENTinsert" name="T1BS_AGENTinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+      </td>
+
+<td><vstext vsds=" " name="T1BS_AGENTSearchColList" vspreservetag="true"></td>
+<!-- BEGIN CUSTOMIZATION -->
+      <td>
+<ams_map title="ViewLog/Back" name="ViewLog/Back">
+<a href="Advantage" vsds="" vsaction="viewlog" name="viewlog" id="viewlog" title="View Log" accesskey="V">View Log</a>
+<a href="Advantage" vsds="" vsaction="cancel" name="T1BS_AGENTback" id="T1BS_AGENTback" title="Back" accesskey="B">Back</a>
+</ams_map>
+      </td>
+<!-- END CUSTOMIZATION -->
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1DOC_CD" title="Code (Required)">Code :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1DOC_CD" id="txtT1DOC_CD"
+               size="15"
+ vsds="T1BS_AGENT" vsdf="DOC_CD"
+         ams_max_len="8"
+ ShowCodeInfo="" value="DOC_CD"title="Code (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1DOC_DEPT_CD" title="Doc Dept (Required)">Doc Dept :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1DOC_DEPT_CD" id="txtT1DOC_DEPT_CD"
+            size="6"
+ vsds="T1BS_AGENT" vsdf="DOC_DEPT_CD"
+         ams_max_len="4"
+ ShowCodeInfo="" value="DOC_DEPT_CD"title="Doc Dept (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1DOC_ID" title="ID (Required)">ID :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1DOC_ID" id="txtT1DOC_ID"
+               size="20"
+ vsds="T1BS_AGENT" vsdf="DOC_ID"
+         ams_max_len="20"
+ ShowCodeInfo="" value="DOC_ID"title="ID (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1DOC_VERS_NO" title="Version (Required)">Version :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1DOC_VERS_NO" id="txtT1DOC_VERS_NO"
+               size="10"
+ vsds="T1BS_AGENT" vsdf="DOC_VERS_NO"
+               ams_max_len="10"
+ ShowCodeInfo="" value="DOC_VERS_NO"title="Version (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1RUN_DT_TM" title="Scheduled Date/Time (Required)">Scheduled Date/Time :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1RUN_DT_TM" id="txtT1RUN_DT_TM"
+                                    size="15"
+ vsds="T1BS_AGENT" vsdf="RUN_DT_TM"
+                                    ams_max_len="19"
+         vsformat="MM-dd-yyyy HH:mm"
+ ShowCodeInfo="" value="RUN_DT_TM"title="Scheduled Date/Time (Required)">
+<!-- BEGIN CUSTOMIZATION -->
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.DocSchedule.txtT1RUN_DT_TM.value, 'txtT1RUN_DT_TM', document.DocSchedule.txtT1RUN_DT_TM);event.returnValue=false;return false;" title="Choose Date">
+            <img src="../AMSImages/ADVCalendar.gif" alt="Choose Date" title="Choose Date">
+          </a>
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1ACTN_CD" title="Action (Required)">Action :</label></td>
+        <td class="val required">
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+          <select name="txtT1ACTN_CD" id="txtT1ACTN_CD" vsds="T1BS_AGENT" vsdf="ACTN_CD" size="1" vscodetable=" " ShowCodeInfo="" title="Action (Required)">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+-->
+          <select name="txtT1ACTN_CD" id="txtT1ACTN_CD" vsds="T1BS_AGENT" vsdf="ACTN_CD" size="1" vscodetable="CVL_DOC_SCHED_ACTN" ShowCodeInfo="" title="Action (Required)" onchange="DOCSCHEDULE_updateSubAction();">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1DOC_S_ACTN_CD" title="Sub Action">Sub Action :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_S_ACTN_CD" id="txtT1DOC_S_ACTN_CD"
+            ams_max_len="10"
+ value="DOC_S_ACTN_CD"
+            size="10"
+ vsds="T1BS_AGENT" vsdf="DOC_S_ACTN_CD" ShowCodeInfo="" title="Sub Action">
+          <input type="image" vspick="T2R_SC_DOC_CUST_ACTN" vspicktext="txtT1DOC_S_ACTN_CD" vsds="T1BS_AGENT" vsaction="pick" name="pckT1DOC_S_ACTN_CD" id="pckT1DOC_S_ACTN_CD" title="Select Sub Action" alt="Select Sub Action" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1BS_AGENT', new Array(), new Array() ) ;
+
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

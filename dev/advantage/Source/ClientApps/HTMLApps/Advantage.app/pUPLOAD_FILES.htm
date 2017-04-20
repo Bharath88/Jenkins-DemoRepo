@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Upload File</title>
+  <base href>
+
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="pUPLOAD_FILES">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Upload File">Upload File</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="Advantage" vsds="" vsaction="84" title="Back to Previous Page" name="QueryBack" id="QueryBack" accesskey="Z">Back</a>
+  </div>
+
+
+
+
+  <INPUT type="hidden" name="T1UPLOAD_FILESvscurrency" vsds="T1UPLOAD_FILES" vscurrency="true">
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+
+
+      <!--BEGIN CUSTOM HTML-->
+      <!--<a href="Advantage" vsds="T1UPLOAD_FILES" vsaction="undoall" name="T1UPLOAD_FILESUndoAll" id="T1UPLOAD_FILESUndoAll" title="Undo All" accesskey="6">Undo</a>
+
+      <a href="Advantage" vsds="T1UPLOAD_FILES" vsaction="delete" id="IndexT1UPLOAD_FILESdelete" name="T1UPLOAD_FILESdelete" title="Delete Current Record" accesskey="7">Delete</a>
+
+      <a href="Advantage" vsds="T1UPLOAD_FILES" vsaction="insert" id="T1UPLOAD_FILESinsert" name="T1UPLOAD_FILESinsert" title="Insert New Record" accesskey="I">Insert</a>-->
+	  <!--END CUSTOM HTML-->
+</ams_map>
+      </td>
+
+
+<td><div name="T1UPLOAD_FILESGridNav" id="T1UPLOAD_FILESGridNav" vsds=""><ams_map title="Record Navigation" name="Record Navigation">
+      <!--BEGIN CUSTOM HTML-->
+      <!--<a href="Advantage" vsds="T1UPLOAD_FILES" vsaction="first" name="T1UPLOAD_FILESfirst" id="T1UPLOAD_FILESfirst" title="First Record" accesskey="0">First</a>
+
+
+      <a href="Advantage" vsds="T1UPLOAD_FILES" vsaction="prev" name="T1UPLOAD_FILESprev" id="T1UPLOAD_FILESprev" title="Previous Record" accesskey="1">Prev</a>
+
+
+      <a href="Advantage" vsds="T1UPLOAD_FILES" vsaction="next" name="T1UPLOAD_FILESnext" id="T1UPLOAD_FILESnext" title="Next Record" accesskey="2">Next</a>
+
+
+      <a href="Advantage" vsds="T1UPLOAD_FILES" vsaction="last" name="T1UPLOAD_FILESlast" id="T1UPLOAD_FILESlast" title="Last Record" accesskey="3">Last</a>-->
+      <!--END CUSTOM HTML-->
+</ams_map></td>
+
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+
+
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1UPLOAD_FILE_NM" title="File name (Required)">File name :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1UPLOAD_FILE_NM" id="txtT1UPLOAD_FILE_NM" 
+               size="20"
+ vsds="T1UPLOAD_FILES" vsdf="UPLOAD_FILE_NM" 
+         ams_max_len="64"
+ ShowCodeInfo="" value="UPLOAD_FILE_NM"title="File name (Required)">
+
+
+
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1SCHED_DT" title="Scheduled Date/Time">Scheduled Date/Time :</label></td>
+
+        <td class="val">
+          <input type="text" id="txtT1SCHED_DT" name="txtT1SCHED_DT" size="11" vsds="T1UPLOAD_FILES" vsdf="SCHED_DT"
+    vsformat="MM/dd/yyyy HH:mm"
+ value="SCHED_DT" title="Scheduled Date/Time">
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.pUPLOAD_FILES.txtT1SCHED_DT.value, 'txtT1SCHED_DT', document.pUPLOAD_FILES.txtT1SCHED_DT);event.returnValue=false;return false;" title="Select Scheduled Date/Time: Will open in a new window"><img src="../AMSImages/ADVCalendar.gif"
+ alt="Select Scheduled Date/Time: Will open in a new window" title="Select Scheduled Date/Time: Will open in a new window"></a>
+        </td>
+      </tr>
+
+    <tr>
+      <td class="label"><label for="txtT1EMAIL_AD_TXT" title="Email address">Email address :</label></td>
+
+        <td class="val">
+
+          <input type="text" name="txtT1EMAIL_AD_TXT" id="txtT1EMAIL_AD_TXT"
+               size="20"
+ vsds="T1UPLOAD_FILES" vsdf="EMAIL_AD_TXT"
+         ams_max_len="100"
+ ShowCodeInfo="" value="EMAIL_AD_TXT" title="Email address" >
+        </td>
+      </tr>
+</table>
+    </td></tr></table>
+  </fieldset>
+
+<!-- Begin Customization-->
+<b>  <a href="Advantage" vsds="T1UPLOAD_FILES" vsaction="saveall" name="T1UPLOAD_FILESSaveAll" id="T1UPLOAD_FILESSaveAll" title="Save All" accesskey="5" align = "center">Upload</a></b>
+<!-- End Customization-->
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

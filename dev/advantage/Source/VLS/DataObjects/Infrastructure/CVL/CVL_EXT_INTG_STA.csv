@@ -1,0 +1,11 @@
+"EXT_INTG_STA_SV","EXT_INTG_STA_DV","AMS_ROW_VERS_NO"
+0,Not Started,1
+1,Edits Applied,1
+2,In Progress,1
+3,Ready for Completion,1
+4,Completed,1
+5,Ready for Backout,1
+6,Backout Completed,1
+8,Ready for Backout Retry,1
+7,Resolution Required,1
+

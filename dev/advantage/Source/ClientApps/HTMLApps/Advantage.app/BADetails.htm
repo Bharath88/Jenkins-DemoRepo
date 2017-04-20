@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Business Area Details</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+<!-- BEGIN CUSTOMIZATION -->
+  <script type="text/javascript" language="JavaScript">
+  <!--
+     function BADETAILS_OpenBF( fiBAID, fiBFID, fiBFItemSeqNo )
+     {
+       var loSecNav = top.frames['Secondary'] ;
+
+       if ( loSecNav != null )
+       {
+          var loBFNav = loSecNav.frames['BFNav'] ;
+
+          if ( loBFNav != null )
+          {
+             loBFNav.BFNAVPANEL_OpenBF( fiBAID, fiBFID, fiBFItemSeqNo ) ;
+          } /* end if ( loBFNav != null ) */
+        } /* end if ( loSecNav != null ) */
+     } /* end BADETAILS_OpenBF() */
+  -->
+  </script>
+<!-- END CUSTOMIZATION -->
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+<!-- BEGIN CUSTOMIZATION -->
+  <style>
+  <!--
+   UL
+   {
+      LIST-STYLE-TYPE : none ;
+   }
+   SPAN.BFDesc
+   {
+      TEXT-INDENT : 1em ;
+   }
+   -->
+   </style>
+<!-- END CUSTOMIZATION -->
+</head>
+
+<body class="adv">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="BADetails">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<vstitle vstitle="Business Area Details">Business Area Details</vstitle>
+-->
+    <script type="text/javascript" language="JavaScript">
+    <!--
+       var loSecNav = top.frames['Secondary'] ;
+
+       if ( loSecNav != null )
+       {
+          var loBFNav = loSecNav.frames['BFNav'] ;
+
+          if ( loBFNav != null )
+          {
+             var lsBFTREE_BAs = loBFNav.msBFTREE_BAs ;
+
+             if ( lsBFTREE_BAs != null )
+             {
+                for ( var liBACount=0 ; liBACount < lsBFTREE_BAs.length ; liBACount++ )
+                {
+                   if ( lsBFTREE_BAs[liBACount][3] != null )
+                   {
+                      document.writeln( lsBFTREE_BAs[liBACount][1]  ) ;
+                   }
+                }
+             }
+          }
+       }
+    -->
+    </script>
+<!-- END CUSTOMIZATION -->
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+<!-- BEGIN CUSTOMIZATION -->
+	<div class="bfcontent">
+    <script type="text/javascript" language="JavaScript">
+    <!--
+       var loSecNav = top.frames['Secondary'] ;
+
+       if ( loSecNav != null )
+       {
+          var loBFNav = loSecNav.frames['BFNav'] ;
+
+          if ( loBFNav != null )
+          {
+             var lsBFTREE_BAs = loBFNav.msBFTREE_BAs ;
+
+             if ( lsBFTREE_BAs != null )
+             {
+                for ( var liBACount=0 ; liBACount < lsBFTREE_BAs.length ; liBACount++ )
+                {
+                  if ( lsBFTREE_BAs[liBACount][3] != null )
+                  {
+                     document.write( lsBFTREE_BAs[liBACount][2] + '<p>' ) ;
+
+                     for ( var liBFCount=0 ; liBFCount < lsBFTREE_BAs[liBACount][3].length ; liBFCount++ )
+                     {
+                        var loBFs = lsBFTREE_BAs[liBACount][3] ;
+
+                        document.write( '<fieldset class="advscalar section">' ) ;
+                        document.write( '<legend class="advscalar section">' ) ;
+                        document.write( '<a href="javascript:AMSTAB_ToggleSection(' ) ;
+                        document.write( "'BF_" + liBFCount + "','BF_" + liBFCount + "_Button');" ) ;
+                        document.write( '" title="Expand/Collapse ' + loBFs[liBFCount][1] + '">' ) ;
+                        document.write( '<img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="BF_' + liBFCount + '_Button"> ' ) ;
+                        document.write( loBFs[liBFCount][1] + '</a></legend>' ) ;
+                        document.write( '<span class="bfdesc">' + loBFs[liBFCount][2] + '</span>' ) ;
+                        document.write( '<div id="BF_' + liBFCount + '" class="advsection">' ) ;
+
+                        if ( loBFs[liBFCount][4] != null )
+                        {
+                           document.write( '<ul>' ) ;
+                           for ( var liBFItemCount=0 ; liBFItemCount < loBFs[liBFCount][4].length ; liBFItemCount++ )
+                           {
+                              var loBFItems = loBFs[liBFCount][4] ;
+
+                              document.write( '<li>' ) ;
+                              switch( loBFItems[liBFItemCount][2] )
+                              {
+                                 case 1 :
+                                    document.write( '<img src="../AMSImages/ADVVisited.gif" alt="Visited" title="Visited" name="BFItem_' + liBFItemCount + '">' ) ;
+                                    break ;
+                                 case 2 :
+                                    document.write( '<img src="../AMSImages/ADVCurr.gif" alt="Current" title="Current" name="BFItem_' + liBFItemCount + '">' ) ;
+                                    break ;
+                                 default :
+                                    document.write( '<img src="../AMSImages/ADVUnvisited.gif" alt="Unvisited" title="Unvisited" name="BFItem_' + liBFItemCount + '">' ) ;
+                                    break ;
+                              } /* end switch( loBFItems[liBFItemCount][2] ) */
+
+                              document.write( '<a href="javascript:BADETAILS_OpenBF(' + lsBFTREE_BAs[liBACount][0] + ',' ) ;
+                              document.write( loBFs[liBFCount][0] + ',' + liBFItemCount + ');"' ) ;
+                              document.write( ' title="Open ' + loBFItems[liBFItemCount][1] + '">' + loBFItems[liBFItemCount][1] + '</a>' ) ;
+                              document.write( '</li>' ) ;
+                           }
+                           document.write( '</ul>' ) ;
+                        }
+                        document.write( '</div></fieldset><br><br>' ) ;
+                     }
+                     break ;
+                  }
+                }
+             }
+          }
+       }
+    -->
+    </script>
+    </div>
+<!-- END CUSTOMIZATION -->
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+-->
+<!-- END CUSTOMIZATION -->
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+   </div>
+  </form>
+
+</body>
+</html>
+
+
+

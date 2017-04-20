@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE DataObject SYSTEM "DataObject.dtd">
+<DataObject
+	SurrId="0366900790.DID.0000"
+	CodedValuesList="True"
+	IsRemoteAccessible="False"
+	UseQuotedIdentifiers="False"
+	SuperClass="AMSDataObject"
+	LockMode="NoOptimisticLocking"
+	ImageReference=" "
+	XdaConnector="SQL"
+	DTDVersion="05.06.00"
+	>
+	<CodedValuesList
+		DisplayAttribute="CVL_YES_NO_DV"
+		StoredAttribute="CVL_YES_NO_SV"
+	/>
+	<VLSDeployment
+		DeploySecurityInfo="False"
+	/>
+	<SingularCaption><![CDATA[*]]> </SingularCaption>
+	<PluralCaption><![CDATA[*]]> </PluralCaption>
+	<Description><![CDATA[ ]]> </Description>
+	<Comments><![CDATA[ ]]> </Comments>
+	<Attributes>
+		<Attribute
+			Name="CVL_YES_NO_SV"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="False"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Integer"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+		</Attribute>
+		<Attribute
+			Name="CVL_YES_NO_DV"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="5"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+		</Attribute>
+		<Attribute
+			Name="AMS_ROW_VERS_NO"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="Long"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+		</Attribute>
+	</Attributes>
+	<Indexes>
+		<Index
+			Name="PK_CVLYESNO"
+			Primary="True"
+			Unique="True"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="CVL_YES_NO_SV"
+				Descending="False"
+			/>
+		</Index>
+	</Indexes>
+</DataObject>

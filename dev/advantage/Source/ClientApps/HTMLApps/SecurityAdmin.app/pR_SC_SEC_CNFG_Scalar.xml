@@ -1,0 +1,380 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="Default"
+	PositionTop="0"
+	PositionLeft="295"
+	PositionWidth="247"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSOtherPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="721982254"
+	>
+	<FormCaption><![CDATA[Security Configuration]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="true"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="R_SC_SEC_CNFG"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSDisplayTabs"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="9" Name="CNFG_UNID" />
+				<RSDefaultAttribute ID="1" Name="PSWD_EXPR_DY_CT" />
+				<RSDefaultAttribute ID="2" Name="LCKT_CT" />
+				<RSDefaultAttribute ID="3" Name="PSWD_HIST_CT" />
+				<RSDefaultAttribute ID="4" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="5" Name="PSWD_WARN_DY_CT" />
+				<RSDefaultAttribute ID="6" Name="CHK_ROLE_IND" />
+				<RSDefaultAttribute ID="7" Name="USER_EMAIL_SUBJ" />
+				<RSDefaultAttribute ID="8" Name="USER_EMAIL_TXT" />
+				<RSDefaultAttribute ID="10" Name="PSWD_RESET_FL" />
+				<RSDefaultAttribute ID="11" Name="PSWD_RESET_SUBJ" />
+				<RSDefaultAttribute ID="12" Name="PSWD_RESET_MSG" />
+				<RSDefaultAttribute ID="13" Name="USER_ID_MIN_LEN" />
+				<RSDefaultAttribute ID="14" Name="USER_ID_MAX_LEN" />
+				<RSDefaultAttribute ID="15" Name="PSWD_MIN_LEN" />
+				<RSDefaultAttribute ID="16" Name="PSWD_MAX_LEN" />
+				<RSDefaultAttribute ID="17" Name="PSWD_NUM_FL" />
+				<RSDefaultAttribute ID="18" Name="PSWD_UPPER_FL" />
+				<RSDefaultAttribute ID="19" Name="PSWD_LOWER_FL" />
+				<RSDefaultAttribute ID="20" Name="PSWD_SYMBOL_FL" />
+				<RSDefaultAttribute ID="21" Name="PSWD_NO_USID_FL" />
+				<RSDefaultAttribute ID="22" Name="PSWD_NO_PSWD_FL" />
+				<RSDefaultAttribute ID="23" Name="CA_PUB_KEY" />
+				<RSDefaultAttribute ID="24" Name="CA_USER_ID" />
+				<RSDefaultAttribute ID="25" Name="TBL_LAST_DT" />
+				<RSDefaultAttribute ID="26" Name="EXPIRE_NEW_PSWD_FL" />
+				<RSDefaultAttribute ID="27" Name="PSWD_RESET_LCKT_CT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="CHK_ROLE_IND" Displayed="True" UnPlaced="False" Archetype="ComboboxNoSpaceReq" />
+				<RSAttribute Name="USER_EMAIL_SUBJ" Displayed="True" UnPlaced="False" Archetype="AMSTextboxWide" />
+				<RSAttribute Name="USER_EMAIL_TXT" Displayed="True" UnPlaced="False" Archetype="TextBoxMemo" />
+				<RSAttribute Name="PSWD_RESET_SUBJ" Displayed="True" UnPlaced="False" Archetype="AMSTextboxWide" />
+				<RSAttribute Name="PSWD_RESET_MSG" Displayed="True" UnPlaced="False" Archetype="TextBoxMemo" />
+				<RSAttribute Name="PSWD_RESET_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="LCKT_CT" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="PSWD_RESET_LCKT_CT" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="PSWD_HIST_CT" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="PSWD_EXPR_DY_CT" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="PSWD_WARN_DY_CT" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="USER_ID_MIN_LEN" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="USER_ID_MAX_LEN" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="PSWD_MIN_LEN" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="PSWD_MAX_LEN" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="PSWD_NUM_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PSWD_UPPER_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PSWD_LOWER_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PSWD_SYMBOL_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PSWD_NO_USID_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PSWD_NO_PSWD_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CNFG_UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CA_PUB_KEY" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CA_USER_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="EXPIRE_NEW_PSWD_FL" Displayed="True" UnPlaced="False" />
+			</ScalerAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value="%PSWD_MIN_LEN%"
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="false"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="false"
+			/>
+			<Property
+				Name="Tab_10_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_10_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_1_Delimiter"
+				Value="%PSWD_RESET_FL%"
+			/>
+			<Property
+				Name="Tab_1_Name"
+				Value="Password Policy"
+			/>
+			<Property
+				Name="Tab_2_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_2_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_3_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_3_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_4_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_4_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_5_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_5_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_6_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_6_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_7_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_7_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_8_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_8_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_9_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_9_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_Delimiter_Fields"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+		</ArchetypeExtendedProperties>
+	</RecordSource>
+</Form>

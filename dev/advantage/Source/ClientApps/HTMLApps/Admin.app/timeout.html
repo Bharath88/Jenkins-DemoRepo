@@ -1,0 +1,40 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<script language="javascript">
+<!--
+function PutAtTop() {
+	if ( self != top ) {
+		if (self.location.href.indexOf("?") != -1) {
+			top.location.href = self.location.href + "&timeoutReload=true";
+		} else {
+			top.location.href = self.location.href + "?timeoutReload=true";
+		}
+	}
+}
+//-->
+</script>
+
+<title>Error Page</title>
+</head>
+
+<body text="#000000" link="#0000FF" bgcolor="#FFFFFF" target="_top" OnLoad="PutAtTop();">
+
+<form ONSUBMIT="timeout.action = self.location.href" name="timeout" METHOD="POST">
+  <div align="center"><center><table width="450" BORDER="0" cellpadding="4" cellspacing="4">
+    <tr>
+      <td><font size="5" face="arial" color="#800000">Session error occured</font><p><font
+      SIZE="-1" face="arial" color="#000080">Your session may be timed out or the server is
+      down.&nbsp; </font></p>
+      <p><font SIZE="-1" face="arial" color="#000080">Please try to log in again.</font> </p>
+      <p><input TYPE="submit" VALUE="LOGIN AGAIN" NAME="relogon" TARGET="_top"> <br>
+      <br>
+      <br>
+      </td>
+    </tr>
+  </table>
+  </center></div>
+</form>
+</body>
+</html>

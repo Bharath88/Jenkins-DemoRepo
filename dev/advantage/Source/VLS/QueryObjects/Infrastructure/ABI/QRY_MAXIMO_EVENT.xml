@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0651285372.Administrator.0014"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="False"
+	ChildMostDataObject="MAXIMO_EVENT_ERROR"
+	DistinctRowsOnly="False"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[SELECT MAXIMO_EVENT.DIRECTION AS DIRECTION, MAXIMO_EVENT.MESSAGEID AS MESSAGEID, MAXIMO_EVENT.INTERFACE AS INTERFACE, MAXIMO_EVENT.INTEGRATIONOBJECT AS INTEGRATIONOBJECT, MAXIMO_EVENT.SENDERID AS SENDERID, MAXIMO_EVENT.RECIPIENTID AS RECIPIENTID, MAXIMO_EVENT.CREATIONDATE AS CREATIONDATE, MAXIMO_EVENT.EVENT_STATUS AS EVENT_STATUS, MAXIMO_EVENT.EVENT_DETAIL AS EVENT_DETAIL, MAXIMO_EVENT.UPDATE_TIMESTAMP AS UPDATE_TIMESTAMP, MAXIMO_EVENT.REFERENCE AS REFERENCE, MAXIMO_EVENT_ERROR.ERROR_SEQUENCE AS ERROR_SEQUENCE, MAXIMO_EVENT_ERROR.EVENT_ERROR_DATE AS EVENT_ERROR_DATE, MAXIMO_EVENT_ERROR.EVENT_ERROR_MESSAGE AS EVENT_ERROR_MESSAGE, MAXIMO_EVENT.SOURCE_MESSAGEID AS SOURCE_MESSAGEID, ' ' AS RPRC_CNT, ' ' AS RPRC_SUCCS_CNT FROM <dbschema>.MAXIMO_EVENT_ERROR MAXIMO_EVENT_ERROR RIGHT OUTER JOIN <dbschema>.MAXIMO_EVENT MAXIMO_EVENT ON MAXIMO_EVENT_ERROR.DIRECTION  =  MAXIMO_EVENT.DIRECTION AND MAXIMO_EVENT_ERROR.MESSAGEID  =  MAXIMO_EVENT.MESSAGEID   ORDER BY MAXIMO_EVENT.DIRECTION, MAXIMO_EVENT.MESSAGEID, MAXIMO_EVENT.EVENT_STATUS, MAXIMO_EVENT.UPDATE_TIMESTAMP]]></RuntimeSql>
+	<Where><![CDATA[]]></Where>
+	<OrderBy>
+	<OrderByAttribute
+		Name="MAXIMO_EVENT.DIRECTION"
+	/>
+	<OrderByAttribute
+		Name="MAXIMO_EVENT.MESSAGEID"
+	/>
+	<OrderByAttribute
+		Name="MAXIMO_EVENT.EVENT_STATUS"
+	/>
+	<OrderByAttribute
+		Name="MAXIMO_EVENT.UPDATE_TIMESTAMP"
+	/>
+	</OrderBy>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="MAXIMO_EVENT"
+			Alias="MAXIMO_EVENT"
+		/>
+
+		<DataObject
+			DataObjectName="MAXIMO_EVENT_ERROR"
+			Alias="MAXIMO_EVENT_ERROR"
+		/>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="DIRECTION"
+			Alias="DIRECTION"
+			AggregationType="None"
+			SourceDataObject="MAXIMO_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="MESSAGEID"
+			Alias="MESSAGEID"
+			AggregationType="None"
+			SourceDataObject="MAXIMO_EVENT"
+			Persistent="True"
+			IdentityColumnsElement="True"
+		/>
+
+		<Attribute
+			Name="INTERFACE"
+			Alias="INTERFACE"
+			AggregationType="None"
+			SourceDataObject="MAXIMO_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="INTEGRATIONOBJECT"
+			Alias="INTEGRATIONOBJECT"
+			AggregationType="None"
+			SourceDataObject="MAXIMO_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="SENDERID"
+			Alias="SENDERID"
+			AggregationType="None"
+			SourceDataObject="MAXIMO_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="RECIPIENTID"
+			Alias="RECIPIENTID"
+			AggregationType="None"
+			SourceDataObject="MAXIMO_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="CREATIONDATE"
+			Alias="CREATIONDATE"
+			AggregationType="None"
+			SourceDataObject="MAXIMO_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_STATUS"
+			Alias="EVENT_STATUS"
+			AggregationType="None"
+			SourceDataObject="MAXIMO_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_DETAIL"
+			Alias="EVENT_DETAIL"
+			AggregationType="None"
+			SourceDataObject="MAXIMO_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="UPDATE_TIMESTAMP"
+			Alias="UPDATE_TIMESTAMP"
+			AggregationType="None"
+			SourceDataObject="MAXIMO_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="REFERENCE"
+			Alias="REFERENCE"
+			AggregationType="None"
+			SourceDataObject="MAXIMO_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ERROR_SEQUENCE"
+			Alias="ERROR_SEQUENCE"
+			AggregationType="None"
+			SourceDataObject="MAXIMO_EVENT_ERROR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_ERROR_DATE"
+			Alias="EVENT_ERROR_DATE"
+			AggregationType="None"
+			SourceDataObject="MAXIMO_EVENT_ERROR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_ERROR_MESSAGE"
+			Alias="EVENT_ERROR_MESSAGE"
+			AggregationType="None"
+			SourceDataObject="MAXIMO_EVENT_ERROR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="SOURCE_MESSAGEID"
+			Alias="SOURCE_MESSAGEID"
+			AggregationType="None"
+			SourceDataObject="MAXIMO_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="RPRC_CNT"
+			Alias="RPRC_CNT"
+			AggregationType="None"
+			>
+			<DataType
+				Type="Integer"
+			/>
+			<Formula><![CDATA[' ']]></Formula>
+		</Attribute>
+
+		<Attribute
+			Name="RPRC_SUCCS_CNT"
+			Alias="RPRC_SUCCS_CNT"
+			AggregationType="None"
+			>
+			<DataType
+				Type="Integer"
+			/>
+			<Formula><![CDATA[' ']]></Formula>
+		</Attribute>
+
+	</Attributes>
+	<Joins
+		LeftDataObject="MAXIMO_EVENT_ERROR"
+		RightDataObject="MAXIMO_EVENT"
+		JoinType="Right"
+		>
+		<ColumnSet
+			LeftAttribute="MAXIMO_EVENT_ERROR.DIRECTION"
+			RightAttribute="MAXIMO_EVENT.DIRECTION"
+		/>
+		<ColumnSet
+			LeftAttribute="MAXIMO_EVENT_ERROR.MESSAGEID"
+			RightAttribute="MAXIMO_EVENT.MESSAGEID"
+		/>
+	</Joins>
+
+	<RelsToChildDataObjects>
+		<RelToChildDO
+			RelToChildDO="MAXIMO_EVENT(MAXIMO_EVENT)-MAXIMO_EVENT_ERROR(MAXIMO_EVENT_ERROR)"
+		>
+			<Aliases>
+				<Alias
+					Name="MAXIMO_EVENT"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="DIRECTION"
+							ChildAttribute="DIRECTION"
+							/>
+				<AttributePair
+							ParentAttribute="MESSAGEID"
+							ChildAttribute="MESSAGEID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+	</RelsToChildDataObjects>
+
+</QueryObject>

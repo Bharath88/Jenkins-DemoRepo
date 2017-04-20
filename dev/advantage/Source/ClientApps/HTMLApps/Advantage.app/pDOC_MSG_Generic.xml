@@ -1,0 +1,772 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="AMSRefTableGridDisplay"
+	PositionTop="1000"
+	PositionLeft="1000"
+	PositionWidth="150"
+	PositionHeight="43.75"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSRefTableGridDisplayPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-1665195546"
+	>
+	<FormCaption><![CDATA[Document Message]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="true"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+		<Property
+			Name="SSCaptionImageFileNm"
+			Value=""
+		/>
+	</ArchetypeExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="DOC_MSG"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGenericGridDisplayTabs"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="False"
+		AllowInsert="False"
+		AllowUpdate="False"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="UNID" />
+				<RSDefaultAttribute ID="2" Name="DOC_CD" />
+				<RSDefaultAttribute ID="3" Name="DOC_DEPT_CD" />
+				<RSDefaultAttribute ID="4" Name="DOC_UNIT_CD" />
+				<RSDefaultAttribute ID="5" Name="DOC_ID" />
+				<RSDefaultAttribute ID="6" Name="DOC_VERS_NO" />
+				<RSDefaultAttribute ID="7" Name="DOC_TYP" />
+				<RSDefaultAttribute ID="8" Name="DOC_CREA_USID" />
+				<RSDefaultAttribute ID="9" Name="DOC_CREA_DT" />
+				<RSDefaultAttribute ID="10" Name="DOC_LAST_USID" />
+				<RSDefaultAttribute ID="11" Name="DOC_LAST_DT" />
+				<RSDefaultAttribute ID="12" Name="DOC_FUNC_CD" />
+				<RSDefaultAttribute ID="13" Name="DOC_PHASE_CD" />
+				<RSDefaultAttribute ID="14" Name="DOC_STA_CD" />
+				<RSDefaultAttribute ID="15" Name="VEND_LN_NO" />
+				<RSDefaultAttribute ID="16" Name="COMM_LN_NO" />
+				<RSDefaultAttribute ID="17" Name="ACTG_LN_NO" />
+				<RSDefaultAttribute ID="18" Name="PSTNG_LN_NO" />
+				<RSDefaultAttribute ID="19" Name="MSG_CD" />
+				<RSDefaultAttribute ID="20" Name="MSG_TXT" />
+				<RSDefaultAttribute ID="21" Name="MSG_TXT_UP" />
+				<RSDefaultAttribute ID="22" Name="MSG_EXPL" />
+				<RSDefaultAttribute ID="23" Name="MSG_SEV" />
+				<RSDefaultAttribute ID="24" Name="OV_LVL" />
+				<RSDefaultAttribute ID="25" Name="APPL_ID" />
+				<RSDefaultAttribute ID="26" Name="COMP_NM" />
+				<RSDefaultAttribute ID="27" Name="ATTR_NM" />
+				<RSDefaultAttribute ID="28" Name="ATTR_VL" />
+				<RSDefaultAttribute ID="29" Name="ATTR_VL_UP" />
+				<RSDefaultAttribute ID="30" Name="DOC_REF" />
+				<RSDefaultAttribute ID="31" Name="DOC_SEQ_NO" />
+				<RSDefaultAttribute ID="32" Name="FLOW_ID" />
+				<RSDefaultAttribute ID="33" Name="IM_RUN_SEQ_NO" />
+				<RSDefaultAttribute ID="34" Name="PARTNER_ID" />
+				<RSDefaultAttribute ID="35" Name="SEQ_NO" />
+				<RSDefaultAttribute ID="36" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="37" Name="TBL_LAST_DT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="DOC_REF" Displayed="False" UnPlaced="False" Archetype="AMSDocRefForGrid" />
+				<RSAttribute Name="DOC_TYP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" Archetype="AMSPickChoice" />
+				<RSAttribute Name="DOC_DEPT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_UNIT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_PHASE_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_FUNC_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_STA_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_CREA_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CREA_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_LAST_USID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_LAST_DT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_VERS_NO" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="VEND_LN_NO" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="COMM_LN_NO" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ACTG_LN_NO" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PSTNG_LN_NO" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="COMP_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ATTR_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ATTR_VL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="OV_LVL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="MSG_CD" Displayed="True" UnPlaced="False" Archetype="AMSPickChoice" />
+				<RSAttribute Name="MSG_TXT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="MSG_EXPL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="MSG_SEV" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="MSG_TXT_UP" Displayed="True" UnPlaced="False" Archetype="AMSHiddenTextBox" />
+				<RSAttribute Name="ATTR_VL_UP" Displayed="True" UnPlaced="False" Archetype="AMSHiddenTextBox" />
+				<RSAttribute Name="DOC_SEQ_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FLOW_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="IM_RUN_SEQ_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PARTNER_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SEQ_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="DOC_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_REF" Displayed="True" UnPlaced="False" Archetype="AMSDocRefForGrid" />
+				<RSAttribute Name="MSG_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="MSG_TXT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="MSG_SEV" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="OV_LVL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_LAST_DT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_DEPT_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_TYP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CREA_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CREA_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_LAST_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_FUNC_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_PHASE_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_STA_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="VEND_LN_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="COMM_LN_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ACTG_LN_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PSTNG_LN_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="MSG_EXPL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="COMP_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ATTR_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ATTR_VL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_UNIT_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="MSG_TXT_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ATTR_VL_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_SEQ_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FLOW_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="IM_RUN_SEQ_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PARTNER_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SEQ_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxCSVRowsBeforeZip"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="DynamicGridAttrib"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCount"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCountMsg"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="OverrideNumRowsPerPage"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value="&quot;DOC_CD,DOC_DEPT_CD,DOC_ID,DOC_VERS_NO,DOC_LAST_DT,DOC_LAST_USID,ATTR_NM,ATTR_VL_UP,MSG_CD,MSG_TXT_UP&quot;"
+			/>
+			<Property
+				Name="ShowSearchPopup"
+				Value=""
+			/>
+			<Property
+				Name="UseDBHint"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value="%DOC_VERS_NO%%MSG_CD%"
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="false"
+			/>
+			<Property
+				Name="ShowGridNav"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="SummaryCaption"
+				Value=""
+			/>
+			<Property
+				Name="Tab_10_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_10_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_11_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_11_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_12_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_12_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_13_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_13_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_14_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_14_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_15_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_15_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_16_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_16_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_17_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_17_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_18_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_18_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_19_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_19_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_1_Delimiter"
+				Value="%DOC_TYP%"
+			/>
+			<Property
+				Name="Tab_1_Name"
+				Value="Document Information"
+			/>
+			<Property
+				Name="Tab_20_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_20_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_2_Delimiter"
+				Value="%COMP_NM%"
+			/>
+			<Property
+				Name="Tab_2_Name"
+				Value="Message Information"
+			/>
+			<Property
+				Name="Tab_3_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_3_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_4_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_4_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_5_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_5_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_6_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_6_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_7_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_7_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_8_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_8_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_9_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_9_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_Delimiter_Fields"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+		<PickObject
+			RSID="2"
+			Prefix="T2"
+			BusinessObject="R_DOC_CD"
+			Relationship="DocMsgToDocCd(R_DOC_CD)-DocCdToDocMsg(DOC_MSG)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [DOC_CD] = [?DOC_CD]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="DOC_CD" />
+					<RSDefaultAttribute ID="2" Name="DOC_TYP" />
+					<RSDefaultAttribute ID="3" Name="DOC_CAT" />
+					<RSDefaultAttribute ID="4" Name="DOC_CD_NM" />
+					<RSDefaultAttribute ID="5" Name="DOC_CD_NM_UP" />
+					<RSDefaultAttribute ID="6" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="7" Name="TBL_LAST_DT" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_TYP" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_CAT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD_NM_UP" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_TYP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CAT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="CustomPickFrame"
+					Value=""
+				/>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="EnableVirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="InitialBrowse"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value=""
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+				<Property
+					Name="TypeAheadDispCols"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+		<PickObject
+			RSID="3"
+			Prefix="T3"
+			BusinessObject="R_MSG"
+			Relationship="DocMsgToMsg(R_MSG)-MsgToDocMsg(DOC_MSG)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [MSG_CD] = [?MSG_CD]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="MSG_CD" />
+					<RSDefaultAttribute ID="2" Name="MSG_TXT" />
+					<RSDefaultAttribute ID="3" Name="MSG_SEV" />
+					<RSDefaultAttribute ID="4" Name="MSG_EXPL" />
+					<RSDefaultAttribute ID="5" Name="OV_LVL" />
+					<RSDefaultAttribute ID="6" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="7" Name="MSG_TXT_UP" />
+					<RSDefaultAttribute ID="8" Name="TBL_LAST_DT" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="MSG_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="MSG_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="MSG_SEV" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="MSG_EXPL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="OV_LVL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="MSG_TXT_UP" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="MSG_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="MSG_TXT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="MSG_SEV" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="MSG_EXPL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OV_LVL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="MSG_TXT_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="CustomPickFrame"
+					Value=""
+				/>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="EnableVirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="InitialBrowse"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value=""
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+				<Property
+					Name="TypeAheadDispCols"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+	</RecordSource>
+</Form>

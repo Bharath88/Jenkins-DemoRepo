@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="R_ASEM_CNFG"
+		ChildRoleName="R_ASEM_REQ"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="APPL_RSRC_ID"
+				ChildAttribute="APPL_RSRC_ID"
+			/>
+			<AttributePair
+				ParentAttribute="PRNT_JOB_CD"
+				ChildAttribute="PRNT_JOB_CD"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[*]]></AscendCaption>
+		<DescendCaption><![CDATA[*]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

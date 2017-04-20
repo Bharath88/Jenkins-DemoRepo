@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0532620270.pbhagwat.0000"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="False"
+	ChildMostDataObject="IN_LEAF_CTXT"
+	DistinctRowsOnly="False"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[SELECT IN_LEAF_CTXT.LEAF_AT_NM AS CTXT_LEAF_AT_NM, IN_LEAF_CTXT.TGT_DESC_COLUMN AS TGT_DESC_COLUMN, IN_LEAF_CTXT.PAGE_CD AS PAGE_CD, IN_PAGES.APPL_NM AS APPL_NM, IN_PAGES.DEST_PG AS DEST_PG, IN_PAGES.DEST_FRAMESET AS DEST_FRAMESET, IN_PAGES.DEST_FRAME AS DEST_FRAME, IN_PAGES.TARGET_FRAME AS TARGET_FRAME, IN_PAGES.MODE_IND AS MODE_IND, IN_PAGES.WHERE_CLAUSE AS WHERE_CLAUSE, IN_PAGES.ORDER_BY AS ORDER_BY, IN_LEAF.LEAF_AT_NM AS LEAF_AT_NM, IN_LEAF.LEAF_SET AS LEAF_SET, IN_PAGES.PAGE_TYP_CD AS PAGE_TYP_CD, IN_PAGES.APPL_ID AS APPL_ID, IN_PAGES.PG_SHW_FL AS PG_SHW_FL FROM <dbschema>.IN_LEAF_CTXT IN_LEAF_CTXT, <dbschema>.IN_LEAF IN_LEAF, <dbschema>.IN_PAGES IN_PAGES  WHERE IN_LEAF.LEAF_AT_NM = IN_LEAF_CTXT.LEAF_AT_NM  AND IN_PAGES.PAGE_CD = IN_LEAF_CTXT.PAGE_CD ]]></RuntimeSql>
+	<Where><![CDATA[]]></Where>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="IN_LEAF_CTXT"
+			Alias="IN_LEAF_CTXT"
+		/>
+
+		<DataObject
+			DataObjectName="IN_LEAF"
+			Alias="IN_LEAF"
+		/>
+
+		<DataObject
+			DataObjectName="IN_PAGES"
+			Alias="IN_PAGES"
+		/>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="LEAF_AT_NM"
+			Alias="CTXT_LEAF_AT_NM"
+			AggregationType="None"
+			SourceDataObject="IN_LEAF_CTXT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="TGT_DESC_COLUMN"
+			Alias="TGT_DESC_COLUMN"
+			AggregationType="None"
+			SourceDataObject="IN_LEAF_CTXT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="PAGE_CD"
+			Alias="PAGE_CD"
+			AggregationType="None"
+			SourceDataObject="IN_LEAF_CTXT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="APPL_NM"
+			Alias="APPL_NM"
+			AggregationType="None"
+			SourceDataObject="IN_PAGES"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DEST_PG"
+			Alias="DEST_PG"
+			AggregationType="None"
+			SourceDataObject="IN_PAGES"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DEST_FRAMESET"
+			Alias="DEST_FRAMESET"
+			AggregationType="None"
+			SourceDataObject="IN_PAGES"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DEST_FRAME"
+			Alias="DEST_FRAME"
+			AggregationType="None"
+			SourceDataObject="IN_PAGES"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="TARGET_FRAME"
+			Alias="TARGET_FRAME"
+			AggregationType="None"
+			SourceDataObject="IN_PAGES"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="MODE_IND"
+			Alias="MODE_IND"
+			AggregationType="None"
+			SourceDataObject="IN_PAGES"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="WHERE_CLAUSE"
+			Alias="WHERE_CLAUSE"
+			AggregationType="None"
+			SourceDataObject="IN_PAGES"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ORDER_BY"
+			Alias="ORDER_BY"
+			AggregationType="None"
+			SourceDataObject="IN_PAGES"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="LEAF_AT_NM"
+			Alias="LEAF_AT_NM"
+			AggregationType="None"
+			SourceDataObject="IN_LEAF"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="LEAF_SET"
+			Alias="LEAF_SET"
+			AggregationType="None"
+			SourceDataObject="IN_LEAF"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="PAGE_TYP_CD"
+			Alias="PAGE_TYP_CD"
+			AggregationType="None"
+			SourceDataObject="IN_PAGES"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="APPL_ID"
+			Alias="APPL_ID"
+			AggregationType="None"
+			SourceDataObject="IN_PAGES"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="PG_SHW_FL"
+			Alias="PG_SHW_FL"
+			AggregationType="None"
+			SourceDataObject="IN_PAGES"
+			Persistent="True"
+		/>
+
+	</Attributes>
+	<Joins
+		LeftDataObject="IN_LEAF"
+		RightDataObject="IN_LEAF_CTXT"
+		JoinType="Equal"
+		>
+		<ColumnSet
+			LeftAttribute="IN_LEAF.LEAF_AT_NM"
+			RightAttribute="IN_LEAF_CTXT.LEAF_AT_NM"
+		/>
+	</Joins>
+
+	<Joins
+		LeftDataObject="IN_PAGES"
+		RightDataObject="IN_LEAF_CTXT"
+		JoinType="Equal"
+		>
+		<ColumnSet
+			LeftAttribute="IN_PAGES.PAGE_CD"
+			RightAttribute="IN_LEAF_CTXT.PAGE_CD"
+		/>
+	</Joins>
+
+	<RelsToParentDataObjects>
+		<RelToParentDO
+			RelToParentDO="IN_PAGES(IN_PAGES)-IN_LEAF_CTXT(IN_LEAF_CTXT)"
+		>
+			<Aliases>
+				<Alias
+					Name="IN_LEAF_CTXT"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="PAGE_CD"
+							ChildAttribute="PAGE_CD"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+		<RelToParentDO
+			RelToParentDO="IN_LEAF(IN_LEAF)-IN_LEAF_CTXT(IN_LEAF_CTXT)"
+		>
+			<Aliases>
+				<Alias
+					Name="IN_LEAF_CTXT"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="LEAF_AT_NM"
+							ChildAttribute="CTXT_LEAF_AT_NM"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+		<RelToParentDO
+			RelToParentDO="CVL_IN_LEAF_AT(CVL_IN_LEAF_AT)-IN_LEAFs(IN_LEAF)"
+		>
+			<Aliases>
+				<Alias
+					Name="IN_LEAF"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="LEAF_AT_NM"
+							ChildAttribute="LEAF_AT_NM"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+		<RelToParentDO
+			RelToParentDO="R_SC_APPL(R_SC_APPL)-IN_PAGES(IN_PAGES)"
+		>
+			<Aliases>
+				<Alias
+					Name="IN_PAGES"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="APPL_ID"
+							ChildAttribute="APPL_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+	</RelsToParentDataObjects>
+
+	<RelsToChildDataObjects>
+		<RelToChildDO
+			RelToChildDO="IN_LEAF(IN_LEAF)-IN_LEAF_CTXT(IN_LEAF_CTXT)"
+		>
+			<Aliases>
+				<Alias
+					Name="IN_LEAF"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="LEAF_AT_NM"
+							ChildAttribute="LEAF_AT_NM"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+		<RelToChildDO
+			RelToChildDO="IN_PAGES(IN_PAGES)-IN_LEAF(IN_LEAF)"
+		>
+			<Aliases>
+				<Alias
+					Name="IN_PAGES"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="APPL_NM"
+							ChildAttribute="APPL_NM"
+							/>
+				<AttributePair
+							ParentAttribute="DEST_PG"
+							ChildAttribute="PG_NM"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+	</RelsToChildDataObjects>
+
+</QueryObject>

@@ -1,0 +1,317 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Secured Field Compares</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="SecurityAdmin" method="post" vsform="true" name="pR_SC_FLD_CMPRs">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Secured Field Compares">Secured Field Compares</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="SecurityAdmin" vsds="" vsaction="84" title="Back to Previous Page" name="QueryBack" id="QueryBack" accesskey="Z">Back</a>
+<a href="SecurityAdmin" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+
+
+
+  <INPUT type="hidden" name="T1R_SC_FLD_ACCSvscurrency" vsds="T1R_SC_FLD_ACCS" vscurrency="true">
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+</ams_map>
+      </td>
+
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="SecurityAdmin" vsds="T1R_SC_FLD_ACCS" vsaction="first" name="T1R_SC_FLD_ACCSfirst" id="T1R_SC_FLD_ACCSfirst" title="First Record" accesskey="0">First</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_FLD_ACCS" vsaction="prev" name="T1R_SC_FLD_ACCSprev" id="T1R_SC_FLD_ACCSprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_FLD_ACCS" vsaction="next" name="T1R_SC_FLD_ACCSnext" id="T1R_SC_FLD_ACCSnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_FLD_ACCS" vsaction="last" name="T1R_SC_FLD_ACCSlast" id="T1R_SC_FLD_ACCSlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+-->
+<!-- END CUSTOMIZATION -->
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+<!-- BEGIN CUSTOMIZATION -->
+      <tr>
+        <td class="label"><label title="Field ID">Field ID :</label></td>
+        <td class="val">
+          <vstext name="disptxtT2FLD_ID" vsds="T2R_SC_FLD" vsdf="FLD_ID"
+         size="15"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label title="Description">Description :</label></td>
+        <td class="val">
+          <vstext name="disptxtT2FLD_DSCR" vsds="T2R_SC_FLD" vsdf="FLD_DSCR"
+         size="15"
+>
+        </td>
+      </tr>
+<!-- END CUSTOMIZATION -->
+
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label title="Security Role ID">Security Role ID :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1SEC_ROLE_ID" vsds="T1R_SC_FLD_ACCS" vsdf="SEC_ROLE_ID"
+            size="16"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label title="Comparison Type">Comparison Type :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1CMPR_TYP_CD" vsds="T1R_SC_FLD_ACCS" vsdf="CMPR_TYP_CD" vscodetable="CVL_CMPR_TYP_CD">
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+  <INPUT type="hidden" name="T2R_SC_FLDvscurrency" vsds="T2R_SC_FLD" vscurrency="true">
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+</ams_map>
+      </td>
+
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="SecurityAdmin" vsds="T2R_SC_FLD" vsaction="first" name="T2R_SC_FLDfirst" id="T2R_SC_FLDfirst" title="First Record" accesskey="0">First</a>
+
+<a href="SecurityAdmin" vsds="T2R_SC_FLD" vsaction="prev" name="T2R_SC_FLDprev" id="T2R_SC_FLDprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="SecurityAdmin" vsds="T2R_SC_FLD" vsaction="next" name="T2R_SC_FLDnext" id="T2R_SC_FLDnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="SecurityAdmin" vsds="T2R_SC_FLD" vsaction="last" name="T2R_SC_FLDlast" id="T2R_SC_FLDlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label"><label title="Field ID">Field ID :</label></td>
+        <td class="val">
+          <vstext name="disptxtT2FLD_ID" vsds="T2R_SC_FLD" vsdf="FLD_ID"
+         size="15"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label title="Description">Description :</label></td>
+        <td class="val">
+          <vstext name="disptxtT2FLD_DSCR" vsds="T2R_SC_FLD" vsdf="FLD_DSCR"
+         size="15"
+>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+-->
+<!-- END CUSTOMIZATION -->
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+<a name="btnT4pR_SC_FLD_ACCSs" href="SecurityAdmin" id="btnT4pR_SC_FLD_ACCSs" title="Navigation to Field Accesses" vsaction="pagetransition"
+           vsds="T2R_SC_FLD"
+ vsnavigation="T4pR_SC_FLD_ACCSs">Field Accesses</a>
+      </td>
+    </tr>
+  </table>
+
+  <input type="hidden" name="T3R_SC_FLD_CMPR_Currency" value="">
+  <input type="hidden" name="T3R_SC_FLD_CMPR_Old_Currency" value="">
+
+
+
+  <table name="tblT3R_SC_FLD_CMPR" id="tblT3R_SC_FLD_CMPR" class="advgrid" vsds="T3R_SC_FLD_CMPR">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><a href="SecurityAdmin" vsaction="sort" vsds="T3R_SC_FLD_CMPR"
+    vsdf="CMPR_1_TXT"
+ name="T3CMPR_1_TXTsort" id="T3CMPR_1_TXTsort" title="Sort By Compare 1">Compare 1</a></th>
+
+        <th
+><span id="T3CMPR_2_TXTsortGridLabel" name="T3CMPR_2_TXTsortGridLabel" title="Compare 2">Compare 2</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T3R_SC_FLD_CMPRvscurrency" id="T3R_SC_FLD_CMPRvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T3R_SC_FLD_CMPR" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td>
+          <input type="text" name="txtT3CMPR_1_TXT"
+            size="20"
+      maxlength="50"
+ value="CMPR_1_TXT" vsds="T3R_SC_FLD_CMPR" vsdf="CMPR_1_TXT"
+ ShowCodeInfo="" title="Compare 1"
+>
+        </td>
+
+        <td>
+          <input type="text" name="txtT3CMPR_2_TXT"
+            size="20"
+      maxlength="50"
+ value="CMPR_2_TXT" vsds="T3R_SC_FLD_CMPR" vsdf="CMPR_2_TXT"
+ ShowCodeInfo="" title="Compare 2"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+    <td><ams_map title="Update Actions" name="Update Actions">
+<!-- BEGIN CUSTOMIZATION -->
+<a href="SecurityAdmin" vsds="T3R_SC_FLD_CMPR" vsaction="saveall" name="T3R_SC_FLD_CMPRSaveAll" id="T3R_SC_FLD_CMPRSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="SecurityAdmin" vsds="T3R_SC_FLD_CMPR" vsaction="undoall" name="T3R_SC_FLD_CMPRUndoAll" id="T3R_SC_FLD_CMPRUndoAll" title="Undo All" accesskey="6">Undo</a>
+<!-- END CUSTOMIZATION -->
+<a href="SecurityAdmin" vsds="T3R_SC_FLD_CMPR" vsaction="delete" id="T3R_SC_FLD_CMPRdelete" name="T3R_SC_FLD_CMPRdelete" title="Delete Selected Row" accesskey="7">Delete</a>
+<a href="SecurityAdmin" vsds="T3R_SC_FLD_CMPR" vsaction="insert" id="T3R_SC_FLD_CMPRinsert" name="T3R_SC_FLD_CMPRinsert" title="Insert New Row" accesskey="I">Insert</a>
+    </ams_map></td>
+
+  <td><ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="SecurityAdmin" vsds="T3R_SC_FLD_CMPR" vsaction="11" name="T3R_SC_FLD_CMPRCopyLine" id="T3R_SC_FLD_CMPRCopyLine" title="Copy Selected Row" accesskey="C">Copy</a>
+<a href="SecurityAdmin" vsds="T3R_SC_FLD_CMPR" vsaction="12" name="T3R_SC_FLD_CMPRPasteLine" id="T3R_SC_FLD_CMPRPasteLine" title="Paste Copied Row" accesskey="8">Paste</a>
+  </ams_map></td>
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="SecurityAdmin" vsds="T3R_SC_FLD_CMPR" vsaction="firstpage" name="T3R_SC_FLD_CMPRfirstpage" id="T3R_SC_FLD_CMPRfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="SecurityAdmin" vsds="T3R_SC_FLD_CMPR" vsaction="prevpage" name="T3R_SC_FLD_CMPRprevpage" id="T3R_SC_FLD_CMPRprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="SecurityAdmin" vsds="T3R_SC_FLD_CMPR" vsaction="nextpage" id="T3R_SC_FLD_CMPRnextpage" name="T3R_SC_FLD_CMPRnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="SecurityAdmin" vsds="T3R_SC_FLD_CMPR" vsaction="lastpage" id="T3R_SC_FLD_CMPRlastpage" name="T3R_SC_FLD_CMPRlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T3R_SC_FLD_CMPR', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'CMPR_1_TXT' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Compare 1' ;
+  -->
+  </script>
+
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="DeleteChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="IN_JF_TRAN_FLDSs"
+		ParentRoleName="IN_JF_FRM_TRAN"
+		>
+		<AscendCaption><![CDATA[IN_JF_FRM_TRAN]]> </AscendCaption>
+		<DescendCaption><![CDATA[IN_JF_TRAN_FLDS(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="FRM_TRAN_ID"
+				ChildAttribute="FRM_TRAN_ID"
+			/>
+		</AttributePairs>
+	</Relationship>
+</Relationships>

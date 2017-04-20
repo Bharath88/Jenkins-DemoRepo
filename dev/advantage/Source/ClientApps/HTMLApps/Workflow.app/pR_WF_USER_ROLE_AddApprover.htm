@@ -1,0 +1,465 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Add Approvers To A Role</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Workflow" method="post" vsform="true" name="pR_WF_USER_ROLE_AddApprover">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Add Approvers To A Role">Add Approvers To A Role</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+<!-- BEGIN CUSTOMIZATION -->
+  <table><tr><td class="advscalarcol">
+<!-- END CUSTOMIZATION -->
+
+  <a name="T1R_WF_USER_ROLE_Top"></a>
+
+
+    <h2 class="advrecsrctitle summary">Current Approvers</h2>
+
+  <input type="hidden" name="T1R_WF_USER_ROLE_Currency" value="">
+  <input type="hidden" name="T1R_WF_USER_ROLE_Old_Currency" value="">
+  <table name="tblT1R_WF_USER_ROLE" id="tblT1R_WF_USER_ROLE" class="advgrid" vsds="T1R_WF_USER_ROLE">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_USER_ROLE"
+    vsdf="USID"
+ name="T1USIDsort" id="T1USIDsort" title="Sort By User ID">User ID</a></th>
+
+        <th
+><span id="T1ROLE_MGR_FLsortGridLabel" name="T1ROLE_MGR_FLsortGridLabel" title="Manager">Manager</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_WF_USER_ROLEvscurrency" id="T1R_WF_USER_ROLEvscurrency" title="Select Row" alt="Select Row" vsds="T1R_WF_USER_ROLE" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1USID" vsds="T1R_WF_USER_ROLE" vsdf="USID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1ROLE_MGR_FL" vsds="T1R_WF_USER_ROLE" vsdf="ROLE_MGR_FL"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<!-- BEGIN CUSTOMIZATION -->
+<td class="nowrap"><ams_map title="Grid Navigation" name="Grid Navigation">
+<!-- END CUSTOMIZATION -->
+<a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="firstpage" name="T1R_WF_USER_ROLEfirstpage" id="T1R_WF_USER_ROLEfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="prevpage" name="T1R_WF_USER_ROLEprevpage" id="T1R_WF_USER_ROLEprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="nextpage" id="T1R_WF_USER_ROLEnextpage" name="T1R_WF_USER_ROLEnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="lastpage" id="T1R_WF_USER_ROLElastpage" name="T1R_WF_USER_ROLElastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+      <td>
+        <a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="manager" id="T1R_WF_USER_ROLEmanager" name="T1R_WF_USER_ROLEmanager" title="Toggle Manager Flag for Selected Approver">Manager</a>
+      </td>
+
+<!--
+
+    </tr>
+  </table>
+
+<hr class="advsectsep"></hr>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="saveall" name="T1R_WF_USER_ROLESaveAll" id="T1R_WF_USER_ROLESaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="undoall" name="T1R_WF_USER_ROLEUndoAll" id="T1R_WF_USER_ROLEUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="delete" id="IndexT1R_WF_USER_ROLEdelete" name="T1R_WF_USER_ROLEdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="insert" id="T1R_WF_USER_ROLEinsert" name="T1R_WF_USER_ROLEinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+      </td>
+-->
+<!-- END CUSTOMIZATION -->
+
+<td><vstext vsds=" " name="T1R_WF_USER_ROLESearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+-->
+<!-- END CUSTOMIZATION -->
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_WF_USER_ROLE', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'USID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'User ID' ;
+  -->
+  </script>
+<!-- BEGIN CUSTOMIZATION -->
+  </td><td>
+
+
+    <table class="advaction recsrc">
+      <tr>
+        <td>
+          <a href="Workflow" vsds="T2R_SC_USER_DIR_INFO" vsaction="14" name="T2R_SC_USER_DIR_INFOselect" id="T2R_SC_USER_DIR_INFOselect" title="Add Selected Available Approver">
+            <img src="../AMSImages/ADVArrowLeft.gif" alt="Add Selected Available Approver" title="Add Selected Available Approver">
+          </a>
+        </td>
+      </tr><tr>
+        <td>
+          <a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="delete" name="T1R_WF_USER_ROLEdelete" id="T1R_WF_USER_ROLEdelete" title="Remove Selected Current Approver">
+            <img src="../AMSImages/ADVArrowRight.gif" alt="Remove Selected Current Approver" title="Remove Selected Current Approver">
+          </a>
+        </td>
+      </tr>
+    </table>
+
+
+
+  </td><td class="advscalarcol">
+<!-- END CUSTOMIZATION -->
+  <a name="T2R_SC_USER_DIR_INFO_Top"></a>
+
+
+    <h2 class="advrecsrctitle summary">Available Approvers</h2>
+
+  <input type="hidden" name="T2R_SC_USER_DIR_INFO_Currency" value="">
+  <input type="hidden" name="T2R_SC_USER_DIR_INFO_Old_Currency" value="">
+  <table name="tblT2R_SC_USER_DIR_INFO" id="tblT2R_SC_USER_DIR_INFO" class="advgrid" vsds="T2R_SC_USER_DIR_INFO">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T2USER_IDsortGridLabel" name="T2USER_IDsortGridLabel" title="User ID">User ID</span></th>
+
+        <th
+><span id="T2GOVT_BRN_CDsortGridLabel" name="T2GOVT_BRN_CDsortGridLabel" title="Government Branch">Government Branch</span></th>
+
+        <th
+><span id="T2CAB_CDsortGridLabel" name="T2CAB_CDsortGridLabel" title="Cabinet">Cabinet</span></th>
+
+        <th
+><span id="T2DEPT_CDsortGridLabel" name="T2DEPT_CDsortGridLabel" title="Department">Department</span></th>
+
+        <th
+><span id="T2DIV_CDsortGridLabel" name="T2DIV_CDsortGridLabel" title="Division">Division</span></th>
+
+        <th
+><span id="T2GP_CDsortGridLabel" name="T2GP_CDsortGridLabel" title="Group">Group</span></th>
+
+        <th
+><span id="T2SECT_CDsortGridLabel" name="T2SECT_CDsortGridLabel" title="Section">Section</span></th>
+
+        <th
+><span id="T2DSTC_CDsortGridLabel" name="T2DSTC_CDsortGridLabel" title="District">District</span></th>
+
+        <th
+><span id="T2BUR_CDsortGridLabel" name="T2BUR_CDsortGridLabel" title="Bureau">Bureau</span></th>
+
+        <th
+><span id="T2UNIT_CDsortGridLabel" name="T2UNIT_CDsortGridLabel" title="Unit">Unit</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T2R_SC_USER_DIR_INFOvscurrency" id="T2R_SC_USER_DIR_INFOvscurrency" title="Select Row" alt="Select Row" vsds="T2R_SC_USER_DIR_INFO" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT2USER_ID" vsds="T2R_SC_USER_DIR_INFO" vsdf="USER_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT2GOVT_BRN_CD" vsds="T2R_SC_USER_DIR_INFO" vsdf="GOVT_BRN_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT2CAB_CD" vsds="T2R_SC_USER_DIR_INFO" vsdf="CAB_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT2DEPT_CD" vsds="T2R_SC_USER_DIR_INFO" vsdf="DEPT_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT2DIV_CD" vsds="T2R_SC_USER_DIR_INFO" vsdf="DIV_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT2GP_CD" vsds="T2R_SC_USER_DIR_INFO" vsdf="GP_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT2SECT_CD" vsds="T2R_SC_USER_DIR_INFO" vsdf="SECT_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT2DSTC_CD" vsds="T2R_SC_USER_DIR_INFO" vsdf="DSTC_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT2BUR_CD" vsds="T2R_SC_USER_DIR_INFO" vsdf="BUR_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT2UNIT_CD" vsds="T2R_SC_USER_DIR_INFO" vsdf="UNIT_CD"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Workflow" vsds="T2R_SC_USER_DIR_INFO" vsaction="firstpage" name="T2R_SC_USER_DIR_INFOfirstpage" id="T2R_SC_USER_DIR_INFOfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Workflow" vsds="T2R_SC_USER_DIR_INFO" vsaction="prevpage" name="T2R_SC_USER_DIR_INFOprevpage" id="T2R_SC_USER_DIR_INFOprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Workflow" vsds="T2R_SC_USER_DIR_INFO" vsaction="nextpage" id="T2R_SC_USER_DIR_INFOnextpage" name="T2R_SC_USER_DIR_INFOnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Workflow" vsds="T2R_SC_USER_DIR_INFO" vsaction="lastpage" id="T2R_SC_USER_DIR_INFOlastpage" name="T2R_SC_USER_DIR_INFOlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+
+    </tr>
+  </table>
+
+
+<hr class="advsectsep"></hr>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Workflow" vsds="T2R_SC_USER_DIR_INFO" vsaction="delete" id="IndexT2R_SC_USER_DIR_INFOdelete" name="T2R_SC_USER_DIR_INFOdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="Workflow" vsds="T2R_SC_USER_DIR_INFO" vsaction="insert" id="T2R_SC_USER_DIR_INFOinsert" name="T2R_SC_USER_DIR_INFOinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+      </td>
+-->
+<!-- END CUSTOMIZATION -->
+
+<td><vstext vsds=" " name="T2R_SC_USER_DIR_INFOSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+-->
+<!-- END CUSTOMIZATION -->
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T2R_SC_USER_DIR_INFO', new Array(), new Array() ) ;
+
+  -->
+  </script>
+<!-- BEGIN CUSTOMIZATION -->
+  </td></tr></table>
+  
+
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+	<table class="advscalar"><tr>        
+      
+      <td class="label"><label for="REVOKE_REASON" title="Revoke Reason">Revoke Reason :</label></td>
+      <td class="val memo">
+          <textarea cols="35" rows="4" name="REVOKE_REASON" id="REVOKE_REASON" vsds="" vsdf="REVOKE_REASON" 
+          title="Revoke Reason"></textarea>
+      </td>
+    </tr></table>
+    </td></tr></table>
+  </fieldset>	  
+<!-- END CUSTOMIZATION -->
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<a name="btnT3pR_WF_ROLE" href="Workflow" id="btnT3pR_WF_ROLE" title="Navigation to Approval Roles" vsaction="pagetransition"
+           vsds=""
+ vsnavigation="T3pR_WF_ROLE">Approval Roles</a>
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Workflow" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+
+<!-- BEGIN CUSTOMIZATION -->
+<div style="visibility:hidden;display:none;position:absolute;top:-1000em;left:-1000em;">
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label"><div class="hidden label"><label for="txtT1USID_UP" title="User ID">User ID :</label></div></td>
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1USID_UP" id="txtT1USID_UP"
+               size="20"
+ vsds="T1R_WF_USER_ROLE" vsdf="USID_UP"
+         ams_max_len="16"
+ ShowCodeInfo="" title="User ID" value="USID_UP"></div>
+        </td>
+      </tr>
+
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;" >
+          <div class="hidden val">
+            <select name="txtT1ROLE_MGR_FL" vsds="T1R_WF_USER_ROLE" vsdf="ROLE_MGR_FL" size="1" vscodetable=" "
+              ShowCodeInfo="" ams_readonly >
+              <option value="JADEStored">JADEDisplayed</option>
+            </select>
+          </div>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label"><div class="hidden label"><label for="txtT2USER_ID_UP" title="User ID">User ID :</label></div></td>
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT2USER_ID_UP" id="txtT2USER_ID_UP"
+               size="20"
+ vsds="T2R_SC_USER_DIR_INFO" vsdf="USER_ID_UP"
+         ams_max_len="16"
+ ShowCodeInfo="" title="User ID" value="USER_ID_UP"></div>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+</div>
+<!-- END CUSTOMIZATION -->
+
+  </form>
+</body>
+</html>
+
+
+

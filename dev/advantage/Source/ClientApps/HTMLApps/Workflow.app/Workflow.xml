@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE Application SYSTEM "Application.dtd">
+<Application
+	SurrId="0401107902.Ighosh.0001"
+	TargetLanguage="HTML"
+	DefaultLogonUserId="sa"
+	ExecutionEnvironment="Browser"
+	AppletHeight="575"
+	AppletWidth="725"
+	ClassId="C721CCC2-C3C9-445C-B408-FECD6E70A835"
+	SuppressDefaultLoginScreen="False"
+	InitialFramesetPage="FramesetPage"
+	StartupPageFrameName="Startup"
+	InitialFrameNameForStartupTrans="Display"
+	AppRepositoryVersion="05.06.01"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.00"
+	>
+	<ServerLocation><![CDATA[<localVLSServer>]]></ServerLocation>
+	<Description><![CDATA[Workflow Application]]></Description>
+	<!-- APPLICATION FORMS -->
+	<Forms>
+		<Form>StartupPage</Form>
+		<Form>pMgrWorklist</Form>
+		<Form>pNoData</Form>
+		<Form>pR_DOC_CD</Form>
+		<Form>pR_WF_ALT_APRV_ID</Form>
+		<Form>pR_WF_APRV</Form>
+		<Form>pR_WF_APRV_COND</Form>
+		<Form>pR_WF_APRV_FLD</Form>
+		<Form>pR_WF_APRV_Grid</Form>
+		<Form>pR_WF_APRVHIER</Form>
+		<Form>pR_WF_CMNT</Form>
+		<Form>pR_WF_EMAIL_INFO</Form>
+		<Form>pR_WF_ROLE</Form>
+		<Form>pR_WF_SC_USER_DIR_INFO</Form>
+		<Form>pR_WF_USER_ROLE_AddApprover</Form>
+		<Form>pR_WF_USER_ROLE_AddRole</Form>
+		<Form>pR_WF_XML_DATA</Form>
+		<Form>pTWIP</Form>
+		<Form>pTWIP_Log</Form>
+		<Form>pWF_ADM_Grid</Form>
+		<Form>pWF_ALQ</Form>
+		<Form>pWF_APLQ</Form>
+		<Form>pWF_DISP_MSG</Form>
+		<Form>pWF_EMAIL_ID_QRY_Grid</Form>
+		<Form>pWF_INBOX</Form>
+		<Form>pWF_NEW_MSG</Form>
+		<Form>pWF_RECALL_QRY_Grid</Form>
+		<Form>pWF_USER_QRY_Grid</Form>
+		<Form>pWorklist</Form>
+		<Form>pCopyWorkflowRoles</Form>
+		<Form>pR_WF_NOTIF_WO_EVAR</Form>
+		<Form>pR_WF_NOTIF_TEMPL</Form>
+		<Form>pV_WF_ADM_Grid</Form>
+		<Form>pR_WF_USER_ROLE_DisplayOrder</Form>
+		<Form>pChangeWorklistPriority</Form>
+		<Form>pR_WF_DET_CNFG</Form>
+		<Form>pWF_APRV_WRK_LST_DET</Form>
+	</Forms>
+	<SourceFiles>
+	</SourceFiles>
+</Application>

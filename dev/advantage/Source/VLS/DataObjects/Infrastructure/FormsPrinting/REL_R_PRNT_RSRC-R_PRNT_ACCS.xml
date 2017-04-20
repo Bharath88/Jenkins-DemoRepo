@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="R_PRNT_RSRC"
+		ChildRoleName="R_PRNT_ACCS"
+		IsEnforce="True"
+		OnParentDelete="DeleteChildren"
+		OnParentUpdate="UpdateChildren"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="PRNT_RSRC_ID"
+				ChildAttribute="PRNT_RSRC_ID"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_PRNT_RSRC]]></AscendCaption>
+		<DescendCaption><![CDATA[R_PRNT_ACCS(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[Print resource not registered]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Password Reset</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="PasswordReset" method="post" vsform="true" name="pPSWD_RESET_QRY">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Password Reset">Password Reset</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+  <INPUT type="hidden" name="T1PSWD_RESET_QRYvscurrency" vsds="T1PSWD_RESET_QRY" vscurrency="true">
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="PasswordReset" vsds="T1PSWD_RESET_QRY" vsaction="saveall" name="T1PSWD_RESET_QRYSaveAll" id="T1PSWD_RESET_QRYSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="PasswordReset" vsds="T1PSWD_RESET_QRY" vsaction="undoall" name="T1PSWD_RESET_QRYUndoAll" id="T1PSWD_RESET_QRYUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="PasswordReset" vsds="T1PSWD_RESET_QRY" vsaction="delete" id="IndexT1PSWD_RESET_QRYdelete" name="T1PSWD_RESET_QRYdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="PasswordReset" vsds="T1PSWD_RESET_QRY" vsaction="insert" id="T1PSWD_RESET_QRYinsert" name="T1PSWD_RESET_QRYinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="PasswordReset" vsds="T1PSWD_RESET_QRY" vsaction="11" name="T1PSWD_RESET_QRYCopyRecord" id="T1PSWD_RESET_QRYCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+
+<a href="PasswordReset" vsds="T1PSWD_RESET_QRY" vsaction="12" name="T1PSWD_RESET_QRYPasteLine" id="T1PSWD_RESET_QRYPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+
+<td><vstext vsds=" " name="T1PSWD_RESET_QRYSearchColList" vspreservetag="true"></td>
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="PasswordReset" vsds="T1PSWD_RESET_QRY" vsaction="first" name="T1PSWD_RESET_QRYfirst" id="T1PSWD_RESET_QRYfirst" title="First Record" accesskey="0">First</a>
+
+<a href="PasswordReset" vsds="T1PSWD_RESET_QRY" vsaction="prev" name="T1PSWD_RESET_QRYprev" id="T1PSWD_RESET_QRYprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="PasswordReset" vsds="T1PSWD_RESET_QRY" vsaction="next" name="T1PSWD_RESET_QRYnext" id="T1PSWD_RESET_QRYnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="PasswordReset" vsds="T1PSWD_RESET_QRY" vsaction="last" name="T1PSWD_RESET_QRYlast" id="T1PSWD_RESET_QRYlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+-->
+<!-- END CUSTOMIZATION -->
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label"><label title="Password Hint">Password Hint :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1PSWD_QUERY" vsds="T1PSWD_RESET_QRY" vsdf="PSWD_QUERY"
+         size="15"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1PSWD_QUERY_ANSW" title="Password Hint Reply">Password Hint Reply :</label></td>
+        <td class="val">
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+          <input type="password" name="txtT1PSWD_QUERY_ANSW" id="txtT1PSWD_QUERY_ANSW"
+               size="20"
+ vsds="T1PSWD_RESET_QRY" vsdf="PSWD_QUERY_ANSW"
+         ams_max_len="32"
+ ShowCodeInfo="" value="PSWD_QUERY_ANSW" title="Password Hint Reply">
+-->
+          <input type="password" name="passwordReply" id="passwordReply"
+               size="20" vsds="" vsdf="" ams_max_len="32"
+               ShowCodeInfo="" value="" title="Password Hint Reply">
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+<!-- BEGIN CUSTOMIZATION -->
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <input type="submit" value="Reset Password" name="resetPassword" id="resetPassword" vsds=" " vsaction="" title="Reset Password" class="advbutton">
+        </td>
+      </tr>
+<!-- END CUSTOMIZATION -->
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="PasswordReset" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

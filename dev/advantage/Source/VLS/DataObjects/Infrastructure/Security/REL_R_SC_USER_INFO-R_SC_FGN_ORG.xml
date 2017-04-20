@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="UserInfo"
+		ChildRoleName="ForeignOrgHomeDept"
+		IsEnforce="False"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="HOME_DEPT_CD"
+				ChildAttribute="HOME_DEPT_CD"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[User Information]]></AscendCaption>
+		<DescendCaption><![CDATA[Foreign Organizations]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

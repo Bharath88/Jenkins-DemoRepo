@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Welcome to CGI ADVANTAGE: LOGIN</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSPortalStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSStyle.css">
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/ALTSS/ALTSSUtil.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript">
+  <!--
+  function PutAtTop()
+  {
+     if ( self != top )
+     {
+        top.location.href = self.location.href ;
+     } /* end if ( self != top ) */
+  } /* end PutAtTop() */
+
+  function LaunchApp()
+  {
+     var lsCurrWindowName = window.name;
+
+     if (lsCurrWindowName != null && lsCurrWindowName.indexOf('ADV') == -1)
+     {
+        var liAvailScreenHeight = window.screen.availHeight;
+        var liAvailScreenWidth = window.screen.availWidth;
+        var loNewWin;
+
+        var lsHref = UTILS_getBaseHref( document ) + '../AMSImages/Empty.htm';
+
+        var loDate = new Date();
+        var lsWindowName = 'ADV' + loDate.getTime();
+
+        if (liAvailScreenWidth == 1280 || liAvailScreenWidth == 1024)
+        {
+           liAvailScreenHeight = liAvailScreenHeight - 50;
+           liAvailScreenWidth = liAvailScreenWidth - 10;
+        }
+        else if (liAvailScreenWidth == 800 || liAvailScreenWidth == 640)
+        {
+           liAvailScreenHeight = liAvailScreenHeight - 55;
+           liAvailScreenWidth = liAvailScreenWidth - 15;
+        }
+
+        loNewWin = DHTMLLIB_OpenNewWin(lsHref, lsWindowName,
+                          'no' , 'no' , 'no', 'yes' , 'no',
+                          'yes', 'yes', liAvailScreenWidth,
+                          liAvailScreenHeight, 0, 0, 'yes' );
+
+        document.forms[0].target = lsWindowName;
+        document.forms[0].submit;
+
+        window.location.replace(lsHref);
+     } /* end if (lsCurrWindowName != null && ... */
+     return false;
+  }
+  //-->
+  </script>
+
+
+</head>
+<body class="adv login" onload="PutAtTop();UTILS_SetupOnClickForPage();UTILS_SetFocusOnFirstField(document);">
+  <form METHOD="POST" action="jade" vsloginform onsubmit="LaunchApp()">
+
+    <input type="hidden" name="vsparams" value>
+
+      <table class="layout">
+        <tr class="logo">
+          <td colspan="2" class="logo">
+            <img name="Logo" id="Logo" border="0" src="Images/PortalADVLogo.gif" alt="CGI ADVANTAGE">
+          </td>
+        </tr>
+        <tr class="links"><td colspan="2" class="links"></td></tr>
+        <tr class="body">
+          <td class="secnav"></td>
+          <td class="display">
+            <table class="advscalar">
+              <tr>
+                <td colspan="2" class="loginmsg">
+                  <login_error>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="label"><label for="login" title="User Name">User Name :</label></td>
+                <td class="val">
+                  <input type="text" value="" name="login" id="login" size="20" title="User Name" autocomplete="off">
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="label"><label for="password" title="Password">Password :</label></td>
+                <td class="val">
+                  <input type="password" name="password" id="password" size="20" title="Password" autocomplete="off">
+                </td>
+                <td></td>
+              </tr>
+              <tr style="height:0em;">
+                <td class="label" style="height:0em;"></td>
+                <td class="val" style="height:0em;" >
+                  <div class="hidden val">
+                    <input type="text" value="BLS_?" name="serverName" id="serverName" size="20" vlsname>
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="label"></td>
+                <td class="val">
+                  <input type="submit" value="Login" name="vslogin" id="vslogin" class="advbutton" title="Login: Will open in a new window">
+                  <input type="reset" value="Reset" name="reset" id="reset" class="advbutton" title="Reset">
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+                <td class="legal">
+                  <br>Copyright &copy; 2001, 2013<br>
+                  CGI Technologies and Solutions Inc.<br>
+                  All Rights Reserved.<br><br>
+                  Use of this software is subject to<br>
+                  CGI Technologies and Solutions Inc. license agreement.<br><br>
+                  CGI Advantage&reg; is a<br>
+                  registered trademark of<br>
+                  CGI Technologies and Solutions Inc.
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="2" class="fav">
+                  <script language="JavaScript">
+                  <!--
+                    if ( mboolIE4Up )
+                    {
+                       document.write( '<br><a class="fav" href="" ' ) ;
+                       document.write( 'onclick="window.external.addFavorite(location.href, document.title);return false;">' ) ;
+                       document.write( 'Add CGI Advantage to your Favorites</a>' ) ;
+                    }
+                    else if ( mboolNS4Up )
+                    {
+                       document.write( '<br><a class="fav">' ) ;
+                       document.write( 'Press CTRL+D to bookmark CGI Advantage</a>' ) ;
+                    }
+                  -->
+                  </script>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+  </form>
+</body>
+</html>

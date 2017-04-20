@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0351523090.ssurabhi.0000"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="False"
+	ChildMostDataObject="R_PRNT_SRV_PARM"
+	DistinctRowsOnly="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[SELECT R_PRNT_JOB.APPL_RSRC_ID AS APPL_RSRC_ID, R_PRNT_JOB.PRNT_JOB_CD AS PRNT_JOB_CD, R_PRNT_SRV.PRNT_SRV_NM AS PRNT_SRV_NM, R_PRNT_SRV_PARM.PRNT_SRV_ID AS PRNT_SRV_ID, R_PRNT_SRV_PARM.PARM_NM AS PARM_NM, R_PRNT_SRV_PARM.PARM_VL AS PARM_VL FROM <dbschema>.R_PRNT_SRV R_PRNT_SRV, <dbschema>.R_PRNT_SRV_PARM R_PRNT_SRV_PARM, <dbschema>.R_PRNT_JOB R_PRNT_JOB  WHERE R_PRNT_SRV.PRNT_SRV_ID = R_PRNT_JOB.PRNT_SRV_ID  AND R_PRNT_SRV.PRNT_SRV_ID = R_PRNT_SRV_PARM.PRNT_SRV_ID ]]></RuntimeSql>
+	<Description><![CDATA[]]></Description>
+	<Comments><![CDATA[]]></Comments>
+	<Where><![CDATA[]]></Where>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="R_PRNT_SRV"
+			Alias="R_PRNT_SRV"
+			>
+			<Description><![CDATA[ ]]></Description>
+		</DataObject>
+
+		<DataObject
+			DataObjectName="R_PRNT_SRV_PARM"
+			Alias="R_PRNT_SRV_PARM"
+			>
+			<Description><![CDATA[ ]]></Description>
+		</DataObject>
+
+		<DataObject
+			DataObjectName="R_PRNT_JOB"
+			Alias="R_PRNT_JOB"
+			>
+			<Description><![CDATA[ ]]></Description>
+		</DataObject>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="APPL_RSRC_ID"
+			Alias="APPL_RSRC_ID"
+			AggregationType="None"
+			SourceDataObject="R_PRNT_JOB"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="PRNT_JOB_CD"
+			Alias="PRNT_JOB_CD"
+			AggregationType="None"
+			SourceDataObject="R_PRNT_JOB"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="PRNT_SRV_NM"
+			Alias="PRNT_SRV_NM"
+			AggregationType="None"
+			SourceDataObject="R_PRNT_SRV"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="PRNT_SRV_ID"
+			Alias="PRNT_SRV_ID"
+			AggregationType="None"
+			SourceDataObject="R_PRNT_SRV_PARM"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="PARM_NM"
+			Alias="PARM_NM"
+			AggregationType="None"
+			SourceDataObject="R_PRNT_SRV_PARM"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="PARM_VL"
+			Alias="PARM_VL"
+			AggregationType="None"
+			SourceDataObject="R_PRNT_SRV_PARM"
+			Persistent="True"
+		/>
+
+	</Attributes>
+	<Joins
+		LeftDataObject="R_PRNT_SRV"
+		RightDataObject="R_PRNT_JOB"
+		JoinType="Equal"
+		>
+		<ColumnSet
+			LeftAttribute="R_PRNT_SRV.PRNT_SRV_ID"
+			RightAttribute="R_PRNT_JOB.PRNT_SRV_ID"
+		/>
+	</Joins>
+
+	<Joins
+		LeftDataObject="R_PRNT_SRV"
+		RightDataObject="R_PRNT_SRV_PARM"
+		JoinType="Equal"
+		>
+		<ColumnSet
+			LeftAttribute="R_PRNT_SRV.PRNT_SRV_ID"
+			RightAttribute="R_PRNT_SRV_PARM.PRNT_SRV_ID"
+		/>
+	</Joins>
+
+	<RelsToParentDataObjects>
+		<RelToParentDO
+			RelToParentDO="R_PRNT_SRV1(R_PRNT_SRV)-R_PRNT_SRV_PARMs(R_PRNT_SRV_PARM)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_PRNT_SRV_PARM"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="PRNT_SRV_ID"
+							ChildAttribute="PRNT_SRV_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+	</RelsToParentDataObjects>
+
+	<RelsToChildDataObjects>
+		<RelToChildDO
+			RelToChildDO="R_PRNT_JOB(R_PRNT_JOB)-R_ASEM_CNFG(R_ASEM_CNFG)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_PRNT_JOB"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="APPL_RSRC_ID"
+							ChildAttribute="APPL_RSRC_ID"
+							/>
+				<AttributePair
+							ParentAttribute="PRNT_JOB_CD"
+							ChildAttribute="PRNT_JOB_CD"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+		<RelToChildDO
+			RelToChildDO="R_PRNT_JOB(R_PRNT_JOB)-R_PRNT_ACCS(R_PRNT_ACCS)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_PRNT_JOB"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="APPL_RSRC_ID"
+							ChildAttribute="APPL_RSRC_ID"
+							/>
+				<AttributePair
+							ParentAttribute="PRNT_JOB_CD"
+							ChildAttribute="PRNT_JOB_CD"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+		<RelToChildDO
+			RelToChildDO="R_PRNT_JOB1(R_PRNT_JOB)-R_PRNT_JOB_PARMs(R_PRNT_JOB_PARM)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_PRNT_JOB"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="APPL_RSRC_ID"
+							ChildAttribute="APPL_RSRC_ID"
+							/>
+				<AttributePair
+							ParentAttribute="PRNT_JOB_CD"
+							ChildAttribute="PRNT_JOB_CD"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+	</RelsToChildDataObjects>
+
+</QueryObject>

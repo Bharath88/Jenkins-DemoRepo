@@ -1,0 +1,745 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Access Control</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+<!-- BEGIN CUSTOMIZATION -->
+  <script type="text/javascript" language="JavaScript" src="../SecurityAdmin/JS/AMSSplitSecField.js"></script>
+<!-- END CUSTOMIZATION -->
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<!-- BEGIN CUSTOMIZATION -->
+<body class="adv reftable" onload="AMSSPLITSECFIELD_DoSplitSecFields();">
+<!-- END CUSTOMIZATION -->
+  <vserror>
+  <form action="SecurityAdmin" method="post" vsform="true" name="pR_SC_RSRC_ACCS">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+<!-- BEGIN CUSTOMIZATION -->
+    <input type="hidden" name="txtT1APRV_LVL_CD" value="0">
+    <input type="hidden" name="txtT1COMB_ACTN1_CD" value="0">
+    <input type="hidden" name="txtT1COMB_ACTN2_CD" value="0">
+<!-- END CUSTOMIZATION -->
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Access Control">Access Control</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="SecurityAdmin" vsds="" vsaction="84" title="Back to Previous Page" name="QueryBack" id="QueryBack" accesskey="Z">Back</a>
+<a href="SecurityAdmin" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+
+
+
+  <a name="T1R_SC_RSRC_ACCS_Top"></a>
+
+
+
+  <input type="hidden" name="T1R_SC_RSRC_ACCS_Currency" value="">
+  <input type="hidden" name="T1R_SC_RSRC_ACCS_Old_Currency" value="">
+  <table name="tblT1R_SC_RSRC_ACCS" id="tblT1R_SC_RSRC_ACCS" class="advgrid" vsds="T1R_SC_RSRC_ACCS">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><a href="SecurityAdmin" vsaction="sort" vsds="T1R_SC_RSRC_ACCS"
+    vsdf="RSRC_GP_ID"
+ name="T1RSRC_GP_IDsort" id="T1RSRC_GP_IDsort" title="Sort By Resource Group ID">Resource Group ID</a></th>
+
+        <th
+><a href="SecurityAdmin" vsaction="sort" vsds="T1R_SC_RSRC_ACCS"
+    vsdf="SEC_ROLE_ID"
+ name="T1SEC_ROLE_IDsort" id="T1SEC_ROLE_IDsort" title="Sort By Security Role ID">Security Role ID</a></th>
+
+        <th
+><span id="T1ORG_SEC_INDsortGridLabel" name="T1ORG_SEC_INDsortGridLabel" title="Organizational Security Indicator">Organizational Security Indicator</span></th>
+
+        <th
+><span id="T1FLD_SEC_INDsortGridLabel" name="T1FLD_SEC_INDsortGridLabel" title="Data Field Security Indicator">Data Field Security Indicator</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_SC_RSRC_ACCSvscurrency" id="T1R_SC_RSRC_ACCSvscurrency" title="Select Row" alt="Select Row" vsds="T1R_SC_RSRC_ACCS" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1RSRC_GP_ID" vsds="T1R_SC_RSRC_ACCS" vsdf="RSRC_GP_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1SEC_ROLE_ID" vsds="T1R_SC_RSRC_ACCS" vsdf="SEC_ROLE_ID"
+>
+        </td>
+
+        <td
+>
+          <vstext vsds="T1R_SC_RSRC_ACCS" vsdf="ORG_SEC_IND" vscodetable="CVL_ORG_SEC_IND">
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1FLD_SEC_IND" vsds="T1R_SC_RSRC_ACCS" vsdf="FLD_SEC_IND"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="SecurityAdmin" vsds="T1R_SC_RSRC_ACCS" vsaction="firstpage" name="T1R_SC_RSRC_ACCSfirstpage" id="T1R_SC_RSRC_ACCSfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_RSRC_ACCS" vsaction="prevpage" name="T1R_SC_RSRC_ACCSprevpage" id="T1R_SC_RSRC_ACCSprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_RSRC_ACCS" vsaction="nextpage" id="T1R_SC_RSRC_ACCSnextpage" name="T1R_SC_RSRC_ACCSnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_RSRC_ACCS" vsaction="lastpage" id="T1R_SC_RSRC_ACCSlastpage" name="T1R_SC_RSRC_ACCSlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+
+<hr class="advsectsep"></hr>
+
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="SecurityAdmin" vsds="T1R_SC_RSRC_ACCS" vsaction="saveall" name="T1R_SC_RSRC_ACCSSaveAll" id="T1R_SC_RSRC_ACCSSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="SecurityAdmin" vsds="T1R_SC_RSRC_ACCS" vsaction="undoall" name="T1R_SC_RSRC_ACCSUndoAll" id="T1R_SC_RSRC_ACCSUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="SecurityAdmin" vsds="T1R_SC_RSRC_ACCS" vsaction="delete" id="IndexT1R_SC_RSRC_ACCSdelete" name="T1R_SC_RSRC_ACCSdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="SecurityAdmin" vsds="T1R_SC_RSRC_ACCS" vsaction="insert" id="T1R_SC_RSRC_ACCSinsert" name="T1R_SC_RSRC_ACCSinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="SecurityAdmin" vsds="T1R_SC_RSRC_ACCS" vsaction="11" name="T1R_SC_RSRC_ACCSCopyRecord" id="T1R_SC_RSRC_ACCSCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_RSRC_ACCS" vsaction="12" name="T1R_SC_RSRC_ACCSPasteLine" id="T1R_SC_RSRC_ACCSPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+
+<td><vstext vsds=" " name="T1R_SC_RSRC_ACCSSearchColList" vspreservetag="true"></td>
+
+      <td><ams_map title="Section Controls" name="Section Controls">
+
+  <a href="javascript:
+        AMSTAB_ExpandSection('T1R_SC_RSRC_ACCS_Section1','T1R_SC_RSRC_ACCS_Section1_Button');
+          AMSTAB_ExpandSection('T1R_SC_RSRC_ACCS_Section2','T1R_SC_RSRC_ACCS_Section2_Button');
+            AMSTAB_ExpandSection('T1R_SC_RSRC_ACCS_Section3','T1R_SC_RSRC_ACCS_Section3_Button');
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+
+  <a href="javascript:
+        AMSTAB_CollapseSection('T1R_SC_RSRC_ACCS_Section1','T1R_SC_RSRC_ACCS_Section1_Button');
+          AMSTAB_CollapseSection('T1R_SC_RSRC_ACCS_Section2','T1R_SC_RSRC_ACCS_Section2_Button');
+            AMSTAB_CollapseSection('T1R_SC_RSRC_ACCS_Section3','T1R_SC_RSRC_ACCS_Section3_Button');
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <div class="advpresection">
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1RSRC_GP_ID" title="Resource Group ID (Required)">Resource Group ID :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1RSRC_GP_ID" id="txtT1RSRC_GP_ID"
+      ams_max_len="8"
+ value="RSRC_GP_ID"
+            size="15"
+ vsds="T1R_SC_RSRC_ACCS" vsdf="RSRC_GP_ID" ShowCodeInfo="" title="Resource Group ID (Required)">
+          <input type="image" vspick="T2R_SC_RSRC_GP" vspicktext="txtT1RSRC_GP_ID" vsds="T1R_SC_RSRC_ACCS" vsaction="pick" name="pckT1RSRC_GP_ID" id="pckT1RSRC_GP_ID" title="Select Resource Group ID" alt="Select Resource Group ID" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1SEC_ROLE_ID" title="Security Role ID (Required)">Security Role ID :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1SEC_ROLE_ID" id="txtT1SEC_ROLE_ID"
+      ams_max_len="16"
+ value="SEC_ROLE_ID"
+            size="20"
+ vsds="T1R_SC_RSRC_ACCS" vsdf="SEC_ROLE_ID" ShowCodeInfo="" title="Security Role ID (Required)">
+          <input type="image" vspick="T3R_SC_SEC_ROLE" vspicktext="txtT1SEC_ROLE_ID" vsds="T1R_SC_RSRC_ACCS" vsaction="pick" name="pckT1SEC_ROLE_ID" id="pckT1SEC_ROLE_ID" title="Select Security Role ID" alt="Select Security Role ID" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1ORG_SEC_IND" title="Organizational Security Indicator (Required)">Organizational Security Indicator :</label></td>
+        <td class="val required">
+          <select name="txtT1ORG_SEC_IND" id="txtT1ORG_SEC_IND" vsds="T1R_SC_RSRC_ACCS" vsdf="ORG_SEC_IND" size="1" vscodetable="CVL_ORG_SEC_IND" ShowCodeInfo="" ams_show_es="NO" title="Organizational Security Indicator (Required)">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1FLD_SEC_IND" title="Data Field Security Indicator">Data Field Security Indicator :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1FLD_SEC_IND" id="txtT1FLD_SEC_IND" value="FLD_SEC_IND" vsds="T1R_SC_RSRC_ACCS" vsdf="FLD_SEC_IND" title="Data Field Security Indicator">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1UI_FLD_SEC_IND" title="UI Field Security Indicator">UI Field Security Indicator :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1UI_FLD_SEC_IND" id="txtT1UI_FLD_SEC_IND" value="UI_FLD_SEC_IND" vsds="T1R_SC_RSRC_ACCS" vsdf="UI_FLD_SEC_IND" title="UI Field Security Indicator">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1USE_ROLE_OV_FL" title="Use Role's Override Level">Use Role's Override Level :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1USE_ROLE_OV_FL" id="txtT1USE_ROLE_OV_FL" value="USE_ROLE_OV_FL" vsds="T1R_SC_RSRC_ACCS" vsdf="USE_ROLE_OV_FL" title="Use Role's Override Level">
+        </td>
+      </tr>
+
+        </table></td></tr></table></div></fieldset><a name="T1R_SC_RSRC_ACCS_Section1_Top"></a><fieldset class="advscalar section">
+        <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1R_SC_RSRC_ACCS_Section1','T1R_SC_RSRC_ACCS_Section1_Button');" title="Expand/Collapse Approvals"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1R_SC_RSRC_ACCS_Section1_Button"> Approvals</a></legend>
+        <div id="T1R_SC_RSRC_ACCS_Section1" class="advsection">
+<!-- BEGIN CUSTOMIZATION -->
+        <table class="advaction recsrc">
+          <tr>
+            <td>
+              <a name="GrantAllAprv" id="GrantAllAprv" href="javascript:AMSSPLITSECFIELD_GrantAll( 'txtT1APRV_LVL_CD', 15 );" title="Grant All Approvals">Grant All</a>
+              <a name="RemoveAllAprv" id="RemoveAllAprv" href="javascript:AMSSPLITSECFIELD_RemoveAll( 'txtT1APRV_LVL_CD', 15 );" title="Remove All Approvals">Remove All</a>
+            </td>
+          </tr>
+        </table>
+<!-- END CUSTOMIZATION -->
+        <table><tr><td class="advscalarcol"><table class="advscalar">
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+      <tr>
+        <td class="label"><label for="txtT1APRV_LVL_CD" title="Approval Level Code">Approval Level Code :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1APRV_LVL_CD" id="txtT1APRV_LVL_CD"
+                  size="15"
+ vsds="T1R_SC_RSRC_ACCS" vsdf="APRV_LVL_CD"
+                  ams_max_len="20"
+ ShowCodeInfo="" value="APRV_LVL_CD" title="Approval Level Code">
+        </td>
+      </tr>
+-->
+      <tr>
+        <td class="label"><label for="txtT1APRV_LVL_CD_1" title="Approval Level 1">Approval Level 1 :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="APRV_LVL_CD_1" class="adveditable" name="txtT1APRV_LVL_CD_1" id="txtT1APRV_LVL_CD_1" title="Approval Level 1"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1APRV_LVL_CD_2" title="Approval Level 2">Approval Level 2 :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="APRV_LVL_CD_2" class="adveditable" name="txtT1APRV_LVL_CD_2" id="txtT1APRV_LVL_CD_2" title="Approval Level 2"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1APRV_LVL_CD_3" title="Approval Level 3">Approval Level 3 :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="APRV_LVL_CD_3" class="adveditable" name="txtT1APRV_LVL_CD_3" id="txtT1APRV_LVL_CD_3" title="Approval Level 3"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1APRV_LVL_CD_4" title="Approval Level 4">Approval Level 4 :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="APRV_LVL_CD_4" class="adveditable" name="txtT1APRV_LVL_CD_4" id="txtT1APRV_LVL_CD_4" title="Approval Level 4"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1APRV_LVL_CD_5" title="Approval Level 5">Approval Level 5 :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="APRV_LVL_CD_5" class="adveditable" name="txtT1APRV_LVL_CD_5" id="txtT1APRV_LVL_CD_5" title="Approval Level 5"></td>
+      </tr>
+
+    </table></td><td class="advscalarcol"><table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1APRV_LVL_CD_6" title="Approval Level 6">Approval Level 6 :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="APRV_LVL_CD_6" class="adveditable" name="txtT1APRV_LVL_CD_6" id="txtT1APRV_LVL_CD_6" title="Approval Level 6"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1APRV_LVL_CD_7" title="Approval Level 7">Approval Level 7 :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="APRV_LVL_CD_7" class="adveditable" name="txtT1APRV_LVL_CD_7" id="txtT1APRV_LVL_CD_7" title="Approval Level 7"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1APRV_LVL_CD_8" title="Approval Level 8">Approval Level 8 :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="APRV_LVL_CD_8" class="adveditable" name="txtT1APRV_LVL_CD_8" id="txtT1APRV_LVL_CD_8" title="Approval Level 8"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1APRV_LVL_CD_9" title="Approval Level 9">Approval Level 9 :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="APRV_LVL_CD_9" class="adveditable" name="txtT1APRV_LVL_CD_9" id="txtT1APRV_LVL_CD_9" title="Approval Level 9"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1APRV_LVL_CD_10" title="Approval Level 10">Approval Level 10 :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="APRV_LVL_CD_10" class="adveditable" name="txtT1APRV_LVL_CD_10" id="txtT1APRV_LVL_CD_10" title="Approval Level 10"></td>
+      </tr>
+
+    </table></td><td class="advscalarcol"><table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1APRV_LVL_CD_11" title="Approval Level 1">Approval Level 11 :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="APRV_LVL_CD_11" class="adveditable" name="txtT1APRV_LVL_CD_11" id="txtT1APRV_LVL_CD_11" title="Approval Level 11"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1APRV_LVL_CD_12" title="Approval Level 12">Approval Level 12 :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="APRV_LVL_CD_12" class="adveditable" name="txtT1APRV_LVL_CD_12" id="txtT1APRV_LVL_CD_12" title="Approval Level 12"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1APRV_LVL_CD_13" title="Approval Level 13">Approval Level 13 :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="APRV_LVL_CD_13" class="adveditable" name="txtT1APRV_LVL_CD_13" id="txtT1APRV_LVL_CD_13" title="Approval Level 13"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1APRV_LVL_CD_14" title="Approval Level 14">Approval Level 14 :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="APRV_LVL_CD_14" class="adveditable" name="txtT1APRV_LVL_CD_14" id="txtT1APRV_LVL_CD_14" title="Approval Level 14"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1APRV_LVL_CD_15" title="Approval Level 15">Approval Level 15 :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="APRV_LVL_CD_15" class="adveditable" name="txtT1APRV_LVL_CD_15" id="txtT1APRV_LVL_CD_15" title="Approval Level 15"></td>
+      </tr>
+
+<!-- END CUSTOMIZATION -->
+          </table></td></tr></table></div></fieldset><br><br><a name="T1R_SC_RSRC_ACCS_Section2_Top"></a><fieldset class="advscalar section">
+          <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1R_SC_RSRC_ACCS_Section2','T1R_SC_RSRC_ACCS_Section2_Button');" title="Expand/Collapse Actions"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1R_SC_RSRC_ACCS_Section2_Button"> Actions</a></legend>
+          <div id="T1R_SC_RSRC_ACCS_Section2" class="advsection">
+<!-- BEGIN CUSTOMIZATION -->
+        <table class="advaction recsrc">
+          <tr>
+            <td>
+              <a name="GrantAllActns" id="GrantAllActns" href="javascript:AMSSPLITSECFIELD_GrantAll( 'txtT1COMB_ACTN1_CD', 30 );AMSSPLITSECFIELD_GrantAll( 'txtT1COMB_ACTN2_CD', 22 );" title="Grant All Actions">Grant All</a>
+              <a name="RemoveAllActns" id="RemoveAllActns" href="javascript:AMSSPLITSECFIELD_RemoveAll( 'txtT1COMB_ACTN1_CD', 30 );AMSSPLITSECFIELD_RemoveAll( 'txtT1COMB_ACTN2_CD', 22 );" title="Remove All Actions">Remove All</a>
+            </td>
+          </tr>
+        </table>
+<!-- END CUSTOMIZATION -->
+          <table><tr><td class="advscalarcol"><table class="advscalar">
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD" title="Standard Actions 1">Standard Actions 1 :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1COMB_ACTN1_CD" id="txtT1COMB_ACTN1_CD"
+               size="10"
+ vsds="T1R_SC_RSRC_ACCS" vsdf="COMB_ACTN1_CD"
+               ams_max_len="10"
+ ShowCodeInfo="" value="COMB_ACTN1_CD" title="Standard Actions 1">
+        </td>
+      </tr>
+-->
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_1" title="Schedule">Schedule :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_1" class="adveditable" name="txtT1COMB_ACTN1_CD_1" id="txtT1COMB_ACTN1_CD_1" title="Schedule"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_2" title="Deactivate">Deactivate :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_2" class="adveditable" name="txtT1COMB_ACTN1_CD_2" id="txtT1COMB_ACTN1_CD_2" title="Deactivate"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_3" title="Activate">Activate :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_3" class="adveditable" name="txtT1COMB_ACTN1_CD_3" id="txtT1COMB_ACTN1_CD_3" title="Activate"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_4" title="Archive">Archive :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_4" class="adveditable" name="txtT1COMB_ACTN1_CD_4" id="txtT1COMB_ACTN1_CD_4" title="Archive"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_5" title="Archive History">Archive History :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_5" class="adveditable" name="txtT1COMB_ACTN1_CD_5" id="txtT1COMB_ACTN1_CD_5" title="Archive History"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_6" title="Unarchive">Unarchive :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_6" class="adveditable" name="txtT1COMB_ACTN1_CD_6" id="txtT1COMB_ACTN1_CD_6" title="Unarchive"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN2_CD_22" title="Unarchive Preview">Unarchive Preview :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_22" class="adveditable" name="txtT1COMB_ACTN2_CD_22" id="txtT1COMB_ACTN2_CD_22" title="Unarchive Preview"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_7" title="Open">Open :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_7" class="adveditable" name="txtT1COMB_ACTN1_CD_7" id="txtT1COMB_ACTN1_CD_7" title="Open"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_8" title="Save">Save :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_8" class="adveditable" name="txtT1COMB_ACTN1_CD_8" id="txtT1COMB_ACTN1_CD_8" title="Save"></td>
+      </tr>
+
+    </table></td><td class="advscalarcol"><table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_9" title="Edit">Edit :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_9" class="adveditable" name="txtT1COMB_ACTN1_CD_9" id="txtT1COMB_ACTN1_CD_9" title="Edit"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_10" title="Insert Line">Insert Line :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_10" class="adveditable" name="txtT1COMB_ACTN1_CD_10" id="txtT1COMB_ACTN1_CD_10" title="Insert Line"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_12" title="Delete Line">Delete Line :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_12" class="adveditable" name="txtT1COMB_ACTN1_CD_12" id="txtT1COMB_ACTN1_CD_12" title="Delete Line"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_13" title="Attach">Attach :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_13" class="adveditable" name="txtT1COMB_ACTN1_CD_13" id="txtT1COMB_ACTN1_CD_13" title="Attach"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_15" title="New">New :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_15" class="adveditable" name="txtT1COMB_ACTN1_CD_15" id="txtT1COMB_ACTN1_CD_15" title="New"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_16" title="Copy">Copy :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_16" class="adveditable" name="txtT1COMB_ACTN1_CD_16" id="txtT1COMB_ACTN1_CD_16" title="Copy"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_17" title="Discard">Discard :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_17" class="adveditable" name="txtT1COMB_ACTN1_CD_17" id="txtT1COMB_ACTN1_CD_17" title="Discard"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_18" title="Validate">Validate :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_18" class="adveditable" name="txtT1COMB_ACTN1_CD_18" id="txtT1COMB_ACTN1_CD_18" title="Validate"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_19" title="Submit">Submit :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_19" class="adveditable" name="txtT1COMB_ACTN1_CD_19" id="txtT1COMB_ACTN1_CD_19" title="Submit"></td>
+      </tr>
+
+    </table></td><td class="advscalarcol"><table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_20" title="Import">Import :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_20" class="adveditable" name="txtT1COMB_ACTN1_CD_20" id="txtT1COMB_ACTN1_CD_20" title="Import"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_21" title="Export">Export :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_21" class="adveditable" name="txtT1COMB_ACTN1_CD_21" id="txtT1COMB_ACTN1_CD_21" title="Export"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_22" title="Print">Print :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_22" class="adveditable" name="txtT1COMB_ACTN1_CD_22" id="txtT1COMB_ACTN1_CD_22" title="Print"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_23" title="Scan">Scan :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_23" class="adveditable" name="txtT1COMB_ACTN1_CD_23" id="txtT1COMB_ACTN1_CD_23" title="Scan"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_24" title="Approve">Approve :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_24" class="adveditable" name="txtT1COMB_ACTN1_CD_24" id="txtT1COMB_ACTN1_CD_24" title="Approve"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_25" title="Reject">Reject :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_25" class="adveditable" name="txtT1COMB_ACTN1_CD_25" id="txtT1COMB_ACTN1_CD_25" title="Reject"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_26" title="Unapprove">Unapprove :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_26" class="adveditable" name="txtT1COMB_ACTN1_CD_26" id="txtT1COMB_ACTN1_CD_26" title="Unapprove"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_27" title="Reassign">Reassign :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_27" class="adveditable" name="txtT1COMB_ACTN1_CD_27" id="txtT1COMB_ACTN1_CD_27" title="Reassign"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_28" title="Send Message">Send Message :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_28" class="adveditable" name="txtT1COMB_ACTN1_CD_28" id="txtT1COMB_ACTN1_CD_28" title="Send Message"></td>
+      </tr>
+
+    </table></td><td class="advscalarcol"><table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_29" title="Reject All">Reject All :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_29" class="adveditable" name="txtT1COMB_ACTN1_CD_29" id="txtT1COMB_ACTN1_CD_29" title="Reject All"></td>
+      </tr>
+
+	  <tr>
+	      <td class="label"><label for="txtT1COMB_ACTN2_CD_20" title="Recall">Recall : </label></td>
+	      <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_20" class="adveditable" name="txtT1COMB_ACTN2_CD_20" id="txtT1COMB_ACTN2_CD_20" title="Recall"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN1_CD_30" title="Bypass Approvals">Bypass Approvals :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN1_CD_30" class="adveditable" name="txtT1COMB_ACTN1_CD_30" id="txtT1COMB_ACTN1_CD_30" title="Bypass Approvals"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN2_CD_1" title="Mark For Processing">Mark For Processing :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_1" class="adveditable" name="txtT1COMB_ACTN2_CD_1" id="txtT1COMB_ACTN2_CD_1" title="Mark For Processing"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN2_CD_2" title="Hold Document">Hold Document :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_2" class="adveditable" name="txtT1COMB_ACTN2_CD_2" id="txtT1COMB_ACTN2_CD_2" title="Hold Document"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN2_CD_3" title="Apply Overrides">Apply Overrides :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_3" class="adveditable" name="txtT1COMB_ACTN2_CD_3" id="txtT1COMB_ACTN2_CD_3" title="Apply Overrides"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN2_CD_4" title="Remove Overrides">Remove Overrides :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_4" class="adveditable" name="txtT1COMB_ACTN2_CD_4" id="txtT1COMB_ACTN2_CD_4" title="Remove Overrides"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN2_CD_5" title="Page Open">Page Open :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_5" class="adveditable" name="txtT1COMB_ACTN2_CD_5" id="txtT1COMB_ACTN2_CD_5" title="Page Open"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN2_CD_6" title="Indirect Authority">Indirect Authority :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_6" class="adveditable" name="txtT1COMB_ACTN2_CD_6" id="txtT1COMB_ACTN2_CD_6" title="Indirect Authority"></td>
+      </tr>
+
+    </table></td><td class="advscalarcol"><table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN2_CD_7" title="Delete Alternate View Attachments">Delete Att. View Att. :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_7" class="adveditable" name="txtT1COMB_ACTN2_CD_7" id="txtT1COMB_ACTN2_CD_7" title="Delete Alternate View Attachments"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN2_CD_8" title="Add Comments">Add Comments :</label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_8" class="adveditable" name="txtT1COMB_ACTN2_CD_8" id="txtT1COMB_ACTN2_CD_8" title="Add Comments"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN2_CD_9" title="Download Document">Download Document : </label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_9" class="adveditable" name="txtT1COMB_ACTN2_CD_9" id="txtT1COMB_ACTN2_CD_9" title="Download Document"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN2_CD_10" title="Kill Job">Kill Job : </label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_10" class="adveditable" name="txtT1COMB_ACTN2_CD_10" id="txtT1COMB_ACTN2_CD_10" title="Kill Job"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN2_CD_11" title="Restart Job">Restart Job : </label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_11" class="adveditable" name="txtT1COMB_ACTN2_CD_11" id="txtT1COMB_ACTN2_CD_11" title="Restart Job"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN2_CD_12" title="View Completed Jobs">View Completed Jobs : </label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_12" class="adveditable" name="txtT1COMB_ACTN2_CD_12" id="txtT1COMB_ACTN2_CD_12" title="View Completed Jobs"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN2_CD_13" title="View Pending Jobs">View Pending Jobs : </label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_13" class="adveditable" name="txtT1COMB_ACTN2_CD_13" id="txtT1COMB_ACTN2_CD_13" title="View Pending Jobs"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN2_CD_14" title="View Others' Jobs">View Others' Jobs : </label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_14" class="adveditable" name="txtT1COMB_ACTN2_CD_14" id="txtT1COMB_ACTN2_CD_14" title="View Others' Jobs"></td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN2_CD_15" title="View Job Log">View Job Log : </label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_15" class="adveditable" name="txtT1COMB_ACTN2_CD_15" id="txtT1COMB_ACTN2_CD_15" title="View Job Log"></td>
+      </tr>
+
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;"><div class="hidden val"><input type="checkbox" class="adveditable" name="txtT1COMB_ACTN1_CD_11" id="txtT1COMB_ACTN1_CD_11" title=""></div></td>
+      </tr>
+
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;"><div class="hidden val"><input type="checkbox" class="adveditable" name="txtT1COMB_ACTN1_CD_14" id="txtT1COMB_ACTN1_CD_14" title=""></div></td>
+      </tr>
+
+</table></td><td class="advscalarcol"><table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1COMB_ACTN2_CD_16" title="View Job Report">View Job Report : </label></td>
+        <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_16" class="adveditable" name="txtT1COMB_ACTN2_CD_16" id="txtT1COMB_ACTN2_CD_16" title="View Job Report"></td>
+      </tr>
+
+      <tr>
+	  	      <td class="label"><label for="txtT1COMB_ACTN2_CD_18" title="Verify Job Running">Verify Job Running : </label></td>
+	  	      <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_18" class="adveditable" name="txtT1COMB_ACTN2_CD_18" id="txtT1COMB_ACTN2_CD_18" title="Verify Job Running"></td>
+	   </tr>
+
+	<tr>
+	      <td class="label"><label for="txtT1COMB_ACTN2_CD_17" title="Sitewide Preference">Sitewide Preference : </label></td>
+	      <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_17" class="adveditable" name="txtT1COMB_ACTN2_CD_17" id="txtT1COMB_ACTN2_CD_17" title="Sitwide Preference"></td>
+      </tr>
+
+	  <tr>
+	      <td class="label"><label for="txtT1COMB_ACTN2_CD_19" title="Department Level Preference">Department Level Preference : </label></td>
+	      <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_19" class="adveditable" name="txtT1COMB_ACTN2_CD_19" id="txtT1COMB_ACTN2_CD_19" title="Department Level Preference"></td>
+      </tr>
+
+      <tr>
+	  	      <td class="label"><label for="txtT1COMB_ACTN2_CD_21" title="Change Worklist Priority">Change Worklist Priority : </label></td>
+	  	      <td class="val"><input type="checkbox" vsds ="" vsdf="COMB_ACTN2_CD_21" class="adveditable" name="txtT1COMB_ACTN2_CD_21" id="txtT1COMB_ACTN2_CD_21" title="Change Worklist Priority"></td>
+	   </tr>
+
+<!-- END CUSTOMIZATION -->
+            </table></td></tr></table></div></fieldset><br><br><a name="T1R_SC_RSRC_ACCS_Section3_Top"></a><fieldset class="advscalar section">
+            <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1R_SC_RSRC_ACCS_Section3','T1R_SC_RSRC_ACCS_Section3_Button');" title="Expand/Collapse Application Actions"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1R_SC_RSRC_ACCS_Section3_Button"> Application Actions</a></legend>
+            <div id="T1R_SC_RSRC_ACCS_Section3" class="advsection">
+            <table><tr><td class="advscalarcol"><table class="advscalar">
+<!-- BEGIN CUSTOMIZATION -->
+        <table class="advaction recsrc">
+          <tr>
+            <td>
+              <a name="GrantAllAppActns" id="GrantAllAppActns" href="javascript:AMSSPLITSECFIELD_GrantAllApplActns();" title="Grant All Application Actions">Grant All</a>
+              <a name="RemoveAllAppActns" id="RemoveAllAppActns" href="javascript:AMSSPLITSECFIELD_RemoveAllApplActns();" title="Remove All Application Actions">Remove All</a>
+            </td>
+          </tr>
+        </table>
+<!-- END CUSTOMIZATION -->
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+      <tr>
+        <td class="label"><label for="txtT1APPL_ACTN1_CD" title="Application Actions 1">Application Actions 1 :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1APPL_ACTN1_CD" id="txtT1APPL_ACTN1_CD"
+                  size="15"
+ vsds="T1R_SC_RSRC_ACCS" vsdf="APPL_ACTN1_CD"
+                  ams_max_len="20"
+ ShowCodeInfo="" value="APPL_ACTN1_CD" title="Application Actions 1">
+        </td>
+      </tr>
+-->
+
+      <vstext vsds=" " name="AMSApplicationSubActions" vspreservetag="true">
+<!-- END CUSTOMIZATION -->
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+  <br><br><table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T1R_SC_RSRC_ACCS_Top');" title="Go To Top">Top</a></td></tr></table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+<a name="btnT4pR_SC_SEC_ROLE" href="SecurityAdmin" id="btnT4pR_SC_SEC_ROLE" title="Navigation to Security Role Information" vsaction="pagetransition"
+           vsds="T1R_SC_RSRC_ACCS"
+ vsnavigation="T4pR_SC_SEC_ROLE">Security Role Information</a>
+<a name="btnT6pR_SC_RSRC_GP" href="SecurityAdmin" id="btnT6pR_SC_RSRC_GP" title="Navigation to Resource Group Information" vsaction="pagetransition"
+           vsds="T1R_SC_RSRC_ACCS"
+ vsnavigation="T6pR_SC_RSRC_GP">Resource Group Information</a>
+<a name="btnT7pR_SC_FGN_ORG" href="SecurityAdmin" id="btnT7pR_SC_FGN_ORG" title="Navigation to Foreign Organizations" vsaction="pagetransition"
+           vsds="T1R_SC_RSRC_ACCS"
+ vsnavigation="T7pR_SC_FGN_ORG">Foreign Organizations</a>
+<a name="btnT5pRoleUserLink" href="SecurityAdmin" id="btnT5pRoleUserLink" title="Navigation to Security Role User Grants" vsaction="pagetransition"
+           vsds="T1R_SC_RSRC_ACCS"
+ vsnavigation="T5pRoleUserLink">Security Role User Grants</a>
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_SC_RSRC_ACCS', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'RSRC_GP_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Resource Group ID' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'SEC_ROLE_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Security Role ID' ;
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

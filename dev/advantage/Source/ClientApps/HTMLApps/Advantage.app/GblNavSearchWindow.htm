@@ -1,0 +1,264 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Page Search</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+	<script type="text/javascript" language="JavaScript" src="JS/ADVSearch.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+<!-- BEGIN CUSTOMIZATION -->
+   <script type="text/javascript" language="JavaScript">
+   <!--
+      
+function leaf()
+{
+    var loStartupPage = UTILS_GetMainStartupPage();
+		if(loStartupPage != null)
+		{
+		   loStartupPage.document.forms[0].gotocode.value =document.forms[0].SelectedPageCode.value;
+			 //loStartupPage.STARTPG_OpenPage();
+		}
+
+
+}/* end leaf() */
+
+function leafWithData()
+{
+    var loStartupPage = UTILS_GetMainStartupPage();
+		if(loStartupPage != null)
+		{
+		   loStartupPage.document.forms[0].gotocode.value =document.forms[0].SelectedPageCode.value;
+       //loStartupPage.STARTPG_OpenPageWithdata();
+				
+		}
+
+
+
+}/* end leafWithData() */
+
+function closePage()
+{
+   DHTMLLIB_ClickElement(document.getElementById('btnclosePage'),document);
+	 window.close();	
+}
+function selectRow()
+{
+   DHTMLLIB_ClickElement(document.getElementById('btnleafWithData'),document);
+}
+
+
+   -->
+
+   </script>
+<!-- END CUSTOMIZATION -->
+</head>
+
+<body class="adv reftable"  >
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="ADVGLOBALSRCH">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="SelectedPageCode" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Page Search">Page Search</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+
+  </div>
+
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+
+<a href="Advantage" vsds="T1IN_PAGES" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+
+<a href="Advantage" vsds="T1IN_PAGES" vsaction="clearquery" name="T1IN_PAGESclearquery" id="T1IN_PAGESclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+-->
+<!-- END CUSTOMIZATION -->
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1CAT_CD" title="Category">Category :</label></td>
+        <td class="val">
+          <select name="txtT1CAT_CD" id="txtT1CAT_CD" vsds="T1IN_PAGES" vsdf="CAT_CD" vsdisplaymode="Query" size="1" vscodetable="IN_CATEGORY" title="Category">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1PAGE_TYP_CD" title="Page Type">Page Type :</label></td>
+        <td class="val">
+          <select name="txtT1PAGE_TYP_CD" id="txtT1PAGE_TYP_CD" vsds="T1IN_PAGES" vsdf="PAGE_TYP_CD" vsdisplaymode="Query" size="1" vscodetable="IN_PAGE_TYP" title="Page Type">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+<!-- BEGIN CUSTOMIZATION -->
+      <tr>
+        <td class="label"><label for="txtT1PAGE_DESC_UP" title="Description">Description :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1PAGE_DESC_UP" id="txtT1PAGE_DESC_UP"
+            size="20"
+ vsds="T1IN_PAGES" vsdf="PAGE_DESC_UP" vsdisplaymode="Query"
+ value="PAGE_DESC_UP" title="Description" onblur="QSRCH_AppendStar(this)" onkeypress="QSRCH_CheckKeyPress(this, event)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1PAGE_CD" title="Page Code">Page Code :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1PAGE_CD" id="txtT1PAGE_CD"
+            size="15"
+ vsds="T1IN_PAGES" vsdf="PAGE_CD" vsdisplaymode="Query"
+ value="PAGE_CD" title="Page Code" onblur="QSRCH_AppendStar(this)" onkeypress="QSRCH_CheckKeyPress(this, event)">
+        </td>
+      </tr>
+<!-- END CUSTOMIZATION -->
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION -->
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+
+<a href="Advantage" vsds="T1IN_PAGES" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+
+<a href="Advantage" vsds="T1IN_PAGES" vsaction="clearquery" name="T1IN_PAGESclearquery" id="T1IN_PAGESclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+<!-- END CUSTOMIZATION -->
+
+  <input type="hidden" name="T1IN_PAGES_Currency" value="">
+  <input type="hidden" name="T1IN_PAGES_Old_Currency" value="">
+<!-- BEGIN CUSTOMIZATION -->
+  <table name="tblT1IN_PAGES" id="tblT1IN_PAGES" class="advgrid" vsds="T1IN_PAGES" >
+<!-- END CUSTOMIZATION -->
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1PAGE_DESCsortGridLabel" name="T1PAGE_DESCsortGridLabel" title="Description">Description</span></th>
+
+        <th
+><span id="T1PAGE_CDsortGridLabel" name="T1PAGE_CDsortGridLabel" title="Page Code">Page Code</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IN_PAGESvscurrency" id="T1IN_PAGESvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1IN_PAGES" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+<!-- BEGIN CUSTOMIZATION -->
+          
+<!-- END CUSTOMIZATION -->
+  <a href="javaScript:UTILS_GridRowAnchorClicked();selectRow();" title="Open Page" >
+          <vstext name="txtT1PAGE_DESC" vsds="T1IN_PAGES" vsdf="PAGE_DESC"
+>
+</a>
+<!-- BEGIN CUSTOMIZATION -->
+          
+<!-- END CUSTOMIZATION -->
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1PAGE_CD" vsds="T1IN_PAGES" vsdf="PAGE_CD"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Advantage" vsds="T1IN_PAGES" vsaction="firstpage" name="T1IN_PAGESfirstpage" id="T1IN_PAGESfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T1IN_PAGES" vsaction="prevpage" name="T1IN_PAGESprevpage" id="T1IN_PAGESprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T1IN_PAGES" vsaction="nextpage" id="T1IN_PAGESnextpage" name="T1IN_PAGESnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T1IN_PAGES" vsaction="lastpage" id="T1IN_PAGESlastpage" name="T1IN_PAGESlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+<!-- BEGIN CUSTOMIZATION -->
+      <td>
+        <a href="Advantage"  vsaction="unknown" id="btnleafWithData" name="btnleafWithData" title="Open With Data"></a>
+      </td>
+<!-- END CUSTOMIZATION -->
+
+    </tr>
+  </table>
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+<a href="Advantage"  vsaction="84" id="btnclosePage" name="btnclosePage" title="Close Page"></a>
+  </form>
+</body>
+</html>
+
+

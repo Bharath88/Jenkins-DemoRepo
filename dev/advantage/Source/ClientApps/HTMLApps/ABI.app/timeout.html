@@ -1,0 +1,128 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<script language="javascript">
+<!--
+document.onkeydown = keyDownHandler;
+var msAgent = navigator.userAgent.toLowerCase();
+
+var mboolIsIE = (msAgent.indexOf("msie") != -1);
+
+var mbMinNS4 = (navigator.appName.indexOf("Netscape") >= 0 &&
+                parseFloat(navigator.appVersion) >= 4) ? 1 : 0;
+
+function keyDownHandler(foEvent) {
+   foEvent = foEvent || window.event;
+   var lsKeyCode, loEventElem;
+   if(mbMinNS4 && foEvent)
+   {
+	  lsKeyCode = foEvent.keyCode;
+	  loEventElem = foEvent.target;
+   }
+   else
+   {
+	  lsKeyCode = foEvent.keyCode;
+	  loEventElem = foEvent.srcElement ;
+   }
+   switch ( lsKeyCode )
+   {
+      case 9  :
+      case 13 :
+         return true;
+      default :
+         return false;
+         break ;
+   }
+
+   return false ;
+}
+
+function PutAtTop() {
+  if ( self != top ) {
+    if (self.location.href.indexOf("?") != -1) {
+      top.location.href = self.location.href + "&timeoutReload=true";
+    } else {
+      top.location.href = self.location.href + "?timeoutReload=true";
+    }
+  }else
+  {
+
+     if(self.location.href.indexOf("logout=true") != -1)
+     {
+        document.title = "Logout";
+        document.getElementById('logoutspan').innerHTML  =  "Logout successful.";
+        document.getElementById('logoutpara1').innerHTML =  "Please try to log in again.";
+        document.getElementById('logoutpara2').innerHTML =  "";
+
+     }
+  }
+}
+//-->
+</script>
+<title>Session Error</title>
+<style type="text/css">
+<!--
+	.btn
+	{
+	   background:#d1dded;
+	   color:#000000;
+	   border-style:solid;
+	   border-color:#97AAC0 rgb(75, 104, 139) rgb(75, 104, 139) rgb(151, 170, 192);
+	   border-width:1px;
+	   font-size:0.7em;
+	}
+
+	.btn:hover
+	{
+		background:#feedc7!important;
+		color:#000000;
+		border:1px solid #97AAC0;
+		font-size:0.7em;
+	}
+
+	p
+	{
+		font-size:0.8em;
+	}
+
+	.headmsg
+	{
+		font-weight:normal;
+		font-size:1.3em;
+	}
+
+	.topmargin
+	{
+		margin-top: 19%;
+	}
+
+	.box tr td
+	{
+		border: 1px solid #a7c6ff;
+		background-color: #edf5ff;
+		padding: 30px 0px;
+	}
+
+-->
+</style>
+</head>
+
+<body style="background:#e6ebf0;color:#00227B;font-family:arial;" target="_top" OnLoad="PutAtTop();" oncontextmenu="return false">
+
+<form ONSUBMIT="timeout.action = self.location.href" name="timeout" METHOD="POST" oncontextmenu="return false">
+  <div align="center" class="topmargin">
+    <table width="450" BORDER="0" cellpadding="4" cellspacing="4" class="box">
+      <tr>
+        <td style="text-align:center;">
+          <span id='logoutspan' class="headmsg">Session error occurred</span>
+          <p id='logoutpara1'>Your session may be timed out or the server is down.</p>
+          <p id='logoutpara2'>Please try to log in again.</p>
+          <input TYPE="submit" VALUE="LOGIN AGAIN" NAME="relogon" TARGET="_top" class="btn">
+        </td>
+      </tr>
+    </table>
+  </div>
+</form>
+</body>
+</html>

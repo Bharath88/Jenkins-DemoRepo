@@ -1,0 +1,657 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="AMSRefTableGridDisplay"
+	PositionTop="625"
+	PositionLeft="625"
+	PositionWidth="150"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSRefTableGridDisplayPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="880661923"
+	>
+	<FormCaption><![CDATA[Context Sensitive Search]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="true"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="true"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+		<Property
+			Name="SSCaptionImageFileNm"
+			Value=""
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="AttachmentTypeOptions"
+			Value=""
+		/>
+		<Property
+			Name="AttachmentTypes"
+			Value=""
+		/>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="EditMode"
+			Value=""
+		/>
+		<Property
+			Name="ErrorsFromPage"
+			Value=""
+		/>
+		<Property
+			Name="IsSearchMenuButton"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="PageCode"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="SearchDS"
+			Value=""
+		/>
+		<Property
+			Name="SearchPopupOnload"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="IN_LEAF_CTXT"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGenericGridDisplayTabs"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="3" Name="LEAF_AT_NM" />
+				<RSDefaultAttribute ID="11" Name="PAGE_CD" />
+				<RSDefaultAttribute ID="10" Name="TGT_DESC_COLUMN" />
+				<RSDefaultAttribute ID="4" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="7" Name="LEAF_AT_NM_UP" />
+				<RSDefaultAttribute ID="8" Name="TBL_LAST_DT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="LEAF_AT_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PAGE_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LEAF_AT_NM_UP" Displayed="True" UnPlaced="False" Archetype="AMSHiddenTextBox" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TGT_DESC_COLUMN" Displayed="True" UnPlaced="False" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="LEAF_AT_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PAGE_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="TGT_DESC_COLUMN" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LEAF_AT_NM_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCount"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCountMsg"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value="&quot;LEAF_AT_NM_UP,PAGE_CD,TGT_DESC_COLUMN&quot;"
+			/>
+			<Property
+				Name="ShowSearchPopup"
+				Value="true"
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value="%TGT_TABLE_NAME%"
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="true"
+			/>
+			<Property
+				Name="ShowGridNav"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="SummaryCaption"
+				Value=""
+			/>
+			<Property
+				Name="Tab_10_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_10_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_1_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_1_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_2_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_2_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_3_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_3_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_4_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_4_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_5_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_5_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_6_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_6_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_7_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_7_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_8_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_8_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_9_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_9_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_Delimiter_Fields"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+		<PickObject
+			RSID="2"
+			Prefix="T2"
+			BusinessObject="IN_PAGES"
+			Relationship="IN_PAGES(IN_PAGES)-IN_LEAF_CTXT(IN_LEAF_CTXT)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="Pick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [PAGE_CD] = [?PAGE_CD]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="PAGE_CD" />
+					<RSDefaultAttribute ID="2" Name="CAT_CD" />
+					<RSDefaultAttribute ID="3" Name="PAGE_TYP_CD" />
+					<RSDefaultAttribute ID="4" Name="PAGE_DESC" />
+					<RSDefaultAttribute ID="5" Name="APPL_NM" />
+					<RSDefaultAttribute ID="6" Name="DEST_PG" />
+					<RSDefaultAttribute ID="7" Name="DEST_FRAMESET" />
+					<RSDefaultAttribute ID="8" Name="DEST_FRAME" />
+					<RSDefaultAttribute ID="9" Name="TARGET_FRAME" />
+					<RSDefaultAttribute ID="10" Name="MODE_IND" />
+					<RSDefaultAttribute ID="11" Name="WHERE_CLAUSE" />
+					<RSDefaultAttribute ID="12" Name="ORDER_BY" />
+					<RSDefaultAttribute ID="13" Name="HLP_SUB_DIR" />
+					<RSDefaultAttribute ID="14" Name="HLP_FILE_NM" />
+					<RSDefaultAttribute ID="15" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="16" Name="PG_SHW_FL" />
+					<RSDefaultAttribute ID="17" Name="GOVT_BRN_CD" />
+					<RSDefaultAttribute ID="18" Name="CAB_CD" />
+					<RSDefaultAttribute ID="19" Name="DEPT_CD" />
+					<RSDefaultAttribute ID="20" Name="DIV_CD" />
+					<RSDefaultAttribute ID="21" Name="GP_CD" />
+					<RSDefaultAttribute ID="22" Name="SECT_CD" />
+					<RSDefaultAttribute ID="23" Name="DSTC_CD" />
+					<RSDefaultAttribute ID="24" Name="BUR_CD" />
+					<RSDefaultAttribute ID="25" Name="UNIT_CD" />
+					<RSDefaultAttribute ID="26" Name="PAGE_DESC_UP" />
+					<RSDefaultAttribute ID="27" Name="APPL_NM_UP" />
+					<RSDefaultAttribute ID="28" Name="DEST_PG_UP" />
+					<RSDefaultAttribute ID="29" Name="APPL_ID" />
+					<RSDefaultAttribute ID="30" Name="TBL_LAST_DT" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="PAGE_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="CAT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="PAGE_TYP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PAGE_DESC" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEST_PG" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEST_FRAMESET" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEST_FRAME" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TARGET_FRAME" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="MODE_IND" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="WHERE_CLAUSE" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ORDER_BY" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="HLP_SUB_DIR" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="HLP_FILE_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PG_SHW_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CAB_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DIV_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SECT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSTC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUR_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PAGE_DESC_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEST_PG_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="PAGE_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="APPL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DEST_PG" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="PAGE_DESC" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="CAT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PAGE_TYP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEST_FRAMESET" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEST_FRAME" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TARGET_FRAME" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="MODE_IND" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="WHERE_CLAUSE" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ORDER_BY" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="HLP_SUB_DIR" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="HLP_FILE_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PG_SHW_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CAB_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DIV_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SECT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSTC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUR_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PAGE_DESC_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEST_PG_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="3"
+			Prefix="T3"
+			BusinessObject="IN_LEAF"
+			Relationship="IN_LEAF(IN_LEAF)-IN_LEAF_CTXT(IN_LEAF_CTXT)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="Pick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [LEAF_AT_NM] = [?LEAF_AT_NM]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="APPL_NM" />
+					<RSDefaultAttribute ID="2" Name="PG_NM" />
+					<RSDefaultAttribute ID="3" Name="REC_SRC" />
+					<RSDefaultAttribute ID="4" Name="LEAF_AT_NM" />
+					<RSDefaultAttribute ID="5" Name="AT_NM" />
+					<RSDefaultAttribute ID="6" Name="XPORT_ONLY" />
+					<RSDefaultAttribute ID="8" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="9" Name="APPL_NM_UP" />
+					<RSDefaultAttribute ID="10" Name="PG_NM_UP" />
+					<RSDefaultAttribute ID="11" Name="REC_SRC_UP" />
+					<RSDefaultAttribute ID="12" Name="LEAF_AT_NM_UP" />
+					<RSDefaultAttribute ID="13" Name="AT_NM_UP" />
+					<RSDefaultAttribute ID="14" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="15" Name="LEAF_ATT_PREFIX" />
+					<RSDefaultAttribute ID="16" Name="LEAF_OPR" />
+					<RSDefaultAttribute ID="17" Name="LEAF_SET" />
+					<RSDefaultAttribute ID="18" Name="LEAF_DEST_USAGE" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="APPL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="PG_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REC_SRC" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LEAF_AT_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AT_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="XPORT_ONLY" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PG_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REC_SRC_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LEAF_AT_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AT_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LEAF_ATT_PREFIX" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="LEAF_OPR" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="LEAF_SET" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="LEAF_DEST_USAGE" Displayed="False" UnPlaced="True" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="APPL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="PG_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="LEAF_AT_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REC_SRC" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AT_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="XPORT_ONLY" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PG_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REC_SRC_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LEAF_AT_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AT_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LEAF_ATT_PREFIX" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LEAF_OPR" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LEAF_SET" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LEAF_DEST_USAGE" Displayed="False" UnPlaced="True" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+	</RecordSource>
+</Form>

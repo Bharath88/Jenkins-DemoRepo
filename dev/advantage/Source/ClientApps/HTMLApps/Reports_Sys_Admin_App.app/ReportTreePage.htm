@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Job Manager Navigator</title>
+  <base href>
+  <!-- BEGIN CUSTOMIZATION -->
+    <link type="text/css" rel="STYLESHEET" href="../AMSCSS/default/ADVSecondaryNavigator.css">
+  <!-- END CUSTOMIZATION -->
+  <link REL="STYLESHEET" type="text/css" href="../AMSImages/ADVMenuStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+</head>
+
+<body class="advnavtree jmnav" onload="UTILS_AdjustLeftNavHeaderHt('ReportTree');">
+
+  <form action="Reports_Sys_Admin_App" method="post" vsform="true" name="ReportTreePage">
+    <!-- BEGIN CUSTOMIZATION -->
+    <div id="DocumentFlags" name="DocumentFlags">
+      <input type="hidden" value="" name="PanelState" ></input>
+    </div>
+    <!-- END CUSTOMIZATION -->
+   <div name="ReportTree" id="ReportTree" title="Job Manager Navigation Tree" class="advnavtree reporttree" vsds=" " vsclass="com.amsinc.gems.adv.vfc.html.AMSReportTreeElement" vsdf=" "></div>
+ <!-- BEGIN CUSTOMIZATION -->
+ <div id="SecondaryNavigatorExpandCollapseBar" class="bar">
+   <div class="arrowleft">
+     <a href="#Collapse/Expand" id="SecondaryFrameExpandCollapse" name="SecondaryFrameExpandCollapse" title="Collpase/Expand Frame" class="expanded"></a>
+   </div>
+ </div>
+  <!-- END CUSTOMIZATION -->
+
+   <div id="AMSPopupWin" class="advpopupwin">
+      <iframe name="AMSPopupWinBody" scrolling="no" frameborder="0"
+       width="100%" height="100%" margin="0" src="../AMSImages/Empty.htm"></iframe>
+   </div>
+  </form>
+
+</body>
+</html>

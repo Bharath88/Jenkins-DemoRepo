@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Setup for Chain Job Steps</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Reports_Sys_Admin_App" method="post" vsform="true" name="Admin_Chain_Job_List">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Setup for Chain Job Steps">Setup for Chain Job Steps</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+      
+ 
+
+  <input type="hidden" name="T1R_BS_CATALOG_Currency" value="">
+  <input type="hidden" name="T1R_BS_CATALOG_Old_Currency" value="">
+  
+  
+  
+  <table name="tblT1R_BS_CATALOG" id="tblT1R_BS_CATALOG" class="advgrid" vsds="T1R_BS_CATALOG">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      <!-- BEGIN CUSTOMIZATION-->
+<!--
+        <th 
+><span id="T1SEQ_NOsortGridLabel" name="T1SEQ_NOsortGridLabel" title="Sequence Number">Sequence Number</span></th>
+-->
+<th 
+><span id="T1SEQ_NOsortGridLabel" name="T1SEQ_NOsortGridLabel" title="Sequence Number">Job Step</span></th>
+
+<!-- END CUSTOMIZATION -->
+      
+        <th 
+><span id="T1CLS_NMsortGridLabel" name="T1CLS_NMsortGridLabel" title="Class Name">Class Name</span></th>
+      
+        <th 
+><span id="T1PKG_NMsortGridLabel" name="T1PKG_NMsortGridLabel" title="Package Name">Package Name</span></th>
+      
+        <th 
+><span id="T1ITM_TYPsortGridLabel" name="T1ITM_TYPsortGridLabel" title="Item Type">Item Type</span></th>
+      
+        <th 
+><span id="T1CTLG_NMsortGridLabel" name="T1CTLG_NMsortGridLabel" title="Catalog Label">Catalog Label</span></th>
+      
+        <th 
+><span id="T1PRE_CN_RET_CDsortGridLabel" name="T1PRE_CN_RET_CDsortGridLabel" title="Pre Condition Return Code">Pre Condition Return Code</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_BS_CATALOGvscurrency" id="T1R_BS_CATALOGvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1R_BS_CATALOG" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1SEQ_NO" vsds="T1R_BS_CATALOG" vsdf="SEQ_NO" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1CLS_NM" vsds="T1R_BS_CATALOG" vsdf="CLS_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1PKG_NM" vsds="T1R_BS_CATALOG" vsdf="PKG_NM" 
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1R_BS_CATALOG" vsdf="ITM_TYP" vscodetable="CVL_BS_NODE_TYPE">
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1CTLG_NM" vsds="T1R_BS_CATALOG" vsdf="CTLG_NM" 
+>
+        </td>
+      
+        <td>
+          <select name="txtT1PRE_CN_RET_CD" vsds="T1R_BS_CATALOG" vsdf="PRE_CN_RET_CD" size="1" vscodetable="CVL_JOB_RET_CD" ShowCodeInfo="" title="Pre Condition Return Code">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+    <td><ams_map title="Update Actions" name="Update Actions">
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="save" id="T1R_BS_CATALOGSaveAll" name="T1R_BS_CATALOGSaveAll" title="Save" accesskey="5">Save</a>
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="undo" id="T1R_BS_CATALOGUndo" name="T1R_BS_CATALOGUndo" title="Undo" accesskey="6">Undo</a>
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="delete" id="T1R_BS_CATALOGdelete" name="T1R_BS_CATALOGdelete" title="Delete Selected Row" accesskey="7">Delete</a>
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="insert" id="T1R_BS_CATALOGinsert" name="T1R_BS_CATALOGinsert" title="Insert New Row" accesskey="I">Insert</a>
+-->
+<!-- END CUSTOMIZATION -->
+    </ams_map></td>
+      
+      
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="firstpage" name="T1R_BS_CATALOGfirstpage" id="T1R_BS_CATALOGfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="prevpage" name="T1R_BS_CATALOGprevpage" id="T1R_BS_CATALOGprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="nextpage" id="T1R_BS_CATALOGnextpage" name="T1R_BS_CATALOGnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="lastpage" id="T1R_BS_CATALOGlastpage" name="T1R_BS_CATALOGlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+    <!-- BEGIN CUSTOMIZATION -->
+      <td>
+        <a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="20" name="T1R_BS_CATALOGtop" id="T1R_BS_CATALOGtop" title="Move Selected Row to Top">Top</a>
+
+        <a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="21" name="T1R_BS_CATALOGup" id="T1R_BS_CATALOGup" title="Move Selected Row Up">Up</a>
+
+        <a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="22" name="T1R_BS_CATALOGdown" id="T1R_BS_CATALOGdown" title="Move Selected Row Down">Down</a>
+
+        <a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="24" name="T1R_BS_CATALOGbottom" id="T1R_BS_CATALOGbottom" title="Move Selected Row to Bottom">Bottom</a>
+      </td>
+    <!-- END CUSTOMIZATION -->
+    </tr>
+
+  </table>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+<a name="btnT3Edit_Catalog_Entry" href="Reports_Sys_Admin_App" vsaction="pagetransition" id="btnT3Edit_Catalog_Entry" 
+           vsds="T1R_BS_CATALOG"
+ vsnavigation="T3Edit_Catalog_Entry" title="Navigation to Edit Job">Edit Job</a>
+<a name="btnACJL_Page_Add_Child_Node" href="Reports_Sys_Admin_App" vsaction="pagetransition" id="btnACJL_Page_Add_Child_Node" 
+           vsds="T1R_BS_CATALOG"
+ vsnavigation="ACJL_Page_Add_Child_Node" title="Navigation to Add New Job">Add New Job</a>
+
+ <!-- BEGIN CUSTOMIZATION -->
+<!--
+<a name="btnT2Admin_User_Chain_Job_Sch" href="Reports_Sys_Admin_App" vsaction="pagetransition" id="btnT2Admin_User_Chain_Job_Sch" 
+           vsds="T1R_BS_CATALOG"
+ vsnavigation="T2Admin_User_Chain_Job_Sch" title="Navigation to Setup Chain Job">Setup Chain Job</a>
+ -->
+<!-- END CUSTOMIZATION -->
+      </td>
+    </tr>
+  </table>
+  
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_BS_CATALOG', new Array(), new Array() ) ;
+    
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Reports_Sys_Admin_App" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

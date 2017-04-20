@@ -1,0 +1,524 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Statement Cell</title>
+  <!-- BEGIN CUSTOMIZATION -->
+  <script language="JavaScript">
+    <!--
+    function createCellRule(fsOperator)
+    {
+      var lsCellRule = document.getElementById('txtrs01CELL_EXP').value;
+      lsCellRule = lsCellRule + ' ' + fsOperator + ' ';
+
+      document.getElementById('txtrs01CELL_EXP').value = lsCellRule;
+
+    }
+    -->
+  </script>
+<!-- END CUSTOMIZATION -->
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="CAFR" method="post" vsform="true" name="pRefSTMTCELL">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Statement Cell">Statement Cell</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="CAFR" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+  <a name="rs01STMT_CELL_Top"></a>
+  
+  
+  
+  <input type="hidden" name="rs01STMT_CELL_Currency" >
+  <input type="hidden" name="rs01STMT_CELL_Old_Currency" >
+  <table name="tblrs01STMT_CELL" id="tblrs01STMT_CELL" class="advgrid" vsds="rs01STMT_CELL">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs01STMT_CELL" 
+    vsdf="STMT_FY"
+ name="rs01STMT_FYsort" id="rs01STMT_FYsort" title="Sort By Fiscal Year">Fiscal Year</a></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs01STMT_CELL" 
+    vsdf="STMT_CD"
+ name="rs01STMT_CDsort" id="rs01STMT_CDsort" title="Sort By Statement Code">Statement Code</a></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs01STMT_CELL" 
+    vsdf="STMT_NM_UP"
+ name="rs01STMT_NMsort" id="rs01STMT_NMsort" title="Sort By Statement Name">Statement Name</a></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs01STMT_CELL" 
+    vsdf="STMT_ROW"
+ name="rs01STMT_ROWsort" id="rs01STMT_ROWsort" title="Sort By Statement Row">Statement Row</a></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs01STMT_CELL" 
+    vsdf="ROW_TITLE_UP"
+ name="rs01ROW_TITLEsort" id="rs01ROW_TITLEsort" title="Sort By Row Title">Row Title</a></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs01STMT_CELL" 
+    vsdf="STMT_COL"
+ name="rs01STMT_COLsort" id="rs01STMT_COLsort" title="Sort By Statement Column">Statement Column</a></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs01STMT_CELL" 
+    vsdf="COL_TITLE_UP"
+ name="rs01COL_TITLEsort" id="rs01COL_TITLEsort" title="Sort By Column Title">Column Title</a></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs01STMT_CELL" 
+    vsdf="STMT_CELL"
+ name="rs01STMT_CELLsort" id="rs01STMT_CELLsort" title="Sort By Statement Cell">Statement Cell</a></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr class="advgridoddrow" onclick="UTILS_SelectGridRow(this);return true;" ams_altclassname="advgridevenrow" vsprototyperow="true">
+      <td class="advgridrowselect">
+        <input type="image" name="rs01STMT_CELLvscurrency" id="rs01STMT_CELLvscurrency" title="Select Row" alt="Select Row" src="../AMSImages/ADVRowSel.gif"
+ vsds="rs01STMT_CELL" vsaction="Currency">
+      </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtrs01STMT_FY" vsds="rs01STMT_CELL" vsdf="STMT_FY" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtrs01STMT_CD" vsds="rs01STMT_CELL" vsdf="STMT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtrs01STMT_NM" vsds="rs01STMT_CELL" vsdf="STMT_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtrs01STMT_ROW" vsds="rs01STMT_CELL" vsdf="STMT_ROW" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtrs01ROW_TITLE" vsds="rs01STMT_CELL" vsdf="ROW_TITLE" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtrs01STMT_COL" vsds="rs01STMT_CELL" vsdf="STMT_COL" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtrs01COL_TITLE" vsds="rs01STMT_CELL" vsdf="COL_TITLE" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtrs01STMT_CELL" vsds="rs01STMT_CELL" vsdf="STMT_CELL" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="rs01STMT_CELLGridNav" id="rs01STMT_CELLGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="CAFR" vsds="rs01STMT_CELL" vsaction="firstpage" name="rs01STMT_CELLfirstpage" id="rs01STMT_CELLfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="CAFR" vsds="rs01STMT_CELL" vsaction="prevpage" name="rs01STMT_CELLprevpage" id="rs01STMT_CELLprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="CAFR" vsds="rs01STMT_CELL" vsaction="nextpage" id="rs01STMT_CELLnextpage" name="rs01STMT_CELLnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="CAFR" vsds="rs01STMT_CELL" vsaction="lastpage" id="rs01STMT_CELLlastpage" name="rs01STMT_CELLlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+  
+  
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+   
+         <a href="CAFR" vsds="rs01STMT_CELL" vsaction="saveall" name="rs01STMT_CELLSaveAll" id="rs01STMT_CELLSaveAll" title="Save All" accesskey="5">Save</a>
+   
+		  <a href="CAFR" vsds="rs01STMT_CELL" vsaction="undoall" name="rs01STMT_CELLUndoAll" id="rs01STMT_CELLUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+		  <a href="CAFR" vsds="rs01STMT_CELL" vsaction="delete" id="Indexrs01STMT_CELLdelete" name="rs01STMT_CELLdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="CAFR" vsds="rs01STMT_CELL" vsaction="insert" id="rs01STMT_CELLinsert" name="rs01STMT_CELLinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="CAFR" vsds="rs01STMT_CELL" vsaction="11" name="rs01STMT_CELLCopyRecord" id="rs01STMT_CELLCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="CAFR" vsds="rs01STMT_CELL" vsaction="12" name="rs01STMT_CELLPasteLine" id="rs01STMT_CELLPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+      
+   
+      <td><vstext vsds=" " name="rs01STMT_CELLSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+        
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtrs01STMT_FY" title="Fiscal Year (Required)">Fiscal Year :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtrs01STMT_FY" id="txtrs01STMT_FY" 
+               size="10"
+ vsds="rs01STMT_CELL" vsdf="STMT_FY" 
+               ams_max_len="10"
+ ShowCodeInfo="" value="STMT_FY"title="Fiscal Year (Required)">
+        </td>
+      </tr>
+    
+    
+        
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtrs01STMT_CD" title="Statement Code (Required)">Statement Code :</label>
+      </td>
+   
+<!-- BEGIN CUSTOMIZATION -->   	
+        <td class="val required">
+          <input type="text" name="txtrs01STMT_CD" id="txtrs01STMT_CD" 
+      ams_max_len="10"
+ value="STMT_CD" 
+            size="10"
+ vsds="rs01STMT_CELL" vsdf="STMT_CD" ShowCodeInfo="" title="Statement Code (Required)">
+          
+      <input type="image" vspick="pk01STMT_DEF" vspicktext="txtrs01STMT_CD" vsds="rs01STMT_CELL" vsaction="pick" name="pckrs01STMT_CD" id="pckrs01STMT_CD" title="Select Statement Code" alt="Select Statement Code" src="../AMSImages/ADVPick.gif">
+        </td>
+<!-- END CUSTOMIZATION -->   	
+      </tr>
+    
+    
+        <tr>
+        
+      
+      <td class="label"><label for="txtrs01STMT_NM" title="Statement Name">Statement Name :</label></td>
+   
+        <td class="val">
+
+
+
+          <input type="text" name="txtrs01STMT_NM" id="txtrs01STMT_NM" size="100" vsds="rs01STMT_CELL" vsdf="STMT_NM" ams_max_len="100" vsformat="" ShowCodeInfo="" value="STMT_NM" title="Statement Name" >
+
+
+
+        </td>
+        </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtrs01STMT_ROW" title="Statement Row (Required)">Statement Row :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtrs01STMT_ROW" id="txtrs01STMT_ROW" 
+      ams_max_len="6"
+ value="STMT_ROW" 
+         size="6"
+ vsds="rs01STMT_CELL" vsdf="STMT_ROW" ShowCodeInfo="" title="Statement Row (Required)">
+          
+      <input type="image" vspick="pk03STMT_ROW" vspicktext="txtrs01STMT_ROW" vsds="rs01STMT_CELL" vsaction="pick" name="pckrs01STMT_ROW" id="pckrs01STMT_ROW" title="Select Statement Row" alt="Select Statement Row" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+        <tr>
+        
+      
+      <td class="label"><label for="txtrs01ROW_TITLE" title="Row Title">Row Title :</label></td>
+   
+        <td class="val">
+
+
+
+          <input type="text" name="txtrs01ROW_TITLE" id="txtrs01ROW_TITLE" size="100" vsds="rs01STMT_CELL" vsdf="ROW_TITLE" ams_max_len="100" vsformat="" ShowCodeInfo="" value="ROW_TITLE" title="Row Title" >
+
+
+
+        </td>
+        </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtrs01STMT_COL" title="Statement Column (Required)">Statement Column :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtrs01STMT_COL" id="txtrs01STMT_COL" 
+      ams_max_len="6"
+ value="STMT_COL" 
+         size="6"
+ vsds="rs01STMT_CELL" vsdf="STMT_COL" ShowCodeInfo="" title="Statement Column (Required)">
+          
+      <input type="image" vspick="pk02STMT_COLUMN" vspicktext="txtrs01STMT_COL" vsds="rs01STMT_CELL" vsaction="pick" name="pckrs01STMT_COL" id="pckrs01STMT_COL" title="Select Statement Column" alt="Select Statement Column" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+        <tr>
+        
+      
+      <td class="label"><label for="txtrs01COL_TITLE" title="Column Title">Column Title :</label></td>
+   
+        <td class="val">
+
+
+
+          <input type="text" name="txtrs01COL_TITLE" id="txtrs01COL_TITLE" size="100" vsds="rs01STMT_CELL" vsdf="COL_TITLE" ams_max_len="100" vsformat="" ShowCodeInfo="" value="COL_TITLE" title="Column Title" >
+
+
+
+        </td>
+        </tr>
+    
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01STMT_CELL" title="Statement Cell">Statement Cell :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtrs01STMT_CELL" id="txtrs01STMT_CELL" 
+            size="15"
+ vsds="rs01STMT_CELL" vsdf="STMT_CELL" 
+ value="STMT_CELL" ams_readonly ShowCodeInfo="" title="Statement Cell">
+        </td>
+      </tr>
+    
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtrs01CELL_EXP" title="Cell Expression">Cell Expression :</label></td>
+
+<!-- BEGIN CUSTOMIZATION -->   	   
+        <td class="val memo">
+          <textarea style="float:left;" cols="51" rows="5" name="txtrs01CELL_EXP" id="txtrs01CELL_EXP" vsds="rs01STMT_CELL" vsdf="CELL_EXP" vsformat="" title="Cell Expression"></textarea>		
+
+          <div style="margin-top:22px">
+             <input style="padding-left:5px;" type="image" vspick="pk04STMT_RULE" vspicktext="txtrs01STMT_RULE" vsds="rs01STMT_CELL" vsaction="pick" name="pckrs01STMT_RULE" id="pckrs01STMT_RULE" title="Select Statement Rule" alt="Select Statement Rule" src="../AMSImages/ADVPick.gif">
+             <span>Select Rule</span>
+             <br>
+             <input style="padding-top:15px;padding-left:5px;" type="image" vspick="pk05STMT_CELL" vspicktext="txtrs01CELL_1" vsds="rs01STMT_CELL" vsaction="pick" name="pckrs01CELL_1" id="pckrs01CELL_1" title="Select Statement Cell" alt="Select Statement Cell" src="../AMSImages/ADVPick.gif">
+             <span> Select Cell</span>
+          </div>
+		</td>  
+		
+        </tr>
+      
+
+    <tr>
+		<td>&nbsp;</td>
+		<td>
+			<input type="button" name="openparan" value="(" onclick="createCellRule('(')" ></input>
+			<input type="button" name="closeparan" value=")" onclick="createCellRule(')')" ></input>
+			<input type="button" name="plus" value="+" onclick="createCellRule('+')" ></input>
+			<input type="button" name="minus" value="-" onclick="createCellRule('-')" ></input>
+			<input type="button" name="asterisk" value="*" onclick="createCellRule('*')" ></input>
+			<input type="button" name="slash" value="/" onclick="createCellRule('/')" ></input>
+			<input style="margin-left:165px;*margin-left:119px;" type="submit" vsaction="rs01STMT_CELL" name="rs01STMT_CELL_Validate" value="Validate" id="rs01STMT_CELL_Validate" title="Validate"></input>
+        </td>
+<!-- END CUSTOMIZATION -->      
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtrs01ROW_TITLE_UP" title="Row Title">Row Title :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtrs01ROW_TITLE_UP" id="txtrs01ROW_TITLE_UP" 
+               size="20"
+ vsds="rs01STMT_CELL" vsdf="ROW_TITLE_UP" 
+         ams_max_len="100"
+ ShowCodeInfo="" title="Row Title" value="ROW_TITLE_UP"></div>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtrs01COL_TITLE_UP" title="Column Title">Column Title :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtrs01COL_TITLE_UP" id="txtrs01COL_TITLE_UP" 
+               size="20"
+ vsds="rs01STMT_CELL" vsdf="COL_TITLE_UP" 
+         ams_max_len="100"
+ ShowCodeInfo="" title="Column Title" value="COL_TITLE_UP"></div>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtrs01STMT_NM_UP" title="Statement Name">Statement Name :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtrs01STMT_NM_UP" id="txtrs01STMT_NM_UP" 
+               size="20"
+ vsds="rs01STMT_CELL" vsdf="STMT_NM_UP" 
+         ams_max_len="100"
+ ShowCodeInfo="" title="Statement Name" value="STMT_NM_UP"></div>
+        </td>
+      </tr>
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+   
+      <a name="btnT1pRefSTMTRULE" href="CAFR" id="btnT1pRefSTMTRULE" title="Navigation to Create\ View Statement Rules & Conditions" vsaction="pagetransition" vsds="" vsnavigation="T1pRefSTMTRULE">Create\ View Statement Rules & Conditions</a>
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'rs01STMT_CELL', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'STMT_FY' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Fiscal Year' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'STMT_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Statement Code' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'STMT_NM' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Statement Name' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'STMT_ROW' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Statement Row' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'ROW_TITLE' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Row Title' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'STMT_COL' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Statement Column' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'COL_TITLE' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Column Title' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'STMT_CELL' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Statement Cell' ;
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="CAFR" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

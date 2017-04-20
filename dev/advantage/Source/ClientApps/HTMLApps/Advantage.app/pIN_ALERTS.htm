@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Alert Messages</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="pIN_ALERTS">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Alert Messages">Alert Messages</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="Advantage" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+
+  <INPUT type="hidden" name="T1IN_ALERTSvscurrency" vsds="T1IN_ALERTS" vscurrency="true">
+  
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+   
+      <a href="Advantage" vsds="T1IN_ALERTS" vsaction="saveall" name="T1IN_ALERTSSaveAll" id="T1IN_ALERTSSaveAll" title="Save All" accesskey="5">Save</a>
+   
+      <a href="Advantage" vsds="T1IN_ALERTS" vsaction="undoall" name="T1IN_ALERTSUndoAll" id="T1IN_ALERTSUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+      <a href="Advantage" vsds="T1IN_ALERTS" vsaction="delete" id="IndexT1IN_ALERTSdelete" name="T1IN_ALERTSdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="Advantage" vsds="T1IN_ALERTS" vsaction="insert" id="T1IN_ALERTSinsert" name="T1IN_ALERTSinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="Advantage" vsds="T1IN_ALERTS" vsaction="11" name="T1IN_ALERTSCopyRecord" id="T1IN_ALERTSCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="Advantage" vsds="T1IN_ALERTS" vsaction="12" name="T1IN_ALERTSPasteLine" id="T1IN_ALERTSPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+      
+   
+      <td><vstext vsds=" " name="T1IN_ALERTSSearchColList" vspreservetag="true"></td>
+      
+<td><div name="T1IN_ALERTSGridNav" id="T1IN_ALERTSGridNav" vsds=""><ams_map title="Record Navigation" name="Record Navigation">
+      <a href="Advantage" vsds="T1IN_ALERTS" vsaction="first" name="T1IN_ALERTSfirst" id="T1IN_ALERTSfirst" title="First Record" accesskey="0">First</a>
+ 
+   
+      <a href="Advantage" vsds="T1IN_ALERTS" vsaction="prev" name="T1IN_ALERTSprev" id="T1IN_ALERTSprev" title="Previous Record" accesskey="1">Prev</a>
+ 
+   
+      <a href="Advantage" vsds="T1IN_ALERTS" vsaction="next" name="T1IN_ALERTSnext" id="T1IN_ALERTSnext" title="Next Record" accesskey="2">Next</a>
+ 
+   
+      <a href="Advantage" vsds="T1IN_ALERTS" vsaction="last" name="T1IN_ALERTSlast" id="T1IN_ALERTSlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1USER_ID" title="User ID (Required)">User ID :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1USER_ID" id="txtT1USER_ID" 
+               size="20"
+ vsds="T1IN_ALERTS" vsdf="USER_ID" 
+         ams_max_len="16"
+ ShowCodeInfo="" value="USER_ID"title="User ID (Required)">
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1ALRT_DT" title="Date">Date :</label></td>
+   
+        <td class="val">
+          <vstext name="disptxtT1ALRT_DT" vsds="T1IN_ALERTS" vsdf="ALRT_DT" 
+      vsformat="MM-dd-yyyy HH:mm"
+                                 size="15"
+>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1ALRT_MSG" title="Message (Required)">Message :</label>
+      </td>
+   
+        <td class="val memo required">
+          <textarea cols="35" rows="4" name="txtT1ALRT_MSG" id="txtT1ALRT_MSG" vsds="T1IN_ALERTS" vsdf="ALRT_MSG" 
+ title="Message (Required)"></textarea>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtT1USER_ID_UP" title="User ID">User ID :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1USER_ID_UP" id="txtT1USER_ID_UP" 
+               size="20"
+ vsds="T1IN_ALERTS" vsdf="USER_ID_UP" 
+         ams_max_len="16"
+ ShowCodeInfo="" title="User ID" value="USER_ID_UP"></div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1ALRT_PRTY" title="Priority (Required)">Priority :</label></td>
+        <td class="val required">
+          <select name="txtT1ALRT_PRTY" id="txtT1ALRT_PRTY" vsds="T1IN_ALERTS" vsdf="ALRT_PRTY" size="1" vscodetable="CVL_ALRT_PRTY" ShowCodeInfo="" title="Priority (Required)">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1EFBGN_DT" title="Start Date (Required)">Start Date :</label></td>
+        <td class="val required">
+          <input type="text" id="txtT1EFBGN_DT" name="txtT1EFBGN_DT" size="11" vsds="T1IN_ALERTS" vsdf="EFBGN_DT" 
+    vsformat="AMS_DATE_FOUR_YEAR_PIVOT"
+ value="EFBGN_DT" title="Start Date (Required)">
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.pIN_ALERTS.txtT1EFBGN_DT.value, 'txtT1EFBGN_DT', document.pIN_ALERTS.txtT1EFBGN_DT);event.returnValue=false;return false;" title="Select Start Date: Will open in a new window"><img src="../AMSImages/ADVCalendar.gif"
+ alt="Select Start Date: Will open in a new window" title="Select Start Date: Will open in a new window"></a>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1EFEND_DT" title="End Date (Required)">End Date :</label></td>
+        <td class="val required">
+          <input type="text" id="txtT1EFEND_DT" name="txtT1EFEND_DT" size="11" vsds="T1IN_ALERTS" vsdf="EFEND_DT" 
+    vsformat="AMS_DATE_FOUR_YEAR_PIVOT"
+ value="EFEND_DT" title="End Date (Required)">
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.pIN_ALERTS.txtT1EFEND_DT.value, 'txtT1EFEND_DT', document.pIN_ALERTS.txtT1EFEND_DT);event.returnValue=false;return false;" title="Select End Date: Will open in a new window"><img src="../AMSImages/ADVCalendar.gif"
+ alt="Select End Date: Will open in a new window" title="Select End Date: Will open in a new window"></a>
+        </td>
+      </tr>
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

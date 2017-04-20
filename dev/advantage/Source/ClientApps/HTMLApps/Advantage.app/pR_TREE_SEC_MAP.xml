@@ -1,0 +1,376 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="AMSRefTableGridDisplay"
+	PositionTop="531"
+	PositionLeft="531"
+	PositionWidth="150"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSRefTableGridDisplayPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="1419247496"
+	>
+	<FormCaption><![CDATA[Security role to Tree trunk mapping]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="true"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+		<Property
+			Name="SSCaptionImageFileNm"
+			Value=""
+		/>
+	</ArchetypeExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="R_TREE_SEC_MAP"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="True"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGenericGridDisplay"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="SEC_ROLE_ID" />
+				<RSDefaultAttribute ID="2" Name="TREE_TRUNK_UNID" />
+				<RSDefaultAttribute ID="3" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="4" Name="TBL_LAST_DT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="SEC_ROLE_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="TREE_TRUNK_UNID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="SEC_ROLE_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="TREE_TRUNK_UNID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Adjacent_Fields"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value=""
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="SummaryCaption"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+		<PickObject
+			RSID="2"
+			Prefix="T2"
+			BusinessObject="IN_NODE"
+			Relationship="IN_NODE(IN_NODE)-R_TREE_SEC_MAP(R_TREE_SEC_MAP)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="True"
+			ClassName="Pick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [TREE_TRUNK_UNID] = [?TREE_TRUNK_UNID]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="NODE_UNID" />
+					<RSDefaultAttribute ID="2" Name="PARENT_UNID" />
+					<RSDefaultAttribute ID="3" Name="NODE_NAME" />
+					<RSDefaultAttribute ID="4" Name="DEST_PG" />
+					<RSDefaultAttribute ID="5" Name="DEST_FRAMESET" />
+					<RSDefaultAttribute ID="6" Name="DEST_FRAME" />
+					<RSDefaultAttribute ID="7" Name="TARGET_FRAME" />
+					<RSDefaultAttribute ID="8" Name="NODE_TYPE" />
+					<RSDefaultAttribute ID="9" Name="NODE_SEQ_NO" />
+					<RSDefaultAttribute ID="10" Name="APPL_NM" />
+					<RSDefaultAttribute ID="11" Name="MODE_IND" />
+					<RSDefaultAttribute ID="12" Name="WHERE_CLAUSE" />
+					<RSDefaultAttribute ID="13" Name="ORDER_BY" />
+					<RSDefaultAttribute ID="14" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="15" Name="GOVT_BRN_CD" />
+					<RSDefaultAttribute ID="16" Name="CAB_CD" />
+					<RSDefaultAttribute ID="17" Name="DEPT_CD" />
+					<RSDefaultAttribute ID="18" Name="DIV_CD" />
+					<RSDefaultAttribute ID="19" Name="GP_CD" />
+					<RSDefaultAttribute ID="20" Name="SECT_CD" />
+					<RSDefaultAttribute ID="21" Name="DSTC_CD" />
+					<RSDefaultAttribute ID="22" Name="BUR_CD" />
+					<RSDefaultAttribute ID="23" Name="UNIT_CD" />
+					<RSDefaultAttribute ID="24" Name="NODE_FLDR" />
+					<RSDefaultAttribute ID="25" Name="TREE_TRUNK_UNID" />
+					<RSDefaultAttribute ID="26" Name="PAGE_CD" />
+					<RSDefaultAttribute ID="27" Name="PAGE_TYP_CD" />
+					<RSDefaultAttribute ID="28" Name="APPL_ID" />
+					<RSDefaultAttribute ID="29" Name="URL" />
+					<RSDefaultAttribute ID="30" Name="URL_TARGET" />
+					<RSDefaultAttribute ID="31" Name="NODE_NAME_UP" />
+					<RSDefaultAttribute ID="32" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="33" Name="INIT_SEL_FL" />
+				</DefaultAttributes>
+				<GridAttributes>
+					<RSAttribute Name="NODE_UNID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PARENT_UNID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="NODE_NAME" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DEST_PG" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DEST_FRAMESET" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DEST_FRAME" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="TARGET_FRAME" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="NODE_TYPE" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="NODE_SEQ_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="MODE_IND" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="WHERE_CLAUSE" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ORDER_BY" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CAB_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DIV_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SECT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSTC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUR_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="NODE_FLDR" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TREE_TRUNK_UNID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PAGE_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="PAGE_TYP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="URL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="URL_TARGET" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="NODE_NAME_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="INIT_SEL_FL" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="3"
+			Prefix="T3"
+			BusinessObject="R_SC_SEC_ROLE"
+			Relationship="R_SC_SEC_ROLE(R_SC_SEC_ROLE)-R_TREE_SEC_MAP(R_TREE_SEC_MAP)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="True"
+			ClassName="Pick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SEC_ROLE_ID] = [?SEC_ROLE_ID]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SEC_ROLE_ID" />
+					<RSDefaultAttribute ID="2" Name="SEC_ROLE_DSCR" />
+					<RSDefaultAttribute ID="3" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="4" Name="SEC_ROLE_DSCR_UP" />
+					<RSDefaultAttribute ID="5" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="7" Name="OV_ERR_CD" />
+					<RSDefaultAttribute ID="8" Name="FGN_ORG_RSTR" />
+					<RSDefaultAttribute ID="9" Name="INTG_SEC_ROLE_FL" />
+				</DefaultAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SEC_ROLE_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SEC_ROLE_DSCR" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SEC_ROLE_DSCR_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="OV_ERR_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FGN_ORG_RSTR" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="INTG_SEC_ROLE_FL" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+	</RecordSource>
+</Form>

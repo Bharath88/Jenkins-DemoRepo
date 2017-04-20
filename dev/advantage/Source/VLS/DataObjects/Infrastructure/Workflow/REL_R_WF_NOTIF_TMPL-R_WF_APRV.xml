@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="RWfAprvWarnEsclTmplId1ToRWfNotifTmpl"
+		ChildRoleName="RWfNotifTmplToRWfAprvWarnEsclTmplId1"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ALT_ID"
+				ChildAttribute="WARN_ESCL_TMPL_ID_1"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_TMPL]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_NOTIF_TMPL/ALT_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/WARN_ESCL_TMPL_ID_1] for Approval Level 1,v:Notification Templates%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvWarnEsclTmplId2ToRWfNotifTmpl"
+		ChildRoleName="RWfNotifTmplToRWfAprvWarnEsclTmplId2"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ALT_ID"
+				ChildAttribute="WARN_ESCL_TMPL_ID_2"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_TMPL]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_NOTIF_TMPL/ALT_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/WARN_ESCL_TMPL_ID_2] for Approval Level 2,v:Notification Templates%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvWarnEsclTmplId3ToRWfNotifTmpl"
+		ChildRoleName="RWfNotifTmplToRWfAprvWarnEsclTmplId3"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ALT_ID"
+				ChildAttribute="WARN_ESCL_TMPL_ID_3"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_TMPL]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_NOTIF_TMPL/ALT_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/WARN_ESCL_TMPL_ID_3] for Approval Level 3,v:Notification Templates%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvWarnEsclTmplId4ToRWfNotifTmpl"
+		ChildRoleName="RWfNotifTmplToRWfAprvWarnEsclTmplId4"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ALT_ID"
+				ChildAttribute="WARN_ESCL_TMPL_ID_4"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_TMPL]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_NOTIF_TMPL/ALT_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/WARN_ESCL_TMPL_ID_4] for Approval Level 4,v:Notification Templates%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvWarnEsclTmplId5ToRWfNotifTmpl"
+		ChildRoleName="RWfNotifTmplToRWfAprvWarnEsclTmplId5"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ALT_ID"
+				ChildAttribute="WARN_ESCL_TMPL_ID_5"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_TMPL]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_NOTIF_TMPL/ALT_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/WARN_ESCL_TMPL_ID_5] for Approval Level 5,v:Notification Templates%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvWarnEsclTmplId6ToRWfNotifTmpl"
+		ChildRoleName="RWfNotifTmplToRWfAprvWarnEsclTmplId6"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ALT_ID"
+				ChildAttribute="WARN_ESCL_TMPL_ID_6"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_TMPL]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_NOTIF_TMPL/ALT_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/WARN_ESCL_TMPL_ID_6] for Approval Level 6,v:Notification Templates%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvWarnEsclTmplId7ToRWfNotifTmpl"
+		ChildRoleName="RWfNotifTmplToRWfAprvWarnEsclTmplId7"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ALT_ID"
+				ChildAttribute="WARN_ESCL_TMPL_ID_7"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_TMPL]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_NOTIF_TMPL/ALT_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/WARN_ESCL_TMPL_ID_7] for Approval Level 7,v:Notification Templates%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvWarnEsclTmplId8ToRWfNotifTmpl"
+		ChildRoleName="RWfNotifTmplToRWfAprvWarnEsclTmplId8"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ALT_ID"
+				ChildAttribute="WARN_ESCL_TMPL_ID_8"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_TMPL]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_NOTIF_TMPL/ALT_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/WARN_ESCL_TMPL_ID_8] for Approval Level 8,v:Notification Templates%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvWarnEsclTmplId9ToRWfNotifTmpl"
+		ChildRoleName="RWfNotifTmplToRWfAprvWarnEsclTmplId9"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ALT_ID"
+				ChildAttribute="WARN_ESCL_TMPL_ID_9"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_TMPL]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_NOTIF_TMPL/ALT_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/WARN_ESCL_TMPL_ID_9] for Approval Level 9,v:Notification Templates%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvWarnEsclTmplId10ToRWfNotifTmpl"
+		ChildRoleName="RWfNotifTmplToRWfAprvWarnEsclTmplId10"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ALT_ID"
+				ChildAttribute="WARN_ESCL_TMPL_ID_10"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_TMPL]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_NOTIF_TMPL/ALT_ID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/WARN_ESCL_TMPL_ID_10] for Approval Level 10,v:Notification Templates%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0398001864.MGupta.0000"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="True"
+	ChildMostDataObject="V_BS_AGENT"
+	DistinctRowsOnly="True"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[Select V_BS_AGENT.AGNT_ID As AGNT_ID, V_BS_AGENT.USID As USID, V_BS_AGENT.JOB_NM As JOB_NM, V_BS_AGENT.PNT_CTLG_ID As CTLG_ID, R_BS_CATALOG.CTLG_NM As CTLG_NM, V_BS_AGENT.RUN_STRT_TS As RUN_STRT_TS, V_BS_AGENT.RUN_END_TS As RUN_END_TS, V_BS_AGENT.RUN_STA As RUN_STA, V_BS_AGENT.USID_UP As USID_UP, V_BS_AGENT.BASE_TMPL_PATH As BASE_TMPL_PATH, V_BS_AGENT.ITM_TYP As ITM_TYP, V_BS_AGENT.ID As ID, V_BS_AGENT.RET_CD As RET_CD
+ from V_BS_AGENT V_BS_AGENT, R_BS_CATALOG R_BS_CATALOG
+ where R_BS_CATALOG.CTLG_ID=V_BS_AGENT.PNT_CTLG_ID
+ Order By V_BS_AGENT.AGNT_ID Desc 
+]]></RuntimeSql>
+	<Where><![CDATA[]]></Where>
+	<OrderBy>
+	<OrderByAttribute
+		Name="V_BS_AGENT.AGNT_ID"
+		Direction="Descending"
+	/>
+	</OrderBy>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="V_BS_AGENT"
+			Alias="V_BS_AGENT"
+		/>
+
+		<DataObject
+			DataObjectName="R_BS_CATALOG"
+			Alias="R_BS_CATALOG"
+		/>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="AGNT_ID"
+			Alias="AGNT_ID"
+			AggregationType="None"
+			SourceDataObject="V_BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="USID"
+			Alias="USID"
+			AggregationType="None"
+			SourceDataObject="V_BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="JOB_NM"
+			Alias="JOB_NM"
+			AggregationType="None"
+			SourceDataObject="V_BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="PNT_CTLG_ID"
+			Alias="CTLG_ID"
+			AggregationType="None"
+			SourceDataObject="V_BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="CTLG_NM"
+			Alias="CTLG_NM"
+			AggregationType="None"
+			SourceDataObject="R_BS_CATALOG"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="RUN_STRT_TS"
+			Alias="RUN_STRT_TS"
+			AggregationType="None"
+			SourceDataObject="V_BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="RUN_END_TS"
+			Alias="RUN_END_TS"
+			AggregationType="None"
+			SourceDataObject="V_BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="RUN_STA"
+			Alias="RUN_STA"
+			AggregationType="None"
+			SourceDataObject="V_BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="USID_UP"
+			Alias="USID_UP"
+			AggregationType="None"
+			SourceDataObject="V_BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="BASE_TMPL_PATH"
+			Alias="BASE_TMPL_PATH"
+			AggregationType="None"
+			SourceDataObject="V_BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ITM_TYP"
+			Alias="ITM_TYP"
+			AggregationType="None"
+			SourceDataObject="V_BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ID"
+			Alias="ID"
+			AggregationType="None"
+			SourceDataObject="V_BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="RET_CD"
+			Alias="RET_CD"
+			AggregationType="None"
+			SourceDataObject="V_BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="APPL_ID"
+			Alias="APPL_ID"
+			AggregationType="None"
+			SourceDataObject="V_BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="RUN_DT_TM"
+			Alias="RUN_DT_TM"
+			AggregationType="None"
+			SourceDataObject="V_BS_AGENT"
+			Persistent="True"
+			>
+			<Caption><![CDATA[Scheduled Date/Time]]></Caption>
+		</Attribute>
+
+		<Attribute
+			Name="APPL_SRV_NM"
+			Alias="APPL_SRV_NM"
+			AggregationType="None"
+			SourceDataObject="V_BS_AGENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="CHK_PT"
+			Alias="CHK_PT"
+			AggregationType="None"
+			SourceDataObject="V_BS_AGENT"
+			Persistent="True"
+		/>
+
+	</Attributes>
+	<Joins
+		LeftDataObject="R_BS_CATALOG"
+		RightDataObject="V_BS_AGENT"
+		JoinType="Equal"
+		>
+		<ColumnSet
+			LeftAttribute="R_BS_CATALOG.CTLG_ID"
+			RightAttribute="V_BS_AGENT.PNT_CTLG_ID"
+		/>
+	</Joins>
+
+	<RelsToParentDataObjects>
+		<RelToParentDO
+			RelToParentDO="TargetVLS(IN_APPSRV_LST)-JobsForServer_1(V_BS_AGENT)"
+		>
+			<Aliases>
+				<Alias
+					Name="V_BS_AGENT"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="SEQ_NO"
+							ChildAttribute="APPL_SRV_NM"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+		<RelToParentDO
+			RelToParentDO="R_BS_CATALOG(R_BS_CATALOG)-V_BS_AGENTs1(V_BS_AGENT)"
+		>
+			<Aliases>
+				<Alias
+					Name="V_BS_AGENT"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="CTLG_ID"
+							ChildAttribute="CTLG_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+	</RelsToParentDataObjects>
+
+	<RelsToChildDataObjects>
+		<RelToChildDO
+			RelToChildDO="V_BS_AGENT(V_BS_AGENT)-V_BS_AGENTs(V_BS_AGENT)"
+		>
+			<Aliases>
+				<Alias
+					Name="V_BS_AGENT"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="AGNT_ID"
+							ChildAttribute="PRE_CN"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+		<RelToChildDO
+			RelToChildDO="V_BS_AGENT(V_BS_AGENT)-V_BS_AGENT_LOG(V_BS_AGENT_LOG)"
+		>
+			<Aliases>
+				<Alias
+					Name="V_BS_AGENT"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="AGNT_ID"
+							ChildAttribute="AGNT_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+	</RelsToChildDataObjects>
+
+	<PickSupportedRels>
+		<PickSupportedRel
+			PickSupportedRel="V_BS_AGENT(V_BS_AGENT)-V_BS_AGENTs(V_BS_AGENT)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="V_BS_AGENT(V_BS_AGENT)-V_BS_AGENT_LOG(V_BS_AGENT_LOG)"
+		/>
+	</PickSupportedRels >
+
+</QueryObject>

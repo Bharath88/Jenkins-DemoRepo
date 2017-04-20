@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="Process"
+		ChildRoleName="ResourceLink"
+		IsEnforce="True"
+		OnParentDelete="DeleteChildren"
+		CountReplicates="2"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="PROC_ID"
+				ChildAttribute="PROC_ID"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_PROC]]></AscendCaption>
+		<DescendCaption><![CDATA[R_RSRC_PROC_LNK(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

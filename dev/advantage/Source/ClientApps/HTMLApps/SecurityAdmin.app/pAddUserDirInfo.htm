@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Add User Directory Information</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="SecurityAdmin" method="post" vsform="true" name="pAddUserDirInfo">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Add User Directory Information">Add User Directory Information</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+  <INPUT type="hidden" name="T1R_SC_USER_DIR_INFOvscurrency" vsds="T1R_SC_USER_DIR_INFO" vscurrency="true">
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="SecurityAdmin" vsds="T1R_SC_USER_DIR_INFO" vsaction="saveall" name="T1R_SC_USER_DIR_INFOSaveAll" id="T1R_SC_USER_DIR_INFOSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="SecurityAdmin" vsds="T1R_SC_USER_DIR_INFO" vsaction="undoall" name="T1R_SC_USER_DIR_INFOUndoAll" id="T1R_SC_USER_DIR_INFOUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="SecurityAdmin" vsds="T1R_SC_USER_DIR_INFO" vsaction="insert" id="T1R_SC_USER_DIR_INFOinsert" name="T1R_SC_USER_DIR_INFOinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="SecurityAdmin" vsds="T1R_SC_USER_DIR_INFO" vsaction="11" name="T1R_SC_USER_DIR_INFOCopyRecord" id="T1R_SC_USER_DIR_INFOCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_USER_DIR_INFO" vsaction="12" name="T1R_SC_USER_DIR_INFOPasteLine" id="T1R_SC_USER_DIR_INFOPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="SecurityAdmin" vsds="T1R_SC_USER_DIR_INFO" vsaction="first" name="T1R_SC_USER_DIR_INFOfirst" id="T1R_SC_USER_DIR_INFOfirst" title="First Record" accesskey="0">First</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_USER_DIR_INFO" vsaction="prev" name="T1R_SC_USER_DIR_INFOprev" id="T1R_SC_USER_DIR_INFOprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_USER_DIR_INFO" vsaction="next" name="T1R_SC_USER_DIR_INFOnext" id="T1R_SC_USER_DIR_INFOnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_USER_DIR_INFO" vsaction="last" name="T1R_SC_USER_DIR_INFOlast" id="T1R_SC_USER_DIR_INFOlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+-->
+<!-- END CUSTOMIZATION -->
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1USER_ID" title="User ID (Required)">User ID :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1USER_ID" id="txtT1USER_ID"
+               size="20"
+ vsds="T1R_SC_USER_DIR_INFO" vsdf="USER_ID"
+         ams_max_len="16"
+ ShowCodeInfo="" value="USER_ID"title="User ID (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1LAST_NM_TXT" title="Last Name (Required)">Last Name :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1LAST_NM_TXT" id="txtT1LAST_NM_TXT" 
+               size="20"
+ vsds="T1R_SC_USER_DIR_INFO" vsdf="LAST_NM_TXT" 
+         ams_max_len="30"
+ ShowCodeInfo="" value="LAST_NM_TXT"title="Last Name (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1FRST_NM_TXT" title="First Name (Required)">First Name :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1FRST_NM_TXT" id="txtT1FRST_NM_TXT" 
+               size="20"
+ vsds="T1R_SC_USER_DIR_INFO" vsdf="FRST_NM_TXT" 
+         ams_max_len="30"
+ ShowCodeInfo="" value="FRST_NM_TXT"title="First Name (Required)">
+        </td>
+      </tr>
+
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1LCLTY_TXT" title="Locality">Locality :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1LCLTY_TXT" id="txtT1LCLTY_TXT"
+               size="20"
+ vsds="T1R_SC_USER_DIR_INFO" vsdf="LCLTY_TXT"
+         ams_max_len="30"
+ ShowCodeInfo="" value="LCLTY_TXT" title="Locality">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1ROOM_NO_TXT" title="Room Number">Room Number :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1ROOM_NO_TXT" id="txtT1ROOM_NO_TXT"
+               size="20"
+ vsds="T1R_SC_USER_DIR_INFO" vsdf="ROOM_NO_TXT"
+         ams_max_len="20"
+ ShowCodeInfo="" value="ROOM_NO_TXT" title="Room Number">
+        </td>
+      </tr>
+
+      <tr>
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1EMAIL_AD_TXT" title="Email Address (Required)">Email Address :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1EMAIL_AD_TXT" id="txtT1EMAIL_AD_TXT" 
+               size="20"
+ vsds="T1R_SC_USER_DIR_INFO" vsdf="EMAIL_AD_TXT" 
+         ams_max_len="100"
+ ShowCodeInfo="" value="EMAIL_AD_TXT"title="Email Address (Required)">
+        </td>
+      </tr>
+
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1PH_NO_TXT" title="Phone Number">Phone Number :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1PH_NO_TXT" id="txtT1PH_NO_TXT"
+               size="20"
+ vsds="T1R_SC_USER_DIR_INFO" vsdf="PH_NO_TXT"
+         ams_max_len="30"
+ ShowCodeInfo="" value="PH_NO_TXT" title="Phone Number">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1PH_EXT" title="Ext.">Ext. :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1PH_EXT" id="txtT1PH_EXT"
+            size="6"
+ vsds="T1R_SC_USER_DIR_INFO" vsdf="PH_EXT"
+         ams_max_len="6"
+ ShowCodeInfo="" value="PH_EXT" title="Ext.">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1FAX_NO_TXT" title="Fax Number">Fax Number :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1FAX_NO_TXT" id="txtT1FAX_NO_TXT"
+               size="20"
+ vsds="T1R_SC_USER_DIR_INFO" vsdf="FAX_NO_TXT"
+         ams_max_len="30"
+ ShowCodeInfo="" value="FAX_NO_TXT" title="Fax Number">
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+<a name="btnT2pAddUserAppInfo" href="SecurityAdmin" id="btnT2pAddUserAppInfo" title="Navigation to Add User Application Information" vsaction="pagetransition"
+           vsds="T1R_SC_USER_DIR_INFO"
+ vsnavigation="T2pAddUserAppInfo">Add User Application Information</a>
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

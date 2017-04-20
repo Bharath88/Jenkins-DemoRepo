@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Job Steps</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable dialog">
+  <vserror>
+  <form action="Reports_Sys_Admin_App" method="post" vsform="true" name="Chain_Job_list">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Job Steps">Job Steps</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+
+
+  <input type="hidden" name="T1BS_AGENT_Currency" value="">
+  <input type="hidden" name="T1BS_AGENT_Old_Currency" value="">
+  <table name="tblT1BS_AGENT" id="tblT1BS_AGENT" class="advgrid" vsds="T1BS_AGENT">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><a href="Reports_Sys_Admin_App" vsaction="sort" vsds="T1BS_AGENT"
+    vsdf="AGNT_ID"
+ name="T1AGNT_IDsort" id="T1AGNT_IDsort" title="Sort By Job ID">Job ID</a></th>
+
+        <th
+><span id="T1JOB_LBLsortGridLabel" name="T1JOB_LBLsortGridLabel" title="Job">Job</span></th>
+
+        <th
+><span id="T1ITM_TYPsortGridLabel" name="T1ITM_TYPsortGridLabel" title="Item Type">Item Type</span></th>
+
+<!-- BEGIN CUSTOMIZATION -->
+        <th
+><span id="T1RUN_DT_TMsortGridLabel" name="T1RUN_DT_TMsortGridLabel" title="Scheduled Date/Time">Scheduled Time</span></th>
+
+<!-- END CUSTOMIZATION -->
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1BS_AGENTvscurrency" id="T1BS_AGENTvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1BS_AGENT" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1AGNT_ID" vsds="T1BS_AGENT" vsdf="AGNT_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1JOB_LBL" vsds="T1BS_AGENT" vsdf="JOB_LBL"
+>
+        </td>
+
+        <td
+>
+          <vstext vsds="T1BS_AGENT" vsdf="ITM_TYP" vscodetable="CVL_BS_NODE_TYPE">
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1RUN_DT_TM" vsds="T1BS_AGENT" vsdf="RUN_DT_TM"
+    vsformat="MM-dd-yyyy HH:mm"
+>
+        </td>
+
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Reports_Sys_Admin_App" vsds="T1BS_AGENT" vsaction="firstpage" name="T1BS_AGENTfirstpage" id="T1BS_AGENTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1BS_AGENT" vsaction="prevpage" name="T1BS_AGENTprevpage" id="T1BS_AGENTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1BS_AGENT" vsaction="nextpage" id="T1BS_AGENTnextpage" name="T1BS_AGENTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1BS_AGENT" vsaction="lastpage" id="T1BS_AGENTlastpage" name="T1BS_AGENTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        <!-- BEGIN CUSTOMIZATION -->
+            <a name="btnT3User_AgentParm_Grid" href="Reports_Sys_Admin_App"
+            id="btnT3User_AgentParm_Grid"
+            vsaction="pagetransition"
+           vsds="T1BS_AGENT"
+            vsnavigation="T3User_AgentParm_Grid" title="Edit Job Parameters">Edit Job Parameters</a>
+       <!-- END CUSTOMIZATION -->
+
+      </td>
+    </tr>
+  </table>
+
+    <table><tr><td>
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1BS_AGENT', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'AGNT_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Job ID' ;
+  -->
+  </script>
+    </td></tr></table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+  <table class="advokcancel">
+    <tr>
+      <td>
+
+<input class="advbutton" type="submit" vsaction="ok" name="OK" value="OK" id="OK" title="OK">
+
+<input class="advbutton" type="submit" vsaction="cancel" name="Cancel" value="Cancel" id="Cancel" title="Cancel">
+      </td>
+    </tr>
+  </table>
+
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+<a href="Reports_Sys_Admin_App" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

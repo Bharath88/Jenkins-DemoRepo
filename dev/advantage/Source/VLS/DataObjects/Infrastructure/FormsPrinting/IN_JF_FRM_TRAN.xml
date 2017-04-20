@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<!DOCTYPE DataObject SYSTEM "DataObject.dtd">
+<DataObject
+	SurrId="0367173604.aparulkar.0000"
+	CodedValuesList="False"
+	IsRemoteAccessible="False"
+	UseQuotedIdentifiers="False"
+	SuperClass="AMSDataObject"
+	LockMode="NoOptimisticLocking"
+	ImageReference=" "
+	XdaConnector="SQL"
+	DTDVersion="05.06.00"
+	>
+	<CodedValuesList
+		DisplayAttribute=" "
+		StoredAttribute=" "
+	/>
+	<VLSDeployment
+		DeploySecurityInfo="False"
+	/>
+	<SingularCaption><![CDATA[*]]> </SingularCaption>
+	<PluralCaption><![CDATA[*]]> </PluralCaption>
+	<Description><![CDATA[ ]]> </Description>
+	<Comments><![CDATA[ ]]> </Comments>
+	<Attributes>
+		<Attribute
+			Name="FRM_NAME"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="100"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Name]]> </Caption>
+			<ExtendedProperties>
+				<Property
+					Name="AllowMixedCase"
+					Value="Y"
+				/>
+			</ExtendedProperties>
+		</Attribute>
+		<Attribute
+			Name="FRM_TRAN_ID"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="Integer"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Transformation ID]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="AMS_ROW_VERS_NO"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="Long"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+		</Attribute>
+		<Attribute
+			Name="FRM_NAME_UP"
+			Persistent="True"
+			PreventUserUpdates="True"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="100"
+			/>
+			<Derivation
+				DerivationType="Formula"
+				>
+				<Formula><![CDATA[AMSDataObject.toUpperCaseString(  FRM_NAME  )]]> </Formula>
+			</Derivation>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Name]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="TBL_LAST_DT"
+			Persistent="True"
+			PreventUserUpdates="True"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="DateTime"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Last Modified Date]]></Caption>
+		</Attribute>
+	</Attributes>
+	<Indexes>
+		<Index
+			Name="PK_INJFFRMTRAN"
+			Primary="True"
+			Unique="True"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="FRM_NAME"
+				Descending="False"
+			/>
+		</Index>
+		<Index
+			Name="N1_INJFFRMTRAN"
+			Primary="False"
+			Unique="False"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="FRM_TRAN_ID"
+				Descending="False"
+			/>
+		</Index>
+		<Index
+			Name="N2_INJFFRMTRAN"
+			Primary="False"
+			Unique="False"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="FRM_NAME_UP"
+				Descending="False"
+			/>
+		</Index>
+		<Index
+			Name="N3_INJFFRMTRAN"
+			Primary="False"
+			Unique="False"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="TBL_LAST_DT"
+				Descending="False"
+			/>
+		</Index>
+	</Indexes>
+	<ExtendedProperties>
+		<Property
+			Name="FuncAreaName"
+			Value="FUNC_AREA_FORMS_PRNT"
+		/>
+	</ExtendedProperties>
+</DataObject>

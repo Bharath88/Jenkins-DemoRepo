@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="R_MSG"
+		ChildRoleName="R_SC_USER_DOC_COMP"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="MSG_CD"
+				ChildAttribute="PROC_MIN_MSG_CD"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[*]]></AscendCaption>
+		<DescendCaption><![CDATA[*]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

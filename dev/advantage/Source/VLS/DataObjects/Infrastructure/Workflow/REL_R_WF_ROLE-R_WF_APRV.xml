@@ -1,0 +1,736 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs70"
+		ParentRoleName="R_WF_ROLE2"
+		>
+		<AscendCaption><![CDATA[R_WF_ROLE]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ROLEID_1],v:Approval Roles%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ROLEID_1"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs71"
+		ParentRoleName="R_WF_ROLE3"
+		>
+		<AscendCaption><![CDATA[R_WF_ROLE]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ROLEID_2],v:Approval Roles%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ROLEID_2"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs72"
+		ParentRoleName="R_WF_ROLE4"
+		>
+		<AscendCaption><![CDATA[R_WF_ROLE]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ROLEID_3],v:Approval Roles%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ROLEID_3"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs73"
+		ParentRoleName="R_WF_ROLE5"
+		>
+		<AscendCaption><![CDATA[R_WF_ROLE]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ROLEID_4],v:Approval Roles%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ROLEID_4"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs74"
+		ParentRoleName="R_WF_ROLE6"
+		>
+		<AscendCaption><![CDATA[R_WF_ROLE]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ROLEID_5],v:Approval Roles%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ROLEID_5"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs75"
+		ParentRoleName="R_WF_ROLE7"
+		>
+		<AscendCaption><![CDATA[R_WF_ROLE]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ROLEID_6],v:Approval Roles%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ROLEID_6"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs76"
+		ParentRoleName="R_WF_ROLE8"
+		>
+		<AscendCaption><![CDATA[R_WF_ROLE]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ROLEID_7],v:Approval Roles%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ROLEID_7"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs77"
+		ParentRoleName="R_WF_ROLE9"
+		>
+		<AscendCaption><![CDATA[R_WF_ROLE]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ROLEID_8],v:Approval Roles%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ROLEID_8"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs78"
+		ParentRoleName="R_WF_ROLE10"
+		>
+		<AscendCaption><![CDATA[R_WF_ROLE]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ROLEID_9],v:Approval Roles%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ROLEID_9"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_APRVs79"
+		ParentRoleName="R_WF_ROLE11"
+		>
+		<AscendCaption><![CDATA[R_WF_ROLE]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ROLEID_10],v:Approval Roles%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ROLEID_10"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_ROLE_1"
+		ChildRoleName="R_WF_APRVsR1"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="NOTIF_WO_RID_1"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Worklist Role,p:PG_APRV_LVL_1%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_ROLE_2"
+		ChildRoleName="R_WF_APRVsR2"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="NOTIF_WO_RID_2"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Worklist Role,p:PG_APRV_LVL_2%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_ROLE_3"
+		ChildRoleName="R_WF_APRVsR3"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="NOTIF_WO_RID_3"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Worklist Role,p:PG_APRV_LVL_3%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_ROLE_4"
+		ChildRoleName="R_WF_APRVsR4"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="NOTIF_WO_RID_4"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Worklist Role,p:PG_APRV_LVL_4%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_ROLE_5"
+		ChildRoleName="R_WF_APRVsR5"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="NOTIF_WO_RID_5"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Worklist Role,p:PG_APRV_LVL_5%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_ROLE_6"
+		ChildRoleName="R_WF_APRVsR6"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="NOTIF_WO_RID_6"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Worklist Role,p:PG_APRV_LVL_6%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_ROLE_7"
+		ChildRoleName="R_WF_APRVsR7"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="NOTIF_WO_RID_7"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Worklist Role,p:PG_APRV_LVL_7%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_ROLE_8"
+		ChildRoleName="R_WF_APRVsR8"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="NOTIF_WO_RID_8"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Worklist Role,p:PG_APRV_LVL_8%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_ROLE_9"
+		ChildRoleName="R_WF_APRVsR9"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="NOTIF_WO_RID_9"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Worklist Role,p:PG_APRV_LVL_9%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_ROLE_10"
+		ChildRoleName="R_WF_APRVsR10"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="NOTIF_WO_RID_10"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Worklist Role,p:PG_APRV_LVL_10%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId1_1ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId1_1"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID1_1"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID1_1] for Approval Level 1,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId1_2ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId1_2"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID1_2"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID1_2] for Approval Level 2,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId1_3ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId1_3"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID1_3"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID1_3] for Approval Level 3,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId1_4ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId1_4"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID1_4"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID1_4] for Approval Level 4,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId1_5ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId1_5"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID1_5"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID1_5] for Approval Level 5,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId1_6ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId1_6"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID1_6"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID1_6] for Approval Level 6,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId1_7ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId1_7"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID1_7"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID1_7] for Approval Level 7,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId1_8ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId1_8"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID1_8"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID1_8] for Approval Level 8,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId1_9ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId1_9"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID1_9"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID1_9] for Approval Level 9,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId1_10ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId1_10"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID1_10"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID1_10] for Approval Level 10,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId2_1ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId2_1"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID2_1"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID2_1] for Approval Level 1,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId2_2ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId2_2"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID2_2"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID2_2] for Approval Level 2,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId2_3ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId2_3"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID2_3"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID2_3] for Approval Level 3,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId2_4ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId2_4"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID2_4"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID2_4] for Approval Level 4,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId2_5ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId2_5"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID2_5"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID2_5] for Approval Level 5,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId2_6ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId2_6"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID2_6"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID2_6] for Approval Level 6,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId2_7ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId2_7"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID2_7"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID2_7] for Approval Level 7,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId2_8ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId2_8"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID2_8"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID2_8] for Approval Level 8,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId2_9ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId2_9"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID2_9"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID2_9] for Approval Level 9,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="RWfAprvEsclAsgnRoleId2_10ToRWfRole"
+		ChildRoleName="RWfRoleToRWfAprvEsclAsgnRoleId2_10"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ESCL_ASGN_ROLE_ID2_10"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_ROLE]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_WF_ROLE/ROLEID],v:Approval Rules%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Approval Rules%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_WF_APRV/ESCL_ASGN_ROLE_ID2_10] for Approval Level 10,v:Approval Roles%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

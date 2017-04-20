@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE Application SYSTEM "Application.dtd">
+<Application
+	SurrId="0511958950.ssundare.0005"
+	TargetLanguage="HTML"
+	DefaultLogonUserId="sa"
+	ExecutionEnvironment="Browser"
+	AppletHeight="575"
+	AppletWidth="725"
+	ClassId="EE63A0CF-F766-408B-B916-07864CBE1F1E"
+	SuppressDefaultLoginScreen="True"
+	InitialFramesetPage="FramesetPage"
+	StartupPageFrameName="Startup"
+	InitialFrameNameForStartupTrans="Display"
+	AppRepositoryVersion="05.06.01"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.00"
+	>
+	<ServerLocation><![CDATA[<localVLSServer>]]></ServerLocation>
+	<!-- APPLICATION FORMS -->
+	<Forms>
+		<Form>StartupPage</Form>
+		<Form>AppNavPanel</Form>
+		<Form>FramesetPage</Form>
+		<Form>pNoData</Form>
+      <Form>AltSSHomePage</Form>
+      <Form>AltSSErrorFrameset</Form>
+      <Form>AltSSErrorsPage</Form>
+      <Form>AltSSErrorDetail</Form>
+      <Form>AltSSErrorQFrameset</Form>
+      <Form>AltSSSubmitErrorQPage</Form>
+      <Form>AltSSSecondaryNav</Form>
+		<Form>MultiTableNavPanel</Form>
+		<Form>DocNavPanel</Form>
+      <Form>AltSSHelpFrameset</Form>
+      <Form>AltSSHelpMaster</Form>
+      <Form>AltSSThankyou</Form>
+      <Form>AltSSSiteMap</Form>
+		<Form>AMSDummyErrorPage</Form>
+		<Form>HelpNavPanel</Form>
+	</Forms>
+	<SourceFiles>
+	</SourceFiles>
+</Application>

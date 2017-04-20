@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="Startup"
+	PositionTop="0"
+	PositionLeft="0"
+	PositionWidth="150"
+	PositionHeight="44"
+	IsAddedAfterGen="True"
+	HasCustomFormLayout="False"
+	ObjectsUnusedByFormLayout="True"
+	External="False"
+	NoDataForm="False"
+	ClassName="VSPage"
+	ObjectsRemovedFromLayout="True"
+	>
+	<FormCaption><![CDATA[StartupPage]]></FormCaption>
+	<Transition
+		FormTransNum="1"
+		Prefix="T1"
+		TargetFormName="pNoData"
+		IsTargetInitialQueryMode="False"
+		IsTargetInitialAddMode="False"
+		IsVisibleAppline="True"
+		IsAddedAfterGen="True"
+		ClassName="PageNavigation"
+		TargetFramesetPage=""
+		TargetFrame=""
+		FrameNameInFramesetPage=""
+		RSID="1"
+		BusinessObject="NoData"
+		RelnIsFromParent="True"
+		>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+	</Transition>
+</Form>

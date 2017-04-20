@@ -1,0 +1,83 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<title>Welcome to CGI ADVANTAGE 3.0: LOGIN</title>
+<base href>
+
+<script language="javascript">
+<!--
+function PutAtTop() {
+	if ( self != top ) {
+		top.location.href = self.location.href;
+		alert("Your browser has been idle for more than the maximum time, please log on again."); 
+	}
+}
+//-->
+</script>
+</head>
+
+<body target="_top" OnLoad="PutAtTop();" leftmargin=0 topmargin=0>
+<vserror>
+
+ 
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+<tr height=55><td colspan="2" bgcolor="#9999cc" background="../AMSImages/ADVTopBack.gif" valign="top"><img src="Images/PortalADVLogo.gif" border="0"></td></tr>
+
+<tr>
+<td width="175" bgcolor="#666699">&nbsp;</td>
+<td style="BACKGROUND:url('../AMSImages/ADVSplash.gif');BACKGROUND-REPEAT:no-repeat;BACKGROUND-ATTACHMENT:fixed;BACKGROUND-POSITION:center;"> 
+  <vserror>
+<table width="600" border="0" cellpadding="5" cellspacing="0" valign="center">
+<form METHOD="POST" action="jade" vsloginform>
+  <input type="hidden" name="vsparams" value>
+        <tr>
+          <td width="150" align="right"><font face="Arial" color="#666699"><strong><small>User Name:</small></strong></font></td>
+          <td width="150" align="right"><input type="text" value="sa" name="login" size="20" vlsuserid> </td>
+	  <td></td><td></td>
+        </tr>
+        <tr>
+          <td align="right"><font face="Arial" color="#666699"><strong><small>Password:</small></strong></font></td>
+          <td align="right"><input type="password" name="password" size="20"> </td>
+	  <td></td><td></td>
+        </tr>
+        <tr>
+          <td align="right"><font face="Arial" color="#666699"><strong><small>Server Name:</small></strong></font></td>
+          <td align="right"><input type="text" value="BLS_?" name="serverName" size="20" vlsname></td>
+	  <td></td><td></td>
+        </tr>
+	
+        <tr>
+          <td>&nbsp;</td>
+          <td align="right"><input type="submit" value="Login" name="vslogin"
+          style="font-family: Sans-Serif ; background-color: #666699; color: #FFFFFF">&nbsp;<input
+          type="reset" value="Reset" name="reset"
+          style="font-family: Sans-Serif ; background-color: #666699; color: #FFFFFF"></td>
+	  <td></td><td></td>
+        </tr>
+
+    <tr>
+	  <td></td>
+	  <td>&nbsp;</td>
+      <td valign="bottom"><font face="Arial" size="-2"><br><br><br>Copyright © 2001-2013.<br>
+      CGI Technologies and Solutions, Inc.<br>
+      All rights reserved.<br>
+      <br>
+      Use of this software is subject to<br>
+      CGI Technologies and Solutions Inc. license agreement.<br>
+      <br>
+      CGI Advantage&reg; is a<br>
+      registered trademarks of<br>
+      CGI Technologies and Solutions Inc.</font></td>
+    </tr>
+	
+  </table>
+<tr>
+<td style="width:175;BACKGROUND:#666699 url('../AMSImages/AMSLogo.gif');BACKGROUND-REPEAT:no-repeat;BACKGROUND-ATTACHMENT:fixed;BACKGROUND-POSITION:bottom center;">&nbsp;</td>
+</tr></table>   
+  
+  
+
+</form>
+</body>
+</html>

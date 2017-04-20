@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="GridSelect"
+	PositionTop="823"
+	PositionLeft="1405"
+	PositionWidth="148"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSGridSelectPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-142568219"
+	>
+	<FormCaption><![CDATA[Table Security Log]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="IN_SEC_VLTN_LOG"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="GridSelect"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="False"
+		AllowInsert="False"
+		AllowUpdate="False"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="SEC_LOG_ID" />
+				<RSDefaultAttribute ID="2" Name="PROC_RSRC_NM" />
+				<RSDefaultAttribute ID="3" Name="TBL_KEY" />
+				<RSDefaultAttribute ID="4" Name="LOG_DT_TM" />
+				<RSDefaultAttribute ID="5" Name="USID" />
+				<RSDefaultAttribute ID="6" Name="ACTN" />
+				<RSDefaultAttribute ID="7" Name="MSG_TXT" />
+				<RSDefaultAttribute ID="8" Name="PROC_RSRC_NM_UP" />
+				<RSDefaultAttribute ID="9" Name="USID_UP" />
+				<RSDefaultAttribute ID="10" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="11" Name="TBL_LAST_DT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="PROC_RSRC_NM_UP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="LOG_DT_TM" Displayed="True" UnPlaced="False" Archetype="AMSQueryDateChoiceCalendar" />
+				<RSAttribute Name="USID_UP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SEC_LOG_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ACTN" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PROC_RSRC_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_KEY" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="MSG_TXT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="PROC_RSRC_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="TBL_KEY" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="LOG_DT_TM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="USID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="MSG_TXT" Displayed="True" UnPlaced="False" Archetype="GridDisplayOnlyMemo" />
+				<RSAttribute Name="SEC_LOG_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ACTN" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PROC_RSRC_NM_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="USID_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="orderByString"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="XDA"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value=""
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="false"
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+		</ArchetypeExtendedProperties>
+	</RecordSource>
+</Form>

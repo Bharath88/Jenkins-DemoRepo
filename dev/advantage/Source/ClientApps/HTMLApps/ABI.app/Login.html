@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html lang="en">
+<head>
+      <title>Welcome to Advantage Business Integration</title>
+  <base href>
+  <meta http-equiv="X-UA-Compatible" content="IE=7"></meta>
+  <!--link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVPortalStyle.css"-->
+  <link type="text/css" rel="STYLESHEET" href="../AMSCSS/default/ADVLoginStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSCSS/default/ADVPrimaryNavigator.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSCSS/default/ADVPrimaryNavigator.css">
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="JS/ADVHomePage.js"></script>
+  <script type="text/javascript" language="JavaScript">
+  <!--
+  function PutAtTop()
+  {
+     if ( self != top )
+     {
+        top.location.href = self.location.href ;
+     } /* end if ( self != top ) */
+  } /* end PutAtTop() */
+
+  function LaunchApp()
+  {
+     var lsCurrWindowName = window.name;
+
+     if (lsCurrWindowName != null && lsCurrWindowName.indexOf('ADV') == -1)
+     {
+        var liAvailScreenHeight = window.screen.availHeight;
+        var liAvailScreenWidth = window.screen.availWidth;
+        var loNewWin;
+
+        var lsHref = UTILS_getBaseHref( document ) + '../AMSImages/Empty.htm';
+
+        var loDate = new Date();
+        var lsWindowName = 'ADV' + loDate.getTime();
+
+        if (liAvailScreenWidth == 1280 || liAvailScreenWidth == 1024)
+        {
+           liAvailScreenHeight = liAvailScreenHeight - 50;
+           liAvailScreenWidth = liAvailScreenWidth - 10;
+        }
+        else if (liAvailScreenWidth == 800 || liAvailScreenWidth == 640)
+        {
+           liAvailScreenHeight = liAvailScreenHeight - 55;
+           liAvailScreenWidth = liAvailScreenWidth - 15;
+        }
+
+        loNewWin = DHTMLLIB_OpenNewWin(lsHref, lsWindowName,
+                          'no' , 'no' , 'no', 'yes' , 'no',
+                          'yes', 'yes', liAvailScreenWidth,
+                          liAvailScreenHeight, 0, 0, 'yes' );
+
+        document.forms[0].target = lsWindowName;
+        document.forms[0].submit;
+
+        window.location.replace(lsHref);
+     } /* end if (lsCurrWindowName != null && ... */
+     return false;
+  }
+  function BrowserCheck()
+  {
+      // IE8 returns 8
+      var mIEVersion = DHTMLLIB_getInternetExplorerVersion();
+
+
+      // If the current browser is IE8 then redirect to unsupported browser page.
+  	if( false ) /* list browsers to be blocked here, using booleans from AMSJS\AMSDHTMLLib.js */
+  	{
+  		window.location.replace( UTILS_getBaseHref( document ) + "UnsupportedBrowser.html" );
+  	}
+  }
+
+   /**
+    * This function checks for non supported browser. If the current browser
+    * is not IE8 or FF3 then get confirmation from the user to continue.
+    */
+   function checkForSupportedBrowser()
+   {
+      LaunchApp();
+      return true;
+
+      // If the current browser is not supported by Advantage then get confirmation from the user
+      // to continue.
+      if(mboolUnSupportedBrowser)
+      {
+         if (confirm('You are using a browser that this application does not support. Supported browsers are: Internet Explorer 9 and Mozilla Firefox 10.x. Continue anyway?'))
+         {
+            LaunchApp();
+            return true;
+         }
+         else
+         {
+            return false ;
+         }
+      }
+      else
+      {
+         LaunchApp();
+         return true;
+      }
+   }
+   // BGN ADVHR00041226
+   function ResetPassword()
+   {
+
+   var lsHref = window.location.href ;
+   var liPos = lsHref.indexOf( "Advantage" ) ;
+
+    if ( liPos != -1 )
+    {
+      var lsCurrWindowName = window.name;
+      var lsBaseHref = lsHref.substring(0, liPos );
+      var lsModHref = lsBaseHref + "PasswordReset" ;
+      var liAvailScreenHeight = window.screen.availHeight;
+      var liAvailScreenWidth = window.screen.availWidth;
+
+    if (liAvailScreenWidth == 1280 || liAvailScreenWidth == 1024)
+    {
+      liAvailScreenHeight = liAvailScreenHeight - 50;
+      liAvailScreenWidth = liAvailScreenWidth - 10;
+    }
+    else if (liAvailScreenWidth == 800 || liAvailScreenWidth == 640)
+    {
+      liAvailScreenHeight = liAvailScreenHeight - 55;
+      liAvailScreenWidth = liAvailScreenWidth - 15;
+    }
+    var loNewWin = DHTMLLIB_OpenNewWin(lsModHref, lsCurrWindowName,
+    'no', 'no' , 'no', 'yes' , 'no','yes', 'yes',
+    liAvailScreenWidth, liAvailScreenHeight, 0, 0, 'yes' );
+    }
+   return false ;
+
+   }
+   // END ADVHR00041226
+		//-->
+		</script>
+
+
+	</head>
+<body class="adv login" onload="PutAtTop();UTILS_SetupOnClickForPage();UTILS_SetFocusOnFirstField(document);BrowserCheck();">
+
+  <form METHOD="POST" action="jade" vsloginform onsubmit="return checkForSupportedBrowser();" class="loginpic">
+    <input type="hidden" name="vsparams" value>
+<!-- BEGIN CUSTOM -->
+    <input type="hidden" name="DocumentCode" value="">
+    <input type="hidden" name="DepartmentCode" value="">
+    <input type="hidden" name="DocumentID" value="">
+    <input type="hidden" name="DocumentVersNo" value="">
+    <input type="hidden" name="Destination" value="">
+    <input type="hidden" name="openDoc" value="">
+    <input type="hidden" name="openPage" value="">
+    <input type="hidden" name="ApplName" value="">
+    <input type="hidden" name="WhereClause" value="">
+<!-- END CUSTOM-->
+
+ <div>
+
+     <div id="GlobalHeader">
+         <div id="GlobalHeaderLogo"><img src="../AMSImages/advantage-logo.gif" alt="CGI Advantage Logo" width="261" height="31"></div>
+            <div id="GlobalHeaderNavigationAndLogoutContainer">
+            <div class="globalheaderelements">
+             <div class="PageCodeSearch1 bottomlayout"></div>
+            </div>
+
+         </div>
+         <div class="spacer"></div>
+     </div>
+
+     <div class="parentdiv" align="center">
+     <div class="loginsection">
+             <div id="loginbox">
+               <div class="logininsidebox">
+                <div class="loginform">
+                 <h1>Login</h1>
+                  <ul>
+                   <li><label>User ID:</label><input type="text" value="" name="login" id="login" size="20" title="User Name" autocomplete="off" vlsuserid></li>
+                   <li><label>Password:</label><input type="password" name="password" id="password" size="20" title="Password" autocomplete="off"></li>
+                   <li>
+                           <div class="hidden val">
+                                  <input type="text" value="BLS_?" name="serverName" id="serverName" size="20" vlsname>
+                           </div>
+
+                   </li>
+                   <li class="actionbtn"><input type="submit" value="Login" name="vslogin" id="vslogin" class="advbutton" title="Login: Will open in a new window">
+                       <input type="reset" value="Reset" name="reset" id="reset" class="advbutton" title="Reset"></li>
+                   <li class="loginmsg"><login_error></li>
+                  </ul>
+                </div>
+                <div class="logintext">
+                  <p>Copyright &copy; 2001, 2014 CGI Technologies and Solutions Inc. All Rights Reserved.</p>
+                  <p>Use of this software is subject to CGI Technologies and Solutions Inc. license agreement.</p>
+                  <p>CGI Advantage&reg; is a registered trademark of CGI Technologies and Solutions Inc</p>
+                  <p>
+
+                   <script language="JavaScript">
+                         <!--
+                           if ( mboolIE4Up )
+                           {
+                              document.write( '<br><a class="fav" href="" ' ) ;
+                              document.write( 'onclick="window.external.addFavorite(location.href, document.title);return false;">' ) ;
+                              document.write( 'Add ABI to your Favorites</a>' ) ;
+                           }
+                           else if ( mboolNS4Up )
+                           {
+                              document.write( '<br><a class="fav"> ' ) ;
+                              document.write( 'Press <b>CTRL+D</b> to bookmark CGI Advantage ABI</a>' ) ;
+                           }
+                         -->
+                   </script>
+
+                  </p>
+                </div>
+                <div class="spacer"></div>
+                </div>
+             </div>
+             <div class="shadowbase">
+               <div class="shadowleft"></div>
+               <div class="shadow"></div>
+               <div class="shadowright">&nbsp;</div>
+             </div>
+     </div>
+     </div>
+
+</div>
+
+	</form>
+	</body>
+</html>

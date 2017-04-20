@@ -1,0 +1,2631 @@
+<!DOCTYPE html SYSTEM "../DTD/xhtml1-strict-adv.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+   <head>
+      <title>User Maintenance</title>
+      <base href=""></base>
+      <!-- Begin Infrastructure CSS-->
+      <link rel="stylesheet" type="text/css" href="../AMSCSS/default/reset.css"></link>
+      <link rel="stylesheet" type="text/css" href="../AMSJS/yui/menu/assets/menu.css"></link>
+      <link rel="stylesheet" type="text/css" href="../AMSJS/yui/button/assets/button.css" ></link>
+      <link rel="stylesheet" type="text/css" href="../AMSJS/yui/calendar/assets/calendar.css"></link>
+      <link rel="stylesheet" type="text/css" href="../AMSJS/yui/editor/assets/editor-core.css"></link>
+      <link rel="stylesheet" type="text/css" href="../AMSJS/yui/datatable/assets/skins/sam/datatable.css"></link>
+      <link rel="stylesheet" type="text/css" href="../AMSJS/yui/editor/assets/skins/sam/editor.css"></link>
+      <link rel="stylesheet" type="text/css" href="../AMSJS/ext-1.1.1/resources/css/ext-all.css"></link>
+      <link rel="stylesheet" type="text/css" href="../AMSJS/yui/autocomplete/assets/skins/sam/autocomplete.css"></link>
+      <link rel="stylesheet" type="text/css" href="../AMSCSS/default/ADV.css"></link>
+      <link rel="stylesheet" type="text/css" href="../AMSCSS/default/jquery.treeview.css"></link>
+      <link rel="stylesheet" type="text/css" href="../AMSCSS/default/ADV.Preference.css"></link>
+      <!--[if lte IE 6]>
+         <link rel="stylesheet" type="text/css" href="../AMSCSS/default/IE5-6.css"></link>
+      <![endif]-->
+
+      <!--[if lte IE 7]>
+         <link rel="stylesheet" type="text/css" href="../AMSCSS/default/IE5-7.css"></link>
+      <![endif]-->
+      <!-- End Infrastructure CSS-->
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <vstext vsds=" " name="InitPageTransaction" vspreservetag="true"></vstext>
+   </head>
+
+   <body class="adv document" ams_menu="advantage.Advantage.AMSDocMenu" ams_popup="true">
+
+      <div id="advpageload" name="advpageload" class="loader">
+         <div class="pageload"><!--this div is the grayout div--></div>
+         <div class="pageloadbody"><!--this div is the main loder box-->
+            <div class="help-panel-title loadingbar">Loading...</div>
+            <div class="progressbox"><img src="../AMSImages/loading_panel.gif"
+></div>
+         </div>
+      </div>
+
+      <form id="fUDOC" name="fUDOC" method="post" vsform="true" action="SecurityAdmin">
+
+        
+       <div id="DocumentFlags" name="DocumentFlags">
+         <input type="hidden" value="" name="copySwitch" ></input>
+         <input type="hidden" value="" name="SaveFlag" ></input>
+         <input type="hidden" value="" name="DocLineValues" ></input>
+         <input type="hidden" value="" name="CpyFwdLineChange" ></input>
+         <input type="hidden" value="" name="ExpandedSections" ></input>
+         <input type="hidden" value="" name="DOC_EDIT_MODE" ></input>
+         <input type="hidden" value="" name="AMSPageVersNo" ></input>
+         <input type="hidden" value="" name="ParentTabId" ></input>
+         <input type="hidden" value="" name="ShowParentTab" ></input>
+         <input type="hidden" value="" name="refreshScalar" ></input>
+         <input type="hidden" value="" name="ams_main_table_name" ></input>
+         <input type="hidden" value="" name="GotoDSName" ></input>
+         <input type="hidden" value="" name="CurrentTabId" ></input>
+         <input type="hidden" value="" name="RootDataSource" ></input>
+         <input type="hidden" value="SecurityAdmin" name="ApplicationName" ></input>
+         <input type="hidden" value="DocStdUI" name="PageType" ></input>
+         <input type="hidden" name="DOC_FUNC_CD" vsds="T1USER_DOC_HDR" vsdf="DOC_FUNC_CD"></input>
+         <input type="hidden" name="DOC_PHASE_CD" vsds="T1USER_DOC_HDR" vsdf="DOC_PHASE_CD"></input>
+         <input type="hidden" value="false" name="DocInPreferenceMode" ></input>
+       </div>
+
+        
+   <div id="MessagePanel" name="MessagePanel" vsds="" vsvisible="true" ams_type="msg_disp">
+      <a id="MessageActionViewAll" name="MessageActionViewAll" href="#MessageActionViewAll" title="View All Messages">View All</a>
+      <span id="MessageText" name="MessageText" title="Message(s)"><vstext name="MsgDispContent" vsds="" vspreservetag="true"></vstext></span>
+      <div id="MsgErrorPanel">
+         <a id="ErrorPanelClose" name="ErrorPanelClose" href="#ErrorPanelClose" title="Close Error Panel" class="hidden"><img src="../AMSImages/close.gif"
+ alt="Close Error Panel"></img></a>
+         <div id="ExpandedErrorPanel"></div>
+         <div id="ErrorResizePanel" class="resizepanel">
+            <img src="../AMSImages/errorresizeslider.gif"
+ alt="slider"></img>
+         </div>
+      </div>
+   </div>
+        <div id="DocumentTitleWrapper">
+           <div id="DocumentTitle">
+              
+              <div id="TitleSeparator">
+                 <h1 class="title">
+                    User Maintenance (<vstext name="txtT1DOC_CD" vsds="T1USER_DOC_HDR" vsdf="DOC_CD"></vstext>)
+                 </h1>
+                 <dl class="document-info">
+                    <dt>Dept:</dt>
+                    <dd><vstext name="txtT1DOC_DEPT_CD" vsds="T1USER_DOC_HDR" vsdf="DOC_DEPT_CD"></vstext></dd>
+                    <dt>ID:</dt>
+                    <dd><vstext name="txtT1DOC_ID" vsds="T1USER_DOC_HDR" vsdf="DOC_ID"></vstext></dd>
+                    <dt>Ver.:</dt>
+                    <dd><vstext name="txtT1DOC_VERS_NO" vsds="T1USER_DOC_HDR" vsdf="DOC_VERS_NO"></vstext></dd>
+                    <dt>Function:</dt>
+                    <dd><vstext name="txtT1DOC_FUNC_CD" vscodetable="CVL_DOC_FUNC_CD" vsds="T1USER_DOC_HDR" vsdf="DOC_FUNC_CD"></vstext></dd>
+                    <dt>Phase:</dt>
+                    <dd><vstext name="txtT1DOC_PHASE_CD" vscodetable="CVL_DOC_PHASE_CD" vsds="T1USER_DOC_HDR" vsdf="DOC_PHASE_CD"></vstext></dd>
+                 </dl>
+              </div><!-- End "TitleSeparator" -->
+              <div id="DocumentView">
+                 <div id="DocumentViewActions">
+                     <div id="OtherNavigationActions">
+                        <div>
+                          <div class="bd">
+                            <ul>
+                              <li class="action-addfav">
+                                 <a id="DocumentActionAddFavorite" name="DocumentActionAddFavorite" href="#DocumentActionAddFavorite" title="Add to Favorites"><span class="img"><span class="txt">Add to Favorites</span></span></a>
+                              </li>
+                              <li class="action-pagehelp">
+                                 <a id="DocumentActionPageHelp" name="DocumentActionPageHelp" href="#DocumentActionPageHelp" title="Page Help"><span class="img"><span class="txt">Page Help</span></span></a>
+                              </li>
+                              <li class="action-doccomments">
+                                <a name="DocumentActionComments" href="#DocumentActionComments" id="DocumentActionComments" title="Document Comments"><span class="img"><span class="txt">Document Comments</span></span></a>
+                              </li>
+                              <li class="action-docattachments">
+                                <a name="DocumentActionAttachments" href="#DocumentActionAttachments" id="DocumentActionAttachments" title="Document Attachments"><span class="img"><span class="txt">Document Attachments</span></span></a>
+                              </li>
+                              <li class="action-dochistory">
+                                <a name="DocumentActionHistory" href="#DocumentActionHistory" id="DocumentActionHistory" title="Document History"><span class="img"><span class="txt">Document History</span></span></a>
+                              </li>
+                              <li class="action-docref">
+                                <a name="DocumentActionReference" href="#DocumentActionReference" id="DocumentActionReference" title="Document References"><span class="img"><span class="txt">Document References</span></span></a>
+                              </li>
+                              <li class="action-doctrig">
+                                <a name="DocumentActionTriggering" href="#DocumentActionTriggering" id="DocumentActionTriggering" title="Document Future Triggering"><span class="img"><span class="txt">Document Future Triggering</span></span></a>
+                              </li>
+                              <li class="action-forms">
+                                <a name="DocumentActionForms" href="#DocumentActionForms" id="DocumentActionForms" title="Document Forms"><span class="img"><span class="txt">Document Forms</span></span></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div><!-- End "OtherNavigationActions" -->
+                      <ul class="action-list">
+                         <li class="action hidden">
+                            <a id="DocumentActionPrintView" name="DocumentActionPrintView" href="#DocumentActionPrintView" title="Print View">
+                               <img src="../AMSImages/PrintView.gif"
+ alt="Print View"></img>
+                            </a>
+                         </li>
+                         <li class="action">
+                            <div id="fUDOCEnPref" name="fUDOCEnPref" vsds="" vsvisible="true">
+                               <a id="DocumentActionEnPref" name="DocumentActionEnPref" href="#DocumentActionEnPref" title="Configure Preference">
+                                  <img src="../AMSImages/preference.png" alt="Configure Preference"></img>
+                               </a>
+                            </div>
+                         </li>
+                      </ul>
+                 </div><!-- End "DocumentViewActions" -->
+                 <div class="floatleft-relative">
+                    <img alt="" src="../AMSImages/headerbarcorner.gif"
+></img>
+                 </div>
+                 <div id="DocumentModificationInfo">
+                    <span class="componentheadinginfo">Modified by</span>
+                    <span class="user">
+                       <vstext name="disptxtT1DOC_APPL_LAST_USID" vsds="T1USER_DOC_HDR" vsdf="DOC_APPL_LAST_USID" size="15"></vstext> ,
+                    </span>
+                    <span class="date">
+                       <vstext name="disptxtT1DOC_APPL_LAST_DT" vsds="T1USER_DOC_HDR" vsdf="DOC_APPL_LAST_DT" vsformat="AMS_DATE_FOUR_YEAR_PIVOT" size="15"></vstext>
+                    </span>
+
+                 </div><!-- End "DocumentModificationInfo"-->
+           </div><!-- End "DocumentView"-->
+           </div><!-- End "DocumentTitle"-->
+           <div class="spacer"></div>
+        </div><!-- End "DocumentTitleWrapper"-->
+        <div class="shadow"></div>
+        
+   <ul class="skip-links">
+      <li>
+         <a id="HeaderComponent_SkipLink" name="HeaderComponent_SkipLink" href="#HeaderComponent">Jump to Header Component</a>
+      </li>
+      <li>
+         <a id="SCROLEComponent_SkipLink" name="SCROLEComponent_SkipLink" href="#SCROLEComponent">Jump to Security Roles Component</a>
+      </li>
+      <li>
+         <a id="WFROLEComponent_SkipLink" name="WFROLEComponent_SkipLink" href="#WFROLEComponent">Jump to Workflow Roles Component</a>
+      </li>
+      <li>
+         <a id="WKGPComponent_SkipLink" name="WKGPComponent_SkipLink" href="#WKGPComponent">Jump to Workgroups Component</a>
+      </li>
+      <li>
+         <a id="DocumentActions_SkipLink" name="DocumentActions_SkipLink" href="#DocumentActions">Jump to Document Actions</a>
+      </li>
+   </ul>
+        <div id="doccontent" class="content">
+           <div id="component-container" class="component-container">
+
+              <div id="accordianmenucontent" class="accordianmenucontent">
+                 <div class="accordianmenuinnercontent">
+                    <div id="DocNavTreeClose" class="docnavtreeclose">
+                      <span>Document Navigator</span>
+			          <a id="accordiantreeclose" name="accordiantreeclose" href="#accordiantreeclose" title="Close Navigation Panel">
+			             <img src="../AMSImages/PanelClose.gif"
+ alt="Close"></img>
+			          </a>
+                   </div>
+                   <ul id="accordiantreecomponents">
+                   </ul>
+                 </div>
+              </div>
+              <div class="accordianmenu" id="accordianmenu_open">
+                 <div id="accordiannavpanelstate" title="Open Document Navigator"></div>
+              </div>
+             
+ 
+<div id="HeaderComponent" name="HeaderComponent" class="component level0"  vsds="T1USER_DOC_HDR"><!-- Header Component -->
+   <a id="HeaderComponent_SkipLinkTarget"></a>
+   <div class="header">
+      <h2 class="title">Header</h2>
+      <div class="header-info-actions">
+         <a name="HeaderComponentActionAttachments" href="#HeaderComponentActionAttachments" id="HeaderComponentActionAttachments" class="component-attachment hidden" title="Attachments">
+            <img src="../AMSImages/attachment.gif"
+ alt="Attachment"></img>
+            <span class="attachment-count"></span>
+         </a>
+      </div>
+      <dl class="context"></dl>
+      <div class="iconbox">
+         <ul class="action-list">
+           <span class="accordionseparator-inactive"></span>
+           <li class="action component-expandcollapse">
+              <a id="HeaderComponentActionCollapseExpand" name="HeaderComponentActionCollapseExpand" class="expandcollapse" href="#HeaderComponentActionCollapseExpand" title="Expand" 
+     accesskey="H"
+>
+                 <img class="expand" src="../AMSImages/AccordionOpen.gif"
+ alt="Expand"></img>
+              </a>
+           </li>
+         </ul>
+      </div>
+   </div>
+   <div class="content" vsds="T1USER_DOC_HDR" name="Header" id="Header" vsvisible="true" tabnm="Header" ams_table="USER_DOC_HDR" tabid="Header" tabseqno="0" vsclass="com.amsinc.gems.adv.vfc.html.AdvDocTSDivElement">
+      <div class="inner-content">
+      <div class="scalar" id="T1USER_DOC_HDRScalar" name="T1USER_DOC_HDRScalar"><!-- Header Component -  Scalar -->
+         
+  
+                 <div id="T1USER_DOC_HDRSepSection" name="T1USER_DOC_HDRSepSection" class="section level2 ">
+                   <ul class="field-column" id="T1USER_DOC_HDRSectionCol-COMP_ACTN_CD" name="T1USER_DOC_HDRSectionCol-COMP_ACTN_CD">
+       
+      <li id="field-txtT1COMP_ACTN_CD" name="field-txtT1COMP_ACTN_CD" class="field radio required
+  
+            integer
+" title="Action (Required)">
+        
+   <label title="Action (Required)">Action:</label>
+        <div class="field-value">
+        
+   <input type="radio" name="rbtT1COMP_ACTN_CD" id="rbtT1COMP_ACTN_CD0" title="Add" value="0" vsds="T1USER_DOC_HDR" vsdf="COMP_ACTN_CD"></input>
+   <label for="rbtT1COMP_ACTN_CD0" title="Add">Add</label>
+   <input type="radio" name="rbtT1COMP_ACTN_CD" id="rbtT1COMP_ACTN_CD1" title="Update" value="1" vsds="T1USER_DOC_HDR" vsdf="COMP_ACTN_CD"></input>
+   <label for="rbtT1COMP_ACTN_CD1" title="Update">Update</label>
+<!-- Begin Customization -->
+<!--
+   <input type="radio" name="rbtT1COMP_ACTN_CD" id="rbtT1COMP_ACTN_CD2" title="Delete" value="2" vsds="T1USER_DOC_HDR" vsdf="COMP_ACTN_CD"></input>
+   <label for="rbtT1COMP_ACTN_CD2" title="Delete">Delete</label>
+-->
+<!-- End Customization -->
+        </div>
+      </li>
+    
+    
+                   </ul>
+                   <ul class="field-column" id="T1USER_DOC_HDRSectionCol-USER_ID" name="T1USER_DOC_HDRSectionCol-USER_ID">
+      <li id="field-txtT1USER_ID" name="field-txtT1USER_ID" class="field required pick autocomplete
+  
+     text
+" title="User ID (Required)">
+         <label for="txtT1USER_ID" title="User ID (Required)">User ID:</label>
+         <input type="text" name="txtT1USER_ID" id="txtT1USER_ID" class="field-value" 
+            ams_max_len="16"
+ value="USER_ID" 
+                  size="20"
+ vsds="T1USER_DOC_HDR" vsdf="USER_ID" title="User ID (Required)"></input>
+         <input type="image" class="pickimg" vspick="T2R_SC_USER_DIR_INFO" vspicktext="txtT1USER_ID" vsds="T1USER_DOC_HDR" vsaction="pick" name="pckT1USER_ID" id="pckT1USER_ID" title="Select User ID" alt="Select User ID" src="../AMSImages/ADVPickImg.gif"
+></input>
+      </li>
+    
+                   </ul>
+                 </div>
+     <ul class="action-list">
+        
+        
+        <li class="action scalarview action-listview">
+           <a title="Show all fields in a list view" name="HeaderComponentActionScalarListView" id="HeaderComponentActionScalarListView" href="#HeaderComponentActionScalarListView"><span class="img"><span class="txt">List View</span></span></a>
+        </li>
+     </ul>
+   
+                 <fieldset class="section level3" id="T1USER_DOC_HDRSection1" name="T1USER_DOC_HDRSection1">
+                   <legend><span>Directory Information</span></legend>
+                   <div class="spacer1 tabview"></div>
+                   <ul class="field-column" id="T1USER_DOC_HDRSectionCol-LAST_NM_TXT" name="T1USER_DOC_HDRSectionCol-LAST_NM_TXT">
+        
+      <li id="field-txtT1LAST_NM_TXT" name="field-txtT1LAST_NM_TXT" class="field required
+  
+     text
+" title="Last Name (Required)">
+         <label for="txtT1LAST_NM_TXT" title="Last Name (Required)">Last Name:</label>
+        <input type="text" name="txtT1LAST_NM_TXT" id="txtT1LAST_NM_TXT" class="field-value" 
+                  size="20"
+ vsds="T1USER_DOC_HDR" vsdf="LAST_NM_TXT" 
+            ams_max_len="30"
+ value="LAST_NM_TXT"title="Last Name (Required)"></input>
+      </li>
+    
+    
+        
+      <li id="field-txtT1FRST_NM_TXT" name="field-txtT1FRST_NM_TXT" class="field required
+  
+     text
+" title="First Name (Required)">
+         <label for="txtT1FRST_NM_TXT" title="First Name (Required)">First Name:</label>
+        <input type="text" name="txtT1FRST_NM_TXT" id="txtT1FRST_NM_TXT" class="field-value" 
+                  size="20"
+ vsds="T1USER_DOC_HDR" vsdf="FRST_NM_TXT" 
+            ams_max_len="30"
+ value="FRST_NM_TXT"title="First Name (Required)"></input>
+      </li>
+    
+    
+                   </ul>
+                   <ul class="field-column" id="T1USER_DOC_HDRSectionCol-LCLTY_TXT" name="T1USER_DOC_HDRSectionCol-LCLTY_TXT">
+       
+        <li id="field-txtT1LCLTY_TXT" name="field-txtT1LCLTY_TXT" class="field
+  
+     text
+" title="Locality">
+           
+      <label for="txtT1LCLTY_TXT" title="Locality">Locality:</label>
+   
+           
+           <input type="text" name="txtT1LCLTY_TXT" id="txtT1LCLTY_TXT" class="field-value" 
+                  size="20"
+ vsds="T1USER_DOC_HDR" vsdf="LCLTY_TXT" 
+ value="LCLTY_TXT" title="Locality" 
+            ams_max_len="30"
+></input>
+           
+        </li>
+    
+    
+       
+        <li id="field-txtT1ROOM_NO_TXT" name="field-txtT1ROOM_NO_TXT" class="field
+  
+     text
+" title="Room Number">
+           
+      <label for="txtT1ROOM_NO_TXT" title="Room Number">Room Number:</label>
+   
+           
+           <input type="text" name="txtT1ROOM_NO_TXT" id="txtT1ROOM_NO_TXT" class="field-value" 
+                  size="20"
+ vsds="T1USER_DOC_HDR" vsdf="ROOM_NO_TXT" 
+ value="ROOM_NO_TXT" title="Room Number" 
+            ams_max_len="20"
+></input>
+           
+        </li>
+    
+    
+       
+        <li id="field-txtT1EMAIL_AD_TXT" name="field-txtT1EMAIL_AD_TXT" class="field
+  
+     text
+" title="Email Address">
+           
+      <label for="txtT1EMAIL_AD_TXT" title="Email Address">Email Address:</label>
+   
+           
+           <input type="text" name="txtT1EMAIL_AD_TXT" id="txtT1EMAIL_AD_TXT" class="field-value" 
+                  size="20"
+ vsds="T1USER_DOC_HDR" vsdf="EMAIL_AD_TXT" 
+ value="EMAIL_AD_TXT" title="Email Address" 
+            ams_max_len="100"
+></input>
+           
+        </li>
+    
+    
+                   </ul>
+                   <ul class="field-column" id="T1USER_DOC_HDRSectionCol-PH_NO_TXT" name="T1USER_DOC_HDRSectionCol-PH_NO_TXT">
+       
+        <li id="field-txtT1PH_NO_TXT" name="field-txtT1PH_NO_TXT" class="field
+  
+     text
+" title="Phone Number">
+           
+      <label for="txtT1PH_NO_TXT" title="Phone Number">Phone Number:</label>
+   
+           
+           <input type="text" name="txtT1PH_NO_TXT" id="txtT1PH_NO_TXT" class="field-value" 
+                  size="20"
+ vsds="T1USER_DOC_HDR" vsdf="PH_NO_TXT" 
+ value="PH_NO_TXT" title="Phone Number" 
+            ams_max_len="30"
+></input>
+           
+        </li>
+    
+    
+       
+        <li id="field-txtT1PH_EXT" name="field-txtT1PH_EXT" class="field
+  
+     text
+" title="Ext.">
+           
+      <label for="txtT1PH_EXT" title="Ext.">Ext.:</label>
+   
+           
+           <input type="text" name="txtT1PH_EXT" id="txtT1PH_EXT" class="field-value" 
+               size="6"
+ vsds="T1USER_DOC_HDR" vsdf="PH_EXT" 
+ value="PH_EXT" title="Ext." 
+            ams_max_len="6"
+></input>
+           
+        </li>
+    
+    
+       
+        <li id="field-txtT1FAX_NO_TXT" name="field-txtT1FAX_NO_TXT" class="field
+  
+     text
+" title="Fax Number">
+           
+      <label for="txtT1FAX_NO_TXT" title="Fax Number">Fax Number:</label>
+   
+           
+           <input type="text" name="txtT1FAX_NO_TXT" id="txtT1FAX_NO_TXT" class="field-value" 
+                  size="20"
+ vsds="T1USER_DOC_HDR" vsdf="FAX_NO_TXT" 
+ value="FAX_NO_TXT" title="Fax Number" 
+            ams_max_len="30"
+></input>
+           
+        </li>
+    
+    
+                   </ul>
+                   <div class="spacer1"></div>
+                 </fieldset>
+                 <fieldset class="section level3" id="T1USER_DOC_HDRSection2" name="T1USER_DOC_HDRSection2">
+                   <legend><span>Home Organization</span></legend>
+                   <div class="spacer1 tabview"></div>
+                   <ul class="field-column" id="T1USER_DOC_HDRSectionCol-HOME_GOVT_BRN_CD" name="T1USER_DOC_HDRSectionCol-HOME_GOVT_BRN_CD">
+       
+        <li id="field-txtT1HOME_GOVT_BRN_CD" name="field-txtT1HOME_GOVT_BRN_CD" class="field
+  
+     text
+" title="Government Branch">
+           
+      <label for="txtT1HOME_GOVT_BRN_CD" title="Government Branch">Government Branch:</label>
+   
+           
+           <input type="text" name="txtT1HOME_GOVT_BRN_CD" id="txtT1HOME_GOVT_BRN_CD" class="field-value" 
+               size="6"
+ vsds="T1USER_DOC_HDR" vsdf="HOME_GOVT_BRN_CD" 
+ value="HOME_GOVT_BRN_CD" title="Government Branch" 
+            ams_max_len="4"
+></input>
+           
+        </li>
+    
+    
+       
+        <li id="field-txtT1HOME_CAB_CD" name="field-txtT1HOME_CAB_CD" class="field
+  
+     text
+" title="Cabinet">
+           
+      <label for="txtT1HOME_CAB_CD" title="Cabinet">Cabinet:</label>
+   
+           
+           <input type="text" name="txtT1HOME_CAB_CD" id="txtT1HOME_CAB_CD" class="field-value" 
+               size="6"
+ vsds="T1USER_DOC_HDR" vsdf="HOME_CAB_CD" 
+ value="HOME_CAB_CD" title="Cabinet" 
+            ams_max_len="4"
+></input>
+           
+        </li>
+    
+    
+       
+        <li id="field-txtT1HOME_DEPT_CD" name="field-txtT1HOME_DEPT_CD" class="field
+  
+     text
+" title="Department">
+           
+      <label for="txtT1HOME_DEPT_CD" title="Department">Department:</label>
+   
+           
+           <input type="text" name="txtT1HOME_DEPT_CD" id="txtT1HOME_DEPT_CD" class="field-value" 
+               size="6"
+ vsds="T1USER_DOC_HDR" vsdf="HOME_DEPT_CD" 
+ value="HOME_DEPT_CD" title="Department" 
+            ams_max_len="4"
+></input>
+           
+        </li>
+    
+    
+                   </ul>
+                   <ul class="field-column" id="T1USER_DOC_HDRSectionCol-HOME_DIV_CD" name="T1USER_DOC_HDRSectionCol-HOME_DIV_CD">
+       
+        <li id="field-txtT1HOME_DIV_CD" name="field-txtT1HOME_DIV_CD" class="field
+  
+     text
+" title="Division">
+           
+      <label for="txtT1HOME_DIV_CD" title="Division">Division:</label>
+   
+           
+           <input type="text" name="txtT1HOME_DIV_CD" id="txtT1HOME_DIV_CD" class="field-value" 
+               size="6"
+ vsds="T1USER_DOC_HDR" vsdf="HOME_DIV_CD" 
+ value="HOME_DIV_CD" title="Division" 
+            ams_max_len="4"
+></input>
+           
+        </li>
+    
+    
+       
+        <li id="field-txtT1HOME_GP_CD" name="field-txtT1HOME_GP_CD" class="field
+  
+     text
+" title="Group">
+           
+      <label for="txtT1HOME_GP_CD" title="Group">Group:</label>
+   
+           
+           <input type="text" name="txtT1HOME_GP_CD" id="txtT1HOME_GP_CD" class="field-value" 
+               size="6"
+ vsds="T1USER_DOC_HDR" vsdf="HOME_GP_CD" 
+ value="HOME_GP_CD" title="Group" 
+            ams_max_len="4"
+></input>
+           
+        </li>
+    
+    
+       
+        <li id="field-txtT1HOME_SECT_CD" name="field-txtT1HOME_SECT_CD" class="field
+  
+     text
+" title="Section">
+           
+      <label for="txtT1HOME_SECT_CD" title="Section">Section:</label>
+   
+           
+           <input type="text" name="txtT1HOME_SECT_CD" id="txtT1HOME_SECT_CD" class="field-value" 
+               size="6"
+ vsds="T1USER_DOC_HDR" vsdf="HOME_SECT_CD" 
+ value="HOME_SECT_CD" title="Section" 
+            ams_max_len="4"
+></input>
+           
+        </li>
+    
+    
+                   </ul>
+                   <ul class="field-column" id="T1USER_DOC_HDRSectionCol-HOME_DSTC_CD" name="T1USER_DOC_HDRSectionCol-HOME_DSTC_CD">
+       
+        <li id="field-txtT1HOME_DSTC_CD" name="field-txtT1HOME_DSTC_CD" class="field
+  
+     text
+" title="District">
+           
+      <label for="txtT1HOME_DSTC_CD" title="District">District:</label>
+   
+           
+           <input type="text" name="txtT1HOME_DSTC_CD" id="txtT1HOME_DSTC_CD" class="field-value" 
+               size="6"
+ vsds="T1USER_DOC_HDR" vsdf="HOME_DSTC_CD" 
+ value="HOME_DSTC_CD" title="District" 
+            ams_max_len="4"
+></input>
+           
+        </li>
+    
+    
+       
+        <li id="field-txtT1HOME_BUR_CD" name="field-txtT1HOME_BUR_CD" class="field
+  
+     text
+" title="Bureau">
+           
+      <label for="txtT1HOME_BUR_CD" title="Bureau">Bureau:</label>
+   
+           
+           <input type="text" name="txtT1HOME_BUR_CD" id="txtT1HOME_BUR_CD" class="field-value" 
+               size="6"
+ vsds="T1USER_DOC_HDR" vsdf="HOME_BUR_CD" 
+ value="HOME_BUR_CD" title="Bureau" 
+            ams_max_len="4"
+></input>
+           
+        </li>
+    
+    
+       
+        <li id="field-txtT1HOME_UNIT_CD" name="field-txtT1HOME_UNIT_CD" class="field
+  
+     text
+" title="Unit">
+           
+      <label for="txtT1HOME_UNIT_CD" title="Unit">Unit:</label>
+   
+           
+           <input type="text" name="txtT1HOME_UNIT_CD" id="txtT1HOME_UNIT_CD" class="field-value" 
+               size="6"
+ vsds="T1USER_DOC_HDR" vsdf="HOME_UNIT_CD" 
+ value="HOME_UNIT_CD" title="Unit" 
+            ams_max_len="4"
+></input>
+           
+        </li>
+    
+    
+                   </ul>
+                   <div class="spacer1"></div>
+                 </fieldset>
+                 <fieldset class="section level3" id="T1USER_DOC_HDRSection3" name="T1USER_DOC_HDRSection3">
+                   <legend><span>Account Options</span></legend>
+                   <div class="spacer1 tabview"></div>
+                   <ul class="field-column" id="T1USER_DOC_HDRSectionCol-USER_OV_ERR_CD" name="T1USER_DOC_HDRSectionCol-USER_OV_ERR_CD">
+        
+      <li id="field-txtT1USER_OV_ERR_CD" name="field-txtT1USER_OV_ERR_CD" class="field
+  
+            integer
+" title="Override Errors">
+         
+      <label for="txtT1USER_OV_ERR_CD" title="Override Errors">Override Errors:</label>
+   
+         <select name="txtT1USER_OV_ERR_CD" id="txtT1USER_OV_ERR_CD" class="field-value" vsds="T1USER_DOC_HDR" vsdf="USER_OV_ERR_CD" size="1" vscodetable="CVL_OV_ERR_CD" title="Override Errors">
+           <option value="JADEStored">JADEDisplayed</option>
+         </select>
+      </li>
+    
+    
+        
+      <li id="field-txtT1BAD_LGN_CT" name="field-txtT1BAD_LGN_CT" class="field required
+  
+" title="Bad Logins Count (Required)">
+         <label for="txtT1BAD_LGN_CT" title="Bad Logins Count (Required)">Bad Logins Count:</label>
+        <input type="text" name="txtT1BAD_LGN_CT" id="txtT1BAD_LGN_CT" class="field-value" 
+               size="3"
+ vsds="T1USER_DOC_HDR" vsdf="BAD_LGN_CT" 
+               ams_max_len="3"
+ value="BAD_LGN_CT"title="Bad Logins Count (Required)"></input>
+      </li>
+    
+      <li id="field-txtT1BAD_PSWD_RESET_CT" name="field-txtT1BAD_PSWD_RESET_CT" class="field required 
+    
+            integer
+" title="Bad Password Reset Count (Required)">
+         <label for="txtT1BAD_PSWD_RESET_CT" title="Bad Password Reset Count (Required)">Bad Password Reset Count:</label>
+        <input type="text" name="txtT1BAD_PSWD_RESET_CT" id="txtT1BAD_PSWD_RESET_CT" class="field-value" 
+                  size="10"
+ vsds="T1USER_DOC_HDR" vsdf="BAD_PSWD_RESET_CT" 
+                  ams_max_len="10"
+ value="BAD_PSWD_RESET_CT"title="Bad Password Reset Count (Required)"></input>
+      </li>
+                   </ul>
+                   <ul class="field-column" id="T1USER_DOC_HDRSectionCol-LOCK_FL" name="T1USER_DOC_HDRSectionCol-LOCK_FL">
+        
+      <li id="field-txtT1LOCK_FL" name="field-txtT1LOCK_FL" class="field
+  
+            integer
+" title="Locked out">
+         
+      <label for="txtT1LOCK_FL" title="Locked out">Locked out:</label>
+   
+         <select name="txtT1LOCK_FL" id="txtT1LOCK_FL" class="field-value" vsds="T1USER_DOC_HDR" vsdf="LOCK_FL" size="1" vscodetable="CVL_USER_LOCK_STA" title="Locked out">
+           <option value="JADEStored">JADEDisplayed</option>
+         </select>
+      </li>
+    
+    
+        
+      <li id="field-txtT1LOG_FL" name="field-txtT1LOG_FL" class="field
+  
+           boolean
+" title="Logging">
+         
+      <label for="txtT1LOG_FL" title="Logging">Logging:</label>
+   
+         <input type="checkbox" name="txtT1LOG_FL" id="txtT1LOG_FL" class="field-value" value="LOG_FL" vsds="T1USER_DOC_HDR" vsdf="LOG_FL" title="Logging"></input>
+      </li>
+    
+    
+        
+      <li id="field-txtT1EMAIL_ALERT_FL" name="field-txtT1EMAIL_ALERT_FL" class="field
+  
+           boolean
+" title="Alert Email Notification">
+         
+      <label for="txtT1EMAIL_ALERT_FL" title="Alert Email Notification">Alert Email Notification:</label>
+   
+         <input type="checkbox" name="txtT1EMAIL_ALERT_FL" id="txtT1EMAIL_ALERT_FL" class="field-value" value="EMAIL_ALERT_FL" vsds="T1USER_DOC_HDR" vsdf="EMAIL_ALERT_FL" title="Alert Email Notification"></input>
+      </li>
+    
+    
+        
+      <li id="field-txtT1USE_DFLT_HMPG_WINS" name="field-txtT1USE_DFLT_HMPG_WINS" class="field
+  
+           boolean
+" title="Use Default Home Page Window">
+         
+      <label for="txtT1USE_DFLT_HMPG_WINS" title="Use Default Home Page Window">Use Default Home Page Window:</label>
+   
+         <input type="checkbox" name="txtT1USE_DFLT_HMPG_WINS" id="txtT1USE_DFLT_HMPG_WINS" class="field-value" value="USE_DFLT_HMPG_WINS" vsds="T1USER_DOC_HDR" vsdf="USE_DFLT_HMPG_WINS" title="Use Default Home Page Window"></input>
+      </li>
+    
+    
+                   </ul>
+                   <ul class="field-column" id="T1USER_DOC_HDRSectionCol-MSS_USER_TYP" name="T1USER_DOC_HDRSectionCol-MSS_USER_TYP">
+        
+  
+         
+   
+    
+    
+        
+  
+         
+   
+    
+    
+        
+  
+         
+   
+    
+    
+        
+      <li id="field-txtT1MSS_USER_TYP" name="field-txtT1MSS_USER_TYP" class="field
+  
+            integer
+" title="MSS User Type">
+         
+      <label for="txtT1MSS_USER_TYP" title="MSS User Type">MSS User Type:</label>
+   
+         <select name="txtT1MSS_USER_TYP" id="txtT1MSS_USER_TYP" class="field-value" vsds="T1USER_DOC_HDR" vsdf="MSS_USER_TYP" size="1" vscodetable="CVL_MSS_USER_TYP" title="MSS User Type">
+           <option value="JADEStored">JADEDisplayed</option>
+         </select>
+      </li>
+    
+    
+        
+      <li id="field-txtT1ESS_USER_TYP" name="field-txtT1ESS_USER_TYP" class="field 
+  
+            integer
+" title="ESS User Type">
+         
+      <label for="txtT1ESS_USER_TYP" title="ESS User Type">ESS User Type:</label>
+   
+         <select name="txtT1ESS_USER_TYP" id="txtT1ESS_USER_TYP" class="field-value" vsds="T1USER_DOC_HDR" vsdf="ESS_USER_TYP" size="1" vscodetable="CVL_ESS_USER_TYP" title="ESS User Type">
+           <option value="JADEStored">JADEDisplayed</option>
+         </select>
+      </li>
+    
+    
+                   </ul>
+                   <div class="spacer1"></div>
+                 </fieldset>
+                 <fieldset class="section level2" id="T1USER_DOC_HDRSection4" name="T1USER_DOC_HDRSection4">
+                   <legend><span>Password Maintenance</span></legend>
+                   <div class="spacer1 tabview"></div>
+                   <ul class="field-column" id="T1USER_DOC_HDRSectionCol-RESET_PSWD_FL" name="T1USER_DOC_HDRSectionCol-RESET_PSWD_FL">
+        
+      <li id="field-txtT1RESET_PSWD_FL" name="field-txtT1RESET_PSWD_FL" class="field
+  
+           boolean
+" title="Reset Password">
+         
+      <label for="txtT1RESET_PSWD_FL" title="Reset Password">Reset Password:</label>
+   
+         <input type="checkbox" name="txtT1RESET_PSWD_FL" id="txtT1RESET_PSWD_FL" class="field-value" value="RESET_PSWD_FL" vsds="T1USER_DOC_HDR" vsdf="RESET_PSWD_FL" title="Reset Password"></input>
+      </li>
+    
+    
+        
+      <li id="field-txtT1GEN_NEW_PSWD_FL" name="field-txtT1GEN_NEW_PSWD_FL" class="field
+  
+           boolean
+" title="Generate New Password">
+         
+      <label for="txtT1GEN_NEW_PSWD_FL" title="Generate New Password">Generate New Password:</label>
+   
+         <input type="checkbox" name="txtT1GEN_NEW_PSWD_FL" id="txtT1GEN_NEW_PSWD_FL" class="field-value" value="GEN_NEW_PSWD_FL" vsds="T1USER_DOC_HDR" vsdf="GEN_NEW_PSWD_FL" title="Generate New Password"></input>
+      </li>
+    
+    
+        
+      <li id="field-txtT1EXPIRE_PSWD_FL" name="field-txtT1EXPIRE_PSWD_FL" class="field
+  
+           boolean
+" title="Expire New Password">
+         
+      <label for="txtT1EXPIRE_PSWD_FL" title="Expire New Password">Expire New Password:</label>
+   
+         <input type="checkbox" name="txtT1EXPIRE_PSWD_FL" id="txtT1EXPIRE_PSWD_FL" class="field-value" value="EXPIRE_PSWD_FL" vsds="T1USER_DOC_HDR" vsdf="EXPIRE_PSWD_FL" title="Expire New Password"></input>
+      </li>
+    
+    
+                   </ul>
+                   <ul class="field-column" id="T1USER_DOC_HDRSectionCol-PSWD_TXT" name="T1USER_DOC_HDRSectionCol-PSWD_TXT">
+       
+      <li id="field-txtT1PSWD_TXT" name="field-txtT1PSWD_TXT" class="field password
+  
+     text
+" title="Password">
+        
+      <label for="txtT1PSWD_TXT" title="Password">Password:</label>
+   
+        <input type="password" name="txtT1PSWD_TXT" id="txtT1PSWD_TXT" class="field-value" 
+                  size="20"
+ vsds="T1USER_DOC_HDR" vsdf="PSWD_TXT" 
+            ams_max_len="255"
+ value="PSWD_TXT" title="Password"></input>
+      </li>
+    
+    
+       
+      <li id="field-txtT1EMAIL_PSWD_TXT" name="field-txtT1EMAIL_PSWD_TXT" class="field password
+  
+     text
+" title="Email Password">
+        
+      <label for="txtT1EMAIL_PSWD_TXT" title="Email Password">Email Password:</label>
+   
+        <input type="password" name="txtT1EMAIL_PSWD_TXT" id="txtT1EMAIL_PSWD_TXT" class="field-value" 
+                  size="20"
+ vsds="T1USER_DOC_HDR" vsdf="EMAIL_PSWD_TXT" 
+            ams_max_len="255"
+ value="EMAIL_PSWD_TXT" title="Email Password"></input>
+      </li>
+    
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+   <vstext vsclass="com.amsinc.gems.adv.vfc.html.AdvAppListTextContentElement" name="txtT1APPL_AUTH" vsds="T1USER_DOC_HDR" vsdf="APPL_AUTH" vspreservetag="true"></vstext>
+-->
+<!-- END CUSTOMIZATION-->
+                   </ul>
+                   <div class="spacer1"></div>
+                 </fieldset>
+                 <fieldset class="section level3" id="T1USER_DOC_HDRSection5" name="T1USER_DOC_HDRSection5">
+                   <legend><span>Applications</span></legend>
+                   <div class="spacer1 tabview"></div>
+                   <ul class="field-column" id="T1USER_DOC_HDRSectionCol-USER_SEC_REALM" name="T1USER_DOC_HDRSectionCol-USER_SEC_REALM">
+	<!-- BEGIN CUSTOMIZATION -->
+	<li id="field-txtT1USER_DOC_HDRAPP0" name="field-txtT1USER_DOC_HDRAPP0" class="field
+
+			     text
+			" title="ADVANTAGE Financial">
+				<vstext vsclass="com.amsinc.gems.adv.vfc.html.AdvAppListTextContentElement" name="txtT1APPL_AUTH" vsds="T1USER_DOC_HDR" vsdf="APPL_AUTH" vspreservetag="true"></vstext>
+	</li>
+	<!-- END CUSTOMIZATION-->
+        <li id="field-txtT1USER_SEC_REALM" name="field-txtT1USER_SEC_REALM" class="field
+  
+     text
+" title="User Security Realm">
+           
+      <label for="txtT1USER_SEC_REALM" title="User Security Realm">User Security Realm:</label>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+           <input type="text" name="txtT1USER_SEC_REALM" id="txtT1USER_SEC_REALM" class="field-value"
+                  size="20"
+ vsds="T1USER_DOC_HDR" vsdf="USER_SEC_REALM"
+ value="USER_SEC_REALM" title="User Security Realm"
+            ams_max_len="50"
+></input>
+-->
+<!-- END CUSTOMIZATION-->
+<!-- BEGIN CUSTOMIZATION -->
+
+<select name="txtT1USER_SEC_REALM" id="txtT1USER_SEC_REALM" class="field-value" vsds="T1USER_DOC_HDR" vsdf="USER_SEC_REALM" size="1" vscodetable="" title="User Security Realm" ams_show_es="NO">
+           <option value="JADEStored">JADEDisplayed</option>
+         </select>
+
+<!-- END CUSTOMIZATION-->
+        </li>
+    
+    
+        
+      <li id="field-txtT1EXIST_LDAP_USER_FL" name="field-txtT1EXIST_LDAP_USER_FL" class="field
+  
+           boolean
+" title="Existing LDAP User">
+         
+      <label for="txtT1EXIST_LDAP_USER_FL" title="Existing LDAP User">Existing LDAP User:</label>
+   
+         <input type="checkbox" name="txtT1EXIST_LDAP_USER_FL" id="txtT1EXIST_LDAP_USER_FL" class="field-value" value="EXIST_LDAP_USER_FL" vsds="T1USER_DOC_HDR" vsdf="EXIST_LDAP_USER_FL" title="Existing LDAP User"></input>
+      </li>
+    
+    
+                   </ul>
+                   <div class="spacer1"></div>
+                 </fieldset>
+                 <fieldset class="section level2 " id="T1USER_DOC_HDRSection6" name="T1USER_DOC_HDRSection6">
+                   <legend><span>External Directory ID</span></legend>
+                   <div class="spacer1 tabview"></div>
+                   <ul class="field-column" id="T1USER_DOC_HDRSectionCol-EXT_DIR_ID" name="T1USER_DOC_HDRSectionCol-EXT_DIR_ID">
+        <li id="field-txtT1EXT_DIR_ID" name="field-txtT1EXT_DIR_ID" class="field 
+  
+     text
+" title="External Directory ID">
+      <label for="txtT1EXT_DIR_ID" title="External Directory ID">External Directory ID:</label>
+           <input type="text" name="txtT1EXT_DIR_ID" id="txtT1EXT_DIR_ID" class="field-value" 
+                  size="25"
+ vsds="T1USER_DOC_HDR" vsdf="EXT_DIR_ID" 
+ value="EXT_DIR_ID" title="External Directory ID" 
+            ams_max_len="255"
+></input>
+        </li>
+                  </ul>
+                  <div class="spacer1"></div>
+               </fieldset>
+      </div><!-- End Header Component - Scalar -->
+      </div> <!-- End Header Component inner-content -->
+      <div id="HeaderComponentActions" name="HeaderComponentActions" vsds="" class="bar actions" vsvisible="true">
+         
+       <ul class="action-list primary">
+         <li class="action action-compsave" title="Save">
+             <a name="HeaderComponentActionSave" vsaction="save" vsds="T1USER_DOC_HDR" asyncaction="true" href="#HeaderComponentActionSave" id="HeaderComponentActionSave" accesskey="5"><span class="img"><span class="txt">Save</span></span></a>
+         </li>
+         <li class="action action-compundo" title="Undo">
+             <a name="HeaderComponentActionUndo" vsaction="undo" asyncaction="true" vsds="T1USER_DOC_HDR" href="#HeaderComponentActionUndo" id="HeaderComponentActionUndo" accesskey="6"><span class="img"><span class="txt">Undo</span></span></a>
+         </li>
+       </ul>
+       
+   <ul class="action-list secondary custom">
+      <li class="action" title="Populate From Existing User">
+         <a id="HeaderComponentCustomActionPopulateUser" name="HeaderComponentCustomActionPopulateUser" href="#HeaderComponentCustomActionPopulateUser" title="Populate From Existing User"
+           vsaction="200"
+           ams_sub_action="940"
+           vsds="T1USER_DOC_HDR"
+         >Populate From Existing User</a>
+      </li>
+  </ul>
+
+
+      </div><!-- End bar actions-->
+   </div><!-- Content -->
+</div><!-- Header Component -->
+
+ 
+<div id="SCROLEComponent" name="SCROLEComponent" class="component level1" vsds="T3USER_DOC_SCROLE"><!-- Security Roles Component -->
+   <a id="SCROLEComponent_SkipLinkTarget"></a>
+   <input type="hidden" value="%SEC_ROLE_ID%" name="SCROLEComponentContext" id="SCROLEComponentContext" ></input>
+   <div class="header">
+      <h2 class="title">Security Roles</h2>
+      <div class="header-info-actions">
+         <a name="SCROLEComponentActionAttachments" href="#SCROLEComponentActionAttachments" id="SCROLEComponentActionAttachments" class="component-attachment hidden" title="Attachments">
+            <img src="../AMSImages/attachment.gif"
+ alt="Attachment"></img>
+            <span class="attachment-count"></span>
+         </a>
+      </div>
+      <dl class="context"></dl>
+       
+      <div class="iconbox">
+         <ul class="action-list">
+           
+           <span class="accordionseparator-inactive"></span>
+           <li class="action component-expandcollapse">
+              <a id="SCROLEComponentActionCollapseExpand" name="SCROLEComponentActionCollapseExpand" class="expandcollapse" href="#SCROLEComponentActionCollapseExpand" title="Expand" 
+>
+                 <img class="expand" src="../AMSImages/AccordionOpen.gif"
+ alt="Expand"></img>
+              </a>
+           </li>
+         </ul>
+      </div>
+   </div>
+    <div class="content" name="SCROLE" id="SCROLE" ams_menu="show" ams_table="USER_DOC_SCROLE" vsds="T3USER_DOC_SCROLE" tabnm="Security Roles" tabid="SCROLE" tabseqno="1" vsclass="com.amsinc.gems.adv.vfc.html.AdvDocTSDivElement" >
+ 
+       <input type="hidden" value="true" name="SCROLEComponentGridAllowInlineEditing" id="SCROLEComponentGridAllowInlineEditing" ></input>
+ 
+       <input type="hidden" value="false" name="SCROLEComponentScalarOnDemand" id="SCROLEComponentScalarOnDemand"></input>
+ 
+       <input type="hidden" value="1" name="SCROLEComponentRefreshDependents" id="SCROLEComponentRefreshDependents" ></input>
+ 
+       <input type="hidden" value="false" name="SCROLEComponentAllowQuickSwitch" id="SCROLEComponentAllowQuickSwitch"></input>
+ 
+       <input type="hidden" value="false" name="SCROLEComponentShowLineNoInContext" id="SCROLEComponentShowLineNoInContext" ></input>
+
+    <div class="bar headercontext">
+    </div>
+
+<div class="inner-content">
+
+   <div name="T3USER_DOC_SCROLEGrid" id="T3USER_DOC_SCROLEGrid" class="grid" vsds="" vsvisible="true">  <!-- Security Roles Component - Grid -->
+     <input type="hidden" name="T3USER_DOC_SCROLE_Currency" value="">
+     <input type="hidden" name="T3USER_DOC_SCROLE_Old_Currency" value="">
+     <table name="tblT3USER_DOC_SCROLE" id="tblT3USER_DOC_SCROLE" vsds="T3USER_DOC_SCROLE">
+       <thead>
+          <tr>
+            
+            <th title="Select Line" id="T3ViewGridSelectLine" name="T3ViewGridSelectLine" class="viewgrid-header iconbox selecticon quickswitchattr" scope="col"></th>
+            <th title="Attachments" id="T3ViewGridAttachments" name="T3ViewGridAttachments" class="viewgrid-header iconbox attachment" scope="col"></th>
+            <th title="Comments" id="T3ViewGridComments" name="T3ViewGridComments" class="viewgrid-header iconbox comments" scope="col"></th>
+    
+      <th id="T3SEC_ROLE_IDGridLabel" name="T3SEC_ROLE_IDGridLabel" title="Security Role ID" class="viewgrid-header
+ contextattr
+ 
+  
+     text
+" fieldname="SEC_ROLE_ID" scope="col">Security Role ID</th>
+  
+      <th id="T3SEC_ROLE_DSCRGridLabel" name="T3SEC_ROLE_DSCRGridLabel" title="Description" class="viewgrid-header
+ 
+  
+     text
+" fieldname="SEC_ROLE_DSCR" scope="col">Description</th>
+  
+      <th id="T3PREC_NOGridLabel" name="T3PREC_NOGridLabel" title="Precedence" class="viewgrid-header
+ 
+  
+            integer
+" fieldname="PREC_NO" scope="col">Precedence</th>
+  
+            <th title="Show Details" id="T3ViewGridShowDetails" name="T3ViewGridShowDetails" class="viewgrid-header iconbox scalardetails" scope="col"></th>
+            <th title="Copy Line" id="T3ViewGridCopyLine" name="T3ViewGridCopyLine" class="viewgrid-header iconbox linecopy editmode" scope="col"></th>
+            <th title="Delete Line" id="T3ViewGridDeleteLine" name="T3ViewGridDeleteLine" class="viewgrid-header iconbox linedelete editmode" scope="col"></th>
+            <th id="T3ViewGridRight" name="T3ViewGridRight" class="viewgrid-header right" scope="col"></th>
+          </tr>
+       </thead>
+       <tbody>
+         <tr vsprototyperow="true" class="odd" adv_altclassname="even">
+              
+              <td class="viewgrid-field iconbox selecticon">
+                 <input type="image" name="SCROLEComponentGridLineActionSelect" id="SCROLEComponentGridLineActionSelect" title="Select Row" alt="Select Row"  vsds="T3USER_DOC_SCROLE" vsaction="currency" src="../AMSImages/SmallRowSel.gif"></input>
+              </td>
+
+              <td class="viewgrid-field iconbox attachment"><input type="image" name="SCROLEComponentGridLineActionViewAttachments" id="SCROLEComponentGridLineActionViewAttachments" attach="attach"></input></td>
+              <td class="viewgrid-field iconbox comments"><input type="image" name="SCROLEComponentGridLineActionViewComments" id="SCROLEComponentGridLineActionViewComments" comments="comments" src="../AMSImages/comment.gif"
+ title="View Comments"></input></td>
+              
+        <td class="viewgrid-field
+ contextattr
+ 
+  
+     text
+" name="field-txtGridT3SEC_ROLE_ID" id="field-txtGridT3SEC_ROLE_ID">
+          <vstext name="txtGridT3SEC_ROLE_ID" id="txtGridT3SEC_ROLE_ID" vsds="T3USER_DOC_SCROLE" vsdf="SEC_ROLE_ID" 
+></vstext>
+        </td>
+      
+        <td class="viewgrid-field
+ 
+  
+     text
+" name="field-txtGridT3SEC_ROLE_DSCR" id="field-txtGridT3SEC_ROLE_DSCR">
+          <vstext name="txtGridT3SEC_ROLE_DSCR" id="txtGridT3SEC_ROLE_DSCR" vsds="T3USER_DOC_SCROLE" vsdf="SEC_ROLE_DSCR" 
+></vstext>
+        </td>
+      
+        <td class="viewgrid-field
+ 
+  
+            integer
+" name="field-txtGridT3PREC_NO" id="field-txtGridT3PREC_NO">
+          <vstext name="txtGridT3PREC_NO" id="txtGridT3PREC_NO" vsds="T3USER_DOC_SCROLE" vsdf="PREC_NO" 
+></vstext>
+        </td>
+      
+              <td class="viewgrid-field iconbox scalardetails"><a name="SCROLEComponentGridLineActionShowDetails" id="SCROLEComponentGridLineActionShowDetails" title="Show Details" href="#SCROLEComponentGridLineActionShowDetails"><img alt="Show Details" src="../AMSImages/GridRowShowDetails.png"></img></a></td>
+              
+      <td class="viewgrid-field iconbox linecopy editmode">
+          
+      <a name="SCROLEComponentGridLineActionCopy" id="SCROLEComponentGridLineActionCopy" masterfield="IndexT3USER_DOC_SCROLECopyLine" title="Copy Line" href="#SCROLEComponentGridLineActionCopy">
+         <img alt="Copy Line" src="../AMSImages/GridRowCopy.gif"></img>
+      </a>
+      </td>
+              
+      <td class="viewgrid-field iconbox linedelete editmode">
+        
+        <a name="SCROLEComponentGridLineActionDelete" id="SCROLEComponentGridLineActionDelete" masterfield="IndexT3USER_DOC_SCROLEdelete" title="Delete Line" href="#SCROLEComponentGridLineActionDelete">
+           <img alt="Delete Line" src="../AMSImages/GridRowDelete.gif"></img>
+        </a>
+      </td>
+    
+              <td class="viewgrid-field right"></td>
+         </tr>
+       </tbody>
+       <tfoot>
+          <tr>
+            <td class="iconbox footer selecticon"></td>
+            <td class="iconbox footer attachment"></td>
+            <td class="iconbox footer comments"></td>
+    
+            <td class="iconbox footer data"></td>
+            <td class="iconbox footer data"></td>
+            <td class="iconbox footer data"></td>
+            <td class="iconbox footer scalardetails"></td>
+            <td class="iconbox footer linecopy editmode"></td>
+            <td class="iconbox footer linedelete editmode"></td>
+            <td class="right footer"></td>
+          </tr>
+       </tfoot>
+   </table>
+
+   <div class="masterfields">
+      <a href="SecurityAdmin" vsds="T3USER_DOC_SCROLE" vsaction="delete" id="IndexT3USER_DOC_SCROLEdelete" asyncaction="true" name="T3USER_DOC_SCROLEdelete" title=""></a>
+      <a href="SecurityAdmin" vsds="T3USER_DOC_SCROLE" vsaction="11" id="IndexT3USER_DOC_SCROLECopyLine" asyncaction="true" name="T3USER_DOC_SCROLECopyLine" title=""></a>
+   </div>
+
+   <div id="T3USER_DOC_SCROLEGridPagination" name="T3USER_DOC_SCROLEGridPagination" class="grid-pagination" vsds="">
+      <div class="page">
+         <vsquerystatus vsds="T3USER_DOC_SCROLE" statustype="page" 
+       vsclass="com.amsinc.gems.adv.vfc.html.AdvQueryStatusElement"
+></vsquerystatus>
+      </div>
+      <div class="line hidden">
+         <vsquerystatus vsds="T3USER_DOC_SCROLE" statustype="linetot"  vsclass="com.amsinc.gems.adv.vfc.html.AdvQueryStatusElement"></vsquerystatus>
+      </div>
+      <ul class="action-list">
+         <li class="action">
+            <a id="SCROLEComponentGridActionFirstPage" name="SCROLEComponentGridActionFirstPage"  vsaction="firstpage" asyncaction="true" vsds="T3USER_DOC_SCROLE" href="#SCROLEComponentGridActionFirstPage" accesskey="0">First</a>
+         </li>
+         <li class="action">
+            <a id="SCROLEComponentGridActionPreviousPage" name="SCROLEComponentGridActionPreviousPage" vsaction="prevpage" asyncaction="true" vsds="T3USER_DOC_SCROLE" href="#SCROLEComponentGridActionPreviousPage" accesskey="1">Previous</a>
+         </li>
+         <li class="action">
+            <a id="SCROLEComponentGridActionNextPage" name="SCROLEComponentGridActionNextPage" vsaction="nextpage" asyncaction="true" vsds="T3USER_DOC_SCROLE" href="#SCROLEComponentGridActionNextPage" accesskey="2">Next</a>
+         </li>
+         <li class="action">
+            <a id="SCROLEComponentGridActionLastPage" name="SCROLEComponentGridActionLastPage" vsaction="lastpage" asyncaction="true" vsds="T3USER_DOC_SCROLE" href="#SCROLEComponentGridActionLastPage" accesskey="3">Last</a>
+         </li>
+      </ul>
+      
+      <div class="goto">
+         Go to line: <input name="SCROLEComponentGridGoto" value="" type="text" size="3" maxlength="3"></input><a id="SCROLEComponentGridActionGotoLine" name="SCROLEComponentGridActionGotoLine" href="#SCROLEComponentGridActionGotoLine">Go</a>
+      </div>
+   </div><!-- End Security Roles Component - Grid  grid-pagination-->
+   </div><!-- End Security Roles Component - Grid -->
+
+    
+<div id="SCROLEEditGridContainer"  name="SCROLEEditGridContainer" vsds="" vsvisible="false">
+
+     <div id="SCROLEEditGrid" name="SCROLEEditGrid" vsds="" class="editgrid">
+      <table name="tblT3USER_DOC_SCROLE_EditGrid" id="tblT3USER_DOC_SCROLE_EditGrid" vsds="T3USER_DOC_SCROLE">
+         <thead>
+           <tr>
+             <th title="Currency" id="T3EditGridCurrency" name="T3EditGridCurrency" class="editgrid-header iconbox editmode" scope="col"></th>
+             <th title="Attachments" id="T3EditGridAttachments" name="T3EditGridAttachments" class="editgrid-header iconbox editmode attachment" scope="col">
+                <img title="Attachments" alt="Attachments" src="../AMSImages/paperClip.gif"
+></img>
+             </th>
+             <th title="Comments" id="T3EditGridComments" name="T3EditGridComments" class="editgrid-header iconbox editmode comment" scope="col">
+                <img title="Comments" src="../AMSImages/comment.gif"
+ alt="Comments"></img>
+             </th>
+      
+       <th id="T3SEC_ROLE_IDEditGridLabel" name="T3SEC_ROLE_IDEditGridLabel" class="editgrid-header
+  
+     text
+ required
+             pick autocomplete
+" fieldname="SEC_ROLE_ID" scope="col" title="Security Role ID">Security Role ID</th>
+   
+       <th id="T3PREC_NOEditGridLabel" name="T3PREC_NOEditGridLabel" class="editgrid-header
+  
+            integer
+ required
+" fieldname="PREC_NO" scope="col" title="Precedence">Precedence</th>
+   
+       <th id="T3REASONEditGridLabel" name="T3REASONEditGridLabel" class="editgrid-header
+  
+       memo
+ istextareafield
+" fieldname="REASON" scope="col" title="Revoke Reason">Revoke Reason</th>
+   
+           </tr>
+         </thead>
+         <tbody>
+           <tr vsprototyperow="true">
+               <td class="editgrid-field iconbox selecticon">
+                  <input type="image" name="T3USER_DOC_SCROLEvscurrency" id="T3USER_DOC_SCROLEvscurrency" title="Select Row" alt="Select Row" vsds="T3USER_DOC_SCROLE" vsaction="Currency" ams_main_table_name="tblT3USER_DOC_SCROLE" src="../AMSImages/ADVRowSel.gif"
+></input>
+               </td>
+
+               <td class="editgrid-field iconbox editmode attachment">
+                  <input type="image" name="SCROLEComponentEditGridLineActionViewAttachments" id="SCROLEComponentEditGridLineActionViewAttachments" attach="attach" title="Edit Attachments"></input>
+               </td>
+
+               <td class="editgrid-field iconbox editmode comment">
+                  <input type="image" name="SCROLEComponentEditGridLineActionViewComments" id="SCROLEComponentEditGridLineActionViewComments" comments="comments" src="../AMSImages/comment.gif"
+ title="Edit Comments"></input>
+               </td>
+
+               
+        <td class="editgrid-field pick autocomplete
+  
+     text
+" name="field-txtEditGridT3SEC_ROLE_ID" id="field-txtEditGridT3SEC_ROLE_ID">
+          <input type="text" name="txtEditGridT3SEC_ROLE_ID" id="txtEditGridT3SEC_ROLE_ID" 
+                  size="20"
+      maxlength="16"
+ value="SEC_ROLE_ID" vsds="T3USER_DOC_SCROLE" vsdf="SEC_ROLE_ID" 
+ class="advinput
+ autocomplete
+ required
+" title="Security Role ID" tabindex="1"></input>
+           <div class="hiddenpickchoice">
+              <a href="javascript:{}"  masterfield="IndexpckEditT3SEC_ROLE_ID" title="Select Security Role ID" tabindex="1">
+                 <img src= "../AMSImages/ADVEditGridPickImg.gif"
+ title="Select Security Role ID" alt="Select Security Role ID" class="advimage"></img>
+              </a>
+           </div>
+        </td>
+      
+        <td class="editgrid-field
+ required
+ 
+  
+            integer
+" name="field-txtEditGridT3PREC_NO" id="field-txtEditGridT3PREC_NO">
+          <input type="text" name="txtEditGridT3PREC_NO" id="txtEditGridT3PREC_NO" 
+                  size="10"
+            maxlength="10"
+ value="PREC_NO" vsds="T3USER_DOC_SCROLE" vsdf="PREC_NO" 
+ class="
+ required
+" title="Precedence" tabindex="1"></input>
+        </td>
+      
+        <td class="editgrid-field
+ istextareafield
+ 
+  
+       memo
+" name="field-txtEditGridT3REASON" id="field-txtEditGridT3REASON">
+          <input type="text" name="txtEditGridT3REASON" id="txtEditGridT3REASON" 
+ value="REASON" vsds="T3USER_DOC_SCROLE" vsdf="REASON" 
+ class="
+ istextareafield
+" title="Revoke Reason" tabindex="1"></input>
+        </td>
+      
+           </tr>
+         </tbody>
+      </table>
+     </div>
+     <div id="T3USER_DOC_SCROLEEditGridPagination" name="T3USER_DOC_SCROLEEditGridPagination" class="grid-pagination" vsds="">
+        <div class="page">
+           <vsquerystatus vsds="T3USER_DOC_SCROLE" statustype="page" 
+       vsclass="com.amsinc.gems.adv.vfc.html.AdvQueryStatusElement"
+></vsquerystatus>
+        </div>
+        <div class="line hidden">
+           <vsquerystatus vsds="T3USER_DOC_SCROLE" statustype="linetot"  vsclass="com.amsinc.gems.adv.vfc.html.AdvQueryStatusElement"></vsquerystatus>
+        </div>
+        <ul class="action-list">
+           <li class="action">
+              <a id="SCROLEComponentEditGridActionFirstPage" name="SCROLEComponentEditGridActionFirstPage"  vsaction="firstpage" asyncaction="true" vsds="T3USER_DOC_SCROLE" href="#SCROLEComponentGridActionFirstPage" accesskey="0">First</a>
+           </li>
+           <li class="action">
+              <a id="SCROLEComponentEditGridActionPreviousPage" name="SCROLEComponentEditGridActionPreviousPage" vsaction="prevpage" asyncaction="true" vsds="T3USER_DOC_SCROLE" href="#SCROLEComponentGridActionPreviousPage" accesskey="1">Previous</a>
+           </li>
+           <li class="action">
+              <a id="SCROLEComponentEditGridActionNextPage" name="SCROLEComponentEditGridActionNextPage" vsaction="nextpage" asyncaction="true" vsds="T3USER_DOC_SCROLE" href="#SCROLEComponentGridActionNextPage" accesskey="2">Next</a>
+           </li>
+           <li class="action">
+              <a id="SCROLEComponentEditGridActionLastPage" name="SCROLEComponentEditGridActionLastPage" vsaction="lastpage" asyncaction="true" vsds="T3USER_DOC_SCROLE" href="#SCROLEComponentGridActionLastPage" accesskey="3">Last</a>
+           </li>
+        </ul>
+     </div><!-- End Security Roles Component - EditGrid  grid-pagination-->
+     <div name="SCROLEEditableGridMasterFields" id="SCROLEEditableGridMasterFields" class="masterfields hidden">
+        
+        <input id="IndexpckEditT3SEC_ROLE_ID" type="image" name="pckEditT3SEC_ROLE_ID" vspick="T4R_SC_SEC_ROLE" vspicktext="txtT3SEC_ROLE_ID" vsds="T3USER_DOC_SCROLE" vsaction="pick" src="../AMSImages/ADVPickImg.gif"
+ alt="" title=""></input>
+        
+     </div>
+     <div name="SCROLEEditableGridElemtAppend" id="SCROLEEditableGridElemtAppend" class="hidden"></div>
+</div><!-- End SCROLEEditGridContainer -->
+
+   <div class="scalar" id="T3USER_DOC_SCROLEScalar" name="T3USER_DOC_SCROLEScalar" vsds="T3USER_DOC_SCROLE" vsvisible="false"><!-- Security Roles Component -  Scalar -->
+     
+  
+     <ul class="action-list">
+        
+        <li class="action scalarpin">
+           <a title="Toggle Always On Scalar" name="SCROLEComponentActionScalarOnDemand" id="SCROLEComponentActionScalarOnDemand" href="#SCROLEComponentActionScalarOnDemand">
+      <img alt="Toggle Scalar OnDemand" src="../AMSImages/AlwaysOnScalar.gif"></img>
+           </a>
+        </li>
+        
+        <li class="action scalarview action-listview">
+           <a title="Show all fields in a list view" name="SCROLEComponentActionScalarListView" id="SCROLEComponentActionScalarListView" href="#SCROLEComponentActionScalarListView"><span class="img"><span class="txt">List View</span></span></a>
+        </li>
+     </ul>
+   
+      <fieldset class="section level1" id="T3USER_DOC_SCROLESection" name="T3USER_DOC_SCROLESection">
+         <div class="spacer1 tabview"></div>
+         <ul class="field-column" id="T3USER_DOC_SCROLESectionCol-COMP_ACTN_CD" name="T3USER_DOC_SCROLESectionCol-COMP_ACTN_CD">
+
+       
+      <li id="field-txtT3COMP_ACTN_CD" name="field-txtT3COMP_ACTN_CD" class="field radio required
+  
+            integer
+" title="Action (Required)">
+        
+   <label title="Action (Required)">Action:</label>
+        <div class="field-value">
+        
+   <input type="radio" name="rbtT3COMP_ACTN_CD" id="rbtT3COMP_ACTN_CD0" title="Add" value="0" vsds="T3USER_DOC_SCROLE" vsdf="COMP_ACTN_CD"></input>
+   <label for="rbtT3COMP_ACTN_CD0" title="Add">Add</label>
+   <input type="radio" name="rbtT3COMP_ACTN_CD" id="rbtT3COMP_ACTN_CD1" title="Update" value="1" vsds="T3USER_DOC_SCROLE" vsdf="COMP_ACTN_CD"></input>
+   <label for="rbtT3COMP_ACTN_CD1" title="Update">Update</label>
+   <input type="radio" name="rbtT3COMP_ACTN_CD" id="rbtT3COMP_ACTN_CD2" title="Delete" value="2" vsds="T3USER_DOC_SCROLE" vsdf="COMP_ACTN_CD"></input>
+   <label for="rbtT3COMP_ACTN_CD2" title="Delete">Delete</label>
+        </div>
+      </li>
+    
+    
+
+      <li id="field-txtT3SEC_ROLE_ID" name="field-txtT3SEC_ROLE_ID" class="field required pick autocomplete
+  
+     text
+" title="Security Role ID (Required)">
+         <label for="txtT3SEC_ROLE_ID" title="Security Role ID (Required)">Security Role ID:</label>
+         <input type="text" name="txtT3SEC_ROLE_ID" id="txtT3SEC_ROLE_ID" class="field-value" 
+            ams_max_len="16"
+ value="SEC_ROLE_ID" 
+                  size="20"
+ vsds="T3USER_DOC_SCROLE" vsdf="SEC_ROLE_ID" title="Security Role ID (Required)"></input>
+         <input type="image" class="pickimg" vspick="T4R_SC_SEC_ROLE" vspicktext="txtT3SEC_ROLE_ID" vsds="T3USER_DOC_SCROLE" vsaction="pick" name="pckT3SEC_ROLE_ID" id="pckT3SEC_ROLE_ID" title="Select Security Role ID" alt="Select Security Role ID" src="../AMSImages/ADVPickImg.gif"
+></input>
+      </li>
+    
+
+      <li id="field-txtT3SEC_ROLE_DSCR" name="field-txtT3SEC_ROLE_DSCR" class="field
+  
+     text
+" title="Description">
+         
+      <label for="txtT3SEC_ROLE_DSCR" title="Description">Description:</label>
+   
+         <div id="txtT3SEC_ROLE_DSCR" name="txtT3SEC_ROLE_DSCR" vsds="T3USER_DOC_SCROLE" vsdf="SEC_ROLE_DSCR" class="field-value" vsformat="">
+            <vstext name="disptxtT3SEC_ROLE_DSCR" vsds="T3USER_DOC_SCROLE" vsdf="SEC_ROLE_DSCR" 
+               size="15"
+></vstext>
+         </div>
+      </li>
+    
+
+        
+      <li id="field-txtT3PREC_NO" name="field-txtT3PREC_NO" class="field required
+  
+            integer
+" title="Precedence (Required)">
+         <label for="txtT3PREC_NO" title="Precedence (Required)">Precedence:</label>
+        <input type="text" name="txtT3PREC_NO" id="txtT3PREC_NO" class="field-value" 
+                  size="10"
+ vsds="T3USER_DOC_SCROLE" vsdf="PREC_NO" 
+                  ams_max_len="10"
+ value="PREC_NO"title="Precedence (Required)"></input>
+      </li>
+    
+    
+
+       
+      <li id="field-txtT3REASON" name="field-txtT3REASON" class="field
+  
+       memo
+" title="Revoke Reason">
+        
+      <label for="txtT3REASON" title="Revoke Reason">Revoke Reason:</label>
+   
+        <textarea cols="35" rows="4" name="txtT3REASON" id="txtT3REASON" class="field-value" vsds="T3USER_DOC_SCROLE" vsdf="REASON" 
+ title="Revoke Reason"></textarea>
+      </li>
+    
+    
+  
+                  </ul>
+                  <div class="spacer1"></div>
+               </fieldset>
+   </div><!-- End Security Roles Component - Scalar -->
+</div><!-- End inner content-->
+<div id="SCROLEComponentActions" name="SCROLEComponentActions" vsds="" class="bar actions" vsvisible="true">
+       <ul class="action-list primary">
+         <li class="action action-compsave" title="Save">
+             <a name="SCROLEComponentActionSave" vsaction="save" vsds="T3USER_DOC_SCROLE" asyncaction="true" href="#SCROLEComponentActionSave" id="SCROLEComponentActionSave" accesskey="5"><span class="img"><span class="txt">Save</span></span></a>
+         </li>
+         <li class="action action-compundo" title="Undo">
+             <a name="SCROLEComponentActionUndo" vsaction="undo" asyncaction="true" vsds="T3USER_DOC_SCROLE"  href="#SCROLEComponentActionUndo" id="SCROLEComponentActionUndo" accesskey="6"><span class="img"><span class="txt">Undo</span></span></a>
+         </li>
+       </ul>
+       <ul class="action-list primary">
+         
+         <li class="action action-compinsertnew editmode" title="Insert New Line">
+            <a name="SCROLEComponentGridActionInsertNew" id="SCROLEComponentGridActionInsertNew"  vsaction="insert" asyncaction="true" vsds="T3USER_DOC_SCROLE" href="#SCROLEComponentGridActionInsertNew" accesskey="I"><span class="img"><span class="txt">Insert New Line</span></span></a>
+         </li>
+         
+         <li class="action action-compinsertcopied editmode" title="Insert Copied Line">
+            <a name="SCROLEComponentGridActionInsertCopied" id="SCROLEComponentGridActionInsertCopied" vsaction="12" asyncaction="true" vsds="T3USER_DOC_SCROLE" href="#SCROLEComponentGridActionInsertCopied" accesskey="8"><span class="img"><span class="txt">Insert Copied Line</span></span></a>
+         </li>
+         <li class="action action-compviewalllines hidden" title="Show Lines">
+            <a name="SCROLEComponentGridActionViewAllLines" id="SCROLEComponentGridActionViewAllLines" href="#SCROLEComponentGridActionViewAllLines" accesskey="W"><span class="img"><span class="txt">Show Lines</span></span></a>
+         </li>
+       </ul>
+       
+       <ul class="action-list primary editable-grid-actions">
+          <li class="action action-compedtlines editmode" title="Edit with Grid">
+            <a name="SCROLEComponentGridActionEdtLines" id="SCROLEComponentGridActionEdtLines" href="#SCROLEComponentGridActionEdtLines" accesskey="E"><span class="img"><span class="txt">Edit with Grid</span></span></a>
+          </li>
+          <li class="action action-compbacktovog editmode hidden" title="Done">
+              <a name="SCROLEComponentGridActionBackToVOG" id="SCROLEComponentGridActionBackToVOG" href="#SCROLEComponentGridActionBackToVOG"><span class="img"><span class="txt">Done</span></span></a>
+          </li>
+       </ul>
+       
+
+
+</div><!-- End bar actions-->
+ </div><!-- End Content -->
+ </div>
+<div id="WFROLEComponent" name="WFROLEComponent" class="component level1" vsds="T5USER_DOC_WFROLE"><!-- Workflow Roles Component -->
+   <a id="WFROLEComponent_SkipLinkTarget"></a>
+   <input type="hidden" value="%WF_ROLE_ID%" name="WFROLEComponentContext" id="WFROLEComponentContext" ></input>
+   <div class="header">
+      <h2 class="title">Workflow Roles</h2>
+      <div class="header-info-actions">
+         <a name="WFROLEComponentActionAttachments" href="#WFROLEComponentActionAttachments" id="WFROLEComponentActionAttachments" class="component-attachment hidden" title="Attachments">
+            <img src="../AMSImages/attachment.gif"
+ alt="Attachment"></img>
+            <span class="attachment-count"></span>
+         </a>
+      </div>
+      <dl class="context"></dl>
+       
+      <div class="iconbox">
+         <ul class="action-list">
+           
+           <span class="accordionseparator-inactive"></span>
+           <li class="action component-expandcollapse">
+              <a id="WFROLEComponentActionCollapseExpand" name="WFROLEComponentActionCollapseExpand" class="expandcollapse" href="#WFROLEComponentActionCollapseExpand" title="Expand" 
+>
+                 <img class="expand" src="../AMSImages/AccordionOpen.gif"
+ alt="Expand"></img>
+              </a>
+           </li>
+         </ul>
+      </div>
+   </div>
+    <div class="content" name="WFROLE" id="WFROLE" ams_menu="show" ams_table="USER_DOC_WFROLE" vsds="T5USER_DOC_WFROLE" tabnm="Workflow Roles" tabid="WFROLE" tabseqno="2" vsclass="com.amsinc.gems.adv.vfc.html.AdvDocTSDivElement" >
+ 
+       <input type="hidden" value="true" name="WFROLEComponentGridAllowInlineEditing" id="WFROLEComponentGridAllowInlineEditing" ></input>
+ 
+       <input type="hidden" value="false" name="WFROLEComponentScalarOnDemand" id="WFROLEComponentScalarOnDemand"></input>
+ 
+       <input type="hidden" value="1" name="WFROLEComponentRefreshDependents" id="WFROLEComponentRefreshDependents" ></input>
+ 
+       <input type="hidden" value="false" name="WFROLEComponentAllowQuickSwitch" id="WFROLEComponentAllowQuickSwitch"></input>
+ 
+       <input type="hidden" value="false" name="WFROLEComponentShowLineNoInContext" id="WFROLEComponentShowLineNoInContext" ></input>
+
+    <div class="bar headercontext">
+    </div>
+
+<div class="inner-content">
+
+   <div name="T5USER_DOC_WFROLEGrid" id="T5USER_DOC_WFROLEGrid" class="grid" vsds="" vsvisible="true">  <!-- Workflow Roles Component - Grid -->
+     <input type="hidden" name="T5USER_DOC_WFROLE_Currency" value="">
+     <input type="hidden" name="T5USER_DOC_WFROLE_Old_Currency" value="">
+     <table name="tblT5USER_DOC_WFROLE" id="tblT5USER_DOC_WFROLE" vsds="T5USER_DOC_WFROLE">
+       <thead>
+          <tr>
+            
+            <th title="Select Line" id="T5ViewGridSelectLine" name="T5ViewGridSelectLine" class="viewgrid-header iconbox selecticon quickswitchattr" scope="col"></th>
+            <th title="Attachments" id="T5ViewGridAttachments" name="T5ViewGridAttachments" class="viewgrid-header iconbox attachment" scope="col"></th>
+            <th title="Comments" id="T5ViewGridComments" name="T5ViewGridComments" class="viewgrid-header iconbox comments" scope="col"></th>
+    
+        <th id="T5WF_ROLE_IDGridLabel" name="T5WF_ROLE_IDGridLabel" 
+    fieldname="WF_ROLE_ID"
+ title="Role ID" class="viewgrid-header
+ contextattr
+ 
+  
+     text
+"  scope="col">
+           <a href="#T5WF_ROLE_IDGridActionSort" vsds="T5USER_DOC_WFROLE" vsaction="sort" asyncaction="true"  name="T5WF_ROLE_IDGridActionSort" id="T5WF_ROLE_IDGridActionSort" 
+    fieldname="WF_ROLE_ID"
+ title="Sort By Role ID">
+             Role ID
+           </a>
+        </th>
+      
+        <th id="T5WF_ROLE_NMGridLabel" name="T5WF_ROLE_NMGridLabel" 
+    fieldname="WF_ROLE_NM"
+ title="Name" class="viewgrid-header
+ 
+  
+     text
+"  scope="col">
+           <a href="#T5WF_ROLE_NMGridActionSort" vsds="T5USER_DOC_WFROLE" vsaction="sort" asyncaction="true"  name="T5WF_ROLE_NMGridActionSort" id="T5WF_ROLE_NMGridActionSort" 
+    fieldname="WF_ROLE_NM"
+ title="Sort By Name">
+             Name
+           </a>
+        </th>
+      
+      <th id="T5WF_ROLE_MGR_FLGridLabel" name="T5WF_ROLE_MGR_FLGridLabel" title="Manager" class="viewgrid-header
+ 
+  
+           boolean
+" fieldname="WF_ROLE_MGR_FL" scope="col">Manager</th>
+  
+        <th id="T5DISP_SEQ_NOGridLabel" name="T5DISP_SEQ_NOGridLabel" 
+    fieldname="DISP_SEQ_NO"
+ title="Display Sequence Number" class="viewgrid-header
+ 
+  
+            integer
+"  scope="col">
+           <a href="#T5DISP_SEQ_NOGridActionSort" vsds="T5USER_DOC_WFROLE" vsaction="sort" asyncaction="true"  name="T5DISP_SEQ_NOGridActionSort" id="T5DISP_SEQ_NOGridActionSort" 
+    fieldname="DISP_SEQ_NO"
+ title="Sort By Display Sequence Number">
+             Display Sequence Number
+           </a>
+        </th>
+      
+            <th title="Show Details" id="T5ViewGridShowDetails" name="T5ViewGridShowDetails" class="viewgrid-header iconbox scalardetails" scope="col"></th>
+            <th title="Copy Line" id="T5ViewGridCopyLine" name="T5ViewGridCopyLine" class="viewgrid-header iconbox linecopy editmode" scope="col"></th>
+            <th title="Delete Line" id="T5ViewGridDeleteLine" name="T5ViewGridDeleteLine" class="viewgrid-header iconbox linedelete editmode" scope="col"></th>
+            <th id="T5ViewGridRight" name="T5ViewGridRight" class="viewgrid-header right" scope="col"></th>
+          </tr>
+       </thead>
+       <tbody>
+         <tr vsprototyperow="true" class="odd" adv_altclassname="even">
+              
+              <td class="viewgrid-field iconbox selecticon">
+                 <input type="image" name="WFROLEComponentGridLineActionSelect" id="WFROLEComponentGridLineActionSelect" title="Select Row" alt="Select Row"  vsds="T5USER_DOC_WFROLE" vsaction="currency" src="../AMSImages/SmallRowSel.gif"></input>
+              </td>
+
+              <td class="viewgrid-field iconbox attachment"><input type="image" name="WFROLEComponentGridLineActionViewAttachments" id="WFROLEComponentGridLineActionViewAttachments" attach="attach"></input></td>
+              <td class="viewgrid-field iconbox comments"><input type="image" name="WFROLEComponentGridLineActionViewComments" id="WFROLEComponentGridLineActionViewComments" comments="comments" src="../AMSImages/comment.gif"
+ title="View Comments"></input></td>
+              
+        <td class="viewgrid-field
+ contextattr
+ 
+  
+     text
+" name="field-txtGridT5WF_ROLE_ID" id="field-txtGridT5WF_ROLE_ID">
+          <vstext name="txtGridT5WF_ROLE_ID" id="txtGridT5WF_ROLE_ID" vsds="T5USER_DOC_WFROLE" vsdf="WF_ROLE_ID" 
+></vstext>
+        </td>
+      
+        <td class="viewgrid-field
+ 
+  
+     text
+" name="field-txtGridT5WF_ROLE_NM" id="field-txtGridT5WF_ROLE_NM">
+          <vstext name="txtGridT5WF_ROLE_NM" id="txtGridT5WF_ROLE_NM" vsds="T5USER_DOC_WFROLE" vsdf="WF_ROLE_NM" 
+></vstext>
+        </td>
+      
+        <td class="viewgrid-field
+ 
+  
+           boolean
+" name="field-txtGridT5WF_ROLE_MGR_FL" id="field-txtGridT5WF_ROLE_MGR_FL">
+          <vstext name="txtGridT5WF_ROLE_MGR_FL" id="txtGridT5WF_ROLE_MGR_FL" vsds="T5USER_DOC_WFROLE" vsdf="WF_ROLE_MGR_FL" 
+></vstext>
+        </td>
+      
+        <td class="viewgrid-field
+ 
+  
+            integer
+" name="field-txtGridT5DISP_SEQ_NO" id="field-txtGridT5DISP_SEQ_NO">
+          <vstext name="txtGridT5DISP_SEQ_NO" id="txtGridT5DISP_SEQ_NO" vsds="T5USER_DOC_WFROLE" vsdf="DISP_SEQ_NO" 
+></vstext>
+        </td>
+      
+              <td class="viewgrid-field iconbox scalardetails"><a name="WFROLEComponentGridLineActionShowDetails" id="WFROLEComponentGridLineActionShowDetails" title="Show Details" href="#WFROLEComponentGridLineActionShowDetails"><img alt="Show Details" src="../AMSImages/GridRowShowDetails.png"></img></a></td>
+              
+      <td class="viewgrid-field iconbox linecopy editmode">
+          
+      <a name="WFROLEComponentGridLineActionCopy" id="WFROLEComponentGridLineActionCopy" masterfield="IndexT5USER_DOC_WFROLECopyLine" title="Copy Line" href="#WFROLEComponentGridLineActionCopy">
+         <img alt="Copy Line" src="../AMSImages/GridRowCopy.gif"></img>
+      </a>
+      </td>
+              
+      <td class="viewgrid-field iconbox linedelete editmode">
+        
+        <a name="WFROLEComponentGridLineActionDelete" id="WFROLEComponentGridLineActionDelete" masterfield="IndexT5USER_DOC_WFROLEdelete" title="Delete Line" href="#WFROLEComponentGridLineActionDelete">
+           <img alt="Delete Line" src="../AMSImages/GridRowDelete.gif"></img>
+        </a>
+      </td>
+    
+              <td class="viewgrid-field right"></td>
+         </tr>
+       </tbody>
+       <tfoot>
+          <tr>
+            <td class="iconbox footer selecticon"></td>
+            <td class="iconbox footer attachment"></td>
+            <td class="iconbox footer comments"></td>
+    
+            <td class="iconbox footer data"></td>
+            <td class="iconbox footer data"></td>
+            <td class="iconbox footer data"></td>
+            <td class="iconbox footer scalardetails"></td>
+            <td class="iconbox footer linecopy editmode"></td>
+            <td class="iconbox footer linedelete editmode"></td>
+            <td class="right footer"></td>
+          </tr>
+       </tfoot>
+   </table>
+
+   <div class="masterfields">
+      <a href="SecurityAdmin" vsds="T5USER_DOC_WFROLE" vsaction="delete" id="IndexT5USER_DOC_WFROLEdelete" asyncaction="true" name="T5USER_DOC_WFROLEdelete" title=""></a>
+      <a href="SecurityAdmin" vsds="T5USER_DOC_WFROLE" vsaction="11" id="IndexT5USER_DOC_WFROLECopyLine" asyncaction="true" name="T5USER_DOC_WFROLECopyLine" title=""></a>
+   </div>
+
+   <div id="T5USER_DOC_WFROLEGridPagination" name="T5USER_DOC_WFROLEGridPagination" class="grid-pagination" vsds="">
+      <div class="page">
+         <vsquerystatus vsds="T5USER_DOC_WFROLE" statustype="page" 
+       vsclass="com.amsinc.gems.adv.vfc.html.AdvQueryStatusElement"
+></vsquerystatus>
+      </div>
+      <div class="line hidden">
+         <vsquerystatus vsds="T5USER_DOC_WFROLE" statustype="linetot"  vsclass="com.amsinc.gems.adv.vfc.html.AdvQueryStatusElement"></vsquerystatus>
+      </div>
+      <ul class="action-list">
+         <li class="action">
+            <a id="WFROLEComponentGridActionFirstPage" name="WFROLEComponentGridActionFirstPage"  vsaction="firstpage" asyncaction="true" vsds="T5USER_DOC_WFROLE" href="#WFROLEComponentGridActionFirstPage" accesskey="0">First</a>
+         </li>
+         <li class="action">
+            <a id="WFROLEComponentGridActionPreviousPage" name="WFROLEComponentGridActionPreviousPage" vsaction="prevpage" asyncaction="true" vsds="T5USER_DOC_WFROLE" href="#WFROLEComponentGridActionPreviousPage" accesskey="1">Previous</a>
+         </li>
+         <li class="action">
+            <a id="WFROLEComponentGridActionNextPage" name="WFROLEComponentGridActionNextPage" vsaction="nextpage" asyncaction="true" vsds="T5USER_DOC_WFROLE" href="#WFROLEComponentGridActionNextPage" accesskey="2">Next</a>
+         </li>
+         <li class="action">
+            <a id="WFROLEComponentGridActionLastPage" name="WFROLEComponentGridActionLastPage" vsaction="lastpage" asyncaction="true" vsds="T5USER_DOC_WFROLE" href="#WFROLEComponentGridActionLastPage" accesskey="3">Last</a>
+         </li>
+      </ul>
+      
+      <div class="goto">
+         Go to line: <input name="WFROLEComponentGridGoto" value="" type="text" size="3" maxlength="3"></input><a id="WFROLEComponentGridActionGotoLine" name="WFROLEComponentGridActionGotoLine" href="#WFROLEComponentGridActionGotoLine">Go</a>
+      </div>
+   </div><!-- End Workflow Roles Component - Grid  grid-pagination-->
+   </div><!-- End Workflow Roles Component - Grid -->
+
+    
+<div id="WFROLEEditGridContainer"  name="WFROLEEditGridContainer" vsds="" vsvisible="false">
+
+     <div id="WFROLEEditGrid" name="WFROLEEditGrid" vsds="" class="editgrid">
+      <table name="tblT5USER_DOC_WFROLE_EditGrid" id="tblT5USER_DOC_WFROLE_EditGrid" vsds="T5USER_DOC_WFROLE">
+         <thead>
+           <tr>
+             <th title="Currency" id="T5EditGridCurrency" name="T5EditGridCurrency" class="editgrid-header iconbox editmode" scope="col"></th>
+             <th title="Attachments" id="T5EditGridAttachments" name="T5EditGridAttachments" class="editgrid-header iconbox editmode attachment" scope="col">
+                <img title="Attachments" alt="Attachments" src="../AMSImages/paperClip.gif"
+></img>
+             </th>
+             <th title="Comments" id="T5EditGridComments" name="T5EditGridComments" class="editgrid-header iconbox editmode comment" scope="col">
+                <img title="Comments" src="../AMSImages/comment.gif"
+ alt="Comments"></img>
+             </th>
+      
+       <th id="T5COMP_ACTN_CDEditGridLabel" name="T5COMP_ACTN_CDEditGridLabel" class="editgrid-header
+  
+            integer
+ required
+" fieldname="COMP_ACTN_CD" scope="col" title="Action">Action</th>
+   
+       <th id="T5WF_ROLE_IDEditGridLabel" name="T5WF_ROLE_IDEditGridLabel" class="editgrid-header
+       advsort
+  
+     text
+ required
+             pick autocomplete
+" fieldname="WF_ROLE_ID" scope="col" title="Role ID">Role ID</th>
+   
+       <th id="T5WF_ROLE_NMEditGridLabel" name="T5WF_ROLE_NMEditGridLabel" class="editgrid-header
+       advsort
+  
+     text
+ noedit
+" fieldname="WF_ROLE_NM" scope="col" title="Name">Name</th>
+   
+       <th id="T5WF_ROLE_MGR_FLEditGridLabel" name="T5WF_ROLE_MGR_FLEditGridLabel" class="editgrid-header
+  
+           boolean
+" fieldname="WF_ROLE_MGR_FL" scope="col" title="Manager">Manager</th>
+   
+       <th id="T5DISP_SEQ_NOEditGridLabel" name="T5DISP_SEQ_NOEditGridLabel" class="editgrid-header
+       advsort
+            integer
+" fieldname="DISP_SEQ_NO" scope="col" title="Display Sequence Number">Display Sequence Number</th>
+       <th id="T5REASONEditGridLabel" name="T5REASONEditGridLabel" class="editgrid-header
+  
+       memo
+ istextareafield
+" fieldname="REASON" scope="col" title="Revoke Reason">Revoke Reason</th>
+   
+  
+   
+           </tr>
+         </thead>
+         <tbody>
+           <tr vsprototyperow="true">
+               <td class="editgrid-field iconbox selecticon">
+                  <input type="image" name="T5USER_DOC_WFROLEvscurrency" id="T5USER_DOC_WFROLEvscurrency" title="Select Row" alt="Select Row" vsds="T5USER_DOC_WFROLE" vsaction="Currency" ams_main_table_name="tblT5USER_DOC_WFROLE" src="../AMSImages/ADVRowSel.gif"
+></input>
+               </td>
+
+               <td class="editgrid-field iconbox editmode attachment">
+                  <input type="image" name="WFROLEComponentEditGridLineActionViewAttachments" id="WFROLEComponentEditGridLineActionViewAttachments" attach="attach" title="Edit Attachments"></input>
+               </td>
+
+               <td class="editgrid-field iconbox editmode comment">
+                  <input type="image" name="WFROLEComponentEditGridLineActionViewComments" id="WFROLEComponentEditGridLineActionViewComments" comments="comments" src="../AMSImages/comment.gif"
+ title="Edit Comments"></input>
+               </td>
+
+               
+        <td class="editgrid-field
+ required
+ 
+  
+            integer
+" name="field-txtEditGridT5COMP_ACTN_CD" id="field-txtEditGridT5COMP_ACTN_CD">
+          <select name="txtEditGridT5COMP_ACTN_CD" id="txtEditGridT5COMP_ACTN_CD" vsds="T5USER_DOC_WFROLE" vsdf="COMP_ACTN_CD" size="1" vscodetable="CVL_DOC_COMP_ACTN" title="Action" tabindex="1">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      
+        <td class="editgrid-field pick autocomplete
+  
+     text
+" name="field-txtEditGridT5WF_ROLE_ID" id="field-txtEditGridT5WF_ROLE_ID">
+          <input type="text" name="txtEditGridT5WF_ROLE_ID" id="txtEditGridT5WF_ROLE_ID" 
+                  size="20"
+      maxlength="16"
+ value="WF_ROLE_ID" vsds="T5USER_DOC_WFROLE" vsdf="WF_ROLE_ID" 
+ class="advinput
+ autocomplete
+ required
+" title="Role ID" tabindex="1"></input>
+           <div class="hiddenpickchoice">
+              <a href="javascript:{}"  masterfield="IndexpckEditT5WF_ROLE_ID" title="Select Role ID" tabindex="1">
+                 <img src= "../AMSImages/ADVEditGridPickImg.gif"
+ title="Select Role ID" alt="Select Role ID" class="advimage"></img>
+              </a>
+           </div>
+        </td>
+      
+        <td class="editgrid-field noedit
+ 
+  
+     text
+" name="field-txtEditGridT5WF_ROLE_NM" id="field-txtEditGridT5WF_ROLE_NM">
+          <vstext name="txtEditGridT5WF_ROLE_NM" id="txtEditGridT5WF_ROLE_NM" vsds="T5USER_DOC_WFROLE" vsdf="WF_ROLE_NM" 
+></vstext>
+        </td>
+      
+     <td class="editgrid-field
+  
+  
+           boolean
+" name="field-txtEditGridT5WF_ROLE_MGR_FL" id="field-txtEditGridT5WF_ROLE_MGR_FL">
+       <input type="checkbox" name="txtEditGridT5WF_ROLE_MGR_FL" id="txtEditGridT5WF_ROLE_MGR_FL" value="WF_ROLE_MGR_FL" vsds="T5USER_DOC_WFROLE" vsdf="WF_ROLE_MGR_FL" title="Manager" tabindex="1"></input>
+     </td>
+   
+        <td class="editgrid-field
+ 
+  
+      
+ 
+  
+            integer
+" name="field-txtEditGridT5DISP_SEQ_NO" id="field-txtEditGridT5DISP_SEQ_NO">
+          <input type="text" name="txtEditGridT5DISP_SEQ_NO" id="txtEditGridT5DISP_SEQ_NO" 
+                  size="10"
+            maxlength="10"
+ value="DISP_SEQ_NO" vsds="T5USER_DOC_WFROLE" vsdf="DISP_SEQ_NO" 
+ class="
+" title="Display Sequence Number" tabindex="1"></input>
+        </td>
+      
+        <td class="editgrid-field
+ istextareafield
+       memo
+" name="field-txtEditGridT5REASON" id="field-txtEditGridT5REASON">
+          <input type="text" name="txtEditGridT5REASON" id="txtEditGridT5REASON"
+ value="REASON" vsds="T5USER_DOC_WFROLE" vsdf="REASON"
+ class="
+ istextareafield
+" title="Revoke Reason" tabindex="1"></input>
+        </td>
+           </tr>
+         </tbody>
+      </table>
+     </div>
+     <div id="T5USER_DOC_WFROLEEditGridPagination" name="T5USER_DOC_WFROLEEditGridPagination" class="grid-pagination" vsds="">
+        <div class="page">
+           <vsquerystatus vsds="T5USER_DOC_WFROLE" statustype="page" 
+       vsclass="com.amsinc.gems.adv.vfc.html.AdvQueryStatusElement"
+></vsquerystatus>
+        </div>
+        <div class="line hidden">
+           <vsquerystatus vsds="T5USER_DOC_WFROLE" statustype="linetot"  vsclass="com.amsinc.gems.adv.vfc.html.AdvQueryStatusElement"></vsquerystatus>
+        </div>
+        <ul class="action-list">
+           <li class="action">
+              <a id="WFROLEComponentEditGridActionFirstPage" name="WFROLEComponentEditGridActionFirstPage"  vsaction="firstpage" asyncaction="true" vsds="T5USER_DOC_WFROLE" href="#WFROLEComponentGridActionFirstPage" accesskey="0">First</a>
+           </li>
+           <li class="action">
+              <a id="WFROLEComponentEditGridActionPreviousPage" name="WFROLEComponentEditGridActionPreviousPage" vsaction="prevpage" asyncaction="true" vsds="T5USER_DOC_WFROLE" href="#WFROLEComponentGridActionPreviousPage" accesskey="1">Previous</a>
+           </li>
+           <li class="action">
+              <a id="WFROLEComponentEditGridActionNextPage" name="WFROLEComponentEditGridActionNextPage" vsaction="nextpage" asyncaction="true" vsds="T5USER_DOC_WFROLE" href="#WFROLEComponentGridActionNextPage" accesskey="2">Next</a>
+           </li>
+           <li class="action">
+              <a id="WFROLEComponentEditGridActionLastPage" name="WFROLEComponentEditGridActionLastPage" vsaction="lastpage" asyncaction="true" vsds="T5USER_DOC_WFROLE" href="#WFROLEComponentGridActionLastPage" accesskey="3">Last</a>
+           </li>
+        </ul>
+     </div><!-- End Workflow Roles Component - EditGrid  grid-pagination-->
+     <div name="WFROLEEditableGridMasterFields" id="WFROLEEditableGridMasterFields" class="masterfields hidden">
+        
+        <input id="IndexpckEditT5WF_ROLE_ID" type="image" name="pckEditT5WF_ROLE_ID" vspick="T6R_WF_ROLE" vspicktext="txtT5WF_ROLE_ID" vsds="T5USER_DOC_WFROLE" vsaction="pick" src="../AMSImages/ADVPickImg.gif"
+ alt="" title=""></input>
+        
+     </div>
+     <div name="WFROLEEditableGridElemtAppend" id="WFROLEEditableGridElemtAppend" class="hidden"></div>
+</div><!-- End WFROLEEditGridContainer -->
+
+   <div class="scalar" id="T5USER_DOC_WFROLEScalar" name="T5USER_DOC_WFROLEScalar" vsds="T5USER_DOC_WFROLE" vsvisible="false"><!-- Workflow Roles Component -  Scalar -->
+     
+  
+     <ul class="action-list">
+        
+        <li class="action scalarpin">
+           <a title="Toggle Always On Scalar" name="WFROLEComponentActionScalarOnDemand" id="WFROLEComponentActionScalarOnDemand" href="#WFROLEComponentActionScalarOnDemand">
+      <img alt="Toggle Scalar OnDemand" src="../AMSImages/AlwaysOnScalar.gif"></img>
+           </a>
+        </li>
+        
+        <li class="action scalarview action-listview">
+           <a title="Show all fields in a list view" name="WFROLEComponentActionScalarListView" id="WFROLEComponentActionScalarListView" href="#WFROLEComponentActionScalarListView"><span class="img"><span class="txt">List View</span></span></a>
+        </li>
+     </ul>
+   
+      <fieldset class="section level1" id="T5USER_DOC_WFROLESection" name="T5USER_DOC_WFROLESection">
+         <div class="spacer1 tabview"></div>
+         <ul class="field-column" id="T5USER_DOC_WFROLESectionCol-COMP_ACTN_CD" name="T5USER_DOC_WFROLESectionCol-COMP_ACTN_CD">
+
+       
+      <li id="field-txtT5COMP_ACTN_CD" name="field-txtT5COMP_ACTN_CD" class="field radio required
+  
+            integer
+" title="Action (Required)">
+        
+   <label title="Action (Required)">Action:</label>
+        <div class="field-value">
+        
+   <input type="radio" name="rbtT5COMP_ACTN_CD" id="rbtT5COMP_ACTN_CD0" title="Add" value="0" vsds="T5USER_DOC_WFROLE" vsdf="COMP_ACTN_CD"></input>
+   <label for="rbtT5COMP_ACTN_CD0" title="Add">Add</label>
+   <input type="radio" name="rbtT5COMP_ACTN_CD" id="rbtT5COMP_ACTN_CD1" title="Update" value="1" vsds="T5USER_DOC_WFROLE" vsdf="COMP_ACTN_CD"></input>
+   <label for="rbtT5COMP_ACTN_CD1" title="Update">Update</label>
+   <input type="radio" name="rbtT5COMP_ACTN_CD" id="rbtT5COMP_ACTN_CD2" title="Delete" value="2" vsds="T5USER_DOC_WFROLE" vsdf="COMP_ACTN_CD"></input>
+   <label for="rbtT5COMP_ACTN_CD2" title="Delete">Delete</label>
+        </div>
+      </li>
+    
+    
+
+      <li id="field-txtT5WF_ROLE_ID" name="field-txtT5WF_ROLE_ID" class="field required pick autocomplete
+  
+     text
+" title="Role ID (Required)">
+         <label for="txtT5WF_ROLE_ID" title="Role ID (Required)">Role ID:</label>
+         <input type="text" name="txtT5WF_ROLE_ID" id="txtT5WF_ROLE_ID" class="field-value" 
+            ams_max_len="16"
+ value="WF_ROLE_ID" 
+                  size="20"
+ vsds="T5USER_DOC_WFROLE" vsdf="WF_ROLE_ID" title="Role ID (Required)"></input>
+         <input type="image" class="pickimg" vspick="T6R_WF_ROLE" vspicktext="txtT5WF_ROLE_ID" vsds="T5USER_DOC_WFROLE" vsaction="pick" name="pckT5WF_ROLE_ID" id="pckT5WF_ROLE_ID" title="Select Role ID" alt="Select Role ID" src="../AMSImages/ADVPickImg.gif"
+></input>
+      </li>
+    
+
+      <li id="field-txtT5WF_ROLE_NM" name="field-txtT5WF_ROLE_NM" class="field
+  
+     text
+" title="Name">
+         
+      <label for="txtT5WF_ROLE_NM" title="Name">Name:</label>
+   
+         <div id="txtT5WF_ROLE_NM" name="txtT5WF_ROLE_NM" vsds="T5USER_DOC_WFROLE" vsdf="WF_ROLE_NM" class="field-value" vsformat="">
+            <vstext name="disptxtT5WF_ROLE_NM" vsds="T5USER_DOC_WFROLE" vsdf="WF_ROLE_NM" 
+               size="15"
+></vstext>
+         </div>
+      </li>
+    
+
+        
+      <li id="field-txtT5WF_ROLE_MGR_FL" name="field-txtT5WF_ROLE_MGR_FL" class="field
+  
+           boolean
+" title="Manager">
+         
+      <label for="txtT5WF_ROLE_MGR_FL" title="Manager">Manager:</label>
+   
+         <input type="checkbox" name="txtT5WF_ROLE_MGR_FL" id="txtT5WF_ROLE_MGR_FL" class="field-value" value="WF_ROLE_MGR_FL" vsds="T5USER_DOC_WFROLE" vsdf="WF_ROLE_MGR_FL" title="Manager"></input>
+      </li>
+    
+    
+
+       
+  
+        
+   
+    
+    
+
+       
+        <li id="field-txtT5DISP_SEQ_NO" name="field-txtT5DISP_SEQ_NO" class="field
+  
+            integer
+" title="Display Sequence Number">
+           
+      <label for="txtT5DISP_SEQ_NO" title="Display Sequence Number">Display Sequence Number:</label>
+   
+           
+           <input type="text" name="txtT5DISP_SEQ_NO" id="txtT5DISP_SEQ_NO" class="field-value" 
+                  size="10"
+ vsds="T5USER_DOC_WFROLE" vsdf="DISP_SEQ_NO" 
+ value="DISP_SEQ_NO" title="Display Sequence Number" 
+                  ams_max_len="10"
+></input>
+           
+        </li>
+    
+    
+  
+      <li id="field-txtT5REASON" name="field-txtT5REASON" class="field
+       memo
+" title="Revoke Reason">
+      <label for="txtT5REASON" title="Revoke Reason">Revoke Reason:</label>
+        <textarea cols="35" rows="4" name="txtT5REASON" id="txtT5REASON" class="field-value" vsds="T5USER_DOC_WFROLE" vsdf="REASON"
+ title="Revoke Reason"></textarea>
+      </li>
+                  </ul>
+                  <div class="spacer1"></div>
+               </fieldset>
+   </div><!-- End Workflow Roles Component - Scalar -->
+</div><!-- End inner content-->
+<div id="WFROLEComponentActions" name="WFROLEComponentActions" vsds="" class="bar actions" vsvisible="true">
+       <ul class="action-list primary">
+         <li class="action action-compsave" title="Save">
+             <a name="WFROLEComponentActionSave" vsaction="save" vsds="T5USER_DOC_WFROLE" asyncaction="true" href="#WFROLEComponentActionSave" id="WFROLEComponentActionSave" accesskey="5"><span class="img"><span class="txt">Save</span></span></a>
+         </li>
+         <li class="action action-compundo" title="Undo">
+             <a name="WFROLEComponentActionUndo" vsaction="undo" asyncaction="true" vsds="T5USER_DOC_WFROLE"  href="#WFROLEComponentActionUndo" id="WFROLEComponentActionUndo" accesskey="6"><span class="img"><span class="txt">Undo</span></span></a>
+         </li>
+       </ul>
+       <ul class="action-list primary">
+         
+         <li class="action action-compinsertnew editmode" title="Insert New Line">
+            <a name="WFROLEComponentGridActionInsertNew" id="WFROLEComponentGridActionInsertNew"  vsaction="insert" asyncaction="true" vsds="T5USER_DOC_WFROLE" href="#WFROLEComponentGridActionInsertNew" accesskey="I"><span class="img"><span class="txt">Insert New Line</span></span></a>
+         </li>
+         
+         <li class="action action-compinsertcopied editmode" title="Insert Copied Line">
+            <a name="WFROLEComponentGridActionInsertCopied" id="WFROLEComponentGridActionInsertCopied" vsaction="12" asyncaction="true" vsds="T5USER_DOC_WFROLE" href="#WFROLEComponentGridActionInsertCopied" accesskey="8"><span class="img"><span class="txt">Insert Copied Line</span></span></a>
+         </li>
+         <li class="action action-compviewalllines hidden" title="Show Lines">
+            <a name="WFROLEComponentGridActionViewAllLines" id="WFROLEComponentGridActionViewAllLines" href="#WFROLEComponentGridActionViewAllLines" accesskey="W"><span class="img"><span class="txt">Show Lines</span></span></a>
+         </li>
+       </ul>
+       
+       <ul class="action-list primary editable-grid-actions">
+          <li class="action action-compedtlines editmode" title="Edit with Grid">
+            <a name="WFROLEComponentGridActionEdtLines" id="WFROLEComponentGridActionEdtLines" href="#WFROLEComponentGridActionEdtLines" accesskey="E"><span class="img"><span class="txt">Edit with Grid</span></span></a>
+          </li>
+          <li class="action action-compbacktovog editmode hidden" title="Done">
+              <a name="WFROLEComponentGridActionBackToVOG" id="WFROLEComponentGridActionBackToVOG" href="#WFROLEComponentGridActionBackToVOG"><span class="img"><span class="txt">Done</span></span></a>
+          </li>
+       </ul>
+       
+
+
+</div><!-- End bar actions-->
+ </div><!-- End Content -->
+ </div>
+<div id="WKGPComponent" name="WKGPComponent" class="component level1" vsds="T7USER_DOC_WKGP"><!-- Workgroups Component -->
+   <a id="WKGPComponent_SkipLinkTarget"></a>
+   <input type="hidden" value="%COMP_ACTN_CD%" name="WKGPComponentContext" id="WKGPComponentContext" ></input>
+   <div class="header">
+      <h2 class="title">Workgroups</h2>
+      <div class="header-info-actions">
+         <a name="WKGPComponentActionAttachments" href="#WKGPComponentActionAttachments" id="WKGPComponentActionAttachments" class="component-attachment hidden" title="Attachments">
+            <img src="../AMSImages/attachment.gif"
+ alt="Attachment"></img>
+            <span class="attachment-count"></span>
+         </a>
+      </div>
+      <dl class="context"></dl>
+       
+      <div class="iconbox">
+         <ul class="action-list">
+           
+           <span class="accordionseparator-inactive"></span>
+           <li class="action component-expandcollapse">
+              <a id="WKGPComponentActionCollapseExpand" name="WKGPComponentActionCollapseExpand" class="expandcollapse" href="#WKGPComponentActionCollapseExpand" title="Expand" 
+>
+                 <img class="expand" src="../AMSImages/AccordionOpen.gif"
+ alt="Expand"></img>
+              </a>
+           </li>
+         </ul>
+      </div>
+   </div>
+    <div class="content" name="WKGP" id="WKGP" ams_menu="show" ams_table="USER_DOC_WKGP" vsds="T7USER_DOC_WKGP" tabnm="Workgroups" tabid="WKGP" tabseqno="3" vsclass="com.amsinc.gems.adv.vfc.html.AdvDocTSDivElement" >
+ 
+       <input type="hidden" value="true" name="WKGPComponentGridAllowInlineEditing" id="WKGPComponentGridAllowInlineEditing" ></input>
+ 
+       <input type="hidden" value="false" name="WKGPComponentScalarOnDemand" id="WKGPComponentScalarOnDemand"></input>
+ 
+       <input type="hidden" value="1" name="WKGPComponentRefreshDependents" id="WKGPComponentRefreshDependents" ></input>
+ 
+       <input type="hidden" value="false" name="WKGPComponentAllowQuickSwitch" id="WKGPComponentAllowQuickSwitch"></input>
+ 
+       <input type="hidden" value="false" name="WKGPComponentShowLineNoInContext" id="WKGPComponentShowLineNoInContext" ></input>
+
+    <div class="bar headercontext">
+    </div>
+
+<div class="inner-content">
+
+   <div name="T7USER_DOC_WKGPGrid" id="T7USER_DOC_WKGPGrid" class="grid" vsds="" vsvisible="true">  <!-- Workgroups Component - Grid -->
+     <input type="hidden" name="T7USER_DOC_WKGP_Currency" value="">
+     <input type="hidden" name="T7USER_DOC_WKGP_Old_Currency" value="">
+     <table name="tblT7USER_DOC_WKGP" id="tblT7USER_DOC_WKGP" vsds="T7USER_DOC_WKGP">
+       <thead>
+          <tr>
+            
+            <th title="Select Line" id="T7ViewGridSelectLine" name="T7ViewGridSelectLine" class="viewgrid-header iconbox selecticon quickswitchattr" scope="col"></th>
+            <th title="Attachments" id="T7ViewGridAttachments" name="T7ViewGridAttachments" class="viewgrid-header iconbox attachment" scope="col"></th>
+            <th title="Comments" id="T7ViewGridComments" name="T7ViewGridComments" class="viewgrid-header iconbox comments" scope="col"></th>
+    
+      <th id="T7COMP_ACTN_CDGridLabel" name="T7COMP_ACTN_CDGridLabel" title="Action" class="viewgrid-header
+ contextattr
+ 
+  
+            integer
+" fieldname="COMP_ACTN_CD" scope="col">Action</th>
+  
+      <th id="T7WKGP_UNIDGridLabel" name="T7WKGP_UNIDGridLabel" title="Workgroup ID" class="viewgrid-header
+ 
+  
+               longinteger
+" fieldname="WKGP_UNID" scope="col">Workgroup ID</th>
+  
+      <th id="T7WKGP_NMGridLabel" name="T7WKGP_NMGridLabel" title="Name" class="viewgrid-header
+ 
+  
+     text
+" fieldname="WKGP_NM" scope="col">Name</th>
+  
+            <th title="Show Details" id="T7ViewGridShowDetails" name="T7ViewGridShowDetails" class="viewgrid-header iconbox scalardetails" scope="col"></th>
+            <th title="Copy Line" id="T7ViewGridCopyLine" name="T7ViewGridCopyLine" class="viewgrid-header iconbox linecopy editmode" scope="col"></th>
+            <th title="Delete Line" id="T7ViewGridDeleteLine" name="T7ViewGridDeleteLine" class="viewgrid-header iconbox linedelete editmode" scope="col"></th>
+            <th id="T7ViewGridRight" name="T7ViewGridRight" class="viewgrid-header right" scope="col"></th>
+          </tr>
+       </thead>
+       <tbody>
+         <tr vsprototyperow="true" class="odd" adv_altclassname="even">
+              
+              <td class="viewgrid-field iconbox selecticon">
+                 <input type="image" name="WKGPComponentGridLineActionSelect" id="WKGPComponentGridLineActionSelect" title="Select Row" alt="Select Row"  vsds="T7USER_DOC_WKGP" vsaction="currency" src="../AMSImages/SmallRowSel.gif"></input>
+              </td>
+
+              <td class="viewgrid-field iconbox attachment"><input type="image" name="WKGPComponentGridLineActionViewAttachments" id="WKGPComponentGridLineActionViewAttachments" attach="attach"></input></td>
+              <td class="viewgrid-field iconbox comments"><input type="image" name="WKGPComponentGridLineActionViewComments" id="WKGPComponentGridLineActionViewComments" comments="comments" src="../AMSImages/comment.gif"
+ title="View Comments"></input></td>
+              
+     <td class="viewgrid-field
+ contextattr
+ 
+  
+            integer
+" name="field-txtGridT7COMP_ACTN_CD" id="field-txtGridT7COMP_ACTN_CD">
+       <vstext name="txtGridT7COMP_ACTN_CD" id="txtGridT7COMP_ACTN_CD" vsds="T7USER_DOC_WKGP" vsdf="COMP_ACTN_CD" vscodetable="CVL_DOC_COMP_ACTN"></vstext>
+     </td>
+   
+        <td class="viewgrid-field
+ 
+  
+               longinteger
+" name="field-txtGridT7WKGP_UNID" id="field-txtGridT7WKGP_UNID">
+          <vstext name="txtGridT7WKGP_UNID" id="txtGridT7WKGP_UNID" vsds="T7USER_DOC_WKGP" vsdf="WKGP_UNID" 
+></vstext>
+        </td>
+      
+        <td class="viewgrid-field
+ 
+  
+     text
+" name="field-txtGridT7WKGP_NM" id="field-txtGridT7WKGP_NM">
+          <vstext name="txtGridT7WKGP_NM" id="txtGridT7WKGP_NM" vsds="T7USER_DOC_WKGP" vsdf="WKGP_NM" 
+></vstext>
+        </td>
+      
+              <td class="viewgrid-field iconbox scalardetails"><a name="WKGPComponentGridLineActionShowDetails" id="WKGPComponentGridLineActionShowDetails" title="Show Details" href="#WKGPComponentGridLineActionShowDetails"><img alt="Show Details" src="../AMSImages/GridRowShowDetails.png"></img></a></td>
+              
+      <td class="viewgrid-field iconbox linecopy editmode">
+          
+      <a name="WKGPComponentGridLineActionCopy" id="WKGPComponentGridLineActionCopy" masterfield="IndexT7USER_DOC_WKGPCopyLine" title="Copy Line" href="#WKGPComponentGridLineActionCopy">
+         <img alt="Copy Line" src="../AMSImages/GridRowCopy.gif"></img>
+      </a>
+      </td>
+              
+      <td class="viewgrid-field iconbox linedelete editmode">
+        
+        <a name="WKGPComponentGridLineActionDelete" id="WKGPComponentGridLineActionDelete" masterfield="IndexT7USER_DOC_WKGPdelete" title="Delete Line" href="#WKGPComponentGridLineActionDelete">
+           <img alt="Delete Line" src="../AMSImages/GridRowDelete.gif"></img>
+        </a>
+      </td>
+    
+              <td class="viewgrid-field right"></td>
+         </tr>
+       </tbody>
+       <tfoot>
+          <tr>
+            <td class="iconbox footer selecticon"></td>
+            <td class="iconbox footer attachment"></td>
+            <td class="iconbox footer comments"></td>
+    
+            <td class="iconbox footer data"></td>
+            <td class="iconbox footer data"></td>
+            <td class="iconbox footer data"></td>
+            <td class="iconbox footer scalardetails"></td>
+            <td class="iconbox footer linecopy editmode"></td>
+            <td class="iconbox footer linedelete editmode"></td>
+            <td class="right footer"></td>
+          </tr>
+       </tfoot>
+   </table>
+
+   <div class="masterfields">
+      <a href="SecurityAdmin" vsds="T7USER_DOC_WKGP" vsaction="delete" id="IndexT7USER_DOC_WKGPdelete" asyncaction="true" name="T7USER_DOC_WKGPdelete" title=""></a>
+      <a href="SecurityAdmin" vsds="T7USER_DOC_WKGP" vsaction="11" id="IndexT7USER_DOC_WKGPCopyLine" asyncaction="true" name="T7USER_DOC_WKGPCopyLine" title=""></a>
+   </div>
+
+   <div id="T7USER_DOC_WKGPGridPagination" name="T7USER_DOC_WKGPGridPagination" class="grid-pagination" vsds="">
+      <div class="page">
+         <vsquerystatus vsds="T7USER_DOC_WKGP" statustype="page" 
+       vsclass="com.amsinc.gems.adv.vfc.html.AdvQueryStatusElement"
+></vsquerystatus>
+      </div>
+      <div class="line hidden">
+         <vsquerystatus vsds="T7USER_DOC_WKGP" statustype="linetot"  vsclass="com.amsinc.gems.adv.vfc.html.AdvQueryStatusElement"></vsquerystatus>
+      </div>
+      <ul class="action-list">
+         <li class="action">
+            <a id="WKGPComponentGridActionFirstPage" name="WKGPComponentGridActionFirstPage"  vsaction="firstpage" asyncaction="true" vsds="T7USER_DOC_WKGP" href="#WKGPComponentGridActionFirstPage" accesskey="0">First</a>
+         </li>
+         <li class="action">
+            <a id="WKGPComponentGridActionPreviousPage" name="WKGPComponentGridActionPreviousPage" vsaction="prevpage" asyncaction="true" vsds="T7USER_DOC_WKGP" href="#WKGPComponentGridActionPreviousPage" accesskey="1">Previous</a>
+         </li>
+         <li class="action">
+            <a id="WKGPComponentGridActionNextPage" name="WKGPComponentGridActionNextPage" vsaction="nextpage" asyncaction="true" vsds="T7USER_DOC_WKGP" href="#WKGPComponentGridActionNextPage" accesskey="2">Next</a>
+         </li>
+         <li class="action">
+            <a id="WKGPComponentGridActionLastPage" name="WKGPComponentGridActionLastPage" vsaction="lastpage" asyncaction="true" vsds="T7USER_DOC_WKGP" href="#WKGPComponentGridActionLastPage" accesskey="3">Last</a>
+         </li>
+      </ul>
+      
+      <div class="goto">
+         Go to line: <input name="WKGPComponentGridGoto" value="" type="text" size="3" maxlength="3"></input><a id="WKGPComponentGridActionGotoLine" name="WKGPComponentGridActionGotoLine" href="#WKGPComponentGridActionGotoLine">Go</a>
+      </div>
+   </div><!-- End Workgroups Component - Grid  grid-pagination-->
+   </div><!-- End Workgroups Component - Grid -->
+
+    
+<div id="WKGPEditGridContainer"  name="WKGPEditGridContainer" vsds="" vsvisible="false">
+
+     <div id="WKGPEditGrid" name="WKGPEditGrid" vsds="" class="editgrid">
+      <table name="tblT7USER_DOC_WKGP_EditGrid" id="tblT7USER_DOC_WKGP_EditGrid" vsds="T7USER_DOC_WKGP">
+         <thead>
+           <tr>
+             <th title="Currency" id="T7EditGridCurrency" name="T7EditGridCurrency" class="editgrid-header iconbox editmode" scope="col"></th>
+             <th title="Attachments" id="T7EditGridAttachments" name="T7EditGridAttachments" class="editgrid-header iconbox editmode attachment" scope="col">
+                <img title="Attachments" alt="Attachments" src="../AMSImages/paperClip.gif"
+></img>
+             </th>
+             <th title="Comments" id="T7EditGridComments" name="T7EditGridComments" class="editgrid-header iconbox editmode comment" scope="col">
+                <img title="Comments" src="../AMSImages/comment.gif"
+ alt="Comments"></img>
+             </th>
+      
+       <th id="T7WKGP_UNIDEditGridLabel" name="T7WKGP_UNIDEditGridLabel" class="editgrid-header
+  
+               longinteger
+ required
+             pick autocomplete
+" fieldname="WKGP_UNID" scope="col" title="Workgroup ID">Workgroup ID</th>
+   
+       <th id="T7WKGP_NMEditGridLabel" name="T7WKGP_NMEditGridLabel" class="editgrid-header
+  
+     text
+ noedit
+" fieldname="WKGP_NM" scope="col" title="Name">Name</th>
+   
+       <th id="T7WKGP_DESCEditGridLabel" name="T7WKGP_DESCEditGridLabel" class="editgrid-header
+  
+     text
+ noedit
+" fieldname="WKGP_DESC" scope="col" title="Description">Description</th>
+   
+           </tr>
+         </thead>
+         <tbody>
+           <tr vsprototyperow="true">
+               <td class="editgrid-field iconbox selecticon">
+                  <input type="image" name="T7USER_DOC_WKGPvscurrency" id="T7USER_DOC_WKGPvscurrency" title="Select Row" alt="Select Row" vsds="T7USER_DOC_WKGP" vsaction="Currency" ams_main_table_name="tblT7USER_DOC_WKGP" src="../AMSImages/ADVRowSel.gif"
+></input>
+               </td>
+
+               <td class="editgrid-field iconbox editmode attachment">
+                  <input type="image" name="WKGPComponentEditGridLineActionViewAttachments" id="WKGPComponentEditGridLineActionViewAttachments" attach="attach" title="Edit Attachments"></input>
+               </td>
+
+               <td class="editgrid-field iconbox editmode comment">
+                  <input type="image" name="WKGPComponentEditGridLineActionViewComments" id="WKGPComponentEditGridLineActionViewComments" comments="comments" src="../AMSImages/comment.gif"
+ title="Edit Comments"></input>
+               </td>
+
+               
+        <td class="editgrid-field pick autocomplete
+  
+               longinteger
+" name="field-txtEditGridT7WKGP_UNID" id="field-txtEditGridT7WKGP_UNID">
+          <input type="text" name="txtEditGridT7WKGP_UNID" id="txtEditGridT7WKGP_UNID" 
+                     size="15"
+               maxlength="20"
+ value="WKGP_UNID" vsds="T7USER_DOC_WKGP" vsdf="WKGP_UNID" 
+ class="advinput
+ autocomplete
+ required
+" title="Workgroup ID" tabindex="1"></input>
+           <div class="hiddenpickchoice">
+              <a href="javascript:{}"  masterfield="IndexpckEditT7WKGP_UNID" title="Select Workgroup ID" tabindex="1">
+                 <img src= "../AMSImages/ADVEditGridPickImg.gif"
+ title="Select Workgroup ID" alt="Select Workgroup ID" class="advimage"></img>
+              </a>
+           </div>
+        </td>
+      
+        <td class="editgrid-field noedit
+ 
+  
+     text
+" name="field-txtEditGridT7WKGP_NM" id="field-txtEditGridT7WKGP_NM">
+          <vstext name="txtEditGridT7WKGP_NM" id="txtEditGridT7WKGP_NM" vsds="T7USER_DOC_WKGP" vsdf="WKGP_NM" 
+></vstext>
+        </td>
+      
+        <td class="editgrid-field noedit
+ 
+  
+     text
+" name="field-txtEditGridT7WKGP_DESC" id="field-txtEditGridT7WKGP_DESC">
+          <vstext name="txtEditGridT7WKGP_DESC" id="txtEditGridT7WKGP_DESC" vsds="T7USER_DOC_WKGP" vsdf="WKGP_DESC" 
+></vstext>
+        </td>
+      
+           </tr>
+         </tbody>
+      </table>
+     </div>
+     <div id="T7USER_DOC_WKGPEditGridPagination" name="T7USER_DOC_WKGPEditGridPagination" class="grid-pagination" vsds="">
+        <div class="page">
+           <vsquerystatus vsds="T7USER_DOC_WKGP" statustype="page" 
+       vsclass="com.amsinc.gems.adv.vfc.html.AdvQueryStatusElement"
+></vsquerystatus>
+        </div>
+        <div class="line hidden">
+           <vsquerystatus vsds="T7USER_DOC_WKGP" statustype="linetot"  vsclass="com.amsinc.gems.adv.vfc.html.AdvQueryStatusElement"></vsquerystatus>
+        </div>
+        <ul class="action-list">
+           <li class="action">
+              <a id="WKGPComponentEditGridActionFirstPage" name="WKGPComponentEditGridActionFirstPage"  vsaction="firstpage" asyncaction="true" vsds="T7USER_DOC_WKGP" href="#WKGPComponentGridActionFirstPage" accesskey="0">First</a>
+           </li>
+           <li class="action">
+              <a id="WKGPComponentEditGridActionPreviousPage" name="WKGPComponentEditGridActionPreviousPage" vsaction="prevpage" asyncaction="true" vsds="T7USER_DOC_WKGP" href="#WKGPComponentGridActionPreviousPage" accesskey="1">Previous</a>
+           </li>
+           <li class="action">
+              <a id="WKGPComponentEditGridActionNextPage" name="WKGPComponentEditGridActionNextPage" vsaction="nextpage" asyncaction="true" vsds="T7USER_DOC_WKGP" href="#WKGPComponentGridActionNextPage" accesskey="2">Next</a>
+           </li>
+           <li class="action">
+              <a id="WKGPComponentEditGridActionLastPage" name="WKGPComponentEditGridActionLastPage" vsaction="lastpage" asyncaction="true" vsds="T7USER_DOC_WKGP" href="#WKGPComponentGridActionLastPage" accesskey="3">Last</a>
+           </li>
+        </ul>
+     </div><!-- End Workgroups Component - EditGrid  grid-pagination-->
+     <div name="WKGPEditableGridMasterFields" id="WKGPEditableGridMasterFields" class="masterfields hidden">
+        
+        <input id="IndexpckEditT7WKGP_UNID" type="image" name="pckEditT7WKGP_UNID" vspick="T8IN_WKGP" vspicktext="txtT7WKGP_UNID" vsds="T7USER_DOC_WKGP" vsaction="pick" src="../AMSImages/ADVPickImg.gif"
+ alt="" title=""></input>
+        
+     </div>
+     <div name="WKGPEditableGridElemtAppend" id="WKGPEditableGridElemtAppend" class="hidden"></div>
+</div><!-- End WKGPEditGridContainer -->
+
+   <div class="scalar" id="T7USER_DOC_WKGPScalar" name="T7USER_DOC_WKGPScalar" vsds="T7USER_DOC_WKGP" vsvisible="false"><!-- Workgroups Component -  Scalar -->
+     
+  
+     <ul class="action-list">
+        
+        <li class="action scalarpin">
+           <a title="Toggle Always On Scalar" name="WKGPComponentActionScalarOnDemand" id="WKGPComponentActionScalarOnDemand" href="#WKGPComponentActionScalarOnDemand">
+      <img alt="Toggle Scalar OnDemand" src="../AMSImages/AlwaysOnScalar.gif"></img>
+           </a>
+        </li>
+        
+        <li class="action scalarview action-listview">
+           <a title="Show all fields in a list view" name="WKGPComponentActionScalarListView" id="WKGPComponentActionScalarListView" href="#WKGPComponentActionScalarListView"><span class="img"><span class="txt">List View</span></span></a>
+        </li>
+     </ul>
+   
+      <fieldset class="section level1" id="T7USER_DOC_WKGPSection" name="T7USER_DOC_WKGPSection">
+         <div class="spacer1 tabview"></div>
+         <ul class="field-column" id="T7USER_DOC_WKGPSectionCol-COMP_ACTN_CD" name="T7USER_DOC_WKGPSectionCol-COMP_ACTN_CD">
+
+       
+      <li id="field-txtT7COMP_ACTN_CD" name="field-txtT7COMP_ACTN_CD" class="field radio required
+  
+            integer
+" title="Action (Required)">
+        
+   <label title="Action (Required)">Action:</label>
+        <div class="field-value">
+        
+   <input type="radio" name="rbtT7COMP_ACTN_CD" id="rbtT7COMP_ACTN_CD0" title="Add" value="0" vsds="T7USER_DOC_WKGP" vsdf="COMP_ACTN_CD"></input>
+   <label for="rbtT7COMP_ACTN_CD0" title="Add">Add</label>
+   <input type="radio" name="rbtT7COMP_ACTN_CD" id="rbtT7COMP_ACTN_CD1" title="Update" value="1" vsds="T7USER_DOC_WKGP" vsdf="COMP_ACTN_CD"></input>
+   <label for="rbtT7COMP_ACTN_CD1" title="Update">Update</label>
+   <input type="radio" name="rbtT7COMP_ACTN_CD" id="rbtT7COMP_ACTN_CD2" title="Delete" value="2" vsds="T7USER_DOC_WKGP" vsdf="COMP_ACTN_CD"></input>
+   <label for="rbtT7COMP_ACTN_CD2" title="Delete">Delete</label>
+        </div>
+      </li>
+    
+    
+
+      <li id="field-txtT7WKGP_UNID" name="field-txtT7WKGP_UNID" class="field required pick autocomplete
+  
+               longinteger
+" title="Workgroup ID (Required)">
+         <label for="txtT7WKGP_UNID" title="Workgroup ID (Required)">Workgroup ID:</label>
+         <input type="text" name="txtT7WKGP_UNID" id="txtT7WKGP_UNID" class="field-value" 
+                     ams_max_len="20"
+ value="WKGP_UNID" 
+                     size="15"
+ vsds="T7USER_DOC_WKGP" vsdf="WKGP_UNID" title="Workgroup ID (Required)"></input>
+         <input type="image" class="pickimg" vspick="T8IN_WKGP" vspicktext="txtT7WKGP_UNID" vsds="T7USER_DOC_WKGP" vsaction="pick" name="pckT7WKGP_UNID" id="pckT7WKGP_UNID" title="Select Workgroup ID" alt="Select Workgroup ID" src="../AMSImages/ADVPickImg.gif"
+></input>
+      </li>
+    
+
+      <li id="field-txtT7WKGP_NM" name="field-txtT7WKGP_NM" class="field
+  
+     text
+" title="Name">
+         
+      <label for="txtT7WKGP_NM" title="Name">Name:</label>
+   
+         <div id="txtT7WKGP_NM" name="txtT7WKGP_NM" vsds="T7USER_DOC_WKGP" vsdf="WKGP_NM" class="field-value" vsformat="">
+            <vstext name="disptxtT7WKGP_NM" vsds="T7USER_DOC_WKGP" vsdf="WKGP_NM" 
+               size="15"
+></vstext>
+         </div>
+      </li>
+    
+
+      <li id="field-txtT7WKGP_DESC" name="field-txtT7WKGP_DESC" class="field
+  
+     text
+" title="Description">
+         
+      <label for="txtT7WKGP_DESC" title="Description">Description:</label>
+   
+         <div id="txtT7WKGP_DESC" name="txtT7WKGP_DESC" vsds="T7USER_DOC_WKGP" vsdf="WKGP_DESC" class="field-value" vsformat="">
+            <vstext name="disptxtT7WKGP_DESC" vsds="T7USER_DOC_WKGP" vsdf="WKGP_DESC" 
+               size="15"
+></vstext>
+         </div>
+      </li>
+    
+
+        
+      <li id="field-txtT7DFLT_WKGP_FL" name="field-txtT7DFLT_WKGP_FL" class="field
+  
+           boolean
+" title="Set As Default">
+         
+      <label for="txtT7DFLT_WKGP_FL" title="Set As Default">Set As Default:</label>
+   
+         <input type="checkbox" name="txtT7DFLT_WKGP_FL" id="txtT7DFLT_WKGP_FL" class="field-value" value="DFLT_WKGP_FL" vsds="T7USER_DOC_WKGP" vsdf="DFLT_WKGP_FL" title="Set As Default"></input>
+      </li>
+    
+    
+  
+                  </ul>
+                  <div class="spacer1"></div>
+               </fieldset>
+   </div><!-- End Workgroups Component - Scalar -->
+</div><!-- End inner content-->
+<div id="WKGPComponentActions" name="WKGPComponentActions" vsds="" class="bar actions" vsvisible="true">
+       <ul class="action-list primary">
+         <li class="action action-compsave" title="Save">
+             <a name="WKGPComponentActionSave" vsaction="save" vsds="T7USER_DOC_WKGP" asyncaction="true" href="#WKGPComponentActionSave" id="WKGPComponentActionSave" accesskey="5"><span class="img"><span class="txt">Save</span></span></a>
+         </li>
+         <li class="action action-compundo" title="Undo">
+             <a name="WKGPComponentActionUndo" vsaction="undo" asyncaction="true" vsds="T7USER_DOC_WKGP"  href="#WKGPComponentActionUndo" id="WKGPComponentActionUndo" accesskey="6"><span class="img"><span class="txt">Undo</span></span></a>
+         </li>
+       </ul>
+       <ul class="action-list primary">
+         
+         <li class="action action-compinsertnew editmode" title="Insert New Line">
+            <a name="WKGPComponentGridActionInsertNew" id="WKGPComponentGridActionInsertNew"  vsaction="insert" asyncaction="true" vsds="T7USER_DOC_WKGP" href="#WKGPComponentGridActionInsertNew" accesskey="I"><span class="img"><span class="txt">Insert New Line</span></span></a>
+         </li>
+         
+         <li class="action action-compinsertcopied editmode" title="Insert Copied Line">
+            <a name="WKGPComponentGridActionInsertCopied" id="WKGPComponentGridActionInsertCopied" vsaction="12" asyncaction="true" vsds="T7USER_DOC_WKGP" href="#WKGPComponentGridActionInsertCopied" accesskey="8"><span class="img"><span class="txt">Insert Copied Line</span></span></a>
+         </li>
+         <li class="action action-compviewalllines hidden" title="Show Lines">
+            <a name="WKGPComponentGridActionViewAllLines" id="WKGPComponentGridActionViewAllLines" href="#WKGPComponentGridActionViewAllLines" accesskey="W"><span class="img"><span class="txt">Show Lines</span></span></a>
+         </li>
+       </ul>
+       
+       <ul class="action-list primary editable-grid-actions">
+          <li class="action action-compedtlines editmode" title="Edit with Grid">
+            <a name="WKGPComponentGridActionEdtLines" id="WKGPComponentGridActionEdtLines" href="#WKGPComponentGridActionEdtLines" accesskey="E"><span class="img"><span class="txt">Edit with Grid</span></span></a>
+          </li>
+          <li class="action action-compbacktovog editmode hidden" title="Done">
+              <a name="WKGPComponentGridActionBackToVOG" id="WKGPComponentGridActionBackToVOG" href="#WKGPComponentGridActionBackToVOG"><span class="img"><span class="txt">Done</span></span></a>
+          </li>
+       </ul>
+       
+
+
+</div><!-- End bar actions-->
+ </div><!-- End Content -->
+ </div>
+ 
+ 
+           </div><!-- End component-container -->
+
+           <div id="DocumentPrefActions" class="hidden"><!--Start Document Preference Actions -->
+              <ul class="action-list preference">
+                 <li class="action action-savepref" title="Save Preference">
+                     <a name="DocumentActionSavePref" href="#DocumentActionSavePref" id="DocumentActionSavePref" title="Save Preference">
+                        <span class="img"><span class="txt">Save Preference</span></span>
+                     </a>
+                 </li>
+              </ul>
+              <ul class="action-list preference">
+                 <li class="action action-resetpref" title="Reset Preference">
+                   <a name="DocumentActionResetPref" href="#DocumentActionResetPref" id="DocumentActionResetPref" title="Reset Preference">
+                      <span class="img"><span class="txt">Reset</span></span>
+                   </a>
+                 </li>
+              </ul>
+              <ul class="action-list preference">
+                 <li class="action action-cancelpref" title="Cancel Preference">
+                   <a name="DocumentActionCancelPref" href="#DocumentActionCancelPref" id="DocumentActionCancelPref" title="Cancel Preference">
+                      <span class="img"><span class="txt">Cancel</span></span>
+                   </a>
+                 </li>
+              </ul>
+           </div> <!--End Document Preference Actions -->
+
+           <div id="DocumentActions"><!--Document Actions -->
+             <a id="DocumentActions_SkipLinkTarget" name="DocumentActions_SkipLinkTarget"></a>
+             
+        <ul class="action-list primary">
+          <li class="action action-edit" title="Edit Document">
+              <a name="DocumentActionEdit" vsds="" href="#DocumentActionEdit" id="DocumentActionEdit" title="Edit" accesskey="9"><span class="img"><span class="txt">Edit</span></span></a>
+          </li>
+          <li class="action action-copy" title="Copy Document">
+              <a name="DocumentActionCopy" vsds="" href="#DocumentActionCopy" id="DocumentActionCopy" title="Copy"><span class="img"><span class="txt">Copy</span></span></a>
+          </li>
+          <li class="action action-copyfwd" title="Copy Forward Document">
+              <a name="DocumentActionCopyForward" vsds="" href="#DocumentActionCopyForward" id="DocumentActionCopyForward" title="Copy Forward" accesskey="O"><span class="img"><span class="txt">Copy Forward</span></span></a>
+          </li>
+        </ul>
+
+        <ul class="action-list primary">
+          <li class="action action-validate" title="Validate Document">
+              <a name="DocumentActionValidate" vsds="" href="#DocumentActionValidate" id="DocumentActionValidate" title="Validate" accesskey="L"><span class="img"><span class="txt">Validate</span></span></a>
+          </li>
+          <li class="action action-submit" title="Submit Document">
+              <a name="DocumentActionSubmit" vsds="" href="#DocumentActionSubmit" id="DocumentActionSubmit" title="Submit" accesskey="S"><span class="img"><span class="txt">Submit</span></span></a>
+          </li>
+        </ul>
+
+        <ul class="action-list primary">
+           <li class="action action-discard" title="Discard Document">
+              <a name="DocumentActionDiscard" vsds="" href="#DocumentActionDiscard" id="DocumentActionDiscard" title="Discard"><span class="img"><span class="txt">Discard</span></span></a>
+          </li>
+        </ul>
+
+        <ul class="action-list primary">
+          <li class="action action-approve" title="Approve Document">
+             <a name="DocumentActionApprove" vsds="" href="#DocumentActionApprove" id="DocumentActionApprove" title="Approve"><span class="img"><span class="txt">Approve</span></span></a>
+          </li>
+          <li class="action action-reject" title="Reject Document">
+             <a name="DocumentActionReject" vsds="" href="#DocumentActionReject" id="DocumentActionReject" title="Reject"><span class="img"><span class="txt">Reject</span></span></a>
+          </li>
+        </ul>
+
+        <ul class="action-list secondary">
+           <li class="action action-print" title="Print Document">
+              <a name="DocumentActionPrint" vsds="" href="#DocumentActionPrint" id="DocumentActionPrint" title="Print" accesskey="P"><span class="img"><span class="txt">Print</span></span></a>
+           </li>
+           <li class="action" title="Processing">
+               <div id="DocumentActionMenuProcessing">
+                 <div class="bd">
+                   <ul>
+                     <li class="action-schedule">
+                       <a name="DocumentActionSchedule" href="#DocumentActionSchedule" id="DocumentActionSchedule" title="Schedule"><span class="img"><span class="txt">Schedule</span></span></a>
+                     </li>
+                     <li class="action-activate">
+                       <a name="DocumentActionActivate" href="#DocumentActionActivate" id="DocumentActionActivate" title="Activate"><span class="img"><span class="txt">Activate</span></span></a>
+                     </li>
+                     <li class="action-deactivate">
+                       <a name="DocumentActionDeactivate" href="#DocumentActionDeactivate" id="DocumentActionDeactivate" title="Deactivate"><span class="img"><span class="txt">Deactivate</span></span></a>
+                     </li>
+                     <li class="action-markdoc">
+                       <a href="#"><span class="img"><span class="txt">Mark Document</span></span></a>
+                       <div id="DocumentActionSubMenuMarkDocument">
+                         <div class="bd">
+                           <ul>
+                             <li class="action-ready">
+                                <a name="DocumentActionReady" href="#DocumentActionReady" id="DocumentActionReady" title="Ready"><span class="img"><span class="txt">Ready</span></span></a>
+                             </li>
+                             <li class="action-hold">
+                                <a name="DocumentActionHold" href="#DocumentActionHold" id="DocumentActionHold" title="Hold"><span class="img"><span class="txt">Hold</span></span></a>
+                             </li>
+                           </ul>
+                         </div>
+                       </div>
+                     </li>
+                   </ul>
+                 </div>
+               </div>
+            </li>
+            <li class="action" title="Workflow">
+               <div id="DocumentActionMenuWorkflow">
+                 <div class="bd">
+                   <ul>
+                     <li class="action-rejectall">
+                        <a name="DocumentActionRejectAll" href="#DocumentActionRejectAll" id="DocumentActionRejectAll" title="Reject All"><span class="img"><span class="txt">Reject All</span></span></a>
+                     </li>
+                     <li class="action-unapprove">
+                        <a name="DocumentActionUnapprove" href="#DocumentActionUnapprove" id="DocumentActionUnapprove" title="Unapprove"><span class="img"><span class="txt">Unapprove</span></span></a>
+                     </li>
+                     <li class="action-bypassapprovals">
+                        <a name="DocumentActionBypassApprovals" href="#DocumentActionBypassApprovals" id="DocumentActionBypassApprovals" title="Bypass Approvals"><span class="img"><span class="txt">Bypass Approvals</span></span></a>
+                     </li>
+                     <li class="action-override">
+                        <a name="DocumentActionOverride" href="#DocumentActionOverride" id="DocumentActionOverride" title="Override"><span class="img"><span class="txt">Override</span></span></a>
+                     </li>
+                     <li class="action-removeoverride">
+                        <a name="DocumentActionRemoveOverride" href="#DocumentActionRemoveOverride" id="DocumentActionRemoveOverride" title="Remove Override"><span class="img"><span class="txt">Remove Override</span></span></a>
+                     </li>
+                     <li class="action-trackwip">
+                        <a name="DocumentActionTrackWorkInProgress" href="#DocumentActionTrackWorkInProgress" id="DocumentActionTrackWorkInProgress" title="Track Work In Progress"><span class="img"><span class="txt">Track Work In Progress</span></span></a>
+                     </li>
+                   </ul>
+                 </div>
+               </div>
+            </li>
+            <li class="action" title="File">
+               <div id="DocumentActionMenuFile">
+                 <div class="bd">
+                   <ul>
+                     <li class="action-archive">
+                        <a name="DocumentActionArchive" href="#DocumentActionArchive" id="DocumentActionArchive" title="Archive"><span class="img"><span class="txt">Archive</span></span></a>
+                     </li>
+                     <li class="action-sendpage">
+                        <a name="DocumentActionSendPage" href="#DocumentActionSendPage" id="DocumentActionSendPage" title="SendPage"><span class="img"><span class="txt">SendPage</span></span></a>
+                     </li>
+                     <li class="action-downloaddoc">
+                        <a name="DocumentActionDownloadDocument" href="#DocumentActionDownloadDocument" id="DocumentActionDownloadDocument" title="Download Document"><span class="img"><span class="txt">Download Document</span></span></a>
+                     </li>
+                     <li class="action-docattachment">
+                        <a name="DocumentActionAttachment" href="#DocumentActionAttachment" id="DocumentActionAttachment" title="Attachments"><span class="img"><span class="txt">Attachments</span></span></a>
+                     </li>
+                   </ul>
+                 </div>
+               </div>
+            </li>
+            <li class="action action-close" title="Close Document">
+               <a title="Close Document" href="#DocumentActionClose" id="DocumentActionClose" name="DocumentActionClose" accesskey="Z"><span class="img"><span class="txt">Close</span></span></a>
+            </li>
+        </ul>
+           </div><!-- End Document Actions -->
+        </div><!-- Content -->
+      </form>
+
+      
+     <div id="DocumentActionProxies">
+        <a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+        <a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="AjaxAction" id="AjaxAction" title=""></a>
+        <a href="SecurityAdmin" vsds="" name="AjaxPick" id="AjaxPick"  vsaction="100" ></a>
+     </div>
+
+   </body>
+
+</html>
+
+
+
+

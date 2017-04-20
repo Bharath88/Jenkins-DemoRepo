@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Error Details</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<!--BEGIN CUSTOMIZATION -->
+<!--
+<body class="adv reftable">
+-->
+<body class="adv reftable" onload="UTILS_StartRegisteringTransactions()">
+<!-- END CUSTOMIZATION -->
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="AMSErrorDetail">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+<!--BEGIN CUSTOMIZATION -->
+<!--
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+-->
+<!-- END CUSTOMIZATION -->
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+<!--BEGIN CUSTOMIZATION -->
+<!--
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+-->
+<!-- END CUSTOMIZATION -->
+
+
+
+  <INPUT type="hidden" name="T1EMEX_TABLEvscurrency" vsds="T1EMEX_TABLE" vscurrency="true">
+
+<!--BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Advantage" vsds="T1EMEX_TABLE" vsaction="saveall" name="T1EMEX_TABLESaveAll" id="T1EMEX_TABLESaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Advantage" vsds="T1EMEX_TABLE" vsaction="undoall" name="T1EMEX_TABLEUndoAll" id="T1EMEX_TABLEUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="Advantage" vsds="T1EMEX_TABLE" vsaction="delete" id="IndexT1EMEX_TABLEdelete" name="T1EMEX_TABLEdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="Advantage" vsds="T1EMEX_TABLE" vsaction="insert" id="T1EMEX_TABLEinsert" name="T1EMEX_TABLEinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+      </td>
+
+<td><vstext vsds=" " name="T1EMEX_TABLESearchColList" vspreservetag="true"></td>
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="Advantage" vsds="T1EMEX_TABLE" vsaction="first" name="T1EMEX_TABLEfirst" id="T1EMEX_TABLEfirst" title="First Record" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T1EMEX_TABLE" vsaction="prev" name="T1EMEX_TABLEprev" id="T1EMEX_TABLEprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T1EMEX_TABLE" vsaction="next" name="T1EMEX_TABLEnext" id="T1EMEX_TABLEnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T1EMEX_TABLE" vsaction="last" name="T1EMEX_TABLElast" id="T1EMEX_TABLElast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+-->
+<!-- END CUSTOMIZATION -->
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label"><label title="Code">Code :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1ERR_CODE" vsds="T1EMEX_TABLE" vsdf="ERR_CODE"
+            size="5"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1ERR_EXPLN_MSG" title="Explanation">Explanation :</label></td>
+        <td class="val memo">
+<!--BEGIN CUSTOMIZATION -->
+          <textarea ams_readonly cols="60" rows="10" name="txtT1ERR_EXPLN_MSG" id="txtT1ERR_EXPLN_MSG" vsds="T1EMEX_TABLE" vsdf="ERR_EXPLN_MSG"
+ title="Explanation"></textarea>
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

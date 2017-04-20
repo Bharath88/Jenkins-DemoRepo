@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+   <head>
+     <title>HRM Worklists</title>
+   </head>
+   <body class="adv">
+     <form action="AdvMobile" method="post" vsform="true" name="pWFAPageList">
+
+       <h1 class="advpagetitle"><vstitle vstitle="Worklists">Worklists</vstitle></h1>
+
+       <div class="metainfo" id="MetaData" name="MetaData">
+          <input type="hidden" id="AppId" name="AppId" value="WFAMobile">
+          <input type="hidden" id="PageName" name="PageName" value="pWFAPageList">
+          <input type="hidden" name="PageType" value="NoDataActionPage">
+          <input type="hidden" name="Errors" value="" vsclass="com.amsinc.gems.adv.vfc.html.AdvMobileErrorElement">
+          <input type="hidden" id="PageView" name="PageView" value="Home">
+          <input type="hidden" id="RoleCounts" name="RoleCounts" value="">
+       </div>
+
+       <div class="actions" id="QueryData" name="QueryData" mobile_container="true">
+		  <select name="txtT1WorkLists" id="txtT1WorkLists" vsds="" vsdf="" size="1" vscodetable="" class="adveditable" onchange="checkAndSubmit();" title="Select Worklist">
+			<option value="JADEStored">JADEDisplayed</option>
+		  </select>
+       </div>
+
+       <div class="actions" id="PageActions" name="PageActions" mobile_container="true">
+			<a name="btnT1pMobileWorklist" href="AdvMobile" id="btnT1pMobileWorklist" title="Worklist" vsaction="pagetransition" vsds="" vsnavigation="T1pMobileWorklist">Worklist</a>
+			<a primary="Search_Workflow" name="btnT2pMobileWorklistSearch" href="AdvMobile" id="btnT2pMobileWorklistSearch" title="Search Workflow" vsaction="pagetransition" vsds="" vsnavigation="T2pMobileWorklistSearch">Search Workflow</a>
+	   </div>
+
+       <a href="AdvMobile" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+     </form>
+   </body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Pending Chain Job List</title>
+  <base href>
+
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+
+<!-- BEGIN CUSTOMIZATION -->
+    <script src="../Reports_Sys_Admin_App/JS/Batch.js" language="JavaScript" type="text/javascript"></script>
+  <!-- END CUSTOMIZATION -->
+
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Reports_Sys_Admin_App" method="post" vsform="true" name="View_Pending_Chain_Jobs_List">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+    <input type="hidden" name="ConfirmKill" value="No">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Pending Chain Job List">Pending Chain Job List</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+
+
+
+  <input type="hidden" name="T1VIEW_ALL_JOBS_QRY_Currency" value="">
+  <input type="hidden" name="T1VIEW_ALL_JOBS_QRY_Old_Currency" value="">
+  <table name="tblT1VIEW_ALL_JOBS_QRY" id="tblT1VIEW_ALL_JOBS_QRY" class="advgrid" vsds="T1VIEW_ALL_JOBS_QRY">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><a href="Reports_Sys_Admin_App" vsaction="sort" vsds="T1VIEW_ALL_JOBS_QRY"
+    vsdf="AGNT_ID"
+ name="T1AGNT_IDsort" id="T1AGNT_IDsort" title="Sort By Job ID">Job ID</a></th>
+
+        <th
+><a href="Reports_Sys_Admin_App" vsaction="sort" vsds="T1VIEW_ALL_JOBS_QRY"
+    vsdf="USID_UP"
+ name="T1USIDsort" id="T1USIDsort" title="Sort By User ID">User ID</a></th>
+
+        <th
+><span id="T1ITM_TYPsortGridLabel" name="T1ITM_TYPsortGridLabel" title="Item Type">Item Type</span></th>
+
+        <th
+><span id="T1CTLG_NMsortGridLabel" name="T1CTLG_NMsortGridLabel" title="Catalog Label">Catalog Label</span></th>
+
+        <th
+><span id="T1JOB_NMsortGridLabel" name="T1JOB_NMsortGridLabel" title="Job Name">Job Name</span></th>
+
+        <th
+><a href="Reports_Sys_Admin_App" vsaction="sort" vsds="T1VIEW_ALL_JOBS_QRY"
+    vsdf="RUN_STRT_TS"
+ name="T1RUN_STRT_TSsort" id="T1RUN_STRT_TSsort" title="Sort By Start Time">Start Time</a></th>
+
+        <th
+><span id="T1RUN_STAsortGridLabel" name="T1RUN_STAsortGridLabel" title="Status">Status</span></th>
+
+        <th
+><span id="ViewLogCol" name="ViewLogCol" title="View Job Log"></span></th>
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1VIEW_ALL_JOBS_QRYvscurrency" id="T1VIEW_ALL_JOBS_QRYvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1VIEW_ALL_JOBS_QRY" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1AGNT_ID" vsds="T1VIEW_ALL_JOBS_QRY" vsdf="AGNT_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1USID" vsds="T1VIEW_ALL_JOBS_QRY" vsdf="USID"
+>
+        </td>
+
+        <td
+>
+          <vstext vsds="T1VIEW_ALL_JOBS_QRY" vsdf="ITM_TYP" vscodetable="CVL_BS_NODE_TYPE">
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1CTLG_NM" vsds="T1VIEW_ALL_JOBS_QRY" vsdf="CTLG_NM"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1JOB_NM" vsds="T1VIEW_ALL_JOBS_QRY" vsdf="JOB_NM"
+>
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1RUN_STRT_TS" vsds="T1VIEW_ALL_JOBS_QRY" vsdf="RUN_STRT_TS"
+    vsformat="MM-dd-yyyy HH:mm"
+>
+        </td>
+
+        <td
+>
+          <vstext vsds="T1VIEW_ALL_JOBS_QRY" vsdf="RUN_STA" vscodetable="CVL_JOB_STATUS">
+        </td>
+
+	  <td>
+
+
+          <a name="btnT4Job_Log_Entries" id="btnT4Job_Log_Entries" href="Reports_Sys_Admin_App" vsaction="pagetransition"
+                       vsds="T1VIEW_ALL_JOBS_QRY"
+       vsnavigation="T4Job_Log_Entries" title="View Job Log" onclick="UTILS_GridRowAnchorClicked()">View Log</a>
+
+
+  </td>
+  <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+
+<td><div name="T1VIEW_ALL_JOBS_QRYGridNav" id="T1VIEW_ALL_JOBS_QRYGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+      <a href="Reports_Sys_Admin_App" vsds="T1VIEW_ALL_JOBS_QRY" vsaction="firstpage" name="T1VIEW_ALL_JOBS_QRYfirstpage" id="T1VIEW_ALL_JOBS_QRYfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+      <a href="Reports_Sys_Admin_App" vsds="T1VIEW_ALL_JOBS_QRY" vsaction="prevpage" name="T1VIEW_ALL_JOBS_QRYprevpage" id="T1VIEW_ALL_JOBS_QRYprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+      <a href="Reports_Sys_Admin_App" vsds="T1VIEW_ALL_JOBS_QRY" vsaction="nextpage" id="T1VIEW_ALL_JOBS_QRYnextpage" name="T1VIEW_ALL_JOBS_QRYnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+      <a href="Reports_Sys_Admin_App" vsds="T1VIEW_ALL_JOBS_QRY" vsaction="lastpage" id="T1VIEW_ALL_JOBS_QRYlastpage" name="T1VIEW_ALL_JOBS_QRYlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+    </tr>
+  </table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+<!--
+<a name="btnT4Job_Log_Entries" href="Reports_Sys_Admin_App" vsaction="pagetransition" id="btnT4Job_Log_Entries"
+           vsds="T1VIEW_ALL_JOBS_QRY"
+ vsnavigation="T4Job_Log_Entries" title="Navigation to View Log">View Log</a>-->
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1VIEW_ALL_JOBS_QRY', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'AGNT_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Job ID' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'USID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'User ID' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'RUN_STRT_TS' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Start Time' ;
+  -->
+  </script>
+
+
+    <table class="advtrans recsrc">
+    <tr>
+
+   <td>
+
+
+         <a onclick="Chain_Jobs_Pending_User_Confirm_Kill()" href="Reports_Sys_Admin_App"  vsaction=" "
+         vsds="T1VIEW_ALL_JOBS_QRY" name="KillJob" id="KillJob" title="Kill Selected Job">Kill Job
+         </a>
+
+
+  </td>
+
+        <td>
+           <A id=VerifyJob title="Verify Job Running" href="Reports_Sys_Admin_App"
+           name=VerifyJob vsds="T1VIEW_ALL_JOBS_QRY"  vsaction =" ">Verify Job Running</A>
+        </td>
+
+  </tr>
+  </table>
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<table class="advokcancel"><tr>
+<td><input class="advbutton" type="submit" name="Refresh_Page" value="Refresh" id="Refresh_Page" title="Refresh"  onclick="submitForm(document.forms[0],'refresh_page=refresh_page','');return false;"                                                                                    >
+
+
+<input class="advbutton" type="submit" vsaction="ok" name="OK" value="OK" id="OK" title="OK"></td></tr></table>
+<!-- END CUSTOMIZATION -->
+
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Reports_Sys_Admin_App" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

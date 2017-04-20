@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<!DOCTYPE DataObject SYSTEM "DataObject.dtd">
+<DataObject
+	SurrId="0330188434.GHODUM.0001"
+	CodedValuesList="False"
+	IsRemoteAccessible="False"
+	SuperClass="AMSDataObject"
+	LockMode="NoOptimisticLocking"
+	UseQuotedIdentifiers="False"
+	ImageReference=" "
+	XdaConnector="advantage.AMSJavaMailXDA"
+	DTDVersion="05.06.00"
+	>
+	<CodedValuesList
+		DisplayAttribute=" "
+		StoredAttribute=" "
+	/>
+	<VLSDeployment
+		DeploySecurityInfo="False"
+	/>
+	<SingularCaption><![CDATA[*]]> </SingularCaption>
+	<PluralCaption><![CDATA[*]]> </PluralCaption>
+	<Description><![CDATA[ ]]> </Description>
+	<Comments><![CDATA[ ]]> </Comments>
+	<Attributes>
+		<Attribute
+			Name="MSG_NO"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="True"
+			>
+			<DataType
+				DataType="Integer"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+		</Attribute>
+		<Attribute
+			Name="MAIL_TO"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="128"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[To]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="MAIL_FROM"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="128"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[From]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="CC"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="128"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[cc]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="SENT_DT"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="DateTime"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Format><![CDATA[M/d/yyyy h:mm:ss aa]]> </Format>
+			<Caption><![CDATA[Date]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="SUBJECT"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="128"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Subject]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="BODY"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="Memo"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Message]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="TBL_LAST_DT"
+			Persistent="True"
+			PreventUserUpdates="True"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="DateTime"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Last Modified Date]]></Caption>
+		</Attribute>
+	</Attributes>
+	<Indexes>
+		<Index
+			Name="PK_WFDISPMSG"
+			Primary="True"
+			Unique="True"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="MSG_NO"
+				Descending="False"
+			/>
+		</Index>
+		<Index
+			Name="N1_WFDISPMSG"
+			Primary="False"
+			Unique="False"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="TBL_LAST_DT"
+				Descending="False"
+			/>
+		</Index>
+	</Indexes>
+	<ExtendedProperties>
+		<Property
+			Name="FuncAreaName"
+			Value="FUNC_AREA_WORKFLOW"
+		/>
+	</ExtendedProperties>
+</DataObject>

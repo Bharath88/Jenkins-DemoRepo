@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<!DOCTYPE DataObject SYSTEM "DataObject.dtd">
+<DataObject
+	SurrId="04170052060121"
+	CodedValuesList="False"
+	IsRemoteAccessible="False"
+	UseQuotedIdentifiers="False"
+	SuperClass="AMSDataObject"
+	LockMode="NoOptimisticLocking"
+	ImageReference=" "
+	XdaConnector="SQL"
+	DTDVersion="05.06.00"
+	>
+	<CodedValuesList
+		DisplayAttribute=" "
+		StoredAttribute=" "
+	/>
+	<VLSDeployment
+		DeploySecurityInfo="False"
+	/>
+	<SingularCaption><![CDATA[*]]> </SingularCaption>
+	<PluralCaption><![CDATA[*]]> </PluralCaption>
+	<Description><![CDATA[ ]]> </Description>
+	<Comments><![CDATA[ ]]> </Comments>
+	<Attributes>
+		<Attribute
+			Name="PERFKEY"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			Persistent="True"
+			PreventUserUpdates="False"
+			>
+			<DataType
+				DataType="Char"
+				Size="5"
+			/>
+			<ServerDataType
+				Type="CHAR"
+				Size="5"
+				ServerOfOrigin="Oracle7"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Description><![CDATA[]]> </Description>
+			<Comments><![CDATA[CONCATENATED KEY FOR PERFORMANCE REASONS.]]></Comments>
+		</Attribute>
+		<Attribute
+			Name="ERR_CODE"
+			ValueRequired="True"
+			LayoutByDefault="False"
+			Persistent="True"
+			PreventUserUpdates="False"
+			>
+			<DataType
+				DataType="Char"
+				Size="5"
+			/>
+			<ServerDataType
+				Type="CHAR"
+				Size="5"
+				ServerOfOrigin="Oracle7"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Derivation
+				DerivationType="Default"
+				>
+				<DefaultValue><![CDATA[' ']]></DefaultValue>
+			</Derivation>
+			<Caption><![CDATA[Error Code]]></Caption>
+		</Attribute>
+		<Attribute
+			Name="ERR_MESSAGE"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			PreventUserUpdates="False"
+			>
+			<DataType
+				DataType="Char"
+				Size="30"
+			/>
+			<ServerDataType
+				Type="CHAR"
+				Size="30"
+				ServerOfOrigin="Oracle7"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Derivation
+				DerivationType="Default"
+				>
+				<DefaultValue><![CDATA[' ']]></DefaultValue>
+			</Derivation>
+			<Caption><![CDATA[Error Message]]></Caption>
+		</Attribute>
+		<Attribute
+			Name="ERR_EXPLN_MSG"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Memo"
+			/>
+			<Derivation
+				DerivationType="Default"
+				>
+				<DefaultValue><![CDATA[' ']]></DefaultValue>
+			</Derivation>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Error Explanation]]></Caption>
+		</Attribute>
+	</Attributes>
+	<Indexes>
+		<Index
+			Name="PK_EMEXTABLE"
+			Primary="True"
+			Unique="True"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="ERR_CODE"
+				Descending="False"
+			/>
+		</Index>
+	</Indexes>
+	<ExtendedProperties>
+		<Property
+			Name="FuncAreaName"
+			Value="FUNC_AREA_ADMIN_OTHER"
+		/>
+	</ExtendedProperties>
+</DataObject>

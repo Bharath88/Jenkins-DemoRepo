@@ -1,0 +1,347 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Track Work in Progress</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+
+
+  <!-- BEGIN CUSTOMIZATION -->
+  <!--
+       CSS For Visual Representation of the TWIP Page Grid
+  -->
+
+  <link type="text/css" rel="stylesheet" href="../Workflow/CSS/TWIPVisualWorkFlow.css">
+
+  <!-- END CUSTOMIZATION -->
+
+
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+
+  <!-- BEGIN CUSTOMIZATION -->
+  <!--
+       JS For Visual Representation of the TWIP Page Grid
+  -->
+
+  <script type="text/javascript" language="javascript" src="../AMSJS/jquery/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" language="javascript" src="../Workflow/JS/TWIPVisualWorkFlow.js"></script>
+  <script type="text/javascript" language="javascript" src="../Workflow/JS/AdvVisualWorkflow/raphael.js"></script>
+  <script type="text/javascript" language="javascript" src="../Workflow/JS/AdvVisualWorkflow/AdvVisualWorkflow.nocache.js"></script>
+
+
+  <!-- END CUSTOMIZATION -->
+
+
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Workflow" method="post" vsform="true" name="pTWIP">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    <!-- BEGIN CUSTOMIZATION -->
+    <!--
+       Hidden Elements Created For the Visual Representation of the TWIP Page Grid
+    -->
+
+    <input type="hidden" name="AprvHistJson" id="AprvHistJson"  value="">
+    <input type="hidden" name="PageType"     id="PageType"  value="">
+    <input type="hidden" name="CurrentAprvRouteSequence" id="CurrentAprvRouteSequence"  value="">
+    <input type="hidden" name="FinalDocPhase" id="FinalDocPhase"  value="">
+    <input type="hidden" name="DocId" id="DocId"  value="">
+
+    <!-- END CUSTOMIZATION -->
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Track Work in Progress">Track Work in Progress</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="Workflow" vsds="" vsaction="84" title="Back to Previous Page" name="QueryBack" id="QueryBack" accesskey="Z">Back</a>
+  </div>
+
+
+
+  <INPUT type="hidden" name="T1WF_TWIP_QRYvscurrency" vsds="T1WF_TWIP_QRY" vscurrency="true">
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+</ams_map>
+      </td>
+
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="Workflow" vsds="T1WF_TWIP_QRY" vsaction="first" name="T1WF_TWIP_QRYfirst" id="T1WF_TWIP_QRYfirst" title="First Record" accesskey="0">First</a>
+
+<a href="Workflow" vsds="T1WF_TWIP_QRY" vsaction="prev" name="T1WF_TWIP_QRYprev" id="T1WF_TWIP_QRYprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="Workflow" vsds="T1WF_TWIP_QRY" vsaction="next" name="T1WF_TWIP_QRYnext" id="T1WF_TWIP_QRYnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="Workflow" vsds="T1WF_TWIP_QRY" vsaction="last" name="T1WF_TWIP_QRYlast" id="T1WF_TWIP_QRYlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+-->
+<!-- END CUSTOMIZATION -->
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label"><label title="Date Submitted">Date Submitted :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1STRT_DT" vsds="T1WF_TWIP_QRY" vsdf="STRT_DT"
+      vsformat="M/d/yyyy"
+                                 size="15"
+>
+        </td>
+      </tr>
+
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label title="Submitter">Submitter :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1SBMT_NM" vsds="T1WF_TWIP_QRY" vsdf="SBMT_NM"
+         size="15"
+>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+ <div id="AprvSheetWrapper" name="AprvSheetWrapper" vsds="">
+  <vstext name="AprvSheet" id="AprvSheet" vsds="" vspreservetag="true">
+ </div>
+<!-- END CUSTOMIZATION -->
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+<a name="btnT2pTWIP_Log" href="Workflow" id="btnT2pTWIP_Log" title="Navigation to View Log" vsaction="pagetransition"
+           vsds="T1WF_TWIP_QRY"
+ vsnavigation="T2pTWIP_Log">View Log</a>
+      </td>
+
+      <!-- BEGIN CUSTOMIZATION -->
+       <!--
+          ADDED THE BELOW MENTIONED LINKS TO INCORPORATE THE TOGGLE BEHAVIOUR
+        -->
+
+      <td>
+	  <div id="showVisual" name="showVisual" vsds="" class="viewtransition"><a href="javascript:TWIPVisualWorkFlow_toggleView('Visual')">View Visual</a></div>
+	  	</td>
+
+      <td>
+       <div id="showGrid" name="showGrid" vsds="" class="viewtransition"><a href="javascript:TWIPVisualWorkFlow_toggleView('Grid')">View Grid</a></div>
+      </td>
+
+      <!-- END CUSTOMIZATION -->
+  </table>
+
+
+
+
+  <input type="hidden" name="T3WF_APRV_WRK_LST_Currency" value="">
+  <input type="hidden" name="T3WF_APRV_WRK_LST_Old_Currency" value="">
+
+  <!-- BEGIN CUSTOMIZATION Enclosed T3WF_APRV_WRK_LST in a div element and added a header-->
+  <div id="DivCurrAssignee" name="DivCurrAssignee" vsds="">
+  <H4>Current Assignee</H4>
+  <!-- END CUSTOMIZATION -->
+
+  <table name="tblT3WF_APRV_WRK_LST" id="tblT3WF_APRV_WRK_LST" class="advgrid" vsds="T3WF_APRV_WRK_LST">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+<!-- BEGIN CUSTOMIZATION Comment out the th tags generated for the fields-->
+<!--
+        <th
+><a href="Workflow" vsaction="sort" vsds="T3WF_APRV_WRK_LST"
+    vsdf="APRV_LVL"
+ name="T3APRV_LVLsort" id="T3APRV_LVLsort" title="Sort By Level">Level</a></th>
+
+        <th
+><span id="T3ASSIGNEE_NMsortGridLabel" name="T3ASSIGNEE_NMsortGridLabel" title="Assignee Name">Assignee Name</span></th>
+-->
+<!-- END CUSTOMIZATION -->
+
+<!-- BEGIN CUSTOMIZATION Add the customized tags for the fields-->
+        <th
+><span id="T3APRV_LVLsortGridLabel" name="T3APRV_LVLsortGridLabel" title="Approval Level">Approval Level</span></th>
+
+        <th
+><span id="T3ASSIGNEE_NMsortGridLabel" name="T3ASSIGNEE_NMsortGridLabel" title="Assignee Name">Current Assignee Name</span></th>
+<!-- END CUSTOMIZATION -->
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T3WF_APRV_WRK_LSTvscurrency" id="T3WF_APRV_WRK_LSTvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T3WF_APRV_WRK_LST" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+>
+          <vstext vsds="T3WF_APRV_WRK_LST" vsdf="APRV_LVL" vscodetable="CVL_WF_LVLS">
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3ASSIGNEE_NM" vsds="T3WF_APRV_WRK_LST" vsdf="ASSIGNEE_NM"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<!-- BEGIN CUSTOMIZATION Comment out the Copy/Paste link-->
+<!--
+  <td><ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="Workflow" vsds="T3WF_APRV_WRK_LST" vsaction="11" name="T3WF_APRV_WRK_LSTCopyLine" id="T3WF_APRV_WRK_LSTCopyLine" title="Copy Selected Row" accesskey="C">Copy</a>
+  </ams_map></td>
+-->
+<!-- END CUSTOMIZATION -->
+
+<td><div name="T3WF_APRV_WRK_LSTGridNav" id="T3WF_APRV_WRK_LSTGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+      <a href="Workflow" vsds="T3WF_APRV_WRK_LST" vsaction="firstpage" name="T3WF_APRV_WRK_LSTfirstpage" id="T3WF_APRV_WRK_LSTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+      <a href="Workflow" vsds="T3WF_APRV_WRK_LST" vsaction="prevpage" name="T3WF_APRV_WRK_LSTprevpage" id="T3WF_APRV_WRK_LSTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+      <a href="Workflow" vsds="T3WF_APRV_WRK_LST" vsaction="nextpage" id="T3WF_APRV_WRK_LSTnextpage" name="T3WF_APRV_WRK_LSTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+      <a href="Workflow" vsds="T3WF_APRV_WRK_LST" vsaction="lastpage" id="T3WF_APRV_WRK_LSTlastpage" name="T3WF_APRV_WRK_LSTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION Add the closing div tag -->
+</div>
+<!-- END CUSTOMIZATION -->
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION Comment out this JavaScript -->
+<!--
+  <script type="text/javascript" language="JavaScript">
+
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T3WF_APRV_WRK_LST', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'APRV_LVL' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Level' ;
+  -->
+<!-- END CUSTOMIZATION -->
+<!-- BEGIN CUSTOMIZATION Comment out this JavaScript -->
+<!--
+  </script>
+-->
+<!-- END CUSTOMIZATION -->
+
+    <!-- BEGIN CUSTOMIZATION -->
+    <!--
+       Added the Visual Workflow Legend For the Visual Representation
+    -->
+
+
+
+<div id="visualWorkflowLegend" name="visualWorkflowLegend" class="datagrid" vsds="">
+      <table>
+         <thead>
+            <tr>
+               <th></th>
+               <th></th>
+               <th></th>
+               <th></th>
+               <th></th>
+               <th></th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr style="height: 50px;">
+               <td>Legend</td>
+               <td><div id="imageArea"><img src="../AMSImages/Pending.png"></div>Pending</td>
+               <td><div id="imageArea"><img src="../AMSImages/Approve.png"></div>Approved</td>
+               <td><div id="imageArea"><img src="../AMSImages/Reject.png"></div>Rejected</td>
+               <td><div id="imageArea"><img src="../AMSImages/Bypass.png"></div>ByPassed</td>
+               <td><div id="imageArea"><img src="../AMSImages/Unapprove.png"></div>Unapproved</td>
+            </tr>
+         </tbody>
+       </table>
+</div>
+
+  <!-- END CUSTOMIZATION -->
+
+    <!-- BEGIN CUSTOMIZATION -->
+    <!--
+       Added the Visual Workflow Div As the Visual Representation Container
+    -->
+
+       <div id="visualWorkflow" name="visualWorkflow" vsds=""></div>
+
+  <!-- END CUSTOMIZATION -->
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Workflow" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Integration Resource</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="ABI" method="post" vsform="true" name="pIM_SRVC_FLOW_RSRC_Generic">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Integration Resource">Integration Resource</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="ABI" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+  <a name="T1IM_SRVC_FLOW_RSRC_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1IM_SRVC_FLOW_RSRC_Currency" >
+  <input type="hidden" name="T1IM_SRVC_FLOW_RSRC_Old_Currency" >
+  <table name="tblT1IM_SRVC_FLOW_RSRC" id="tblT1IM_SRVC_FLOW_RSRC" class="advgrid" vsds="T1IM_SRVC_FLOW_RSRC">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><span id="T1SEQ_NOsortGridLabel" name="T1SEQ_NOsortGridLabel" vsdf="SEQ_NO" title="Resource ID">Resource ID</span></th>
+      
+        <th 
+><span id="T1FILE_NMsortGridLabel" name="T1FILE_NMsortGridLabel" vsdf="FILE_NM" title="File Name">File Name</span></th>
+      
+        <th 
+><span id="T1FILE_PATHsortGridLabel" name="T1FILE_PATHsortGridLabel" vsdf="FILE_PATH" title="File Path">File Path</span></th>
+      
+        <th 
+><span id="T1SRVC_IDsortGridLabel" name="T1SRVC_IDsortGridLabel" vsdf="SRVC_ID" title="Service ID">Service ID</span></th>
+      
+        <th 
+><span id="T1RSRC_STAsortGridLabel" name="T1RSRC_STAsortGridLabel" vsdf="RSRC_STA" title="Status">Status</span></th>
+      
+        <th 
+><span id="T1RSRC_TYPsortGridLabel" name="T1RSRC_TYPsortGridLabel" vsdf="RSRC_TYP" title="Type">Type</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr class="advgridoddrow" onclick="UTILS_SelectGridRow(this);return true;" ams_altclassname="advgridevenrow" vsprototyperow="true">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IM_SRVC_FLOW_RSRCvscurrency" id="T1IM_SRVC_FLOW_RSRCvscurrency" title="Select Row" alt="Select Row" src="../AMSImages/ADVRowSel.gif"
+ vsds="T1IM_SRVC_FLOW_RSRC" vsaction="Currency">
+      </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1SEQ_NO" vsds="T1IM_SRVC_FLOW_RSRC" vsdf="SEQ_NO" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1FILE_NM" vsds="T1IM_SRVC_FLOW_RSRC" vsdf="FILE_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1FILE_PATH" vsds="T1IM_SRVC_FLOW_RSRC" vsdf="FILE_PATH" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1SRVC_ID" vsds="T1IM_SRVC_FLOW_RSRC" vsdf="SRVC_ID" 
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1IM_SRVC_FLOW_RSRC" vsdf="RSRC_STA" vscodetable="CVL_IM_RSRC_STA">
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1IM_SRVC_FLOW_RSRC" vsdf="RSRC_TYP" vscodetable="CVL_IM_RSRC_TYP">
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="T1IM_SRVC_FLOW_RSRCGridNav" id="T1IM_SRVC_FLOW_RSRCGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="ABI" vsds="T1IM_SRVC_FLOW_RSRC" vsaction="firstpage" name="T1IM_SRVC_FLOW_RSRCfirstpage" id="T1IM_SRVC_FLOW_RSRCfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="ABI" vsds="T1IM_SRVC_FLOW_RSRC" vsaction="prevpage" name="T1IM_SRVC_FLOW_RSRCprevpage" id="T1IM_SRVC_FLOW_RSRCprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="ABI" vsds="T1IM_SRVC_FLOW_RSRC" vsaction="nextpage" id="T1IM_SRVC_FLOW_RSRCnextpage" name="T1IM_SRVC_FLOW_RSRCnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="ABI" vsds="T1IM_SRVC_FLOW_RSRC" vsaction="lastpage" id="T1IM_SRVC_FLOW_RSRClastpage" name="T1IM_SRVC_FLOW_RSRClastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+  
+  
+
+  <table class="advaction recsrc">
+    <tr>
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+   
+         <a href="ABI" vsds="T1IM_SRVC_FLOW_RSRC" vsaction="saveall" name="T1IM_SRVC_FLOW_RSRCSaveAll" id="T1IM_SRVC_FLOW_RSRCSaveAll" title="Save All" accesskey="5">Save</a>
+   
+		  <a href="ABI" vsds="T1IM_SRVC_FLOW_RSRC" vsaction="undoall" name="T1IM_SRVC_FLOW_RSRCUndoAll" id="T1IM_SRVC_FLOW_RSRCUndoAll" title="Undo All" accesskey="6">Undo</a>
+</ams_map>
+      </td>
+-->
+<!-- END CUSTOMIZATION -->
+      
+   
+      <td><vstext vsds=" " name="T1IM_SRVC_FLOW_RSRCSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1SEQ_NO" title="Resource ID">Resource ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1SEQ_NO" id="txtT1SEQ_NO" 
+               size="15"
+ vsds="T1IM_SRVC_FLOW_RSRC" vsdf="SEQ_NO" 
+ value="SEQ_NO" ams_readonly ShowCodeInfo="" title="Resource ID">
+        </td>
+      </tr>
+    
+    
+        
+       
+        <tr>
+        
+      
+      <td class="label"><label for="txtT1FILE_NM" title="File Name">File Name :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1FILE_NM" id="txtT1FILE_NM" 
+               size="20"
+ vsds="T1IM_SRVC_FLOW_RSRC" vsdf="FILE_NM" 
+         ams_max_len="255"
+ ShowCodeInfo="" value="FILE_NM" title="File Name" >
+
+        
+
+        </td>
+        </tr>
+    
+    
+       
+        <tr>
+        
+      
+      <td class="label"><label for="txtT1FILE_PATH" title="File Path">File Path :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1FILE_PATH" id="txtT1FILE_PATH" 
+               size="20"
+ vsds="T1IM_SRVC_FLOW_RSRC" vsdf="FILE_PATH" 
+         ams_max_len="255"
+ ShowCodeInfo="" value="FILE_PATH" title="File Path" >
+
+        
+
+        </td>
+        </tr>
+    
+    
+       
+        <tr>
+        
+      
+      <td class="label"><label for="txtT1SRVC_ID" title="Service ID">Service ID :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1SRVC_ID" id="txtT1SRVC_ID" 
+                  size="15"
+ vsds="T1IM_SRVC_FLOW_RSRC" vsdf="SRVC_ID" 
+                  ams_max_len="20"
+ ShowCodeInfo="" value="SRVC_ID" title="Service ID" >
+
+        
+
+        </td>
+        </tr>
+    
+    
+        
+      <tr>
+      
+      <td class="label"><label for="txtT1RSRC_STA" title="Status">Status :</label></td>
+   
+        <td class="val">
+          <select name="txtT1RSRC_STA" id="txtT1RSRC_STA" vsds="T1IM_SRVC_FLOW_RSRC" vsdf="RSRC_STA" size="1" vscodetable="CVL_IM_RSRC_STA" ShowCodeInfo="" title="Status">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+        
+      <tr>
+      
+      <td class="label"><label for="txtT1RSRC_TYP" title="Type">Type :</label></td>
+   
+        <td class="val">
+          <select name="txtT1RSRC_TYP" id="txtT1RSRC_TYP" vsds="T1IM_SRVC_FLOW_RSRC" vsdf="RSRC_TYP" size="1" vscodetable="CVL_IM_RSRC_TYP" ShowCodeInfo="" title="Type">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1RSRC_DESC" title="Description">Description :</label></td>
+   
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1RSRC_DESC" id="txtT1RSRC_DESC" vsds="T1IM_SRVC_FLOW_RSRC" vsdf="RSRC_DESC" 
+ title="Description"></textarea>
+        </td>
+      </tr>
+    
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtT1FILE_NM_UP" title="File Name">File Name :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1FILE_NM_UP" id="txtT1FILE_NM_UP" 
+               size="20"
+ vsds="T1IM_SRVC_FLOW_RSRC" vsdf="FILE_NM_UP" 
+         ams_max_len="255"
+ ShowCodeInfo="" title="File Name" value="FILE_NM_UP"></div>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtT1FILE_PATH_UP" title="File Path">File Path :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1FILE_PATH_UP" id="txtT1FILE_PATH_UP" 
+               size="20"
+ vsds="T1IM_SRVC_FLOW_RSRC" vsdf="FILE_PATH_UP" 
+         ams_max_len="255"
+ ShowCodeInfo="" title="File Path" value="FILE_PATH_UP"></div>
+        </td>
+      </tr>
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+   
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+   <a name="btnT2pIM_SRVC_FLOW_RSRC_Generic" href="ABI" id="btnT2pIM_SRVC_FLOW_RSRC_Generic" title="Navigation to View File" vsaction="pagetransition" 
+           vsds="T1IM_SRVC_FLOW_RSRC"
+ vsnavigation="T2pIM_SRVC_FLOW_RSRC_Generic">View File</a>
+-->
+      <a href="ABI" vsds="T1IM_SRVC_FLOW_RSRC" vsaction="85" name="T1IM_SRVC_FLOW_RSRCViewFile" id="T1IM_SRVC_FLOW_RSRCViewFile" title="View File">
+      </a><a href="javascript:submitForm(document.forms[0],'T1IM_SRVC_FLOW_RSRCViewFile=T1IM_SRVC_FLOW_RSRCViewFile', '_top');UTILS_InitPage();" onclick="if (!UTILS_CheckForTransaction()){event.returnValue = false};" name="T1IM_SRVC_FLOW_RSRCViewFile" id="T1IM_SRVC_FLOW_RSRCViewFile" title="View File">View File</a>
+<!-- END CUSTOMIZATION -->
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1IM_SRVC_FLOW_RSRC', new Array(), new Array() ) ;
+    
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="ABI" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

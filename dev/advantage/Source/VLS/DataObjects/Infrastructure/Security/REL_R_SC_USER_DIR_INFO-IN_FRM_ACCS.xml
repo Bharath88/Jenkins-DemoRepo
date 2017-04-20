@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="InFrmAccsToRScUserDirInfo"
+		ChildRoleName="RScUserDirInfoToInFrmAccs"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="USER_ID"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[IN_FRM_ACCS(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[R_SC_USER_DIR_INFO/USER_ID],v:Form Access Control record%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Form Access Control record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:IN_FRM_ACCS/USER_ID] specified,v:User Directory Information table%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

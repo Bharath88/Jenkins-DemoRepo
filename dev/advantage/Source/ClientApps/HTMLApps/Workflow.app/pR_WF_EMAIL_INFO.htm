@@ -1,0 +1,354 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Email Setup</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Workflow" method="post" vsform="true" name="pR_WF_EMAIL_INFO">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Email Setup">Email Setup</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+      
+      
+ 
+  <a name="T1R_WF_EMAIL_INFO_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1R_WF_EMAIL_INFO_Currency" value="">
+  <input type="hidden" name="T1R_WF_EMAIL_INFO_Old_Currency" value="">
+  <table name="tblT1R_WF_EMAIL_INFO" id="tblT1R_WF_EMAIL_INFO" class="advgrid" vsds="T1R_WF_EMAIL_INFO">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_EMAIL_INFO" 
+    vsdf="DEPT_CD"
+ name="T1DEPT_CDsort" id="T1DEPT_CDsort" title="Sort By Department">Department</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_EMAIL_INFO" 
+    vsdf="MSG_SRVR_NM"
+ name="T1MSG_SRVR_NMsort" id="T1MSG_SRVR_NMsort" title="Sort By Server Name">Server Name</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_EMAIL_INFO" 
+    vsdf="MSG_FLDR_NM"
+ name="T1MSG_FLDR_NMsort" id="T1MSG_FLDR_NMsort" title="Sort By Message Folder">Message Folder</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_EMAIL_INFO" 
+    vsdf="SMTP_SRVR_NM"
+ name="T1SMTP_SRVR_NMsort" id="T1SMTP_SRVR_NMsort" title="Sort By SMTP Server Name">SMTP Server Name</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_EMAIL_INFO" 
+    vsdf="WF_MSG_ID"
+ name="T1WF_MSG_IDsort" id="T1WF_MSG_IDsort" title="Sort By Automatic Sender ID">Automatic Sender ID</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_EMAIL_INFO" 
+    vsdf="PROTOCOL"
+ name="T1PROTOCOLsort" id="T1PROTOCOLsort" title="Sort By Protocol">Protocol</a></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_WF_EMAIL_INFOvscurrency" id="T1R_WF_EMAIL_INFOvscurrency" title="Select Row" alt="Select Row" vsds="T1R_WF_EMAIL_INFO" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DEPT_CD" vsds="T1R_WF_EMAIL_INFO" vsdf="DEPT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1MSG_SRVR_NM" vsds="T1R_WF_EMAIL_INFO" vsdf="MSG_SRVR_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1MSG_FLDR_NM" vsds="T1R_WF_EMAIL_INFO" vsdf="MSG_FLDR_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1SMTP_SRVR_NM" vsds="T1R_WF_EMAIL_INFO" vsdf="SMTP_SRVR_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1WF_MSG_ID" vsds="T1R_WF_EMAIL_INFO" vsdf="WF_MSG_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1PROTOCOL" vsds="T1R_WF_EMAIL_INFO" vsdf="PROTOCOL" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="T1R_WF_EMAIL_INFOGridNav" id="T1R_WF_EMAIL_INFOGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+      <a href="Workflow" vsds="T1R_WF_EMAIL_INFO" vsaction="firstpage" name="T1R_WF_EMAIL_INFOfirstpage" id="T1R_WF_EMAIL_INFOfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+      <a href="Workflow" vsds="T1R_WF_EMAIL_INFO" vsaction="prevpage" name="T1R_WF_EMAIL_INFOprevpage" id="T1R_WF_EMAIL_INFOprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+      <a href="Workflow" vsds="T1R_WF_EMAIL_INFO" vsaction="nextpage" id="T1R_WF_EMAIL_INFOnextpage" name="T1R_WF_EMAIL_INFOnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+      <a href="Workflow" vsds="T1R_WF_EMAIL_INFO" vsaction="lastpage" id="T1R_WF_EMAIL_INFOlastpage" name="T1R_WF_EMAIL_INFOlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+  
+  
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+   
+      <a href="Workflow" vsds="T1R_WF_EMAIL_INFO" vsaction="saveall" name="T1R_WF_EMAIL_INFOSaveAll" id="T1R_WF_EMAIL_INFOSaveAll" title="Save All" accesskey="5">Save</a>
+   
+      <a href="Workflow" vsds="T1R_WF_EMAIL_INFO" vsaction="undoall" name="T1R_WF_EMAIL_INFOUndoAll" id="T1R_WF_EMAIL_INFOUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+      <a href="Workflow" vsds="T1R_WF_EMAIL_INFO" vsaction="delete" id="IndexT1R_WF_EMAIL_INFOdelete" name="T1R_WF_EMAIL_INFOdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="Workflow" vsds="T1R_WF_EMAIL_INFO" vsaction="insert" id="T1R_WF_EMAIL_INFOinsert" name="T1R_WF_EMAIL_INFOinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="Workflow" vsds="T1R_WF_EMAIL_INFO" vsaction="11" name="T1R_WF_EMAIL_INFOCopyRecord" id="T1R_WF_EMAIL_INFOCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="Workflow" vsds="T1R_WF_EMAIL_INFO" vsaction="12" name="T1R_WF_EMAIL_INFOPasteLine" id="T1R_WF_EMAIL_INFOPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+      
+   
+      <td><vstext vsds=" " name="T1R_WF_EMAIL_INFOSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DEPT_CD" title="Department">Department :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1DEPT_CD" id="txtT1DEPT_CD" 
+            size="6"
+ vsds="T1R_WF_EMAIL_INFO" vsdf="DEPT_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="DEPT_CD" title="Department" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1MSG_SRVR_NM" title="Server Name (Required)">Server Name :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1MSG_SRVR_NM" id="txtT1MSG_SRVR_NM" 
+               size="20"
+ vsds="T1R_WF_EMAIL_INFO" vsdf="MSG_SRVR_NM" 
+         ams_max_len="50"
+ ShowCodeInfo="" value="MSG_SRVR_NM"title="Server Name (Required)">
+        </td>
+      </tr>
+    
+          
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1MSG_FLDR_NM" title="Message Folder">Message Folder :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1MSG_FLDR_NM" id="txtT1MSG_FLDR_NM" 
+            size="20"
+ vsds="T1R_WF_EMAIL_INFO" vsdf="MSG_FLDR_NM" 
+ value="MSG_FLDR_NM" ams_readonly ShowCodeInfo="" title="Message Folder">
+        </td>
+      </tr>
+    
+        
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1SMTP_SRVR_NM" title="SMTP Server Name (Required)">SMTP Server Name :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1SMTP_SRVR_NM" id="txtT1SMTP_SRVR_NM" 
+               size="20"
+ vsds="T1R_WF_EMAIL_INFO" vsdf="SMTP_SRVR_NM" 
+         ams_max_len="50"
+ ShowCodeInfo="" value="SMTP_SRVR_NM"title="SMTP Server Name (Required)">
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1WF_MSG_ID" title="Automatic Sender ID (Required)">Automatic Sender ID :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1WF_MSG_ID" id="txtT1WF_MSG_ID" 
+      ams_max_len="16"
+ value="WF_MSG_ID" 
+            size="20"
+ vsds="T1R_WF_EMAIL_INFO" vsdf="WF_MSG_ID" ShowCodeInfo="" title="Automatic Sender ID (Required)">
+          <input type="image" vspick="T2R_SC_USER_DIR_INFO" vspicktext="txtT1WF_MSG_ID" vsds="T1R_WF_EMAIL_INFO" vsaction="pick" name="pckT1WF_MSG_ID" id="pckT1WF_MSG_ID" title="Select Automatic Sender ID" alt="Select Automatic Sender ID" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1PROTOCOL" title="Protocol (Required)">Protocol :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1PROTOCOL" id="txtT1PROTOCOL" 
+               size="15"
+ vsds="T1R_WF_EMAIL_INFO" vsdf="PROTOCOL" 
+         ams_max_len="8"
+ ShowCodeInfo="" value="PROTOCOL"title="Protocol (Required)">
+        </td>
+      </tr>
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_WF_EMAIL_INFO', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'DEPT_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Department' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'MSG_SRVR_NM' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Server Name' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'MSG_FLDR_NM' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Message Folder' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'SMTP_SRVR_NM' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'SMTP Server Name' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'WF_MSG_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Automatic Sender ID' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'PROTOCOL' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Protocol' ;
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Workflow" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

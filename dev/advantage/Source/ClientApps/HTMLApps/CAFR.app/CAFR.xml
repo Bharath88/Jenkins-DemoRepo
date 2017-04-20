@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE Application SYSTEM "Application.dtd">
+<Application
+	SurrId="0669351018.Administrator.0003"
+	ZoomFactor="1"
+	TargetLanguage="HTML"
+	DefaultLogonUserId="sa"
+	ExecutionEnvironment="Browser"
+	AppletHeight="575"
+	AppletWidth="725"
+	ClassId="1B28CA66-28D5-4BBF-BD0D-A6C40FF00AF5"
+	SuppressDefaultLoginScreen="False"
+	InitialFramesetPage="FramesetPage"
+	StartupPageFrameName="Startup"
+	InitialFrameNameForStartupTrans="Display"
+	AppRepositoryVersion="05.06.01"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.00"
+	>
+	<ServerLocation><![CDATA[<localVLSServer>]]></ServerLocation>
+	<!-- APPLICATION FORMS -->
+	<Forms>
+		<Form>StartupPage</Form>
+		<Form>pRefSTMTDEF</Form>
+		<Form>pRefSTMTCOL</Form>
+		<Form>pRefSTMTROW</Form>
+		<Form>pRefSTMTRULE</Form>
+		<Form>pRefSTMTCELL</Form>
+		<Form>pRefSTMTCONDGRP</Form>
+		<Form>FramesetPage</Form>
+		<Form>pNoData</Form>
+		<Form>pSTMT_XWLK_DEF</Form>
+	</Forms>
+	<SourceFiles>
+	</SourceFiles>
+</Application>

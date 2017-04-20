@@ -1,0 +1,296 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Workspace Properties</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="ConfigWkspPropertyPage">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<vstitle vstitle="Workspace Properties">Workspace Properties</vstitle>
+-->
+<vstitle vstitle="Workspace Properties ">Workspace : <vstext name="txtT1WKSP_NM2" size="15" vsds="T1IN_WKSP" vsdf="WKSP_NM" value="WKSP_NM"></vstitle>
+<!-- END CUSTOMIZATION -->
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+  <INPUT type="hidden" name="T1IN_WKSPvscurrency" vsds="T1IN_WKSP" vscurrency="true">
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Advantage" vsds="T1IN_WKSP" vsaction="saveall" name="T1IN_WKSPSaveAll" id="T1IN_WKSPSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Advantage" vsds="T1IN_WKSP" vsaction="undoall" name="T1IN_WKSPUndoAll" id="T1IN_WKSPUndoAll" title="Undo All" accesskey="6">Undo</a>
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<a href="Advantage" vsds="T1IN_WKSP" vsaction="delete" id="IndexT1IN_WKSPdelete" name="T1IN_WKSPdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="Advantage" vsds="T1IN_WKSP" vsaction="insert" id="T1IN_WKSPinsert" name="T1IN_WKSPinsert" title="Insert New Record" accesskey="I">Insert</a>
+-->
+<!-- END CUSTOMIZATION -->
+</ams_map>
+      </td>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="Advantage" vsds="T1IN_WKSP" vsaction="first" name="T1IN_WKSPfirst" id="T1IN_WKSPfirst" title="First Record" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T1IN_WKSP" vsaction="prev" name="T1IN_WKSPprev" id="T1IN_WKSPprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T1IN_WKSP" vsaction="next" name="T1IN_WKSPnext" id="T1IN_WKSPnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T1IN_WKSP" vsaction="last" name="T1IN_WKSPlast" id="T1IN_WKSPlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+-->
+<!-- END CUSTOMIZATION -->
+
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1WKSP_NM" title="Name (Required)">Name :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1WKSP_NM" id="txtT1WKSP_NM"
+               size="20"
+ vsds="T1IN_WKSP" vsdf="WKSP_NM"
+         ams_max_len="50"
+ ShowCodeInfo="" value="WKSP_NM"title="Name (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1WKSP_DESC" title="Description">Description :</label></td>
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1WKSP_DESC" id="txtT1WKSP_DESC" vsds="T1IN_WKSP" vsdf="WKSP_DESC"
+ title="Description"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1APPL_ID" title="Application">Application :</label></td>
+        <td class="val">
+          <select name="txtT1APPL_ID" id="txtT1APPL_ID" vsds="T1IN_WKSP" vsdf="APPL_ID" size="1" vscodetable="R_SC_APPL" ShowCodeInfo="" title="Application">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1TMPL_NM" title="Default Name">Default Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1TMPL_NM" id="txtT1TMPL_NM"
+               size="20"
+ vsds="T1IN_WKSP" vsdf="TMPL_NM"
+         ams_max_len="50"
+ ShowCodeInfo="" value="TMPL_NM" title="Default Name">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1TMPL_DESC" title="Default Description">Default Description :</label></td>
+        <td class="val memo">
+          <textarea ams_readonly cols="35" rows="4" name="txtT1TMPL_DESC" id="txtT1TMPL_DESC" vsds="T1IN_WKSP" vsdf="TMPL_DESC"
+ title="Default Description"></textarea>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+
+  <table class="advsecthdr2">
+    <tr>
+      <td>Business Areas</td>
+    </tr>
+  </table>
+
+  <table width="75%" class="advsectsep">
+    <tr>
+      <td></td>
+    </tr>
+  </table>
+
+  <br>
+
+<!-- END CUSTOMIZATION -->
+
+
+  <input type="hidden" name="T2IN_BA_Currency" value="">
+  <input type="hidden" name="T2IN_BA_Old_Currency" value="">
+  <table name="tblT2IN_BA" id="tblT2IN_BA" class="advgrid" vsds="T2IN_BA">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T2BA_NMsortGridLabel" name="T2BA_NMsortGridLabel" title="Name">Name</span></th>
+
+        <th
+><span id="T2BA_DESCsortGridLabel" name="T2BA_DESCsortGridLabel" title="Description">Description</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T2IN_BAvscurrency" id="T2IN_BAvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T2IN_BA" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT2BA_NM" vsds="T2IN_BA" vsdf="BA_NM"
+>
+        </td>
+
+        <td class="memo">
+          <textarea ams_readonly cols="20" rows="2" name="txtT2BA_DESC" vsds="T2IN_BA" vsdf="BA_DESC"
+ title="Description"></textarea>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+    <td><ams_map title="Update Actions" name="Update Actions">
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<a href="Advantage" vsds="T2IN_BA" vsaction="delete" id="T2IN_BAdelete" name="T2IN_BAdelete" title="Delete Selected Row" accesskey="7">Delete</a>
+<a href="Advantage" vsds="T2IN_BA" vsaction="insert" id="T2IN_BAinsert" name="T2IN_BAinsert" title="Insert New Row" accesskey="I">Insert</a>
+    </ams_map></td>
+
+  <td><ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="Advantage" vsds="T2IN_BA" vsaction="11" name="T2IN_BACopyLine" id="T2IN_BACopyLine" title="Copy Selected Row" accesskey="C">Copy</a>
+<a href="Advantage" vsds="T2IN_BA" vsaction="12" name="T2IN_BAPasteLine" id="T2IN_BAPasteLine" title="Paste Copied Row" accesskey="8">Paste</a>
+-->
+<a href="Advantage" vsds="T2IN_BA" vsaction="16" id="T2IN_BACopy" name="T2IN_BACopy" title="Copy Selected Row" accesskey="C">Copy</a>
+
+<a href="Advantage" vsds="T2IN_BA" vsaction="17" id="T2IN_BAPaste" name="T2IN_BAPaste" title="Paste Selected Row" accesskey="8">Paste</a>
+
+<a href="Advantage" vsds="T2IN_BA" vsaction="18" id="T2IN_BANew" name="T2IN_BANew" title="Insert" accesskey="I">Insert</a>
+
+<a href="Advantage" vsds="T2IN_BA" vsaction="19" id="T2IN_BADelete" name="T2IN_BADelete" title="Delete Selected Row" accesskey="7">Delete</a>
+<!-- END CUSTOMIZATION -->
+  </ams_map></td>
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<a href="Advantage" vsds="T2IN_BA" vsaction="firstpage" name="T2IN_BAfirstpage" id="T2IN_BAfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T2IN_BA" vsaction="prevpage" name="T2IN_BAprevpage" id="T2IN_BAprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T2IN_BA" vsaction="nextpage" id="T2IN_BAnextpage" name="T2IN_BAnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T2IN_BA" vsaction="lastpage" id="T2IN_BAlastpage" name="T2IN_BAlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+-->
+<a href="Advantage" vsds="T2IN_BA" vsaction="20" id="T2IN_BAMoveTop" name="T2IN_BAMoveTop" title="Move Top" accesskey="0">Top</a>
+
+<a href="Advantage" vsds="T2IN_BA" vsaction="21" id="T2IN_BAMoveUp" name="T2IN_BAMoveUp" title="Move Up" accesskey="1">Up</a>
+
+<a href="Advantage" vsds="T2IN_BA" vsaction="22" id="T2IN_BAMoveDown" name="T2IN_BAMoveDown" title="Move Down" accesskey="2">Down</a>
+
+<a href="Advantage" vsds="T2IN_BA" vsaction="24" id="T2IN_BAMoveBottom" name="T2IN_BAMoveBottom" title="Move Bottom" accesskey="3">Bottom</a>
+<!-- END CUSTOMIZATION -->
+</ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T2IN_BA', new Array(), new Array() ) ;
+
+  -->
+  </script>
+
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

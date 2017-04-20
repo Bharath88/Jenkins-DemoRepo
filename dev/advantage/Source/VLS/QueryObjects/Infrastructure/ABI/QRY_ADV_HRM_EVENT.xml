@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0651285372.Administrator.0011"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="False"
+	ChildMostDataObject="ADV_HRM_EVENT_ERROR"
+	DistinctRowsOnly="False"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[SELECT ADV_HRM_EVENT.DIRECTION AS DIRECTION, ADV_HRM_EVENT.EVENT_ID AS EVENT_ID, ADV_HRM_EVENT.CORR_EVENT_ID AS CORR_EVENT_ID, ADV_HRM_EVENT.EVENT_TYPE AS EVENT_TYPE, ADV_HRM_EVENT.EVENT_FUNCTION AS EVENT_FUNCTION, ADV_HRM_EVENT.EVENT_OBJECT AS EVENT_OBJECT, ADV_HRM_EVENT.EVENT_COMP_NAME AS EVENT_COMP_NAME, ADV_HRM_EVENT.EVENT_COMP_FUNCTION AS EVENT_COMP_FUNCTION, ADV_HRM_EVENT.EVENT_COMP_PHASE AS EVENT_COMP_PHASE, ADV_HRM_EVENT.EVENT_COMP_STATUS AS EVENT_COMP_STATUS, ADV_HRM_EVENT.EVENT_PRIORITY AS EVENT_PRIORITY, ADV_HRM_EVENT.EVENT_CATEGORY AS EVENT_CATEGORY, ADV_HRM_EVENT.EVENT_STATUS AS EVENT_STATUS, ADV_HRM_EVENT.EVENT_DESC AS EVENT_DESC, ADV_HRM_EVENT.EVENT_DETAIL AS EVENT_DETAIL, ADV_HRM_EVENT.UPDATE_TIMESTAMP AS UPDATE_TIMESTAMP, ADV_HRM_EVENT.TIMEFRAME AS TIMEFRAME, ADV_HRM_EVENT.REFERENCE AS REFERENCE, ADV_HRM_EVENT_ERROR.ERROR_SEQUENCE AS ERROR_SEQUENCE, ADV_HRM_EVENT_ERROR.EVENT_ERROR_DATE AS EVENT_ERROR_DATE, ADV_HRM_EVENT_ERROR.EVENT_ERROR_MESSAGE AS EVENT_ERROR_MESSAGE, ADV_HRM_EVENT.SOURCE_EVENT_ID AS SOURCE_EVENT_ID, ' ' AS RPRC_CNT, ' ' AS RPRC_SUCCS_CNT FROM <dbschema>.ADV_HRM_EVENT_ERROR ADV_HRM_EVENT_ERROR RIGHT OUTER JOIN <dbschema>.ADV_HRM_EVENT ADV_HRM_EVENT ON ADV_HRM_EVENT_ERROR.DIRECTION  =  ADV_HRM_EVENT.DIRECTION AND ADV_HRM_EVENT_ERROR.EVENT_ID  =  ADV_HRM_EVENT.EVENT_ID AND ADV_HRM_EVENT_ERROR.CORR_EVENT_ID  =  ADV_HRM_EVENT.CORR_EVENT_ID   ORDER BY ADV_HRM_EVENT.DIRECTION, ADV_HRM_EVENT.EVENT_ID, ADV_HRM_EVENT.EVENT_STATUS]]></RuntimeSql>
+	<Where><![CDATA[]]></Where>
+	<OrderBy>
+	<OrderByAttribute
+		Name="ADV_HRM_EVENT.DIRECTION"
+	/>
+	<OrderByAttribute
+		Name="ADV_HRM_EVENT.EVENT_ID"
+	/>
+	<OrderByAttribute
+		Name="ADV_HRM_EVENT.EVENT_STATUS"
+	/>
+	</OrderBy>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="ADV_HRM_EVENT"
+			Alias="ADV_HRM_EVENT"
+		/>
+
+		<DataObject
+			DataObjectName="ADV_HRM_EVENT_ERROR"
+			Alias="ADV_HRM_EVENT_ERROR"
+		/>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="DIRECTION"
+			Alias="DIRECTION"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_ID"
+			Alias="EVENT_ID"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+			IdentityColumnsElement="True"
+		/>
+
+		<Attribute
+			Name="CORR_EVENT_ID"
+			Alias="CORR_EVENT_ID"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_TYPE"
+			Alias="EVENT_TYPE"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_FUNCTION"
+			Alias="EVENT_FUNCTION"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_OBJECT"
+			Alias="EVENT_OBJECT"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_COMP_NAME"
+			Alias="EVENT_COMP_NAME"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_COMP_FUNCTION"
+			Alias="EVENT_COMP_FUNCTION"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_COMP_PHASE"
+			Alias="EVENT_COMP_PHASE"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_COMP_STATUS"
+			Alias="EVENT_COMP_STATUS"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_PRIORITY"
+			Alias="EVENT_PRIORITY"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_CATEGORY"
+			Alias="EVENT_CATEGORY"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_STATUS"
+			Alias="EVENT_STATUS"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_DESC"
+			Alias="EVENT_DESC"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_DETAIL"
+			Alias="EVENT_DETAIL"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="UPDATE_TIMESTAMP"
+			Alias="UPDATE_TIMESTAMP"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="TIMEFRAME"
+			Alias="TIMEFRAME"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="REFERENCE"
+			Alias="REFERENCE"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ERROR_SEQUENCE"
+			Alias="ERROR_SEQUENCE"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT_ERROR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_ERROR_DATE"
+			Alias="EVENT_ERROR_DATE"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT_ERROR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_ERROR_MESSAGE"
+			Alias="EVENT_ERROR_MESSAGE"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT_ERROR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="SOURCE_EVENT_ID"
+			Alias="SOURCE_EVENT_ID"
+			AggregationType="None"
+			SourceDataObject="ADV_HRM_EVENT"
+			Persistent="True"
+			>
+			<Caption><![CDATA[Source]]></Caption>
+		</Attribute>
+
+		<Attribute
+			Name="RPRC_CNT"
+			Alias="RPRC_CNT"
+			AggregationType="None"
+			>
+			<DataType
+				Type="Integer"
+			/>
+			<Formula><![CDATA[' ']]></Formula>
+		</Attribute>
+
+		<Attribute
+			Name="RPRC_SUCCS_CNT"
+			Alias="RPRC_SUCCS_CNT"
+			AggregationType="None"
+			>
+			<DataType
+				Type="Integer"
+			/>
+			<Formula><![CDATA[' ']]></Formula>
+		</Attribute>
+
+	</Attributes>
+	<Joins
+		LeftDataObject="ADV_HRM_EVENT_ERROR"
+		RightDataObject="ADV_HRM_EVENT"
+		JoinType="Right"
+		>
+		<ColumnSet
+			LeftAttribute="ADV_HRM_EVENT_ERROR.DIRECTION"
+			RightAttribute="ADV_HRM_EVENT.DIRECTION"
+		/>
+		<ColumnSet
+			LeftAttribute="ADV_HRM_EVENT_ERROR.EVENT_ID"
+			RightAttribute="ADV_HRM_EVENT.EVENT_ID"
+		/>
+		<ColumnSet
+			LeftAttribute="ADV_HRM_EVENT_ERROR.CORR_EVENT_ID"
+			RightAttribute="ADV_HRM_EVENT.CORR_EVENT_ID"
+		/>
+	</Joins>
+
+	<RelsToChildDataObjects>
+		<RelToChildDO
+			RelToChildDO="ADV_HRM_EVENT(ADV_HRM_EVENT)-ADV_HRM_EVENT_ERROR(ADV_HRM_EVENT_ERROR)"
+		>
+			<Aliases>
+				<Alias
+					Name="ADV_HRM_EVENT"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="DIRECTION"
+							ChildAttribute="DIRECTION"
+							/>
+				<AttributePair
+							ParentAttribute="EVENT_ID"
+							ChildAttribute="EVENT_ID"
+							/>
+				<AttributePair
+							ParentAttribute="CORR_EVENT_ID"
+							ChildAttribute="CORR_EVENT_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+	</RelsToChildDataObjects>
+
+</QueryObject>

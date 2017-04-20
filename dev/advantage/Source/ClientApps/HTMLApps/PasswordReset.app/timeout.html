@@ -1,0 +1,81 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<script language="javascript">
+<!--
+function PutAtTop() {
+	if ( self != top ) {
+		if (self.location.href.indexOf("?") != -1) {
+			top.location.href = self.location.href + "&timeoutReload=true";
+		} else {
+			top.location.href = self.location.href + "?timeoutReload=true";
+		}
+	}
+}
+//-->
+</script>
+<title>Session Error</title>
+<style type="text/css">
+<!--
+	.btn
+	{
+		background:#d1dded;
+		color:#000000;
+		border:1px solid #97AAC0;
+		font-size:0.7em;
+	}
+
+	.btn:hover
+	{
+		background:#feedc7!important;
+		color:#000000;
+		border:1px solid #97AAC0;
+		font-size:0.7em;
+	}
+
+	p
+	{
+		font-size:0.8em;
+	}
+
+	.headmsg
+	{
+		font-weight:normal;
+		font-size:1.3em;
+	}
+
+	.topmargin
+	{
+		margin-top: 19%;
+	}
+
+	.box tr td
+	{
+		border: 1px solid #a7c6ff;
+		background-color: #edf5ff;
+		padding: 30px 0px;
+	}
+
+-->
+</style>
+</head>
+
+<body style="background:#e6ebf0;color:#00227B;font-family:arial;" target="_top" OnLoad="PutAtTop();">
+
+<form ONSUBMIT="timeout.action = self.location.href" name="timeout" METHOD="POST">
+  <div align="center" class="topmargin">
+    <table width="450" BORDER="0" cellpadding="4" cellspacing="4" class="box">
+      <tr>
+        <td style="text-align:center;">
+          <span class="headmsg">Session error occurred</span>
+          <p>Your session may be timed out or the server is down.</p>
+          <p>Please try to log in again.</p>
+          <input TYPE="submit" VALUE="LOGIN AGAIN" NAME="relogon" TARGET="_top" class="btn">
+        </td>
+      </tr>
+    </table>
+  </div>
+</form>
+</body>
+</html>

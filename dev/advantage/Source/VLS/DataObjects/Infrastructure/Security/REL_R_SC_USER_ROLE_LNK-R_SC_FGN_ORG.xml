@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="R_SC_USER_ROLE_LNK"
+		ChildRoleName="R_SC_FGN_ORG"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="USER_ID"
+			/>
+			<AttributePair
+				ParentAttribute="SEC_ROLE_ID"
+				ChildAttribute="SEC_ROLE_ID"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[User Role Link]]></AscendCaption>
+		<DescendCaption><![CDATA[Foreign Organizations]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:Q0177%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

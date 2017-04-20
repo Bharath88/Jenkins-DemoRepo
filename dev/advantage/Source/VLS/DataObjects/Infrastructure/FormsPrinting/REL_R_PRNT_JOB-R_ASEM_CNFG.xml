@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="R_PRNT_JOB"
+		ChildRoleName="R_ASEM_CNFG"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="APPL_RSRC_ID"
+				ChildAttribute="APPL_RSRC_ID"
+			/>
+			<AttributePair
+				ParentAttribute="PRNT_JOB_CD"
+				ChildAttribute="PRNT_JOB_CD"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_PRNT_JOB]]></AscendCaption>
+		<DescendCaption><![CDATA[R_ASEM_CNFG(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:Print Job configuration,v:Assembly Request Configuration%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Assembly Request Configuration%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:application resource and print job specified,v:Print Job table%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

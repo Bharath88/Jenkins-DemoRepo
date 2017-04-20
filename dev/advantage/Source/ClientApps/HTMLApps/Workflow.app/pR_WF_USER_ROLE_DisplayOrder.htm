@@ -1,0 +1,301 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Approval Role Display Order</title>
+  <base href>
+
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Workflow" method="post" vsform="true" name="pR_WF_USER_ROLE_DisplayOrder">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Approval Role Display Order">Approval Role Display Order</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="Workflow" vsds="" vsaction="84" title="Back to Previous Page" name="QueryBack" id="QueryBack" accesskey="Z">Back</a>
+
+      <a href="Workflow" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+
+
+
+  <a name="T1R_WF_USER_ROLE_Top"></a>
+
+
+
+  <input type="hidden" name="T1R_WF_USER_ROLE_Currency" >
+  <input type="hidden" name="T1R_WF_USER_ROLE_Old_Currency" >
+  <table name="tblT1R_WF_USER_ROLE" id="tblT1R_WF_USER_ROLE" class="advgrid" vsds="T1R_WF_USER_ROLE">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+<!-- BEGIN CUSTOMIZATION Commented out to remove sort capability on Role ID,
+only default sort by DISP_SEQ_NO, ROLE_NM is allowed on this page -->
+<!--
+        <th
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_USER_ROLE"
+    vsdf="ROLEID"
+ name="T1ROLEIDsort" id="T1ROLEIDsort" title="Sort By Role ID">Role ID</a></th>
+-->
+<!-- END CUSTOMIZATION -->
+<!-- BEGIN CUSTOMIZATION Role ID but without sort capability-->
+<th
+><span id="T1ROLEIDsortGridLabel" name="T1ROLEIDsortGridLabel" title="Role ID">Role ID</span></th>
+<!-- END CUSTOMIZATION -->
+
+        <th
+><span id="T1ROLE_NMsortGridLabel" name="T1ROLE_NMsortGridLabel" title="Role Name">Role Name</span></th>
+
+<!-- BEGIN CUSTOMIZATION Commented out to remove sort capability on Display Sequence Number,
+only default sort by DISP_SEQ_NO, ROLE_NM is allowed on this page -->
+<!--
+        <th
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_USER_ROLE"
+    vsdf="DISP_SEQ_NO"
+ name="T1DISP_SEQ_NOsort" id="T1DISP_SEQ_NOsort" title="Sort By Display Sequence Number">Display Sequence Number</a></th>
+-->
+<!-- END CUSTOMIZATION -->
+<!-- BEGIN CUSTOMIZATION Display Sequence Number but without sort capability-->
+<th
+><span id="T1DISP_SEQ_NOsortGridLabel" name="T1DISP_SEQ_NOsortGridLabel" title="Display Sequence Number">Display Sequence Number</span></th>
+<!-- END CUSTOMIZATION -->
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr class="advgridoddrow" onclick="UTILS_SelectGridRow(this);return true;" ams_altclassname="advgridevenrow" vsprototyperow="true">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_WF_USER_ROLEvscurrency" id="T1R_WF_USER_ROLEvscurrency" title="Select Row" alt="Select Row" src="../AMSImages/ADVRowSel.gif"
+ vsds="T1R_WF_USER_ROLE" vsaction="Currency">
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1ROLEID" vsds="T1R_WF_USER_ROLE" vsdf="ROLEID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1ROLE_NM" vsds="T1R_WF_USER_ROLE" vsdf="ROLE_NM"
+>
+        </td>
+
+        <td>
+
+<!-- BEGIN CUSTOMIZATION commented out to introduce tabindex property-->
+        <!--
+		<input type="text" name="txtT1DISP_SEQ_NO"
+		          size="6"
+		            maxlength="10"
+		 value="DISP_SEQ_NO" vsds="T1R_WF_USER_ROLE" vsdf="DISP_SEQ_NO" ShowCodeInfo=""
+ oncontextmenu="if(event.ctrlKey){FRMPopUp_setColReference(document.pR_WF_USER_ROLE_DisplayOrder.txtT1DISP_SEQ_NO); return false;}" title="Display Sequence Number">
+ -->
+<!-- END CUSTOMIZATION -->
+
+<!-- BEGIN CUSTOMIZATION Display Sequence Number with tabindex property added, without it tabbing does not work correctly-->
+ <input type="text" name="txtT1DISP_SEQ_NO"
+ 		          size="6"
+ 		            maxlength="10"
+ 		 value="DISP_SEQ_NO" vsds="T1R_WF_USER_ROLE" vsdf="DISP_SEQ_NO" ShowCodeInfo=""
+ oncontextmenu="if(event.ctrlKey){FRMPopUp_setColReference(document.pR_WF_USER_ROLE_DisplayOrder.txtT1DISP_SEQ_NO); return false;}" title="Display Sequence Number" tabindex="1">
+<!-- END CUSTOMIZATION -->
+
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><div name="T1R_WF_USER_ROLEGridNav" id="T1R_WF_USER_ROLEGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+         <a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="firstpage" name="T1R_WF_USER_ROLEfirstpage" id="T1R_WF_USER_ROLEfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+         <a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="prevpage" name="T1R_WF_USER_ROLEprevpage" id="T1R_WF_USER_ROLEprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+         <a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="nextpage" id="T1R_WF_USER_ROLEnextpage" name="T1R_WF_USER_ROLEnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+         <a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="lastpage" id="T1R_WF_USER_ROLElastpage" name="T1R_WF_USER_ROLElastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+<!-- BEGIN CUSTOMIZATION -->
+      <td>
+        <a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="20" name="T1R_WF_USER_ROLEtop" id="T1R_WF_USER_ROLEtop" title="Move Selected Row to Top">Move to Top</a>
+
+        <a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="21" name="T1R_WF_USER_ROLEup" id="T1R_WF_USER_ROLEup" title="Move Selected Row Up">Move Up</a>
+
+        <a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="22" name="T1R_WF_USER_ROLEdown" id="T1R_WF_USER_ROLEdown" title="Move Selected Row Down">Move Down</a>
+
+        <a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="24" name="T1R_WF_USER_ROLEbottom" id="T1R_WF_USER_ROLEbottom" title="Move Selected Row to Bottom">Move to Bottom</a>
+      </td>
+<!-- END CUSTOMIZATION -->
+
+    </tr>
+  </table>
+
+
+<hr class="advsectsep"></hr>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+
+      <a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="saveall" name="T1R_WF_USER_ROLESaveAll" id="T1R_WF_USER_ROLESaveAll" title="Save All" accesskey="5">Save</a>
+
+      <a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="undoall" name="T1R_WF_USER_ROLEUndoAll" id="T1R_WF_USER_ROLEUndoAll" title="Undo All" accesskey="6">Undo</a>
+</ams_map>
+      </td>
+
+
+      <td><vstext vsds=" " name="T1R_WF_USER_ROLESearchColList" vspreservetag="true"></td>
+<!-- BEGIN CUSTOMIZATION -->
+      <a href="Workflow" vsds="T1R_WF_USER_ROLE" vsaction="undoall" name="T1R_WF_USER_ROLEResetAll" id="T1R_WF_USER_ROLEResetAll" title="Reset All">Reset All</a>
+<!-- END CUSTOMIZATION -->
+
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION Note archetype with only grid part does not have Search capability,
+hence AMSRefTableGridDisplay Grid-Scalar archetype was used for this page for Search capability,
+however this page only needed to display an editable grid part, hence scalar part is hidden with this customization.
+-->
+<div style="visibility:hidden">
+<!-- END CUSTOMIZATION -->
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+
+        <tr>
+
+
+      <td class="label"><label for="txtT1ROLEID" title="Role ID">Role ID :</label></td>
+
+        <td class="val">
+
+
+
+          <input type="text" name="txtT1ROLEID" id="txtT1ROLEID"
+               size="20"
+ vsds="T1R_WF_USER_ROLE" vsdf="ROLEID"
+         ams_max_len="16"
+ ShowCodeInfo="" value="ROLEID" title="Role ID" >
+
+
+
+        </td>
+        </tr>
+
+
+
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1ROLE_NM" title="Role Name">Role Name :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1ROLE_NM" id="txtT1ROLE_NM"
+            size="20"
+ vsds="T1R_WF_USER_ROLE" vsdf="ROLE_NM"
+ value="ROLE_NM" ams_readonly ShowCodeInfo="" title="Role Name">
+        </td>
+      </tr>
+
+
+
+        <li class="field hidden
+
+     text
+">
+          <input type="text" name="txtT1ROLE_NM_UP" id="txtT1ROLE_NM_UP" class="field-value disabled"
+                  size="20"
+ vsds="T1R_WF_USER_ROLE" vsdf="ROLE_NM_UP"
+            ams_max_len="30"
+ value="ROLE_NM_UP"></input>
+        </li>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+<!-- BEGIN CUSTOMIZATION -->
+</div>
+<!-- END CUSTOMIZATION -->
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_WF_USER_ROLE', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'ROLEID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Role ID' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'DISP_SEQ_NO' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Display Sequence Number' ;
+  -->
+  </script>
+<!-- DataSource T2R_WF_USER_ROLE //-->
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Workflow" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

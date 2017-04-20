@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<!DOCTYPE DataObject SYSTEM "DataObject.dtd">
+<DataObject
+	SurrId="0334406112.MFARRELL.0002"
+	CodedValuesList="False"
+	IsRemoteAccessible="False"
+	SuperClass="AMSDataObject"
+	UseQuotedIdentifiers="False"
+	LockMode="NoOptimisticLocking"
+	ImageReference=" "
+	XdaConnector="SQL"
+	DTDVersion="05.06.00"
+	>
+	<CodedValuesList
+		DisplayAttribute=" "
+		StoredAttribute=" "
+	/>
+	<VLSDeployment
+		DeploySecurityInfo="False"
+	/>
+	<SingularCaption><![CDATA[*]]> </SingularCaption>
+	<PluralCaption><![CDATA[*]]> </PluralCaption>
+	<Description><![CDATA[ ]]> </Description>
+	<Comments><![CDATA[ ]]> </Comments>
+	<Attributes>
+		<Attribute
+			Name="CMNT_ID"
+			PreventUserUpdates="True"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="AutoNumber"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Description><![CDATA[]]> </Description>
+			<Caption><![CDATA[Comment ID]]> </Caption>
+			<ExtendedProperties>
+				<Property
+					Name="Sortable"
+					Value="Y"
+				/>
+			</ExtendedProperties>
+		</Attribute>
+		<Attribute
+			Name="CMNT"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="80"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Comment]]> </Caption>
+			<ExtendedProperties>
+				<Property
+					Name="SortAttribute"
+					Value="CMNT_UP"
+				/>
+				<Property
+					Name="Sortable"
+					Value="Y"
+				/>
+				<Property
+					Name="AllowMixedCase"
+					Value="Y"
+				/>
+			</ExtendedProperties>
+			<Derivation
+				DerivationType="None"
+			/>
+		</Attribute>
+		<Attribute
+			Name="AMS_ROW_VERS_NO"
+			Persistent="True"
+			PreventUserUpdates="True"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="Long"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+		</Attribute>
+		<Attribute
+			Name="CMNT_UP"
+			Persistent="True"
+			PreventUserUpdates="True"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="80"
+			/>
+			<Derivation
+				DerivationType="Formula"
+				>
+				<Formula><![CDATA[AMSDataObject.toUpperCaseString(  CMNT  ) ]]> </Formula>
+			</Derivation>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Comment]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="TBL_LAST_DT"
+			Persistent="True"
+			PreventUserUpdates="True"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="DateTime"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Last Modified Date]]></Caption>
+		</Attribute>
+	</Attributes>
+	<Indexes>
+		<Index
+			Name="N1_RWFCMNT"
+			Primary="False"
+			Unique="False"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="CMNT_UP"
+				Descending="False"
+			/>
+		</Index>
+		<Index
+			Name="PK_RWFCMNT"
+			Primary="True"
+			Unique="True"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="CMNT_ID"
+				Descending="False"
+			/>
+		</Index>
+		<Index
+			Name="N2_RWFCMNT"
+			Primary="False"
+			Unique="False"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="TBL_LAST_DT"
+				Descending="False"
+			/>
+		</Index>
+	</Indexes>
+	<Constraints>
+		<Constraint
+			Name="PreventZeroCommentDelete"
+			ConditionType="RejectWhen"
+			>
+			<ErrorMessage><![CDATA[This is a required system comment and it cannot be deleted.]]></ErrorMessage>
+			<Condition><![CDATA[ Deleting  AND  CMNT_ID  = 0]]></Condition>
+		</Constraint>
+	</Constraints>
+	<ExtendedProperties>
+		<Property
+			Name="FuncAreaName"
+			Value="FUNC_AREA_WORKFLOW"
+		/>
+	</ExtendedProperties>
+</DataObject>

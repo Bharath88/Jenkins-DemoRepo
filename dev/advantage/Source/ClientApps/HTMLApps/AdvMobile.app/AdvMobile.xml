@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE Application SYSTEM "Application.dtd">
+<Application
+	SurrId="0721207659.Administrator.0002"
+	TargetLanguage="HTML"
+	DefaultLogonUserId="sa"
+	ExecutionEnvironment="Browser"
+	AppletHeight="575"
+	AppletWidth="725"
+	ClassId="55772DCA-CF27-41A0-A815-FC5AA4BAE2E4"
+	SuppressDefaultLoginScreen="True"
+	InitialFramesetPage="pPageList"
+	StartupPageFrameName=""
+	InitialFrameNameForStartupTrans="_self"
+	AppRepositoryVersion="05.06.01"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.00"
+	>
+	<ServerLocation><![CDATA[<localVLSServer>]]></ServerLocation>
+	<ApplicationArchetypesFolder><![CDATA[.\ClientApps\HTMLApps\Workflow.app\Archetypes]]></ApplicationArchetypesFolder>
+	<!-- APPLICATION FORMS -->
+	<Forms>
+		<Form>StartupPage</Form>
+		<Form>pSuccessAuth</Form>
+		<Form>pNoData</Form>
+		<Form>pMobileWorklist</Form>
+		<Form>pMobileWorklistSearch</Form>
+		<Form>pDOC_CMNT</Form>
+		<Form>pWFAPageList</Form>
+		<Form>pPageList</Form>
+	</Forms>
+	<SourceFiles>
+	</SourceFiles>
+</Application>

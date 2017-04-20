@@ -1,0 +1,405 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="1"
+		ChildRoleName="R_WF_APRVs60"
+		ParentRoleName="R_WF_CMNT"
+		>
+		<AscendCaption><![CDATA[R_WF_CMNT]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="WL_CMNT_ID_1"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="1"
+		ChildRoleName="R_WF_APRVs61"
+		ParentRoleName="R_WF_CMNT1"
+		>
+		<AscendCaption><![CDATA[R_WF_CMNT]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="WL_CMNT_ID_2"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="1"
+		ChildRoleName="R_WF_APRVs62"
+		ParentRoleName="R_WF_CMNT2"
+		>
+		<AscendCaption><![CDATA[R_WF_CMNT]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="WL_CMNT_ID_3"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="1"
+		ChildRoleName="R_WF_APRVs63"
+		ParentRoleName="R_WF_CMNT3"
+		>
+		<AscendCaption><![CDATA[R_WF_CMNT]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="WL_CMNT_ID_4"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="1"
+		ChildRoleName="R_WF_APRVs64"
+		ParentRoleName="R_WF_CMNT4"
+		>
+		<AscendCaption><![CDATA[R_WF_CMNT]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="WL_CMNT_ID_5"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="1"
+		ChildRoleName="R_WF_APRVs65"
+		ParentRoleName="R_WF_CMNT5"
+		>
+		<AscendCaption><![CDATA[R_WF_CMNT]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="WL_CMNT_ID_6"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="1"
+		ChildRoleName="R_WF_APRVs66"
+		ParentRoleName="R_WF_CMNT6"
+		>
+		<AscendCaption><![CDATA[R_WF_CMNT]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="WL_CMNT_ID_7"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="1"
+		ChildRoleName="R_WF_APRVs67"
+		ParentRoleName="R_WF_CMNT7"
+		>
+		<AscendCaption><![CDATA[R_WF_CMNT]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="WL_CMNT_ID_8"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="1"
+		ChildRoleName="R_WF_APRVs68"
+		ParentRoleName="R_WF_CMNT8"
+		>
+		<AscendCaption><![CDATA[R_WF_CMNT]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="WL_CMNT_ID_9"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="2"
+		ChildRoleName="R_WF_APRVs69"
+		ParentRoleName="R_WF_CMNT9"
+		>
+		<AscendCaption><![CDATA[R_WF_CMNT]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="WL_CMNT_ID_10"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_CMNT_1"
+		ChildRoleName="R_WF_APRVsN1"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="NOTIF_WO_CMNT_1"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_CMNT]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0139,s:E,p:PG_APRV_LVL_1%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_CMNT_2"
+		ChildRoleName="R_WF_APRVsN2"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="NOTIF_WO_CMNT_2"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_CMNT]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0139,s:E,p:PG_APRV_LVL_2%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_CMNT_3"
+		ChildRoleName="R_WF_APRVsN3"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="NOTIF_WO_CMNT_3"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_CMNT]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0139,s:E,p:PG_APRV_LVL_3%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_CMNT_4"
+		ChildRoleName="R_WF_APRVsN4"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="NOTIF_WO_CMNT_4"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_CMNT]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0139,s:E,p:PG_APRV_LVL_4%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_CMNT_5"
+		ChildRoleName="R_WF_APRVsN5"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="NOTIF_WO_CMNT_5"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_CMNT]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0139,s:E,p:PG_APRV_LVL_5%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_CMNT_6"
+		ChildRoleName="R_WF_APRVsN6"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="NOTIF_WO_CMNT_6"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_CMNT]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0139,s:E,p:PG_APRV_LVL_6%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_CMNT_7"
+		ChildRoleName="R_WF_APRVsN7"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="NOTIF_WO_CMNT_7"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_CMNT]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0139,s:E,p:PG_APRV_LVL_7%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_CMNT_8"
+		ChildRoleName="R_WF_APRVsN8"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="NOTIF_WO_CMNT_8"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_CMNT]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0139,s:E,p:PG_APRV_LVL_8%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_CMNT_9"
+		ChildRoleName="R_WF_APRVsN9"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="NOTIF_WO_CMNT_9"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_CMNT]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0139,s:E,p:PG_APRV_LVL_9%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_CMNT_10"
+		ChildRoleName="R_WF_APRVsN10"
+		IsEnforce="True"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="CMNT_ID"
+				ChildAttribute="NOTIF_WO_CMNT_10"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_CMNT]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0139,s:E,p:PG_APRV_LVL_10%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0360951983.MGupta.0000"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="True"
+	ChildMostDataObject="a"
+	DistinctRowsOnly="False"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[Select distinct b.CTLG_ID As CTLG_ID, b.CTLG_NM As FOLDER_NAME, b.APPL_ID As APPL_ID
+ from R_BS_CATALOG a, R_BS_CATALOG b
+ where a.PNT_ID=b.CTLG_ID
+ and a.ITM_TYP = 1 and a.PNT_ID =b.CTLG_ID
+and b.ITM_TYP <> 4]]></RuntimeSql>
+	<Where><![CDATA[a.ITM_TYP = 1]]></Where>
+	<OrderBy>
+	</OrderBy>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="R_BS_CATALOG"
+			Alias="a"
+		/>
+
+		<DataObject
+			DataObjectName="R_BS_CATALOG"
+			Alias="b"
+		/>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="CTLG_ID"
+			Alias="CTLG_ID"
+			AggregationType="None"
+			SourceDataObject="a"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="CTLG_NM"
+			Alias="FOLDER_NAME"
+			AggregationType="None"
+			SourceDataObject="b"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="APPL_ID"
+			Alias="APPL_ID"
+			AggregationType="None"
+			SourceDataObject="b"
+			Persistent="True"
+		/>
+
+	</Attributes>
+	<Joins
+		LeftDataObject="a"
+		RightDataObject="b"
+		JoinType="Equal"
+		>
+		<ColumnSet
+			LeftAttribute="a.PNT_ID"
+			RightAttribute="b.CTLG_ID"
+		/>
+	</Joins>
+
+	<RelsToParentDataObjects>
+		<RelToParentDO
+			RelToParentDO="R_SC_APPL(R_SC_APPL)-R_BS_CATALOG(R_BS_CATALOG)"
+		>
+			<Aliases>
+				<Alias
+					Name="b"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="APPL_ID"
+							ChildAttribute="APPL_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+	</RelsToParentDataObjects>
+
+	<RelsToChildDataObjects>
+		<RelToChildDO
+			RelToChildDO="R_BS_CATALOG(R_BS_CATALOG)-BS_AGENTs1(BS_AGENT)"
+		>
+			<Aliases>
+				<Alias
+					Name="a"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="CTLG_ID"
+							ChildAttribute="PNT_CTLG_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+		<RelToChildDO
+			RelToChildDO="R_BS_CATALOG1(R_BS_CATALOG)-BS_CATALOG_PARMs(BS_CATALOG_PARM)"
+		>
+			<Aliases>
+				<Alias
+					Name="a"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="CTLG_ID"
+							ChildAttribute="CTLG_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+		<RelToChildDO
+			RelToChildDO="R_BS_CATALOG(R_BS_CATALOG)-V_BS_AGENTs1(V_BS_AGENT)"
+		>
+			<Aliases>
+				<Alias
+					Name="a"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="CTLG_ID"
+							ChildAttribute="PNT_CTLG_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+	</RelsToChildDataObjects>
+
+	<PickSupportedRels>
+		<PickSupportedRel
+			PickSupportedRel="R_BS_CATALOG(R_BS_CATALOG)-BS_AGENTs1(BS_AGENT)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="R_BS_CATALOG1(R_BS_CATALOG)-BS_CATALOG_PARMs(BS_CATALOG_PARM)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="R_BS_CATALOG(R_BS_CATALOG)-V_BS_AGENTs1(V_BS_AGENT)"
+		/>
+	</PickSupportedRels >
+
+</QueryObject>

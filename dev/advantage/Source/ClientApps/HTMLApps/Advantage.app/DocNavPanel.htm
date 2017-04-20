@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Document Navigator</title>
+  <base href>
+  <!-- BEGIN CUSTOMIZATION -->
+  <link REL="STYLESHEET" type="text/css" href="../AMSCSS/default/ADVSecondaryNavigator.css">
+  <!-- END CUSTOMIZATION -->
+  <link REL="STYLESHEET" type="text/css" href="../AMSImages/ADVMenuStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDoc.js"></script>
+  <script type="text/javascript" language="JavaScript">
+  <!--
+     var msDOCTREE_TABS = new Array() ;
+     var msDOCTREE_DOC_ID = '' ;
+     var mboolDOCTREE_ShowFDT ;
+     var mboolDOCTREE_ShowDocHist ;
+     var mboolDOCTREE_ShowDocRef ;
+     var mboolDOCTREE_ShowDocComm; //Whether to display the document comment as an active link
+     var mboolDOCTREE_ShowCommIcon;  //show whether the doc has associated comments and display an icon after the string if so.
+     var mboolDOCTREE_AddPgDisplay;  //Whether to display the Additional page as an active link
+     var mboolDOCTREE_AddPgCaption;
+     var mboolDOCTREE_AddPgBtnNm;
+
+     var mboolDOCTREE_ShowForm ;
+     var mboolDOCTREE_ShowAttachments;
+     var mboolDOCTAB_EnableTabLinks;
+     var mboolDOCTAB_EnableSections;
+
+      function DOCNAV_WriteDocNavPanel()
+      {
+         document.writeln( '<div>' ) ;
+         document.writeln( '<h1 class="navid doc">' ) ;
+         document.writeln( '<span name="DocID" id="DocID" title="' + msDOCTREE_DOC_ID + '">' + msDOCTREE_DOC_ID + '</span>' ) ;
+         document.writeln( '</h1>' ) ;
+
+         document.writeln( '<h1>' ) ;
+         document.writeln( '<img title="Spacer" name="DocViewSpacer" id="DocViewSpacer" src="../AMSImages/PortalNavNoFolder.gif" alt="Spacer">' ) ;
+         document.writeln( '<span name="DocView" id="DocView" title="Document View">Document View</span>' ) ;
+         document.writeln( '</h1>' ) ;
+
+         for ( var liCount=0 ; liCount < msDOCTREE_TABS.length ; liCount++ )
+         {
+            if ( !msDOCTREE_TABS[liCount] )
+            {
+               continue ;
+            }
+
+            document.writeln( '<h2>' ) ;
+
+            if ( ( msDOCTREE_TABS[liCount][4] == true ) && ( msDOCTREE_TABS[liCount][3] == false ) )
+            {
+               /* If the current tab has been visited but is not the current tab */
+               document.writeln( '<img name="Tab' + liCount + 'Img" id="Tab' + liCount + 'Img" src="../AMSImages/ADVNavVisited.gif" alt="Visited" title="Visited">' ) ;
+            }
+            else if ( ( msDOCTREE_TABS[liCount][4] == true ) && ( msDOCTREE_TABS[liCount][3] == true ) )
+            {
+               /* If the current tab has been visited and is the current tab */
+               document.writeln( '<img name="Tab' + liCount + 'Img" id="Tab' + liCount + 'Img" src="../AMSImages/ADVNavCurr.gif" alt="Current" title="Current">') ;
+            }
+            else
+            {
+               /* If the current tab has not been visited and is not the current tab */
+               document.writeln( '<img name="Tab' + liCount + 'Img" id="Tab' + liCount + 'Img" src="../AMSImages/ADVNavUnvisited.gif" alt="Unvisited" title="Unvisited">' ) ;
+            }
+
+            if(mboolDOCTAB_EnableTabLinks)
+            {
+               document.writeln( '<a style="display:inline;padding-left:10px;" title="Show Tab: ' + msDOCTREE_TABS[liCount][1] + '" name="Tab' + liCount + 'Link" id="Tab' + liCount + 'Link" href="javascript:DOC_ChangeTab(\'' + msDOCTREE_TABS[liCount][2] + '\')">' + msDOCTREE_TABS[liCount][1] + '</a>' ) ;
+            }
+            else
+            {
+               document.writeln( '<span style="display:inline;padding-left:10px;" title="Show Tab: ' + msDOCTREE_TABS[liCount][1] + '" name="Tab' + liCount + 'Link" id="Tab' + liCount + 'Link" > ' + msDOCTREE_TABS[liCount][1] + '</span>' ) ;
+            }
+
+            if (mboolDOCTREE_ShowAttachments && msDOCTREE_TABS[liCount][5] != 0)
+            {
+              document.write('<a style="display:inline;padding:0px;" title="Show Attachments for ' + msDOCTREE_TABS[liCount][1] +'" href="javascript:AMSDOC_ShowDocCompAtt(\'' + msDOCTREE_TABS[liCount][6] + '\', \'' + msDOCTREE_TABS[liCount][1] + '\')" >');
+              document.writeln('(' + msDOCTREE_TABS[liCount][5] + ')</a>');
+              document.write( '<img style="float:none;" name="Tab' + liCount + 'Img" id="Tab' + liCount + 'Img" src="../AMSImages/paperClip.gif" alt="Attachments for ' + msDOCTREE_TABS[liCount][1] + '" title="Attachments for ' + msDOCTREE_TABS[liCount][1] + '" >') ;
+            }
+            document.writeln( '</h2>' ) ;
+
+
+            /* Now if the current tab has sections and if the current tab is selected then display the sections in a loop */
+            if ( ( msDOCTREE_TABS[liCount][0] != null ) && ( msDOCTREE_TABS[liCount][3] == true ) && mboolDOCTAB_EnableSections)
+            {
+               for( var liSubCount = 0 ; liSubCount < msDOCTREE_TABS[liCount][0][1].length ; liSubCount++ )
+               {
+                  document.writeln( '<h3>' ) ;
+                  document.writeln( '<img name="Section' + liSubCount + 'Img" id="Section' + liSubCount + 'Img" src="../AMSImages/ADVDocNavSect.gif" alt="Section" title="Section">' ) ;
+                  document.writeln( '<a title="View Section: ' + msDOCTREE_TABS[liCount][0][1][liSubCount] + '" name="Section' + liSubCount + 'Link" id="Section' + liSubCount + 'Link" '
+                                  + 'href="javascript:DOC_SwitchSections(\''
+                                  + msDOCTREE_TABS[liCount][0][0][liSubCount] + '\','
+                                  + '\'' + msDOCTREE_TABS[liCount][0][0][liSubCount]
+                                  + '_Button\',true)">'
+                                  + msDOCTREE_TABS[liCount][0][1][liSubCount]
+                                  + '</a>' ) ;
+                  document.writeln( '</h3>' ) ;
+               }
+            }
+         }
+
+         if ( mboolDOCTREE_AddPgDisplay )
+         {
+            document.writeln( '<h1>' ) ;
+            document.writeln( '<img title="Spacer" name="DocAddPgSpacer" id="DocAddPgSpacer" src="../AMSImages/PortalNavNoFolder.gif" alt="Spacer">' ) ;
+            document.writeln( '<a title="' + mboolDOCTREE_AddPgCaption + '" name="AddPg" id="AddPg" href="javascript:AMSDOC_ShowAddPg( \''+ mboolDOCTREE_AddPgBtnNm +'\' )">' + mboolDOCTREE_AddPgCaption + '</a>' ) ;
+            document.writeln( '</h1>' ) ;
+         }
+
+         document.writeln( '<h1>' ) ;
+         document.writeln( '<img title="Spacer" name="DocCommSpacer" id="DocCommSpacer" src="../AMSImages/PortalNavNoFolder.gif" alt="Spacer">' ) ;
+         if ( mboolDOCTREE_ShowDocComm )
+         {
+            //SLIU give diff title if have comment
+            //document.writeln( '<a title="Document Comments" name="DocComm" id="DocComm" href="javascript:AMSDOC_ShowDocComm()">Document Comments' ) ;
+
+            if (mboolDOCTREE_ShowCommIcon)
+            {
+            	document.write( '<a title="Document Comment(s) Exist" name="DocComm" id="DocComm" href="javascript:AMSDOC_ShowDocComm()">Document Comments' ) ;
+            	document.write ('<img src="../AMSImages/ADVComment.gif" alt="Document Comment(s) Exist" id="DocumentCommIcon" name="DocmentCommIcon">'); // append icon img after the String
+            }
+            else
+            {
+            	document.write( '<a title="Document Comments" name="DocComm" id="DocComm" href="javascript:AMSDOC_ShowDocComm()">Document Comments' ) ;
+            }
+            document.writeln('</a>');
+         }
+         else
+         {
+         	document.writeln( '<span title="Document Comments" name="DocComm" id="DocComm">Document Comments</span>' ) ;
+         }
+         document.writeln( '</h1>' ) ;
+
+         // document attachment
+         if (mboolDOCTREE_ShowAttachments)
+         {
+            document.writeln( '<h1>' ) ;
+            document.writeln( '<img title="Spacer" name="DocCommSpacer" id="DocCommSpacer" src="../AMSImages/PortalNavNoFolder.gif" alt="Spacer">' ) ;
+            document.writeln( '<a title="Document Attachments" name="DocAtt" id="DocAtt" href="javascript:AMSDOC_ShowDocAtt()">Document Attachments </a>' ) ;
+            document.writeln( '</h1>' ) ;
+         }
+         document.writeln( '<h1>' ) ;
+         document.writeln( '<img title="Spacer" name="DocHistSpacer" id="DocHistSpacer" src="../AMSImages/PortalNavNoFolder.gif" alt="Spacer">' ) ;
+         if ( mboolDOCTREE_ShowDocHist )
+         {
+            document.writeln( '<a title="Document History" name="DocHist" id="DocHist" href="javascript:AMSDOC_ShowDocHist()">Document History</a>' ) ;
+         }
+         else
+         {
+            document.writeln( '<span title="Document History" name="DocHist" id="DocHist">Document History</span>' ) ;
+         }
+         document.writeln( '</h1>' ) ;
+
+         document.writeln( '<h1>' ) ;
+         document.writeln( '<img title="Spacer" name="DocRefSpacer" id="DocRefSpacer" src="../AMSImages/PortalNavNoFolder.gif" alt="Spacer">' ) ;
+         if ( mboolDOCTREE_ShowDocRef )
+         {
+            document.writeln( '<a title="Document Reference" name="DocRef" id="DocRef" href="javascript:AMSDOC_ShowDocRef()">Document Reference</a>' ) ;
+         }
+         else
+         {
+            document.writeln( '<span title="Document Reference" name="DocRef" id="DocRef">Document Reference</span>' ) ;
+         }
+         document.writeln( '</h1>' ) ;
+
+         document.writeln( '<h1>' ) ;
+         document.writeln( '<img title="Spacer" name="DocFDTSpacer" id="DocFDTSpacer" src="../AMSImages/PortalNavNoFolder.gif" alt="Spacer">' ) ;
+         if ( mboolDOCTREE_ShowFDT )
+         {
+            document.writeln( '<a title="Future Triggering" name="FutureTrig" id="FutureTrig" href="javascript:AMSDOC_ShowFDT()">Future Triggering</a>' ) ;
+         }
+         else
+         {
+            document.writeln( '<span title="Future Triggering" name="FutureTrig" id="FutureTrig">Future Triggering</span>' ) ;
+         }
+         document.writeln( '</h1>' ) ;
+         document.writeln( '<h1>' ) ;
+         document.writeln( '<img title="Spacer" name="DocFormSpacer" id="DocFormSpacer" src="../AMSImages/PortalNavNoFolder.gif" alt="Spacer">' ) ;
+         if ( mboolDOCTREE_ShowForm )
+         {
+            document.writeln( '<a title="Forms" name="Forms" id="Forms" href="javascript:AMSDOC_ShowForm()">Forms</a>' ) ;
+         }
+         else
+         {
+            document.writeln( '<span title="Forms" name="Forms" id="Forms">Forms</span>' ) ;
+         }
+         document.writeln( '</h1>' ) ;
+         document.writeln( '</div>' ) ;
+      }
+  -->
+  </script>
+  <vstext vsds=" " name="DOCTREE" vspreservetag="true">
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="advnavtree doc" onload="this.focus()">
+
+  <form action="Advantage" method="post" vsform="true" name="AMSDocNavTree">
+    <!-- BEGIN CUSTOMIZATION -->
+    <div id="PageFlags" name="PageFlags">
+       <input type="hidden" value="PageStdUI" name="PageType" ></input>
+    </div>
+    <!-- END CUSTOMIZATION -->
+    <div name="NavigationTree" id="NavigationTree" title="Navigation Tree" class="advnavtree">
+      <script type="text/javascript" language="JavaScript">
+      <!--
+         DOCNAV_WriteDocNavPanel() ;
+      -->
+      </script>
+    </div>
+
+            <a href="Advantage" vsds=" " vsaction="menu_action" ams_action=""
+             name="menu_action" id="menu_action"></a>
+
+
+   <div id="AMSPopupWin" class="advpopupwin">
+      <iframe name="AMSPopupWinBody" scrolling="no" frameborder="0"
+       width="100%" height="100%" margin="0" src="../AMSImages/Empty.htm"></iframe>
+   </div>
+
+
+  </form>
+
+</body>
+</html>
+
+
+
+
+
+

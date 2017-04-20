@@ -1,0 +1,298 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>ABI Common Event Log</title>
+  <base href>
+
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="ABI" method="post" vsform="true" name="pCOMMON_EVENT_LOG">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="ABI Common Event Log">ABI Common Event Log</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+
+      <a href="ABI" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+
+
+
+
+  <a name="T1COMMON_EVENT_LOG_Top"></a>
+
+
+
+  <input type="hidden" name="T1COMMON_EVENT_LOG_Currency" >
+  <input type="hidden" name="T1COMMON_EVENT_LOG_Old_Currency" >
+  <table name="tblT1COMMON_EVENT_LOG" id="tblT1COMMON_EVENT_LOG" class="advgrid" vsds="T1COMMON_EVENT_LOG">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1EVENT_DATEsortGridLabel" name="T1EVENT_DATEsortGridLabel" vsdf="EVENT_DATE" title="Date">Date</span></th>
+
+        <th
+><span id="T1LOGGERsortGridLabel" name="T1LOGGERsortGridLabel" vsdf="LOGGER" title="Logger">Logger</span></th>
+
+        <th
+><span id="T1PRIORITYsortGridLabel" name="T1PRIORITYsortGridLabel" vsdf="PRIORITY" title="Priority">Priority</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr class="advgridoddrow" onclick="UTILS_SelectGridRow(this);return true;" ams_altclassname="advgridevenrow" vsprototyperow="true">
+      <td class="advgridrowselect">
+        <input type="image" name="T1COMMON_EVENT_LOGvscurrency" id="T1COMMON_EVENT_LOGvscurrency" title="Select Row" alt="Select Row" src="../AMSImages/ADVRowSel.gif"
+ vsds="T1COMMON_EVENT_LOG" vsaction="Currency">
+      </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1EVENT_DATE" vsds="T1COMMON_EVENT_LOG" vsdf="EVENT_DATE"
+    vsformat="MM/dd/yyyy HH:mm:ss"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1LOGGER" vsds="T1COMMON_EVENT_LOG" vsdf="LOGGER"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1PRIORITY" vsds="T1COMMON_EVENT_LOG" vsdf="PRIORITY"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><div name="T1COMMON_EVENT_LOGGridNav" id="T1COMMON_EVENT_LOGGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+         <a href="ABI" vsds="T1COMMON_EVENT_LOG" vsaction="firstpage" name="T1COMMON_EVENT_LOGfirstpage" id="T1COMMON_EVENT_LOGfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+         <a href="ABI" vsds="T1COMMON_EVENT_LOG" vsaction="prevpage" name="T1COMMON_EVENT_LOGprevpage" id="T1COMMON_EVENT_LOGprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+         <a href="ABI" vsds="T1COMMON_EVENT_LOG" vsaction="nextpage" id="T1COMMON_EVENT_LOGnextpage" name="T1COMMON_EVENT_LOGnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+         <a href="ABI" vsds="T1COMMON_EVENT_LOG" vsaction="lastpage" id="T1COMMON_EVENT_LOGlastpage" name="T1COMMON_EVENT_LOGlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+
+    </tr>
+  </table>
+
+
+<hr class="advsectsep"></hr>
+
+
+
+
+
+      <table class="advaction recsrc">
+        <tr>
+
+         <td>
+<ams_map title="Update Actions" name="Update Actions">
+</ams_map>
+      </td>
+
+
+      <td><vstext vsds=" " name="T1COMMON_EVENT_LOGSearchColList" vspreservetag="true"></td>
+
+
+
+
+    
+<!--BEGIN CUSTOMIZATION-->
+<a href="ABI" vsds="T1COMMON_EVENT_LOG" vsaction="T1COMMON_EVENT_LOG_Refresh" id="T1COMMON_EVENT_LOG_Refresh" name="T1COMMON_EVENT_LOG_Refresh" title="Refresh">Refresh</a>
+<!--END CUSTOMIZATION-->	
+	    
+        </tr>
+      </table>
+
+  <fieldset class="advscalar">
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+
+
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1EVENT_DATE" title="Date">Date :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1EVENT_DATE" id="txtT1EVENT_DATE"
+                                 size="15"
+ vsds="T1COMMON_EVENT_LOG" vsdf="EVENT_DATE"
+      vsformat="MM/dd/yyyy HH:mm:ss"
+ value="EVENT_DATE" ams_readonly ShowCodeInfo="" title="Date">
+        </td>
+      </tr>
+
+
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1LOGGER" title="Logger">Logger :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1LOGGER" id="txtT1LOGGER"
+            size="20"
+ vsds="T1COMMON_EVENT_LOG" vsdf="LOGGER"
+ value="LOGGER" ams_readonly ShowCodeInfo="" title="Logger">
+        </td>
+      </tr>
+
+
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1PRIORITY" title="Priority">Priority :</label></td>
+
+        <td class="val">
+          <input type="text" name="txtT1PRIORITY" id="txtT1PRIORITY"
+            size="15"
+ vsds="T1COMMON_EVENT_LOG" vsdf="PRIORITY"
+ value="PRIORITY" ams_readonly ShowCodeInfo="" title="Priority">
+        </td>
+      </tr>
+
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1MESSAGE" title="Message">Message :</label></td>
+
+        <td class="val memo">
+          <textarea cols="60" class="disabled" readonly="readonly" rows="10" name="txtT1MESSAGE" id="txtT1MESSAGE" vsds="T1COMMON_EVENT_LOG" vsdf="MESSAGE"
+ title="Message"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+<!-- Begin Customization -->
+            <input type="text" id="txtT1FROM_DT" name="txtT1FROM_DT"
+                                    size="15"
+             vsds="T1COMMON_EVENT_LOG" vsdf="FROM_DT"
+
+         vsformat="Short Date"
+             ShowCodeInfo=""
+             value="FROM_DT" ams_readonly >
+<!-- End Customization -->
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+<!-- Begin Customization -->
+			<input type="text" id="txtT1TO_DT" name="txtT1TO_DT"
+                                    size="15"
+             vsds="T1COMMON_EVENT_LOG" vsdf="TO_DT"
+
+        vsformat="Short Date"
+             ShowCodeInfo=""
+             value="TO_DT" ams_readonly >
+<!-- End Customization -->
+          </div>
+        </td>
+      </tr>
+
+        </table>
+      </td></tr></table>
+  </fieldset>
+
+
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1COMMON_EVENT_LOG', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'EVENT_DATE' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Date' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'LOGGER' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Logger' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'PRIORITY' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Priority' ;
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="ABI" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

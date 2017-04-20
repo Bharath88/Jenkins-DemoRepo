@@ -1,0 +1,319 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Messages</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="pR_MSG">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Messages">Messages</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="Advantage" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+
+  <a name="T1R_MSG_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1R_MSG_Currency" value="">
+  <input type="hidden" name="T1R_MSG_Old_Currency" value="">
+  <table name="tblT1R_MSG" id="tblT1R_MSG" class="advgrid" vsds="T1R_MSG">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><span id="T1MSG_CDsortGridLabel" name="T1MSG_CDsortGridLabel" title="Code">Code</span></th>
+      
+        <th 
+><span id="T1MSG_TXTsortGridLabel" name="T1MSG_TXTsortGridLabel" title="Text">Text</span></th>
+      
+        <th 
+><span id="T1MSG_SEVsortGridLabel" name="T1MSG_SEVsortGridLabel" title="Severity">Severity</span></th>
+      
+        <th 
+><span id="T1OV_LVLsortGridLabel" name="T1OV_LVLsortGridLabel" title="Override Level">Override Level</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_MSGvscurrency" id="T1R_MSGvscurrency" title="Select Row" alt="Select Row" vsds="T1R_MSG" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1MSG_CD" vsds="T1R_MSG" vsdf="MSG_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1MSG_TXT" vsds="T1R_MSG" vsdf="MSG_TXT" 
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1R_MSG" vsdf="MSG_SEV" vscodetable="CVL_SEV_LVL">
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1OV_LVL" vsds="T1R_MSG" vsdf="OV_LVL" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="T1R_MSGGridNav" id="T1R_MSGGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+      <a href="Advantage" vsds="T1R_MSG" vsaction="firstpage" name="T1R_MSGfirstpage" id="T1R_MSGfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+      <a href="Advantage" vsds="T1R_MSG" vsaction="prevpage" name="T1R_MSGprevpage" id="T1R_MSGprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+      <a href="Advantage" vsds="T1R_MSG" vsaction="nextpage" id="T1R_MSGnextpage" name="T1R_MSGnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+      <a href="Advantage" vsds="T1R_MSG" vsaction="lastpage" id="T1R_MSGlastpage" name="T1R_MSGlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+
+  
+  
+
+  
+      <table class="advaction recsrc">
+        <tr>
+      
+         <td>
+<ams_map title="Update Actions" name="Update Actions">
+   
+      <a href="Advantage" vsds="T1R_MSG" vsaction="saveall" name="T1R_MSGSaveAll" id="T1R_MSGSaveAll" title="Save All" accesskey="5">Save</a>
+   
+      <a href="Advantage" vsds="T1R_MSG" vsaction="undoall" name="T1R_MSGUndoAll" id="T1R_MSGUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+      <a href="Advantage" vsds="T1R_MSG" vsaction="delete" id="IndexT1R_MSGdelete" name="T1R_MSGdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="Advantage" vsds="T1R_MSG" vsaction="insert" id="T1R_MSGinsert" name="T1R_MSGinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="Advantage" vsds="T1R_MSG" vsaction="11" name="T1R_MSGCopyRecord" id="T1R_MSGCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="Advantage" vsds="T1R_MSG" vsaction="12" name="T1R_MSGPasteLine" id="T1R_MSGPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+
+   
+      <td><vstext vsds=" " name="T1R_MSGSearchColList" vspreservetag="true"></td>
+
+   
+      <td><ams_map title="Section Controls" name="Section Controls">
+      
+  <a href="javascript:
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+      
+  <a href="javascript:
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+    
+        </tr>
+      </table>
+
+  <fieldset class="advscalar">
+    <div class="advpresection">
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+          
+  
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1MSG_CD" title="Code (Required)">Code :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1MSG_CD" id="txtT1MSG_CD" 
+            size="6"
+ vsds="T1R_MSG" vsdf="MSG_CD" 
+         ams_max_len="5"
+ ShowCodeInfo="" value="MSG_CD"title="Code (Required)">
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1MSG_TXT" title="Text (Required)">Text :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1MSG_TXT" id="txtT1MSG_TXT" 
+               size="20"
+ vsds="T1R_MSG" vsdf="MSG_TXT" 
+         ams_max_len="254"
+ ShowCodeInfo="" value="MSG_TXT"title="Text (Required)">
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1MSG_SEV" title="Severity (Required)">Severity :</label>
+      </td>
+   
+        <td class="val required">
+          <select name="txtT1MSG_SEV" id="txtT1MSG_SEV" vsds="T1R_MSG" vsdf="MSG_SEV" size="1" vscodetable="CVL_SEV_LVL" ShowCodeInfo="" title="Severity (Required)">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1MSG_EXPL" title="Explanation">Explanation :</label></td>
+   
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1MSG_EXPL" id="txtT1MSG_EXPL" vsds="T1R_MSG" vsdf="MSG_EXPL" 
+ title="Explanation"></textarea>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1OV_LVL" title="Override Level">Override Level :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1OV_LVL" id="txtT1OV_LVL" 
+               size="10"
+ vsds="T1R_MSG" vsdf="OV_LVL" 
+               ams_max_len="10"
+ ShowCodeInfo="" value="OV_LVL" title="Override Level" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtT1MSG_TXT_UP" title="Text">Text :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1MSG_TXT_UP" id="txtT1MSG_TXT_UP" 
+               size="20"
+ vsds="T1R_MSG" vsdf="MSG_TXT_UP" 
+         ams_max_len="254"
+ ShowCodeInfo="" title="Text" value="MSG_TXT_UP"></div>
+        </td>
+      </tr>
+    
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+  
+      <br><br><table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T1R_MSG_Top');" title="Go To Top">Top</a></td></tr></table>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_MSG', new Array(), new Array() ) ;
+    
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

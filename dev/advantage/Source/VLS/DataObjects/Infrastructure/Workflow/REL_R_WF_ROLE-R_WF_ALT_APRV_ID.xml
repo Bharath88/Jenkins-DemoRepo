@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_ALT_APRV_IDs2"
+		ParentRoleName="R_WF_ROLE"
+		>
+		<AscendCaption><![CDATA[R_WF_ROLE]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_ALT_APRV_ID(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ROLEID"
+			/>
+		</AttributePairs>
+	</Relationship>
+	<Relationship
+		IsEnforce="False"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_WF_ALT_APRV_IDs3"
+		ParentRoleName="R_WF_ROLE1"
+		>
+		<AscendCaption><![CDATA[R_WF_ROLE]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_WF_ALT_APRV_ID(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="ROLEID"
+				ChildAttribute="ALT_ROLEID"
+			/>
+		</AttributePairs>
+	</Relationship>
+</Relationships>

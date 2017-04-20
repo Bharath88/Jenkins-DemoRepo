@@ -1,0 +1,579 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Manage Approval Roles</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Workflow" method="post" vsform="true" name="pR_WF_ROLE">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Manage Approval Roles">Manage Approval Roles</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+      
+      
+ 
+  <a name="T1R_WF_ROLE_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1R_WF_ROLE_Currency" value="">
+  <input type="hidden" name="T1R_WF_ROLE_Old_Currency" value="">
+  <table name="tblT1R_WF_ROLE" id="tblT1R_WF_ROLE" class="advgrid" vsds="T1R_WF_ROLE">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_ROLE" 
+    vsdf="ROLEID"
+ name="T1ROLEIDsort" id="T1ROLEIDsort" title="Sort By Role ID">Role ID</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_ROLE" 
+    vsdf="ROLE_NM"
+ name="T1ROLE_NMsort" id="T1ROLE_NMsort" title="Sort By Name">Name</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_ROLE" 
+    vsdf="HOME_GOVT_BRN_CD"
+ name="T1HOME_GOVT_BRN_CDsort" id="T1HOME_GOVT_BRN_CDsort" title="Sort By Government Branch">Government Branch</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_ROLE" 
+    vsdf="HOME_CAB_CD"
+ name="T1HOME_CAB_CDsort" id="T1HOME_CAB_CDsort" title="Sort By Cabinet">Cabinet</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_ROLE" 
+    vsdf="HOME_DEPT_CD"
+ name="T1HOME_DEPT_CDsort" id="T1HOME_DEPT_CDsort" title="Sort By Department">Department</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_ROLE" 
+    vsdf="HOME_DIV_CD"
+ name="T1HOME_DIV_CDsort" id="T1HOME_DIV_CDsort" title="Sort By Division">Division</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_ROLE" 
+    vsdf="HOME_GP_CD"
+ name="T1HOME_GP_CDsort" id="T1HOME_GP_CDsort" title="Sort By Group">Group</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_ROLE" 
+    vsdf="HOME_SECT_CD"
+ name="T1HOME_SECT_CDsort" id="T1HOME_SECT_CDsort" title="Sort By Section">Section</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_ROLE" 
+    vsdf="HOME_DSTC_CD"
+ name="T1HOME_DSTC_CDsort" id="T1HOME_DSTC_CDsort" title="Sort By District">District</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_ROLE" 
+    vsdf="HOME_BUR_CD"
+ name="T1HOME_BUR_CDsort" id="T1HOME_BUR_CDsort" title="Sort By Bureau">Bureau</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_ROLE" 
+    vsdf="HOME_UNIT_CD"
+ name="T1HOME_UNIT_CDsort" id="T1HOME_UNIT_CDsort" title="Sort By Unit">Unit</a></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_WF_ROLEvscurrency" id="T1R_WF_ROLEvscurrency" title="Select Row" alt="Select Row" vsds="T1R_WF_ROLE" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1ROLEID" vsds="T1R_WF_ROLE" vsdf="ROLEID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1ROLE_NM" vsds="T1R_WF_ROLE" vsdf="ROLE_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1HOME_GOVT_BRN_CD" vsds="T1R_WF_ROLE" vsdf="HOME_GOVT_BRN_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1HOME_CAB_CD" vsds="T1R_WF_ROLE" vsdf="HOME_CAB_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1HOME_DEPT_CD" vsds="T1R_WF_ROLE" vsdf="HOME_DEPT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1HOME_DIV_CD" vsds="T1R_WF_ROLE" vsdf="HOME_DIV_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1HOME_GP_CD" vsds="T1R_WF_ROLE" vsdf="HOME_GP_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1HOME_SECT_CD" vsds="T1R_WF_ROLE" vsdf="HOME_SECT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1HOME_DSTC_CD" vsds="T1R_WF_ROLE" vsdf="HOME_DSTC_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1HOME_BUR_CD" vsds="T1R_WF_ROLE" vsdf="HOME_BUR_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1HOME_UNIT_CD" vsds="T1R_WF_ROLE" vsdf="HOME_UNIT_CD" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="T1R_WF_ROLEGridNav" id="T1R_WF_ROLEGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+      <a href="Workflow" vsds="T1R_WF_ROLE" vsaction="firstpage" name="T1R_WF_ROLEfirstpage" id="T1R_WF_ROLEfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+      <a href="Workflow" vsds="T1R_WF_ROLE" vsaction="prevpage" name="T1R_WF_ROLEprevpage" id="T1R_WF_ROLEprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+      <a href="Workflow" vsds="T1R_WF_ROLE" vsaction="nextpage" id="T1R_WF_ROLEnextpage" name="T1R_WF_ROLEnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+      <a href="Workflow" vsds="T1R_WF_ROLE" vsaction="lastpage" id="T1R_WF_ROLElastpage" name="T1R_WF_ROLElastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+  
+  
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+   
+      <a href="Workflow" vsds="T1R_WF_ROLE" vsaction="saveall" name="T1R_WF_ROLESaveAll" id="T1R_WF_ROLESaveAll" title="Save All" accesskey="5">Save</a>
+   
+      <a href="Workflow" vsds="T1R_WF_ROLE" vsaction="undoall" name="T1R_WF_ROLEUndoAll" id="T1R_WF_ROLEUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+      <a href="Workflow" vsds="T1R_WF_ROLE" vsaction="delete" id="IndexT1R_WF_ROLEdelete" name="T1R_WF_ROLEdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="Workflow" vsds="T1R_WF_ROLE" vsaction="insert" id="T1R_WF_ROLEinsert" name="T1R_WF_ROLEinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="Workflow" vsds="T1R_WF_ROLE" vsaction="11" name="T1R_WF_ROLECopyRecord" id="T1R_WF_ROLECopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="Workflow" vsds="T1R_WF_ROLE" vsaction="12" name="T1R_WF_ROLEPasteLine" id="T1R_WF_ROLEPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+      
+   
+      <td><vstext vsds=" " name="T1R_WF_ROLESearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1ROLEID" title="Role ID (Required)">Role ID :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1ROLEID" id="txtT1ROLEID" 
+               size="20"
+ vsds="T1R_WF_ROLE" vsdf="ROLEID" 
+         ams_max_len="16"
+ ShowCodeInfo="" value="ROLEID"title="Role ID (Required)">
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1HOME_GOVT_BRN_CD" title="Government Branch">Government Branch :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1HOME_GOVT_BRN_CD" id="txtT1HOME_GOVT_BRN_CD" 
+            size="6"
+ vsds="T1R_WF_ROLE" vsdf="HOME_GOVT_BRN_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="HOME_GOVT_BRN_CD" title="Government Branch" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1HOME_CAB_CD" title="Cabinet">Cabinet :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1HOME_CAB_CD" id="txtT1HOME_CAB_CD" 
+            size="6"
+ vsds="T1R_WF_ROLE" vsdf="HOME_CAB_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="HOME_CAB_CD" title="Cabinet" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1HOME_DEPT_CD" title="Department">Department :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1HOME_DEPT_CD" id="txtT1HOME_DEPT_CD" 
+            size="6"
+ vsds="T1R_WF_ROLE" vsdf="HOME_DEPT_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="HOME_DEPT_CD" title="Department" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1HOME_DIV_CD" title="Division">Division :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1HOME_DIV_CD" id="txtT1HOME_DIV_CD" 
+            size="6"
+ vsds="T1R_WF_ROLE" vsdf="HOME_DIV_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="HOME_DIV_CD" title="Division" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1HOME_GP_CD" title="Group">Group :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1HOME_GP_CD" id="txtT1HOME_GP_CD" 
+            size="6"
+ vsds="T1R_WF_ROLE" vsdf="HOME_GP_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="HOME_GP_CD" title="Group" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1HOME_SECT_CD" title="Section">Section :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1HOME_SECT_CD" id="txtT1HOME_SECT_CD" 
+            size="6"
+ vsds="T1R_WF_ROLE" vsdf="HOME_SECT_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="HOME_SECT_CD" title="Section" >
+
+		  
+
+        </td>
+      </tr>
+    
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1ROLE_NM" title="Name (Required)">Name :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1ROLE_NM" id="txtT1ROLE_NM" 
+               size="20"
+ vsds="T1R_WF_ROLE" vsdf="ROLE_NM" 
+         ams_max_len="30"
+ ShowCodeInfo="" value="ROLE_NM"title="Name (Required)">
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1HOME_DSTC_CD" title="District">District :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1HOME_DSTC_CD" id="txtT1HOME_DSTC_CD" 
+            size="6"
+ vsds="T1R_WF_ROLE" vsdf="HOME_DSTC_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="HOME_DSTC_CD" title="District" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1HOME_BUR_CD" title="Bureau">Bureau :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1HOME_BUR_CD" id="txtT1HOME_BUR_CD" 
+            size="6"
+ vsds="T1R_WF_ROLE" vsdf="HOME_BUR_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="HOME_BUR_CD" title="Bureau" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1HOME_UNIT_CD" title="Unit">Unit :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1HOME_UNIT_CD" id="txtT1HOME_UNIT_CD" 
+            size="6"
+ vsds="T1R_WF_ROLE" vsdf="HOME_UNIT_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="HOME_UNIT_CD" title="Unit" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DSCR" title="Description">Description :</label></td>
+   
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1DSCR" id="txtT1DSCR" vsds="T1R_WF_ROLE" vsdf="DSCR" 
+ title="Description"></textarea>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtT1ROLEID_UP" title="Role ID">Role ID :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1ROLEID_UP" id="txtT1ROLEID_UP" 
+               size="20"
+ vsds="T1R_WF_ROLE" vsdf="ROLEID_UP" 
+         ams_max_len="16"
+ ShowCodeInfo="" title="Role ID" value="ROLEID_UP"></div>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtT1ROLE_NM_UP" title="Name">Name :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1ROLE_NM_UP" id="txtT1ROLE_NM_UP" 
+               size="20"
+ vsds="T1R_WF_ROLE" vsdf="ROLE_NM_UP" 
+         ams_max_len="30"
+ ShowCodeInfo="" title="Name" value="ROLE_NM_UP"></div>
+        </td>
+      </tr>
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+<a name="btnT2pR_WF_USER_ROLE_AddApprover" href="Workflow" id="btnT2pR_WF_USER_ROLE_AddApprover" title="Navigation to Approval Users" vsaction="pagetransition" 
+           vsds="T1R_WF_ROLE"
+ vsnavigation="T2pR_WF_USER_ROLE_AddApprover">Approval Users</a>
+<a name="btnT3pR_WF_ALT_APRV_ID" href="Workflow" id="btnT3pR_WF_ALT_APRV_ID" title="Navigation to Alternate Approval Assignments" vsaction="pagetransition" 
+           vsds="T1R_WF_ROLE"
+ vsnavigation="T3pR_WF_ALT_APRV_ID">Alternate Approval Assignments</a>
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_WF_ROLE', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'ROLEID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Role ID' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'ROLE_NM' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Name' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'HOME_GOVT_BRN_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Government Branch' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'HOME_CAB_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Cabinet' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'HOME_DEPT_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Department' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'HOME_DIV_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Division' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'HOME_GP_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Group' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'HOME_SECT_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Section' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'HOME_DSTC_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'District' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'HOME_BUR_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Bureau' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'HOME_UNIT_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Unit' ;
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Workflow" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

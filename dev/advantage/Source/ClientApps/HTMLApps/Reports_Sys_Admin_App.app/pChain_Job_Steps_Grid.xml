@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="Default"
+	PositionTop="125"
+	PositionLeft="125"
+	PositionWidth="150"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSOtherPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-1585802817"
+	>
+	<FormCaption><![CDATA[Job Steps for New Chain Job]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="false"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="R_BS_CATALOG_TEMP"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGridEditable"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="USID" />
+				<RSDefaultAttribute ID="2" Name="CHN_JOB_ID" />
+				<RSDefaultAttribute ID="3" Name="CTLG_ID" />
+				<RSDefaultAttribute ID="4" Name="CLS_NM" />
+				<RSDefaultAttribute ID="5" Name="PKG_NM" />
+				<RSDefaultAttribute ID="6" Name="RQRS_APRV" />
+				<RSDefaultAttribute ID="7" Name="ITM_TYP" />
+				<RSDefaultAttribute ID="8" Name="APPL_SRV_NM" />
+				<RSDefaultAttribute ID="9" Name="CTLG_NM" />
+				<RSDefaultAttribute ID="10" Name="PNT_ID" />
+				<RSDefaultAttribute ID="11" Name="SEQ_NO" />
+				<RSDefaultAttribute ID="12" Name="PRE_CN_RET_CD" />
+				<RSDefaultAttribute ID="13" Name="DSBL" />
+				<RSDefaultAttribute ID="14" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="15" Name="Q_ID" />
+				<RSDefaultAttribute ID="16" Name="TBL_LAST_DT" />
+			</DefaultAttributes>
+			<GridAttributes>
+				<RSAttribute Name="SEQ_NO" Displayed="True" UnPlaced="False" Archetype="GridDisplayOnly" />
+				<RSAttribute Name="CTLG_NM" Displayed="True" UnPlaced="False" Archetype="GridDisplayOnly" />
+				<RSAttribute Name="CLS_NM" Displayed="False" UnPlaced="False" Archetype="GridDisplayOnly" />
+				<RSAttribute Name="ITM_TYP" Displayed="True" UnPlaced="False" Archetype="GridDisplayOnlyCodedValues" />
+				<RSAttribute Name="PRE_CN_RET_CD" Displayed="True" UnPlaced="False" Archetype="GridDisplayOnly" />
+				<RSAttribute Name="PKG_NM" Displayed="False" UnPlaced="False" Archetype="GridDisplayOnly" />
+				<RSAttribute Name="DSBL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="CHN_JOB_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CTLG_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RQRS_APRV" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APPL_SRV_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PNT_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="Q_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="orderByString"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="XDA"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value=""
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="false"
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+	</RecordSource>
+	<Transition
+		FormTransNum="1"
+		Prefix="T2"
+		TargetFormName="Chain_Job_Schedule"
+		IsTargetInitialQueryMode="False"
+		IsTargetInitialAddMode="True"
+		IsVisibleAppline="True"
+		IsAddedAfterGen="False"
+		FormTransCaption="Continue Scheduling Chain Job"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSPageNavigation"
+		TargetFramesetPage=""
+		TargetFrame=""
+		FrameNameInFramesetPage=""
+		RSID="2"
+		BusinessObject="BS_AGENT"
+		RelnIsFromParent="True"
+		>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<ExtendedProperties>
+			<Property
+				Name="DefaultPackageName"
+				Value=""
+			/>
+			<Property
+				Name="Dependent"
+				Value="true"
+			/>
+			<Property
+				Name="LoadWithSave"
+				Value=""
+			/>
+			<Property
+				Name="MsgFlag"
+				Value=""
+			/>
+			<Property
+				Name="OverrideTargetPageTitle"
+				Value=""
+			/>
+			<Property
+				Name="TargetFormName"
+				Value="&quot;Chain_Job_Schedule&quot;"
+			/>
+			<Property
+				Name="TargetPackageName"
+				Value="&quot;advantage.Reports_Sys_Admin_App&quot;"
+			/>
+			<Property
+				Name="TargetPageAutoNavigationName"
+				Value=""
+			/>
+			<Property
+				Name="TargetPageAutoPickName"
+				Value=""
+			/>
+			<Property
+				Name="TargetPageCode"
+				Value=""
+			/>
+		</ExtendedProperties>
+	</Transition>
+</Form>

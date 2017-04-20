@@ -1,0 +1,363 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Item Details</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+
+  <!-- BEGIN CUSTOMIZATION -->
+  <script language="JavaScript" src="../Reports_Sys_Admin_App/JS/Batch.js" type="text/javascript"></script>
+  <!-- END CUSTOMIZATION -->
+
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Reports_Sys_Admin_App" method="post" vsform="true" name="Catalog_LeafNode_Pg">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+  <!-- BEGIN CUSTOMIZATION -->
+  <input name="ConfirmDelete" value="No" type="hidden">
+  <!-- END CUSTOMIZATION -->
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Item Details">Item Details</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+  <INPUT type="hidden" name="T1R_BS_CATALOGvscurrency" vsds="T1R_BS_CATALOG" vscurrency="true">
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="saveall" name="T1R_BS_CATALOGSaveAll" id="T1R_BS_CATALOGSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="undoall" name="T1R_BS_CATALOGUndoAll" id="T1R_BS_CATALOGUndoAll" title="Undo All" accesskey="6">Undo</a>
+
+<!-- BEGIN CUSTOMIZATION -->
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="delete" id="IndexT1R_BS_CATALOGdelete"
+name="T1R_BS_CATALOGdelete" title="Delete Current Record" accesskey="7" onclick="CLP_Confirm_Delete()">Delete</a>
+
+<!--
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="insert" id="T1R_BS_CATALOGinsert" name="T1R_BS_CATALOGinsert" title="Insert New Record" accesskey="I">Insert</a>
+-->
+<!-- END CUSTOMIZATION -->
+</ams_map>
+      </td>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="first" name="T1R_BS_CATALOGfirst" id="T1R_BS_CATALOGfirst" title="First Record" accesskey="0">First</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="prev" name="T1R_BS_CATALOGprev" id="T1R_BS_CATALOGprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="next" name="T1R_BS_CATALOGnext" id="T1R_BS_CATALOGnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1R_BS_CATALOG" vsaction="last" name="T1R_BS_CATALOGlast" id="T1R_BS_CATALOGlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+-->
+<!-- END CUSTOMIZATION -->
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1CLS_NM" title="Class Name">Class Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1CLS_NM" id="txtT1CLS_NM"
+               size="20"
+ vsds="T1R_BS_CATALOG" vsdf="CLS_NM"
+         ams_max_len="30"
+ ShowCodeInfo="" value="CLS_NM" title="Class Name">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1CTLG_NM" title="Catalog Label">Catalog Label :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1CTLG_NM" id="txtT1CTLG_NM"
+               size="20"
+ vsds="T1R_BS_CATALOG" vsdf="CTLG_NM"
+         ams_max_len="50"
+ ShowCodeInfo="" value="CTLG_NM" title="Catalog Label">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1RSRC_ID" title="Resource ID">Resource ID :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1RSRC_ID" id="txtT1RSRC_ID"
+               size="20"
+ vsds="T1R_BS_CATALOG" vsdf="RSRC_ID"
+         ams_max_len="129"
+ ShowCodeInfo="" value="RSRC_ID" title="Resource ID">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1RQRS_APRV" title="Requires Approval">Requires Approval :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1RQRS_APRV" id="txtT1RQRS_APRV" value="RQRS_APRV" vsds="T1R_BS_CATALOG" vsdf="RQRS_APRV" title="Requires Approval">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1CSTM_PARM_APPL_NM" title="Cust. Param. UI Package">Cust. Param. UI Package :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1CSTM_PARM_APPL_NM" id="txtT1CSTM_PARM_APPL_NM"
+               size="20"
+ vsds="T1R_BS_CATALOG" vsdf="CSTM_PARM_APPL_NM"
+         ams_max_len="50"
+ ShowCodeInfo="" value="CSTM_PARM_APPL_NM" title="Cust. Param. UI Package">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label title="Application">Application :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1APPL_ID" vsds="T1R_BS_CATALOG" vsdf="APPL_ID" vscodetable="R_SC_APPL">
+        </td>
+      </tr>
+
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1PKG_NM" title="Package Name">Package Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1PKG_NM" id="txtT1PKG_NM"
+               size="20"
+ vsds="T1R_BS_CATALOG" vsdf="PKG_NM"
+         ams_max_len="100"
+ ShowCodeInfo="" value="PKG_NM" title="Package Name">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1ITM_TYP" title="Item Type">Item Type :</label></td>
+        <td class="val">
+          <input type="text" ams_readonly name="txtT1ITM_TYP" id="txtT1ITM_TYP" vsds="T1R_BS_CATALOG" vsdf="ITM_TYP" vscodetable="CVL_BS_NODE_TYPE"
+ title="Item Type">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1SNGL_RUN_PROC" title="Single Instance ?">Single Instance ? :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1SNGL_RUN_PROC" id="txtT1SNGL_RUN_PROC" value="SNGL_RUN_PROC" vsds="T1R_BS_CATALOG" vsdf="SNGL_RUN_PROC" title="Single Instance ?">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1CSTM_PARM_PG_NM" title="Cust. Param. Page">Cust. Param. Page :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1CSTM_PARM_PG_NM" id="txtT1CSTM_PARM_PG_NM"
+               size="20"
+ vsds="T1R_BS_CATALOG" vsdf="CSTM_PARM_PG_NM"
+         ams_max_len="50"
+ ShowCodeInfo="" value="CSTM_PARM_PG_NM" title="Cust. Param. Page">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1Q_ID" title="Job Queue Id">Job Queue Id :</label></td>
+        <td class="val">
+        <!-- BEGIN CUSTOMIZATION -->
+          <select name="txtT1Q_ID" id="txtT1Q_ID" vsds="T1R_BS_CATALOG" vsdf="Q_ID" size="1" vscodetable="CVL_JOB_Q_DEF" ShowCodeInfo="" title="Job Queue Id" fhdf="JOB_Q_ID" >
+          <!-- END CUSTOMIZATION -->
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+
+
+   <table class="advsectsep">
+       <tr><td></td></tr>
+      </table>
+
+    <table class="advsecthdr1">
+      <tr>
+        <td>
+<vstitle vstitle="Item Parameters">Item Parameters</vstitle>
+        </td>
+
+      </tr>
+    </table>
+
+<!-- END CUSTOMIZATION -->
+
+
+
+
+  <input type="hidden" name="T2BS_CATALOG_PARM_Currency" value="">
+  <input type="hidden" name="T2BS_CATALOG_PARM_Old_Currency" value="">
+
+
+
+  <table name="tblT2BS_CATALOG_PARM" id="tblT2BS_CATALOG_PARM" class="advgrid" vsds="T2BS_CATALOG_PARM">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+<!-- BEGIN CUSTOMIZATION -->
+
+
+        <th
+><span id="T2PARM_NMsortGridLabel" name="T2PARM_NMsortGridLabel" title="Parameter Name">Name</span></th>
+
+        <th
+><span id="T2PARM_VLsortGridLabel" name="T2PARM_VLsortGridLabel" title="Parameter Value">Value</span></th>
+
+        <th
+><span id="T2OV_FLsortGridLabel" name="T2OV_FLsortGridLabel" title="Can be overridden">Override ?</span></th>
+
+        <th
+><span id="T2PARM_DSCRsortGridLabel" name="T2PARM_DSCRsortGridLabel" title="Parameter Description">Description</span></th>
+
+<!-- END CUSTOMIZATION -->
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T2BS_CATALOG_PARMvscurrency" id="T2BS_CATALOG_PARMvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T2BS_CATALOG_PARM" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td>
+          <input type="text" name="txtT2PARM_NM"
+            size="20"
+      maxlength="30"
+ value="PARM_NM" vsds="T2BS_CATALOG_PARM" vsdf="PARM_NM"
+ ShowCodeInfo="" title="Parameter Name"
+>
+        </td>
+
+        <td>
+          <input type="text" name="txtT2PARM_VL"
+            size="20"
+      maxlength="255"
+ value="PARM_VL" vsds="T2BS_CATALOG_PARM" vsdf="PARM_VL"
+ ShowCodeInfo="" title="Parameter Value"
+>
+        </td>
+
+        <td class="center">
+          <input type="checkbox" name="txtT2OV_FL" value="OV_FL" vsds="T2BS_CATALOG_PARM" vsdf="OV_FL" title="Can be overridden">
+        </td>
+
+        <td class="memo">
+           <textarea name="txtT2PARM_DSCR" vsds="T2BS_CATALOG_PARM" vsdf="PARM_DSCR" cols="20" rows="2" vsformat="" title="Parameter Description"></textarea>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+    <td><ams_map title="Update Actions" name="Update Actions">
+<a href="Reports_Sys_Admin_App" vsds="T2BS_CATALOG_PARM" vsaction="delete" id="T2BS_CATALOG_PARMdelete" name="T2BS_CATALOG_PARMdelete" title="Delete Selected Row" accesskey="7">Delete</a>
+<a href="Reports_Sys_Admin_App" vsds="T2BS_CATALOG_PARM" vsaction="insert" id="T2BS_CATALOG_PARMinsert" name="T2BS_CATALOG_PARMinsert" title="Insert New Row" accesskey="I">Insert</a>
+    </ams_map></td>
+
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Reports_Sys_Admin_App" vsds="T2BS_CATALOG_PARM" vsaction="firstpage" name="T2BS_CATALOG_PARMfirstpage" id="T2BS_CATALOG_PARMfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T2BS_CATALOG_PARM" vsaction="prevpage" name="T2BS_CATALOG_PARMprevpage" id="T2BS_CATALOG_PARMprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T2BS_CATALOG_PARM" vsaction="nextpage" id="T2BS_CATALOG_PARMnextpage" name="T2BS_CATALOG_PARMnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T2BS_CATALOG_PARM" vsaction="lastpage" id="T2BS_CATALOG_PARMlastpage" name="T2BS_CATALOG_PARMlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T2BS_CATALOG_PARM', new Array(), new Array() ) ;
+
+  -->
+  </script>
+
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Reports_Sys_Admin_App" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

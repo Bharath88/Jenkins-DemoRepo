@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Email Inbox</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Workflow" method="post" vsform="true" name="pWF_INBOX">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<!-- BEGIN CUSTOMIZATION -->
+<vstitle vstitle="Email Inbox">Email Inbox</vstitle> <vstext name="txtNUM_MSGS" vsds=" " vsdf="NUM_MSGS">
+<!-- END CUSTOMIZATION -->
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+
+
+  <input type="hidden" name="T1WF_INBOX_Currency" value="">
+  <input type="hidden" name="T1WF_INBOX_Old_Currency" value="">
+<!-- BEGIN CUSTOMIZATION -->
+  <table name="tblT1WF_INBOX" id="tblT1WF_INBOX" class="advgrid" vsds="T1WF_INBOX" vsclass="com.amsinc.gems.adv.vfc.html.AMSInboxTableElement">
+<!-- END CUSTOMIZATION -->
+    <tr class="advgridhdr">
+<!-- BEGIN CUSTOMIZATION -->
+      <th class="clear"></th>
+<!-- END CUSTOMIZATION -->
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1MAIL_FROMsortGridLabel" name="T1MAIL_FROMsortGridLabel" title="Sender">Sender</span></th>
+
+        <th
+><a href="Workflow" vsaction="sort" vsds="T1WF_INBOX"
+    vsdf="SENT_DT"
+ name="T1SENT_DTsort" id="T1SENT_DTsort" title="Sort By Date">Date</a></th>
+
+        <th
+><span id="T1SUBJECTsortGridLabel" name="T1SUBJECTsortGridLabel" title="Subject">Subject</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+<!-- BEGIN CUSTOMIZATION -->
+        <td>
+          <a href="Advantage" vsaction="pagetransition" ams_inbox_msg="ams_inbox_msg" title="Open Message">Open</a>
+        </td>
+<!-- END CUSTOMIZATION -->
+      <td class="advgridrowselect">
+        <input type="image" name="T1WF_INBOXvscurrency" id="T1WF_INBOXvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1WF_INBOX" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1MAIL_FROM" vsds="T1WF_INBOX" vsdf="MAIL_FROM"
+>
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1SENT_DT" vsds="T1WF_INBOX" vsdf="SENT_DT"
+    vsformat="M/d/yyyy h:mm:ss aa"
+>
+        </td>
+
+        <td
+
+>
+<!-- BEGIN CUSTOMIZATION -->
+          <a href="Advantage" vsaction="pagetransition" ams_inbox_msg="ams_inbox_msg" title="Open Message">
+            <vstext name="txtT1SUBJECT" vsds="T1WF_INBOX" vsdf="SUBJECT">
+          </a>
+<!-- END CUSTOMIZATION -->
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Workflow" vsds="T1WF_INBOX" vsaction="firstpage" name="T1WF_INBOXfirstpage" id="T1WF_INBOXfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Workflow" vsds="T1WF_INBOX" vsaction="prevpage" name="T1WF_INBOXprevpage" id="T1WF_INBOXprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Workflow" vsds="T1WF_INBOX" vsaction="nextpage" id="T1WF_INBOXnextpage" name="T1WF_INBOXnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Workflow" vsds="T1WF_INBOX" vsaction="lastpage" id="T1WF_INBOXlastpage" name="T1WF_INBOXlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+<!-- BEGIN CUSTOMIZATION -->
+      <td>
+        <a name="btnT2pWF_NEW_MSG" href="Workflow" id="btnT2pWF_NEW_MSG" title="Reply to Current Message" vsaction="pagetransition" vsds="T1WF_INBOX" vsnavigation="T2pWF_NEW_MSG">Reply</a>
+        <a name="T1WF_INBOX26" href="Workflow" id="T1WF_INBOX26" title="Delete Current Message" vsaction="26" vsds="T1WF_INBOX">Delete</a>
+      </td>
+<!-- END CUSTOMIZATION -->
+
+
+    </tr>
+  </table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1WF_INBOX', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'SENT_DT' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Date' ;
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<a name="btnT2pWF_NEW_MSG" href="Workflow" id="btnT2pWF_NEW_MSG" title="Navigation to Reply" vsaction="pagetransition"
+           vsds=""
+ vsnavigation="T2pWF_NEW_MSG">Reply</a>
+-->
+<!-- END CUSTOMIZATION -->
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Workflow" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

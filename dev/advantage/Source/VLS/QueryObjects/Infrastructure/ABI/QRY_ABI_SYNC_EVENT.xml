@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0659493618.Administrator.0002"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="False"
+	ChildMostDataObject="ABI_SYNC_EVENT_ERROR"
+	DistinctRowsOnly="False"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[SELECT ABI_SYNC_EVENT.DIRECTION AS DIRECTION, ABI_SYNC_EVENT.EVENT_ID AS EVENT_ID, ABI_SYNC_EVENT.EVENT_TYPE AS EVENT_TYPE, ABI_SYNC_EVENT.EVENT_DATE AS EVENT_DATE, ABI_SYNC_EVENT.EVENT_CATEGORY AS EVENT_CATEGORY, ABI_SYNC_EVENT.EVENT_STATUS AS EVENT_STATUS, ABI_SYNC_EVENT.EVENT_DESC AS EVENT_DESC, ABI_SYNC_EVENT.EVENT_DETAIL AS EVENT_DETAIL, ABI_SYNC_EVENT.UPDATE_TIMESTAMP AS UPDATE_TIMESTAMP, ABI_SYNC_EVENT.TIMEFRAME AS TIMEFRAME, ABI_SYNC_EVENT.EVENT_NAME AS EVENT_NAME, ABI_SYNC_EVENT_ERROR.ERROR_SEQUENCE AS ERROR_SEQUENCE, ABI_SYNC_EVENT_ERROR.EVENT_ERROR_DATE AS EVENT_ERROR_DATE, ABI_SYNC_EVENT_ERROR.EVENT_ERROR_MESSAGE AS EVENT_ERROR_MESSAGE FROM <dbschema>.ABI_SYNC_EVENT_ERROR ABI_SYNC_EVENT_ERROR RIGHT OUTER JOIN <dbschema>.ABI_SYNC_EVENT ABI_SYNC_EVENT ON ABI_SYNC_EVENT_ERROR.DIRECTION  =  ABI_SYNC_EVENT.DIRECTION and ABI_SYNC_EVENT_ERROR.EVENT_ID  =  ABI_SYNC_EVENT.EVENT_ID  ]]></RuntimeSql>
+	<Where><![CDATA[]]></Where>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="ABI_SYNC_EVENT"
+			Alias="ABI_SYNC_EVENT"
+		/>
+
+		<DataObject
+			DataObjectName="ABI_SYNC_EVENT_ERROR"
+			Alias="ABI_SYNC_EVENT_ERROR"
+		/>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="DIRECTION"
+			Alias="DIRECTION"
+			AggregationType="None"
+			SourceDataObject="ABI_SYNC_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_ID"
+			Alias="EVENT_ID"
+			AggregationType="None"
+			SourceDataObject="ABI_SYNC_EVENT"
+			Persistent="True"
+			IdentityColumnsElement="True"
+		/>
+
+		<Attribute
+			Name="EVENT_TYPE"
+			Alias="EVENT_TYPE"
+			AggregationType="None"
+			SourceDataObject="ABI_SYNC_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_DATE"
+			Alias="EVENT_DATE"
+			AggregationType="None"
+			SourceDataObject="ABI_SYNC_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_CATEGORY"
+			Alias="EVENT_CATEGORY"
+			AggregationType="None"
+			SourceDataObject="ABI_SYNC_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_STATUS"
+			Alias="EVENT_STATUS"
+			AggregationType="None"
+			SourceDataObject="ABI_SYNC_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_DESC"
+			Alias="EVENT_DESC"
+			AggregationType="None"
+			SourceDataObject="ABI_SYNC_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_DETAIL"
+			Alias="EVENT_DETAIL"
+			AggregationType="None"
+			SourceDataObject="ABI_SYNC_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="UPDATE_TIMESTAMP"
+			Alias="UPDATE_TIMESTAMP"
+			AggregationType="None"
+			SourceDataObject="ABI_SYNC_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="TIMEFRAME"
+			Alias="TIMEFRAME"
+			AggregationType="None"
+			SourceDataObject="ABI_SYNC_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_NAME"
+			Alias="EVENT_NAME"
+			AggregationType="None"
+			SourceDataObject="ABI_SYNC_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ERROR_SEQUENCE"
+			Alias="ERROR_SEQUENCE"
+			AggregationType="None"
+			SourceDataObject="ABI_SYNC_EVENT_ERROR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_ERROR_DATE"
+			Alias="EVENT_ERROR_DATE"
+			AggregationType="None"
+			SourceDataObject="ABI_SYNC_EVENT_ERROR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_ERROR_MESSAGE"
+			Alias="EVENT_ERROR_MESSAGE"
+			AggregationType="None"
+			SourceDataObject="ABI_SYNC_EVENT_ERROR"
+			Persistent="True"
+		/>
+
+	</Attributes>
+	<Joins
+		LeftDataObject="ABI_SYNC_EVENT_ERROR"
+		RightDataObject="ABI_SYNC_EVENT"
+		JoinType="Right"
+		>
+		<ColumnSet
+			LeftAttribute="ABI_SYNC_EVENT_ERROR.DIRECTION"
+			RightAttribute="ABI_SYNC_EVENT.DIRECTION"
+		/>
+		<ColumnSet
+			LeftAttribute="ABI_SYNC_EVENT_ERROR.EVENT_ID"
+			RightAttribute="ABI_SYNC_EVENT.EVENT_ID"
+		/>
+	</Joins>
+
+	<RelsToChildDataObjects>
+		<RelToChildDO
+			RelToChildDO="ABI_SYNC_EVENT(ABI_SYNC_EVENT)-ABI_SYNC_EVENT_ERROR(ABI_SYNC_EVENT_ERROR)"
+		>
+			<Aliases>
+				<Alias
+					Name="ABI_SYNC_EVENT"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="DIRECTION"
+							ChildAttribute="DIRECTION"
+							/>
+				<AttributePair
+							ParentAttribute="EVENT_ID"
+							ChildAttribute="EVENT_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+	</RelsToChildDataObjects>
+
+</QueryObject>

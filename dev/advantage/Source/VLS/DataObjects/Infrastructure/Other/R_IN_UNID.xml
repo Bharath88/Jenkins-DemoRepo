@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<!DOCTYPE DataObject SYSTEM "DataObject.dtd">
+<DataObject
+	SurrId="0337714917.pramakri.0000"
+	CodedValuesList="False"
+	IsRemoteAccessible="False"
+	SuperClass="AMSDataObject"
+	UseQuotedIdentifiers="False"
+	LockMode="NoOptimisticLocking"
+	ImageReference=" "
+	XdaConnector="SQL"
+	DTDVersion="05.06.00"
+	>
+	<CodedValuesList
+		DisplayAttribute=" "
+		StoredAttribute=" "
+	/>
+	<VLSDeployment
+		DeploySecurityInfo="False"
+	/>
+	<SingularCaption><![CDATA[*]]> </SingularCaption>
+	<PluralCaption><![CDATA[*]]> </PluralCaption>
+	<Description><![CDATA[ ]]> </Description>
+	<Comments><![CDATA[ ]]> </Comments>
+	<Attributes>
+		<Attribute
+			Name="SEQ_NM"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="21"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Sequence Name]]> </Caption>
+			<ExtendedProperties>
+				<Property
+					Name="AllowMixedCase"
+					Value="Y"
+				/>
+			</ExtendedProperties>
+			<Derivation
+				DerivationType="None"
+			/>
+		</Attribute>
+		<Attribute
+			Name="SEQ_LAST_ID"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="True"
+			>
+			<DataType
+				DataType="Long"
+			/>
+			<Derivation
+				DerivationType="Default"
+				>
+				<DefaultValue><![CDATA[0]]> </DefaultValue>
+			</Derivation>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Sequence Last ID]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="SEQ_BLOCK_CT"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="True"
+			>
+			<DataType
+				DataType="Long"
+			/>
+			<Derivation
+				DerivationType="Default"
+				>
+				<DefaultValue><![CDATA[1]]> </DefaultValue>
+			</Derivation>
+			<Validation
+				ValidationType="Condition"
+				>
+				<Condition><![CDATA[ SEQ_BLOCK_CT > 0]]> </Condition>
+				<ErrorMessage><![CDATA[Sequence Block Count should always be > 0]]> </ErrorMessage>
+			</Validation>
+			<Caption><![CDATA[Sequence Block Count]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="TBL_LAST_DT"
+			Persistent="True"
+			PreventUserUpdates="True"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="DateTime"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Last Modified Date]]></Caption>
+		</Attribute>
+		<Attribute
+			Name="SEQ_NM_UP"
+			PreventUserUpdates="True"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			Persistent="True"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="21"
+			/>
+			<Derivation
+				DerivationType="Formula"
+				>
+				<Formula><![CDATA[AMSDataObject.toUpperCaseString( SEQ_NM )]]></Formula>
+			</Derivation>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Sequence Name]]></Caption>
+		</Attribute>
+	</Attributes>
+	<Indexes>
+		<Index
+			Name="PK_RINUNID"
+			Primary="True"
+			Unique="True"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="SEQ_NM"
+				Descending="False"
+			/>
+		</Index>
+		<Index
+			Name="N1_RINUNID"
+			Primary="False"
+			Unique="False"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="TBL_LAST_DT"
+				Descending="False"
+			/>
+		</Index>
+		<Index
+			Name="N2_RINUNID"
+			Primary="False"
+			Unique="False"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="SEQ_NM_UP"
+				Descending="False"
+			/>
+		</Index>
+	</Indexes>
+	<ExtendedProperties>
+		<Property
+			Name="FuncAreaName"
+			Value="FUNC_AREA_ADMIN_OTHER"
+		/>
+	</ExtendedProperties>
+</DataObject>

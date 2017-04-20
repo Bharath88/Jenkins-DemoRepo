@@ -1,0 +1,398 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Integration Batch Control</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="ABI" method="post" vsform="true" name="pIM_SRVC_FLOW_XREF_Generic">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Integration Batch Control">Integration Batch Control</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="ABI" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+
+  <a name="T1IM_SRVC_FLOW_XREF_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1IM_SRVC_FLOW_XREF_Currency" value="">
+  <input type="hidden" name="T1IM_SRVC_FLOW_XREF_Old_Currency" value="">
+  <table name="tblT1IM_SRVC_FLOW_XREF" id="tblT1IM_SRVC_FLOW_XREF" class="advgrid" vsds="T1IM_SRVC_FLOW_XREF">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><span id="T1SEQ_NOsortGridLabel" name="T1SEQ_NOsortGridLabel" vsdf="SEQ_NO" title="Cross-Reference ID">Cross-Reference ID</span></th>
+      
+        <th 
+><span id="T1RUN_IDsortGridLabel" name="T1RUN_IDsortGridLabel" vsdf="RUN_ID" title="Flow ID">Flow ID</span></th>
+      
+        <th 
+><span id="T1SRVC_NMsortGridLabel" name="T1SRVC_NMsortGridLabel" vsdf="SRVC_NM" title="Service Name">Service Name</span></th>
+      
+        <th 
+><span id="T1RSRC_IDsortGridLabel" name="T1RSRC_IDsortGridLabel" vsdf="RSRC_ID" title="Resource ID">Resource ID</span></th>
+      
+        <th 
+><span id="T1XREF_NMsortGridLabel" name="T1XREF_NMsortGridLabel" vsdf="XREF_NM" title="Cross-Reference Name">Cross-Reference Name</span></th>
+      
+        <th 
+><span id="T1XREF_STAsortGridLabel" name="T1XREF_STAsortGridLabel" vsdf="XREF_STA" title="Cross-Reference Status">Cross-Reference Status</span></th>
+      
+        <th 
+><span id="T1RSRC_TYPsortGridLabel" name="T1RSRC_TYPsortGridLabel" vsdf="RSRC_TYP" title="Resource Type">Resource Type</span></th>
+      
+        <th 
+><span id="T1RSRC_NMsortGridLabel" name="T1RSRC_NMsortGridLabel" vsdf="RSRC_NM" title="Resource Name">Resource Name</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr class="advgridoddrow" onclick="UTILS_SelectGridRow(this);return true;" vsprototyperow="true" ams_altclassname="advgridevenrow">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IM_SRVC_FLOW_XREFvscurrency" id="T1IM_SRVC_FLOW_XREFvscurrency" title="Select Row" alt  ="Select Row" src="../AMSImages/ADVRowSel.gif"
+ vsds="T1IM_SRVC_FLOW_XREF" vsaction="Currency">
+      </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1SEQ_NO" vsds="T1IM_SRVC_FLOW_XREF" vsdf="SEQ_NO" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1RUN_ID" vsds="T1IM_SRVC_FLOW_XREF" vsdf="RUN_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1SRVC_NM" vsds="T1IM_SRVC_FLOW_XREF" vsdf="SRVC_NM" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1RSRC_ID" vsds="T1IM_SRVC_FLOW_XREF" vsdf="RSRC_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1XREF_NM" vsds="T1IM_SRVC_FLOW_XREF" vsdf="XREF_NM" 
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1IM_SRVC_FLOW_XREF" vsdf="XREF_STA" vscodetable="CVL_IM_XREF_STA">
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1IM_SRVC_FLOW_XREF" vsdf="RSRC_TYP" vscodetable="CVL_IM_RSRC_TYP">
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1RSRC_NM" vsds="T1IM_SRVC_FLOW_XREF" vsdf="RSRC_NM" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="T1IM_SRVC_FLOW_XREFGridNav" id="T1IM_SRVC_FLOW_XREFGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="ABI" vsds="T1IM_SRVC_FLOW_XREF" vsaction="firstpage" name="T1IM_SRVC_FLOW_XREFfirstpage" id="T1IM_SRVC_FLOW_XREFfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="ABI" vsds="T1IM_SRVC_FLOW_XREF" vsaction="prevpage" name="T1IM_SRVC_FLOW_XREFprevpage" id="T1IM_SRVC_FLOW_XREFprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="ABI" vsds="T1IM_SRVC_FLOW_XREF" vsaction="nextpage" id="T1IM_SRVC_FLOW_XREFnextpage" name="T1IM_SRVC_FLOW_XREFnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="ABI" vsds="T1IM_SRVC_FLOW_XREF" vsaction="lastpage" id="T1IM_SRVC_FLOW_XREFlastpage" name="T1IM_SRVC_FLOW_XREFlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+	  
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+
+  
+  
+
+  
+      <table class="advaction recsrc">
+        <tr>
+      
+         <td>
+<ams_map title="Update Actions" name="Update Actions">
+</ams_map>
+      </td>
+
+   
+      <td><vstext vsds=" " name="T1IM_SRVC_FLOW_XREFSearchColList" vspreservetag="true"></td>
+
+   
+      <td><ams_map title="Section Controls" name="Section Controls">
+      
+  <a href="javascript:
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+      
+  <a href="javascript:
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+    
+        </tr>
+      </table>
+
+  <fieldset class="advscalar">
+    <div class="advpresection">
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+          
+  
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1SEQ_NO" title="Cross-Reference ID">Cross-Reference ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1SEQ_NO" id="txtT1SEQ_NO" 
+               size="15"
+ vsds="T1IM_SRVC_FLOW_XREF" vsdf="SEQ_NO" 
+ value="SEQ_NO" ams_readonly ShowCodeInfo="" title="Cross-Reference ID">
+        </td>
+      </tr>
+    
+    
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1RUN_ID" title="Flow ID">Flow ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1RUN_ID" id="txtT1RUN_ID" 
+               size="15"
+ vsds="T1IM_SRVC_FLOW_XREF" vsdf="RUN_ID" 
+ value="RUN_ID" ams_readonly ShowCodeInfo="" title="Flow ID">
+        </td>
+      </tr>
+    
+    
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1SRVC_NM" title="Service Name">Service Name :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1SRVC_NM" id="txtT1SRVC_NM" 
+            size="20"
+ vsds="T1IM_SRVC_FLOW_XREF" vsdf="SRVC_NM" 
+ value="SRVC_NM" ams_readonly ShowCodeInfo="" title="Service Name">
+        </td>
+      </tr>
+    
+    
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1RSRC_ID" title="Resource ID">Resource ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1RSRC_ID" id="txtT1RSRC_ID" 
+               size="15"
+ vsds="T1IM_SRVC_FLOW_XREF" vsdf="RSRC_ID" 
+ value="RSRC_ID" ams_readonly ShowCodeInfo="" title="Resource ID">
+        </td>
+      </tr>
+    
+    
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1XREF_NM" title="Cross-Reference Name">Cross-Reference Name :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1XREF_NM" id="txtT1XREF_NM" 
+            size="20"
+ vsds="T1IM_SRVC_FLOW_XREF" vsdf="XREF_NM" 
+ value="XREF_NM" ams_readonly ShowCodeInfo="" title="Cross-Reference Name">
+        </td>
+      </tr>
+    
+    
+        
+          
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1XREF_STA" title="Cross-Reference Status">Cross-Reference Status :</label></td>
+   
+        <td class="val">
+          <input type="text" ams_readonly name="txtT1XREF_STA" id="txtT1XREF_STA" vsds="T1IM_SRVC_FLOW_XREF" vsdf="XREF_STA" vscodetable="CVL_IM_XREF_STA" 
+ title="Cross-Reference Status">
+        </td>
+      </tr>
+    
+ 
+        
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1XREF_DESC" title="Cross-Reference Description">Cross-Reference Description :</label></td>
+   
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1XREF_DESC" id="txtT1XREF_DESC" vsds="T1IM_SRVC_FLOW_XREF" vsdf="XREF_DESC" 
+ title="Cross-Reference Description"></textarea>
+        </td>
+      </tr>
+    
+    
+          
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1RSRC_TYP" title="Resource Type">Resource Type :</label></td>
+   
+        <td class="val">
+          <input type="text" ams_readonly name="txtT1RSRC_TYP" id="txtT1RSRC_TYP" vsds="T1IM_SRVC_FLOW_XREF" vsdf="RSRC_TYP" vscodetable="CVL_IM_RSRC_TYP" 
+ title="Resource Type">
+        </td>
+      </tr>
+    
+ 
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1RSRC_NM" title="Resource Name">Resource Name :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1RSRC_NM" id="txtT1RSRC_NM" 
+            size="20"
+ vsds="T1IM_SRVC_FLOW_XREF" vsdf="RSRC_NM" 
+ value="RSRC_NM" ams_readonly ShowCodeInfo="" title="Resource Name">
+        </td>
+      </tr>
+    
+    
+        
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+  
+      <br><br><table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T1IM_SRVC_FLOW_XREF_Top');" title="Go To Top">Top</a></td></tr></table>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1IM_SRVC_FLOW_XREF', new Array(), new Array() ) ;
+    
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="ABI" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

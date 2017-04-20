@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="StmtCondGroupToStmtCondGroup_1"
+		ChildRoleName="StmtCondGroupToStmtCondGroup"
+		IsEnforce="True"
+		OnParentUpdate="UpdateChildren"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="STMT_COND_GRP_CD"
+				ChildAttribute="PARENT_GRP_CD"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_COND_GROUP]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_COND_GROUP(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Condition Group%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:Condition Group,v:Statement Condition Group%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

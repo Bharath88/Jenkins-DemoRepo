@@ -1,0 +1,950 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Copy Security Role</title>
+  <base href>
+
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+
+
+  <!-- BEGIN CUSTOMIZATION -->
+  <script language="JavaScript">
+  <!--
+  /*
+   * Either select  or Deselect all the checkbox,
+   * @parm val The value which decides 'SelectAll' or 'DeselectAll'
+   * val = 1 for 'SelectAll'
+   * val = 0 for 'DeselectAll'
+   * @return none.
+   */
+
+  function setCheckboxValue(val)
+  {
+     var docObject = document.pCopySecRolesPage;
+     var formLength = docObject.elements.length;
+     for ( i = 0 ; i < formLength ; i++ )
+     {
+        if (docObject.elements[i].name != null &&
+		      docObject.elements[i].name.substring(0,4) == 'TE1_')
+        {
+
+            docObject.elements[i].checked = val;
+        }
+     }
+  }
+
+-->
+</script>
+<!-- END CUSTOMIZATION -->
+
+
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="SecurityAdmin" method="post" vsform="true" name="pCopySecRolesPage">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Copy Security Role">Copy Security Role</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+<!-- BEGIN CUSTOMIZATION -->
+  <h2 class="advrecsrctitle details"><vstext vsds="" name="CurrStepTitle"></h2>
+
+  <div vsds="" id="Step1Cont" name="Step1Cont" vsvisible="false">
+<!-- END CUSTOMIZATION -->
+
+
+
+
+  <input type="hidden" name="T1R_SC_SEC_ROLEvscurrency" vsds="T1R_SC_SEC_ROLE" vscurrency="true">
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+</ams_map>
+      </td>
+
+
+      <td><vstext vsds=" " name="T1R_SC_SEC_ROLESearchColList" vspreservetag="true"></td>
+
+<td><div name="T1R_SC_SEC_ROLEGridNav" id="T1R_SC_SEC_ROLEGridNav" vsds=""><ams_map title="Record Navigation" name="Record Navigation">
+
+      <a href="SecurityAdmin" vsds="T1R_SC_SEC_ROLE" vsaction="first" name="T1R_SC_SEC_ROLEfirst" id="T1R_SC_SEC_ROLEfirst" title="First Record" accesskey="0">First</a>
+
+
+      <a href="SecurityAdmin" vsds="T1R_SC_SEC_ROLE" vsaction="prev" name="T1R_SC_SEC_ROLEprev" id="T1R_SC_SEC_ROLEprev" title="Previous Record" accesskey="1">Prev</a>
+
+
+      <a href="SecurityAdmin" vsds="T1R_SC_SEC_ROLE" vsaction="next" name="T1R_SC_SEC_ROLEnext" id="T1R_SC_SEC_ROLEnext" title="Next Record" accesskey="2">Next</a>
+
+
+      <a href="SecurityAdmin" vsds="T1R_SC_SEC_ROLE" vsaction="last" name="T1R_SC_SEC_ROLElast" id="T1R_SC_SEC_ROLElast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1SEC_ROLE_ID" title="Security Role ID">Security Role ID :</label></td>
+
+        <td class="val">
+
+
+
+          <input type="text" name="txtT1SEC_ROLE_ID" id="txtT1SEC_ROLE_ID"
+               size="20"
+ vsds="T1R_SC_SEC_ROLE" vsdf="SEC_ROLE_ID"
+         ams_max_len="16"
+ ShowCodeInfo="" value="SEC_ROLE_ID" title="Security Role ID" >
+
+
+
+        </td>
+      </tr>
+
+      <tr>
+
+
+      <td class="label"><label for="txtT1SEC_ROLE_DSCR" title="Description">Description :</label></td>
+
+        <td class="val">
+
+
+
+          <input type="text" name="txtT1SEC_ROLE_DSCR" id="txtT1SEC_ROLE_DSCR"
+               size="20"
+ vsds="T1R_SC_SEC_ROLE" vsdf="SEC_ROLE_DSCR"
+         ams_max_len="50"
+ ShowCodeInfo="" value="SEC_ROLE_DSCR" title="Description" >
+
+
+
+        </td>
+      </tr>
+      <tr>
+
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1FGN_ORG_RSTR" title="Foreign Organization Restriction (Required)">Foreign Organization Restriction :</label>
+      </td>
+
+        <td class="val required">
+          <select name="txtT1FGN_ORG_RSTR" id="txtT1FGN_ORG_RSTR" vsds="T1R_SC_SEC_ROLE" vsdf="FGN_ORG_RSTR" size="1" vscodetable="CVL_FGN_ORG_CNFG" ShowCodeInfo="" title="Foreign Organization Restriction (Required)">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+
+
+      <tr>
+
+      <td class="label"><label for="txtT1OV_ERR_CD" title="Override Errors">Override Errors :</label></td>
+
+        <td class="val">
+          <select name="txtT1OV_ERR_CD" id="txtT1OV_ERR_CD" vsds="T1R_SC_SEC_ROLE" vsdf="OV_ERR_CD" size="1" vscodetable="CVL_OV_ERR_CD" ShowCodeInfo="" title="Override Errors">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+
+
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+
+<a href="SecurityAdmin" vsds="T2R_SC_RSRC_ACCS" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+
+<a href="SecurityAdmin" vsds="T2R_SC_RSRC_ACCS" vsaction="clearquery" name="T2R_SC_RSRC_ACCSclearquery" id="T2R_SC_RSRC_ACCSclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+-->
+
+<hr class="advsectsep"> </hr>
+
+<h2 class="advrecsrctitle details">Select the Access Control records linked with the source security role to copy...</h2>
+
+<!-- END CUSTOMIZATION -->
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <table name="tblT2R_SC_RSRC_ACCS" id="tblT2R_SC_RSRC_ACCS" class="advgrid" vsds="T2R_SC_RSRC_ACCS">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+<th
+><a href="SecurityAdmin" vsaction="sort" vsds="T2R_SC_RSRC_ACCS"
+    vsdf="RSRC_GP_ID"
+ name="T2RSRC_GP_IDsort" id="T2RSRC_GP_IDsort" title="Sort By Resource Group ID">Resource Group ID</a></th>
+
+<th
+><span title="Organizational Security Indicator">Organizational Security Indicator</span></th></JADEInclude>
+<th
+><span title="Row Security Indicator">Row Security Indicator</span></th></JADEInclude>
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow">
+      <td class="pickselect">
+        <input type="checkbox" name="rowT2R_SC_RSRC_ACCS" id="rowT2R_SC_RSRC_ACCS" vsds="T2R_SC_RSRC_ACCS" vsaction="Currency" value="ON" title="Select Row">
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT2RSRC_GP_ID" vsds="T2R_SC_RSRC_ACCS" vsdf="RSRC_GP_ID"
+>
+        </td>
+
+        <td
+>
+          <vstext vsds="T2R_SC_RSRC_ACCS" vsdf="ORG_SEC_IND" vscodetable="CVL_ORG_SEC_IND">
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT2FLD_SEC_IND" vsds="T2R_SC_RSRC_ACCS" vsdf="FLD_SEC_IND"
+>
+        </td>
+
+      <td></td>
+     </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><div name="T2R_SC_RSRC_ACCSGridNav" id="T2R_SC_RSRC_ACCSGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+      <a href="SecurityAdmin" vsds="T2R_SC_RSRC_ACCS" vsaction="firstpage" name="T2R_SC_RSRC_ACCSfirstpage" id="T2R_SC_RSRC_ACCSfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+      <a href="SecurityAdmin" vsds="T2R_SC_RSRC_ACCS" vsaction="prevpage" name="T2R_SC_RSRC_ACCSprevpage" id="T2R_SC_RSRC_ACCSprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+      <a href="SecurityAdmin" vsds="T2R_SC_RSRC_ACCS" vsaction="nextpage" id="T2R_SC_RSRC_ACCSnextpage" name="T2R_SC_RSRC_ACCSnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+      <a href="SecurityAdmin" vsds="T2R_SC_RSRC_ACCS" vsaction="lastpage" id="T2R_SC_RSRC_ACCSlastpage" name="T2R_SC_RSRC_ACCSlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+<!-- BEGIN CUSTOMIZATION -->
+<td>
+<a href="javascript:setCheckboxValue(1)">
+Select All Options
+</a>
+</td>
+<td>
+<a href="javascript:setCheckboxValue(0)">
+Deselect All Options
+</a>
+</td>
+<!-- END CUSTOMIZATION -->
+
+</ams_map></div></td>
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+
+  <table class="advokcancel">
+    <tr>
+      <td>
+
+<input class="advbutton" type="submit" vspickaccept="true" onclick="UTILS_ClosePickWindow(document.forms[0], this);" vsaction="acceptpick" name="PickOK" id="PickOK" value="OK" title="OK">
+
+<input class="advbutton" onclick="UTILS_ClosePickWindow(document.forms[0], this);" type="submit" vsaction="cancel" name="pickcancel" value="Cancel" id="pickcancel" title="Cancel">
+      </td>
+    </tr>
+  </table>
+-->
+
+</div>
+
+<div id="Step2Cont" name="Step2Cont" vsds="" class="advpgcont" vsvisible="false">
+<!-- END CUSTOMIZATION -->
+
+  <input type="hidden" name="T3R_SC_FGN_ORG_Currency" value="">
+  <input type="hidden" name="T3R_SC_FGN_ORG_Old_Currency" value="">
+  <table name="tblT3R_SC_FGN_ORG" id="tblT3R_SC_FGN_ORG" class="advgrid" vsds="T3R_SC_FGN_ORG">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><a href="SecurityAdmin" vsaction="sort" vsds="T3R_SC_FGN_ORG"
+    vsdf="USER_ID"
+ name="T3USER_IDsort" id="T3USER_IDsort" title="Sort By User ID">User ID</a></th>
+        <th
+><a href="SecurityAdmin" vsaction="sort" vsds="T3R_SC_FGN_ORG"
+    vsdf="HOME_DEPT_CD"
+ name="T3HOME_DEPT_CDsort" id="T3HOME_DEPT_CDsort" title="Sort By Home Department">Home Department</a></th>
+
+        <th
+><a href="SecurityAdmin" vsaction="sort" vsds="T3R_SC_FGN_ORG"
+    vsdf="RSRC_GP_ID"
+ name="T3RSRC_GP_IDsort" id="T3RSRC_GP_IDsort" title="Sort By Resource Group ID">Resource Group ID</a></th>
+
+        <th
+><span id="T3FGN_GOVT_BRN_CDsortGridLabel" name="T3FGN_GOVT_BRN_CDsortGridLabel" title="Government Branch">Government Branch</span></th>
+
+        <th
+><span id="T3FGN_CAB_CDsortGridLabel" name="T3FGN_CAB_CDsortGridLabel" title="Cabinet">Cabinet</span></th>
+
+        <th
+><span id="T3FGN_DEPT_CDsortGridLabel" name="T3FGN_DEPT_CDsortGridLabel" title="Department">Department</span></th>
+
+        <th
+><span id="T3FGN_DIV_CDsortGridLabel" name="T3FGN_DIV_CDsortGridLabel" title="Division">Division</span></th>
+
+        <th
+><span id="T3FGN_GP_CDsortGridLabel" name="T3FGN_GP_CDsortGridLabel" title="Group">Group</span></th>
+
+        <th
+><span id="T3FGN_SECT_CDsortGridLabel" name="T3FGN_SECT_CDsortGridLabel" title="Section">Section</span></th>
+
+        <th
+><span id="T3FGN_DSTC_CDsortGridLabel" name="T3FGN_DSTC_CDsortGridLabel" title="District">District</span></th>
+
+        <th
+><span id="T3FGN_BUR_CDsortGridLabel" name="T3FGN_BUR_CDsortGridLabel" title="Bureau">Bureau</span></th>
+
+        <th
+><span id="T3FGN_UNIT_CDsortGridLabel" name="T3FGN_UNIT_CDsortGridLabel" title="Unit">Unit</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T3R_SC_FGN_ORGvscurrency" id="T3R_SC_FGN_ORGvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T3R_SC_FGN_ORG" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT3USER_ID" vsds="T3R_SC_FGN_ORG" vsdf="USER_ID"
+>
+        </td>
+
+        <td
+
+        <td
+
+>
+          <vstext name="txtT3HOME_DEPT_CD" vsds="T3R_SC_FGN_ORG" vsdf="HOME_DEPT_CD"
+>
+        </td>
+
+>
+          <vstext name="txtT3RSRC_GP_ID" vsds="T3R_SC_FGN_ORG" vsdf="RSRC_GP_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3FGN_GOVT_BRN_CD" vsds="T3R_SC_FGN_ORG" vsdf="FGN_GOVT_BRN_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3FGN_CAB_CD" vsds="T3R_SC_FGN_ORG" vsdf="FGN_CAB_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3FGN_DEPT_CD" vsds="T3R_SC_FGN_ORG" vsdf="FGN_DEPT_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3FGN_DIV_CD" vsds="T3R_SC_FGN_ORG" vsdf="FGN_DIV_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3FGN_GP_CD" vsds="T3R_SC_FGN_ORG" vsdf="FGN_GP_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3FGN_SECT_CD" vsds="T3R_SC_FGN_ORG" vsdf="FGN_SECT_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3FGN_DSTC_CD" vsds="T3R_SC_FGN_ORG" vsdf="FGN_DSTC_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3FGN_BUR_CD" vsds="T3R_SC_FGN_ORG" vsdf="FGN_BUR_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT3FGN_UNIT_CD" vsds="T3R_SC_FGN_ORG" vsdf="FGN_UNIT_CD"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+
+<td><div name="T3R_SC_FGN_ORGGridNav" id="T3R_SC_FGN_ORGGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+      <a href="SecurityAdmin" vsds="T3R_SC_FGN_ORG" vsaction="firstpage" name="T3R_SC_FGN_ORGfirstpage" id="T3R_SC_FGN_ORGfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+      <a href="SecurityAdmin" vsds="T3R_SC_FGN_ORG" vsaction="prevpage" name="T3R_SC_FGN_ORGprevpage" id="T3R_SC_FGN_ORGprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+      <a href="SecurityAdmin" vsds="T3R_SC_FGN_ORG" vsaction="nextpage" id="T3R_SC_FGN_ORGnextpage" name="T3R_SC_FGN_ORGnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+      <a href="SecurityAdmin" vsds="T3R_SC_FGN_ORG" vsaction="lastpage" id="T3R_SC_FGN_ORGlastpage" name="T3R_SC_FGN_ORGlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+    </tr>
+  </table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T3R_SC_FGN_ORG', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'USER_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'User ID' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'RSRC_GP_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Resource Group ID' ;
+  -->
+  </script>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+
+<a href="SecurityAdmin" vsds="T4R_SC_VALID_ROLES" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+
+<a href="SecurityAdmin" vsds="T4R_SC_VALID_ROLES" vsaction="clearquery" name="T4R_SC_VALID_ROLESclearquery" id="T4R_SC_VALID_ROLESclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+        </table>
+      </td>
+    </tr>
+  </table>
+-->
+
+
+<hr class="advsectsep"> </hr>
+
+<h2 class="advrecsrctitle details">Select the Valid Department records linked with the source security role to copy...</h2>
+
+
+<!-- END CUSTOMIZATION -->
+
+  <table name="tblT4R_SC_VALID_ROLES" id="tblT4R_SC_VALID_ROLES" class="advgrid" vsds="T4R_SC_VALID_ROLES">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+<th
+><span title="Department">Department</span></th></JADEInclude>
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow">
+      <td class="pickselect">
+        <input type="checkbox" name="rowT4R_SC_VALID_ROLES" id="rowT4R_SC_VALID_ROLES" vsds="T4R_SC_VALID_ROLES" vsaction="Currency" value="ON" title="Select Row">
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT4DEPT_CD" vsds="T4R_SC_VALID_ROLES" vsdf="DEPT_CD"
+>
+        </td>
+
+      <td></td>
+     </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><div name="T4R_SC_VALID_ROLESGridNav" id="T4R_SC_VALID_ROLESGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+      <a href="SecurityAdmin" vsds="T4R_SC_VALID_ROLES" vsaction="firstpage" name="T4R_SC_VALID_ROLESfirstpage" id="T4R_SC_VALID_ROLESfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+      <a href="SecurityAdmin" vsds="T4R_SC_VALID_ROLES" vsaction="prevpage" name="T4R_SC_VALID_ROLESprevpage" id="T4R_SC_VALID_ROLESprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+      <a href="SecurityAdmin" vsds="T4R_SC_VALID_ROLES" vsaction="nextpage" id="T4R_SC_VALID_ROLESnextpage" name="T4R_SC_VALID_ROLESnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+      <a href="SecurityAdmin" vsds="T4R_SC_VALID_ROLES" vsaction="lastpage" id="T4R_SC_VALID_ROLESlastpage" name="T4R_SC_VALID_ROLESlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+    </tr>
+  </table>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advokcancel">
+    <tr>
+      <td>
+
+<input class="advbutton" type="submit" vspickaccept="true" onclick="UTILS_ClosePickWindow(document.forms[0], this);" vsaction="acceptpick" name="PickOK" id="PickOK" value="OK" title="OK">
+
+<input class="advbutton" onclick="UTILS_ClosePickWindow(document.forms[0], this);" type="submit" vsaction="cancel" name="pickcancel" value="Cancel" id="pickcancel" title="Cancel">
+      </td>
+    </tr>
+  </table>
+  <a name="T5R_SC_FLD_ACCS_Top"></a>
+-->
+
+</div>
+
+<div id="Step3Cont" name="Step3Cont" vsds="" class="advpgcont" vsvisible="false">
+<!-- END CUSTOMIZATION -->
+
+  <input type="hidden" name="T5R_SC_FLD_ACCS_Currency" value="">
+  <input type="hidden" name="T5R_SC_FLD_ACCS_Old_Currency" value="">
+  <table name="tblT5R_SC_FLD_ACCS" id="tblT5R_SC_FLD_ACCS" class="advgrid" vsds="T5R_SC_FLD_ACCS">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><a href="SecurityAdmin" vsaction="sort" vsds="T5R_SC_FLD_ACCS"
+    vsdf="FLD_ID_UP"
+ name="T5FLD_IDsort" id="T5FLD_IDsort" title="Sort By Field">Field</a></th>
+
+        <th
+><span id="T5CMPR_TYP_CDsortGridLabel" name="T5CMPR_TYP_CDsortGridLabel" title="Comparison Type">Comparison Type</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T5R_SC_FLD_ACCSvscurrency" id="T5R_SC_FLD_ACCSvscurrency" title="Select Row" alt="Select Row" vsds="T5R_SC_FLD_ACCS" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT5FLD_ID" vsds="T5R_SC_FLD_ACCS" vsdf="FLD_ID"
+>
+        </td>
+
+        <td
+>
+          <vstext vsds="T5R_SC_FLD_ACCS" vsdf="CMPR_TYP_CD" vscodetable="CVL_CMPR_TYP_CD">
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><div name="T5R_SC_FLD_ACCSGridNav" id="T5R_SC_FLD_ACCSGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+      <a href="SecurityAdmin" vsds="T5R_SC_FLD_ACCS" vsaction="firstpage" name="T5R_SC_FLD_ACCSfirstpage" id="T5R_SC_FLD_ACCSfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+      <a href="SecurityAdmin" vsds="T5R_SC_FLD_ACCS" vsaction="prevpage" name="T5R_SC_FLD_ACCSprevpage" id="T5R_SC_FLD_ACCSprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+      <a href="SecurityAdmin" vsds="T5R_SC_FLD_ACCS" vsaction="nextpage" id="T5R_SC_FLD_ACCSnextpage" name="T5R_SC_FLD_ACCSnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+      <a href="SecurityAdmin" vsds="T5R_SC_FLD_ACCS" vsaction="lastpage" id="T5R_SC_FLD_ACCSlastpage" name="T5R_SC_FLD_ACCSlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+    </tr>
+  </table>
+
+
+<hr class="advsectsep"></hr>
+
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+
+      <a href="SecurityAdmin" vsds="T5R_SC_FLD_ACCS" vsaction="delete" id="IndexT5R_SC_FLD_ACCSdelete" name="T5R_SC_FLD_ACCSdelete" title="Delete Current Record" accesskey="7">Delete</a>
+
+      <a href="SecurityAdmin" vsds="T5R_SC_FLD_ACCS" vsaction="insert" id="T5R_SC_FLD_ACCSinsert" name="T5R_SC_FLD_ACCSinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+      </td>
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+-->
+
+
+
+<!-- END CUSTOMIZATION -->
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T5R_SC_FLD_ACCS', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'FLD_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Field' ;
+  -->
+  </script>
+
+
+
+
+  <input type="hidden" name="T6R_SC_FLD_CMPR_Currency" value="">
+  <input type="hidden" name="T6R_SC_FLD_CMPR_Old_Currency" value="">
+  <table name="tblT6R_SC_FLD_CMPR" id="tblT6R_SC_FLD_CMPR" class="advgrid" vsds="T6R_SC_FLD_CMPR">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><a href="SecurityAdmin" vsaction="sort" vsds="T6R_SC_FLD_CMPR"
+    vsdf="FLD_ID"
+ name="T6FLD_IDsort" id="T6FLD_IDsort" title="Sort By Field ID">Field ID</a></th>
+
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+        <th
+><a href="SecurityAdmin" vsaction="sort" vsds="T6R_SC_FLD_CMPR"
+    vsdf="CMPR_1_TXT"
+ name="T6CMPR_1_TXTsort" id="T6CMPR_1_TXTsort" title="Sort By Compare 1">Compare 1</a></th>
+
+        <th
+><span id="T6CMPR_2_TXTsortGridLabel" name="T6CMPR_2_TXTsortGridLabel" title="Compare 2">Compare 2</span></th>
+
+-->
+
+        <th
+><a href="SecurityAdmin" vsaction="sort" vsds="T6R_SC_FLD_CMPR"
+    vsdf="CMPR_1_TXT"
+ name="T6CMPR_1_TXTsort" id="T6CMPR_1_TXTsort" title="Sort By Comparison Value 1">Comparison Value 1</a></th>
+
+        <th
+><span id="T6CMPR_2_TXTsortGridLabel" name="T6CMPR_2_TXTsortGridLabel" title="Comparison Value 2">Comparison Value 2</span></th>
+
+<!-- END CUSTOMIZATION -->
+
+
+
+      <th class="advcorner right"></th>
+
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T6R_SC_FLD_CMPRvscurrency" id="T6R_SC_FLD_CMPRvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T6R_SC_FLD_CMPR" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT6FLD_ID" vsds="T6R_SC_FLD_CMPR" vsdf="FLD_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT6CMPR_1_TXT" vsds="T6R_SC_FLD_CMPR" vsdf="CMPR_1_TXT"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT6CMPR_2_TXT" vsds="T6R_SC_FLD_CMPR" vsdf="CMPR_2_TXT"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+
+<td><div name="T6R_SC_FLD_CMPRGridNav" id="T6R_SC_FLD_CMPRGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+      <a href="SecurityAdmin" vsds="T6R_SC_FLD_CMPR" vsaction="firstpage" name="T6R_SC_FLD_CMPRfirstpage" id="T6R_SC_FLD_CMPRfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+      <a href="SecurityAdmin" vsds="T6R_SC_FLD_CMPR" vsaction="prevpage" name="T6R_SC_FLD_CMPRprevpage" id="T6R_SC_FLD_CMPRprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+      <a href="SecurityAdmin" vsds="T6R_SC_FLD_CMPR" vsaction="nextpage" id="T6R_SC_FLD_CMPRnextpage" name="T6R_SC_FLD_CMPRnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+      <a href="SecurityAdmin" vsds="T6R_SC_FLD_CMPR" vsaction="lastpage" id="T6R_SC_FLD_CMPRlastpage" name="T6R_SC_FLD_CMPRlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+    </tr>
+  </table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T6R_SC_FLD_CMPR', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'FLD_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Field ID' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'CMPR_1_TXT' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Compare 1' ;
+  -->
+  </script>
+
+<!-- BEGIN CUSTOMIZATION -->
+</div>
+
+<div id="Step4Cont" name="Step4Cont" vsds="" class="advpgcont" vsvisible="false">
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+
+      <tr>
+        <td class="label required"><span class="reqmarker">*</span><label for="NewSecurityRoleID" title="Security Role ID (Required)">Security Role ID :</label></td>
+        <td class="val required">
+          <input vsds="" type="text" name="NewSecurityRoleID" id="NewSecurityRoleID" size="20" title="Security Role ID (Required)" class="adveditable"
+          onblur="UTILS_OnBlurUpperCaseAndTrim( this, true, true );">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><span class="reqmarker">*</span>
+        <label for="Description" title="Description">Description :</label></td>
+        <td class="val">
+          <input vsds="" type="text" name="Description" id="Description" size="20" title="Description" class="adveditable">
+        </td>
+      </tr>
+
+
+      <tr>
+
+        <td class="label required">
+         <span class="reqmarker">*</span>
+        <label for="ForOrgRstr" title="Foreign Organization Restriction (Required)">Foreign Organization Restriction :</label></td>
+        <td class="val required">
+          <select name="ForOrgRstr" vsds="" id="ForOrgFl"   size="1" title="Foreign Organization Restriction (Required)" ShowCodeInfo="" vsdf="FGN_ORG_RSTR" vscodetable="CVL_FGN_ORG_CNFG">
+		    <option value="JADEStored" selected
+		     >JADEDisplayed</option>
+          </select>
+
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="label"><label for="OverErrCd" title="Override Errors">Override Errors :</label></td>
+        <td class="val">
+          <select name="OverErrCd" vsds="" id="OverErrCd" size="1" title="Override Errors" ShowCodeInfo="" vsdf="OV_ERR_CD" vscodetable="CVL_OV_ERR_CD">
+            <option value="JADEStored" selected
+             >JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr>
+
+
+
+</td></tr></table>
+</div>
+<p>&nbsp;</p>
+
+
+
+<table class=advokcancel>
+
+  <tr>
+    <td><div id="back" name="back" vsds="" class="advpgcont" vsvisible="false">
+    <input class="advbutton" id="back" title="Back to Previous Step" type=submit value="< Back" name="back" vsaction="undoall">
+    </div></td>
+<td>
+<div id="next" name="next" vsds="" class="advpgcont" vsvisible="false">
+<input class="advbutton" id="next" title="Next Step" type=submit value="Next >" name="next" vsaction="undoall">
+</div>
+<div id="createNewSecurityRole" name="createNewSecurityRole" vsds="" class="advpgcont" vsvisible="false">
+<input class="advbutton" id="createNewSecurityRole" title="Create New Security Role" type=submit value="Create New Security Role" name="createNewSecurityRole" vsaction="undoall">
+</div>
+</td>
+  </tr></table>
+<!-- END CUSTOMIZATION -->
+
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

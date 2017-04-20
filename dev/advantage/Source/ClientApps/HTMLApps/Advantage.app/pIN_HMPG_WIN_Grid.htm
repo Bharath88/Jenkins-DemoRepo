@@ -1,0 +1,328 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Default Home Page Windows</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <!-- BEGIN CUSTOMIZATION -->
+  <script type="text/javascript" language="JavaScript">
+  <!--
+     function CONFIGHMPG_VerifyProtocol( foURLField )
+     {
+        if ( ( foURLField.value.toLowerCase().indexOf( "http://" ) != 0 ) && ( foURLField.value.toLowerCase().indexOf( "https://" ) != 0 ) )
+        {
+           foURLField.value = "http://" + foURLField.value ;
+        }
+     }
+  -->
+  </script>
+  <!-- END CUSTOMIZATION -->
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="pIN_HMPG_WIN_Grid">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Default Home Page Windows">Default Home Page Windows</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+  <a name="T1IN_HMPG_WIN_Top"></a>
+
+
+
+  <input type="hidden" name="T1IN_HMPG_WIN_Currency" value="">
+  <input type="hidden" name="T1IN_HMPG_WIN_Old_Currency" value="">
+  <table name="tblT1IN_HMPG_WIN" id="tblT1IN_HMPG_WIN" class="advgrid" vsds="T1IN_HMPG_WIN">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1WIN_NMsortGridLabel" name="T1WIN_NMsortGridLabel" title="Name">Name</span></th>
+
+        <th
+><span id="T1SEQ_NOsortGridLabel" name="T1SEQ_NOsortGridLabel" title="Seq. No.">Seq. No.</span></th>
+
+        <th
+><span id="T1PAGE_DESCsortGridLabel" name="T1PAGE_DESCsortGridLabel" title="Description">Description</span></th>
+
+        <th
+><span id="T1URLsortGridLabel" name="T1URLsortGridLabel" title="URL">URL</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IN_HMPG_WINvscurrency" id="T1IN_HMPG_WINvscurrency" title="Select Row" alt="Select Row" vsds="T1IN_HMPG_WIN" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1WIN_NM" vsds="T1IN_HMPG_WIN" vsdf="WIN_NM"
+>
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1SEQ_NO" vsds="T1IN_HMPG_WIN" vsdf="SEQ_NO"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1PAGE_DESC" vsds="T1IN_HMPG_WIN" vsdf="PAGE_DESC"
+>
+        </td>
+
+        <td class="memo">
+          <textarea ams_readonly cols="20" rows="2" name="txtT1URL" vsds="T1IN_HMPG_WIN" vsdf="URL"
+ title="URL"></textarea>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="firstpage" name="T1IN_HMPG_WINfirstpage" id="T1IN_HMPG_WINfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="prevpage" name="T1IN_HMPG_WINprevpage" id="T1IN_HMPG_WINprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="nextpage" id="T1IN_HMPG_WINnextpage" name="T1IN_HMPG_WINnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="lastpage" id="T1IN_HMPG_WINlastpage" name="T1IN_HMPG_WINlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+
+<hr class="advsectsep"></hr>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="saveall" name="T1IN_HMPG_WINSaveAll" id="T1IN_HMPG_WINSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="undoall" name="T1IN_HMPG_WINUndoAll" id="T1IN_HMPG_WINUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="delete" id="IndexT1IN_HMPG_WINdelete" name="T1IN_HMPG_WINdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="insert" id="T1IN_HMPG_WINinsert" name="T1IN_HMPG_WINinsert" title="Insert New Record" accesskey="I">Insert</a>
+-->
+<!-- END CUSTOMIZATION -->
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="11" name="T1IN_HMPG_WINCopyRecord" id="T1IN_HMPG_WINCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="12" name="T1IN_HMPG_WINPasteLine" id="T1IN_HMPG_WINPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+
+    </tr>
+  </table>
+
+
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+<!-- BEGIN CUSTOMIZATION -->
+		  <tr>
+			<td></td>
+            <td class="label"><label for="T1IN_HMPG_WINAddAdvPage" title="ADVANTAGE Page">ADVANTAGE Page :</label></td>
+			<td>
+			  <a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="18"
+				name="T1IN_HMPG_WINAddAdvPage" id="T1IN_HMPG_WINAddAdvPage" title="Add ADVANTAGE Page" accesskey="A">Add</a>
+			</td>
+	        <td>
+            </td>
+		  </tr>
+		  <tr>
+            <td class="label"><label for="txtT1HTTPField" title="URL">URL :</label></td>
+			<td class="val">
+			  <input type="text" name="txtT1HTTPField" id="txtT1HTTPField" size="40" vsds="" vsdf="" value="http://" onblur="CONFIGHMPG_VerifyProtocol(txtT1HTTPField);" title="URL" class="adveditable">
+			</td>
+			<td>
+			  <a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="18"
+				name="T1IN_HMPG_WINAddExtPage" id="T1IN_HMPG_WINAddExtPage" title="Add External Page" accesskey="E">Add</a>
+		    </td>
+            <td>
+              <a title="(CGI ADVANTAGE assumes no responsibility for the behavior of external web sites)">(CGI ADVANTAGE assumes no responsibility for the behavior of external web sites)</a>
+			</td>
+		  </tr>
+<!-- END CUSTOMIZATION -->
+      <tr>
+        <td class="label"><label for="txtT1WIN_NM" title="Name">Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1WIN_NM" id="txtT1WIN_NM"
+               size="20"
+ vsds="T1IN_HMPG_WIN" vsdf="WIN_NM"
+         ams_max_len="50"
+ ShowCodeInfo="" value="WIN_NM" title="Name">
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="label"><label for="txtT1SEQ_NO" title="Seq. No.">Seq. No. :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1SEQ_NO" id="txtT1SEQ_NO"
+            size="10"
+ vsds="T1IN_HMPG_WIN" vsdf="SEQ_NO"
+ value="SEQ_NO" ams_readonly ShowCodeInfo="" title="Seq. No.">
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="label"><label for="txtT1WIN_X" title="Left">Left :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1WIN_X" id="txtT1WIN_X"
+               size="10"
+ vsds="T1IN_HMPG_WIN" vsdf="WIN_X"
+               ams_max_len="10"
+ ShowCodeInfo="" value="WIN_X" title="Left">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1WIN_Y" title="Top">Top :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1WIN_Y" id="txtT1WIN_Y"
+               size="10"
+ vsds="T1IN_HMPG_WIN" vsdf="WIN_Y"
+               ams_max_len="10"
+ ShowCodeInfo="" value="WIN_Y" title="Top">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1WIN_WIDTH" title="Width">Width :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1WIN_WIDTH" id="txtT1WIN_WIDTH"
+               size="10"
+ vsds="T1IN_HMPG_WIN" vsdf="WIN_WIDTH"
+               ams_max_len="10"
+ ShowCodeInfo="" value="WIN_WIDTH" title="Width">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1WIN_HEIGHT" title="Height">Height :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1WIN_HEIGHT" id="txtT1WIN_HEIGHT"
+               size="10"
+ vsds="T1IN_HMPG_WIN" vsdf="WIN_HEIGHT"
+               ams_max_len="10"
+ ShowCodeInfo="" value="WIN_HEIGHT" title="Height">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1COLOR" title="Color">Color :</label></td>
+        <td class="val">
+          <select name="txtT1COLOR" id="txtT1COLOR" vsds="T1IN_HMPG_WIN" vsdf="COLOR" size="1" vscodetable="CVL_IN_COLOR" ShowCodeInfo="" title="Color">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1FONT_COLOR" title="Font Color">Font Color :</label></td>
+        <td class="val">
+          <select name="txtT1FONT_COLOR" id="txtT1FONT_COLOR" vsds="T1IN_HMPG_WIN" vsdf="FONT_COLOR" size="1" vscodetable="CVL_IN_COLOR" ShowCodeInfo="" title="Font Color">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="label"><label for="txtT1APPL_ID" title="Application">Application :</label></td>
+        <td class="val">
+          <input type="text" ams_readonly name="txtT1APPL_ID" id="txtT1APPL_ID" vsds="T1IN_HMPG_WIN" vsdf="APPL_ID" vscodetable="R_SC_APPL"
+ title="Application">
+        </td>
+      </tr>
+
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1IN_HMPG_WIN', new Array(), new Array() ) ;
+
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

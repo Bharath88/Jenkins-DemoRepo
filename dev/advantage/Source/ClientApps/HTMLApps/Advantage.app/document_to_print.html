@@ -1,0 +1,281 @@
+<!DOCTYPE html SYSTEM "../DTD/xhtml1-strict-adv.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" style="overflow:auto;">
+
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=7"></meta>
+      <title></title>
+      <link rel="stylesheet" href="../AMSCSS/default/adv-combined.css" type="text/css"></link>
+
+      <style type="text/css">
+         @media print
+                {
+                   body.adv.document.printview,
+                   body.adv.document.printview .content .component-container .component
+                   {
+                      font-size: 1em !important;
+                      *font-size: 0.9em !important;
+                   }
+                }
+         @PAGE landscape {size: landscape;}
+         .grid-pagination
+         {
+            width: 100% !important;
+         }
+
+      </style>
+
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/jquery/jquery-1.2.3.min.js"></script>
+      <script language="JavaScript" type="text/javascript">
+      <!--
+        /**
+         * This function takes the markup from the 3.8 document and inserts it to the body element of this page.
+         * Once this markup is inserted the print dialogue is poped so that user can send the page to printer.
+         */
+        function printWindow()
+        {
+           //Move the page to left top of screen and resize it to screen size.
+           window.moveTo(0, 0);
+           window.resizeTo(screen.width, screen.height - 25);
+
+           //The Global DocModel object from which the markup is read.
+           var loDocument = window.opener.ADV.document;
+           var loDocStatus = loDocument.DocStatus;
+           var loCurrentComp = loDocument.getCurrentComponent();
+           var lsCurrentCompName = loCurrentComp.getId();
+
+           //Insert the Document's markup to this page's body element.
+           this.document.body.innerHTML = loDocument.bodyElement.innerHTML;
+
+           this.document.title = loDocument.getDocTitle();
+
+
+           try
+           {
+
+           var loErrorPanel = jQuery(this.document.body).find("#MsgErrorPanel")[0];
+           if(loErrorPanel && !jQuery(loErrorPanel).hasClass("hidden"))
+           {
+              var loErrorPanel = jQuery(loErrorPanel).find("#ExpandedErrorPanel").get(0);
+              if(loErrorPanel)
+              {
+                 var liHeight = loErrorPanel.style.height;
+                 if(liHeight.indexOf("px"))
+                 {
+                    liHeight = parseInt(liHeight.substring(0,liHeight.indexOf("px")));
+                 }
+                 else
+                 {
+                    liHeight = 0;
+                 }
+                 var loTitleWrapper = jQuery(this.document.body).find("#DocumentTitleWrapper")[0];
+                 loTitleWrapper.style.paddingTop = (liHeight + 5) + 'px';
+              }
+           }
+           }catch(e)
+           {}
+
+           //Remove YUI resize monitor since we are not going to use any of its functionality.
+           jQuery("#_yuiResizeMonitor").remove();
+           jQuery("#LoadingPanel_c").remove();
+           //Remove the drop down menu button at the top of document page.
+           jQuery("#DocumentViewActions").remove();
+           //Since print page is not concerned about the actions visible and
+           //the print, Processing and File button needs to be removed from the DOM as it affects the print layout.
+           jQuery("#DocumentActions").remove();
+
+           jQuery("input.pickimg").remove();
+           jQuery("input.inputcalendar").remove();
+           var laSections = jQuery("fieldset");
+           for(var liCnt=0; liCnt<laSections.length; liCnt++)
+           {
+              if( laSections[liCnt].className.indexOf("level1") > -1 )
+                 laSections[liCnt].className = "section level1 listview-fieldset";
+              else if( laSections[liCnt].className.indexOf("level2") > -1 )
+                 laSections[liCnt].className = "section level2 listview-fieldset";
+              else if( laSections[liCnt].className.indexOf("level3") > -1 )
+                 laSections[liCnt].className = "section level3 listview-fieldset";
+              else if( laSections[liCnt].className.indexOf("level4") > -1 )
+                 laSections[liCnt].className = "section level4 listview-fieldset";
+           }
+
+           //Get handle to the Component DOM to do necessary DOM manipulations
+           var loComponent = jQuery(this.document.body).find("#" + lsCurrentCompName)[0];
+
+           //Get headercontext elements and add to Component
+           var loHeadercontext = jQuery(this.document.body).find("#" + lsCurrentCompName + " .headercontext")[0];
+           if(loHeadercontext)
+           {
+              loComponent.appendChild(loHeadercontext);
+           }
+
+           //Get Grid DOM handle and append it to Component's div so as to remove nested DIV structure.
+           var loGrid = jQuery(this.document.body).find("#" + lsCurrentCompName + " .grid")[0];
+           if(loGrid)
+           {
+              //Remove the grid pagination actions.
+              jQuery(loScalar).find(".grid-pagination .action-list").remove();
+              jQuery(loScalar).find(".grid-pagination .goto").remove();
+              loComponent.appendChild(loGrid);
+              if(loHeadercontext)
+              {
+                 loGrid.className +=" header-context-visible";
+              }
+           }
+           //Get Scalar DOM handle and append it to Component's div so as to remove nested DIV structure.
+           var loScalar = jQuery(this.document.body).find("#" + lsCurrentCompName + " .scalar")[0];
+           if(loScalar)
+           {
+              loComponent.appendChild(loScalar);
+              //Remove the list view/tab view button and the scalar pin toggle button.
+              jQuery(loScalar).find(".action-list").remove();
+           }
+
+           jQuery("fieldset").after('<p class="page-break"/>');
+
+           //Remove the empty label tags since print page is showing values below label.
+           jQuery("label[title='']").remove();
+
+           //Remove the AccordianSectionContent div since its not going to be used anymore to handle look and feel.
+           jQuery(loComponent).find(".accordiansectioncontent").remove();
+
+           //Create a container DIV element to show printing message and the actions
+           var loPrintDiv = document.createElement("div");
+           loPrintDiv.id = "DocPrintContainer";
+           loPrintDiv.setAttribute("name", "DocPrintContainer");
+           loPrintDiv.className = "print-container";
+           document.forms[0].insertBefore(loPrintDiv, document.forms[0].childNodes[0]);
+
+           var loPrintMsgSpan = document.createElement("span");
+           loPrintMsgSpan.className = "print-msg";
+           loPrintMsgSpan.innerHTML = "To continue printing click Print.";
+           loPrintDiv.appendChild(loPrintMsgSpan);
+
+           var loPrintActnDiv = document.createElement("span");
+           loPrintActnDiv.className = "print-action";
+
+           var loPrintButton = document.createElement("input");
+           loPrintButton.type = "button" ;
+           loPrintButton.value = "Print";
+           loPrintButton.onclick = function(e)
+                                   {
+                                      //Stop the event from propagation, to avoid form submit
+                                      var loEvent = e || window.event;
+                                      if (loEvent.stopPropagation)
+                                      {
+                                         loEvent.stopPropagation();
+                                      }
+                                      else
+                                      {
+                                         loEvent.keyCode = 0;
+                                         loEvent.cancelBubble = true;
+                                      }
+                                      loPrintDiv.className = "hidden";
+
+                                      //Call the print Dialogue and close the window
+                                      window.print();
+                                      window.close();
+                                   }
+           loPrintActnDiv.appendChild(loPrintButton);
+
+           var loPrintCancelButton = document.createElement("input");
+           loPrintCancelButton.type = "button" ;
+           loPrintCancelButton.value = "Cancel";
+           loPrintCancelButton.onclick = function(e)
+                                         {
+                                            //Bellow code is resolve the Grey out defect(ADVFN00119857) fix impacts on document page.
+                                            jQuery("input").attr("disabled", "disabled");
+                                            jQuery("textarea").attr("disabled", "disabled");
+                                            jQuery("select").attr("disabled", "disabled");
+                                            //Stop the event from propagation, to avoid form submit
+                                            var loEvent = e || window.event;
+                                            if (loEvent.stopPropagation)
+                                            {
+                                               loEvent.stopPropagation();
+                                            }
+                                            else
+                                            {
+                                               loEvent.keyCode = 0;
+                                               loEvent.cancelBubble = true;
+                                            }
+                                            //Close the window
+                                            window.close();
+                                         }
+           loPrintActnDiv.appendChild(loPrintCancelButton);
+           loPrintDiv.appendChild(loPrintActnDiv);
+
+           // Print the page and close once done. Done in Timeout since it this is the last thing to get executed.
+           /*
+            * Commented out the below code since on certain machines, IE window freezes
+            * on clicking Print button on the browser Print dialogue. User is now provided separate print
+            * bar(id="DocPrintContainer") on top of the page which has actions for Print/Cancel.
+            */
+           //setTimeout(function(){window.print();window.close();},0);
+
+           if(loDocStatus.TreeWasOpen)
+           {
+              //If original document tree was open. reopen it again.
+              loDocStatus.TreeWasOpen = false;
+              loDocument.openLeftNavMenu();
+           }
+
+           if(loDocStatus.CompWasInMinMode)
+           {
+              //If Document current component was in minimum mode then we need to revert it again to original mode.
+              loDocStatus.CompWasInMinMode = false;
+
+              var loSection = loDocument.AccordianView.getSection(lsCurrentCompName);
+
+              var loExpandCollapseAction = jQuery(loDocument.bodyElement).find("#" + lsCurrentCompName + " .component-expandcollapse")[0];
+
+              var loHeaderImgElement = jQuery(loDocument.bodyElement).find("#"+ lsCurrentCompName + " .expandcollapse img")[0];
+
+              var loMaximizeIcon = jQuery(loDocument.bodyElement).find("#" + lsCurrentCompName + " .component-maximize img")[0];
+
+              var loExpandFunction = loDocument.AccordianView.handleResizeSection(loSection, loDocument.AccordianView,
+                       loExpandCollapseAction, loMaximizeIcon, loHeaderImgElement);
+
+              (loExpandFunction)();
+           }
+
+           if( loDocStatus.ScalarWasInTabView)
+           {
+              //If tab view was shown earlier the again show scalar in Tab view.
+              loDocStatus.ScalarWasInTabView = false;
+              loCurrentComp.getScalar().showListView();
+           }
+
+           //Following function will stop the event propagation
+           var lfDoNothing = function(e)
+           {
+              //Stop the event from propagation, to avoid form submit
+              var loEvent = e || window.event;
+              if (loEvent.stopPropagation)
+              {
+                 loEvent.stopPropagation();
+              }
+              else
+              {
+                 loEvent.keyCode = 0;
+                 loEvent.cancelBubble = true;
+              }
+              return false;
+           }
+
+           //On the print page, disable click event for all anchor and input[type="image"] HTML elements.
+           jQuery("input[type='image'], a").click(lfDoNothing);
+
+        };
+
+      -->
+      </script>
+   </head>
+
+   <body class="adv document printview" onload="printWindow()">
+   </body>
+
+</html>
+
+
+
+

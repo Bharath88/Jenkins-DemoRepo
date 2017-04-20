@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0544291437.Administrator.0001"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="False"
+	ChildMostDataObject="FACILITATOR"
+	DistinctRowsOnly="False"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[SELECT FACILITATOR.RUN_NO AS RUN_NO, FACILITATOR.SEQ_NO AS SEQ_NO, FACILITATOR.PARM_FILE_LOC AS PARM_FILE_LOC, FACILITATOR.STATUS AS STATUS, FACILITATOR.ARCH_TYP AS ARCH_TYP, FACILITATOR.AGNT_ID AS AGNT_ID, FACILITATOR.LAST_UPDATE_DT AS LAST_UPDATE_DT, FACILITATOR.LAST_UPDATE_USERID AS LAST_UPDATE_USERID, FACILITATOR.AMS_ROW_VERS_NO AS AMS_ROW_VERS_NO, FACILITATOR.TBL_LAST_DT AS TBL_LAST_DT FROM <dbschema>.FACILITATOR FACILITATOR  WHERE  (FACILITATOR.STATUS = 20 OR FACILITATOR.STATUS = 21 OR FACILITATOR.STATUS = 22)   ORDER BY FACILITATOR.RUN_NO Desc, FACILITATOR.SEQ_NO Asc]]></RuntimeSql>
+	<Where><![CDATA[(FACILITATOR.STATUS = 20 OR FACILITATOR.STATUS = 21 OR FACILITATOR.STATUS = 22)]]></Where>
+	<OrderBy>
+	<OrderByAttribute
+		Name="FACILITATOR.RUN_NO"
+		Direction="Descending"
+	/>
+	<OrderByAttribute
+		Name="FACILITATOR.SEQ_NO"
+		Direction="Ascending"
+	/>
+	</OrderBy>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="FACILITATOR"
+			Alias="FACILITATOR"
+		/>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="RUN_NO"
+			Alias="RUN_NO"
+			AggregationType="None"
+			SourceDataObject="FACILITATOR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="SEQ_NO"
+			Alias="SEQ_NO"
+			AggregationType="None"
+			SourceDataObject="FACILITATOR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="PARM_FILE_LOC"
+			Alias="PARM_FILE_LOC"
+			AggregationType="None"
+			SourceDataObject="FACILITATOR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="STATUS"
+			Alias="STATUS"
+			AggregationType="None"
+			SourceDataObject="FACILITATOR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ARCH_TYP"
+			Alias="ARCH_TYP"
+			AggregationType="None"
+			SourceDataObject="FACILITATOR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="AGNT_ID"
+			Alias="AGNT_ID"
+			AggregationType="None"
+			SourceDataObject="FACILITATOR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="LAST_UPDATE_DT"
+			Alias="LAST_UPDATE_DT"
+			AggregationType="None"
+			SourceDataObject="FACILITATOR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="LAST_UPDATE_USERID"
+			Alias="LAST_UPDATE_USERID"
+			AggregationType="None"
+			SourceDataObject="FACILITATOR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="AMS_ROW_VERS_NO"
+			Alias="AMS_ROW_VERS_NO"
+			AggregationType="None"
+			SourceDataObject="FACILITATOR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="TBL_LAST_DT"
+			Alias="TBL_LAST_DT"
+			AggregationType="None"
+			SourceDataObject="FACILITATOR"
+			Persistent="True"
+		/>
+
+	</Attributes>
+</QueryObject>

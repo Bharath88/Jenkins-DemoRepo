@@ -1,0 +1,456 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>LDAP New User Configuration</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+
+<body class="adv reftable">
+  <vserror>
+  <form action="SecurityAdmin" method="post" vsform="true" name="pSC_LDAP_NEW_USER">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="LDAP New User Configuration">LDAP New User Configuration</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="SecurityAdmin" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+  <INPUT type="hidden" name="T1SC_LDAP_NEW_USERvscurrency" vsds="T1SC_LDAP_NEW_USER" vscurrency="true">
+
+  <a name="T1SC_LDAP_NEW_USER_Top"></a>
+  
+      <table class="advaction recsrc">
+        <tr>
+          
+      
+         <td>
+<ams_map title="Update Actions" name="Update Actions">
+   
+      <a href="SecurityAdmin" vsds="T1SC_LDAP_NEW_USER" vsaction="saveall" name="T1SC_LDAP_NEW_USERSaveAll" id="T1SC_LDAP_NEW_USERSaveAll" title="Save All" accesskey="5">Save</a>
+   
+      <a href="SecurityAdmin" vsds="T1SC_LDAP_NEW_USER" vsaction="undoall" name="T1SC_LDAP_NEW_USERUndoAll" id="T1SC_LDAP_NEW_USERUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+      <a href="SecurityAdmin" vsds="T1SC_LDAP_NEW_USER" vsaction="delete" id="IndexT1SC_LDAP_NEW_USERdelete" name="T1SC_LDAP_NEW_USERdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="SecurityAdmin" vsds="T1SC_LDAP_NEW_USER" vsaction="insert" id="T1SC_LDAP_NEW_USERinsert" name="T1SC_LDAP_NEW_USERinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="SecurityAdmin" vsds="T1SC_LDAP_NEW_USER" vsaction="11" name="T1SC_LDAP_NEW_USERCopyRecord" id="T1SC_LDAP_NEW_USERCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="SecurityAdmin" vsds="T1SC_LDAP_NEW_USER" vsaction="12" name="T1SC_LDAP_NEW_USERPasteLine" id="T1SC_LDAP_NEW_USERPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+
+   
+      <td><vstext vsds=" " name="T1SC_LDAP_NEW_USERSearchColList" vspreservetag="true"></td>
+
+            <td><ams_map name="Record Navigation" title="Record Navigation">
+
+		<a vsds="T1SC_LDAP_NEW_USER" id="T1SC_LDAP_NEW_USERfirst" href="SecurityAdmin" name="T1SC_LDAP_NEW_USERfirst" accesskey="0" vsaction="first" title="First Record">First</a>
+
+	      <a vsds="T1SC_LDAP_NEW_USER" id="T1SC_LDAP_NEW_USERprev" href="SecurityAdmin" name="T1SC_LDAP_NEW_USERprev" accesskey="1" vsaction="prev" title="Previous Record">Prev</a>
+	      <a vsds="T1SC_LDAP_NEW_USER" id="T1SC_LDAP_NEW_USERnext" href="SecurityAdmin" name="T1SC_LDAP_NEW_USERnext" accesskey="2" vsaction="next" title="Next Record">Next</a>
+	      <a vsds="T1SC_LDAP_NEW_USER" id="T1SC_LDAP_NEW_USERlast" href="SecurityAdmin" name="T1SC_LDAP_NEW_USERlast" accesskey="3" vsaction="last" title="Last Record">Last</a> </ams_map></td>
+	  </ams_map></td>
+   
+          
+      <td><ams_map title="Section Controls" name="Section Controls">
+      
+  <a href="javascript:
+        AMSTAB_ExpandSection('T1SC_LDAP_NEW_USER_Section1','T1SC_LDAP_NEW_USER_Section1_Button');
+          AMSTAB_ExpandSection('T1SC_LDAP_NEW_USER_Section2','T1SC_LDAP_NEW_USER_Section2_Button');
+            AMSTAB_ExpandSection('T1SC_LDAP_NEW_USER_Section3','T1SC_LDAP_NEW_USER_Section3_Button');
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+      
+  <a href="javascript:
+        AMSTAB_CollapseSection('T1SC_LDAP_NEW_USER_Section1','T1SC_LDAP_NEW_USER_Section1_Button');
+          AMSTAB_CollapseSection('T1SC_LDAP_NEW_USER_Section2','T1SC_LDAP_NEW_USER_Section2_Button');
+            AMSTAB_CollapseSection('T1SC_LDAP_NEW_USER_Section3','T1SC_LDAP_NEW_USER_Section3_Button');
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+    
+          
+          
+        </tr>
+      </table>
+   
+
+  <fieldset class="advscalar">
+    <div class="advpresection">
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+          
+          
+  
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1LDAP_OU" title="LDAP Org Unit (Required)">LDAP Org Unit :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1LDAP_OU" id="txtT1LDAP_OU" 
+               size="20"
+ vsds="T1SC_LDAP_NEW_USER" vsdf="LDAP_OU" 
+         ams_max_len="254"
+ ShowCodeInfo="" value="LDAP_OU"title="LDAP Org Unit (Required)">
+        </td>
+      </tr>
+    
+        </table></td></tr></table></div></fieldset><a name="T1SC_LDAP_NEW_USER_Section1_Top"></a><fieldset class="advscalar section">
+        <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1SC_LDAP_NEW_USER_Section1','T1SC_LDAP_NEW_USER_Section1_Button');" title="Expand/Collapse Home Organization"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1SC_LDAP_NEW_USER_Section1_Button"> Home Organization</a></legend>
+        <div id="T1SC_LDAP_NEW_USER_Section1" class="advsection">
+        <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1GOVT_BRN_CD" title="Government Branch">Government Branch :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1GOVT_BRN_CD" id="txtT1GOVT_BRN_CD" 
+            size="6"
+ vsds="T1SC_LDAP_NEW_USER" vsdf="GOVT_BRN_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="GOVT_BRN_CD" title="Government Branch" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1CAB_CD" title="Cabinet">Cabinet :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1CAB_CD" id="txtT1CAB_CD" 
+            size="6"
+ vsds="T1SC_LDAP_NEW_USER" vsdf="CAB_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="CAB_CD" title="Cabinet" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DEPT_CD" title="Department">Department :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1DEPT_CD" id="txtT1DEPT_CD" 
+            size="6"
+ vsds="T1SC_LDAP_NEW_USER" vsdf="DEPT_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="DEPT_CD" title="Department" >
+
+		  
+
+        </td>
+      </tr>
+    
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DIV_CD" title="Division">Division :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1DIV_CD" id="txtT1DIV_CD" 
+            size="6"
+ vsds="T1SC_LDAP_NEW_USER" vsdf="DIV_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="DIV_CD" title="Division" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1GP_CD" title="Group">Group :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1GP_CD" id="txtT1GP_CD" 
+            size="6"
+ vsds="T1SC_LDAP_NEW_USER" vsdf="GP_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="GP_CD" title="Group" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1SECT_CD" title="Section">Section :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1SECT_CD" id="txtT1SECT_CD" 
+            size="6"
+ vsds="T1SC_LDAP_NEW_USER" vsdf="SECT_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="SECT_CD" title="Section" >
+
+		  
+
+        </td>
+      </tr>
+    
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DSTC_CD" title="District">District :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1DSTC_CD" id="txtT1DSTC_CD" 
+            size="6"
+ vsds="T1SC_LDAP_NEW_USER" vsdf="DSTC_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="DSTC_CD" title="District" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1BUR_CD" title="Bureau">Bureau :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1BUR_CD" id="txtT1BUR_CD" 
+            size="6"
+ vsds="T1SC_LDAP_NEW_USER" vsdf="BUR_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="BUR_CD" title="Bureau" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1UNIT_CD" title="Unit">Unit :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1UNIT_CD" id="txtT1UNIT_CD" 
+            size="6"
+ vsds="T1SC_LDAP_NEW_USER" vsdf="UNIT_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="UNIT_CD" title="Unit" >
+
+		  
+
+        </td>
+      </tr>
+    
+          </table></td></tr></table></div></fieldset><br><br><a name="T1SC_LDAP_NEW_USER_Section2_Top"></a><fieldset class="advscalar section">
+          <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1SC_LDAP_NEW_USER_Section2','T1SC_LDAP_NEW_USER_Section2_Button');" title="Expand/Collapse Account Options"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1SC_LDAP_NEW_USER_Section2_Button"> Account Options</a></legend>
+          <div id="T1SC_LDAP_NEW_USER_Section2" class="advsection">
+          <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1OV_ERR_CD" title="Override Errors">Override Errors :</label></td>
+   
+        <td class="val">
+          <select name="txtT1OV_ERR_CD" id="txtT1OV_ERR_CD" vsds="T1SC_LDAP_NEW_USER" vsdf="OV_ERR_CD" size="1" vscodetable="CVL_OV_ERR_CD" ShowCodeInfo="" title="Override Errors">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1LOCK_FL" title="Locked Out">Locked Out :</label></td>
+   
+        <td class="val">
+          <input type="checkbox" name="txtT1LOCK_FL" id="txtT1LOCK_FL" value="LOCK_FL" vsds="T1SC_LDAP_NEW_USER" vsdf="LOCK_FL" title="Locked Out">
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1LOG_FL" title="Logging">Logging :</label></td>
+   
+        <td class="val">
+          <input type="checkbox" name="txtT1LOG_FL" id="txtT1LOG_FL" value="LOG_FL" vsds="T1SC_LDAP_NEW_USER" vsdf="LOG_FL" title="Logging">
+        </td>
+      </tr>
+    
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1SEC_ROLE_ID_1" title="Security Role ID 1">Security Role ID 1 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1SEC_ROLE_ID_1" id="txtT1SEC_ROLE_ID_1" 
+      ams_max_len="16"
+ value="SEC_ROLE_ID_1" 
+            size="20"
+ vsds="T1SC_LDAP_NEW_USER" vsdf="SEC_ROLE_ID_1" ShowCodeInfo="" title="Security Role ID 1">
+          <input type="image" vspick="T2R_SC_SEC_ROLE" vspicktext="txtT1SEC_ROLE_ID_1" vsds="T1SC_LDAP_NEW_USER" vsaction="pick" name="pckT1SEC_ROLE_ID_1" id="pckT1SEC_ROLE_ID_1" title="Select Security Role ID 1" alt="Select Security Role ID 1" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1SEC_ROLE_ID_2" title="Security Role ID 2">Security Role ID 2 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1SEC_ROLE_ID_2" id="txtT1SEC_ROLE_ID_2" 
+      ams_max_len="16"
+ value="SEC_ROLE_ID_2" 
+            size="20"
+ vsds="T1SC_LDAP_NEW_USER" vsdf="SEC_ROLE_ID_2" ShowCodeInfo="" title="Security Role ID 2">
+          <input type="image" vspick="T3R_SC_SEC_ROLE" vspicktext="txtT1SEC_ROLE_ID_2" vsds="T1SC_LDAP_NEW_USER" vsaction="pick" name="pckT1SEC_ROLE_ID_2" id="pckT1SEC_ROLE_ID_2" title="Select Security Role ID 2" alt="Select Security Role ID 2" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1SEC_ROLE_ID_3" title="Security Role ID 3">Security Role ID 3 :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1SEC_ROLE_ID_3" id="txtT1SEC_ROLE_ID_3" 
+      ams_max_len="16"
+ value="SEC_ROLE_ID_3" 
+            size="20"
+ vsds="T1SC_LDAP_NEW_USER" vsdf="SEC_ROLE_ID_3" ShowCodeInfo="" title="Security Role ID 3">
+          <input type="image" vspick="T4R_SC_SEC_ROLE" vspicktext="txtT1SEC_ROLE_ID_3" vsds="T1SC_LDAP_NEW_USER" vsaction="pick" name="pckT1SEC_ROLE_ID_3" id="pckT1SEC_ROLE_ID_3" title="Select Security Role ID 3" alt="Select Security Role ID 3" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtT1LDAP_OU_UP" title="LDAP Org Unit">LDAP Org Unit :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1LDAP_OU_UP" id="txtT1LDAP_OU_UP" 
+               size="20"
+ vsds="T1SC_LDAP_NEW_USER" vsdf="LDAP_OU_UP" 
+         ams_max_len="254"
+ ShowCodeInfo="" title="LDAP Org Unit" value="LDAP_OU_UP"></div>
+        </td>
+      </tr>
+    
+            </table></td></tr></table></div></fieldset><br><br><a name="T1SC_LDAP_NEW_USER_Section3_Top"></a><fieldset class="advscalar section">
+            <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1SC_LDAP_NEW_USER_Section3','T1SC_LDAP_NEW_USER_Section3_Button');" title="Expand/Collapse Applications"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1SC_LDAP_NEW_USER_Section3_Button"> Applications</a></legend>
+            <div id="T1SC_LDAP_NEW_USER_Section3" class="advsection">
+            <table><tr><td class="advscalarcol"><table class="advscalar">
+  <vstext vsclass="com.amsinc.gems.adv.vfc.html.AMSAppListTextContentElement" name="txtT1APPL_AUTH" vsds="T1SC_LDAP_NEW_USER" vsdf="APPL_AUTH" vspreservetag="true">
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+  
+      <table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T1SC_LDAP_NEW_USER_Top');">Top</a></td></tr></table>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

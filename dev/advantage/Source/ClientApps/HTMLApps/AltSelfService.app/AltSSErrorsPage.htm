@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Message Details</title>
+  <base href>
+
+         <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSStyle.css">
+         <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSAppStyle.css">
+         <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSMenuStyle.css">
+         <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+         <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/ALTSS/ALTSSUtil.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+         <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+<!-- BEGIN CUSTOMIZATION -->
+   <script type="text/javascript" language="JavaScript" src="JS/SSMsgDtl.js"></script>
+<!-- END CUSTOMIZATION -->
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv">
+  <vserror>
+  <form action="AltSelfService" method="post" vsform="true" name="AltSSErrorsPage">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+
+
+<!--BEGIN CUSTOMIZATION -->
+<!--
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+-->
+<!-- END CUSTOMIZATION -->
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Message Details">Message Details</vstitle>
+    </h1>
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+-->
+<!-- END CUSTOMIZATION -->
+
+	<div name="PageDesc" id="PageDesc" class="advpagedesc">
+		Here is a complete list of messages for your latest action. You may need to use the scroll bar on the right to see the full list. Some of the messages may have additional details which can be accessed by clicking on one of the messages.
+	</div>
+<!-- BEGIN CUSTOMIZATION -->
+
+   <div vsds="" id="ErrMsgDisplay" name="ErrMsgDisplay" title="ErrMsgDisplay" vsvisible="true" ams_type="msg_disp" class="adverrmsgdisplay">
+      This page lists errors or warnings from the previous page. Errors must be corrected before your information can be saved. Click <a name="ADVCloseErr" id="ADVCloseErr" href="this" onclick="top.window.close();" title="View previous page: Will close current window and return to previous page">Here</a> to close this window and return to previous page.
+   </div>
+  <table id="ErrorMsgGrid" name="ErrorMsgGrid" title="Error Messages Table" class="advgrid" cellpadding=0 cellspacing=0>
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      <vstext vsds=" " name="AMSErrorHeader" vspreservetag="true">
+      <th class="advcorner right"></th>
+    </tr>
+
+        <vstext vsds=" " name="AMSErrorMessages" vspreservetag="true">
+
+  </table>
+
+<!-- END CUSTOMIZATION -->
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<a name="btnT2AltSSErrorDetail" href="AltSelfService" id="btnT2AltSSErrorDetail" title="Navigation to Error Details" vsaction="pagetransition"
+           vsds=""
+ vsnavigation="T2AltSSErrorDetail">Error Details</a>
+-->
+<a href="Advantage" name="T2AltSSErrorDetail" id="T2AltSSErrorDetail" vsaction="pagetransition"
+   vsnavigation="T2AltSSErrorDetail" target="ErrorDetail" vsds=" " title="Error Detail"></a>
+<a href="Advantage" name="ContextNavigation" id="ContextNavigation" vsaction="44" vsds=" "
+   vsclass="com.amsinc.gems.adv.vfc.html.AMSHyperlinkActionElement" target="Detail" title="Context Navigation"></a>
+<!-- END CUSTOMIZATION -->
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="AltSelfService" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+   </div>
+  </form>
+
+</body>
+</html>
+
+
+

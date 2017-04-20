@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Welcome to CGI Advantage: Password Reset</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSCSS/default/ADVLoginStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSCSS/default/ADVPrimaryNavigator.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <!--link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVPortalStyle.css"-->
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript">
+  <!--
+  function PutAtTop()
+  {
+     if ( self != top )
+     {
+        top.location.href = self.location.href ;
+     } /* end if ( self != top ) */
+  } /* end PutAtTop() */
+
+  function LaunchApp()
+  {
+     var lsCurrWindowName = window.name;
+
+     if (lsCurrWindowName != null && lsCurrWindowName.indexOf('ADV') == -1)
+     {
+        var liAvailScreenHeight = window.screen.availHeight;
+        var liAvailScreenWidth = window.screen.availWidth;
+        var loNewWin;
+
+        var lsHref = UTILS_getBaseHref( document ) + '../AMSImages/Empty.htm';
+
+        var loDate = new Date();
+        var lsWindowName = 'ADV' + loDate.getTime();
+
+        if (liAvailScreenWidth == 1280 || liAvailScreenWidth == 1024)
+        {
+           liAvailScreenHeight = liAvailScreenHeight - 50;
+           liAvailScreenWidth = liAvailScreenWidth - 10;
+        }
+        else if (liAvailScreenWidth == 800 || liAvailScreenWidth == 640)
+        {
+           liAvailScreenHeight = liAvailScreenHeight - 55;
+           liAvailScreenWidth = liAvailScreenWidth - 15;
+        }
+
+        loNewWin = DHTMLLIB_OpenNewWin(lsHref, lsWindowName,
+                          'no' , 'no' , 'no', 'yes' , 'no',
+                          'yes', 'yes', liAvailScreenWidth,
+                          liAvailScreenHeight, 0, 0, 'yes' );
+
+        document.forms[0].target = lsWindowName;
+        document.forms[0].submit;
+
+        window.location.replace(lsHref);
+        window.close();
+     } /* end if (lsCurrWindowName != null && ... */
+     return false;
+  }
+
+  function BrowserCheck()
+  {
+  	if( false ) /* list browsers to be blocked here, using booleans from AMSJS\AMSDHTMLLib.js */
+  	{
+  		window.location.replace( UTILS_getBaseHref( document ) + "UnsupportedBrowser.html" );
+  	}
+  }
+
+   /**
+    * This function checks for non supported browser. If the current browser
+    * is not IE7 or FF2 then get confirmation from the user to continue.
+    */
+   function checkForSupportedBrowser()
+   {
+      // If the current browser is not supported by Advantage then get confirmation from the user
+      // to continue.
+      if(mboolUnSupportedBrowser)
+      {
+         if (confirm('You are using a browser that this application does not support. Supported browsers are: Internet Explorer 7 and Mozilla Firefox 2. Continue anyway?'))
+         {
+            LaunchApp();
+            return true;
+         }
+         else
+         {
+            return false ;
+         }
+      }
+      else
+      {
+         LaunchApp();
+         return true;
+      }
+   }
+  //-->
+  </script>
+
+
+</head>
+<body class="adv login" onload="PutAtTop();UTILS_SetupOnClickForPage();UTILS_SetFocusOnFirstField(document);BrowserCheck();">
+
+  <form METHOD="POST" action="jade" vsloginform onsubmit="return checkForSupportedBrowser();" class="loginpic">
+
+    <input type="hidden" name="vsparams" value>
+
+ <div>
+
+     <div id="GlobalHeader">
+         <div id="GlobalHeaderLogo"><img src="../AMSImages/advantage-logo.gif" alt="CGI Advantage Logo" width="261" height="31"></div>
+            <div id="GlobalHeaderNavigationAndLogoutContainer">
+            <div class="globalheaderelements">
+
+            </div>
+
+         </div>
+         <div class="spacer"></div>
+     </div>
+
+     <div class="parentdiv" align="center">
+     <div class="loginsection">
+             <div id="loginbox">
+               <div class="logininsidebox">
+                <div class="loginform">
+                 <p>The Password Reset application allows you to reset your password. Enter your user name
+in the User Name field. Select the Continue button to proceed with the password reset process.
+On the next page, you are shown your password hint and you must specify the reply.
+The Reset Password button then performs the password reset operation.The new password will be
+valid but expired, allowing you to reset your password on the next login.
+				 </p>
+                  <ul>
+                   <li><label title="User Name" >User Name:</label><input type="text" value="" name="login" id="login" size="20" title="User Name" autocomplete="off" vlsuserid></li>
+                   <li>
+                  <div class="hidden val">
+                    <input type="text" value="BLS_?" name="serverName" id="serverName" size="20" vlsname>
+                  </div>
+
+                   </li>
+                   <li class="actionbtn"><input type="submit" value="Continue" name="vslogin" id="vslogin" class="advbutton" title="Continue: Will open in a new window">
+                       <input type="reset" value="Reset" name="reset" id="reset" class="advbutton" title="Reset"></li>
+                   <li class="loginmsg"><login_error></li>
+                  </ul>
+
+                </div>
+                <div class="logintext">
+                  <p>Copyright &copy; 2001, 2013 CGI Technologies and Solutions Inc. All Rights Reserved.</p>
+                  <p>Use of this software is subject to CGI Technologies and Solutions Inc. license agreement.</p>
+                  <p>CGI Advantage&reg; is a registered trademark of CGI Technologies and Solutions Inc</p>
+                  <p>
+                  </p>
+                </div>
+                <div class="spacer"></div>
+                </div>
+             </div>
+             <div class="shadowbase">
+               <div class="shadowleft"></div>
+               <div class="shadow"></div>
+               <div class="shadowright">&nbsp;</div>
+             </div>
+     </div>
+     </div>
+
+</div>
+  </form>
+</body>
+</html>

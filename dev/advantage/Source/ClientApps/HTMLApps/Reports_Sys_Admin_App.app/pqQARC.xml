@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="AMSRefTableGridDisplay"
+	PositionTop="75"
+	PositionLeft="75"
+	PositionWidth="150"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSRefTableGridDisplayPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="44419117"
+	>
+	<FormCaption><![CDATA[Archive Facilitator Inquiry]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="true"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+		<Property
+			Name="SSCaptionImageFileNm"
+			Value=""
+		/>
+	</ArchetypeExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="rs01"
+		BusinessObject="FACILITATOR_QRY"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGenericGridDisplay"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="-1"
+		AllowDelete="False"
+		AllowInsert="False"
+		AllowUpdate="False"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="12" Name="RUN_NO" />
+				<RSDefaultAttribute ID="13" Name="SEQ_NO" />
+				<RSDefaultAttribute ID="3" Name="PARM_FILE_LOC" />
+				<RSDefaultAttribute ID="4" Name="XML_FILE_LOC" />
+				<RSDefaultAttribute ID="5" Name="STATUS" />
+				<RSDefaultAttribute ID="6" Name="ARCH_TYP" />
+				<RSDefaultAttribute ID="7" Name="AGNT_ID" />
+				<RSDefaultAttribute ID="8" Name="ORIG_ARCH_DT" />
+				<RSDefaultAttribute ID="9" Name="LAST_UPDATE_DT" />
+				<RSDefaultAttribute ID="14" Name="ARCH_CNT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="RUN_NO" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SEQ_NO" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="STATUS" Displayed="True" UnPlaced="False" Archetype="Combobox" />
+				<RSAttribute Name="PARM_FILE_LOC" Displayed="True" UnPlaced="False" Archetype="TextBoxMemo" />
+				<RSAttribute Name="ORIG_ARCH_DT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="LAST_UPDATE_DT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ARCH_TYP" Displayed="True" UnPlaced="False" Archetype="Combobox" />
+				<RSAttribute Name="AGNT_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="XML_FILE_LOC" Displayed="True" UnPlaced="False" Archetype="TextBoxMemo" />
+				<RSAttribute Name="ARCH_CNT" Displayed="True" UnPlaced="False" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="RUN_NO" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SEQ_NO" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="STATUS" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ARCH_TYP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="LAST_UPDATE_DT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PARM_FILE_LOC" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="XML_FILE_LOC" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AGNT_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ORIG_ARCH_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ARCH_CNT" Displayed="False" UnPlaced="False" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value="&quot;RUN_NO,STATUS,ARCH_TYP,LAST_UPDATE_DT,ORIG_ARCH_DT,AGNT_ID&quot;"
+			/>
+			<Property
+				Name="ShowSearchPopup"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Adjacent_Fields"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value="%ORIG_ARCH_DT%"
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="false"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="SummaryCaption"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+		<Transition
+			FormTransNum="1"
+			Prefix="T1"
+			TargetFormName="Job_Log_Entries"
+			IsTargetInitialQueryMode="False"
+			IsTargetInitialAddMode="False"
+			IsVisibleAppline="True"
+			IsAddedAfterGen="False"
+			FormTransCaption="View Log"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPageNavigation"
+			TargetFramesetPage=""
+			TargetFrame=""
+			FrameNameInFramesetPage=""
+			RSID="2"
+			BusinessObject="BS_AGENT_LOG"
+			RelnIsFromParent="True"
+			>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ AGNT_ID = [?AGNT_ID] ]]></AdditionalWhereClause>
+			<ExtendedProperties>
+				<Property
+					Name="DefaultPackageName"
+					Value=""
+				/>
+				<Property
+					Name="Dependent"
+					Value=""
+				/>
+				<Property
+					Name="LoadWithSave"
+					Value=""
+				/>
+				<Property
+					Name="MsgFlag"
+					Value=""
+				/>
+				<Property
+					Name="OverrideTargetPageTitle"
+					Value=""
+				/>
+				<Property
+					Name="TargetFormName"
+					Value=""
+				/>
+				<Property
+					Name="TargetPackageName"
+					Value=""
+				/>
+				<Property
+					Name="TargetPageAutoNavigationName"
+					Value=""
+				/>
+				<Property
+					Name="TargetPageAutoPickName"
+					Value=""
+				/>
+				<Property
+					Name="TargetPageCode"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</Transition>
+	</RecordSource>
+</Form>

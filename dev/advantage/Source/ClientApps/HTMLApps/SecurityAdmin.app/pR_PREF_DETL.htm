@@ -1,0 +1,335 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Preference Detail</title>
+  <base href>
+
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+  <!-- BEGIN CUSTOMIZATION -->
+<script type="text/javascript" language="JavaScript">
+  <!--
+    function navToDoc(foEvent, foAnchor)
+    {
+       /*
+        * Stop the events from propagating 
+        */
+       if(foEvent)
+       {
+          UTILS_StopPropagation(foEvent);
+       }
+       
+       //Select the clicked grid row before performing the action.
+       UTILS_SelectGridRow(foAnchor.parentNode.parentNode);
+
+       //Perform action using the proxy action.
+       DHTMLLIB_ClickElement(document.getElementById('btnNavToDoc'),document);
+    }
+ -->
+  </script>
+<!-- END CUSTOMIZATION -->
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="SecurityAdmin" method="post" vsform="true" name="pR_PREF_DETL">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+
+    <h1 class="advpagetitle">
+<!-- BEGIN CUSTOMIZATION -->
+    <vstitle vstitle="Preference Detail  ">Preference Detail</vstitle>
+    <B>: <vstext vsds=" " name="R_PREF_DETL_Page_Cd"></B>
+<!-- END CUSTOMIZATION -->
+    </h1>
+  <div class="advhdractns">
+
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="SecurityAdmin" vsds="" vsaction="84" title="Back to Previous Page" name="QueryBack" id="QueryBack" accesskey="Z">Back</a>
+  </div>
+
+	   <!-- BEGIN CUSTOMIZATION -->
+
+	   <h2 class="advrecsrctitle details">Create</h2>
+
+       <div class="advcreatepref">
+		<fieldset class="advscalar">
+			<div vsds="" id="Create" name="Create" vsvisible="true">
+				<table>
+					<tr>
+						<td class="advscalarcol">
+							<table class="advscalar">
+							   <tr>
+									<td class="label"><label for="txtR_PREF_DETL_Dept" title="Enter Department">Enter Department :</label>
+									</td>
+									<td class="val">
+    <!-- Added vsdf="GROUP_ID" for this field only to make the page help work .This field is not bound to a field on a data source  -->
+										<input type="text" name="txtR_PREF_DETL_Dept" id="txtR_PREF_DETL_Dept"
+										 size="20" onblur="UTILS_OnBlurUpperCaseAndTrim( this, true, true );"
+										 vsds="" vsdf="GROUP_ID"
+										 value="" title="Department">
+									</td>
+
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</fieldset>
+		<table class="advtrans recsrc">
+				<tr>
+				  <td>
+						<a class="pagetransition" href="SecurityAdmin" vsds="" vsaction="abc" id="R_PREF_DETL_Create_Pref" name="R_PREF_DETL_Create_Pref" title="Create Preference">Create Preference</a>
+				  </td>
+				</tr>
+			</table>
+       </div>
+	   <hr class="advsectsep"></hr>
+	   <br></br>
+	   <!-- END CUSTOMIZATION -->
+
+    <h2 class="advrecsrctitle details">Definition</h2>
+
+  <input type="hidden" name="T1R_PREF_DEF_Currency" value="">
+  <input type="hidden" name="T1R_PREF_DEF_Old_Currency" value="">
+  <table name="tblT1R_PREF_DEF" id="tblT1R_PREF_DEF" class="advgrid" vsds="T1R_PREF_DEF">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1PREF_DEF_IDsortGridLabel" name="T1PREF_DEF_IDsortGridLabel" title="Definition ID">Definition ID</span></th>
+
+        <th
+><span id="T1CREAT_TIMESTAMPsortGridLabel" name="T1CREAT_TIMESTAMPsortGridLabel" title="Timestamp on creation">Timestamp on creation</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_PREF_DEFvscurrency" id="T1R_PREF_DEFvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1R_PREF_DEF" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1PREF_DEF_ID" vsds="T1R_PREF_DEF" vsdf="PREF_DEF_ID"
+>
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1CREAT_TIMESTAMP" vsds="T1R_PREF_DEF" vsdf="CREAT_TIMESTAMP"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+    <td><ams_map title="Update Actions" name="Update Actions">
+<a href="SecurityAdmin" vsds="T1R_PREF_DEF" vsaction="delete" id="T1R_PREF_DEFdelete" name="T1R_PREF_DEFdelete" title="Delete Selected Row" accesskey="7">Delete</a>
+    </ams_map></td>
+
+
+<td><div name="T1R_PREF_DEFGridNav" id="T1R_PREF_DEFGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+         <a href="SecurityAdmin" vsds="T1R_PREF_DEF" vsaction="firstpage" name="T1R_PREF_DEFfirstpage" id="T1R_PREF_DEFfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+         <a href="SecurityAdmin" vsds="T1R_PREF_DEF" vsaction="prevpage" name="T1R_PREF_DEFprevpage" id="T1R_PREF_DEFprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+         <a href="SecurityAdmin" vsds="T1R_PREF_DEF" vsaction="nextpage" id="T1R_PREF_DEFnextpage" name="T1R_PREF_DEFnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+         <a href="SecurityAdmin" vsds="T1R_PREF_DEF" vsaction="lastpage" id="T1R_PREF_DEFlastpage" name="T1R_PREF_DEFlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+
+    </tr>
+  </table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_PREF_DEF', new Array(), new Array() ) ;
+
+  -->
+  </script>
+
+  
+  
+<!-- BEGIN CUSTOMIZATION -->
+    <h2 class="advrecsrctitle details">Data</h2>
+<!-- END CUSTOMIZATION -->
+  
+  <input type="hidden" name="T2R_PREF_DATA_Currency" value="">
+  <input type="hidden" name="T2R_PREF_DATA_Old_Currency" value="">
+  <table name="tblT2R_PREF_DATA" id="tblT2R_PREF_DATA" class="advgrid" vsds="T2R_PREF_DATA">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T2GROUP_IDsortGridLabel" name="T2GROUP_IDsortGridLabel" title="Department">Department</span></th>
+
+        <th
+><span id="T2USER_IDsortGridLabel" name="T2USER_IDsortGridLabel" title="User Id">User Id</span></th>
+
+      <!-- BEGIN CUSTOMIZATION -->
+		<th
+><span id="T2UPDATEPsortGridLabel" name="T2UPDATEsortGridLabel" title="Update">Update</span></th>
+		<!-- END CUSTOMIZATION -->
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T2R_PREF_DATAvscurrency" id="T2R_PREF_DATAvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T2R_PREF_DATA" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+
+        <td>
+          <input type="text" name="txtT2GROUP_ID"
+            size="20"
+      maxlength="32"
+ value="GROUP_ID" vsds="T2R_PREF_DATA" vsdf="GROUP_ID"
+ ShowCodeInfo="" title="Department"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT2USER_ID" vsds="T2R_PREF_DATA" vsdf="USER_ID"
+>
+        </td>
+
+      <!-- BEGIN CUSTOMIZATION -->
+      <td>
+         <a onclick="navToDoc(event || window.event, this);" href="javascript:{}" name="T2Edit" id="T2Edit">
+            Edit Preference
+         </a>
+      </td>
+      <!-- END CUSTOMIZATION -->
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+    <td><ams_map title="Update Actions" name="Update Actions">
+	<!-- BEGIN CUSTOMIZATION -->
+<a href="SecurityAdmin" vsds="T2R_PREF_DATA" vsaction="saveall" name="T2R_PREF_DATASaveAll" id="T2R_PREF_DATASaveAll" title="Save All" accesskey="5">Save</a>
+<a href="SecurityAdmin" vsds="T2R_PREF_DATA" vsaction="undoall" name="T2R_PREF_DATAUndoAll" id="T2R_PREF_DATAUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="SecurityAdmin" vsds="T2R_PREF_DATA" vsaction="delete" id="T2R_PREF_DATAdelete" name="T2R_PREF_DATAdelete" title="Delete Selected Row" accesskey="7">Delete</a>
+<!--a href="SecurityAdmin" vsds="T2R_PREF_DATA" vsaction="insert" id="T2R_PREF_DATAinsert" name="T2R_PREF_DATAinsert" title="Insert New Row" accesskey="I">Insert</a-->
+<!-- END CUSTOMIZATION -->
+    </ams_map></td>
+
+  <td><ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="SecurityAdmin" vsds="T2R_PREF_DATA" vsaction="11" name="T2R_PREF_DATACopyLine" id="T2R_PREF_DATACopyLine" title="Copy Selected Row" accesskey="C">Copy</a>
+<a href="SecurityAdmin" vsds="T2R_PREF_DATA" vsaction="12" name="T2R_PREF_DATAPasteLine" id="T2R_PREF_DATAPasteLine" title="Paste Copied Row" accesskey="8">Paste</a>
+  </ams_map></td>
+
+<td><div name="T2R_PREF_DATAGridNav" id="T2R_PREF_DATAGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+         <a href="SecurityAdmin" vsds="T2R_PREF_DATA" vsaction="firstpage" name="T2R_PREF_DATAfirstpage" id="T2R_PREF_DATAfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+         <a href="SecurityAdmin" vsds="T2R_PREF_DATA" vsaction="prevpage" name="T2R_PREF_DATAprevpage" id="T2R_PREF_DATAprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+         <a href="SecurityAdmin" vsds="T2R_PREF_DATA" vsaction="nextpage" id="T2R_PREF_DATAnextpage" name="T2R_PREF_DATAnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+         <a href="SecurityAdmin" vsds="T2R_PREF_DATA" vsaction="lastpage" id="T2R_PREF_DATAlastpage" name="T2R_PREF_DATAlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+
+    </tr>
+  </table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T2R_PREF_DATA', new Array(), new Array() ) ;
+    
+  -->
+  </script>
+ 
+<!-- BEGIN CUSTOMIZATION -->
+<!-- Following are links to send actions that originated from the Grid to the page -->
+<a id="btnNavToDoc" name="btnNavToDoc" href="SecurityAdmin" vsds="(None)" vsaction="1"></a>
+<!-- END CUSTOMIZATION -->
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

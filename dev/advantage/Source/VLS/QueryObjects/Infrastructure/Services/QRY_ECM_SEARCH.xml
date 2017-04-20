@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0677437659.Administrator.0000"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="False"
+	ChildMostDataObject="R_ADV_EXT_MAPPING"
+	DistinctRowsOnly="False"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[SELECT R_ADV_EXT_MAPPING.EXT_SYS_COL_NM AS EXT_SYS_COL_NM, R_ADV_EXT_MAPPING.ADV_ATTR AS ADV_ATTR, R_ADV_EXT_MAPPING.ADV_COMP AS ADV_COMP, R_ADV_EXT_MAPPING.ADV_SYS_TYP AS ADV_SYS_TYP, R_ADV_EXT_MAPPING.EXT_SYS_TYP AS EXT_SYS_TYP, R_ADV_FLDS_INFO.ADV_ATTR_NM AS ADV_ATTR_NM, R_ADV_FLDS_INFO.ADV_ATTR_NM_UP AS ADV_ATTR_NM_UP, R_ADV_FLDS_INFO.DATA_TYP AS DATA_TYP, R_ADV_FLDS_INFO.DATA_SIZE AS DATA_SIZE FROM <dbschema>.R_ADV_EXT_MAPPING R_ADV_EXT_MAPPING, <dbschema>.R_ADV_FLDS_INFO R_ADV_FLDS_INFO  WHERE R_ADV_FLDS_INFO.ADV_SYS_TYP = R_ADV_EXT_MAPPING.ADV_SYS_TYP  AND R_ADV_FLDS_INFO.ADV_COMP = R_ADV_EXT_MAPPING.ADV_COMP  AND R_ADV_FLDS_INFO.ADV_ATTR = R_ADV_EXT_MAPPING.ADV_ATTR ]]></RuntimeSql>
+	<Where><![CDATA[]]></Where>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="R_ADV_EXT_MAPPING"
+			Alias="R_ADV_EXT_MAPPING"
+		/>
+
+		<DataObject
+			DataObjectName="R_ADV_FLDS_INFO"
+			Alias="R_ADV_FLDS_INFO"
+		/>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="EXT_SYS_COL_NM"
+			Alias="EXT_SYS_COL_NM"
+			AggregationType="None"
+			SourceDataObject="R_ADV_EXT_MAPPING"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ADV_ATTR"
+			Alias="ADV_ATTR"
+			AggregationType="None"
+			SourceDataObject="R_ADV_EXT_MAPPING"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ADV_COMP"
+			Alias="ADV_COMP"
+			AggregationType="None"
+			SourceDataObject="R_ADV_EXT_MAPPING"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ADV_SYS_TYP"
+			Alias="ADV_SYS_TYP"
+			AggregationType="None"
+			SourceDataObject="R_ADV_EXT_MAPPING"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EXT_SYS_TYP"
+			Alias="EXT_SYS_TYP"
+			AggregationType="None"
+			SourceDataObject="R_ADV_EXT_MAPPING"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ADV_ATTR_NM"
+			Alias="ADV_ATTR_NM"
+			AggregationType="None"
+			SourceDataObject="R_ADV_FLDS_INFO"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ADV_ATTR_NM_UP"
+			Alias="ADV_ATTR_NM_UP"
+			AggregationType="None"
+			SourceDataObject="R_ADV_FLDS_INFO"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DATA_TYP"
+			Alias="DATA_TYP"
+			AggregationType="None"
+			SourceDataObject="R_ADV_FLDS_INFO"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DATA_SIZE"
+			Alias="DATA_SIZE"
+			AggregationType="None"
+			SourceDataObject="R_ADV_FLDS_INFO"
+			Persistent="True"
+		/>
+
+	</Attributes>
+	<Joins
+		LeftDataObject="R_ADV_FLDS_INFO"
+		RightDataObject="R_ADV_EXT_MAPPING"
+		JoinType="Equal"
+		>
+		<ColumnSet
+			LeftAttribute="R_ADV_FLDS_INFO.ADV_SYS_TYP"
+			RightAttribute="R_ADV_EXT_MAPPING.ADV_SYS_TYP"
+		/>
+		<ColumnSet
+			LeftAttribute="R_ADV_FLDS_INFO.ADV_COMP"
+			RightAttribute="R_ADV_EXT_MAPPING.ADV_COMP"
+		/>
+		<ColumnSet
+			LeftAttribute="R_ADV_FLDS_INFO.ADV_ATTR"
+			RightAttribute="R_ADV_EXT_MAPPING.ADV_ATTR"
+		/>
+	</Joins>
+
+	<RelsToParentDataObjects>
+		<RelToParentDO
+			RelToParentDO="R_ADV_EXT_TYP(R_ADV_EXT_TYP)-R_ADV_EXT_MAPPING(R_ADV_EXT_MAPPING)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_ADV_EXT_MAPPING"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="ADV_SYS_TYP"
+							ChildAttribute="ADV_SYS_TYP"
+							/>
+					<AttributePair
+							ParentAttribute="EXT_SYS_TYP"
+							ChildAttribute="EXT_SYS_TYP"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+		<RelToParentDO
+			RelToParentDO="R_ADV_FLDS_INFO(R_ADV_FLDS_INFO)-R_ADV_EXT_MAPPING(R_ADV_EXT_MAPPING)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_ADV_EXT_MAPPING"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="ADV_SYS_TYP"
+							ChildAttribute="ADV_SYS_TYP"
+							/>
+					<AttributePair
+							ParentAttribute="ADV_COMP"
+							ChildAttribute="ADV_COMP"
+							/>
+					<AttributePair
+							ParentAttribute="ADV_ATTR"
+							ChildAttribute="ADV_ATTR"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+		<RelToParentDO
+			RelToParentDO="R_EXTERNAL_METADATA(R_EXTERNAL_METADATA)-R_ADV_EXT_MAPPING(R_ADV_EXT_MAPPING)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_ADV_EXT_MAPPING"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="EXT_SYS_TYP"
+							ChildAttribute="EXT_SYS_TYP"
+							/>
+					<AttributePair
+							ParentAttribute="EXT_SYS_COL_NM"
+							ChildAttribute="EXT_SYS_COL_NM"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+	</RelsToParentDataObjects>
+
+</QueryObject>

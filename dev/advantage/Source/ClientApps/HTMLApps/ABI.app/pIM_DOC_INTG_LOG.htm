@@ -1,0 +1,414 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Document Integration Log</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="ABI" method="post" vsform="true" name="pIM_DOC_INTG_LOG">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Document Integration Log">Document Integration Log</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+      
+      
+ 
+
+  
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+      <a href="ABI" vsds="T1V_IM_DOC_INTG_LOG" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+      <a href="ABI" vsds="T1V_IM_DOC_INTG_LOG" vsaction="clearquery" name="T1V_IM_DOC_INTG_LOGclearquery" id="T1V_IM_DOC_INTG_LOGclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+           
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1IM_RUN_SEQ_NO" title="Flow Sequence No">Flow Sequence No :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1IM_RUN_SEQ_NO" id="txtT1IM_RUN_SEQ_NO" 
+               size="15"
+ vsds="T1V_IM_DOC_INTG_LOG" vsdf="IM_RUN_SEQ_NO" vsdisplaymode="Query" 
+ value="IM_RUN_SEQ_NO" title="Flow Sequence No">
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_CD" title="Doc Code">Doc Code :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_CD" id="txtT1DOC_CD" 
+            size="15"
+ vsds="T1V_IM_DOC_INTG_LOG" vsdf="DOC_CD" vsdisplaymode="Query" 
+ value="DOC_CD" title="Doc Code">
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_DEPT_CD" title="Doc Dept">Doc Dept :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_DEPT_CD" id="txtT1DOC_DEPT_CD" 
+         size="6"
+ vsds="T1V_IM_DOC_INTG_LOG" vsdf="DOC_DEPT_CD" vsdisplaymode="Query" 
+ value="DOC_DEPT_CD" title="Doc Dept">
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_ID" title="Doc ID">Doc ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_ID" id="txtT1DOC_ID" 
+            size="20"
+ vsds="T1V_IM_DOC_INTG_LOG" vsdf="DOC_ID" vsdisplaymode="Query" 
+ value="DOC_ID" title="Doc ID">
+        </td>
+      </tr>
+    
+    
+        </table></td><td class="advscalarcol"><table class="advscalar">
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_VERS_NO" title="Doc Version Number">Doc Version Number :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_VERS_NO" id="txtT1DOC_VERS_NO" 
+            size="10"
+ vsds="T1V_IM_DOC_INTG_LOG" vsdf="DOC_VERS_NO" vsdisplaymode="Query" 
+ value="DOC_VERS_NO" title="Doc Version Number">
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1IM_DOC_STA" title="Document Integration Status">Document Integration Status :</label></td>
+   
+        <td class="val">
+          <select name="txtT1IM_DOC_STA" id="txtT1IM_DOC_STA" vsds="T1V_IM_DOC_INTG_LOG" vsdf="IM_DOC_STA" vsdisplaymode="Query" size="1" vscodetable="CVL_IM_DOC_STA" title="Document Integration Status">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1IM_RSRC_ID" title="Integration Resource ID">Integration Resource ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1IM_RSRC_ID" id="txtT1IM_RSRC_ID" 
+               size="15"
+ vsds="T1V_IM_DOC_INTG_LOG" vsdf="IM_RSRC_ID" vsdisplaymode="Query" 
+ value="IM_RSRC_ID" title="Integration Resource ID">
+        </td>
+      </tr>
+    
+    
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  
+  
+
+  
+  <input type="hidden" name="T1V_IM_DOC_INTG_LOG_Currency" value="">
+  <input type="hidden" name="T1V_IM_DOC_INTG_LOG_Old_Currency" value="">
+  <table name="tblT1V_IM_DOC_INTG_LOG" id="tblT1V_IM_DOC_INTG_LOG" class="advgrid" vsds="T1V_IM_DOC_INTG_LOG">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="ABI" vsaction="sort" vsds="T1V_IM_DOC_INTG_LOG" 
+    vsdf="IM_RUN_SEQ_NO"
+ name="T1IM_RUN_SEQ_NOsort" id="T1IM_RUN_SEQ_NOsort" title="Sort By Flow Sequence No">Flow Sequence No</a></th>
+      
+        <th 
+><span id="T1SRVC_NMsortGridLabel" name="T1SRVC_NMsortGridLabel" vsdf="SRVC_NM" title="Service Name">Service Name</span></th>
+      
+        <th 
+><span id="T1RUN_IDsortGridLabel" name="T1RUN_IDsortGridLabel" vsdf="RUN_ID" title="Flow ID">Flow ID</span></th>
+      
+        <th 
+><a href="ABI" vsaction="sort" vsds="T1V_IM_DOC_INTG_LOG" 
+    vsdf="DOC_CD"
+ name="T1DOC_CDsort" id="T1DOC_CDsort" title="Sort By Doc Code">Doc Code</a></th>
+      
+        <th 
+><a href="ABI" vsaction="sort" vsds="T1V_IM_DOC_INTG_LOG" 
+    vsdf="DOC_DEPT_CD"
+ name="T1DOC_DEPT_CDsort" id="T1DOC_DEPT_CDsort" title="Sort By Doc Dept">Doc Dept</a></th>
+      
+        <th 
+><a href="ABI" vsaction="sort" vsds="T1V_IM_DOC_INTG_LOG" 
+    vsdf="DOC_ID"
+ name="T1DOC_IDsort" id="T1DOC_IDsort" title="Sort By Doc ID">Doc ID</a></th>
+      
+        <th 
+><a href="ABI" vsaction="sort" vsds="T1V_IM_DOC_INTG_LOG" 
+    vsdf="DOC_VERS_NO"
+ name="T1DOC_VERS_NOsort" id="T1DOC_VERS_NOsort" title="Sort By Doc Version Number">Doc Version Number</a></th>
+      
+        <th 
+><span id="T1CREATE_USR_IDsortGridLabel" name="T1CREATE_USR_IDsortGridLabel" vsdf="CREATE_USR_ID" title="Created User ID">Created User ID</span></th>
+      
+        <th 
+><span id="T1CREATE_DTsortGridLabel" name="T1CREATE_DTsortGridLabel" vsdf="CREATE_DT" title="Created Date/Time">Created Date/Time</span></th>
+      
+        <th 
+><span id="T1LAST_MOD_USR_IDsortGridLabel" name="T1LAST_MOD_USR_IDsortGridLabel" vsdf="LAST_MOD_USR_ID" title="Last Modified User ID">Last Modified User ID</span></th>
+      
+        <th 
+><a href="ABI" vsaction="sort" vsds="T1V_IM_DOC_INTG_LOG" 
+    vsdf="LAST_MOD_DT"
+ name="T1LAST_MOD_DTsort" id="T1LAST_MOD_DTsort" title="Sort By Last Modified Date/Time">Last Modified Date/Time</a></th>
+      
+        <th 
+><span id="T1IM_DOC_STAsortGridLabel" name="T1IM_DOC_STAsortGridLabel" vsdf="IM_DOC_STA" title="Document Integration Status">Document Integration Status</span></th>
+      
+        <th 
+><span id="T1IM_RSRC_IDsortGridLabel" name="T1IM_RSRC_IDsortGridLabel" vsdf="IM_RSRC_ID" title="Integration Resource ID">Integration Resource ID</span></th>
+      
+        <th 
+><span id="T1IM_RSRC_TYPsortGridLabel" name="T1IM_RSRC_TYPsortGridLabel" vsdf="IM_RSRC_TYP" title="Integration Resource Type">Integration Resource Type</span></th>
+      
+        <th 
+><span id="T1IM_RSRC_NMsortGridLabel" name="T1IM_RSRC_NMsortGridLabel" vsdf="IM_RSRC_NM" title="Integration Resource Name">Integration Resource Name</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1V_IM_DOC_INTG_LOGvscurrency" id="T1V_IM_DOC_INTG_LOGvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1V_IM_DOC_INTG_LOG" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1IM_RUN_SEQ_NO" vsds="T1V_IM_DOC_INTG_LOG" vsdf="IM_RUN_SEQ_NO" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1SRVC_NM" vsds="T1V_IM_DOC_INTG_LOG" vsdf="SRVC_NM" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1RUN_ID" vsds="T1V_IM_DOC_INTG_LOG" vsdf="RUN_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_CD" vsds="T1V_IM_DOC_INTG_LOG" vsdf="DOC_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_DEPT_CD" vsds="T1V_IM_DOC_INTG_LOG" vsdf="DOC_DEPT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_ID" vsds="T1V_IM_DOC_INTG_LOG" vsdf="DOC_ID" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1DOC_VERS_NO" vsds="T1V_IM_DOC_INTG_LOG" vsdf="DOC_VERS_NO" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1CREATE_USR_ID" vsds="T1V_IM_DOC_INTG_LOG" vsdf="CREATE_USR_ID" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1CREATE_DT" vsds="T1V_IM_DOC_INTG_LOG" vsdf="CREATE_DT" 
+    vsformat="MM/dd/yyyy hh:mm:ss aa"
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1LAST_MOD_USR_ID" vsds="T1V_IM_DOC_INTG_LOG" vsdf="LAST_MOD_USR_ID" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1LAST_MOD_DT" vsds="T1V_IM_DOC_INTG_LOG" vsdf="LAST_MOD_DT" 
+    vsformat="MM/dd/yyyy hh:mm:ss aa"
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1V_IM_DOC_INTG_LOG" vsdf="IM_DOC_STA" vscodetable="CVL_IM_DOC_STA">
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1IM_RSRC_ID" vsds="T1V_IM_DOC_INTG_LOG" vsdf="IM_RSRC_ID" 
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1V_IM_DOC_INTG_LOG" vsdf="IM_RSRC_TYP" vscodetable="CVL_IM_RSRC_TYP">
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1IM_RSRC_NM" vsds="T1V_IM_DOC_INTG_LOG" vsdf="IM_RSRC_NM" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+      
+<td><div name="T1V_IM_DOC_INTG_LOGGridNav" id="T1V_IM_DOC_INTG_LOGGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="ABI" vsds="T1V_IM_DOC_INTG_LOG" vsaction="firstpage" name="T1V_IM_DOC_INTG_LOGfirstpage" id="T1V_IM_DOC_INTG_LOGfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="ABI" vsds="T1V_IM_DOC_INTG_LOG" vsaction="prevpage" name="T1V_IM_DOC_INTG_LOGprevpage" id="T1V_IM_DOC_INTG_LOGprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="ABI" vsds="T1V_IM_DOC_INTG_LOG" vsaction="nextpage" id="T1V_IM_DOC_INTG_LOGnextpage" name="T1V_IM_DOC_INTG_LOGnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="ABI" vsds="T1V_IM_DOC_INTG_LOG" vsaction="lastpage" id="T1V_IM_DOC_INTG_LOGlastpage" name="T1V_IM_DOC_INTG_LOGlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+   
+        <a name="btnT2pDOC_MSG_IntegrationManager" href="ABI" vsaction="pagetransition" id="btnT2pDOC_MSG_IntegrationManager" vsds="(None)" vsnavigation="T2pDOC_MSG_IntegrationManager" title="Navigation to Document Integration Messages">Document Integration Messages</a>
+   
+        <a name="btnT3pIM_SRVC_FLOW_RSRC_Generic" href="ABI" vsaction="pagetransition" id="btnT3pIM_SRVC_FLOW_RSRC_Generic" vsds="(None)" vsnavigation="T3pIM_SRVC_FLOW_RSRC_Generic" title="Navigation to Integration Resources">Integration Resources</a>
+   
+        <a name="btnT4pIM_SRVC_FLOW_All" href="ABI" vsaction="pagetransition" id="btnT4pIM_SRVC_FLOW_All" vsds="(None)" vsnavigation="T4pIM_SRVC_FLOW_All" title="Navigation to Service Flow">Service Flow</a>
+      </td>
+    </tr>
+  </table>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="ABI" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

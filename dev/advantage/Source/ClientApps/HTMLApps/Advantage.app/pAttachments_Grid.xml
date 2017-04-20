@@ -1,0 +1,370 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="Default"
+	PositionTop="1085.938"
+	PositionLeft="864.0625"
+	PositionWidth="148.4375"
+	PositionHeight="43.75"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSOtherPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-167691184"
+	>
+	<FormCaption><![CDATA[Attachments]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="false"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value="&quot;true&quot;"
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="IN_OBJ_ATT_CTLG"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGenericGridDisplay"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="False"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="OBJ_ATT_UNID" />
+				<RSDefaultAttribute ID="2" Name="OBJ_ATT_PG_UNID" />
+				<RSDefaultAttribute ID="3" Name="OBJ_ATT_SG_UNID" />
+				<RSDefaultAttribute ID="4" Name="OBJ_ATT_NM" />
+				<RSDefaultAttribute ID="5" Name="OBJ_ATT_DT" />
+				<RSDefaultAttribute ID="6" Name="OBJ_ATT_USER_ID" />
+				<RSDefaultAttribute ID="7" Name="OBJ_ATT_DSCR" />
+				<RSDefaultAttribute ID="8" Name="OBJ_ATT_ST" />
+				<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="10" Name="OBJ_ATT_TYP" />
+				<RSDefaultAttribute ID="11" Name="OBJ_ATT_SEQ_NO" />
+				<RSDefaultAttribute ID="12" Name="OBJ_ATT_ALT_UNID" />
+				<RSDefaultAttribute ID="13" Name="OBJ_ATT_ALT_ST" />
+				<RSDefaultAttribute ID="14" Name="OBJ_ATT_DEL_USID" />
+				<RSDefaultAttribute ID="15" Name="OBJ_ATT_DEL_DT" />
+				<RSDefaultAttribute ID="16" Name="TBL_LAST_DT" />
+				<RSDefaultAttribute ID="17" Name="OBJ_ATT_COMP_NM" />
+				<RSDefaultAttribute ID="18" Name="OBJ_ATT_COMP_DESC" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="OBJ_ATT_UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_PG_UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_SG_UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_NM" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="OBJ_ATT_TYP" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyCodedValues2" />
+				<RSAttribute Name="OBJ_ATT_DT" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="OBJ_ATT_USER_ID" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyText2" />
+				<RSAttribute Name="OBJ_ATT_ST" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyCodedValues2" />
+				<RSAttribute Name="OBJ_ATT_DSCR" Displayed="True" UnPlaced="False" Archetype="DisplayOnlyMemo" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_SEQ_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_ALT_UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_ALT_ST" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_DEL_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_DEL_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="OBJ_ATT_COMP_NM" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="OBJ_ATT_COMP_DESC" Displayed="False" UnPlaced="True" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="OBJ_ATT_UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_PG_UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_SG_UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_TYP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_DT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_USER_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_ST" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_DSCR" Displayed="False" UnPlaced="False" Archetype="GridDisplayOnlyMemo" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_SEQ_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_ALT_UNID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_ALT_ST" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_DEL_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OBJ_ATT_DEL_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="OBJ_ATT_COMP_NM" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="OBJ_ATT_COMP_DESC" Displayed="False" UnPlaced="True" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Adjacent_Fields"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value="%OBJ_ATT_DSCR%"
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="SummaryCaption"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+	</RecordSource>
+</Form>

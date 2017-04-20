@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="DeleteChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="10"
+		ChildRoleName="Workgroups"
+		ParentRoleName="Header"
+		>
+		<AscendCaption><![CDATA[USER_DOC_HDR]]> </AscendCaption>
+		<DescendCaption><![CDATA[USER_DOC_WKGP(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="DOC_CD"
+				ChildAttribute="DOC_CD"
+			/>
+			<AttributePair
+				ParentAttribute="DOC_DEPT_CD"
+				ChildAttribute="DOC_DEPT_CD"
+			/>
+			<AttributePair
+				ParentAttribute="DOC_ID"
+				ChildAttribute="DOC_ID"
+			/>
+			<AttributePair
+				ParentAttribute="DOC_VERS_NO"
+				ChildAttribute="DOC_VERS_NO"
+			/>
+		</AttributePairs>
+	</Relationship>
+</Relationships>

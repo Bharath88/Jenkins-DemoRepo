@@ -1,0 +1,398 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="AMSWorklistGridSelect"
+	PositionTop="422"
+	PositionLeft="513"
+	PositionWidth="149"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.workflow.AMSWorklistPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-336645022"
+	>
+	<FormCaption><![CDATA[Worklist]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="Search"
+			Value="false"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="InfoMsg"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="WF_WRK_LST_QRY"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSWorklistGridSelect"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="True"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="2" Name="DOC_ID" />
+				<RSDefaultAttribute ID="3" Name="ASGN_DT" />
+				<RSDefaultAttribute ID="4" Name="APRV_LVL" />
+				<RSDefaultAttribute ID="5" Name="REAS_DISP" />
+				<RSDefaultAttribute ID="6" Name="CMNT_DISP" />
+				<RSDefaultAttribute ID="7" Name="WRK_LST_TYP" />
+				<RSDefaultAttribute ID="8" Name="WRK_LST_ID" />
+				<RSDefaultAttribute ID="9" Name="ASSIGNEE" />
+				<RSDefaultAttribute ID="10" Name="ASSIGNEE_FL" />
+				<RSDefaultAttribute ID="11" Name="ASSIGNEE_NM" />
+				<RSDefaultAttribute ID="12" Name="DISP_PG" />
+				<RSDefaultAttribute ID="13" Name="REAS" />
+				<RSDefaultAttribute ID="14" Name="CMNT" />
+				<RSDefaultAttribute ID="15" Name="CMNT_TXT" />
+				<RSDefaultAttribute ID="16" Name="FWD_USID" />
+				<RSDefaultAttribute ID="17" Name="FWD_DT" />
+				<RSDefaultAttribute ID="19" Name="DOC_VERS_NO" />
+				<RSDefaultAttribute ID="18" Name="LOCK_USID" />
+				<RSDefaultAttribute ID="1" Name="DOC_CD" />
+				<RSDefaultAttribute ID="20" Name="DOC_DEPT_CD" />
+				<RSDefaultAttribute ID="21" Name="DOC_TYP" />
+				<RSDefaultAttribute ID="22" Name="DOC_CAT" />
+				<RSDefaultAttribute ID="23" Name="APPL_ID" />
+				<RSDefaultAttribute ID="24" Name="LOCK_USID_UP" />
+				<RSDefaultAttribute ID="25" Name="SLF_APRV_RSCT" />
+				<RSDefaultAttribute ID="26" Name="DOC_CREA_USID" />
+				<RSDefaultAttribute ID="27" Name="DOC_SBMT_ID" />
+				<RSDefaultAttribute ID="28" Name="DOC_CMNT_FL" />
+				<RSDefaultAttribute ID="29" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="30" Name="ESCL_ITEM" />
+				<RSDefaultAttribute ID="31" Name="PRIORITY" />
+				<RSDefaultAttribute ID="32" Name="PRIORITY_REASON" />
+				<RSDefaultAttribute ID="35" Name="ESCL_LEVEL" />
+				<RSDefaultAttribute ID="36" Name="WARN_ELIG_DT" />
+				<RSDefaultAttribute ID="33" Name="ESCL_1_ELIG_DT" />
+				<RSDefaultAttribute ID="34" Name="ESCL_2_ELIG_DT" />
+				<RSDefaultAttribute ID="37" Name="DOC_PHASE_CD" />
+				<RSDefaultAttribute ID="38" Name="DOC_ACTU_AM" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="APRV_LVL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_DEPT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ASGN_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="REAS_DISP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CMNT_DISP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="WRK_LST_TYP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="WRK_LST_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASSIGNEE" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASSIGNEE_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASSIGNEE_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DISP_PG" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="REAS" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CMNT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CMNT_TXT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FWD_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FWD_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LOCK_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_TYP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CAT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LOCK_USID_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SLF_APRV_RSCT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CREA_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_SBMT_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_CMNT_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ESCL_ITEM" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="PRIORITY" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="PRIORITY_REASON" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="ESCL_LEVEL" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="WARN_ELIG_DT" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="ESCL_1_ELIG_DT" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="ESCL_2_ELIG_DT" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="DOC_PHASE_CD" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="DOC_ACTU_AM" Displayed="False" UnPlaced="True" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="APRV_LVL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_DEPT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_ID" Displayed="True" UnPlaced="False" Archetype="AMSDocRefForGrid" />
+				<RSAttribute Name="DOC_CMNT_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_CREA_USID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_SBMT_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ASGN_DT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="REAS_DISP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="CMNT_DISP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="WRK_LST_TYP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="WRK_LST_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASSIGNEE" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASSIGNEE_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASSIGNEE_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DISP_PG" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="REAS" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CMNT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CMNT_TXT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FWD_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FWD_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LOCK_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_TYP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CAT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LOCK_USID_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SLF_APRV_RSCT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ESCL_ITEM" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="PRIORITY" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="PRIORITY_REASON" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="ESCL_LEVEL" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="WARN_ELIG_DT" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="ESCL_1_ELIG_DT" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="ESCL_2_ELIG_DT" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="DOC_PHASE_CD" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="DOC_ACTU_AM" Displayed="False" UnPlaced="True" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxCSVRowsBeforeZip"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="DynamicGridAttrib"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCount"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCountMsg"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="OverrideNumRowsPerPage"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="ShowSearchPopup"
+				Value=""
+			/>
+			<Property
+				Name="UseDBHint"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="New_Column_Fields"
+				Value=""
+			/>
+			<Property
+				Name="Tab_10_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_10_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_1_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_1_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_2_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_2_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_3_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_3_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_4_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_4_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_5_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_5_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_6_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_6_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_7_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_7_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_8_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_8_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_9_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_9_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_Delimiter_Fields"
+				Value=""
+			/>
+		</ArchetypeExtendedProperties>
+	</RecordSource>
+</Form>

@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0484744658.sliu.0000"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="False"
+	ChildMostDataObject="DOC_CMNT"
+	DistinctRowsOnly="False"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[SELECT DOC_CMNT.CMNT_NO AS CMNT_NO, DOC_CMNT.DOC_CD AS DOC_CD, DOC_CMNT.DOC_DEPT_CD AS DOC_DEPT_CD, DOC_CMNT.DOC_ID AS DOC_ID, DOC_CMNT.DOC_VERS_NO AS DOC_VERS_NO, DOC_CMNT.DOC_PHASE_CD AS DOC_PHASE_CD, DOC_CMNT.CMNT_USER_ID AS CMNT_USER_ID, DOC_CMNT.CMNT_SUB AS CMNT_SUB, DOC_CMNT.CMNT_MSG AS CMNT_MSG, DOC_CMNT.CMNT_DT AS CMNT_DT, DOC_CMNT.CMNT_SUPRS_FL AS CMNT_SUPRS_FL, DOC_CMNT.CMNT_USER_ID_UP AS CMNT_USER_ID_UP FROM <dbschema>.DOC_CMNT DOC_CMNT  ORDER BY DOC_CMNT.CMNT_DT Desc]]></RuntimeSql>
+	<Where><![CDATA[]]></Where>
+	<OrderBy>
+	<OrderByAttribute
+		Name="DOC_CMNT.CMNT_DT"
+		Direction="Descending"
+	/>
+	</OrderBy>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="DOC_CMNT"
+			Alias="DOC_CMNT"
+		/>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="CMNT_NO"
+			Alias="CMNT_NO"
+			AggregationType="None"
+			SourceDataObject="DOC_CMNT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DOC_CD"
+			Alias="DOC_CD"
+			AggregationType="None"
+			SourceDataObject="DOC_CMNT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DOC_DEPT_CD"
+			Alias="DOC_DEPT_CD"
+			AggregationType="None"
+			SourceDataObject="DOC_CMNT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DOC_ID"
+			Alias="DOC_ID"
+			AggregationType="None"
+			SourceDataObject="DOC_CMNT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DOC_VERS_NO"
+			Alias="DOC_VERS_NO"
+			AggregationType="None"
+			SourceDataObject="DOC_CMNT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DOC_PHASE_CD"
+			Alias="DOC_PHASE_CD"
+			AggregationType="None"
+			SourceDataObject="DOC_CMNT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="CMNT_USER_ID"
+			Alias="CMNT_USER_ID"
+			AggregationType="None"
+			SourceDataObject="DOC_CMNT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="CMNT_SUB"
+			Alias="CMNT_SUB"
+			AggregationType="None"
+			SourceDataObject="DOC_CMNT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="CMNT_MSG"
+			Alias="CMNT_MSG"
+			AggregationType="None"
+			SourceDataObject="DOC_CMNT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="CMNT_DT"
+			Alias="CMNT_DT"
+			AggregationType="None"
+			SourceDataObject="DOC_CMNT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="CMNT_SUPRS_FL"
+			Alias="CMNT_SUPRS_FL"
+			AggregationType="None"
+			SourceDataObject="DOC_CMNT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="CMNT_USER_ID_UP"
+			Alias="CMNT_USER_ID_UP"
+			AggregationType="None"
+			SourceDataObject="DOC_CMNT"
+			Persistent="True"
+		/>
+
+	</Attributes>
+</QueryObject>

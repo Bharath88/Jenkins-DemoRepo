@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="DeleteChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="R_PRNT_JOB_PARMs"
+		ParentRoleName="R_PRNT_JOB1"
+		>
+		<AscendCaption><![CDATA[R_PRNT_JOB]]> </AscendCaption>
+		<DescendCaption><![CDATA[R_PRNT_JOB_PARM(s)]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[ ]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[ ]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[ ]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="APPL_RSRC_ID"
+				ChildAttribute="APPL_RSRC_ID"
+			/>
+			<AttributePair
+				ParentAttribute="PRNT_JOB_CD"
+				ChildAttribute="PRNT_JOB_CD"
+			/>
+		</AttributePairs>
+	</Relationship>
+</Relationships>

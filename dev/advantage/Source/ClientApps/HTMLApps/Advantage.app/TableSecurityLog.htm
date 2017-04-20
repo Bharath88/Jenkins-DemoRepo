@@ -1,0 +1,216 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Table Security Log</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="TableSecurityLog">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Table Security Log">Table Security Log</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+
+<a href="Advantage" vsds="T1IN_SEC_VLTN_LOG" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+
+<a href="Advantage" vsds="T1IN_SEC_VLTN_LOG" vsaction="clearquery" name="T1IN_SEC_VLTN_LOGclearquery" id="T1IN_SEC_VLTN_LOGclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1PROC_RSRC_NM_UP" title="Resource Name">Resource Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1PROC_RSRC_NM_UP" id="txtT1PROC_RSRC_NM_UP"
+            size="20"
+ vsds="T1IN_SEC_VLTN_LOG" vsdf="PROC_RSRC_NM_UP" vsdisplaymode="Query"
+ value="PROC_RSRC_NM_UP" title="Resource Name">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1LOG_DT_TM" title="Logged At">Logged At :</label></td>
+        <td class="val">
+<!--BEGIN CUSTOMIZATION -->
+<!--
+          <input type="text" id="txtT1LOG_DT_TM" name="txtT1LOG_DT_TM" size="11" vsds="T1IN_SEC_VLTN_LOG" vsdisplaymode="Query" vsdf="LOG_DT_TM"
+    vsformat="MM-dd-yyyy HH:mm:ss"
+ value="LOG_DT_TM" title="Logged At">
+-->
+          <input type="text" id="txtT1LOG_DT_TM" name="txtT1LOG_DT_TM" size="11" vsds="T1IN_SEC_VLTN_LOG" vsdisplaymode="Query" vsdf="LOG_DT_TM"
+    vsformat="Short Date"
+ value="LOG_DT_TM" title="Logged At">
+<!--END CUSTOMIZATION -->
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.TableSecurityLog.txtT1LOG_DT_TM.value, 'txtT1LOG_DT_TM', document.TableSecurityLog.txtT1LOG_DT_TM);event.returnValue=false;return false;" title="Select Logged At: Will open in a new window">
+            <img src="../AMSImages/ADVCalendar.gif"
+ alt="Select Logged At: Will open in a new window" title="Select Logged At: Will open in a new window">
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1USID_UP" title="User Id.">User Id. :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1USID_UP" id="txtT1USID_UP"
+            size="20"
+ vsds="T1IN_SEC_VLTN_LOG" vsdf="USID_UP" vsdisplaymode="Query"
+ value="USID_UP" title="User Id.">
+        </td>
+      </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+  <input type="hidden" name="T1IN_SEC_VLTN_LOG_Currency" value="">
+  <input type="hidden" name="T1IN_SEC_VLTN_LOG_Old_Currency" value="">
+  <table name="tblT1IN_SEC_VLTN_LOG" id="tblT1IN_SEC_VLTN_LOG" class="advgrid" vsds="T1IN_SEC_VLTN_LOG">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1PROC_RSRC_NMsortGridLabel" name="T1PROC_RSRC_NMsortGridLabel" title="Resource Name">Resource Name</span></th>
+
+        <th
+><span id="T1TBL_KEYsortGridLabel" name="T1TBL_KEYsortGridLabel" title="Key">Key</span></th>
+
+        <th
+><span id="T1LOG_DT_TMsortGridLabel" name="T1LOG_DT_TMsortGridLabel" title="Logged At">Logged At</span></th>
+
+        <th
+><span id="T1USIDsortGridLabel" name="T1USIDsortGridLabel" title="User Id.">User Id.</span></th>
+
+        <th
+><span id="T1MSG_TXTsortGridLabel" name="T1MSG_TXTsortGridLabel" title="Msg. Txt.">Msg. Txt.</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IN_SEC_VLTN_LOGvscurrency" id="T1IN_SEC_VLTN_LOGvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1IN_SEC_VLTN_LOG" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1PROC_RSRC_NM" vsds="T1IN_SEC_VLTN_LOG" vsdf="PROC_RSRC_NM"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1TBL_KEY" vsds="T1IN_SEC_VLTN_LOG" vsdf="TBL_KEY"
+>
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1LOG_DT_TM" vsds="T1IN_SEC_VLTN_LOG" vsdf="LOG_DT_TM"
+    vsformat="MM-dd-yyyy HH:mm:ss"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1USID" vsds="T1IN_SEC_VLTN_LOG" vsdf="USID"
+>
+        </td>
+
+        <td class="memo">
+          <textarea ams_readonly cols="20" rows="2" name="txtT1MSG_TXT" vsds="T1IN_SEC_VLTN_LOG" vsdf="MSG_TXT"
+ title="Msg. Txt."></textarea>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Advantage" vsds="T1IN_SEC_VLTN_LOG" vsaction="firstpage" name="T1IN_SEC_VLTN_LOGfirstpage" id="T1IN_SEC_VLTN_LOGfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T1IN_SEC_VLTN_LOG" vsaction="prevpage" name="T1IN_SEC_VLTN_LOGprevpage" id="T1IN_SEC_VLTN_LOGprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T1IN_SEC_VLTN_LOG" vsaction="nextpage" id="T1IN_SEC_VLTN_LOGnextpage" name="T1IN_SEC_VLTN_LOGnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T1IN_SEC_VLTN_LOG" vsaction="lastpage" id="T1IN_SEC_VLTN_LOGlastpage" name="T1IN_SEC_VLTN_LOGlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

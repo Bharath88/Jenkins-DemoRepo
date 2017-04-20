@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Compose Email Message</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <!-- BEGIN CUSTOMIZATION -->
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/SS/SSUtil.js"></script>
+  <!-- END CUSTOMIZATION -->
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Workflow" method="post" vsform="true" name="pWF_NEW_MSG">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Compose Email Message">Compose Email Message</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="Workflow" vsds="" vsaction="84" title="Back to Previous Page" name="QueryBack" id="QueryBack" accesskey="Z">Back</a>
+  </div>
+
+
+
+  <INPUT type="hidden" name="T1WF_NEW_MSGvscurrency" vsds="T1WF_NEW_MSG" vscurrency="true">
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<ams_map title="Update Actions" name="Update Actions">
+-->
+<a href="Workflow" vsds="T1WF_NEW_MSG" vsaction="saveall" name="T1WF_NEW_MSGSaveAll" id="T1WF_NEW_MSGSaveAll" title="Send Message">Send Message</a>
+<!--
+<a href="Workflow" vsds="T1WF_NEW_MSG" vsaction="undoall" name="T1WF_NEW_MSGUndoAll" id="T1WF_NEW_MSGUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="Workflow" vsds="T1WF_NEW_MSG" vsaction="insert" id="T1WF_NEW_MSGinsert" name="T1WF_NEW_MSGinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+-->
+<!-- END CUSTOMIZATION -->
+      </td>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="Workflow" vsds="T1WF_NEW_MSG" vsaction="first" name="T1WF_NEW_MSGfirst" id="T1WF_NEW_MSGfirst" title="First Record" accesskey="0">First</a>
+
+<a href="Workflow" vsds="T1WF_NEW_MSG" vsaction="prev" name="T1WF_NEW_MSGprev" id="T1WF_NEW_MSGprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="Workflow" vsds="T1WF_NEW_MSG" vsaction="next" name="T1WF_NEW_MSGnext" id="T1WF_NEW_MSGnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="Workflow" vsds="T1WF_NEW_MSG" vsaction="last" name="T1WF_NEW_MSGlast" id="T1WF_NEW_MSGlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+-->
+<!-- END CUSTOMIZATION -->
+
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1MAIL_TO" title="To (Required)">To :</label></td>
+        <td class="val required">
+<!-- BEGIN CUSTOMIZATION -->
+          <input type="text" name="txtT1MAIL_TO" id="txtT1MAIL_TO"
+      ams_max_len="128"
+ value="MAIL_TO"
+            size="60"
+ vsds="T1WF_NEW_MSG" vsdf="MAIL_TO" ShowCodeInfo="" title="To (Required)">
+<!-- END CUSTOMIZATION -->
+<!-- BEGIN CUSTOMIZATION -->
+          <a href="Advantage" vsds=" " vsaction="50" name="displayaddr" id="displayaddr" title="Select To"><img src="../AMSImages/ADVPick.gif" title="Select To" alt="Select To"></a>
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1CC" title="cc">cc :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1CC" id="txtT1CC"
+            size="60"
+ vsds="T1WF_NEW_MSG" vsdf="CC"
+         ams_max_len="128"
+ ShowCodeInfo="" title="cc" value="CC">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1SUBJECT" title="Subject">Subject :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1SUBJECT" id="txtT1SUBJECT"
+            size="60"
+ vsds="T1WF_NEW_MSG" vsdf="SUBJECT"
+         ams_max_len="128"
+ ShowCodeInfo="" title="Subject" value="SUBJECT">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1BODY" title="Message">Message :</label></td>
+        <td class="val memo">
+<!-- BEGIN CUSTOMIZATION -->
+          <textarea cols="60" rows="20" name="txtT1BODY" id="txtT1BODY" vsds="T1WF_NEW_MSG" vsdf="BODY"
+ title="Message" vspreservetag="true"></textarea>
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Workflow" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

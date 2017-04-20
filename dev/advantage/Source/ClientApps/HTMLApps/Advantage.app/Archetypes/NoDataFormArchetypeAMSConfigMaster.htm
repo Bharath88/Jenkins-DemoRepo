@@ -1,0 +1,68 @@
+<JADEArchetype>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>FormCaption</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVPortalStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+</head>
+
+<body class="adv startup configmaster">
+
+  <form action="JadeAppName" method="post" vsform="true" name="ConfigMaster" target='NavTree'>
+
+
+    <table class="toplayout">
+      <tr>
+        <td class="logo">
+          <img name="Logo" id="Logo" border="0" src="Images/PortalADVLogo.gif" alt="CGI ADVANTAGE">
+        </td>
+        <td class="buttons">
+          <table class="buttons">
+            <tr>
+              <td class="buttons">
+                <JADEInclude Archetype="ButtonArchetypeCloseWindow"></JADEInclude>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <table class="bottomlayout">
+      <tr>
+        <td class="welcome"></td>
+        <td class="links"></td>
+      </tr>
+    </table>
+
+
+    <div style="visibility:hidden;display:none;position:absolute;top:-1000em;left:-1000em;">
+      <a href="JadeAppName" name="T2ConfigNavPage" vsds=" " vsaction="pagetransition" vsnavigation="T2ConfigNavPage"></a>
+    </div>
+
+    <JADEInclude Archetype="MiscArchetypeAMSPopupWin"></JADEInclude>
+
+  </form>
+
+</body>
+</html>
+</JADEArchetype>
+<!--JADE_MACRO
+<<ArchetypeVersion 05.06.02.52>>
+<<SetProperty ClassName=com.amsinc.gems.adv.vfc.html.AMSPage>>
+
+<<Begin IncludeButtonArchetypeCloseWindow>>
+  <a href="javascript:top.window.close();" title="Close Window">
+    <img name="CloseWindow" id="CloseWindow" border="0" src="../AMSImages/PortalClose.gif" alt="Close Window">
+  </a>
+<<End Include>>
+
+JADE_MACRO-->

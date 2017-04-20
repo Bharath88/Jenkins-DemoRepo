@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Workspace Navigator</title>
+  <base href>
+  <!-- BEGIN CUSTOMIZATION -->
+  <link REL="STYLESHEET" type="text/css" href="../AMSCSS/default/ADVSecondaryNavigator.css">
+  <!-- END CUSTOMIZATION -->
+  <link REL="STYLESHEET" type="text/css" href="../AMSImages/ADVMenuStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="JS/ADVBFNavPanel.js"></script>
+  <vstext vsds=" " name="BF_NAV_TREE" vspreservetag="true">
+  <script type="text/javascript" language="JavaScript">
+  <!--
+
+      if(window.msBFTREE_WkspNm === undefined)
+      {
+         var msBFTREE_WkspNm = "" ;
+      }
+
+      function BFNAV_WriteBFNavPanel()
+      {
+         document.writeln( '<div>' ) ;
+
+         document.writeln( '<h1 class="navid wksp">' ) ;
+         document.writeln( '<span name="WkspNm" id="WkspNm" title="Workspace: ' + msBFTREE_WkspNm + '">' + msBFTREE_WkspNm + '</span>' ) ;
+         document.writeln( '</h1>' ) ;
+
+         document.writeln( '<h2 id="BFSave" class="toolbaraction save" style="visibility:hidden;display:none;">' ) ;
+         document.writeln( '<a title="Save Business Function" name="SaveBF" id="SaveBF" class="advbfactnlink" href="javascript:BFNAVPANEL_SaveBF();" onclick="if (!UTILS_CheckForTransaction()){event.returnValue = false};">Save</a>' ) ;
+         document.writeln( '</h2>' ) ;
+         document.writeln( '<h2 id="BFRestart" class="toolbaraction restart" style="visibility:hidden;display:none;">' ) ;
+         document.writeln( '<a title="Restart Business Function" name="RestartBF" id="RestartBF" class="advbfactnlink" href="javascript:BFNAVPANEL_RestartBF();" onclick="if (!UTILS_CheckForTransaction()){event.returnValue = false};">Restart</a>' ) ;
+         document.writeln( '</h2>' ) ;
+         document.writeln( '<h2 id="BFSaveAll" class="toolbaraction saveall">' ) ;
+         document.writeln( '<a title="Save Workspace" name="SaveWksp" id="SaveWksp" class="advbfactnlink" href="javascript:BFNAVPANEL_SaveWksp();" onclick="if (!UTILS_CheckForTransaction()){event.returnValue = false};">Save All</a>' ) ;
+         document.writeln( '</h2>' ) ;
+         document.writeln( '<h2 id="BFClose" class="toolbaraction close">' ) ;
+         document.writeln( '<a title="Close Workspace" name="CloseWksp" id="CloseWksp" class="advbfactnlink" href="javascript:BFNAVPANEL_Close();" onclick="if (!UTILS_CheckForTransaction()){event.returnValue = false};">Close</a>' ) ;
+         document.writeln( '</h2>' ) ;
+
+         for ( var liBACount = 0 ; liBACount < msBFTREE_BAs.length ; liBACount++ )
+         {
+           document.writeln( '<h1>' ) ;
+           document.writeln( '<img title="Spacer" name="BA' + msBFTREE_BAs[liBACount][0] + 'Spacer" id="BA' + msBFTREE_BAs[liBACount][0] + 'Spacer" src="../AMSImages/PortalNavNoFolder.gif" alt="Spacer">' ) ;
+           document.writeln( '<a title="Open Business Area: ' + msBFTREE_BAs[liBACount][1] + '" name="OpenBA' + msBFTREE_BAs[liBACount][0] + '" id="OpenBA' + msBFTREE_BAs[liBACount][0] + '" href="javascript:BFNAVPANEL_OpenBA(' + msBFTREE_BAs[liBACount][0] + ');">' + msBFTREE_BAs[liBACount][1] + '</a>' ) ;
+           document.writeln( '</h1>' ) ;
+
+           if ( msBFTREE_BAs[liBACount][3] != null )
+           {
+              for ( var liBFCount = 0 ; liBFCount < msBFTREE_BAs[liBACount][3].length ; liBFCount++ )
+              {
+                 var loBFs = msBFTREE_BAs[liBACount][3] ;
+
+                 document.writeln( '<h2>' ) ;
+                 document.writeln( '<img title="Spacer" name="BF' + msBFTREE_BAs[liBACount][0] + 'Spacer" id="BF' + msBFTREE_BAs[liBACount][0] + 'Spacer" src="../AMSImages/PortalNavNoFolder.gif" alt="Spacer">' ) ;
+                 if ( ( !loBFs[liBFCount][3] ) && ( ( loBFs[liBFCount][4] != null ) && ( loBFs[liBFCount][4].length > 0 ) ) )
+                 {
+                    document.writeln( '<a title="Open Business Function: ' + loBFs[liBFCount][1] + '" name="OpenBF' + msBFTREE_BAs[liBACount][0] + '" id="OpenBF' + msBFTREE_BAs[liBACount][0] + '"' ) ;
+                    document.writeln( ' href="javascript:BFNAVPANEL_OpenBF(' + msBFTREE_BAs[liBACount][0] + ',' + loBFs[liBFCount][0] + ',' ) ;
+                    document.writeln( "'?'" ) ;
+                    document.writeln( ');"' ) ;
+                    document.writeln( '>' + loBFs[liBFCount][1] + '</a>' ) ;
+                 }
+                 else
+                 {
+                    document.writeln( '<span title="Business Function: ' + loBFs[liBFCount][1] + '" name="OpenBF' + msBFTREE_BAs[liBACount][0] + '" id="OpenBF' + msBFTREE_BAs[liBACount][0] + '">' + loBFs[liBFCount][1] + '</span>' ) ;
+                 }
+                 document.writeln( '</h2>' ) ;
+
+                 if ( ( loBFs[liBFCount][3] ) && ( loBFs[liBFCount][4] != null ) )
+                 {
+                    for ( var liBFItemCount=0 ; liBFItemCount < loBFs[liBFCount][4].length ; liBFItemCount++ )
+                    {
+                        var loBFItems = loBFs[liBFCount][4] ;
+
+                        document.writeln( '<h3>' ) ;
+                        switch( loBFItems[liBFItemCount][2] )
+                        {
+                           case 1 :
+                              document.writeln( '<img name="BFItem_' + liBFItemCount + '" id="BFItem_' + liBFItemCount + '" src="../AMSImages/ADVNavVisited.gif" alt="Visited" title="Visited">' ) ;
+                              break ;
+                           case 2 :
+                              document.writeln( '<img name="BFItem_' + liBFItemCount + '" id="BFItem_' + liBFItemCount + '" src="../AMSImages/ADVNavCurr.gif" alt="Current" title="Current">' ) ;
+                              break ;
+                           default :
+                              document.writeln( '<img name="BFItem_' + liBFItemCount + '" id="BFItem_' + liBFItemCount + '" src="../AMSImages/ADVNavUnvisited.gif" alt="Unvisited" title="Unvisited">' ) ;
+                              break ;
+                        }
+                        document.writeln( '<a title="Open Page: ' + loBFItems[liBFItemCount][1] + '" name="OpenBFItem' + liBFItemCount + '" id="OpenBFItem' + liBFItemCount + '" href="javascript:BFNAVPANEL_OpenBFPage(' + liBFItemCount + ',\'' + loBFItems[liBFItemCount][3] + '\');">' + loBFItems[liBFItemCount][1] + '</a>' ) ;
+                        document.writeln( '</h3>' ) ;
+                    }
+                 }
+              }
+           }
+         }
+
+         document.writeln( '</div>' ) ;
+      }
+  -->
+  </script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+
+</head>
+
+<body class="advnavtree bf">
+
+  <form action="Advantage" method="post" vsform="true" name="BFNavPanel">
+    <input type="hidden" name="AMSPageVersNo" value="">
+
+    <input type="hidden" name="ShowSaveAll" value="false">
+    <input type="hidden" name="ShowRestart" value="false">
+    <input type="hidden" name="ShowSave" value="false">
+    <!-- BEGIN CUSTOMIZATION -->
+    <div id="PageFlags" name="PageFlags">
+       <input type="hidden" value="PageStdUI" name="PageType" ></input>
+    </div>
+    <!-- END CUSTOMIZATION -->
+    <div name="NavigationTree" id="NavigationTree" title="Navigation Tree" class="advnavtree">
+      <script type="text/javascript" language="JavaScript">
+      <!--
+         BFNAV_WriteBFNavPanel() ;
+         UTILS_AdjustLeftNavHeaderHt('NavigationTree');
+      -->
+      </script>
+    </div>
+
+            <a href="Advantage" vsds=" " vsaction="menu_action" ams_action=""
+             name="menu_action" id="menu_action"></a>
+
+
+
+   <div id="AMSPopupWin" class="advpopupwin">
+      <iframe name="AMSPopupWinBody" scrolling="no" frameborder="0"
+       width="100%" height="100%" margin="0" src="../AMSImages/Empty.htm"></iframe>
+   </div>
+
+    <div style="visibility:hidden;display:none;position:absolute;top:-1000em;left:-1000em;">
+      <a href="Advantage" target="Display" name="BADtlsTrans" id="BADtlsTrans" title="Business Area Details (Internal)" vsaction="1" vsds=" " ams_destination="BADetails" ams_applname="Advantage"></a>
+      <a href="Advantage" target="Display" name="HomePgTrans" id="HomePgTrans" title="Home Page (Internal)" vsaction="1" vsds=" " ams_destination="HomePage" ams_applname="Advantage"></a>
+      <a href="Advantage" target="Display" name="OpenBFPage" id="OpenBFPage" title="Open Page (Internal)" vsaction="4" vsds=" "></a>
+      <a href="Advantage" target="Display" name="SaveBF" id="SaveBF" title="Save Business Function (Internal)" vsaction="6" vsds=" "></a>
+      <a href="Advantage" target="Display" name="RestartBF" id="RestartBF" title="Restart Business Function (Internal)" vsaction="46" vsds=" "></a>
+      <a href="Advantage" target="Display" name="CloseWksp" id="CloseWksp" title="Close Workspace (Internal)" vsaction=" " vsds=" "></a>
+      <a href="Advantage" target="Display" name="SaveWksp" id="SaveWksp" title="Save Workspace (Internal)" vsaction="5" vsds=" "></a>
+    </div>
+
+
+  </form>
+
+</body>
+</html>
+
+
+
+
+
+

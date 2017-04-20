@@ -1,0 +1,488 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="AMSRefTableGridDisplay"
+	PositionTop="719"
+	PositionLeft="719"
+	PositionWidth="150"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSRefTableGridDisplayPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-493278583"
+	>
+	<FormCaption><![CDATA[Inference and Combination Validation Setup]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="true"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+		<Property
+			Name="SSCaptionImageFileNm"
+			Value=""
+		/>
+	</ArchetypeExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="R_INFR_VALD_STP"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGenericGridDisplay"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="TBL_NM" />
+				<RSDefaultAttribute ID="2" Name="INFR_VALD_TYP" />
+				<RSDefaultAttribute ID="3" Name="INFR_VALD_DSCR" />
+				<RSDefaultAttribute ID="4" Name="ACTV_FL" />
+				<RSDefaultAttribute ID="5" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="6" Name="TBL_LAST_DT" />
+				<RSDefaultAttribute ID="7" Name="PAGE_CD" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="TBL_NM" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="PAGE_CD" Displayed="True" UnPlaced="False" Archetype="PickChoiceReq" />
+				<RSAttribute Name="INFR_VALD_TYP" Displayed="True" UnPlaced="False" Archetype="ComboboxReq" />
+				<RSAttribute Name="INFR_VALD_DSCR" Displayed="True" UnPlaced="False" Archetype="Textbox" />
+				<RSAttribute Name="ACTV_FL" Displayed="True" UnPlaced="False" Archetype="Checkbox" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="TBL_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="INFR_VALD_TYP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="INFR_VALD_DSCR" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PAGE_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ACTV_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="DynamicGridAttrib"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCount"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCountMsg"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="OverrideNumRowsPerPage"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="ShowSearchPopup"
+				Value=""
+			/>
+			<Property
+				Name="UseDBHint"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Adjacent_Fields"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value=""
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="SummaryCaption"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+		<PickObject
+			RSID="2"
+			Prefix="T2"
+			BusinessObject="IN_PAGES"
+			Relationship="RInfrValdStpInPages(IN_PAGES)-InPagesRInfrValdStp(R_INFR_VALD_STP)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [PAGE_CD] = [?PAGE_CD]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="PAGE_CD" />
+					<RSDefaultAttribute ID="2" Name="CAT_CD" />
+					<RSDefaultAttribute ID="3" Name="PAGE_TYP_CD" />
+					<RSDefaultAttribute ID="4" Name="PAGE_DESC" />
+					<RSDefaultAttribute ID="5" Name="APPL_NM" />
+					<RSDefaultAttribute ID="6" Name="DEST_PG" />
+					<RSDefaultAttribute ID="7" Name="DEST_FRAMESET" />
+					<RSDefaultAttribute ID="8" Name="DEST_FRAME" />
+					<RSDefaultAttribute ID="9" Name="TARGET_FRAME" />
+					<RSDefaultAttribute ID="10" Name="MODE_IND" />
+					<RSDefaultAttribute ID="11" Name="WHERE_CLAUSE" />
+					<RSDefaultAttribute ID="12" Name="ORDER_BY" />
+					<RSDefaultAttribute ID="13" Name="HLP_SUB_DIR" />
+					<RSDefaultAttribute ID="14" Name="HLP_FILE_NM" />
+					<RSDefaultAttribute ID="15" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="16" Name="PG_SHW_FL" />
+					<RSDefaultAttribute ID="17" Name="GOVT_BRN_CD" />
+					<RSDefaultAttribute ID="18" Name="CAB_CD" />
+					<RSDefaultAttribute ID="19" Name="DEPT_CD" />
+					<RSDefaultAttribute ID="20" Name="DIV_CD" />
+					<RSDefaultAttribute ID="21" Name="GP_CD" />
+					<RSDefaultAttribute ID="22" Name="SECT_CD" />
+					<RSDefaultAttribute ID="23" Name="DSTC_CD" />
+					<RSDefaultAttribute ID="24" Name="BUR_CD" />
+					<RSDefaultAttribute ID="25" Name="UNIT_CD" />
+					<RSDefaultAttribute ID="26" Name="PAGE_DESC_UP" />
+					<RSDefaultAttribute ID="27" Name="APPL_NM_UP" />
+					<RSDefaultAttribute ID="28" Name="DEST_PG_UP" />
+					<RSDefaultAttribute ID="29" Name="APPL_ID" />
+					<RSDefaultAttribute ID="30" Name="TBL_LAST_DT" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="PAGE_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="CAT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="PAGE_TYP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PAGE_DESC" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEST_PG" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEST_FRAMESET" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEST_FRAME" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TARGET_FRAME" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="MODE_IND" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="WHERE_CLAUSE" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ORDER_BY" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="HLP_SUB_DIR" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="HLP_FILE_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PG_SHW_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CAB_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DIV_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SECT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSTC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUR_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PAGE_DESC_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEST_PG_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="PAGE_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="PAGE_DESC" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="APPL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DEST_PG" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="PAGE_TYP_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="CAT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DEST_FRAMESET" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEST_FRAME" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TARGET_FRAME" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="MODE_IND" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="WHERE_CLAUSE" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ORDER_BY" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="HLP_SUB_DIR" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="HLP_FILE_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PG_SHW_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="CAB_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEPT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DIV_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="GP_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SECT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DSTC_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="BUR_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="UNIT_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="PAGE_DESC_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="DEST_PG_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="EnableVirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="InitialBrowse"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value=""
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+				<Property
+					Name="TypeAheadDispCols"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+	</RecordSource>
+</Form>

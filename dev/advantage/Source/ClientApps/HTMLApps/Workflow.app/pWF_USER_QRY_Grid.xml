@@ -1,0 +1,607 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="GridSelect"
+	PositionTop="78"
+	PositionLeft="205"
+	PositionWidth="188"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSGridSelectPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="1871908450"
+	>
+	<FormCaption><![CDATA[User Information]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="false"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="WF_USER_QRY"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="GridSelect"
+		MaxGridRowCount="20"
+		FetchedBlockRowCount="20"
+		AllowDelete="False"
+		AllowInsert="False"
+		AllowUpdate="False"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="27" Name="USER_ID" />
+				<RSDefaultAttribute ID="35" Name="HOME_GOVT_BRN_CD" />
+				<RSDefaultAttribute ID="29" Name="HOME_CAB_CD" />
+				<RSDefaultAttribute ID="20" Name="HOME_DEPT_CD" />
+				<RSDefaultAttribute ID="30" Name="HOME_DIV_CD" />
+				<RSDefaultAttribute ID="31" Name="HOME_GP_CD" />
+				<RSDefaultAttribute ID="32" Name="HOME_SECT_CD" />
+				<RSDefaultAttribute ID="33" Name="HOME_DSTC_CD" />
+				<RSDefaultAttribute ID="34" Name="HOME_BUR_CD" />
+				<RSDefaultAttribute ID="26" Name="HOME_UNIT_CD" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="USER_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_DEPT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_UNIT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_CAB_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="HOME_DIV_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="HOME_GP_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="HOME_SECT_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="HOME_DSTC_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="HOME_BUR_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="HOME_GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="USER_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_DEPT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_UNIT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="HOME_CAB_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="HOME_DIV_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="HOME_GP_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="HOME_SECT_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="HOME_DSTC_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="HOME_BUR_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="HOME_GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value=""
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="false"
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+	</RecordSource>
+	<RecordSource
+		RSID="2"
+		Prefix="T2"
+		BusinessObject="WF_APRV_WRK_LST"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="Display"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ WRK_LST_ID IS NULL ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="WRK_LST_TYP" />
+				<RSDefaultAttribute ID="2" Name="WRK_LST_ID" />
+				<RSDefaultAttribute ID="3" Name="ASSIGNEE" />
+				<RSDefaultAttribute ID="4" Name="ASSIGNEE_FL" />
+				<RSDefaultAttribute ID="5" Name="ASSIGNEE_NM" />
+				<RSDefaultAttribute ID="6" Name="APRV_LVL" />
+				<RSDefaultAttribute ID="7" Name="DISP_PG" />
+				<RSDefaultAttribute ID="8" Name="REAS" />
+				<RSDefaultAttribute ID="9" Name="CMNT" />
+				<RSDefaultAttribute ID="10" Name="CMNT_TXT" />
+				<RSDefaultAttribute ID="11" Name="CMNT_DISP" />
+				<RSDefaultAttribute ID="12" Name="ASGN_DT" />
+				<RSDefaultAttribute ID="13" Name="FWD_USID" />
+				<RSDefaultAttribute ID="14" Name="FWD_DT" />
+				<RSDefaultAttribute ID="15" Name="LOCK_USID" />
+				<RSDefaultAttribute ID="16" Name="DOC_CD" />
+				<RSDefaultAttribute ID="17" Name="DOC_ID" />
+				<RSDefaultAttribute ID="18" Name="DOC_VERS_NO" />
+				<RSDefaultAttribute ID="19" Name="DOC_DEPT_CD" />
+				<RSDefaultAttribute ID="20" Name="DOC_TYP" />
+				<RSDefaultAttribute ID="21" Name="DOC_CAT" />
+				<RSDefaultAttribute ID="22" Name="APPL_ID" />
+				<RSDefaultAttribute ID="23" Name="ASSIGNEE_UP" />
+				<RSDefaultAttribute ID="24" Name="LOCK_USID_UP" />
+				<RSDefaultAttribute ID="25" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="26" Name="TBL_LAST_DT" />
+				<RSDefaultAttribute ID="27" Name="SLF_APRV_RSCT" />
+				<RSDefaultAttribute ID="28" Name="DOC_CREA_USID" />
+				<RSDefaultAttribute ID="29" Name="DOC_SBMT_ID" />
+				<RSDefaultAttribute ID="30" Name="APRV_RULE_ID" />
+				<RSDefaultAttribute ID="31" Name="LOCK_USER_NM" />
+				<RSDefaultAttribute ID="32" Name="ESCL_ITEM" />
+				<RSDefaultAttribute ID="33" Name="ESCL_LEVEL" />
+				<RSDefaultAttribute ID="34" Name="WARN_ELIG_DT" />
+				<RSDefaultAttribute ID="35" Name="ESCL_1_ELIG_DT" />
+				<RSDefaultAttribute ID="36" Name="ESCL_2_ELIG_DT" />
+				<RSDefaultAttribute ID="37" Name="PRIORITY" />
+				<RSDefaultAttribute ID="38" Name="PRIORITY_REASON" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="WRK_LST_TYP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="WRK_LST_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASSIGNEE" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASSIGNEE_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASSIGNEE_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_LVL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DISP_PG" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="REAS" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CMNT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CMNT_TXT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CMNT_DISP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASGN_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FWD_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FWD_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LOCK_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_DEPT_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_TYP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CAT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ASSIGNEE_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LOCK_USID_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SLF_APRV_RSCT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CREA_USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_SBMT_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APRV_RULE_ID" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="LOCK_USER_NM" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="ESCL_ITEM" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="ESCL_LEVEL" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="WARN_ELIG_DT" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="ESCL_1_ELIG_DT" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="ESCL_2_ELIG_DT" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="PRIORITY" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="PRIORITY_REASON" Displayed="False" UnPlaced="False" />
+			</ScalerAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="ShowSearchPopup"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value=""
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+		</ArchetypeExtendedProperties>
+	</RecordSource>
+</Form>

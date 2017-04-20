@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Document Comments</title>
+  <base href>
+
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <!-- BGN ADVHR00019092 -->
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/SS/SSUtil.js"></script>
+      <!-- END ADVHR00019092 -->
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="AdvMobile" method="post" vsform="true" name="pDOC_CMNT">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" id="AppId" name="AppId" value="WFAMobile">
+    <input type="hidden" name="refreshScalar" value="">
+    <input type="hidden" id="PageName" name="PageName" value="pDOC_CMNT">
+    <input type="hidden" id="PageType" name="PageType" value="WorklistPage">
+    <input type="hidden" id="PageView" name="PageView" value="WorklistComments">
+    <input type="hidden" id="Code" name="Code" value="">
+    <input type="hidden" id="Dept" name="Dept" value="">
+    <input type="hidden" id="Id" name="Id" value="">
+    <input type="hidden" id="Version" name="Version" value="">
+    <input type="hidden" id="DocApprove" name="DocApprove" value="false">
+    <input type="hidden" id="DocReject" name="DocReject" value="false">
+    <input type="hidden" id="DocMore" name="DocMore" value="false">
+    <input type="hidden" id="CommentInputs" name="CommentInputs" value="CMNT_SUB;CMNT_MSG;">
+    <input type="hidden" id="CommentInputs" name="RqdCommentInputs" value="CMNT_SUB;CMNT_MSG;">
+    <input type="hidden" id="CommentInputLengths" name="CommentInputLengths" value="15;1500;">
+    <input type="hidden" id="CommentPg" name="CommentPg" value="btnT2pDOC_CMNT">
+    <input type="hidden" id="InsertOnload" name="InsertOnload" value="false">
+    <input type="hidden" id="AddCmnt" name="AddCmnt" value="T1DOC_CMNTinsert">
+    <input type="hidden" name="Errors" value="" vsclass="com.amsinc.gems.adv.vfc.html.AdvMobileErrorElement">
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Document Comments">Document Comments</vstitle>
+    </h1>
+<!-- BEGIN CUSTOMIZATION -->
+<h2 class="advrecsrctitle details">
+
+    <span title="Document Identifier">
+      <vstext name="txtRSPrefixDOC_CD" vsds="" vsdf="DOC_CD"> -
+      <vstext name="txtRSPrefixDOC_DEPT_CD" vsds="" vsdf="DOC_DEPT_CD"> -
+      <vstext name="txtRSPrefixDOC_ID" vsds="" vsdf="DOC_ID">
+    </span>
+
+</h2>
+<!-- END CUSTOMIZATION -->
+  <div class="advhdractns">
+
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="AdvMobile" vsds="" vsaction="84" title="Back to Previous Page" name="QueryBack" id="QueryBack" accesskey="Z">Back</a>
+  </div>
+
+
+
+  <a name="T1DOC_CMNT_Top"></a>
+
+
+
+  <input type="hidden" name="T1DOC_CMNT_Currency" value="">
+  <input type="hidden" name="T1DOC_CMNT_Old_Currency" value="">
+  <table name="GridBody" id="GridBody" class="advgrid" vsds="T1DOC_CMNT" mobile_container="true">
+    <tr id="GridHeader" name="GridHeader" class="advgridhdr" mobile_container="true">
+
+        <th
+><span id="T1DOC_VERS_NOsortGridLabel" name="T1DOC_VERS_NOsortGridLabel" vsdf="DOC_VERS_NO" title="Version" vsds="T1DOC_CMNT" type="text">Version</span></th>
+
+        <th
+><span id="T1CMNT_DTsortGridLabel" name="T1CMNT_DTsortGridLabel" vsdf="CMNT_DT" title="Date/Time" vsds="T1DOC_CMNT" type="text">Date/Time</span></th>
+
+        <th
+><span id="T1CMNT_USER_IDsortGridLabel" name="T1CMNT_USER_IDsortGridLabel" vsdf="CMNT_USER_ID" title="User" vsds="T1DOC_CMNT" type="text">User</span></th>
+
+        <th
+><span id="T1DOC_PHASE_CDsortGridLabel" name="T1DOC_PHASE_CDsortGridLabel" vsdf="DOC_PHASE_CD" title="Phase" vsds="T1DOC_CMNT" type="text">Phase</span></th>
+
+        <th
+><span id="T1CMNT_SUBsortGridLabel" name="T1CMNT_SUBsortGridLabel" vsdf="CMNT_SUB" title="Subject" vsds="T1DOC_CMNT" type="text">Subject</span></th>
+
+        <th
+><span id="T1CMNT_MSGsortGridLabel" name="T1CMNT_MSGsortGridLabel" vsdf="CMNT_MSG" title="Comment" vsds="T1DOC_CMNT" type="textarea">Comment</span></th>
+    </tr>
+    <tr id="GridRow" name="GridRow" vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" mobile_container="true">
+      <td class="advgridrowselect">
+        <input type="image" id="T1DOC_CMNTvscurrency" src="../AMSImages/ADVRowCurr.gif" title="Current Row" vsds="T1DOC_CMNT" name="T1DOC_CMNTvscurrency" alt="Select Row" value="" vsaction="Currency">
+      </td>
+
+        <td>
+          <input type="text" name="btnT1DOC_VERS_NO" ams_doc_ref="DOC_VERS_NO" vsds="T1DOC_CMNT" vsdf="DOC_VERS_NO" title="Version: " separator="</td></tr><tr><td>">
+
+        </td>
+
+        <td class="right">
+          <input type="text" name="txtT1CMNT_DT" vsds="T1DOC_CMNT" vsdf="CMNT_DT" title="Date/Time: " vsformat="M/d/yyyy h:mm:ss aa" separator="</td></tr><tr><td>">
+        </td>
+
+        <td>
+          <input type="text" name="txtT1CMNT_USER_ID" vsds="T1DOC_CMNT" vsdf="CMNT_USER_ID" title="User: " separator="</td></tr><tr><td>">
+        </td>
+
+        <td>
+          <input type="text" vsds="T1DOC_CMNT" vsdf="DOC_PHASE_CD" vscodetable="CVL_DOC_PHASE_CD" title="Phase: " separator="</td></tr><tr><td>">
+        </td>
+
+        <td>
+          <input type="text" name="txtT1CMNT_SUB" vsds="T1DOC_CMNT" vsdf="CMNT_SUB" primary="Summary" title="Subject: " separator="</td></tr><tr><td>">
+        </td>
+
+        <td>
+          <input type="text" name="txtT1CMNT_MSG" vsds="T1DOC_CMNT" vsdf="CMNT_MSG" title="Comment: "></textarea>
+        </td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><div name="GridActions" id="GridActions" class="actions" mobile_container="true">
+
+         <a href="AdvMobile" vsds="T1DOC_CMNT" vsaction="firstpage" name="T1DOC_CMNTfirstpage" id="T1DOC_CMNTfirstpage" title="<<" accesskey="0"><<</a>
+
+
+         <a href="AdvMobile" vsds="T1DOC_CMNT" vsaction="prevpage" name="T1DOC_CMNTprevpage" id="T1DOC_CMNTprevpage" title="<" accesskey="1"><</a>
+
+
+         <a href="AdvMobile" vsds="T1DOC_CMNT" vsaction="nextpage" id="T1DOC_CMNTnextpage" name="T1DOC_CMNTnextpage" title=">" accesskey="2">></a>
+
+
+         <a href="AdvMobile" vsds="T1DOC_CMNT" vsaction="lastpage" id="T1DOC_CMNTlastpage" name="T1DOC_CMNTlastpage" title=">>" accesskey="3">>></a>
+</div></td>
+
+
+
+
+    </tr>
+  </table>
+
+
+<hr class="advsectsep"></hr>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+
+         <a href="AdvMobile" vsds="T1DOC_CMNT" vsaction="saveall" name="T1DOC_CMNTSaveAll" id="T1DOC_CMNTSaveAll" title="Save All" accesskey="5">Save</a>
+
+		  <a href="AdvMobile" vsds="T1DOC_CMNT" vsaction="undoall" name="T1DOC_CMNTUndoAll" id="T1DOC_CMNTUndoAll" title="Undo All" accesskey="6">Undo</a>
+
+      <a href="AdvMobile" vsds="T1DOC_CMNT" vsaction="insert" id="T1DOC_CMNTinsert" name="T1DOC_CMNTinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+
+      <a href="AdvMobile" vsds="T1DOC_CMNT" vsaction="11" name="T1DOC_CMNTCopyRecord" id="T1DOC_CMNTCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+
+
+      <a href="AdvMobile" vsds="T1DOC_CMNT" vsaction="12" name="T1DOC_CMNTPasteLine" id="T1DOC_CMNTPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+
+
+      <td><vstext vsds=" " name="T1DOC_CMNTSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1DOC_CMNT', new Array(), new Array() ) ;
+
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="AdvMobile" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+<a href="AdvMobile" vsds=" " vsaction="mob_back" ams_action="301" name="mob_back" id="mob_back" title=""></a>
+<a href="AdvMobile" vsds=" " vsaction="display_error" name="display_error" id="display_error" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

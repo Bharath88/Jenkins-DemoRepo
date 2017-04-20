@@ -1,0 +1,400 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="AMSRefTableGridDisplay"
+	PositionTop="562.5"
+	PositionLeft="562.5"
+	PositionWidth="150"
+	PositionHeight="43.75"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSRefTableGridDisplayPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="845678370"
+	>
+	<FormCaption><![CDATA[Future Document Triggering]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="true"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="false"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+		<Property
+			Name="SSCaptionImageFileNm"
+			Value=""
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="FDT_WKLD"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGenericGridDisplay"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="AMT_CRY_FWD_FL" />
+				<RSDefaultAttribute ID="2" Name="FDT_FREQ_TYP" />
+				<RSDefaultAttribute ID="3" Name="FDT_RUN_VL1" />
+				<RSDefaultAttribute ID="4" Name="FDT_RUN_VL2" />
+				<RSDefaultAttribute ID="5" Name="DOC_CD" />
+				<RSDefaultAttribute ID="6" Name="ACTN_CD" />
+				<RSDefaultAttribute ID="7" Name="FDT_SEQ_NO" />
+				<RSDefaultAttribute ID="8" Name="DOC_DEPT_CD" />
+				<RSDefaultAttribute ID="9" Name="DOC_ID" />
+				<RSDefaultAttribute ID="10" Name="DOC_VERS_NO" />
+				<RSDefaultAttribute ID="11" Name="DOC_HLD_FL" />
+				<RSDefaultAttribute ID="12" Name="FDT_EXPIRE_DT" />
+				<RSDefaultAttribute ID="13" Name="FDT_RUN_STA" />
+				<RSDefaultAttribute ID="14" Name="FDT_FAC_SEQ" />
+				<RSDefaultAttribute ID="15" Name="FDT_STRT_DT" />
+				<RSDefaultAttribute ID="16" Name="FDT_END_DT" />
+				<RSDefaultAttribute ID="17" Name="DOC_S_ACTN_CD" />
+				<RSDefaultAttribute ID="18" Name="AGENT_ID" />
+				<RSDefaultAttribute ID="19" Name="GEN_DOC_ID" />
+				<RSDefaultAttribute ID="20" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="21" Name="TBL_LAST_DT" />
+				<RSDefaultAttribute ID="22" Name="ACT_FL" />
+				<RSDefaultAttribute ID="23" Name="BYPS_APRV_FL" />
+				<RSDefaultAttribute ID="24" Name="DOC_PFX" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_DEPT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_VERS_NO" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="FDT_STRT_DT" Displayed="True" UnPlaced="False" Archetype="AMSDateChoiceCalendar" />
+				<RSAttribute Name="FDT_END_DT" Displayed="True" UnPlaced="False" Archetype="AMSDateChoiceCalendar" />
+				<RSAttribute Name="FDT_FREQ_TYP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="FDT_RUN_VL1" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="FDT_RUN_VL2" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="AGENT_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FDT_EXPIRE_DT" Displayed="True" UnPlaced="False" Archetype="AMSDateChoiceCalendar" />
+				<RSAttribute Name="ACT_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="AMT_CRY_FWD_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_HLD_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ACTN_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FDT_SEQ_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FDT_RUN_STA" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FDT_FAC_SEQ" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_S_ACTN_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="GEN_DOC_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="BYPS_APRV_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_PFX" Displayed="True" UnPlaced="False" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_DEPT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_VERS_NO" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="GEN_DOC_ID" Displayed="True" UnPlaced="False" Archetype="AMSDocRefForGrid" />
+				<RSAttribute Name="FDT_STRT_DT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="FDT_END_DT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="FDT_RUN_STA" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="AMT_CRY_FWD_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FDT_FREQ_TYP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FDT_RUN_VL1" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FDT_RUN_VL2" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ACTN_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FDT_SEQ_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_HLD_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FDT_EXPIRE_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FDT_FAC_SEQ" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_S_ACTN_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AGENT_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ACT_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="BYPS_APRV_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_PFX" Displayed="True" UnPlaced="False" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxCSVRowsBeforeZip"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="DynamicGridAttrib"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCount"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCountMsg"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="OverrideNumRowsPerPage"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value="&quot;DOC_CD,DOC_DEPT_CD,DOC_ID&quot;"
+			/>
+			<Property
+				Name="ShowSearchPopup"
+				Value=""
+			/>
+			<Property
+				Name="UseDBHint"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Adjacent_Fields"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value=""
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="false"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="SummaryCaption"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+	</RecordSource>
+</Form>

@@ -1,0 +1,63 @@
+body 
+{
+  background-image: url("../images/BodyBg.gif");
+  background-position: center top;
+  background-repeat: repeat-x;
+}
+.adv-global-header
+{
+ 
+   height: 32px;
+   border-bottom: 1px solid #A7C9F6;
+   background-size: cover;
+   background-color:#ccc!important;
+   background-image:-moz-linear-gradient(center top , #ccc, #fff)!important;
+   padding-top:2px;
+   padding-bottom:0px;
+}
+.adv-brand
+{
+   padding-top:0px !important;
+}
+
+h4
+{
+   color:#FFFFFF;
+}
+
+.adv-main-unit
+{
+   background-color: #DCEBFD;
+}
+.adv-main-sub-unit
+{
+   background-image: url("../images/advbkg.png");
+   background-image: -moz-linear-gradient(center top, #01425e, #036088);
+   background-image: -webkit-gradient(linear, center top, center bottom, from(#01425e), to(#036088));
+   background-size: cover;
+}
+.advbutton
+{
+   background: url("../images/buttons_background.png") repeat-x scroll left center #FFE25C;
+}
+
+.container.logo
+{
+   background-image: url("../images/advantage_logo.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 100%;
+   width: 100%;
+}
+
+.nav-tabs li
+{
+   background-image: -moz-linear-gradient(center top, #7e7e7e, #cecece);
+   background-image: -webkit-gradient(linear, center top, center bottom, from(#7e7e7e), to(#cecece));
+}
+.nav-tabs li a
+{
+   color: #000000;
+   font-weight: bold;
+}
+

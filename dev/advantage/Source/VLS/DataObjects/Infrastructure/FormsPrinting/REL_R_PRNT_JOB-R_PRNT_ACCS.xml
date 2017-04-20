@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="R_PRNT_JOB"
+		ChildRoleName="R_PRNT_ACCS"
+		IsEnforce="True"
+		OnParentDelete="DeleteChildren"
+		OnParentUpdate="UpdateChildren"
+		CountReplicates="1"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="APPL_RSRC_ID"
+				ChildAttribute="APPL_RSRC_ID"
+			/>
+			<AttributePair
+				ParentAttribute="PRNT_JOB_CD"
+				ChildAttribute="PRNT_JOB_CD"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_PRNT_JOB]]></AscendCaption>
+		<DescendCaption><![CDATA[R_PRNT_ACCS(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[No corresponding application resource / print job registered]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

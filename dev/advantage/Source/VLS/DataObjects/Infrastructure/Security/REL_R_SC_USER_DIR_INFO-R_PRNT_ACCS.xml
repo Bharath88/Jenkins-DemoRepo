@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="R_SC_USER_DIR_INFO"
+		ChildRoleName="R_PRNT_ACCS"
+		IsEnforce="True"
+		OnParentDelete="DeleteChildren"
+		OnParentUpdate="UpdateChildren"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="USER_ID"
+				ChildAttribute="USER_ID"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_USER_DIR_INFO]]></AscendCaption>
+		<DescendCaption><![CDATA[R_PRNT_ACCS(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[User not registered]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

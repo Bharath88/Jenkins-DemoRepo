@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="StmtCwlkToStmtDef"
+		ChildRoleName="StmtDefToStmtCwlk"
+		IsEnforce="True"
+		CountReplicates="2"
+		OnParentUpdate="UpdateChildren"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="STMT_FY"
+				ChildAttribute="STMT_FY"
+			/>
+			<AttributePair
+				ParentAttribute="STMT_CD"
+				ChildAttribute="STMT_CD"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_DEF]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_COLUMN(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Crosswalk record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:Statement Code & Fiscal Year combination,v:Statement Definition Table%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

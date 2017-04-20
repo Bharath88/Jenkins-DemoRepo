@@ -1,0 +1,296 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>External Applications Message Mapping</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Admin" method="post" vsform="true" name="pR_EXT_APPS_MSG_MAP_Generic">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="External Applications Message Mapping">External Applications Message Mapping</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="Admin" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+  <a name="T1R_EXT_APPS_MSG_MAP_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1R_EXT_APPS_MSG_MAP_Currency" >
+  <input type="hidden" name="T1R_EXT_APPS_MSG_MAP_Old_Currency" >
+  <table name="tblT1R_EXT_APPS_MSG_MAP" id="tblT1R_EXT_APPS_MSG_MAP" class="advgrid" vsds="T1R_EXT_APPS_MSG_MAP">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><span id="T1EXT_APP_CDsortGridLabel" name="T1EXT_APP_CDsortGridLabel" vsdf="EXT_APP_CD" title="External Application Code">External Application Code</span></th>
+      
+        <th 
+><span id="T1EXT_APP_MSG_CDsortGridLabel" name="T1EXT_APP_MSG_CDsortGridLabel" vsdf="EXT_APP_MSG_CD" title="External Application Message Code">External Application Message Code</span></th>
+      
+        <th 
+><span id="T1MSG_CDsortGridLabel" name="T1MSG_CDsortGridLabel" vsdf="MSG_CD" title="Message Code">Message Code</span></th>
+      
+        <th 
+><span id="T1EXT_APP_NMsortGridLabel" name="T1EXT_APP_NMsortGridLabel" vsdf="EXT_APP_NM" title="External Application Name">External Application Name</span></th>
+      
+        <th 
+><span id="T1EXT_APP_SH_NMsortGridLabel" name="T1EXT_APP_SH_NMsortGridLabel" vsdf="EXT_APP_SH_NM" title="External Application Short Name">External Application Short Name</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr class="advgridoddrow" onclick="UTILS_SelectGridRow(this);return true;" ams_altclassname="advgridevenrow" vsprototyperow="true">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_EXT_APPS_MSG_MAPvscurrency" id="T1R_EXT_APPS_MSG_MAPvscurrency" title="Select Row" alt="Select Row" src="../AMSImages/ADVRowSel.gif"
+ vsds="T1R_EXT_APPS_MSG_MAP" vsaction="Currency">
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1EXT_APP_CD" vsds="T1R_EXT_APPS_MSG_MAP" vsdf="EXT_APP_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1EXT_APP_MSG_CD" vsds="T1R_EXT_APPS_MSG_MAP" vsdf="EXT_APP_MSG_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1MSG_CD" vsds="T1R_EXT_APPS_MSG_MAP" vsdf="MSG_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1EXT_APP_NM" vsds="T1R_EXT_APPS_MSG_MAP" vsdf="EXT_APP_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1EXT_APP_SH_NM" vsds="T1R_EXT_APPS_MSG_MAP" vsdf="EXT_APP_SH_NM" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="T1R_EXT_APPS_MSG_MAPGridNav" id="T1R_EXT_APPS_MSG_MAPGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="Admin" vsds="T1R_EXT_APPS_MSG_MAP" vsaction="firstpage" name="T1R_EXT_APPS_MSG_MAPfirstpage" id="T1R_EXT_APPS_MSG_MAPfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="Admin" vsds="T1R_EXT_APPS_MSG_MAP" vsaction="prevpage" name="T1R_EXT_APPS_MSG_MAPprevpage" id="T1R_EXT_APPS_MSG_MAPprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="Admin" vsds="T1R_EXT_APPS_MSG_MAP" vsaction="nextpage" id="T1R_EXT_APPS_MSG_MAPnextpage" name="T1R_EXT_APPS_MSG_MAPnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="Admin" vsds="T1R_EXT_APPS_MSG_MAP" vsaction="lastpage" id="T1R_EXT_APPS_MSG_MAPlastpage" name="T1R_EXT_APPS_MSG_MAPlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+  
+  
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+   
+         <a href="Admin" vsds="T1R_EXT_APPS_MSG_MAP" vsaction="saveall" name="T1R_EXT_APPS_MSG_MAPSaveAll" id="T1R_EXT_APPS_MSG_MAPSaveAll" title="Save All" accesskey="5">Save</a>
+   
+		  <a href="Admin" vsds="T1R_EXT_APPS_MSG_MAP" vsaction="undoall" name="T1R_EXT_APPS_MSG_MAPUndoAll" id="T1R_EXT_APPS_MSG_MAPUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+		  <a href="Admin" vsds="T1R_EXT_APPS_MSG_MAP" vsaction="delete" id="IndexT1R_EXT_APPS_MSG_MAPdelete" name="T1R_EXT_APPS_MSG_MAPdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="Admin" vsds="T1R_EXT_APPS_MSG_MAP" vsaction="insert" id="T1R_EXT_APPS_MSG_MAPinsert" name="T1R_EXT_APPS_MSG_MAPinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="Admin" vsds="T1R_EXT_APPS_MSG_MAP" vsaction="11" name="T1R_EXT_APPS_MSG_MAPCopyRecord" id="T1R_EXT_APPS_MSG_MAPCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="Admin" vsds="T1R_EXT_APPS_MSG_MAP" vsaction="12" name="T1R_EXT_APPS_MSG_MAPPasteLine" id="T1R_EXT_APPS_MSG_MAPPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+      
+   
+      <td><vstext vsds=" " name="T1R_EXT_APPS_MSG_MAPSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1EXT_APP_CD" title="External Application Code">External Application Code :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1EXT_APP_CD" id="txtT1EXT_APP_CD" 
+      ams_max_len="8"
+ value="EXT_APP_CD" 
+            size="15"
+ vsds="T1R_EXT_APPS_MSG_MAP" vsdf="EXT_APP_CD" ShowCodeInfo="" title="External Application Code">
+          
+      <input type="image" vspick="T2R_EXT_APPS" vspicktext="txtT1EXT_APP_CD" vsds="T1R_EXT_APPS_MSG_MAP" vsaction="pick" name="pckT1EXT_APP_CD" id="pckT1EXT_APP_CD" title="Select External Application Code" alt="Select External Application Code" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtT1EXT_APP_NM" vsds="T1R_EXT_APPS_MSG_MAP" vsdf="EXT_APP_NM" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <vstext name="txtT1EXT_APP_SH_NM" vsds="T1R_EXT_APPS_MSG_MAP" vsdf="EXT_APP_SH_NM" 
+            size="15"
+>
+        </td>
+      </tr>
+    
+    
+        
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1EXT_APP_MSG_CD" title="External Application Message Code (Required)">External Application Message Code :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1EXT_APP_MSG_CD" id="txtT1EXT_APP_MSG_CD" 
+               size="20"
+ vsds="T1R_EXT_APPS_MSG_MAP" vsdf="EXT_APP_MSG_CD" 
+         ams_max_len="50"
+ ShowCodeInfo="" value="EXT_APP_MSG_CD"title="External Application Message Code (Required)">
+        </td>
+      </tr>
+    
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1MSG_CD" title="Message Code">Message Code :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1MSG_CD" id="txtT1MSG_CD" 
+      ams_max_len="5"
+ value="MSG_CD" 
+         size="6"
+ vsds="T1R_EXT_APPS_MSG_MAP" vsdf="MSG_CD" ShowCodeInfo="" title="Message Code">
+          
+      <input type="image" vspick="T3R_MSG" vspicktext="txtT1MSG_CD" vsds="T1R_EXT_APPS_MSG_MAP" vsaction="pick" name="pckT1MSG_CD" id="pckT1MSG_CD" title="Select Message Code" alt="Select Message Code" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_EXT_APPS_MSG_MAP', new Array(), new Array() ) ;
+    
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Admin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

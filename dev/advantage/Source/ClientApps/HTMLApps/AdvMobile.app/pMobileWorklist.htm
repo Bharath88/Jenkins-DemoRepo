@@ -1,0 +1,307 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Worklist</title>
+  <base href>
+
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="AdvMobile" method="post" vsform="true" name="pMobileWorklist">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+    <input type="hidden" id="hidCurrUser" name="hidCurrUser" value="true">
+    <input type="hidden" id="AppId" name="AppId" value="WFAMobile">
+    <input type="hidden" id="PageName" name="PageName" value="pMobileWorklist">
+    <input type="hidden" id="PageType" name="PageType" value="WorklistPage">
+    <input type="hidden" id="PageView" name="PageView" value="WorklistSummary">
+    <input type="hidden" id="DocApprove" name="DocApprove" value="false">
+    <input type="hidden" id="DocReject" name="DocReject" value="false">
+    <input type="hidden" id="DocMore" name="DocMore" value="false">
+    <input type="hidden" id="CommentPg" name="CommentPg" value="btnT2pDOC_CMNT">
+    <input type="hidden" id="SigReq" name="SigReq" value="false">
+    <input type="hidden" id="ByPassApp" name="ByPassApp" value="N">
+    <input type="hidden" id="ByPassRej" name="ByPassRej" value="N">
+    <input type="hidden" name="Errors" value="" vsclass="com.amsinc.gems.adv.vfc.html.AdvMobileErrorElement">
+    <input type="hidden" id="DocSigCmnt" name="DocSigCmnt" value="false">
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+      <h1 class="advpagetitle">
+<vstitle vstitle="Worklist">Worklist</vstitle>
+</h1>
+      <div class="advhdractns">
+        <a href="javascript:{}" onclick="MNU_ShowPopup('DOC_MENU', event);event.returnValue=false;return false;" title="Action Menu" name="DocMenuActions" id="DocMenuActions" accesskey="M">
+          <img src="../AMSImages/ADVMenuActions.gif"
+ alt="Action Menu" name="DocMenuActionsImg" id="DocMenuActionsImg">
+        </a>
+      </div>
+
+
+<hr class="advsectsep"></hr>
+
+	  <div class="actions" id="QueryData" name="QueryData">
+		  <select  name="txtT1WorkLists" id="txtT1WorkLists" vsds="" vsdf="" size="1" vscodetable="" class="adveditable" onchange="checkAndSubmit();" title="Worklist: ">
+			<option value="JADEStored">JADEDisplayed</option>
+		  </select>
+
+	     <select name="txtT1APRV_LVL" id="txtT1APRV_LVL" vsds="T1WF_WRK_LST_QRY" vsdf="APRV_LVL" vsdisplaymode="Query" size="1" vscodetable="CVL_WF_LVLS" title="Level: ">
+		             <option value="JADEStored">JADEDisplayed</option>
+          </select>
+
+         <input type="text" name="txtT1DOC_CD" id="txtT1DOC_CD" maxlength="30" value="DOC_CD" size="12" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_CD" vsdisplaymode="Query" title="Code: ">
+
+	     <input type="text" name="txtT1DOC_DEPT_CD" id="txtT1DOC_DEPT_CD" size="6" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_DEPT_CD" vsdisplaymode="Query" value="DOC_DEPT_CD" title="Dept: ">
+         <input type="text" name="txtT1DOC_ID" id="txtT1DOC_ID" size="20" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_ID" vsdisplaymode="Query" value="DOC_ID" title="ID: ">
+
+         <input type="text" name="txtT1DOC_SBMT_ID" id="txtT1DOC_SBMT_ID" size="20" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_SBMT_ID" vsdisplaymode="Query" value="DOC_SBMT_ID" title="Submitter ID: ">
+
+         <select name="txtT1ESCL_ITEM" id="txtT1ESCL_ITEM" vsds="T1WF_WRK_LST_QRY" vsdf="ESCL_ITEM" vsdisplaymode="Query" size="1" vscodetable="CVL_YES_NO" title="Escalated Item: ">
+		             <option value="JADEStored">JADEDisplayed</option>
+          </select>
+
+        </td>
+      </tr>
+	  </div>
+
+  <input type="hidden" name="T1WF_WRK_LST_QRY_Currency" value="">
+  <input type="hidden" name="T1WF_WRK_LST_QRY_Old_Currency" value="">
+  <table name="GridBody" id="GridBody" class="advgrid" vsds="T1WF_WRK_LST_QRY" vsclass="com.amsinc.gems.adv.workflow.AMSWorklistTableElement" mobile_container="true">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><a href="AdvMobile" vsaction="sort" vsds="T1WF_WRK_LST_QRY"
+    vsdf="APRV_LVL"
+ name="T1APRV_LVLsort" id="T1APRV_LVLsort" title="Sort By Level">Level</a></th>
+
+        <th
+><a href="AdvMobile" vsaction="sort" vsds="T1WF_WRK_LST_QRY"
+    vsdf="DOC_CD"
+ name="T1DOC_CDsort" id="T1DOC_CDsort" title="Sort By Code">Code</a></th>
+
+        <th
+><a href="AdvMobile" vsaction="sort" vsds="T1WF_WRK_LST_QRY"
+    vsdf="DOC_DEPT_CD"
+ name="T1DOC_DEPT_CDsort" id="T1DOC_DEPT_CDsort" title="Sort By Dept">Dept</a></th>
+
+        <th
+><a href="AdvMobile" vsaction="sort" vsds="T1WF_WRK_LST_QRY"
+    vsdf="DOC_ID"
+ name="T1DOC_IDsort" id="T1DOC_IDsort" title="Sort By ID">ID</a></th>
+
+        <th
+><a href="AdvMobile" vsaction="sort" vsds="T1WF_WRK_LST_QRY"
+    vsdf="PRIORITY"
+ name="T1PRIORITYsort" id="T1PRIORITYsort" title="Sort By Priority">Priority</a></th>
+
+
+        <th
+><span id="T1ESCL_ITEMsortGridLabel" name="T1ESCL_ITEMsortGridLabel" title="Escalated Item">Escalated Item</span></th>
+
+        <th
+><span id="T1DOC_CMNT_FLsortGridLabel" name="T1DOC_CMNT_FLsortGridLabel" title="Comments">Comments</span></th>
+
+        <th
+><span id="T1DOC_CREA_USIDsortGridLabel" name="T1DOC_CREA_USIDsortGridLabel" title="Creator ID">Creator ID</span></th>
+
+        <th
+><a href="AdvMobile" vsaction="sort" vsds="T1WF_WRK_LST_QRY"
+    vsdf="DOC_SBMT_ID"
+ name="T1DOC_SBMT_IDsort" id="T1DOC_SBMT_IDsort" title="Sort By Submitter ID">Submitter ID</a></th>
+
+        <th
+><a href="AdvMobile" vsaction="sort" vsds="T1WF_WRK_LST_QRY"
+    vsdf="ASGN_DT"
+ name="T1ASGN_DTsort" id="T1ASGN_DTsort" title="Sort By Date">Date</a></th>
+
+        <th
+><span id="T1REAS_DISPsortGridLabel" name="T1REAS_DISPsortGridLabel" title="Reason">Reason</span></th>
+
+        <th
+><span id="T1CMNT_DISPsortGridLabel" name="T1CMNT_DISPsortGridLabel" title="Message">Message</span></th>
+
+        <th
+><span id="T1PRIORITY_REASONsortGridLabel" name="T1PRIORITY_REASONsortGridLabel" title="Priority Reason">Priority Reason</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr id="GridRow" name="GridRow" vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;" mobile_container="true">
+      <td>
+         <input type="checkbox" value="OFF" name="T1WF_WRK_LST_QRYcheckbox" id="T1WF_WRK_LST_QRYcheckbox" vsds="T1WF_WRK_LST_QRY" vsaction="Currency" title="Select Row">
+      </td>
+
+        <td>
+          <input type="text" vscodetable="CVL_WF_LVLS" id="txtT1APRV_LVL" name="txtT1APRV_LVL" vsds="T1WF_WRK_LST_QRY" vsdf="APRV_LVL" title="Level: " separator="</td></tr><tr><td>">
+        </td>
+
+        <td>
+          <input type="text" name="txtT1DOC_CD" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_CD" title="Code: " primary="Summary" separator="</td></tr><tr><td>">
+        </td>
+
+        <td>
+          <input type="text" name="txtT1DOC_DEPT_CD" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_DEPT_CD" title="Dept: " primary="Summary" separator="</td></tr><tr><td>">
+        </td>
+
+        <td>
+            <input type="text" name="btnT1DOC_ID" ams_doc_ref="DOC_ID" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_ID" title="ID: " primary="Summary" separator="</td></tr><tr><td>">
+        </td>
+
+        <td>
+          <input type="text" vsds="T1WF_WRK_LST_QRY" vsdf="PRIORITY" vscodetable="CVL_WF_PRIORITY" title="Priority: " separator="</td></tr><tr><td>">
+        </td>
+
+        <td>
+          <input type="text" vsds="T1WF_WRK_LST_QRY" vsdf="ESCL_ITEM" vscodetable="CVL_YES_NO" title="Escalated Item: " separator="</td></tr><tr><td>">
+        </td>
+
+        <td>
+          <input type="text" name="txtT1DOC_CMNT_FL" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_CMNT_FL" vsformat="Yes/No" title="Comments: " separator="</td></tr><tr><td>">
+        </td>
+
+        <td>
+          <input type="text" name="txtT1DOC_CREA_USID" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_CREA_USID" title="Creator ID: " separator="</td></tr><tr><td>">
+        </td>
+
+        <td>
+          <input type="text" name="txtT1DOC_SBMT_ID" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_SBMT_ID" title="Submitter ID: " primary="Summary_Detail" separator="</td></tr><tr><td>">
+        </td>
+
+        <td class="right">
+          <input type="text" name="txtT1ASGN_DT" vsds="T1WF_WRK_LST_QRY" vsdf="ASGN_DT" vsformat="M/d/yyyy h:mm:ss aa" title="Date: " primary="Summary_Detail" separator="</td></tr><tr><td>">
+        </td>
+
+        <td>
+          <input type="text" name="txtT1REAS_DISP" vsds="T1WF_WRK_LST_QRY" vsdf="REAS_DISP" title="Reason: " separator="</td></tr><tr><td>">
+        </td>
+
+        <td>
+          <input type="text" name="txtT1CMNT_DISP" vsds="T1WF_WRK_LST_QRY" vsdf="CMNT_DISP" title="Message: " separator="</td></tr><tr><td>">
+        </td>
+
+        <td class="memo">
+           <input type="text" name="txtT1PRIORITY_REASON" vsds="T1WF_WRK_LST_QRY" vsdf="PRIORITY_REASON" title="Priority Reason: " separator="</td></tr><tr><td>">
+        </td>
+
+        <td>
+		    <input type="text" name="txtT1DOC_ACTU_AM" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_ACTU_AM" title="Amount: " primary="Summary_Detail" vsformat="$#,##0.00;($#,##0.00)">
+        </td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><div class="actions" name="GridActions" id="GridActions" vsds="T1WF_WRK_LST_QRY" mobile_container="true">
+
+         <a href="AdvMobile" vsds="T1WF_WRK_LST_QRY" vsaction="firstpage" name="T1WF_WRK_LST_QRYfirstpage" id="T1WF_WRK_LST_QRYfirstpage" title="<<" accesskey="0">First</a>
+
+
+         <a href="AdvMobile" vsds="T1WF_WRK_LST_QRY" vsaction="prevpage" name="T1WF_WRK_LST_QRYprevpage" id="T1WF_WRK_LST_QRYprevpage" title="<" accesskey="1">Prev</a>
+
+
+         <a href="AdvMobile" vsds="T1WF_WRK_LST_QRY" vsaction="nextpage" id="T1WF_WRK_LST_QRYnextpage" name="T1WF_WRK_LST_QRYnextpage" title=">" accesskey="2">Next</a>
+
+
+         <a href="AdvMobile" vsds="T1WF_WRK_LST_QRY" vsaction="lastpage" id="T1WF_WRK_LST_QRYlastpage" name="T1WF_WRK_LST_QRYlastpage" title=">>" accesskey="3">Last</a>
+
+</div></td>
+<td><div class="actions" name="SortFields" id="SortFields" vsds="T1WF_WRK_LST_QRY" mobile_container="true">
+<a href="AdvMobile" vsaction="sort" vsds="T1WF_WRK_LST_QRY" vsdf="APRV_LVL" name="T1APRV_LVLsort" id="T1APRV_LVLsort" title="Level"></a>
+<a href="AdvMobile" vsaction="sort" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_CD" name="T1DOC_CDsort" id="T1DOC_CDsort" title="Code"></a>
+<a href="AdvMobile" vsaction="sort" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_DEPT_CD" name="T1DOC_DEPT_CDsort" id="T1DOC_DEPT_CDsort" title="Dept"></a>
+<a href="AdvMobile" vsaction="sort" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_ID" name="T1DOC_IDsort" id="T1DOC_IDsort" title="ID"></a>
+<a href="AdvMobile" vsaction="sort" vsds="T1WF_WRK_LST_QRY" vsdf="PRIORITY" name="T1PRIORITYsort" id="T1PRIORITYsort" title="Priority"></a>
+<a href="AdvMobile" vsaction="sort" vsds="T1WF_WRK_LST_QRY" vsdf="DOC_SBMT_ID" name="T1DOC_SBMT_IDsort" id="T1DOC_SBMT_IDsort" title="Submitter ID"></a>
+<a href="AdvMobile" vsaction="sort" vsds="T1WF_WRK_LST_QRY" vsdf="ASGN_DT" name="T1ASGN_DTsort" id="T1ASGN_DTsort" title="Date"></a>
+</div></td>
+      <td><div name="PageActions" id="PageActions" vsds="T1WF_WRK_LST_QRY" mobile_container="true">
+          <div vsds="" name="WFApprove" id="WFApprove">
+             <a href="AdvMobile" vsds="T1WF_WRK_LST_QRY" vsaction="35" name="WrklstApprove" id="WrklstApprove" title="Approve">Approve</a>
+          </div>
+          <div vsds="" name="WFReject" id="WFReject">
+             <a href="AdvMobile" vsds="T1WF_WRK_LST_QRY" vsaction="37" name="WrklstReject" id="WrklstReject" title="Reject">Reject</a>
+          </div>
+          <div vsds="" name="WFRejectAll" id="WFRejectAll">
+		     <a href="AdvMobile" vsds="T1WF_WRK_LST_QRY" vsaction="38" name="WrklstRejectAll" id="WrklstRejectAll" title="Reject All" primary="DocOnly">Reject All</a>
+          </div>
+          <div vsds="" name="WFOverride" id="WFOverride">
+		     <a href="AdvMobile" vsds="T1WF_WRK_LST_QRY" vsaction="163" name="WrklstOverride" id="WrklstOverride" title="Override" primary="DocOnly">Override</a>
+          </div>
+          <div vsds="" name="WFRemOverride" id="WFRemOverride">
+		     <a href="AdvMobile" vsds="T1WF_WRK_LST_QRY" vsaction="164" name="WrklstRemOverride" id="WrklstRemOverride" title="Remove Override" primary="DocOnly">Remove Override</a>
+          </div>
+          <div vsds="" name="WFTake" id="WFTake">
+             <a href="AdvMobile" vsds="T1WF_WRK_LST_QRY" vsaction="10" name="WrklstTakeTask" id="WrklstTakeTask" title="Take">Take</a>
+          </div>
+          <div vsds="" name="WFReturn" id="WFReturn">
+             <a href="AdvMobile" vsds="T1WF_WRK_LST_QRY" vsaction="23" name="WrklstReturnTask" id="WrklstReturnTask" title="Return">Return</a>
+          </div>
+          <a href="AdvMobile" vsds="T1WF_WRK_LST_QRY" vsaction="openDoc" ams_action="" name="openDoc" id="openDoc" title="Open">Open</a>
+      </div></td>
+      <td>
+        <a href="AdvMobile" vsaction="" vsds="T1WF_WRK_LST_QRY"  id="Refresh" name="Refresh" title="Refresh Worklist">Refresh</a>
+      </td>
+    </tr>
+  </table>
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+      <table class="advtrans form">
+        <tr>
+          <td>
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+</td>
+          <td>
+
+<a name="btnT2pDOC_CMNT" href="AdvMobile" id="btnT2pDOC_CMNT" title="Navigation to Comments" vsaction="pagetransition"
+           vsds=""
+ vsnavigation="T2pDOC_CMNT">Comments</a>
+            <a href="AdvMobile" vsaction="recall_approvals" name="recall_approvals" id="recall_approvals" title="Recall">Recall</a>
+          </td>
+          <td>
+            <div name="AMSManagerWorklist" id="AMSManagerWorklist" vsds="" vsvisible="false" >
+              <a href="AdvMobile" vsaction="manager_worklist" name="manager_worklist" id="manager_worklist" title="Manager Worklist">Manager Worklist</a>
+            </div>
+          </td>
+          <td>
+              <a href="AdvMobile" vsaction="worklist_details" name="worklist_details" id="worklist_details" title="Worklist Details">Worklist Details</a>
+          </td>
+        </tr>
+      </table>
+      <vstext name="AMSWLMenuTag" vsds=" " vspreservetag="true">
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="AdvMobile" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+<a href="AdvMobile" vsds=" " vsaction="mob_back" ams_action="301" name="mob_back" id="mob_back" title=""></a>
+<a href="AdvMobile" vsds=" " vsaction="display_error" name="display_error" id="display_error" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

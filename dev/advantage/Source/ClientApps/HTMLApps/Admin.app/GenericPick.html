@@ -1,0 +1,157 @@
+<!-- ARCHETYPE_COMMENT
+/*
+ *  RecSrcArchetypeAMSDocTabGridDisplay.htm           99/12/03
+ *
+ * Copyright (c) 1999 American Management Systems (AMS)
+ * All rights reserved.
+ *
+ * This software is the confidential and proprietary information of AMS
+ * ("Confidential Information").  You shall not disclose such Confidential
+ * Information and shall use it only in accordance with the terms of the
+ * license agreement you entered into with AMS.
+ *
+ *-----------------------------------------------------------------------------
+ * This archetype is used to generate the html page that is used to display
+ * a pick object to the end user. The layout of this html file is similar to
+ * the rest of the document layout.
+ *
+ * PVCS Modification Log:
+ *
+ * $Log:   N:/ASG/Projects/AMS_ADVANTAGE_Technical_Architecture/archives/dev/advantage/Source/AMSArchetypes/GenericPick.html-arc  $
+
+   Rev 1.1   19 Oct 2003 09:41:58   mshipley
+Accessibility changes
+
+   Rev 1.0   02 Jul 2003 15:24:56   SColoney
+Initial revision.
+
+   Rev 1.3   17 Sep 2002 10:48:56   MShipley
+IR-NFFX006581: Removed vsclass attributes and fixed Cancel hyperlink layout problem.
+
+   Rev 1.2   16 Sep 2002 15:00:22   MShipley
+IR-HRFX0334: Cleaned up the generic pick page
+
+   Rev 1.1   27 Aug 2002 12:25:52   SNaikoti
+IR-NFFX006123: Added return for keypress handler to remove the noise in IE.
+
+   Rev 1.0   20 Aug 2002 15:07:40   SCOLONEY
+Initial revision.
+
+   Rev 1.0   Apr 13 2002 14:12:40   SColoney
+Initial revision.
+
+   Rev 1.6   15 Jan 2002 17:23:38   MShipley
+IR-NFOC000015 - If the transaction target window was closed after the transaction was started, then release the transaction lock
+
+   Rev 1.5   15 Jan 2002 13:17:26   MShipley
+IR-NFFX005328: Prevent all user clicks until the page has fully loaded
+
+   Rev 1.4   Nov 30 2001 16:42:34   SSurabhi
+Added default enter key for generic picks
+
+   Rev 1.3   Nov 20 2001 19:09:00   SSurabhi
+Changes for popup pick
+
+   Rev 1.2   Oct 08 2001 23:44:44   RApparaj
+Advantage EJB conversion (Build 5)
+
+   Rev 1.1   Oct 08 2001 20:34:00   RApparaj
+Versata EJB changes(Build 5)
+
+   Rev 1.0   Jun 24 2001 09:00:46   SColoney
+Initial revision.
+
+   Rev 1.8   Jun 19 2001 09:49:54   SSurabhi
+Changes to prevent the user from performing another action while an action is in progress
+
+   Rev 1.7   Jan 04 2001 17:24:36   mshipley
+Look and feel change
+
+   Rev 1.6   Aug 31 2000 16:30:38   mshipley
+Applied style changes
+
+   Rev 1.5   27 Jul 2000 12:20:36   ssurabhi
+Added buttons for Browse and Clear
+
+   Rev 1.4   Jul 09 2000 15:07:52   PGoel
+Added new style sheet classes
+
+   Rev 1.3   Jul 05 2000 15:32:54   MShipley
+Use new alternating table row class logic
+
+   Rev 1.2   21 Apr 2000 19:06:30   SCOLONEY
+After changes to Merge Client and Server Projects
+
+   Rev 1.0   Dec 27 1999 12:05:20   rapparaj
+Initial revision.
+ */
+ARCHETYPE_COMMENT-->
+
+<JADEArchetype>
+<html>
+
+<head>
+  <title>Choose</title>
+  <base href>
+  <link rel="STYLESHEET" type="text/css" href="../AMSImages/ADVStyle.css">
+  <link rel="STYLESHEET" type="text/css" href="../AMSImages/ADVAppStyle.css">
+  <script LANGUAGE="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+</head>
+
+<body class="adv reftable pick" onload="UTILS_EnableClicks();UTILS_InitPage();"
+onkeypress="return UTILS_KeyPressHandler('AMSBrowse', event);" oncontextmenu="event.returnValue=false;return false;">
+
+  <form action="JadeAppName" method="post" vsform="true" name="PickDataSource" onsubmit="return (UTILS_BeforeFormSubmit())">
+
+   <div id="MsgDisplay" name="MsgDisplay" class="advmsgdisplaypick" vsds="" vsvisible="false"><vserror></div>
+
+   <div name="PageContent" id="PageContent" class="advpgcont">
+
+    <h1 class="advpagetitle">Choose</h1>
+
+    <div class="advhdractns"></div>
+
+    <table class="advaction recsrc">
+      <tr>
+        <td>
+          <a href="JadeAppName" vsds="PickDataSource" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+          <a href="JadeAppName" vsds="PickDataSource" vsaction="clearquery" name="clearQuery" id="clearQuery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </td>
+      </tr>
+    </table>
+
+    <table class="advgrid" vsds="PickDataSource">
+      <tr vsheader="true" class="advgridhdr">
+        <th class="advcorner left"></th>
+        <td><vstext value="columnName" vspreservetag="true"></td>
+        <th class="advcorner right"></th>
+      </tr>
+      <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow">
+        <td class="radio"><a href="JadeAppName" vspickaccept="true" vsaction="acceptpick" value="PickDataSourcevscurrency" onclick="UTILS_ClosePickWindow(document.forms[0], this);" title="Select Row">Select</a></td>
+        <td class="nowrap right"><vstext name="txtPickDataSourceNum"></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <table class="advaction recsrc">
+      <tr>
+        <td>
+          <a href="JadeAppName" vsaction="cancel" name="pickcancel" id="pickcancel" vspickaccept="false" onclick="UTILS_ClosePickWindow(document.forms[0], this);" title="Cancel">Cancel</a>
+        </td><td>
+          <ams_map title="Grid Navigation" name="Grid Navigation">
+            <a href="JadeAppName" vsds="PickDataSource" vsaction="firstpage" name="PickDataSourcefirstpage" id="PickDataSourcefirstpage" title="First Block of Rows" accesskey="0">First</a>
+            <a href="JadeAppName" vsds="PickDataSource" vsaction="prevpage" name="PickDataSourceprevpage" id="PickDataSourceprevpage" title="Previous Block of Rows" accesskey="1">Previous</a>
+            <a href="JadeAppName" vsds="PickDataSource" vsaction="nextpage" name="PickDataSourcenextpage" id="PickDataSourcenextpage" title="Next Block of Rows" accesskey="2">Next</a>
+            <a href="JadeAppName" vsds="PickDataSource" vsaction="lastpage" name="PickDataSourcelastpage" id="PickDataSourcelastpage" title="Last Block of Rows" accesskey="3">Last</a>
+          </ams_map>
+        </td>
+      </tr>
+    </table>
+  </div>
+<a href="JadeAppName" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+</form>
+</body>
+</html>
+</JADEArchetype>

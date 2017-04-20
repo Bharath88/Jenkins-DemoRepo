@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0651285372.Administrator.0010"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="False"
+	ChildMostDataObject="INFOADVANTAGE_EVENT_ERROR"
+	DistinctRowsOnly="False"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[SELECT INFOADVANTAGE_EVENT.DIRECTION AS DIRECTION, INFOADVANTAGE_EVENT.EVENT_ID AS EVENT_ID, INFOADVANTAGE_EVENT.CORR_EVENT_ID AS CORR_EVENT_ID, INFOADVANTAGE_EVENT.EVENT_TYPE AS EVENT_TYPE, INFOADVANTAGE_EVENT.EVENT_FUNCTION AS EVENT_FUNCTION, INFOADVANTAGE_EVENT.EVENT_OBJECT AS EVENT_OBJECT, INFOADVANTAGE_EVENT.EVENT_COMP_NAME AS EVENT_COMP_NAME, INFOADVANTAGE_EVENT.EVENT_COMP_FUNCTION AS EVENT_COMP_FUNCTION, INFOADVANTAGE_EVENT.EVENT_COMP_PHASE AS EVENT_COMP_PHASE, INFOADVANTAGE_EVENT.EVENT_COMP_STATUS AS EVENT_COMP_STATUS, INFOADVANTAGE_EVENT.EVENT_PRIORITY AS EVENT_PRIORITY, INFOADVANTAGE_EVENT.EVENT_CATEGORY AS EVENT_CATEGORY, INFOADVANTAGE_EVENT.EVENT_STATUS AS EVENT_STATUS, INFOADVANTAGE_EVENT.EVENT_DESC AS EVENT_DESC, INFOADVANTAGE_EVENT.EVENT_DETAIL AS EVENT_DETAIL, INFOADVANTAGE_EVENT.UPDATE_TIMESTAMP AS UPDATE_TIMESTAMP, INFOADVANTAGE_EVENT.TIMEFRAME AS TIMEFRAME, INFOADVANTAGE_EVENT.REFERENCE AS REFERENCE, INFOADVANTAGE_EVENT_ERROR.ERROR_SEQUENCE AS ERROR_SEQUENCE, INFOADVANTAGE_EVENT_ERROR.EVENT_ERROR_DATE AS EVENT_ERROR_DATE, INFOADVANTAGE_EVENT_ERROR.EVENT_ERROR_MESSAGE AS EVENT_ERROR_MESSAGE, INFOADVANTAGE_EVENT.SOURCE_EVENT_ID AS SOURCE_EVENT_ID, ' ' AS RPRC_CNT, ' ' AS RPRC_SUCCS_CNT FROM <dbschema>.INFOADVANTAGE_EVENT_ERROR INFOADVANTAGE_EVENT_ERROR RIGHT OUTER JOIN <dbschema>.INFOADVANTAGE_EVENT INFOADVANTAGE_EVENT ON INFOADVANTAGE_EVENT_ERROR.DIRECTION  =  INFOADVANTAGE_EVENT.DIRECTION AND INFOADVANTAGE_EVENT_ERROR.EVENT_ID  =  INFOADVANTAGE_EVENT.EVENT_ID AND INFOADVANTAGE_EVENT_ERROR.CORR_EVENT_ID  =  INFOADVANTAGE_EVENT.CORR_EVENT_ID   ORDER BY INFOADVANTAGE_EVENT.DIRECTION, INFOADVANTAGE_EVENT.EVENT_ID, INFOADVANTAGE_EVENT.EVENT_STATUS]]></RuntimeSql>
+	<Where><![CDATA[]]></Where>
+	<OrderBy>
+	<OrderByAttribute
+		Name="INFOADVANTAGE_EVENT.DIRECTION"
+	/>
+	<OrderByAttribute
+		Name="INFOADVANTAGE_EVENT.EVENT_ID"
+	/>
+	<OrderByAttribute
+		Name="INFOADVANTAGE_EVENT.EVENT_STATUS"
+	/>
+	</OrderBy>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="INFOADVANTAGE_EVENT"
+			Alias="INFOADVANTAGE_EVENT"
+		/>
+
+		<DataObject
+			DataObjectName="INFOADVANTAGE_EVENT_ERROR"
+			Alias="INFOADVANTAGE_EVENT_ERROR"
+		/>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="DIRECTION"
+			Alias="DIRECTION"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_ID"
+			Alias="EVENT_ID"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+			IdentityColumnsElement="True"
+		/>
+
+		<Attribute
+			Name="CORR_EVENT_ID"
+			Alias="CORR_EVENT_ID"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_TYPE"
+			Alias="EVENT_TYPE"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_FUNCTION"
+			Alias="EVENT_FUNCTION"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_OBJECT"
+			Alias="EVENT_OBJECT"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_COMP_NAME"
+			Alias="EVENT_COMP_NAME"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_COMP_FUNCTION"
+			Alias="EVENT_COMP_FUNCTION"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_COMP_PHASE"
+			Alias="EVENT_COMP_PHASE"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_COMP_STATUS"
+			Alias="EVENT_COMP_STATUS"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_PRIORITY"
+			Alias="EVENT_PRIORITY"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_CATEGORY"
+			Alias="EVENT_CATEGORY"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_STATUS"
+			Alias="EVENT_STATUS"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_DESC"
+			Alias="EVENT_DESC"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_DETAIL"
+			Alias="EVENT_DETAIL"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="UPDATE_TIMESTAMP"
+			Alias="UPDATE_TIMESTAMP"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="TIMEFRAME"
+			Alias="TIMEFRAME"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="REFERENCE"
+			Alias="REFERENCE"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ERROR_SEQUENCE"
+			Alias="ERROR_SEQUENCE"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT_ERROR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_ERROR_DATE"
+			Alias="EVENT_ERROR_DATE"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT_ERROR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="EVENT_ERROR_MESSAGE"
+			Alias="EVENT_ERROR_MESSAGE"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT_ERROR"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="SOURCE_EVENT_ID"
+			Alias="SOURCE_EVENT_ID"
+			AggregationType="None"
+			SourceDataObject="INFOADVANTAGE_EVENT"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="RPRC_CNT"
+			Alias="RPRC_CNT"
+			AggregationType="None"
+			>
+			<DataType
+				Type="Integer"
+			/>
+			<Formula><![CDATA[' ']]></Formula>
+		</Attribute>
+
+		<Attribute
+			Name="RPRC_SUCCS_CNT"
+			Alias="RPRC_SUCCS_CNT"
+			AggregationType="None"
+			>
+			<DataType
+				Type="Integer"
+			/>
+			<Formula><![CDATA[' ']]></Formula>
+		</Attribute>
+
+	</Attributes>
+	<Joins
+		LeftDataObject="INFOADVANTAGE_EVENT_ERROR"
+		RightDataObject="INFOADVANTAGE_EVENT"
+		JoinType="Right"
+		>
+		<ColumnSet
+			LeftAttribute="INFOADVANTAGE_EVENT_ERROR.DIRECTION"
+			RightAttribute="INFOADVANTAGE_EVENT.DIRECTION"
+		/>
+		<ColumnSet
+			LeftAttribute="INFOADVANTAGE_EVENT_ERROR.EVENT_ID"
+			RightAttribute="INFOADVANTAGE_EVENT.EVENT_ID"
+		/>
+		<ColumnSet
+			LeftAttribute="INFOADVANTAGE_EVENT_ERROR.CORR_EVENT_ID"
+			RightAttribute="INFOADVANTAGE_EVENT.CORR_EVENT_ID"
+		/>
+	</Joins>
+
+</QueryObject>

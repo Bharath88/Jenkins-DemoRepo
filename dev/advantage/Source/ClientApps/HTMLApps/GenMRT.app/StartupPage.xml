@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="Startup"
+	PositionTop="237"
+	PositionLeft="18"
+	PositionWidth="150"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="False"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="VSPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-2138881825"
+	>
+	<FormCaption><![CDATA[StartupPage]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+	</ArchetypeExtendedProperties>
+	<Transition
+		FormTransNum="1"
+		Prefix="T2"
+		TargetFormName="pNoData"
+		IsTargetInitialQueryMode="False"
+		IsTargetInitialAddMode="False"
+		IsVisibleAppline="True"
+		IsAddedAfterGen="False"
+		FormTransCaption="No Data"
+		ClassName="PageNavigation"
+		TargetFramesetPage=""
+		TargetFrame="Display"
+		FrameNameInFramesetPage=""
+		RSID="2"
+		BusinessObject="NoData"
+		RelnIsFromParent="True"
+		>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+	</Transition>
+	<Transition
+		FormTransNum="1"
+		Prefix="T1"
+		TargetFormName="pR_FS_MRT_BUILD"
+		IsTargetInitialQueryMode="False"
+		IsTargetInitialAddMode="False"
+		IsVisibleAppline="True"
+		IsAddedAfterGen="False"
+		ClassName="PageNavigation"
+		TargetFramesetPage=""
+		TargetFrame="Display"
+		FrameNameInFramesetPage=""
+		RSID="3"
+		BusinessObject="NoData"
+		RelnIsFromParent="True"
+		>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+	</Transition>
+</Form>

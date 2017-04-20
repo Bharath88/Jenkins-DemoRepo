@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Home Page Window Properties</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="ConfigHmpgWinExtPropertyPage">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Home Page Window Properties">Home Page Window Properties</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+  <INPUT type="hidden" name="T1IN_HMPG_WINvscurrency" vsds="T1IN_HMPG_WIN" vscurrency="true">
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="saveall" name="T1IN_HMPG_WINSaveAll" id="T1IN_HMPG_WINSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="undoall" name="T1IN_HMPG_WINUndoAll" id="T1IN_HMPG_WINUndoAll" title="Undo All" accesskey="6">Undo</a>
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="delete" id="IndexT1IN_HMPG_WINdelete" name="T1IN_HMPG_WINdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="insert" id="T1IN_HMPG_WINinsert" name="T1IN_HMPG_WINinsert" title="Insert New Record" accesskey="I">Insert</a>
+-->
+<!-- END CUSTOMIZATION -->
+</ams_map>
+      </td>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="first" name="T1IN_HMPG_WINfirst" id="T1IN_HMPG_WINfirst" title="First Record" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="prev" name="T1IN_HMPG_WINprev" id="T1IN_HMPG_WINprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="next" name="T1IN_HMPG_WINnext" id="T1IN_HMPG_WINnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="last" name="T1IN_HMPG_WINlast" id="T1IN_HMPG_WINlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+-->
+<!-- END CUSTOMIZATION -->
+
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1WIN_NM" title="Name (Required)">Name :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1WIN_NM" id="txtT1WIN_NM"
+               size="20"
+ vsds="T1IN_HMPG_WIN" vsdf="WIN_NM"
+         ams_max_len="50"
+ ShowCodeInfo="" value="WIN_NM"title="Name (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1WIN_X" title="Left (Required)">Left :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1WIN_X" id="txtT1WIN_X"
+               size="10"
+ vsds="T1IN_HMPG_WIN" vsdf="WIN_X"
+               ams_max_len="10"
+ ShowCodeInfo="" value="WIN_X"title="Left (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1WIN_Y" title="Top (Required)">Top :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1WIN_Y" id="txtT1WIN_Y"
+               size="10"
+ vsds="T1IN_HMPG_WIN" vsdf="WIN_Y"
+               ams_max_len="10"
+ ShowCodeInfo="" value="WIN_Y"title="Top (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1WIN_WIDTH" title="Width (Required)">Width :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1WIN_WIDTH" id="txtT1WIN_WIDTH"
+               size="10"
+ vsds="T1IN_HMPG_WIN" vsdf="WIN_WIDTH"
+               ams_max_len="10"
+ ShowCodeInfo="" value="WIN_WIDTH"title="Width (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1WIN_HEIGHT" title="Height (Required)">Height :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1WIN_HEIGHT" id="txtT1WIN_HEIGHT"
+               size="10"
+ vsds="T1IN_HMPG_WIN" vsdf="WIN_HEIGHT"
+               ams_max_len="10"
+ ShowCodeInfo="" value="WIN_HEIGHT"title="Height (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1COLOR" title="Color (Required)">Color :</label></td>
+        <td class="val required">
+          <select name="txtT1COLOR" id="txtT1COLOR" vsds="T1IN_HMPG_WIN" vsdf="COLOR" size="1" vscodetable="CVL_IN_COLOR" ShowCodeInfo="" title="Color (Required)">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1FONT_COLOR" title="Font Color (Required)">Font Color :</label></td>
+        <td class="val required">
+          <select name="txtT1FONT_COLOR" id="txtT1FONT_COLOR" vsds="T1IN_HMPG_WIN" vsdf="FONT_COLOR" size="1" vscodetable="CVL_IN_COLOR" ShowCodeInfo="" title="Font Color (Required)">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1URL" title="URL">URL :</label></td>
+        <td class="val memo">
+          <textarea ams_readonly cols="35" rows="4" name="txtT1URL" id="txtT1URL" vsds="T1IN_HMPG_WIN" vsdf="URL"
+ title="URL"></textarea>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

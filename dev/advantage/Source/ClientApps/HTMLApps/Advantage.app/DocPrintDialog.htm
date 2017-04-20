@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Print</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="DocPrintDialog">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+<!-- BEGIN CUSTOMIZATION -->
+    <a href="Advantage" style="visibility:hidden" vsds=" " vsaction=""
+      name="selectPrintJob" id="selectPrintJob" title="Select Print Job">Back</a>
+
+
+    <a href="Advantage" style="visibility:hidden" vsds=" " vsaction=""
+      name="selectPrintOutputType" id="printOutputType" title="Select Print Output">Back</a>
+
+    <a href="Advantage" style="visibility:hidden" vsds=" " vsaction=""
+      name="selectprintRsrc" id="printRsrcCombo" title="Select Print Resource">Back</a>
+
+<!-- END CUSTOMIZATION -->
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Print">Print</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="Advantage" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+
+<!-- BEGIN CUSTOMIZATION -->
+
+   <table class="advscalar">
+
+    <tr class="trwidth">
+	       <td class="fieldlabel" width="184px"><label for="printOutputType" title="Print Output Type">Print Output Type</label></td>
+		        <td class="tdwidth">
+		           <select name="printOutputType" id="printOutputType" vsds="" vsdf="TYP" vscodetable="DOC_HDR" size="1"
+		            onchange="submitForm(document.forms[0],'selectPrintOutputType=selectPrintOutputType','');" title="Print Output Type">
+		              <option value="JADEDisplayed">JADEDisplayed</option>
+		           </select>
+	       </td>
+    </tr>
+    <tr class="trwidth">
+        <td class="fieldlabel"><label for="printJobCombo" title="Print Job">Print Job</label></td>
+        <td class="tdwidth">
+          <select name="printJobCombo" id="printJobCombo" vsds="" vsdf="PRNT_JOB_CD" vscodetable="DOC_HDR" size="1"
+           onchange="submitForm(document.forms[0],'selectPrintJob=selectPrintJob','');" title="Print Job">
+            <option value="JADEDisplayed">JADEDisplayed</option>
+          </select>
+        </td>
+     </tr>
+     <tr class="trwidth">
+	       <td class="fieldlabel" ><label for="printRsrcCombo" title="Print Resource">Print Resource</label></td>
+	       <td class="tdwidth">
+	 	   <select name="printRsrcCombo" id="printRsrcCombo" vsds="" vsdf="PRNT_RSRC_ID" vscodetable="DOC_HDR" size="1"
+	 		onchange="submitForm(document.forms[0],'selectprintRsrc=selectprintRsrc','');" title="Print Resource">
+	 		 <option value="JADEDisplayed">JADEDisplayed</option>
+	           </select>
+	       </td>
+	     </tr>
+	     <vstext vsds=" " name="PrintActions" vspreservetag="true">
+   </table>
+
+    <div vsds="" id="printer" name="printer" vsvisible="false">
+	    <table class="advscalar">
+    <tr class="trwidth">
+      <td class="fieldlabel" width="184px"><label for="numCopiesFld" title="Number of Copies">Number of Copies:</label></td>
+      <td class="tdwidth">
+           <input type="text" name="numCopiesFld" id="numCopiesFld" size="5" maxlength="5"
+            vsds="" vsdf="NUM_COPIES" value="1" title="Number of Copies" class="adveditable">
+      </td>
+    </tr>
+
+    <tr class="trwidth">
+      <td class="fieldlabel"><label for="duplexCheckBox" title="Print on Both Sides">Print on Both Sides?</label></td>
+      <td class="tdwidth">
+           <input type="checkbox" name="duplexCheckBox" id="duplexCheckBox" value="true"
+            vsds="" vsdf="DUPLEX_PRNT" title="Print on Both Sides" alt="Print on Both Sides">
+      </td>
+    </tr>
+    </table>
+    </div>
+
+
+    <div vsds="" id="viewForms" name="viewForms" vsvisible="false">
+		<table class="advscalar">
+		  <tr class="trwidth">
+			  <td class="fieldlabel" width="184px"><label for="isViewForms" title="View Forms">View Forms</label></td>
+			  <td class="tdwidth">
+			   <input type="checkbox" name="isViewForms" id="isViewForms" value="true"
+				vsds="" vsdf="VIEW_FORMS" title="View Forms" alt="View Forms">
+			  </td>
+		  </tr>
+		  <tr class="trwidth">
+			<td class="fieldlabel"><label for="formsDscr" title="View Forms Description">View Forms Description</label></td>
+			<td class="tdwidth">
+			   <input type="text" name="formsDscr" id="formsDscr" size="70" maxlength="60"
+				vsds="" vsdf="VW_FORMS_DSCR" value="" title="View Forms Description" class="adveditable">
+		   </td>
+		 </tr>
+		</table>
+    </div>
+
+       <div vsds="" id="email" name="email" vsvisible="false">
+		  <table class="advscalar">
+			<tr class="trwidth">
+				  <td class="fieldlabel" width="184px"><label for="EmailAdd" title="Email Address">Email Address:</label></td>
+				  <td class="tdwidth">
+					   <input type="text" name="EmailAdd" id="EmailAdd" size="100" maxlength="150"
+						vsds="" vsdf="EMAIL_AD" title="Email Address" class="adveditable">
+				  </td>
+			</tr>
+			<tr class="trwidth">
+				  <td class="fieldlabel"><label for="EmailSub" title="Email Subject">Email Subject:</label></td>
+				  <td class="tdwidth">
+					   <input type="text" name="EmailSub" id="EmailSub" size="80" maxlength="128"
+						vsds="" vsdf="SUBJECT" title="Email Subject" class="adveditable">
+				  </td>
+			</tr>
+			<tr class="trwidth">
+				  <td class="fieldlabel"><label for="EmailMsg" title="Email Message">Email Message:</label></td>
+				  <td class="tdwidth">
+					   <textarea cols="80" rows="10" name="EmailMsg" id="EmailMsg"
+						vsds="" vsdf="EMAIL_MSG" title="Email Message" class="adveditable"></textarea>
+				  </td>
+			</tr>
+			<tr class="trwidth">
+					  <td class="fieldlabel"><label for="Notify" title="Notify">Sender's Email:</label></td>
+					  <td class="tdwidth">
+						   <input type="text" name="Notify" id="Notify" size="20" maxlength="100"
+							vsds="" vsdf="FROM" title="Notify" class="adveditable">
+					  </td>
+			</tr>
+		  </table>
+	       </div>
+	       <div vsds="" id="fax" name="fax" vsvisible="false">
+				  <table class="advscalar">
+
+				  <tr class="trwidth">
+					  <td class="fieldlabel" ><label for="FaxCaption" title="FaxCaption"> Fax Caption:</label></td>
+					  <td class="tdwidth">
+					  <input type="text" name="FaxCaption" id="FaxCaption" size="80" maxlength="128"
+							vsds="" vsdf="FAX_CAPTION" title="FaxCaption" class="adveditable">
+					  </td>
+				  </tr>
+				  <tr class="trwidth">
+					  <td class="fieldlabel" width="184px"><label for="FaxMatter" title="FaxMatter">Fax Matter:</label></td>
+					  <td class="tdwidth">
+					   <textarea cols="80" rows="10" name="FaxMatter" id="FaxMatter"
+							vsds="" vsdf="FAX_MATTER" title="FaxMatter" class="adveditable"></textarea>
+					  </td>
+				  </tr>
+				  <tr class="trwidth">
+					  <td class="fieldlabel" ><label for="FaxFromEntity" title="FaxFromEntity">Fax From Entity:</label></td>
+					  <td class="tdwidth">
+						   <input type="text" name="FaxFromEntity" id="FaxFromEntity" size="30" maxlength="30"
+							vsds="" vsdf="FAX_FRM_ENTITY" title="Fax From Entity" class="adveditable">
+					  </td>
+					</tr>
+					<tr class="trwidth">
+					  <td class="fieldlabel"><label for="FaxFromNumber" title="FaxFromNumber">Fax From Fax Number:</label></td>
+					  <td class="tdwidth">
+						   <input type="text" name="FaxFromNumber" id="FaxFromNumber" size="30" maxlength="30"
+							vsds="" vsdf="FAX_FROM_NO" title="Fax From Fax Number" class="adveditable">
+					  </td>
+					</tr>
+					<tr class="trwidth">
+						  <td class="fieldlabel"><label for="FaxFromExt" title="FaxFromExt">Fax From Extension Number:</label></td>
+						  <td class="tdwidth">
+							   <input type="text" name="FaxFromExt" id="FaxFromExt" size="6" maxlength="6"
+								vsds="" vsdf="FAX_FROM_EXT_NO" title="Fax From Extension Number" class="adveditable">
+						  </td>
+					</tr>
+					<tr class="trwidth">
+					  <td class="fieldlabel"><label for="FaxFromName" title="FaxFromName">Fax From Name:</label></td>
+					  <td class="tdwidth">
+						   <input type="text" name="FaxFromName" id="FaxFromName" size="30" maxlength="60"
+							vsds="" vsdf="FAX_FROM_NM" title="FaxFromName" class="adveditable">
+					  </td>
+					  <tr class="trwidth">
+					  <td class="fieldlabel"><label for="FaxFromPhNum" title="FaxFromPhNum">Fax From Phone Number:</label></td>
+					  <td class="tdwidth">
+						   <input type="text" name="FaxFromPhNum" id="FaxFromPhNum" size="30" maxlength="37"
+							vsds="" vsdf="FAX_PH_NO" title="FaxFromPhNum" class="adveditable">
+					  </td>
+					</tr>
+					<tr class="trwidth">
+					  <td class="fieldlabel" ><label for="FaxNumber" title="FaxNumber">Fax To Number:</label></td>
+					  <td class="tdwidth">
+						   <input type="text" name="FaxNumber" id="FaxNumber" size="30" maxlength="30"
+							vsds="" vsdf="FAX_NO" title="Fax Number" class="adveditable">
+					  </td>
+					</tr>
+					<tr class="trwidth">
+						  <td class="fieldlabel" ><label for="FaxToExt" title="FaxToExt">Fax To Extension Number:</label></td>
+						  <td class="tdwidth">
+							   <input type="text" name="FaxToExt" id="FaxToExt" size="6" maxlength="6"
+								vsds="" vsdf="FAX_TO_EXT" title="Fax To Extension Number" class="adveditable">
+						  </td>
+					</tr>
+
+					<tr class="trwidth">
+						  <td class="fieldlabel"><label for="FaxCompany" title="FaxCompany">Fax To Company:</label></td>
+						  <td class="tdwidth">
+							   <input type="text" name="FaxCompany" id="FaxCompany" size="30" maxlength="60"
+								vsds="" vsdf="FAX_TO_COMP" title="FaxCompany" class="adveditable">
+						  </td>
+					</tr>
+
+					<tr class="trwidth">
+						  <td class="fieldlabel"><label for="FaxToName" title="FaxToName">Fax To Name:</label></td>
+						  <td class="tdwidth">
+							   <input type="text" name="FaxToName" id="FaxToName" size="30" maxlength="60"
+								vsds="" vsdf="FAX_TO_NM" title="FaxToName" class="adveditable">
+						  </td>
+					</tr>
+
+					<tr class="trwidth">
+						  <td class="fieldlabel"><label for="FaxToPhNum" title="FaxToPhNum">Fax To Phone Number:</label></td>
+						  <td class="tdwidth">
+							   <input type="text" name="FaxToPhNum" id="FaxToPhNum" size="30" maxlength="37"
+								vsds="" vsdf="FAX_PH_NO" title="FaxToPhNum" class="adveditable">
+						  </td>
+					</tr>
+					<tr class="trwidth">
+					  <td class="fieldlabel"><label for="FaxNotify" title="FaxNotify">Notify Send Status:</label></td>
+					  <td class="tdwidth">
+					  <input type="text" name="FaxNotify" id="FaxNotify" size="30" maxlength="100"
+					  vsds="" vsdf="FAX_SEND_STS" title="FaxNotify" class="adveditable" readonly="readonly">
+					  </td>
+					</tr>
+	           </table>
+	       </div>
+
+
+<!-- END CUSTOMIZATION -->
+
+
+<!-- DataSource T1DOC_HDR //-->
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<!-- BEGIN CUSTOMIZATION -->
+
+     <a href="Advantage" class="advnavlink" vsds="T1DOC_HDR" vsaction="175"
+       name="PrintDoc" id="PrintDoc" title="Print" accesskey="P">Print</a>
+
+     <a href="Advantage" class="advnavlink" vsds="T1DOC_HDR" vsaction="cancel"
+       name="CancelPrint" id="CancelPrint" title="Cancel" accesskey="C">Cancel</a>
+
+<!-- END CUSTOMIZATION -->
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

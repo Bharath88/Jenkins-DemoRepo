@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="R_WF_NOTIF_WO_EVAR_1"
+		ChildRoleName="R_WF_APRVsV1"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="DOC_CD"
+				ChildAttribute="DOC_CD"
+			/>
+			<AttributePair
+				ParentAttribute="ASGN_VAR"
+				ChildAttribute="NOTIF_WO_VAR_1"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_WO_EVAR]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Notification Variable,p:PG_APRV_LVL_1%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_NOTIF_WO_EVAR_2"
+		ChildRoleName="R_WF_APRVsV2"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="DOC_CD"
+				ChildAttribute="DOC_CD"
+			/>
+			<AttributePair
+				ParentAttribute="ASGN_VAR"
+				ChildAttribute="NOTIF_WO_VAR_2"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_WO_EVAR]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Notification Variable,p:PG_APRV_LVL_2%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_NOTIF_WO_EVAR_3"
+		ChildRoleName="R_WF_APRVsV3"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="DOC_CD"
+				ChildAttribute="DOC_CD"
+			/>
+			<AttributePair
+				ParentAttribute="ASGN_VAR"
+				ChildAttribute="NOTIF_WO_VAR_3"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_WO_EVAR]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Notification Variable,p:PG_APRV_LVL_3%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_NOTIF_WO_EVAR_4"
+		ChildRoleName="R_WF_APRVsV4"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="DOC_CD"
+				ChildAttribute="DOC_CD"
+			/>
+			<AttributePair
+				ParentAttribute="ASGN_VAR"
+				ChildAttribute="NOTIF_WO_VAR_4"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_WO_EVAR]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Notification Variable,p:PG_APRV_LVL_4%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_NOTIF_WO_EVAR_5"
+		ChildRoleName="R_WF_APRVsV5"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="DOC_CD"
+				ChildAttribute="DOC_CD"
+			/>
+			<AttributePair
+				ParentAttribute="ASGN_VAR"
+				ChildAttribute="NOTIF_WO_VAR_5"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_WO_EVAR]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Notification Variable,p:PG_APRV_LVL_5%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_NOTIF_WO_EVAR_6"
+		ChildRoleName="R_WF_APRVsV6"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="DOC_CD"
+				ChildAttribute="DOC_CD"
+			/>
+			<AttributePair
+				ParentAttribute="ASGN_VAR"
+				ChildAttribute="NOTIF_WO_VAR_6"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_WO_EVAR]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Notification Variable,p:PG_APRV_LVL_6%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_NOTIF_WO_EVAR_7"
+		ChildRoleName="R_WF_APRVsV7"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="DOC_CD"
+				ChildAttribute="DOC_CD"
+			/>
+			<AttributePair
+				ParentAttribute="ASGN_VAR"
+				ChildAttribute="NOTIF_WO_VAR_7"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_WO_EVAR]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Notification Variable,p:PG_APRV_LVL_7%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_NOTIF_WO_EVAR_8"
+		ChildRoleName="R_WF_APRVsV8"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="DOC_CD"
+				ChildAttribute="DOC_CD"
+			/>
+			<AttributePair
+				ParentAttribute="ASGN_VAR"
+				ChildAttribute="NOTIF_WO_VAR_8"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_WO_EVAR]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Notification Variable,p:PG_APRV_LVL_8%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_NOTIF_WO_EVAR_9"
+		ChildRoleName="R_WF_APRVsV9"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="DOC_CD"
+				ChildAttribute="DOC_CD"
+			/>
+			<AttributePair
+				ParentAttribute="ASGN_VAR"
+				ChildAttribute="NOTIF_WO_VAR_9"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_WO_EVAR]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Notification Variable,p:PG_APRV_LVL_9%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+	<Relationship
+		ParentRoleName="R_WF_NOTIF_WO_EVAR_10"
+		ChildRoleName="R_WF_APRVsV10"
+		IsEnforce="True"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="DOC_CD"
+				ChildAttribute="DOC_CD"
+			/>
+			<AttributePair
+				ParentAttribute="ASGN_VAR"
+				ChildAttribute="NOTIF_WO_VAR_10"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_NOTIF_WO_EVAR]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_APRV(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:Q0138,s:E,v:Notification Variable,p:PG_APRV_LVL_10%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

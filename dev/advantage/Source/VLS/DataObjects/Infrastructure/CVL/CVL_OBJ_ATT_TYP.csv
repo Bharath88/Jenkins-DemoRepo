@@ -1,0 +1,11 @@
+"CVL_OBJ_ATT_TYP_SV","CVL_OBJ_ATT_TYP_DV","AMS_ROW_VERS_NO","PG_ATT_LTD_FL","SG_ATT_LTD_FL"
+1,"Standard",1,NULL,NULL
+2,"Proprietary",1,NULL,NULL
+3,"Pricing",1,NULL,NULL
+4,"Document XML",1,NULL,NULL
+5,"Image(s) zipped",1,NULL,NULL
+6,"Image",1,NULL,NULL
+7,"Assembled Form",1,NULL,NULL
+8,"Document XML-Summary",1,"1","1"
+9,"Catalog Picture",1,NULL,NULL
+10,"Employee Photo",1,"1","1"

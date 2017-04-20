@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="RPrntJobToCvlDocPhaseCd"
+		ChildRoleName="CvlDocPhaseCdToRPrntJob"
+		IsEnforce="False"
+		OnParentDelete="PreventIfChildren"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="DOC_PHASE_NM"
+				ChildAttribute="DOC_PHASES_SUPRTED"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[CVL_DOC_PHASE_CD]]></AscendCaption>
+		<DescendCaption><![CDATA[R_PRNT_JOB(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

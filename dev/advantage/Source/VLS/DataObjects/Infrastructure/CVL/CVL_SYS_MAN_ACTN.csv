@@ -1,0 +1,21 @@
+"CVL_ACTN_CD","CVL_ACTN_CD_DESC","AMS_ROW_VERS_NO"
+102,"Deactivate Document",1
+103,"Activate Document",1
+111,"Archive Document",1
+112,"Archive Historical Document",1
+113,"Unarchive Document",1
+131,"Edit Document",1
+153,"Discard Document",1
+161,"Validate Document",1
+162,"Submit Document",1
+171,"Import Document",1
+172,"Export Document",1
+191,"Mark Document for processing",1
+192,"Hold Document",1
+200,"Document Other Actions",1
+201,"Table Import",1
+202,"Table Export",1
+203,"Table Update",1
+204,"Table Overlay",1
+205,"Table Delete",1
+206,"Table Purge",1

@@ -1,0 +1,675 @@
+<?xml version="1.0"?>
+<!DOCTYPE DataObject SYSTEM "DataObject.dtd">
+<DataObject
+	SurrId="04305643630081"
+	CodedValuesList="False"
+	IsRemoteAccessible="False"
+	SuperClass="AMSDataObject"
+	UseQuotedIdentifiers="False"
+	LockMode="NoOptimisticLocking"
+	ImageReference=" "
+	XdaConnector="SQL"
+	DTDVersion="05.06.00"
+	>
+	<CodedValuesList
+		DisplayAttribute=" "
+		StoredAttribute=" "
+	/>
+	<VLSDeployment
+		DeploySecurityInfo="False"
+	/>
+	<SingularCaption><![CDATA[Security Configuration]]> </SingularCaption>
+	<PluralCaption><![CDATA[Security Configuration]]> </PluralCaption>
+	<Description><![CDATA[ ]]> </Description>
+	<Comments><![CDATA[ ]]> </Comments>
+	<Attributes>
+		<Attribute
+			Name="CNFG_UNID"
+			PreventUserUpdates="True"
+			ValueRequired="True"
+			LayoutByDefault="False"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Byte"
+			/>
+			<Derivation
+				DerivationType="Default"
+				>
+				<DefaultValue><![CDATA[0]]></DefaultValue>
+			</Derivation>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Primary Key]]></Caption>
+			<Description><![CDATA[The unique identifier for the security configuration table]]></Description>
+		</Attribute>
+		<Attribute
+			Name="PSWD_EXPR_DY_CT"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Integer"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Password Expiration Day Count]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="LCKT_CT"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			>
+			<DataType
+				DataType="Byte"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Lockout Count Due To Bad Logins]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="PSWD_HIST_CT"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			>
+			<DataType
+				DataType="Byte"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Password History Count]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="AMS_ROW_VERS_NO"
+			Persistent="True"
+			PreventUserUpdates="True"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="Long"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+		</Attribute>
+		<Attribute
+			Name="PSWD_WARN_DY_CT"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			>
+			<DataType
+				DataType="Integer"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Password Warn Day Count]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="CHK_ROLE_IND"
+			Persistent="True"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			>
+			<DataType
+				DataType="Integer"
+			/>
+			<Validation
+				ValidationType="CodedValuesList"
+				CodedValuesList="CVL_SC_CHK_ROLE"
+			/>
+			<Caption><![CDATA[Perform Default Security Role Check]]> </Caption>
+		</Attribute>
+		<Attribute
+			Name="USER_EMAIL_SUBJ"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="255"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[User Email Subject]]></Caption>
+			<ExtendedProperties>
+				<Property
+					Name="AllowMixedCase"
+					Value="Y"
+				/>
+			</ExtendedProperties>
+		</Attribute>
+		<Attribute
+			Name="USER_EMAIL_TXT"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="255"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[User Email Text]]></Caption>
+			<ExtendedProperties>
+				<Property
+					Name="AllowMixedCase"
+					Value="Y"
+				/>
+			</ExtendedProperties>
+		</Attribute>
+		<Attribute
+			Name="PSWD_RESET_FL"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Boolean"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Enable User Password Reset]]></Caption>
+			<Description><![CDATA[Indicates if the system allows user resetting of his/her password through the password reset application.]]></Description>
+		</Attribute>
+		<Attribute
+			Name="PSWD_RESET_SUBJ"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="255"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+				>
+				<Condition><![CDATA[(  (  PSWD_RESET_FL   =  False /* No */    )  OR ( (  PSWD_RESET_FL =  True /* Yes */   )   AND (  PSWD_RESET_SUBJ  IS NOT NULL  ) )  )  ]]></Condition>
+				<ErrorMessage><![CDATA[Password Reset Email Subject is required if Password Reset Flag is checked.]]></ErrorMessage>
+			</Validation>
+			<Caption><![CDATA[Password Reset Email Subject]]></Caption>
+			<Description><![CDATA[The subject for the password reset email.]]></Description>
+			<ExtendedProperties>
+				<Property
+					Name="AllowMixedCase"
+					Value="Y"
+				/>
+			</ExtendedProperties>
+		</Attribute>
+		<Attribute
+			Name="PSWD_RESET_MSG"
+			PreventUserUpdates="False"
+			ValueRequired="False"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="255"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+				>
+				<Condition><![CDATA[(  (  PSWD_RESET_FL   =  False /* No */    )  OR ( (  PSWD_RESET_FL =  True /* Yes */   )   AND (  PSWD_RESET_MSG  IS NOT NULL  ) )  )  ]]></Condition>
+				<ErrorMessage><![CDATA[Password Reset Email Message Body is required if Password Reset Flag is checked.]]></ErrorMessage>
+			</Validation>
+			<Caption><![CDATA[Password Reset Email Message Body]]></Caption>
+			<Description><![CDATA[The message text for the password reset email. ]]></Description>
+			<ExtendedProperties>
+				<Property
+					Name="AllowMixedCase"
+					Value="Y"
+				/>
+			</ExtendedProperties>
+		</Attribute>
+		<Attribute
+			Name="USER_ID_MIN_LEN"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Integer"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+				>
+				<Condition><![CDATA[USER_ID_MIN_LEN > 0]]></Condition>
+				<ErrorMessage><![CDATA[User ID Minimum Length must be greater than zero. ]]></ErrorMessage>
+			</Validation>
+			<Caption><![CDATA[User ID Minimum Length]]></Caption>
+			<Description><![CDATA[The minimum length for a user id]]></Description>
+		</Attribute>
+		<Attribute
+			Name="USER_ID_MAX_LEN"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Integer"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+				>
+				<Condition><![CDATA[]]></Condition>
+				<ErrorMessage><![CDATA[]]></ErrorMessage>
+			</Validation>
+			<Caption><![CDATA[User ID Maximum Length]]></Caption>
+			<MicroHelp><![CDATA[ ]]></MicroHelp>
+			<Description><![CDATA[the maximum length for a user id]]></Description>
+		</Attribute>
+		<Attribute
+			Name="PSWD_MIN_LEN"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Integer"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+				>
+				<Condition><![CDATA[PSWD_MIN_LEN > 0]]></Condition>
+				<ErrorMessage><![CDATA[Password Minimum Length must be greater than zero.]]></ErrorMessage>
+			</Validation>
+			<Caption><![CDATA[Password Minimum Length]]></Caption>
+			<Description><![CDATA[The minimum length for a user password]]></Description>
+		</Attribute>
+		<Attribute
+			Name="PSWD_MAX_LEN"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Integer"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+				>
+				<Condition><![CDATA[PSWD_MAX_LEN  <=  AMSUser.PASSWORD_MAX_LENGTH]]></Condition>
+				<ErrorMessage><![CDATA[Password maximum length cannot be greater than the system maximum password length.]]></ErrorMessage>
+			</Validation>
+			<Caption><![CDATA[Password Maximum Length]]></Caption>
+			<Description><![CDATA[The maximum length for a user password]]></Description>
+		</Attribute>
+		<Attribute
+			Name="PSWD_NUM_FL"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Boolean"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Password Require Numeric (0-9)]]></Caption>
+			<Description><![CDATA[Indicates if passwords must contain a numeric flag]]></Description>
+		</Attribute>
+		<Attribute
+			Name="PSWD_UPPER_FL"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Boolean"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Password Require Upper Case (A-Z)]]></Caption>
+			<Description><![CDATA[Indicates if passwords must contain an upper case character]]></Description>
+		</Attribute>
+		<Attribute
+			Name="PSWD_LOWER_FL"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Boolean"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Password Require Lower Case (a-z)]]></Caption>
+			<Description><![CDATA[Indicates if passwords must contain an lower case character]]></Description>
+		</Attribute>
+		<Attribute
+			Name="PSWD_SYMBOL_FL"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Boolean"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Password Require Symbol Flag (@.-$#%)]]></Caption>
+			<Description><![CDATA[Indicates if passwords must contain a symbol character]]></Description>
+		</Attribute>
+		<Attribute
+			Name="PSWD_NO_USID_FL"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Boolean"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Password Cannot Contain User ID]]></Caption>
+			<Description><![CDATA[Indicates if passwords may not contain the user's user id. ]]></Description>
+		</Attribute>
+		<Attribute
+			Name="PSWD_NO_PSWD_FL"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Boolean"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Password Cannot Contain 'password']]></Caption>
+			<Description><![CDATA[Indicates if passwords may not contain the literal "password" (regardless of case)]]></Description>
+		</Attribute>
+		<Attribute
+			Name="CA_PUB_KEY"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="1500"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[CA public key]]></Caption>
+			<ExtendedProperties>
+				<Property
+					Name="AllowMixedCase"
+					Value="Y"
+				/>
+			</ExtendedProperties>
+		</Attribute>
+		<Attribute
+			Name="CA_USER_ID"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="True"
+			Persistent="True"
+			>
+			<DataType
+				DataType="VarChar"
+				Size="16"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[CA User ID]]></Caption>
+			<ExtendedProperties>
+				<Property
+					Name="AllowMixedCase"
+					Value="Y"
+				/>
+			</ExtendedProperties>
+		</Attribute>
+		<Attribute
+			Name="TBL_LAST_DT"
+			Persistent="True"
+			PreventUserUpdates="True"
+			ValueRequired="False"
+			LayoutByDefault="False"
+			>
+			<DataType
+				DataType="DateTime"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Last Modified Date]]></Caption>
+		</Attribute>
+		<Attribute
+			Name="EXPIRE_NEW_PSWD_FL"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="False"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Boolean"
+			/>
+			<Derivation
+				DerivationType="None"
+			/>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Expire New Password]]></Caption>
+		</Attribute>
+		<Attribute
+			Name="PSWD_RESET_LCKT_CT"
+			PreventUserUpdates="False"
+			ValueRequired="True"
+			LayoutByDefault="False"
+			Persistent="True"
+			>
+			<DataType
+				DataType="Integer"
+			/>
+			<Derivation
+				DerivationType="Default"
+				>
+				<DefaultValue><![CDATA[5]]></DefaultValue>
+			</Derivation>
+			<Validation
+				ValidationType="Condition"
+			/>
+			<Caption><![CDATA[Lockout Count Due To Bad Password Resets]]></Caption>
+		</Attribute>
+	</Attributes>
+	<Indexes>
+		<Index
+			Name="PK_RSCSECCNFG"
+			Primary="True"
+			Unique="True"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="CNFG_UNID"
+				Descending="False"
+			/>
+		</Index>
+		<Index
+			Name="N1_RSCSECCNFG"
+			Primary="False"
+			Unique="False"
+			IgnoreNulls="False"
+			>
+			<Index_Attribute
+				Name="TBL_LAST_DT"
+				Descending="False"
+			/>
+		</Index>
+	</Indexes>
+	<Constraints>
+		<Constraint
+			Name="PwdExpireWarn"
+			ConditionType="RejectWhen"
+			ErrorAttribute="PSWD_WARN_DY_CT"
+			>
+			<ErrorMessage><![CDATA[Password Warn Day Count must be less than Password Expiration Day Count]]></ErrorMessage>
+			<Condition><![CDATA[ PSWD_WARN_DY_CT  >=  PSWD_EXPR_DY_CT ]]></Condition>
+		</Constraint>
+		<Constraint
+			Name="NegPwdExpireWarn"
+			ConditionType="RejectWhen"
+			ErrorAttribute="PSWD_WARN_DY_CT"
+			>
+			<Condition><![CDATA[ PSWD_WARN_DY_CT  < 0]]></Condition>
+			<ErrorMessage><![CDATA[Password Warn Day Count cannot be negative]]></ErrorMessage>
+		</Constraint>
+		<Constraint
+			Name="NegPwdHistCt"
+			ConditionType="RejectWhen"
+			ErrorAttribute="PSWD_HIST_CT"
+			>
+			<Condition><![CDATA[ PSWD_HIST_CT  < 0]]></Condition>
+			<ErrorMessage><![CDATA[Password History Count cannot be negative]]></ErrorMessage>
+		</Constraint>
+		<Constraint
+			Name="NegLcktCt"
+			ConditionType="RejectWhen"
+			ErrorAttribute="LCKT_CT"
+			>
+			<Condition><![CDATA[ LCKT_CT  < 0]]></Condition>
+			<ErrorMessage><![CDATA[Lockout Count cannot be negative]]></ErrorMessage>
+		</Constraint>
+		<Constraint
+			Name="NegPwdExprDyCt"
+			ConditionType="RejectWhen"
+			ErrorAttribute="PSWD_EXPR_DY_CT"
+			>
+			<Condition><![CDATA[ PSWD_EXPR_DY_CT  < 0]]></Condition>
+			<ErrorMessage><![CDATA[Password Expiration Day Count cannot be negative]]></ErrorMessage>
+		</Constraint>
+		<Constraint
+			Name="InsertOrUpdateMsg"
+			ConditionType="RejectWhen"
+			ErrorAttribute=""
+			>
+			<Condition><![CDATA[ (  Inserting  OR  Updating  )  ]]></Condition>
+			<ErrorMessage><![CDATA[%c:Q0070%]]></ErrorMessage>
+		</Constraint>
+		<Constraint
+			Name="UserIDMinMaxLength"
+			ConditionType="RejectWhen"
+			ErrorAttribute=""
+			>
+			<Condition><![CDATA[( Inserting OR Updating )  AND ( USER_ID_MIN_LEN  >  USER_ID_MAX_LEN )]]></Condition>
+			<ErrorMessage><![CDATA[User ID Maximum Length must be greater than or equal to User ID Minimum Length. ]]></ErrorMessage>
+		</Constraint>
+		<Constraint
+			Name="PwdMinMaxLength"
+			ConditionType="RejectWhen"
+			ErrorAttribute=""
+			>
+			<Condition><![CDATA[(  Inserting  OR  Updating )  AND ( PSWD_MIN_LEN  >  PSWD_MAX_LEN  ) ]]></Condition>
+			<ErrorMessage><![CDATA[Password Maximum Length must be greater than or equal to Password Minimum Length.]]></ErrorMessage>
+		</Constraint>
+		<Constraint
+			Name="PwdMinLength"
+			ConditionType="RejectWhen"
+			ErrorAttribute=""
+			>
+			<Condition><![CDATA[( Inserting  OR  Updating )  AND ( PSWD_MIN_LEN < getNumReqdChars() ) ]]></Condition>
+			<ErrorMessage><![CDATA[Password Minimum Length must be greater than or equal to total number of required characters.]]></ErrorMessage>
+		</Constraint>
+	</Constraints>
+	<ExtendedProperties>
+		<Property
+			Name="FuncAreaName"
+			Value="FUNC_AREA_SECURITY"
+		/>
+	</ExtendedProperties>
+</DataObject>

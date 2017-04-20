@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="RScEffUserToRScRealm"
+		ChildRoleName="RScRealmToRScEffUser"
+		IsEnforce="False"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="REALM_ID"
+				ChildAttribute="REALM_ID"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_SC_REALM]]></AscendCaption>
+		<DescendCaption><![CDATA[R_SC_EFF_USER(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

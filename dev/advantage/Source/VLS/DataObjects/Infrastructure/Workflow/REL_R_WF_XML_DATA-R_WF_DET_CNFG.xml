@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="RWfDetCnfgToRWfXmlData"
+		ChildRoleName="RWfXmlDataToRWfDetCnfg"
+		IsEnforce="True"
+		CountReplicates="2"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="DOC_CD"
+				ChildAttribute="DOC_CD"
+			/>
+			<AttributePair
+				ParentAttribute="DOC_COMP"
+				ChildAttribute="DOC_COMP"
+			/>
+			<AttributePair
+				ParentAttribute="DOC_FLD"
+				ChildAttribute="DOC_FLD"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_WF_XML_DATA]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_DET_CNFG(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:Document Code, Document Component and Field combination,v:Document Workflow XML Data Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Configure Worklist Details%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:Document Code, Document Component and Field combination,v:Document Workflow XML Data Table%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

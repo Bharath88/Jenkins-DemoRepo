@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<html lang="en" style="overflow:hidden">
+<head>
+  <title>infoADVANTAGE Report</title>
+  <base href>
+
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+
+      <!-- BEGIN CUSTOMIZATION-->
+      <script type="text/javascript" language="JavaScript">
+
+      <!--
+
+      function loadReport()
+      {
+
+         UTILS_showInfoWindow();
+         var lboolReloadFrame = document.pEmbeddedBOReport["ReloadFrame"].value;
+         if(lboolReloadFrame == "true")
+         {
+            var oldAction = document.pEmbeddedBOReport.action;
+            var oldTarget = document.pEmbeddedBOReport.target;
+            var oldFrame = document.pEmbeddedBOReport.frame_name.value;
+            var oldQryString = document.pEmbeddedBOReport.query_string.value;
+
+            document.pEmbeddedBOReport.action = document.pEmbeddedBOReport["InfoAction"].value;
+            document.pEmbeddedBOReport.target = "InfoReportWin";
+            document.pEmbeddedBOReport.submit();
+
+            if ((navigator.userAgent.indexOf("MSIE")!=-1))
+            {
+               resetInfoForm(document.pEmbeddedBOReport, oldTarget, oldFrame, oldQryString, oldAction);
+            }
+            else
+            {
+               setTimeout(resetInfoForm, 10, document.pEmbeddedBOReport, oldTarget, oldFrame, oldQryString, oldAction);
+            }
+         }
+      };
+
+      function resetInfoForm(foForm, fsTar, fsFrame_Name, fsQry, fsAction)
+      {
+         foForm.target = fsTar;
+         foForm.frame_name.value = fsFrame_Name;
+         foForm.query_string.value = fsQry;
+         foForm.action = fsAction;
+      }
+       -->
+      </script>
+      <!-- END CUSTOMIZATION-->
+
+
+</head>
+
+<body class="adv" onload="loadReport()" oncontextmenu="return false" >
+  <vserror>
+
+
+
+
+  <form action="Reports_Sys_Admin_App" method="post" vsform="true" name="pEmbeddedBOReport" id="pEmbeddedBOReport">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+<!-- BEGIN CUSTOMIZATION-->
+
+
+  <div class="advhdractns" style="margin:0px;">
+
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+
+  </div>
+<!-- END CUSTOMIZATION-->
+ <div name="PageContent" id="PageContent" class="advpgcont">
+
+<!-- BEGIN CUSTOMIZATION-->
+<input type="hidden" value="" name="token"></input>
+<input type="hidden" value="" name="InfoAction"></input>
+<input type="hidden" value="true" name="ReloadFrame"></input>
+<!-- END CUSTOMIZATION-->
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Reports_Sys_Admin_App" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+   </div>
+  </form>
+
+</body>
+</html>
+
+
+

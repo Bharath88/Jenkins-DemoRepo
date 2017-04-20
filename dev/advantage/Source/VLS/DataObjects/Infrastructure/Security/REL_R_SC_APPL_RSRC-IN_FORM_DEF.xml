@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="R_SC_APPL_RSRC"
+		ChildRoleName="IN_FORM_DEF"
+		IsEnforce="True"
+		OnParentDelete="PreventIfChildren"
+		OnParentUpdate="PreventIfChildren"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="RSRC_ID"
+				ChildAttribute="APPL_RSRC_ID"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[Application Resource]]></AscendCaption>
+		<DescendCaption><![CDATA[IN_FORM_DEF(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:Application Resource ID,v:Form Definition%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Form Definition record%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:Application Resource ID specified,v:Application Resources table%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

@@ -1,0 +1,235 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Server List</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="ABI" method="post" vsform="true" name="pIM_SRVR_LST_pick">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Server List">Server List</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+      
+      
+ 
+
+  
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+      <a href="ABI" vsds="T1IM_SRVR_LST" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+      <a href="ABI" vsds="T1IM_SRVR_LST" vsaction="clearquery" name="T1IM_SRVR_LSTclearquery" id="T1IM_SRVR_LSTclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+           
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1SEQ_NO" title="Application Server ID">Application Server ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1SEQ_NO" id="txtT1SEQ_NO" 
+            size="10"
+ vsds="T1IM_SRVR_LST" vsdf="SEQ_NO" vsdisplaymode="Query" 
+ value="SEQ_NO" title="Application Server ID">
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1SRVR_NM" title="Server Name">Server Name :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1SRVR_NM" id="txtT1SRVR_NM" 
+            size="20"
+ vsds="T1IM_SRVR_LST" vsdf="SRVR_NM" vsdisplaymode="Query" 
+ value="SRVR_NM" title="Server Name">
+        </td>
+      </tr>
+    
+    
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  
+  
+
+  
+  <input type="hidden" name="T1IM_SRVR_LST_Currency" value="">
+  <input type="hidden" name="T1IM_SRVR_LST_Old_Currency" value="">
+  <table name="tblT1IM_SRVR_LST" id="tblT1IM_SRVR_LST" class="advgrid" vsds="T1IM_SRVR_LST">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><span id="T1SEQ_NOsortGridLabel" name="T1SEQ_NOsortGridLabel" vsdf="SEQ_NO" title="Application Server ID">Application Server ID</span></th>
+      
+        <th 
+><span id="T1SRVR_NMsortGridLabel" name="T1SRVR_NMsortGridLabel" vsdf="SRVR_NM" title="Server Name">Server Name</span></th>
+      
+        <th 
+><span id="T1PORT1sortGridLabel" name="T1PORT1sortGridLabel" vsdf="PORT1" title="Port 1">Port 1</span></th>
+      
+        <th 
+><span id="T1PORT2sortGridLabel" name="T1PORT2sortGridLabel" vsdf="PORT2" title="Port 2">Port 2</span></th>
+      
+        <th 
+><span id="T1PORT3sortGridLabel" name="T1PORT3sortGridLabel" vsdf="PORT3" title="Port 3">Port 3</span></th>
+      
+        <th 
+><span id="T1PORT4sortGridLabel" name="T1PORT4sortGridLabel" vsdf="PORT4" title="Port 4">Port 4</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IM_SRVR_LSTvscurrency" id="T1IM_SRVR_LSTvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1IM_SRVR_LST" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1SEQ_NO" vsds="T1IM_SRVR_LST" vsdf="SEQ_NO" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1SRVR_NM" vsds="T1IM_SRVR_LST" vsdf="SRVR_NM" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1PORT1" vsds="T1IM_SRVR_LST" vsdf="PORT1" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1PORT2" vsds="T1IM_SRVR_LST" vsdf="PORT2" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1PORT3" vsds="T1IM_SRVR_LST" vsdf="PORT3" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1PORT4" vsds="T1IM_SRVR_LST" vsdf="PORT4" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+    <td>
+<a href="ABI" vsds="T1IM_SRVR_LST" vsaction="11" name="T1IM_SRVR_LSTCopyLine" id="T1IM_SRVR_LSTCopyLine" title="Copy Selected Row" accesskey="C">Copy</a>
+    </td>
+      
+<td><div name="T1IM_SRVR_LSTGridNav" id="T1IM_SRVR_LSTGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="ABI" vsds="T1IM_SRVR_LST" vsaction="firstpage" name="T1IM_SRVR_LSTfirstpage" id="T1IM_SRVR_LSTfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="ABI" vsds="T1IM_SRVR_LST" vsaction="prevpage" name="T1IM_SRVR_LSTprevpage" id="T1IM_SRVR_LSTprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="ABI" vsds="T1IM_SRVR_LST" vsaction="nextpage" id="T1IM_SRVR_LSTnextpage" name="T1IM_SRVR_LSTnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="ABI" vsds="T1IM_SRVR_LST" vsaction="lastpage" id="T1IM_SRVR_LSTlastpage" name="T1IM_SRVR_LSTlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="ABI" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

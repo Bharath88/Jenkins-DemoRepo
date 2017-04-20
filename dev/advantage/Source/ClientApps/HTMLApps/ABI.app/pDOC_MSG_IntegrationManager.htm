@@ -1,0 +1,278 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Document Integration Messages</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="ABI" method="post" vsform="true" name="pDOC_MSG_IntegrationManager">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Document Integration Messages">Document Integration Messages</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+      
+      
+ 
+
+  
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+      <a href="ABI" vsds="T1V_DOC_MSG" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+      <a href="ABI" vsds="T1V_DOC_MSG" vsaction="clearquery" name="T1V_DOC_MSGclearquery" id="T1V_DOC_MSGclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+           
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1MSG_TXT" title="Message Text">Message Text :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1MSG_TXT" id="txtT1MSG_TXT" 
+            size="20"
+ vsds="T1V_DOC_MSG" vsdf="MSG_TXT" vsdisplaymode="Query" 
+ value="MSG_TXT" title="Message Text">
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1MSG_SEV" title="Severity Level">Severity Level :</label></td>
+   
+        <td class="val">
+          <select name="txtT1MSG_SEV" id="txtT1MSG_SEV" vsds="T1V_DOC_MSG" vsdf="MSG_SEV" vsdisplaymode="Query" size="1" vscodetable="CVL_SEV_LVL" title="Severity Level">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+    
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  
+  
+
+  
+  <input type="hidden" name="T1V_DOC_MSG_Currency" value="">
+  <input type="hidden" name="T1V_DOC_MSG_Old_Currency" value="">
+  <table name="tblT1V_DOC_MSG" id="tblT1V_DOC_MSG" class="advgrid" vsds="T1V_DOC_MSG">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><span id="T1RUN_IDsortGridLabel" name="T1RUN_IDsortGridLabel" vsdf="RUN_ID" title="Flow ID">Flow ID</span></th>
+      
+        <th 
+><span id="T1SRVC_NMsortGridLabel" name="T1SRVC_NMsortGridLabel" vsdf="SRVC_NM" title="Service Name">Service Name</span></th>
+      
+        <th 
+><span id="T1DOC_CDsortGridLabel" name="T1DOC_CDsortGridLabel" vsdf="DOC_CD" title="Doc Code">Doc Code</span></th>
+      
+        <th 
+><span id="T1DOC_DEPT_CDsortGridLabel" name="T1DOC_DEPT_CDsortGridLabel" vsdf="DOC_DEPT_CD" title="Doc Dept">Doc Dept</span></th>
+      
+        <th 
+><span id="T1DOC_IDsortGridLabel" name="T1DOC_IDsortGridLabel" vsdf="DOC_ID" title="Doc ID">Doc ID</span></th>
+      
+        <th 
+><span id="T1DOC_VERS_NOsortGridLabel" name="T1DOC_VERS_NOsortGridLabel" vsdf="DOC_VERS_NO" title="Version">Version</span></th>
+      
+        <th 
+><span id="T1COMP_NMsortGridLabel" name="T1COMP_NMsortGridLabel" vsdf="COMP_NM" title="Component Name">Component Name</span></th>
+      
+        <th 
+><span id="T1ATTR_NMsortGridLabel" name="T1ATTR_NMsortGridLabel" vsdf="ATTR_NM" title="Attribute Name">Attribute Name</span></th>
+      
+        <th 
+><span id="T1MSG_CDsortGridLabel" name="T1MSG_CDsortGridLabel" vsdf="MSG_CD" title="Message Code">Message Code</span></th>
+      
+        <th 
+><span id="T1MSG_TXTsortGridLabel" name="T1MSG_TXTsortGridLabel" vsdf="MSG_TXT" title="Message Text">Message Text</span></th>
+      
+        <th 
+><span id="T1MSG_SEVsortGridLabel" name="T1MSG_SEVsortGridLabel" vsdf="MSG_SEV" title="Severity Level">Severity Level</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1V_DOC_MSGvscurrency" id="T1V_DOC_MSGvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1V_DOC_MSG" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1RUN_ID" vsds="T1V_DOC_MSG" vsdf="RUN_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1SRVC_NM" vsds="T1V_DOC_MSG" vsdf="SRVC_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_CD" vsds="T1V_DOC_MSG" vsdf="DOC_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_DEPT_CD" vsds="T1V_DOC_MSG" vsdf="DOC_DEPT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_ID" vsds="T1V_DOC_MSG" vsdf="DOC_ID" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1DOC_VERS_NO" vsds="T1V_DOC_MSG" vsdf="DOC_VERS_NO" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1COMP_NM" vsds="T1V_DOC_MSG" vsdf="COMP_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1ATTR_NM" vsds="T1V_DOC_MSG" vsdf="ATTR_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1MSG_CD" vsds="T1V_DOC_MSG" vsdf="MSG_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1MSG_TXT" vsds="T1V_DOC_MSG" vsdf="MSG_TXT" 
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1V_DOC_MSG" vsdf="MSG_SEV" vscodetable="CVL_SEV_LVL">
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+      
+<td><div name="T1V_DOC_MSGGridNav" id="T1V_DOC_MSGGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="ABI" vsds="T1V_DOC_MSG" vsaction="firstpage" name="T1V_DOC_MSGfirstpage" id="T1V_DOC_MSGfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="ABI" vsds="T1V_DOC_MSG" vsaction="prevpage" name="T1V_DOC_MSGprevpage" id="T1V_DOC_MSGprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="ABI" vsds="T1V_DOC_MSG" vsaction="nextpage" id="T1V_DOC_MSGnextpage" name="T1V_DOC_MSGnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="ABI" vsds="T1V_DOC_MSG" vsaction="lastpage" id="T1V_DOC_MSGlastpage" name="T1V_DOC_MSGlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+   
+        <a name="btnT2pIM_DOC_INTG_LOG" href="ABI" vsaction="pagetransition" id="btnT2pIM_DOC_INTG_LOG" vsds="(None)" vsnavigation="T2pIM_DOC_INTG_LOG" title="Navigation to Document Integration Log">Document Integration Log</a>
+      </td>
+    </tr>
+  </table>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="ABI" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

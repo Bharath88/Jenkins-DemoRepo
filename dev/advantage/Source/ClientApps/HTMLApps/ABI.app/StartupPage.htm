@@ -1,0 +1,511 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>AMS Advantage</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVPortalStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSCSS/default/ADVPrimaryNavigator.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="JS/AboutUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript">
+  <!--
+
+     try
+     {
+        document.execCommand("BackgroundImageCache",false,true);
+
+     }
+     catch(e)
+     {
+     }
+
+     var mboolStartRegTransactions  = false ;
+     var mboolTransactionInProgress = false ;
+     var moTransactionTargetWindow  = null ;
+     var moADVBrowserWindows        = new Array(0) ;
+     top.window.name = 'ADVANTAGE' ;
+
+     moADVBrowserWindows[0] = top ;
+
+     var mlSTARTPG_Timeout         = -1 ;
+     var mlSTARTPG_TimeoutWarn     = -1 ;
+     var moSTARTPG_Timeout         = null ;
+     var msMainHelpFilesLocation   = null ;
+     var msFieldHelpFilesLocation  = null ;
+     var msAccessHelpFilesLocation = null ;
+     var STARTPG_msPickElem;
+     var moGlobalSearchWindow  = null ;
+     var miSecNavThresholdValue = -1;
+     var mbSecNavOpen = null;
+     var moCurrDocInfo = null;
+     var msAutoComplete = null;
+
+
+     function STARTPG_Home()
+     {
+        var loSecondary = top.frames['Secondary'] ;
+
+        if ( loSecondary != null )
+        {
+           var loBFNav = loSecondary.frames['BFNav'] ;
+
+           if ( loBFNav != null )
+           {
+              if ( loBFNav.BFNAVPANEL_Close != null )
+              {
+                 loBFNav.BFNAVPANEL_Close() ;
+                 return ;
+              }
+           }
+        }
+
+        /*
+        * Removed the submitForm call to load the Display frame directly. New approach will be to load
+        * the secondary navigator panel first. Once the secondary panel is loaded it will load the Homepage.
+        * Please note: This change is not needed in VSS.
+        */
+        STARTPG_LoadSecondaryNavigator();
+
+     }
+
+     function STARTPG_LoadHomePage()
+     {
+        submitForm(document.StartupPage,
+           'T1HomePage=T1HomePage&vsnavigation=T1HomePage','Display');
+     }
+
+     function STARTPG_OpenWorkspace( fsWkspID )
+     {
+        var lsQueryString = "tabId=" + fsWkspID ;
+
+        submitForm( document.StartupPage, lsQueryString, 'BFNav' ) ;
+     }
+
+     function STARTPG_WriteWorkspaces( fsLocationURL, fsWkspNms, fsWkspIDs )
+     {
+        var loDoc   = window.frames['Workspaces'].document ;
+
+        loDoc.writeln( '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"><html lang="en"><head>' ) ;
+        loDoc.writeln( '<title>Workspaces</title>' ) ;
+        loDoc.writeln( '<base href="' + fsLocationURL + '">' ) ;
+        loDoc.writeln( '<link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVPortalStyle.css">' ) ;
+        loDoc.writeln( '<body class="adv workspace"><map title="Workspaces">' ) ;
+
+        for ( var liCtr = 0 ; liCtr < fsWkspNms.length ; liCtr++ )
+        {
+           loDoc.write( ' <a href="javascript:top.window.frames[\'Startup\'].STARTPG_OpenWorkspace(\'' + fsWkspIDs[liCtr] + '\');" target="BFNav" name="Wksp' + fsWkspIDs[liCtr] + '" id="Wksp' + fsWkspIDs[liCtr] + '" title="Open Workspace: ' + fsWkspNms[liCtr] + '">' ) ;
+           loDoc.write( fsWkspNms[liCtr] ) ;
+           loDoc.writeln( '</a> ' ) ;
+        }
+        loDoc.writeln( '</map"></body></html>' ) ;
+        loDoc.close();
+     }
+
+     function STARTPG_LoadDirectTransitionToDoc(fsApplName, fsWhereClause, fsDestination, fsFramesetPageName, fsFrameName, fsDocCd, fsDocDept, fsDocId, fsDocVers)
+     {
+        if (fsDocCd != null)
+        {
+           var lsDest = "InitialDocTran=InitialDocTran&vsnavigation=pagetransition" +
+                  "&ams_applname=" + fsApplName +
+                  "&ams_whereclause=" + fsWhereClause +
+                  "&ams_destination=" + fsDestination +
+                  "&ams_framesetpagename=" + fsFramesetPageName +
+                  "&ams_framename=" + fsFrameName +
+                  "&ams_doc_cd=" + fsDocCd +
+                  "&ams_doc_dept=" + fsDocDept +
+                  "&ams_doc_vers_no=" + fsDocVers +
+                  "&ams_doc_id=" + fsDocId;
+
+           submitForm(document.StartupPage,lsDest,'Display');
+        }
+        else
+        {
+            STARTPG_LoadDirectTransition(fsApplName, fsWhereClause, fsDestination, fsFramesetPageName, fsFrameName);
+        }
+     }
+
+     function STARTPG_LoadDirectTransition(fsApplName, fsWhereClause, fsDestination, fsFramesetPageName, fsFrameName)
+     {
+        var lsDest = "InitialPageTran=InitialPageTran&vsnavigation=pagetransition" +
+              "&ams_applname=\"" + fsApplName + "\"" +
+              "&ams_whereclause=\"" + fsWhereClause + "\"" +
+              "&ams_destination=\"" + fsDestination + "\"" +
+              "&ams_framesetpagename=\"" + fsFramesetPageName + "\"" +
+              "&ams_framename=\"" + fsFrameName + "\"";
+
+        submitForm(document.StartupPage,lsDest,'Display');
+     }
+
+     function STARTPG_LoadSecondaryNavigator()
+     {
+        submitForm(document.StartupPage,
+           'T2SecondaryNavigator=T2SecondaryNavigator&vsnavigation=T2SecondaryNavigator',
+           'Secondary');
+     }
+
+     function STARTPG_SetTimeout( flTimeout, flTimeoutWarn )
+     {
+        mlSTARTPG_Timeout = flTimeout ;
+        mlSTARTPG_TimeoutWarn = flTimeoutWarn ;
+     }
+
+     function STARTPG_ResetSessionTimer()
+     {
+        if ( moSTARTPG_Timeout != null )
+        {
+           clearTimeout( moSTARTPG_Timeout ) ;
+           moSTARTPG_Timeout = null ;
+        }
+        if ( mlSTARTPG_Timeout != -1 )
+        {
+           moSTARTPG_Timeout = setTimeout( 'STARTPG_WarnTimeout();', (mlSTARTPG_Timeout - mlSTARTPG_TimeoutWarn) ) ;
+        }
+     }
+
+     function STARTPG_WarnTimeout()
+     {
+        var liMins = mlSTARTPG_TimeoutWarn / 60000 ;
+
+        if ( liMins > 1 )
+        {
+           alert( 'Your session will expire in ' + liMins + ' minutes. Click OK to continue working.' ) ;
+        }
+        else
+        {
+           alert( 'Your session will expire in ' + liMins + ' minute. Click OK to continue working.' ) ;
+        }
+        submitForm( document.StartupPage, 'menu_action=menu_action&ams_action=undoall', window.name ) ;
+     }
+
+     function STARTPG_Logout()
+     {
+        document.forms[0].target = '_parent';
+
+        if (mboolNS4)
+        {
+           document.forms[0].vslogoff.click();
+        }
+        else if (mbMinIE4 || mboolNS5Up)
+        {
+           var loElem = document.getElementById('vslogoff')
+
+           if (loElem != null)
+           {
+              loElem.click();
+           }
+        }
+     }
+
+     function STARTPG_MSS_Logout()
+     {
+	    document.forms[0].target = '_parent';
+
+	    if (mboolNS4)
+	    {
+		   document.forms[0].vslogoff.click();
+	    }
+	    else if (mbMinIE4 || mboolNS5Up)
+	    {
+		   var loElem = document.getElementById('vslogoff')
+
+		   if (loElem != null)
+		   {
+		      loElem.click();
+		   }
+	    }
+
+	    top.window.close();
+     }
+
+     function STARTPG_ShowHelp()
+     {
+        var lsBaseTags = document.getElementsByTagName("BASE");
+        var lsBaseHref = lsBaseTags[0].getAttribute("HREF");
+
+        var lsHelpPage = lsBaseHref + msMainHelpFilesLocation ;
+
+        DHTMLLIB_OpenNewWin( lsHelpPage, '_Help', 'yes',
+                         'no', 'no', 'yes', 'no', 'yes', 'auto',
+                         UTILS_SECON_WIN_WIDTH, UTILS_SECON_WIN_HEIGHT,
+                             UTILS_SECON_WIN_LEFT, UTILS_SECON_WIN_TOP, true );
+     }
+
+     function STARTPG_ShowAccessHelp()
+     {
+        var lsBaseTags = document.getElementsByTagName("BASE");
+        var lsBaseHref = lsBaseTags[0].getAttribute("HREF");
+
+        var lsHelpPage = lsBaseHref + msAccessHelpFilesLocation ;
+
+        DHTMLLIB_OpenNewWin( lsHelpPage, '_Help', 'yes',
+                         'no', 'no', 'yes', 'no', 'yes', 'auto',
+                         UTILS_SECON_WIN_WIDTH, UTILS_SECON_WIN_HEIGHT,
+                             UTILS_SECON_WIN_LEFT, UTILS_SECON_WIN_TOP, true );
+     }
+
+     function STARTPG_SetPickElemYPos(fiPickElemYPos)
+     {
+        STARTPG_miPickElemYPos = fiPickElemYPos;
+     }
+
+     function STARTPG_GetPickElemYPos()
+     {
+        return STARTPG_miPickElemYPos;
+     }
+
+     function STARTPG_SetPickElem(fsPickElem)
+     {
+        STARTPG_msPickElem = fsPickElem;
+     }
+
+     function STARTPG_GetPickElem()
+     {
+        return STARTPG_msPickElem;
+     }
+
+     function STARTPG_SetMainHelpFilesLocation(fsMainHelpFilesLocation)
+     {
+        msMainHelpFilesLocation = fsMainHelpFilesLocation;
+     }
+
+     function STARTPG_GetMainHelpFilesLocation()
+     {
+        return msMainHelpFilesLocation;
+     }
+
+     function STARTPG_SetFieldHelpFilesLocation(fsFieldHelpFilesLocation)
+     {
+        msFieldHelpFilesLocation = fsFieldHelpFilesLocation;
+     }
+
+     function STARTPG_GetFieldHelpFilesLocation()
+     {
+        var lsBaseTags = document.getElementsByTagName("BASE");
+        var lsBaseHref = lsBaseTags[0].getAttribute("HREF");
+
+        var lsHelpFldLocation = lsBaseHref + msFieldHelpFilesLocation + "/";
+
+        return lsHelpFldLocation;
+     }
+
+     function STARTPG_SetAccessHelpFilesLocation(fsAccessHelpFilesLocation)
+     {
+        msAccessHelpFilesLocation = fsAccessHelpFilesLocation ;
+     }
+
+     function STARTPG_GetAccessHelpFilesLocation()
+     {
+        return msAccessHelpFilesLocation;
+     }
+
+  function STARTPG_OpenPage()
+    {
+
+       if((moGlobalSearchWindow != null) && (!moGlobalSearchWindow.closed))
+      {
+         moGlobalSearchWindow.close();
+         moGlobalSearchWindow = null;
+       }
+
+      var loDisplay =top.frames['Display'];
+     if(loDisplay == null)
+     {
+        return;
+     }
+      var loDoc = loDisplay.document;
+      if((loDoc != null) && (loDoc.forms[0] != null))
+      {
+         var lsQueryString = 'menu_action=' + 'menu_action' + '&ams_action=208&gotocode='+document.StartupPage.gotocode.value;
+         submitForm( loDoc.forms[0], lsQueryString, 'Display' ) ;
+      }
+
+    }
+
+    function STARTPG_OpenPageWithdata()
+    {
+
+       if((moGlobalSearchWindow != null) && (!moGlobalSearchWindow.closed))
+      {
+         moGlobalSearchWindow.close();
+         moGlobalSearchWindow = null;
+       }
+
+       var loDisplay =top.frames['Display'];
+       if(loDisplay == null)
+     {
+        return;
+     }
+
+       var loDoc = loDisplay.document;
+       if((loDoc != null) && (loDoc.forms[0] != null))
+       {
+          var lsQueryString = 'menu_action=' + 'menu_action' + '&ams_action=209&gotocode='+document.StartupPage.gotocode.value;
+          submitForm( loDoc.forms[0], lsQueryString, 'Display' ) ;
+       }
+
+    }
+
+   function STARTPG_OpenSearchWindow()
+   {
+      moGlobalSearchWindow = DHTMLLIB_OpenNewWin( '', '_MINSRCHW', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 400, 470, 200, 200, true ) ;
+      document.StartupPage.gotocode.value ='GLBSRCHW';
+      var lsQueryString = 'menu_action=' + 'menu_action' + '&ams_action=208&gotocode=GLBSRCHW';
+      submitForm( document.forms[0], lsQueryString, '_MINSRCHW' ) ;
+      UTILS_AddPagePopupWindow(moGlobalSearchWindow);
+      document.StartupPage.gotocode.value ='';
+
+   }
+
+   function STARTPG_CheckKeyPress( foTextBox, foEvent )
+   {
+  var liKeyPressed = 0;
+
+  if (mboolIE4Up)
+  {
+     liKeyPressed = foEvent.keyCode;
+  }
+  else if (mboolNS5Up)
+  {
+     liKeyPressed = foEvent.which;
+  }
+
+  /**
+   * In Netscape6, the default behaviour is not
+   * blur for textfields when you press "ENTER"
+   * key, hence this change was required.
+   */
+  if (liKeyPressed == 13) // Enter Key
+  {
+     //foTextBox.blur();
+     UTILS_OnBlurUpperCaseAndTrim( foTextBox, true, true );
+  }
+
+    return true;
+    }
+
+   function STARTPG_SetSecNavThresholdValue(fiSecNavThresholdValue)
+   {
+      miSecNavThresholdValue = fiSecNavThresholdValue;
+   }
+
+   function STARTPG_getSecNavThresholdValue()
+   {
+      return miSecNavThresholdValue;
+   }
+
+   function STARTPG_SetDocInfo(foDocInfo)
+   {
+      if(moCurrDocInfo != foDocInfo)
+      {
+         moCurrDocInfo = foDocInfo;
+         mbSecNavOpen = null;
+      }
+   }
+
+   function STARTPG_GetDocInfo()
+   {
+      return moCurrDocInfo;
+   }
+
+   function STARTPG_SetSecNavOpen(fbSecNavOpen)
+   {
+      mbSecNavOpen = fbSecNavOpen;
+   }
+
+   function STARTPG_isSecNavOpenforDoc(foDocInfo)
+   {
+      if(foDocInfo && moCurrDocInfo && foDocInfo == moCurrDocInfo)
+      {
+         return mbSecNavOpen;
+      }
+      return null;
+   }
+
+   function STARTPG_SetAutoComplete(fsAutoComplete)
+   {
+      msAutoComplete = fsAutoComplete;
+   }
+
+   function STARTPG_getAutoComplete()
+   {
+      return msAutoComplete;
+   }
+  -->
+  </script>
+</head>
+<body class="adv startup" >
+<a href="javascript:(UTILS_GetFrameFromWindow(window.top,'Display')).focus()" title="Skip navigation to the main content area"></a>
+
+  <form action="ABI" method="post" vsform="true" name="StartupPage" target='Display'>
+
+
+ <div>
+     <div id="GlobalHeader">
+         <div id="GlobalHeaderLogo"><!--Change the logo image while changing the skin-->
+            <img src="../AMSImages/advantage-logo.gif" alt="Advantage Logo" width="261" height="31"></div>
+            <div id="GlobalHeaderNavigationAndLogoutContainer">
+            <div class="globalheaderelements">
+                  <div class="PageCodeSearch bottomlayout"></div>
+
+
+             <ul id="globalheadernavigation">
+                 <li><a href="javascript:STARTPG_Home();" title="Home Page"><img name="HomePage" id="HomePage"  src="../AMSImages/ico_home.gif" alt="Home" width="23" height="19" border="0" align="absmiddle">Home</a></li>
+
+                    <li><a href="javascript:STARTPG_ShowAccessHelp()" title="Accessibility Help: Will open in a new window"><img name="AccessibilityHelp" id="AccessibilityHelp" src="../AMSImages/ico_accessibility.gif" alt="Accessibility Help: Will open in a new window" width="23" height="19" border="0" align="absmiddle">Accessibility</a></li>
+                    <li><a href="javascript:STARTPG_ShowHelp()" title="Application Help: Will open in a new window"><img name="Help" id="Help" src="../AMSImages/ico_help.gif" alt="Application Help: Will open in a new window" width="18" height="19" border="0" align="absmiddle">App Help</a></li>
+                    <li><a href="JavaScript:ABOUTUTILS_OpenAboutPage( 'advantage/ABI/About.html' );" title="About: Will open in a new window"><img src="../AMSImages/ico_About.gif" alt="About: Will open in a new window" width="23" height="19" border="0" align="absmiddle">About</a></li>
+            </ul>
+   </div>
+
+    <div class="GlobalHeaderLogout">
+        <a href="javascript:STARTPG_Logout()" title="Logout">
+          <img name="Logout" id="Logout" border="0" src="../AMSImages/logout.gif" alt="Logout" class="inputimage">
+        </a>
+    </div>
+
+    </div>
+            <div class="spacer"></div>
+  </div>
+
+
+    <table class="BottomLayout">
+      <tr>
+        <td class="Welcome">
+          <vstext name="WELCOME" vsds=" " vspreservetag="true">
+        </td>
+
+        <td class="Links">
+
+    <iframe name="Workspaces" id="Workspaces" title="Workspaces" src="../AMSImages/workspace.htm" class="Workspace" frameborder="0" scrolling="auto"></iframe>
+        </td>
+      </tr>
+    </table>
+
+
+     <div id="GlobalHeaderShadow"></div>
+ </div>
+
+
+    <div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+    <div style="visibility:hidden;display:none;position:absolute;top:-1000em;left:-1000em;">
+      <input id="vslogoff" type="submit" value="Logoff" name="vslogoff" alt="Logoff">
+      <a href="ABI" target="Display" name="T1HomePage" id="T1HomePage" title="" vsaction="1" vsds=" " ams_destination="HomePage" ams_applname="ABI"></a>
+      <a href="ABI" target="Display" name="InitialPageTran" id="InitialPageTran" title="" vsaction="13" vsds=" "></a>
+      <a href="ABI" target="Display" name="InitialDocTran" id="InitialDocTran" title="" vsaction="43" vsds=" "></a>
+      <a href="ABI" target="Secondary" name="T2SecondaryNavigator" id="T2SecondaryNavigator" title="" vsaction="1" vsds=" " ams_destination="SecondaryNavigator" ams_applname="ABI"></a>
+      <a href="ABI" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+
+  </form>
+
+</body>
+</html>
+
+
+

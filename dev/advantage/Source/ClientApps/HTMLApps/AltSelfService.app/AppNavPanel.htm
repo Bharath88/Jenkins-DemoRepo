@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Application Navigator</title>
+  <base href>
+         <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSPortalStyle.css">
+         <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSStyle.css">
+         <link type="text/css" rel="STYLESHEET" href="../AMSImages/ALTSS/ALTSSAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/ALTSS/ALTSSUtil.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+</head>
+
+<body class="advnavtree app" onload="this.focus()">
+
+  <form action="AltSelfService" method="post" vsform="true" name="AppNavPanel">
+<!-- BEGIN CUSTOMIZATION -->
+<div class="secondarynav">
+<!-- END CUSTOMIZATION -->
+
+    <div name="NavigationTree" id="NavigationTree" title="Navigation Tree" class="advnavtree" vsds=" " vsclass="com.amsinc.gems.adv.vfc.html.AMSAppNavTree" vsdf=" "></div>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+    <div style="visibility:hidden;display:none;position:absolute;top:-1000em;left:-1000em;">
+      <a href="AltSelfService" name="OpenDocument" id="OpenDocument" title="" target="Display" vsds=" " vsaction="49"></a>
+      <a href="AltSelfService" name="OpenHistDocument" id="OpenHistDocument" title="" target="Display" vsds=" " vsaction="64"></a>
+    </div>
+</div>
+
+ </form>
+</body>
+
+</html>
+
+
+

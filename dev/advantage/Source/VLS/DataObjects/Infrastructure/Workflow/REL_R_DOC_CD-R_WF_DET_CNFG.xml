@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="RWfDetCnfgToRDocCd"
+		ChildRoleName="RDocCdToRWfDetCnfg"
+		IsEnforce="True"
+		CountReplicates="0"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="DOC_CD"
+				ChildAttribute="DOC_CD"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_DOC_CD]]></AscendCaption>
+		<DescendCaption><![CDATA[R_WF_DET_CNFG(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[%c:A759,v:[b:R_DOC_CD/DOC_CD],v:Document Code Table%]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Configure Worklist Details%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:R_DOC_CD/DOC_CD],v:Document Code Table%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

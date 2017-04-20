@@ -1,0 +1,333 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0546106156.Administrator.0000"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="False"
+	ChildMostDataObject="CVL_WF_REAS"
+	DistinctRowsOnly="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[SELECT V_WF_APRV_WRK_LST.LOCK_USID AS LOCK_USID, V_WF_APRV_WRK_LST.DOC_CD AS DOC_CD, V_WF_APRV_WRK_LST.DOC_ID AS DOC_ID, V_WF_APRV_WRK_LST.ASSIGNEE AS ASSIGNEE, V_WF_APRV_WRK_LST.ASSIGNEE_FL AS ASSIGNEE_FL, V_WF_APRV_WRK_LST.ASSIGNEE_NM AS ASSIGNEE_NM, V_WF_APRV_WRK_LST.ASGN_DT AS ASGN_DT, V_WF_APRV_WRK_LST.APRV_LVL AS APRV_LVL, CVL_WF_REAS.REAS_DISP AS REAS_DISP, V_WF_APRV_WRK_LST.CMNT_DISP AS CMNT_DISP, V_WF_APRV_WRK_LST.DOC_VERS_NO AS DOC_VERS_NO, V_WF_APRV_WRK_LST.WRK_LST_TYP AS WRK_LST_TYP, V_WF_APRV_WRK_LST.WRK_LST_ID AS WRK_LST_ID, V_WF_APRV_WRK_LST.DISP_PG AS DISP_PG, V_WF_APRV_WRK_LST.REAS AS REAS, V_WF_APRV_WRK_LST.CMNT AS CMNT, V_WF_APRV_WRK_LST.FWD_USID AS FWD_USID, V_WF_APRV_WRK_LST.FWD_DT AS FWD_DT, V_WF_APRV_WRK_LST.CMNT_TXT AS CMNT_TXT, CVL_WF_REAS.REAS_NO AS REAS_NO, V_WF_APRV_WRK_LST.DOC_DEPT_CD AS DOC_DEPT_CD, V_WF_APRV_WRK_LST.ASSIGNEE_UP AS ASSIGNEE_UP, V_WF_APRV_WRK_LST.LOCK_USID_UP AS LOCK_USID_UP, V_WF_APRV_WRK_LST.SLF_APRV_RSCT AS SLF_APRV_RSCT, V_WF_APRV_WRK_LST.DOC_CREA_USID AS DOC_CREA_USID, V_WF_APRV_WRK_LST.DOC_SBMT_ID AS DOC_SBMT_ID, V_WF_APRV_WRK_LST.APRV_RULE_ID AS APRV_RULE_ID, V_WF_APRV_WRK_LST.PRIORITY AS PRIORITY, V_WF_APRV_WRK_LST.PRIORITY_REASON AS PRIORITY_REASON, V_WF_APRV_WRK_LST.ESCL_ITEM AS ESCL_ITEM, V_WF_APRV_WRK_LST.ESCL_LEVEL AS ESCL_LEVEL, V_WF_APRV_WRK_LST.WARN_ELIG_DT AS WARN_ELIG_DT, V_WF_APRV_WRK_LST.ESCL_1_ELIG_DT AS ESCL_1_ELIG_DT, V_WF_APRV_WRK_LST.ESCL_2_ELIG_DT AS ESCL_2_ELIG_DT FROM <dbschema>.CVL_WF_REAS CVL_WF_REAS, <dbschema>.V_WF_APRV_WRK_LST V_WF_APRV_WRK_LST  WHERE CVL_WF_REAS.REAS_NO = V_WF_APRV_WRK_LST.REAS  AND  APRV_LVL <> 0  ]]></RuntimeSql>
+	<Where><![CDATA[APRV_LVL <> 0]]></Where>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="CVL_WF_REAS"
+			Alias="CVL_WF_REAS"
+		/>
+
+		<DataObject
+			DataObjectName="V_WF_APRV_WRK_LST"
+			Alias="V_WF_APRV_WRK_LST"
+		/>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="LOCK_USID"
+			Alias="LOCK_USID"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DOC_CD"
+			Alias="DOC_CD"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DOC_ID"
+			Alias="DOC_ID"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ASSIGNEE"
+			Alias="ASSIGNEE"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ASSIGNEE_FL"
+			Alias="ASSIGNEE_FL"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ASSIGNEE_NM"
+			Alias="ASSIGNEE_NM"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="False"
+		/>
+
+		<Attribute
+			Name="ASGN_DT"
+			Alias="ASGN_DT"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="APRV_LVL"
+			Alias="APRV_LVL"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="REAS_DISP"
+			Alias="REAS_DISP"
+			AggregationType="None"
+			SourceDataObject="CVL_WF_REAS"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="CMNT_DISP"
+			Alias="CMNT_DISP"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="False"
+		/>
+
+		<Attribute
+			Name="DOC_VERS_NO"
+			Alias="DOC_VERS_NO"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="WRK_LST_TYP"
+			Alias="WRK_LST_TYP"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="WRK_LST_ID"
+			Alias="WRK_LST_ID"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DISP_PG"
+			Alias="DISP_PG"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="REAS"
+			Alias="REAS"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="CMNT"
+			Alias="CMNT"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="FWD_USID"
+			Alias="FWD_USID"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="FWD_DT"
+			Alias="FWD_DT"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="CMNT_TXT"
+			Alias="CMNT_TXT"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="False"
+		/>
+
+		<Attribute
+			Name="REAS_NO"
+			Alias="REAS_NO"
+			AggregationType="None"
+			SourceDataObject="CVL_WF_REAS"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DOC_DEPT_CD"
+			Alias="DOC_DEPT_CD"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+			InstanceOf="DOC_DEPT_CD"
+		/>
+
+		<Attribute
+			Name="ASSIGNEE_UP"
+			Alias="ASSIGNEE_UP"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="LOCK_USID_UP"
+			Alias="LOCK_USID_UP"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="SLF_APRV_RSCT"
+			Alias="SLF_APRV_RSCT"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DOC_CREA_USID"
+			Alias="DOC_CREA_USID"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DOC_SBMT_ID"
+			Alias="DOC_SBMT_ID"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="APRV_RULE_ID"
+			Alias="APRV_RULE_ID"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="PRIORITY"
+			Alias="PRIORITY"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="PRIORITY_REASON"
+			Alias="PRIORITY_REASON"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ESCL_ITEM"
+			Alias="ESCL_ITEM"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+		<Attribute
+			Name="ESCL_LEVEL"
+			Alias="ESCL_LEVEL"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="WARN_ELIG_DT"
+			Alias="WARN_ELIG_DT"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ESCL_1_ELIG_DT"
+			Alias="ESCL_1_ELIG_DT"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="ESCL_2_ELIG_DT"
+			Alias="ESCL_2_ELIG_DT"
+			AggregationType="None"
+			SourceDataObject="V_WF_APRV_WRK_LST"
+			Persistent="True"
+		/>
+
+	</Attributes>
+	<Joins
+		LeftDataObject="CVL_WF_REAS"
+		RightDataObject="V_WF_APRV_WRK_LST"
+		JoinType="Equal"
+		>
+		<ColumnSet
+			LeftAttribute="CVL_WF_REAS.REAS_NO"
+			RightAttribute="V_WF_APRV_WRK_LST.REAS"
+		/>
+	</Joins>
+
+	<RelsToParentDataObjects>
+		<RelToParentDO
+			RelToParentDO="R_WF_CMNT10(R_WF_CMNT)-V_WF_APRV_WRK_LSTs(V_WF_APRV_WRK_LST)"
+		>
+			<Aliases>
+				<Alias
+					Name="V_WF_APRV_WRK_LST"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="CMNT_ID"
+							ChildAttribute="CMNT"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+	</RelsToParentDataObjects>
+
+</QueryObject>

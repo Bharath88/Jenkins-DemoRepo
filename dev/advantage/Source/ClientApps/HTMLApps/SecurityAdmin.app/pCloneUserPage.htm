@@ -1,0 +1,389 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Copy Application User...</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="SecurityAdmin" method="post" vsform="true" name="pCloneUserPage">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Copy Application User...">Copy Application User...</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+<!-- BEGIN CUSTOMIZATION -->
+  <h2 class="advrecsrctitle details"><vstext vsds="" name="CurrStepTitle"></h2>
+<!-- END CUSTOMIZATION -->
+
+<!-- BEGIN CUSTOMIZATION -->
+<div vsds="" id="Step1Cont" name="Step1Cont" vsvisible="false">
+<!-- END CUSTOMIZATION -->
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+
+<a href="SecurityAdmin" vsds="T1R_SC_USER_DIR_INFO" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_USER_DIR_INFO" vsaction="clearquery" name="T1R_SC_USER_DIR_INFOclearquery" id="T1R_SC_USER_DIR_INFOclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1USER_ID_UP" title="User ID">User ID :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1USER_ID_UP" id="txtT1USER_ID_UP"
+            size="20"
+ vsds="T1R_SC_USER_DIR_INFO" vsdf="USER_ID_UP" vsdisplaymode="Query"
+ value="USER_ID_UP" title="User ID">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1LAST_NM_TXT_UP" title="Last Name">Last Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1LAST_NM_TXT_UP" id="txtT1LAST_NM_TXT_UP"
+            size="20"
+ vsds="T1R_SC_USER_DIR_INFO" vsdf="LAST_NM_TXT_UP" vsdisplaymode="Query"
+ value="LAST_NM_TXT_UP" title="Last Name">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1FRST_NM_TXT_UP" title="First Name">First Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1FRST_NM_TXT_UP" id="txtT1FRST_NM_TXT_UP"
+            size="20"
+ vsds="T1R_SC_USER_DIR_INFO" vsdf="FRST_NM_TXT_UP" vsdisplaymode="Query"
+ value="FRST_NM_TXT_UP" title="First Name">
+        </td>
+      </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+  <input type="hidden" name="T1R_SC_USER_DIR_INFO_Currency" value="">
+  <input type="hidden" name="T1R_SC_USER_DIR_INFO_Old_Currency" value="">
+  <table name="tblT1R_SC_USER_DIR_INFO" id="tblT1R_SC_USER_DIR_INFO" class="advgrid" vsds="T1R_SC_USER_DIR_INFO">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1USER_IDsortGridLabel" name="T1USER_IDsortGridLabel" title="User ID">User ID</span></th>
+
+        <th
+><span id="T1LAST_NM_TXTsortGridLabel" name="T1LAST_NM_TXTsortGridLabel" title="Last Name">Last Name</span></th>
+
+        <th
+><span id="T1FRST_NM_TXTsortGridLabel" name="T1FRST_NM_TXTsortGridLabel" title="First Name">First Name</span></th>
+
+        <th
+><span id="T1LCLTY_TXTsortGridLabel" name="T1LCLTY_TXTsortGridLabel" title="Locality">Locality</span></th>
+
+        <th
+><span id="T1ROOM_NO_TXTsortGridLabel" name="T1ROOM_NO_TXTsortGridLabel" title="Room Number">Room Number</span></th>
+
+        <th
+><span id="T1EMAIL_AD_TXTsortGridLabel" name="T1EMAIL_AD_TXTsortGridLabel" title="Email Address">Email Address</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_SC_USER_DIR_INFOvscurrency" id="T1R_SC_USER_DIR_INFOvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1R_SC_USER_DIR_INFO" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1USER_ID" vsds="T1R_SC_USER_DIR_INFO" vsdf="USER_ID"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1LAST_NM_TXT" vsds="T1R_SC_USER_DIR_INFO" vsdf="LAST_NM_TXT"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1FRST_NM_TXT" vsds="T1R_SC_USER_DIR_INFO" vsdf="FRST_NM_TXT"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1LCLTY_TXT" vsds="T1R_SC_USER_DIR_INFO" vsdf="LCLTY_TXT"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1ROOM_NO_TXT" vsds="T1R_SC_USER_DIR_INFO" vsdf="ROOM_NO_TXT"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1EMAIL_AD_TXT" vsds="T1R_SC_USER_DIR_INFO" vsdf="EMAIL_AD_TXT"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="SecurityAdmin" vsds="T1R_SC_USER_DIR_INFO" vsaction="firstpage" name="T1R_SC_USER_DIR_INFOfirstpage" id="T1R_SC_USER_DIR_INFOfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_USER_DIR_INFO" vsaction="prevpage" name="T1R_SC_USER_DIR_INFOprevpage" id="T1R_SC_USER_DIR_INFOprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_USER_DIR_INFO" vsaction="nextpage" id="T1R_SC_USER_DIR_INFOnextpage" name="T1R_SC_USER_DIR_INFOnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_USER_DIR_INFO" vsaction="lastpage" id="T1R_SC_USER_DIR_INFOlastpage" name="T1R_SC_USER_DIR_INFOlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION -->
+</div>
+
+<div vsds="" id="Step2Cont" name="Step2Cont" vsvisible="false">
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+      <tr>
+        <td class="label required"><span class="reqmarker">*</span><label for="NewUserID" title="User ID (Required)">User ID :</label></td>
+        <td class="val required">
+          <input vsds="" type="text" name="NewUserID" id="NewUserID" size="20" title="User ID (Required)" class="adveditable">
+        </td>
+      </tr>
+	  
+
+
+      <tr>
+        <td class="label required"><span class="reqmarker">*</span><label for="NewLastName" title="Last Name (Required)">Last Name :</label></td>
+        <td class="val">
+          <input vsds="" type="text" name="NewLastName" id="NewLastName" size="20" stitle="Last Name (Required)" class="adveditable">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required"><span class="reqmarker">*</span><label for="NewFirstName" title="First Name (Required)">First Name :</label></td>
+        <td class="val">
+          <input vsds="" type="text" name="NewFirstName" id="NewFirstName" size="20" title="First Name (Required)" class="adveditable">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required"><span class="reqmarker">*</span><label for="NewPassword" title="New Password (Required)">New Password :</label></td>
+        <td class="val required">
+          <input vsds="" type="password" name="NewPassword" id="NewPassword" size="20" title="New Password (Required)" class="adveditable">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required"><span class="reqmarker">*</span><label for="NewPasswordConfirm" title="Confirm New Password (Required)">Confirm New Password :</label></td>
+        <td class="val required">
+          <input vsds="" type="password" name="NewPasswordConfirm" id="NewPasswordConfirm" size="20" title="Confirm New Password (Required)" class="adveditable">
+        </td>
+      </tr>
+      <tr>
+        <td class="label"><label for="expireNewPassword" title="Expire New Password">Expire New Password :</label></td>
+        <td class="val">
+          <input  type="checkbox" name="expireNewPassword" vsds="" vsdf="EXPIRE_NEW_PSWD_FL" id="expireNewPassword" title="Expire New Password" class="adveditable">
+        </td>
+      </tr>
+      <tr>
+        <td class="label"><label for="emailAddress" title="Email Address">Email Address :</label></td>
+        <td class="val">
+          <input type="text" name="emailAddress" vsds="" vsdf="EMAIL_AD_TXT" id="emailAddress" size="20" title="Email Address" class="adveditable">
+        </td>
+      </tr>
+<!-- BEGIN CUSTOMIZATION -->
+      <tr>
+        <td class="label"><label title="Existing LDAP User" for="EXIST_LDAP_USER_FL">Existing LDAP User:</label></td>
+        <td class="val">
+          <input type="checkbox" name="EXIST_LDAP_USER_FL" vsds="" value="YES" class="">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1USER_SEC_REALM" title="User Security Realm"> User Sec Realm:</label></td>
+        <td class="val">
+          <select name="txtT1USER_SEC_REALM" vsds="" id="txtT1USER_SEC_REALM" size="1" title="User Security Realm" vsdf="" ShowCodeInfo="" vscodetable="">
+            <option value="JADEStored" selected>JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+<!-- END CUSTOMIZATION -->
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div vsds="" id="Step3Cont" name="Step3Cont" vsvisible="false">
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="confirmNewUserID" title="User ID">User ID :</label></td>
+        <td class="val">
+          <input vsds="" type="text" name="confirmNewUserID" id="confirmNewUserID" size="20" title="User ID" class="advreadonly" readonly="readonly">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="confirmNewLastName" title="Last Name">Last Name :</label></td>
+        <td class="val">
+          <input vsds="" type="text" name="confirmNewLastName" id="confirmNewLastName" size="20" title="Last Name" class="advreadonly" readonly="readonly">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="confirmNewFirstName" title="First Name">First Name :</label></td>
+        <td class="val">
+          <input vsds="" type="text" name="confirmNewFirstName" id="confirmNewFirstName" size="20" title="First Name" class="advreadonly" readonly="readonly">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="confirmNewPassword" title="New Password">New Password :</label></td>
+        <td class="val">
+          <input vsds="" type="password" name="confirmNewPassword" id="confirmNewPassword" size="20" title="New Password" class="advreadonly" readonly="readonly">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="confirmNewPasswordConfirm" title="Confirm New Password">Confirm New Password :</label></td>
+        <td class="val">
+          <input vsds="" type="password" name="confirmNewPasswordConfirm" id="confirmNewPasswordConfirm" size="20" title="Confirm New Password" class="advreadonly" readonly="readonly">
+        </td>
+      </tr>
+      <tr>
+        <td class="label"><label for="confirmExpireNewPassword" title="Expire New Password">Expire New Password :</label></td>
+        <td class="val">
+          <input vsds="" type="checkbox" name="confirmExpireNewPassword" id="confirmExpireNewPassword" title="Expire New Password" class="advreadonly" disabled="disabled">
+        </td>
+      </tr>
+      <tr>
+        <td class="label"><label for="confirmEmailAddress" title="Email Address">Email Address :</label></td>
+        <td class="val">
+          <input vsds="" type="text" name="confirmEmailAddress" id="confirmEmailAddress" size="20" title="Email Address" class="advreadonly" readonly="readonly">
+        </td>
+      </tr>
+
+<!-- BEGIN CUSTOMIZATION -->
+
+      <tr>
+        <td class="label"><label title="Existing LDAP User" for="EXIST_LDAP_USER_FL2">Existing LDAP User:</label></td>
+        <td class="val">
+          <input type="checkbox" name="EXIST_LDAP_USER_FL2" vsds="" value="YES" class="">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1USER_SEC_REALM2" title="User Security Realm"> User Sec Realm:</label></td>
+        <td class="val">
+          <select name="txtT1USER_SEC_REALM2" vsds="" id="txtT1USER_SEC_REALM" size="1" title="User Security Realm" vsdf="" ShowCodeInfo="" vscodetable="">
+            <option value="JADEStored" selected>JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+<!-- END CUSTOMIZATION -->
+      <tr>
+        <td class="label"></td>
+        <td class="val">
+          <input class="advbutton" type="submit" vsaction="undoall" name="createNewUser" value="Create New User" id="createNewUser" title="Create New User">
+        </td>
+      </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- END CUSTOMIZATION -->
+
+<!-- BEGIN CUSTOMIZATION -->
+  <table class="advokcancel">
+    <tr>
+      <td><input class="advbutton" type="submit" vsaction="undoall" name="back" value="< Back" id="back" title="Back to Previous Step"></td>
+      <td><input class="advbutton" type="submit" vsaction="undoall" name="next" value="Next >" id="next" title="Next Step"></td>
+    </tr>
+  </table>
+<!-- END CUSTOMIZATION -->
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="StmtConditionToStmtSrcCol"
+		ChildRoleName="StmtSrcColToStmtCondition"
+		IsEnforce="True"
+		OnParentUpdate="UpdateChildren"
+		CountReplicates="2"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SRC_TBL"
+				ChildAttribute="SRC_TBL"
+			/>
+			<AttributePair
+				ParentAttribute="COL_CD"
+				ChildAttribute="COND_COL"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[STMT_SRC_COL]]></AscendCaption>
+		<DescendCaption><![CDATA[STMT_CONDITION(s)]]></DescendCaption>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]></ErrPreventUpdateParent>
+		<ErrPreventDeleteParent><![CDATA[%c:A760,v:Statement Condition%]]></ErrPreventDeleteParent>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:Condition Column,v:Condition Column Table%]]></ErrPreventInsertOrUpdateChild>
+	</Relationship>
+</Relationships>

@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<!DOCTYPE Application SYSTEM "Application.dtd">
+<Application
+	SurrId="0339350710.PRamakri.0003"
+	ZoomFactor="2"
+	TargetLanguage="HTML"
+	DefaultLogonUserId="sa"
+	ExecutionEnvironment="Browser"
+	AppletHeight="575"
+	AppletWidth="725"
+	ClassId="44D921F1-47C8-11D4-8FA2-00C04F5E5FF8"
+	SuppressDefaultLoginScreen="False"
+	InitialFramesetPage="FramesetPage"
+	StartupPageFrameName="Startup"
+	InitialFrameNameForStartupTrans="Display"
+	AppRepositoryVersion="05.06.01"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.00"
+	>
+	<ServerLocation><![CDATA[<localBlsServer>]]></ServerLocation>
+	<Description><![CDATA[PRamakri application 1]]></Description>
+	<!-- APPLICATION FORMS -->
+	<Forms>
+		<Form>StartupPage</Form>
+		<Form>FramesetPage</Form>
+		<Form>fUDOC</Form>
+		<Form>pAddUserAppInfo</Form>
+		<Form>pAddUserDirInfo</Form>
+		<Form>pCloneUserPage</Form>
+		<Form>pCopyUserRolesPage</Form>
+		<Form>pEqualFieldCompare</Form>
+		<Form>pIN_FRM_ACCS</Form>
+		<Form>pInsideRangeFldCmpr</Form>
+		<Form>pNotEqualFieldCompare</Form>
+		<Form>pOutsideRangeFldCmpr</Form>
+		<Form>pRoleUserLink</Form>
+		<Form>pR_PRNT_ACCS</Form>
+		<Form>pR_SC_APPL</Form>
+		<Form>pR_SC_APPL_RSRC</Form>
+		<Form>pR_SC_APPL_RSRC_FLDs</Form>
+		<Form>pR_SC_DOC_CUST_ACTN</Form>
+		<Form>pR_SC_EFF_USER</Form>
+		<Form>pR_SC_FGN_ORG</Form>
+		<Form>pR_SC_FLD</Form>
+		<Form>pR_SC_FLD_ACCSs</Form>
+		<Form>pR_SC_FLD_CMPRs</Form>
+		<Form>pR_SC_FLD_RSRCs</Form>
+		<Form>pR_SC_RSRC_ACCS</Form>
+		<Form>pR_SC_RSRC_GP</Form>
+		<Form>pR_SC_SEC_CNFG_Scalar</Form>
+		<Form>pR_SC_SEC_ROLE</Form>
+		<Form>pR_SC_USER_DOC_COMP</Form>
+		<Form>pR_SC_USER_INFO_Search</Form>
+		<Form>pR_SC_VALID_ROLES</Form>
+		<Form>pSC_ACTN_LOG_Grid</Form>
+		<Form>pSC_ACTN_LOG_Search</Form>
+		<Form>pSC_LDAP_NEW_USER</Form>
+		<Form>pUserInformation</Form>
+		<Form>pUserLoginAccessPage</Form>
+		<Form>pUserRoleLink</Form>
+		<Form>pR_SC_USER_QRY_Search</Form>
+		<Form>pR_SC_USER_DIR_INFO_Search</Form>
+		<Form>pR_ENCRYPT_BAT_PARM</Form>
+		<Form>pR_SC_UI_FLD_SEC</Form>
+		<Form>pR_SC_REALM_Generic</Form>
+		<Form>pCopySecRolesPage</Form>
+		<Form>pR_PREF_DETL</Form>
+		<Form>pR_PREF_SETUP</Form>
+		<Form>pR_SC_MSS_ROLE_LNK</Form>
+		<Form>pIN_HIST_TRACK</Form>
+		<Form>pR_SC_SEC_ROLEPAIRS</Form>
+		<Form>pR_DOC_SIG_RULES</Form>
+		<Form>pR_SC_APP_ROLE_LNK</Form>
+		<Form>pIN_APP_ACCS_LOG</Form>
+	</Forms>
+	<References>
+		<Reference
+			Type="ClientClasses"
+			IsRemote="False"
+		>
+			<FileName><![CDATA[Client Classes]]></FileName>
+		</Reference>
+		<Reference
+			Type="CommonClientandServerClasses"
+			IsRemote="False"
+		>
+			<FileName><![CDATA[Common Client and Server Classes]]></FileName>
+		</Reference>
+		<Reference
+			Type="VersataFoundationClasses"
+			IsRemote="False"
+		>
+			<FileName><![CDATA[Versata Foundation Classes]]></FileName>
+		</Reference>
+		<Reference
+			Type="VersataVLSClasses"
+			IsRemote="False"
+		>
+			<FileName><![CDATA[Versata Logic Server Classes]]></FileName>
+		</Reference>
+		<Reference
+			Type="ServerClasses"
+			IsRemote="False"
+		>
+			<FileName><![CDATA[Server Classes]]></FileName>
+		</Reference>
+		<Reference
+			Type="JDKClasses"
+			IsRemote="False"
+		>
+			<FileName><![CDATA[JDK Classes]]></FileName>
+		</Reference>
+		<Reference
+			Type="ORBClasses"
+			IsRemote="False"
+		>
+			<FileName><![CDATA[ORB Classes]]></FileName>
+		</Reference>
+		<Reference
+			Type="SwingClasses"
+			IsRemote="False"
+		>
+			<FileName><![CDATA[Swing Classes]]></FileName>
+		</Reference>
+	</References>
+	<SourceFiles>
+	</SourceFiles>
+</Application>

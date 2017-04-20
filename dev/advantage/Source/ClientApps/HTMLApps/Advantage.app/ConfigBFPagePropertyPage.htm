@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Business Function Page Properties</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="ConfigBFPagePropertyPage">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Business Function Page Properties">Business Function Page Properties</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+  <INPUT type="hidden" name="T1IN_BF_ITEMvscurrency" vsds="T1IN_BF_ITEM" vscurrency="true">
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Advantage" vsds="T1IN_BF_ITEM" vsaction="saveall" name="T1IN_BF_ITEMSaveAll" id="T1IN_BF_ITEMSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Advantage" vsds="T1IN_BF_ITEM" vsaction="undoall" name="T1IN_BF_ITEMUndoAll" id="T1IN_BF_ITEMUndoAll" title="Undo All" accesskey="6">Undo</a>
+</ams_map>
+      </td>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="Advantage" vsds="T1IN_BF_ITEM" vsaction="first" name="T1IN_BF_ITEMfirst" id="T1IN_BF_ITEMfirst" title="First Record" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T1IN_BF_ITEM" vsaction="prev" name="T1IN_BF_ITEMprev" id="T1IN_BF_ITEMprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T1IN_BF_ITEM" vsaction="next" name="T1IN_BF_ITEMnext" id="T1IN_BF_ITEMnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T1IN_BF_ITEM" vsaction="last" name="T1IN_BF_ITEMlast" id="T1IN_BF_ITEMlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+-->
+<!-- END CUSTOMIZATION -->
+
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1BF_ITEM_NM" title="Name (Required)">Name :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1BF_ITEM_NM" id="txtT1BF_ITEM_NM"
+               size="20"
+ vsds="T1IN_BF_ITEM" vsdf="BF_ITEM_NM"
+         ams_max_len="50"
+ ShowCodeInfo="" value="BF_ITEM_NM"title="Name (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label title="Page Type">Page Type :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1PAGE_TYP_CD" vsds="T1IN_BF_ITEM" vsdf="PAGE_TYP_CD" vscodetable="IN_PAGE_TYP">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label title="Page Code">Page Code :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1PAGE_CD" vsds="T1IN_BF_ITEM" vsdf="PAGE_CD"
+            size="8"
+>
+        </td>
+      </tr>
+
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1TMPL_NM" title="Default Name">Default Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1TMPL_NM" id="txtT1TMPL_NM"
+            size="20"
+ vsds="T1IN_BF_ITEM" vsdf="TMPL_NM"
+ value="TMPL_NM" ams_readonly ShowCodeInfo="" title="Default Name">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1MODE_IND" title="Initial Mode">Initial Mode :</label></td>
+        <td class="val">
+          <select name="txtT1MODE_IND" id="txtT1MODE_IND" vsds="T1IN_BF_ITEM" vsdf="MODE_IND" size="1" vscodetable="CVL_MODE_IND" ShowCodeInfo="" title="Initial Mode">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

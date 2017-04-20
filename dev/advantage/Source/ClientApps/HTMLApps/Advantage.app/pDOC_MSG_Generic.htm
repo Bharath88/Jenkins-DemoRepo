@@ -1,0 +1,657 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Document Message</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="pDOC_MSG_Generic">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Document Message">Document Message</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="Advantage" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+
+  <a name="T1DOC_MSG_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1DOC_MSG_Currency" >
+  <input type="hidden" name="T1DOC_MSG_Old_Currency" >
+  <table name="tblT1DOC_MSG" id="tblT1DOC_MSG" class="advgrid" vsds="T1DOC_MSG">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+<!-- BEGIN CUSTOMIZATION
+        <th 
+><span id="T1DOC_IDsortGridLabel" name="T1DOC_IDsortGridLabel" vsdf="DOC_ID" title="Doc ID">Doc ID</span></th>
+      
+END CUSTOMIZATION -->
+        <th 
+><span id="T1DOC_REFsortGridLabel" name="T1DOC_REFsortGridLabel" vsdf="DOC_REF" title="Document">Document</span></th>
+      
+        <th 
+><span id="T1MSG_CDsortGridLabel" name="T1MSG_CDsortGridLabel" vsdf="MSG_CD" title="Message Code">Message Code</span></th>
+      
+        <th 
+><span id="T1MSG_TXTsortGridLabel" name="T1MSG_TXTsortGridLabel" vsdf="MSG_TXT" title="Message Text">Message Text</span></th>
+      
+        <th 
+><span id="T1MSG_SEVsortGridLabel" name="T1MSG_SEVsortGridLabel" vsdf="MSG_SEV" title="Severity Level">Severity Level</span></th>
+      
+        <th 
+><span id="T1OV_LVLsortGridLabel" name="T1OV_LVLsortGridLabel" vsdf="OV_LVL" title="Override Level">Override Level</span></th>
+      
+        <th 
+><span id="T1DOC_LAST_DTsortGridLabel" name="T1DOC_LAST_DTsortGridLabel" vsdf="DOC_LAST_DT" title="Last Modified Date">Last Modified Date</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr class="advgridoddrow" onclick="UTILS_SelectGridRow(this);return true;" ams_altclassname="advgridevenrow" vsprototyperow="true">
+      <td class="advgridrowselect">
+        <input type="image" name="T1DOC_MSGvscurrency" id="T1DOC_MSGvscurrency" title="Select Row" alt="Select Row" src="../AMSImages/ADVRowSel.gif"
+ vsds="T1DOC_MSG" vsaction="Currency">
+      </td>
+      
+<!-- BEGIN CUSTOMIZATION --
+        <td 
+
+>
+          <vstext name="txtT1DOC_ID" vsds="T1DOC_MSG" vsdf="DOC_ID" 
+>
+        </td>
+      
+-- END CUSTOMIZATION -->
+        <td>
+          <a href="Advantage" vsaction="pagetransition" ams_doc_ref="DOC_REF" vsnavigation="DocCatalog">
+            <vstext name="btnT1DOC_REF" ams_doc_ref="DOC_REF" vsds="T1DOC_MSG" vsdf="DOC_REF">
+          </a>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1MSG_CD" vsds="T1DOC_MSG" vsdf="MSG_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1MSG_TXT" vsds="T1DOC_MSG" vsdf="MSG_TXT" 
+>
+        </td>
+      
+        <td 
+>
+          <vstext vsds="T1DOC_MSG" vsdf="MSG_SEV" vscodetable="CVL_SEV_LVL">
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1OV_LVL" vsds="T1DOC_MSG" vsdf="OV_LVL" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1DOC_LAST_DT" vsds="T1DOC_MSG" vsdf="DOC_LAST_DT" 
+      vsformat="Short Date"
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="T1DOC_MSGGridNav" id="T1DOC_MSGGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="Advantage" vsds="T1DOC_MSG" vsaction="firstpage" name="T1DOC_MSGfirstpage" id="T1DOC_MSGfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="Advantage" vsds="T1DOC_MSG" vsaction="prevpage" name="T1DOC_MSGprevpage" id="T1DOC_MSGprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="Advantage" vsds="T1DOC_MSG" vsaction="nextpage" id="T1DOC_MSGnextpage" name="T1DOC_MSGnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="Advantage" vsds="T1DOC_MSG" vsaction="lastpage" id="T1DOC_MSGlastpage" name="T1DOC_MSGlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+
+  
+  
+
+  
+      <table class="advaction recsrc">
+        <tr>
+      
+         <td>
+<ams_map title="Update Actions" name="Update Actions">
+</ams_map>
+      </td>
+
+   
+      <td><vstext vsds=" " name="T1DOC_MSGSearchColList" vspreservetag="true"></td>
+
+   
+      <td><ams_map title="Section Controls" name="Section Controls">
+      
+  <a href="javascript:
+        AMSTAB_ExpandSection('T1DOC_MSG_Section1','T1DOC_MSG_Section1_Button');
+          AMSTAB_ExpandSection('T1DOC_MSG_Section2','T1DOC_MSG_Section2_Button');
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+      
+  <a href="javascript:
+        AMSTAB_CollapseSection('T1DOC_MSG_Section1','T1DOC_MSG_Section1_Button');
+          AMSTAB_CollapseSection('T1DOC_MSG_Section2','T1DOC_MSG_Section2_Button');
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+    
+        </tr>
+      </table>
+
+  <fieldset class="advscalar">
+    <div class="advpresection">
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+          
+  
+        </table></td></tr></table></div></fieldset><a name="T1DOC_MSG_Section1_Top"></a><fieldset class="advscalar section">
+        <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1DOC_MSG_Section1','T1DOC_MSG_Section1_Button');" title="Expand/Collapse Document Information"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1DOC_MSG_Section1_Button"> Document Information</a></legend>
+        <div id="T1DOC_MSG_Section1" class="advsection">
+        <table><tr><td class="advscalarcol"><table class="advscalar">
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_TYP" title="Doc Type">Doc Type :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_TYP" id="txtT1DOC_TYP" 
+            size="15"
+ vsds="T1DOC_MSG" vsdf="DOC_TYP" 
+ value="DOC_TYP" ams_readonly ShowCodeInfo="" title="Doc Type">
+        </td>
+      </tr>
+    
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_CD" title="Doc Code">Doc Code :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_CD" id="txtT1DOC_CD" 
+      ams_max_len="8"
+ value="DOC_CD" 
+            size="15"
+ vsds="T1DOC_MSG" vsdf="DOC_CD" ShowCodeInfo="" title="Doc Code">
+          
+      <input type="image" vspick="T2R_DOC_CD" vspicktext="txtT1DOC_CD" vsds="T1DOC_MSG" vsaction="pick" name="pckT1DOC_CD" id="pckT1DOC_CD" title="Select Doc Code" alt="Select Doc Code" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_DEPT_CD" title="Doc Dept">Doc Dept :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_DEPT_CD" id="txtT1DOC_DEPT_CD" 
+         size="6"
+ vsds="T1DOC_MSG" vsdf="DOC_DEPT_CD" 
+ value="DOC_DEPT_CD" ams_readonly ShowCodeInfo="" title="Doc Dept">
+        </td>
+      </tr>
+    
+    
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_UNIT_CD" title="Doc Unit">Doc Unit :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_UNIT_CD" id="txtT1DOC_UNIT_CD" 
+         size="6"
+ vsds="T1DOC_MSG" vsdf="DOC_UNIT_CD" 
+ value="DOC_UNIT_CD" ams_readonly ShowCodeInfo="" title="Doc Unit">
+        </td>
+      </tr>
+    
+    
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_ID" title="Doc ID">Doc ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_ID" id="txtT1DOC_ID" 
+            size="20"
+ vsds="T1DOC_MSG" vsdf="DOC_ID" 
+ value="DOC_ID" ams_readonly ShowCodeInfo="" title="Doc ID">
+        </td>
+      </tr>
+    
+    
+        
+          
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_PHASE_CD" title="Document Phase">Document Phase :</label></td>
+   
+        <td class="val">
+          <input type="text" ams_readonly name="txtT1DOC_PHASE_CD" id="txtT1DOC_PHASE_CD" vsds="T1DOC_MSG" vsdf="DOC_PHASE_CD" vscodetable="CVL_DOC_PHASE_CD" 
+ title="Document Phase">
+        </td>
+      </tr>
+    
+ 
+        
+          
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_FUNC_CD" title="Document Function">Document Function :</label></td>
+   
+        <td class="val">
+          <input type="text" ams_readonly name="txtT1DOC_FUNC_CD" id="txtT1DOC_FUNC_CD" vsds="T1DOC_MSG" vsdf="DOC_FUNC_CD" vscodetable="CVL_DOC_FUNC_CD" 
+ title="Document Function">
+        </td>
+      </tr>
+    
+ 
+        
+          
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_STA_CD" title="Document Status">Document Status :</label></td>
+   
+        <td class="val">
+          <input type="text" ams_readonly name="txtT1DOC_STA_CD" id="txtT1DOC_STA_CD" vsds="T1DOC_MSG" vsdf="DOC_STA_CD" vscodetable="CVL_DOC_STA_CD" 
+ title="Document Status">
+        </td>
+      </tr>
+    
+ 
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_LAST_USID" title="User ID">User ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_LAST_USID" id="txtT1DOC_LAST_USID" 
+            size="20"
+ vsds="T1DOC_MSG" vsdf="DOC_LAST_USID" 
+ value="DOC_LAST_USID" ams_readonly ShowCodeInfo="" title="User ID">
+        </td>
+      </tr>
+    
+    
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_LAST_DT" title="Last Modified Date">Last Modified Date :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_LAST_DT" id="txtT1DOC_LAST_DT" 
+                                 size="15"
+ vsds="T1DOC_MSG" vsdf="DOC_LAST_DT" 
+         vsformat="Short Date"
+ value="DOC_LAST_DT" ams_readonly ShowCodeInfo="" title="Last Modified Date">
+        </td>
+      </tr>
+    
+    
+        
+							                    </table></td><td class="advscalarcol"><table class="advscalar">
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_VERS_NO" title="Version">Version :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_VERS_NO" id="txtT1DOC_VERS_NO" 
+            size="10"
+ vsds="T1DOC_MSG" vsdf="DOC_VERS_NO" 
+ value="DOC_VERS_NO" ams_readonly ShowCodeInfo="" title="Version">
+        </td>
+      </tr>
+    
+    
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1VEND_LN_NO" title="Vendor Line">Vendor Line :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1VEND_LN_NO" id="txtT1VEND_LN_NO" 
+            size="10"
+ vsds="T1DOC_MSG" vsdf="VEND_LN_NO" 
+      vsformat="#,###;(#,###)"
+ value="VEND_LN_NO" ams_readonly ShowCodeInfo="" title="Vendor Line">
+        </td>
+      </tr>
+    
+    
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1COMM_LN_NO" title="Commodity Line">Commodity Line :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1COMM_LN_NO" id="txtT1COMM_LN_NO" 
+            size="10"
+ vsds="T1DOC_MSG" vsdf="COMM_LN_NO" 
+      vsformat="#,###;(#,###)"
+ value="COMM_LN_NO" ams_readonly ShowCodeInfo="" title="Commodity Line">
+        </td>
+      </tr>
+    
+    
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1ACTG_LN_NO" title="Accounting Line">Accounting Line :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1ACTG_LN_NO" id="txtT1ACTG_LN_NO" 
+            size="10"
+ vsds="T1DOC_MSG" vsdf="ACTG_LN_NO" 
+      vsformat="#,###;(#,###)"
+ value="ACTG_LN_NO" ams_readonly ShowCodeInfo="" title="Accounting Line">
+        </td>
+      </tr>
+    
+    
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1PSTNG_LN_NO" title="Posting Line">Posting Line :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1PSTNG_LN_NO" id="txtT1PSTNG_LN_NO" 
+            size="10"
+ vsds="T1DOC_MSG" vsdf="PSTNG_LN_NO" 
+      vsformat="#,###;(#,###)"
+ value="PSTNG_LN_NO" ams_readonly ShowCodeInfo="" title="Posting Line">
+        </td>
+      </tr>
+    
+    
+        
+          </table></td></tr></table></div></fieldset><br><br><a name="T1DOC_MSG_Section2_Top"></a><fieldset class="advscalar section">
+          <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1DOC_MSG_Section2','T1DOC_MSG_Section2_Button');" title="Expand/Collapse Message Information"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1DOC_MSG_Section2_Button"> Message Information</a></legend>
+          <div id="T1DOC_MSG_Section2" class="advsection">
+          <table><tr><td class="advscalarcol"><table class="advscalar">
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1COMP_NM" title="Component Name">Component Name :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1COMP_NM" id="txtT1COMP_NM" 
+            size="20"
+ vsds="T1DOC_MSG" vsdf="COMP_NM" 
+ value="COMP_NM" ams_readonly ShowCodeInfo="" title="Component Name">
+        </td>
+      </tr>
+    
+    
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1ATTR_NM" title="Attribute Name">Attribute Name :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1ATTR_NM" id="txtT1ATTR_NM" 
+            size="20"
+ vsds="T1DOC_MSG" vsdf="ATTR_NM" 
+ value="ATTR_NM" ams_readonly ShowCodeInfo="" title="Attribute Name">
+        </td>
+      </tr>
+    
+    
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1ATTR_VL" title="Attribute Value">Attribute Value :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1ATTR_VL" id="txtT1ATTR_VL" 
+            size="20"
+ vsds="T1DOC_MSG" vsdf="ATTR_VL" 
+ value="ATTR_VL" ams_readonly ShowCodeInfo="" title="Attribute Value">
+        </td>
+      </tr>
+    
+    
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1OV_LVL" title="Override Level">Override Level :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1OV_LVL" id="txtT1OV_LVL" 
+            size="10"
+ vsds="T1DOC_MSG" vsdf="OV_LVL" 
+ value="OV_LVL" ams_readonly ShowCodeInfo="" title="Override Level">
+        </td>
+      </tr>
+    
+    
+        
+							                    </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1MSG_CD" title="Message Code">Message Code :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1MSG_CD" id="txtT1MSG_CD" 
+      ams_max_len="5"
+ value="MSG_CD" 
+         size="6"
+ vsds="T1DOC_MSG" vsdf="MSG_CD" ShowCodeInfo="" title="Message Code">
+          
+      <input type="image" vspick="T3R_MSG" vspicktext="txtT1MSG_CD" vsds="T1DOC_MSG" vsaction="pick" name="pckT1MSG_CD" id="pckT1MSG_CD" title="Select Message Code" alt="Select Message Code" src="../AMSImages/ADVPick.gif">
+        </td>
+      </tr>
+    
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1MSG_TXT" title="Message Text">Message Text :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1MSG_TXT" id="txtT1MSG_TXT" 
+            size="20"
+ vsds="T1DOC_MSG" vsdf="MSG_TXT" 
+ value="MSG_TXT" ams_readonly ShowCodeInfo="" title="Message Text">
+        </td>
+      </tr>
+    
+    
+        
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1MSG_EXPL" title="Explanation">Explanation :</label></td>
+   
+        <td class="val memo">
+          <textarea ams_readonly cols="35" rows="4" name="txtT1MSG_EXPL" id="txtT1MSG_EXPL" vsds="T1DOC_MSG" vsdf="MSG_EXPL" 
+ title="Explanation"></textarea>
+        </td>
+      </tr>
+    
+  
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT1MSG_TXT_UP" id="txtT1MSG_TXT_UP" 
+               size="20"
+           vsds="T1DOC_MSG" vsdf="MSG_TXT_UP"
+         ams_max_len="254"
+           ShowCodeInfo=""
+           value="MSG_TXT_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+    
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT1ATTR_VL_UP" id="txtT1ATTR_VL_UP" 
+               size="20"
+           vsds="T1DOC_MSG" vsdf="ATTR_VL_UP"
+         ams_max_len="254"
+           ShowCodeInfo=""
+           value="ATTR_VL_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+    
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+  
+      <br><br><table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T1DOC_MSG_Top');" title="Go To Top">Top</a></td></tr></table>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1DOC_MSG', new Array(), new Array() ) ;
+    
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

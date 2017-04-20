@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Welcome to CGI Advantage: LOGIN</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSCSS/default/ADVLoginStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSCSS/default/ADVPrimaryNavigator.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <!--link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVPortalStyle.css"-->
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript">
+  <!--
+   function writeCopyrightInfo()
+   {
+      document.writeln( ' <div class="logintext"> ');
+      document.writeln( '   <p>Copyright &copy 2001, 2014 CGI Technologies and Solutions Inc. All Rights Reserved.</p> ');
+      document.writeln( '   <p>Use of this software is subject to CGI Technologies and Solutions Inc. license agreement.</p> ');
+      document.writeln( '   <p>CGI Advantage&reg is a registered trademark of CGI Technologies and Solutions Inc</p> ');
+      document.writeln( ' </div> ');
+   }
+
+  function PutAtTop()
+  {
+     if ( self != top )
+     {
+        top.location.href = self.location.href ;
+     } /* end if ( self != top ) */
+  } /* end PutAtTop() */
+  //-->
+  </script>
+
+
+</head>
+<body class="adv login" onload="PutAtTop();UTILS_SetupOnClickForPage();UTILS_SetFocusOnFirstField(document);">
+  <form METHOD="POST" action="jade" vsloginform>
+
+    <input type="hidden" name="vsparams" value>
+
+ <div>
+
+     <div id="GlobalHeader">
+         <div id="GlobalHeaderLogo"><img src="../AMSImages/advantage-logo.gif" alt="CGI Advantage Logo" width="261" height="31"></div>
+            <div id="GlobalHeaderNavigationAndLogoutContainer">
+            <div class="globalheaderelements">
+             <!--div class="PageCodeSearch1 bottomlayout"></div-->
+            </div>
+
+         </div>
+         <div class="spacer"></div>
+     </div>
+
+     <div class="parentdiv" align="center">
+     <div class="loginsection">
+             <div id="loginbox">
+               <div class="logininsidebox">
+                <div class="loginform">
+                 <h1>Change Password</h1>
+                  <ul>
+                   <li><label title="User Name" >User Name:</label><input type="text" value="" name="login" id="login" size="20" title="User Name" autocomplete="off" vlsuserid></li>
+                   <li><label title="Old Password">Old Password:</label><input type="password" name="password" id="password" size="20" title="Old Password" autocomplete="off"></li>
+                   <li><label title="New Password">New Password:</label><input type="password" name="newpassword" id="newpassword" size="20" title="New Password" autocomplete="off"></li>
+                   <li><label title="Confirm Password">Confirm Password:</label><input type="password" name="confirmnewpassword" id="confirmnewpassword" size="20" title="Confirm Password" autocomplete="off"></li>
+                   <li>
+                           <div class="hidden val">
+                                  <input type="text" value="BLS_?" name="serverName" id="serverName" size="20" vlsname>
+                           </div>
+
+                   </li>
+                   <li class="actionbtn"><input type="submit" value="Login" name="vslogin" id="vslogin" class="advbutton" title="Login: Will open in a new window">
+                       <input type="reset" value="Reset" name="reset" id="reset" class="advbutton" title="Reset"></li>
+                   <li class="loginmsg"><login_error></li>
+                  </ul>
+                </div>
+
+                <script type="text/javascript" language="JavaScript">
+                <!--
+                   writeCopyrightInfo() ;
+                -->
+                </script>
+
+                <div class="spacer"></div>
+                </div>
+             </div>
+             <div class="shadowbase">
+               <div class="shadowleft"></div>
+               <div class="shadow"></div>
+               <div class="shadowright"></div>
+             </div>
+     </div>
+     </div>
+
+</div>
+
+</form>
+</body>
+</html>

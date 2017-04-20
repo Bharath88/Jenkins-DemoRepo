@@ -1,0 +1,700 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="Default"
+	PositionTop="194"
+	PositionLeft="451"
+	PositionWidth="209"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="True"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSGridSelectPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="926692293"
+	>
+	<FormCaption><![CDATA[Job Summary]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="EditMode"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="PageCode"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="BS_AGENT"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="GridSelect"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="False"
+		AllowInsert="False"
+		AllowUpdate="False"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="AGNT_CLS_NM" />
+				<RSDefaultAttribute ID="2" Name="PKG_NM" />
+				<RSDefaultAttribute ID="3" Name="USID" />
+				<RSDefaultAttribute ID="4" Name="APPL_SRV_NM" />
+				<RSDefaultAttribute ID="5" Name="PRTY" />
+				<RSDefaultAttribute ID="6" Name="ITM_TYP" />
+				<RSDefaultAttribute ID="7" Name="RQRS_APRV" />
+				<RSDefaultAttribute ID="8" Name="RUN_PLCY" />
+				<RSDefaultAttribute ID="9" Name="RUN_DT_TM" />
+				<RSDefaultAttribute ID="10" Name="RUN_EXPR_TM" />
+				<RSDefaultAttribute ID="11" Name="RUN_ITVL" />
+				<RSDefaultAttribute ID="12" Name="RPET_NO" />
+				<RSDefaultAttribute ID="13" Name="OTPT_EXPR_DT" />
+				<RSDefaultAttribute ID="14" Name="SBMT_TS" />
+				<RSDefaultAttribute ID="15" Name="PRE_CN" />
+				<RSDefaultAttribute ID="16" Name="CHK_PT" />
+				<RSDefaultAttribute ID="17" Name="RUN_STA" />
+				<RSDefaultAttribute ID="18" Name="AGNT_ID" />
+				<RSDefaultAttribute ID="19" Name="SEND_MAIL" />
+				<RSDefaultAttribute ID="20" Name="MAIL_LST" />
+				<RSDefaultAttribute ID="21" Name="OTPT_EXPR_PLCY" />
+				<RSDefaultAttribute ID="22" Name="JOB_OTPT_LOC" />
+				<RSDefaultAttribute ID="23" Name="BASE_TMPL_PATH" />
+				<RSDefaultAttribute ID="24" Name="RUN_STRT_TS" />
+				<RSDefaultAttribute ID="25" Name="RUN_END_TS" />
+				<RSDefaultAttribute ID="26" Name="RET_CD" />
+				<RSDefaultAttribute ID="27" Name="PRE_CN_RET_CD" />
+				<RSDefaultAttribute ID="28" Name="ID" />
+				<RSDefaultAttribute ID="29" Name="PNT_CTLG_ID" />
+				<RSDefaultAttribute ID="30" Name="CHILD_JOB_ID" />
+				<RSDefaultAttribute ID="31" Name="DOC_CD" />
+				<RSDefaultAttribute ID="32" Name="DOC_DEPT_CD" />
+				<RSDefaultAttribute ID="33" Name="DOC_ID" />
+				<RSDefaultAttribute ID="34" Name="DOC_VERS_NO" />
+				<RSDefaultAttribute ID="36" Name="DOC_S_ACTN_CD" />
+				<RSDefaultAttribute ID="37" Name="GEN_DOC_ID" />
+				<RSDefaultAttribute ID="38" Name="DOC_HLD_FL" />
+				<RSDefaultAttribute ID="39" Name="DOC_AM_FL" />
+				<RSDefaultAttribute ID="40" Name="ACTN_CD" />
+				<RSDefaultAttribute ID="41" Name="SNGL_RUN_PROC" />
+				<RSDefaultAttribute ID="42" Name="JOB_NM" />
+				<RSDefaultAttribute ID="43" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="44" Name="DOC_STRT_DT" />
+				<RSDefaultAttribute ID="45" Name="DOC_END_DT" />
+				<RSDefaultAttribute ID="46" Name="DOC_FDT_FREQ_TYP" />
+				<RSDefaultAttribute ID="47" Name="DOC_FDT_FREQ_VL1" />
+				<RSDefaultAttribute ID="48" Name="DOC_FDT_FREQ_VL2" />
+				<RSDefaultAttribute ID="49" Name="APPL_HOST_NM" />
+				<RSDefaultAttribute ID="50" Name="VLS_NM" />
+				<RSDefaultAttribute ID="51" Name="FDT_CATCH_UP_FL" />
+				<RSDefaultAttribute ID="52" Name="JOB_LBL" />
+				<RSDefaultAttribute ID="53" Name="PUBLIC_FL" />
+				<RSDefaultAttribute ID="54" Name="RPT_PDF" />
+				<RSDefaultAttribute ID="55" Name="RPT_HTML" />
+				<RSDefaultAttribute ID="56" Name="RPT_DATA" />
+				<RSDefaultAttribute ID="57" Name="USID_UP" />
+				<RSDefaultAttribute ID="58" Name="JOB_NM_UP" />
+				<RSDefaultAttribute ID="59" Name="APPL_ID" />
+				<RSDefaultAttribute ID="60" Name="EFF_USER_ID" />
+				<RSDefaultAttribute ID="61" Name="EFF_USER_ID_UP" />
+				<RSDefaultAttribute ID="62" Name="DOC_S_ACTN_DESC" />
+				<RSDefaultAttribute ID="63" Name="Q_ID" />
+				<RSDefaultAttribute ID="64" Name="TBL_LAST_DT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="AGNT_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="RUN_STRT_TS" Displayed="True" UnPlaced="False" Archetype="AMSQueryDateChoiceCalendar" />
+				<RSAttribute Name="RET_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="JOB_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="RUN_END_TS" Displayed="True" UnPlaced="False" Archetype="AMSQueryDateChoiceCalendar" />
+				<RSAttribute Name="USID_UP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="USID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AGNT_CLS_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PKG_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APPL_SRV_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PRTY" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ITM_TYP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RQRS_APRV" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RUN_PLCY" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RUN_DT_TM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RUN_EXPR_TM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RUN_ITVL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RPET_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OTPT_EXPR_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SBMT_TS" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PRE_CN" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CHK_PT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RUN_STA" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SEND_MAIL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="MAIL_LST" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OTPT_EXPR_PLCY" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="JOB_OTPT_LOC" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="BASE_TMPL_PATH" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PRE_CN_RET_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PNT_CTLG_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_S_ACTN_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CHILD_JOB_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_DEPT_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_AM_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="GEN_DOC_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_HLD_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ACTN_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SNGL_RUN_PROC" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_STRT_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_END_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_FDT_FREQ_TYP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_FDT_FREQ_VL1" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_FDT_FREQ_VL2" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APPL_HOST_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="VLS_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FDT_CATCH_UP_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="JOB_LBL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PUBLIC_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RPT_PDF" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RPT_HTML" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RPT_DATA" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="JOB_NM_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="EFF_USER_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="EFF_USER_ID_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_S_ACTN_DESC" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="Q_ID" Displayed="True" UnPlaced="True" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="AGNT_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="USID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="JOB_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="RUN_STRT_TS" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="RUN_END_TS" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="RET_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="RUN_STA" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="JOB_LBL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AGNT_CLS_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PKG_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ITM_TYP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APPL_SRV_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PRTY" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RQRS_APRV" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RUN_PLCY" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RUN_DT_TM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RUN_EXPR_TM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RUN_ITVL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RPET_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OTPT_EXPR_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SBMT_TS" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PRE_CN" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CHK_PT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SEND_MAIL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="MAIL_LST" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OTPT_EXPR_PLCY" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="JOB_OTPT_LOC" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="BASE_TMPL_PATH" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PRE_CN_RET_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PNT_CTLG_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CHILD_JOB_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_DEPT_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ACTN_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_S_ACTN_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="GEN_DOC_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_HLD_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_AM_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SNGL_RUN_PROC" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_STRT_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_END_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_FDT_FREQ_TYP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_FDT_FREQ_VL1" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DOC_FDT_FREQ_VL2" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APPL_HOST_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="VLS_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FDT_CATCH_UP_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="PUBLIC_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RPT_PDF" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RPT_HTML" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="RPT_DATA" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="USID_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="JOB_NM_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="EFF_USER_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="EFF_USER_ID_UP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_S_ACTN_DESC" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="Q_ID" Displayed="True" UnPlaced="True" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value="%JOB_NM%"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="false"
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+		</ArchetypeExtendedProperties>
+		<Transition
+			FormTransNum="1"
+			Prefix="T5"
+			TargetFormName="Job_Output_Files"
+			IsTargetInitialQueryMode="False"
+			IsTargetInitialAddMode="False"
+			IsVisibleAppline="True"
+			IsAddedAfterGen="False"
+			FormTransCaption="View Output Files"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPageNavigation"
+			TargetFramesetPage=""
+			TargetFrame=""
+			FrameNameInFramesetPage=""
+			>
+			<ExtendedProperties>
+				<Property
+					Name="DefaultPackageName"
+					Value=""
+				/>
+				<Property
+					Name="Dependent"
+					Value=""
+				/>
+				<Property
+					Name="LoadWithSave"
+					Value=""
+				/>
+				<Property
+					Name="MsgFlag"
+					Value=""
+				/>
+				<Property
+					Name="OverrideTargetPageTitle"
+					Value=""
+				/>
+				<Property
+					Name="TargetFormName"
+					Value="&quot;Job_Output_Files&quot;"
+				/>
+				<Property
+					Name="TargetPackageName"
+					Value="&quot;advantage.Reports_Sys_Admin_App&quot;"
+				/>
+				<Property
+					Name="TargetPageAutoNavigationName"
+					Value=""
+				/>
+				<Property
+					Name="TargetPageAutoPickName"
+					Value=""
+				/>
+				<Property
+					Name="TargetPageCode"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</Transition>
+		<Transition
+			FormTransNum="1"
+			Prefix="T4"
+			TargetFormName="Job_Log_Entries"
+			IsTargetInitialQueryMode="False"
+			IsTargetInitialAddMode="False"
+			IsVisibleAppline="True"
+			IsAddedAfterGen="False"
+			FormTransCaption="View Log"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPageNavigation"
+			TargetFramesetPage=""
+			TargetFrame=""
+			FrameNameInFramesetPage=""
+			RSID="5"
+			BusinessObject="BS_AGENT_LOG"
+			Relationship="ParentJob(BS_AGENT)-LogEntries(BS_AGENT_LOG)"
+			RelnIsFromParent="True"
+			>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<ParameterizedWhereClause><![CDATA[ [AGNT_ID] = [?AGNT_ID]]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<ExtendedProperties>
+				<Property
+					Name="DefaultPackageName"
+					Value=""
+				/>
+				<Property
+					Name="Dependent"
+					Value=""
+				/>
+				<Property
+					Name="LoadWithSave"
+					Value=""
+				/>
+				<Property
+					Name="MsgFlag"
+					Value=""
+				/>
+				<Property
+					Name="OverrideTargetPageTitle"
+					Value=""
+				/>
+				<Property
+					Name="TargetFormName"
+					Value="&quot;Job_Log_Entries&quot;"
+				/>
+				<Property
+					Name="TargetPackageName"
+					Value="&quot;advantage.Reports_Sys_Admin_App&quot;"
+				/>
+				<Property
+					Name="TargetPageAutoNavigationName"
+					Value=""
+				/>
+				<Property
+					Name="TargetPageAutoPickName"
+					Value=""
+				/>
+				<Property
+					Name="TargetPageCode"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</Transition>
+	</RecordSource>
+	<Transition
+		FormTransNum="1"
+		Prefix="T3"
+		TargetFormName="Add_New_Job"
+		IsTargetInitialQueryMode="False"
+		IsTargetInitialAddMode="True"
+		IsVisibleAppline="True"
+		IsAddedAfterGen="False"
+		FormTransCaption="Schedule New Job"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSPageNavigation"
+		TargetFramesetPage=""
+		TargetFrame=""
+		FrameNameInFramesetPage=""
+		RSID="3"
+		BusinessObject="BS_AGENT"
+		RelnIsFromParent="True"
+		>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<ExtendedProperties>
+			<Property
+				Name="DefaultPackageName"
+				Value=""
+			/>
+			<Property
+				Name="Dependent"
+				Value=""
+			/>
+			<Property
+				Name="LoadWithSave"
+				Value=""
+			/>
+			<Property
+				Name="MsgFlag"
+				Value=""
+			/>
+			<Property
+				Name="OverrideTargetPageTitle"
+				Value=""
+			/>
+			<Property
+				Name="TargetFormName"
+				Value="&quot;Add_New_Job&quot;"
+			/>
+			<Property
+				Name="TargetPackageName"
+				Value="&quot;advantage.Reports_Sys_Admin_App&quot;"
+			/>
+			<Property
+				Name="TargetPageAutoNavigationName"
+				Value=""
+			/>
+			<Property
+				Name="TargetPageAutoPickName"
+				Value=""
+			/>
+			<Property
+				Name="TargetPageCode"
+				Value=""
+			/>
+		</ExtendedProperties>
+	</Transition>
+	<Transition
+		FormTransNum="1"
+		Prefix="T2"
+		TargetFormName="Jobs_Pending_User"
+		IsTargetInitialQueryMode="False"
+		IsTargetInitialAddMode="False"
+		IsVisibleAppline="True"
+		IsAddedAfterGen="False"
+		FormTransCaption="View Pending Jobs"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSPageNavigation"
+		TargetFramesetPage=""
+		TargetFrame=""
+		FrameNameInFramesetPage=""
+		RSID="4"
+		BusinessObject="BS_AGENT"
+		RelnIsFromParent="True"
+		>
+		<OrderByClause><![CDATA[ AGNT_ID DESC]]></OrderByClause>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<ExtendedProperties>
+			<Property
+				Name="DefaultPackageName"
+				Value=""
+			/>
+			<Property
+				Name="Dependent"
+				Value="true"
+			/>
+			<Property
+				Name="LoadWithSave"
+				Value=""
+			/>
+			<Property
+				Name="MsgFlag"
+				Value=""
+			/>
+			<Property
+				Name="OverrideTargetPageTitle"
+				Value=""
+			/>
+			<Property
+				Name="TargetFormName"
+				Value="&quot;Jobs_Pending_User&quot;"
+			/>
+			<Property
+				Name="TargetPackageName"
+				Value="&quot;advantage.Reports_Sys_Admin_App&quot;"
+			/>
+			<Property
+				Name="TargetPageAutoNavigationName"
+				Value=""
+			/>
+			<Property
+				Name="TargetPageAutoPickName"
+				Value=""
+			/>
+			<Property
+				Name="TargetPageCode"
+				Value=""
+			/>
+		</ExtendedProperties>
+	</Transition>
+</Form>

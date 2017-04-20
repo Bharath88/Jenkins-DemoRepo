@@ -1,0 +1,332 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Historical Tracking of Assignments</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="SecurityAdmin" method="post" vsform="true" name="pIN_HIST_TRACK">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Historical Tracking of Assignments">Historical Tracking of Assignments</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+      
+      
+ 
+
+  
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+      <a href="SecurityAdmin" vsds="T1IN_HIST_TRACK" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+      <a href="SecurityAdmin" vsds="T1IN_HIST_TRACK" vsaction="clearquery" name="T1IN_HIST_TRACKclearquery" id="T1IN_HIST_TRACKclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+           
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1TABLE_NAME" title="Table Name">Table Name :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1TABLE_NAME" id="txtT1TABLE_NAME" 
+            size="20"
+ vsds="T1IN_HIST_TRACK" vsdf="TABLE_NAME" vsdisplaymode="Query" 
+ value="TABLE_NAME" title="Table Name">
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1ENTITY_ID" title="Assignee">Assignee :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1ENTITY_ID" id="txtT1ENTITY_ID" 
+            size="20"
+ vsds="T1IN_HIST_TRACK" vsdf="ENTITY_ID" vsdisplaymode="Query" 
+ value="ENTITY_ID" title="Assignee">
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1RESOURCE_ID" title="Assigned Object">Assigned Object :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1RESOURCE_ID" id="txtT1RESOURCE_ID" 
+            size="20"
+ vsds="T1IN_HIST_TRACK" vsdf="RESOURCE_ID" vsdisplaymode="Query" 
+ value="RESOURCE_ID" title="Assigned Object">
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DEPT_CD" title="Dept">Dept :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DEPT_CD" id="txtT1DEPT_CD" 
+         size="6"
+ vsds="T1IN_HIST_TRACK" vsdf="DEPT_CD" vsdisplaymode="Query" 
+ value="DEPT_CD" title="Dept">
+        </td>
+      </tr>
+    
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1FROM_DT" title="From Date">From Date :</label></td>
+   
+        <td class="val">
+          <input type="text" id="txtT1FROM_DT" name="txtT1FROM_DT" size="11" vsds="T1IN_HIST_TRACK" vsdisplaymode="Query" vsdf="FROM_DT" 
+    vsformat="Short Date"
+ value="FROM_DT" title="From Date">
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.pIN_HIST_TRACK.txtT1FROM_DT.value, 'txtT1FROM_DT', document.pIN_HIST_TRACK.txtT1FROM_DT);event.returnValue=false;return false;" title="Select From Date: Will open in a new window">
+            <img src="../AMSImages/ADVCalendar.gif"
+ alt="Select From Date: Will open in a new window" title="Select From Date: Will open in a new window">
+          </a>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1TO_DT" title="To Date">To Date :</label></td>
+   
+        <td class="val">
+          <input type="text" id="txtT1TO_DT" name="txtT1TO_DT" size="11" vsds="T1IN_HIST_TRACK" vsdisplaymode="Query" vsdf="TO_DT" 
+    vsformat="Short Date"
+ value="TO_DT" title="To Date">
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.pIN_HIST_TRACK.txtT1TO_DT.value, 'txtT1TO_DT', document.pIN_HIST_TRACK.txtT1TO_DT);event.returnValue=false;return false;" title="Select To Date: Will open in a new window">
+            <img src="../AMSImages/ADVCalendar.gif"
+ alt="Select To Date: Will open in a new window" title="Select To Date: Will open in a new window">
+          </a>
+        </td>
+      </tr>
+    
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  
+  
+
+  
+  <input type="hidden" name="T1IN_HIST_TRACK_Currency" value="">
+  <input type="hidden" name="T1IN_HIST_TRACK_Old_Currency" value="">
+  <table name="tblT1IN_HIST_TRACK" id="tblT1IN_HIST_TRACK" class="advgrid" vsds="T1IN_HIST_TRACK">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><span id="T1TABLE_NAMEsortGridLabel" name="T1TABLE_NAMEsortGridLabel" vsdf="TABLE_NAME" title="Table Name">Table Name</span></th>
+      
+        <th 
+><a href="SecurityAdmin" vsaction="sort" vsds="T1IN_HIST_TRACK" 
+    vsdf="ENTITY_ID"
+ name="T1ENTITY_IDsort" id="T1ENTITY_IDsort" title="Sort By Assignee">Assignee</a></th>
+      
+        <th 
+><a href="SecurityAdmin" vsaction="sort" vsds="T1IN_HIST_TRACK" 
+    vsdf="RESOURCE_ID"
+ name="T1RESOURCE_IDsort" id="T1RESOURCE_IDsort" title="Sort By Assigned Object">Assigned Object</a></th>
+      
+        <th 
+><span id="T1DEPT_CDsortGridLabel" name="T1DEPT_CDsortGridLabel" vsdf="DEPT_CD" title="Dept">Dept</span></th>
+      
+        <th 
+><span id="T1ASSIGN_ADMN_IDsortGridLabel" name="T1ASSIGN_ADMN_IDsortGridLabel" vsdf="ASSIGN_ADMN_ID" title="Assign Admin ID">Assign Admin ID</span></th>
+      
+        <th 
+><a href="SecurityAdmin" vsaction="sort" vsds="T1IN_HIST_TRACK" 
+    vsdf="FROM_DT"
+ name="T1FROM_DTsort" id="T1FROM_DTsort" title="Sort By From Date">From Date</a></th>
+      
+        <th 
+><span id="T1REVOKE_ADMN_IDsortGridLabel" name="T1REVOKE_ADMN_IDsortGridLabel" vsdf="REVOKE_ADMN_ID" title="Revoke Admin ID">Revoke Admin ID</span></th>
+      
+        <th 
+><a href="SecurityAdmin" vsaction="sort" vsds="T1IN_HIST_TRACK" 
+    vsdf="TO_DT"
+ name="T1TO_DTsort" id="T1TO_DTsort" title="Sort By To Date">To Date</a></th>
+      
+        <th 
+><span id="T1REASONsortGridLabel" name="T1REASONsortGridLabel" vsdf="REASON" title="Revoke Reason">Revoke Reason</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IN_HIST_TRACKvscurrency" id="T1IN_HIST_TRACKvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1IN_HIST_TRACK" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1TABLE_NAME" vsds="T1IN_HIST_TRACK" vsdf="TABLE_NAME" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1ENTITY_ID" vsds="T1IN_HIST_TRACK" vsdf="ENTITY_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1RESOURCE_ID" vsds="T1IN_HIST_TRACK" vsdf="RESOURCE_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DEPT_CD" vsds="T1IN_HIST_TRACK" vsdf="DEPT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1ASSIGN_ADMN_ID" vsds="T1IN_HIST_TRACK" vsdf="ASSIGN_ADMN_ID" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1FROM_DT" vsds="T1IN_HIST_TRACK" vsdf="FROM_DT" 
+    vsformat="Short Date"
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1REVOKE_ADMN_ID" vsds="T1IN_HIST_TRACK" vsdf="REVOKE_ADMN_ID" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1TO_DT" vsds="T1IN_HIST_TRACK" vsdf="TO_DT" 
+    vsformat="Short Date"
+>
+        </td>
+      
+        <td class="memo">
+          <textarea ams_readonly cols="20" rows="2" name="txtT1REASON" vsds="T1IN_HIST_TRACK" vsdf="REASON" 
+ title="Revoke Reason"></textarea>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+      
+<td><div name="T1IN_HIST_TRACKGridNav" id="T1IN_HIST_TRACKGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="SecurityAdmin" vsds="T1IN_HIST_TRACK" vsaction="firstpage" name="T1IN_HIST_TRACKfirstpage" id="T1IN_HIST_TRACKfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="SecurityAdmin" vsds="T1IN_HIST_TRACK" vsaction="prevpage" name="T1IN_HIST_TRACKprevpage" id="T1IN_HIST_TRACKprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="SecurityAdmin" vsds="T1IN_HIST_TRACK" vsaction="nextpage" id="T1IN_HIST_TRACKnextpage" name="T1IN_HIST_TRACKnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="SecurityAdmin" vsds="T1IN_HIST_TRACK" vsaction="lastpage" id="T1IN_HIST_TRACKlastpage" name="T1IN_HIST_TRACKlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+    <td><a href="SecurityAdmin" vsds="T1IN_HIST_TRACK" vsaction="85" name="T1IN_HIST_TRACKDownloadResults" id="T1IN_HIST_TRACKDownloadResults" title=""
+      ams_download_type="msexcel"
+       ></a><a href="javascript:submitForm(document.forms[0],'T1IN_HIST_TRACKDownloadResults=T1IN_HIST_TRACKDownloadResults', '_top');UTILS_InitPage();" onclick="if (!UTILS_CheckForTransaction()){event.returnValue = false};" name="T1IN_HIST_TRACKDownload" id="T1IN_HIST_TRACKDownload" title="Download Results">Download</a></td>
+      
+      
+    </tr>
+  </table>
+
+  
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

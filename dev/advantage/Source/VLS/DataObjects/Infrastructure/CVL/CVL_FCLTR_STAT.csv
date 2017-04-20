@@ -1,0 +1,13 @@
+"CVL_FLCTR_STAT_SV","CVL_FLCTR_STAT_DV","AMS_ROW_VERS_NO"
+0,"Document Ready for Archiving",1
+1,"Document Archiving",1
+2,"Document Archiving Historical",1
+8,"Document Unarchiving",1
+9,"Document Archive Complete",1
+10,"Table Ready for Archiving",1
+11,"Table Archiving",1
+18,"Table Restoring",1
+19,"Table Archive Complete",1
+20,"Documents Ready For Printing",1
+21,"Documents Printing",1
+22,"Documents Printed",1

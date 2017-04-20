@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Batch Log</title>
+  <base href>
+
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="ABI" method="post" vsform="true" name="pBS_AGENT_LOG_Grid">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Batch Log">Batch Log</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="ABI" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+
+
+
+
+
+
+  <input type="hidden" name="T1BS_AGENT_LOG_Currency" value="">
+  <input type="hidden" name="T1BS_AGENT_LOG_Old_Currency" value="">
+  <table name="tblT1BS_AGENT_LOG" id="tblT1BS_AGENT_LOG" class="advgrid" vsds="T1BS_AGENT_LOG">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1LOG_CTRsortGridLabel" name="T1LOG_CTRsortGridLabel" title="Log Counter">Log Counter</span></th>
+
+        <th
+><span id="T1MMOsortGridLabel" name="T1MMOsortGridLabel" title="Memo">Memo</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1BS_AGENT_LOGvscurrency" id="T1BS_AGENT_LOGvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1BS_AGENT_LOG" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1LOG_CTR" vsds="T1BS_AGENT_LOG" vsdf="LOG_CTR"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1MMO" vsds="T1BS_AGENT_LOG" vsdf="MMO"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+
+
+<td><div name="T1BS_AGENT_LOGGridNav" id="T1BS_AGENT_LOGGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+         <a href="ABI" vsds="T1BS_AGENT_LOG" vsaction="firstpage" name="T1BS_AGENT_LOGfirstpage" id="T1BS_AGENT_LOGfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+         <a href="ABI" vsds="T1BS_AGENT_LOG" vsaction="prevpage" name="T1BS_AGENT_LOGprevpage" id="T1BS_AGENT_LOGprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+         <a href="ABI" vsds="T1BS_AGENT_LOG" vsaction="nextpage" id="T1BS_AGENT_LOGnextpage" name="T1BS_AGENT_LOGnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+         <a href="ABI" vsds="T1BS_AGENT_LOG" vsaction="lastpage" id="T1BS_AGENT_LOGlastpage" name="T1BS_AGENT_LOGlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+
+    </tr>
+  </table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1BS_AGENT_LOG', new Array(), new Array() ) ;
+
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="ABI" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

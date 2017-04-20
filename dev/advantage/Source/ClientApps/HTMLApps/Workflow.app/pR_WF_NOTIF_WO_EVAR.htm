@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Notification Variables</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Workflow" method="post" vsform="true" name="pR_WF_NOTIF_WO_EVAR">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Notification Variables">Notification Variables</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="Workflow" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+  <a name="T1R_WF_NOTIF_WO_EVAR_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1R_WF_NOTIF_WO_EVAR_Currency" value="">
+  <input type="hidden" name="T1R_WF_NOTIF_WO_EVAR_Old_Currency" value="">
+  <table name="tblT1R_WF_NOTIF_WO_EVAR" id="tblT1R_WF_NOTIF_WO_EVAR" class="advgrid" vsds="T1R_WF_NOTIF_WO_EVAR">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_NOTIF_WO_EVAR" 
+    vsdf="DOC_CD"
+ name="T1DOC_CDsort" id="T1DOC_CDsort" title="Sort By Document Code">Document Code</a></th>
+      
+        <th 
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_NOTIF_WO_EVAR" 
+    vsdf="ASGN_VAR"
+ name="T1ASGN_VARsort" id="T1ASGN_VARsort" title="Sort By Notification E-Mail Variable">Notification E-Mail Variable</a></th>
+      
+        <th 
+><span id="T1DSCRsortGridLabel" name="T1DSCRsortGridLabel" title="Description">Description</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_WF_NOTIF_WO_EVARvscurrency" id="T1R_WF_NOTIF_WO_EVARvscurrency" title="Select Row" alt="Select Row" vsds="T1R_WF_NOTIF_WO_EVAR" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_CD" vsds="T1R_WF_NOTIF_WO_EVAR" vsdf="DOC_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1ASGN_VAR" vsds="T1R_WF_NOTIF_WO_EVAR" vsdf="ASGN_VAR" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DSCR" vsds="T1R_WF_NOTIF_WO_EVAR" vsdf="DSCR" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="T1R_WF_NOTIF_WO_EVARGridNav" id="T1R_WF_NOTIF_WO_EVARGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+      <a href="Workflow" vsds="T1R_WF_NOTIF_WO_EVAR" vsaction="firstpage" name="T1R_WF_NOTIF_WO_EVARfirstpage" id="T1R_WF_NOTIF_WO_EVARfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+      <a href="Workflow" vsds="T1R_WF_NOTIF_WO_EVAR" vsaction="prevpage" name="T1R_WF_NOTIF_WO_EVARprevpage" id="T1R_WF_NOTIF_WO_EVARprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+      <a href="Workflow" vsds="T1R_WF_NOTIF_WO_EVAR" vsaction="nextpage" id="T1R_WF_NOTIF_WO_EVARnextpage" name="T1R_WF_NOTIF_WO_EVARnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+      <a href="Workflow" vsds="T1R_WF_NOTIF_WO_EVAR" vsaction="lastpage" id="T1R_WF_NOTIF_WO_EVARlastpage" name="T1R_WF_NOTIF_WO_EVARlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+  
+  
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+   
+      <a href="Workflow" vsds="T1R_WF_NOTIF_WO_EVAR" vsaction="saveall" name="T1R_WF_NOTIF_WO_EVARSaveAll" id="T1R_WF_NOTIF_WO_EVARSaveAll" title="Save All" accesskey="5">Save</a>
+   
+      <a href="Workflow" vsds="T1R_WF_NOTIF_WO_EVAR" vsaction="undoall" name="T1R_WF_NOTIF_WO_EVARUndoAll" id="T1R_WF_NOTIF_WO_EVARUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+      <a href="Workflow" vsds="T1R_WF_NOTIF_WO_EVAR" vsaction="delete" id="IndexT1R_WF_NOTIF_WO_EVARdelete" name="T1R_WF_NOTIF_WO_EVARdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="Workflow" vsds="T1R_WF_NOTIF_WO_EVAR" vsaction="insert" id="T1R_WF_NOTIF_WO_EVARinsert" name="T1R_WF_NOTIF_WO_EVARinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="Workflow" vsds="T1R_WF_NOTIF_WO_EVAR" vsaction="11" name="T1R_WF_NOTIF_WO_EVARCopyRecord" id="T1R_WF_NOTIF_WO_EVARCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="Workflow" vsds="T1R_WF_NOTIF_WO_EVAR" vsaction="12" name="T1R_WF_NOTIF_WO_EVARPasteLine" id="T1R_WF_NOTIF_WO_EVARPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+      
+   
+      <td><vstext vsds=" " name="T1R_WF_NOTIF_WO_EVARSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1DOC_CD" title="Document Code (Required)">Document Code :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1DOC_CD" id="txtT1DOC_CD" 
+      ams_max_len="8"
+ value="DOC_CD" 
+            size="15"
+ vsds="T1R_WF_NOTIF_WO_EVAR" vsdf="DOC_CD" ShowCodeInfo="" title="Document Code (Required)">
+          <input type="image" vspick="T2R_DOC_CD" vspicktext="txtT1DOC_CD" vsds="T1R_WF_NOTIF_WO_EVAR" vsaction="pick" name="pckT1DOC_CD" id="pckT1DOC_CD" title="Select Document Code" alt="Select Document Code" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1ASGN_VAR" title="Notification E-Mail Variable (Required)">Notification E-Mail Variable :</label>
+      </td>
+   
+        <td class="val required">
+          <input type="text" name="txtT1ASGN_VAR" id="txtT1ASGN_VAR" 
+               size="20"
+ vsds="T1R_WF_NOTIF_WO_EVAR" vsdf="ASGN_VAR" 
+         ams_max_len="16"
+ ShowCodeInfo="" value="ASGN_VAR"title="Notification E-Mail Variable (Required)">
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DSCR" title="Description">Description :</label></td>
+   
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1DSCR" id="txtT1DSCR" vsds="T1R_WF_NOTIF_WO_EVAR" vsdf="DSCR" 
+ title="Description"></textarea>
+        </td>
+      </tr>
+    
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT1ASGN_VAR_UP" id="txtT1ASGN_VAR_UP" 
+               size="20"
+           vsds="T1R_WF_NOTIF_WO_EVAR" vsdf="ASGN_VAR_UP"
+         ams_max_len="16"
+           ShowCodeInfo=""
+           value="ASGN_VAR_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_WF_NOTIF_WO_EVAR', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'DOC_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Document Code' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'ASGN_VAR' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Notification E-Mail Variable' ;
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Workflow" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

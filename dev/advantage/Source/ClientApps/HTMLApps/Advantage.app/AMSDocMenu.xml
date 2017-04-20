@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="AMSMenu"
+	PositionTop="422.3633"
+	PositionLeft="380.8594"
+	PositionWidth="148.9258"
+	PositionHeight="43.94532"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="True"
+	ClassName="VSPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="-1"
+	>
+	<FormCaption><![CDATA[NoData]]></FormCaption>
+</Form>

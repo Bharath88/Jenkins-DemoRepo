@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>System Level Process Parameters</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Reports_Sys_Admin_App" method="post" vsform="true" name="Root_Node_Pg">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="System Level Process Parameters">System Level Process Parameters</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+  <input type="hidden" name="T1BS_CATALOG_PARM_Currency" value="">
+  <input type="hidden" name="T1BS_CATALOG_PARM_Old_Currency" value="">
+
+
+
+  <table name="tblT1BS_CATALOG_PARM" id="tblT1BS_CATALOG_PARM" class="advgrid" vsds="T1BS_CATALOG_PARM">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+ <!-- BEGIN CUSTOMIZATION -->
+        <th
+><span id="T1PARM_NMsortGridLabel" name="T1PARM_NMsortGridLabel" title="Parameter Name">Name</span></th>
+
+
+        <th
+><span id="T1PARM_VLsortGridLabel" name="T1PARM_VLsortGridLabel" title="Parameter Value">Value</span></th>
+
+        <th
+><span id="T1OV_FLsortGridLabel" name="T1OV_FLsortGridLabel" title="Can be overridden">Override ?</span></th>
+
+        <th
+><span id="T1PARM_DSCRsortGridLabel" name="T1PARM_DSCRsortGridLabel" title="Parameter Description">Description</span></th>
+
+<!-- END CUSTOMIZATION -->
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1BS_CATALOG_PARMvscurrency" id="T1BS_CATALOG_PARMvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1BS_CATALOG_PARM" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td>
+
+          <input type="text" name="txtT1PARM_NM"
+            size="20"
+      maxlength="30"
+ value="PARM_NM" vsds="T1BS_CATALOG_PARM" vsdf="PARM_NM"
+ ShowCodeInfo="" title="Parameter Name"
+>
+
+        </td>
+
+        <td>
+          <input type="text" name="txtT1PARM_VL"
+            size="20"
+      maxlength="255"
+ value="PARM_VL" vsds="T1BS_CATALOG_PARM" vsdf="PARM_VL"
+ ShowCodeInfo="" title="Parameter Value"
+>
+        </td>
+
+        <td class="center">
+          <input type="checkbox" name="txtT1OV_FL" value="OV_FL" vsds="T1BS_CATALOG_PARM" vsdf="OV_FL" title="Can be overridden">
+        </td>
+
+        <td class="memo">
+           <textarea name="txtT1PARM_DSCR" vsds="T1BS_CATALOG_PARM" vsdf="PARM_DSCR" cols="20" rows="2" vsformat="" title="Parameter Description"></textarea>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+    <td><ams_map title="Update Actions" name="Update Actions">
+<a href="Reports_Sys_Admin_App" vsds="T1BS_CATALOG_PARM" vsaction="save" id="T1BS_CATALOG_PARMSaveAll" name="T1BS_CATALOG_PARMSaveAll" title="Save" accesskey="5">Save</a>
+<a href="Reports_Sys_Admin_App" vsds="T1BS_CATALOG_PARM" vsaction="undo" id="T1BS_CATALOG_PARMUndo" name="T1BS_CATALOG_PARMUndo" title="Undo" accesskey="6">Undo</a>
+<a href="Reports_Sys_Admin_App" vsds="T1BS_CATALOG_PARM" vsaction="delete" id="T1BS_CATALOG_PARMdelete" name="T1BS_CATALOG_PARMdelete" title="Delete Selected Row" accesskey="7">Delete</a>
+<a href="Reports_Sys_Admin_App" vsds="T1BS_CATALOG_PARM" vsaction="insert" id="T1BS_CATALOG_PARMinsert" name="T1BS_CATALOG_PARMinsert" title="Insert New Row" accesskey="I">Insert</a>
+    </ams_map></td>
+
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Reports_Sys_Admin_App" vsds="T1BS_CATALOG_PARM" vsaction="firstpage" name="T1BS_CATALOG_PARMfirstpage" id="T1BS_CATALOG_PARMfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1BS_CATALOG_PARM" vsaction="prevpage" name="T1BS_CATALOG_PARMprevpage" id="T1BS_CATALOG_PARMprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1BS_CATALOG_PARM" vsaction="nextpage" id="T1BS_CATALOG_PARMnextpage" name="T1BS_CATALOG_PARMnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Reports_Sys_Admin_App" vsds="T1BS_CATALOG_PARM" vsaction="lastpage" id="T1BS_CATALOG_PARMlastpage" name="T1BS_CATALOG_PARMlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1BS_CATALOG_PARM', new Array(), new Array() ) ;
+
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<a name="btnT2Add_Child_Node" href="Reports_Sys_Admin_App" id="btnT2Add_Child_Node" title="Navigation to Add Item" vsaction="pagetransition"
+           vsds=""
+ vsnavigation="T2Add_Child_Node">Add Item</a>
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Reports_Sys_Admin_App" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

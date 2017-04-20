@@ -1,0 +1,58 @@
+/* This JavaScript is part of Jade Server system.  Be cautious if
+   you want to modify this script.  Please also note any changes
+   in this script will not be retained when user upgrades Jade.
+*/
+
+function submitForm(form, arg, tar) {
+   if(mboolNS5Up)
+   {
+
+    var loInputImg = document.createElement("input");
+    loInputImg.type = "image";
+    loInputImg.id = "TempImageForSyn";
+    loInputImg.name = "TempImageForSyn";
+    loInputImg.className = "hidden";
+
+   }
+	var oldTarget = form.target;
+	var oldFrame = form.frame_name.value;
+	var oldQryString = form.query_string.value;
+	form.query_string.value= arg;
+	form.target=tar;
+	form.frame_name.value=tar;
+
+	if (!UTILS_BeforeFormSubmit())
+   	{
+      		return;
+   	}
+
+	form.submit();
+   if(mboolNS5Up)
+   {
+    loInputImg.src =  Math.random() + ".png";
+   }
+
+	if ((navigator.userAgent.indexOf("MSIE")!=-1))
+    	{
+        	reset(form, oldTarget, oldFrame, oldQryString);
+    	}
+    	else
+    	{
+		setTimeout(reset, 10, form, oldTarget, oldFrame, oldQryString);
+    	}
+}
+function reset(form, tar, frm, qry) {
+	form.target = tar;
+	form.frame_name.value = frm;
+	form.query_string.value = qry;
+   if(mboolNS5Up)
+   {
+      var loInputImg = document.createElement("input");
+      loInputImg.type = "image";
+      loInputImg.id = "TempImageForSyn";
+      loInputImg.name = "TempImageForSyn";
+      loInputImg.className = "hidden";
+      loInputImg.src =  Math.random() + ".png";
+   }
+}
+// 

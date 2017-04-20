@@ -1,0 +1,452 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Mobile Application Access Logs</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="SecurityAdmin" method="post" vsform="true" name="pIN_APP_ACCS_LOG">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Mobile Application Access Logs">Mobile Application Access Logs</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="SecurityAdmin" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+  <div id="GridView" name="GridView" vsds="" vsvisible="true">
+
+  <a name="T1IN_APP_ACCS_LOG_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1IN_APP_ACCS_LOG_Currency" >
+  <input type="hidden" name="T1IN_APP_ACCS_LOG_Old_Currency" >
+  <table name="tblT1IN_APP_ACCS_LOG" id="tblT1IN_APP_ACCS_LOG" class="advgrid" vsds="T1IN_APP_ACCS_LOG">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><span id="T1ACCS_LOG_IDsortGridLabel" name="T1ACCS_LOG_IDsortGridLabel" vsdf="ACCS_LOG_ID" title="Id">Id</span></th>
+      
+        <th 
+><span id="T1LOG_TS_DVsortGridLabel" name="T1LOG_TS_DVsortGridLabel" vsdf="LOG_TS_DV" title="Timestamp">Timestamp</span></th>
+      
+        <th 
+><span id="T1USER_IDsortGridLabel" name="T1USER_IDsortGridLabel" vsdf="USER_ID" title="User ID">User ID</span></th>
+      
+        <th 
+><span id="T1APP_NMsortGridLabel" name="T1APP_NMsortGridLabel" vsdf="APP_NM" title="Page Resource">Page Resource</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr class="advgridoddrow" onclick="UTILS_SelectGridRow(this);return true;" ams_altclassname="advgridevenrow" vsprototyperow="true">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IN_APP_ACCS_LOGvscurrency" id="T1IN_APP_ACCS_LOGvscurrency" title="Select Row" alt="Select Row" src="../AMSImages/ADVRowSel.gif"
+ vsds="T1IN_APP_ACCS_LOG" vsaction="Currency">
+      </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1ACCS_LOG_ID" vsds="T1IN_APP_ACCS_LOG" vsdf="ACCS_LOG_ID" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1LOG_TS_DV" vsds="T1IN_APP_ACCS_LOG" vsdf="LOG_TS_DV" 
+    vsformat="MM/dd/yyyy HH:mm:ss"
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1USER_ID" vsds="T1IN_APP_ACCS_LOG" vsdf="USER_ID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1APP_NM" vsds="T1IN_APP_ACCS_LOG" vsdf="APP_NM" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="T1IN_APP_ACCS_LOGGridNav" id="T1IN_APP_ACCS_LOGGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="SecurityAdmin" vsds="T1IN_APP_ACCS_LOG" vsaction="firstpage" name="T1IN_APP_ACCS_LOGfirstpage" id="T1IN_APP_ACCS_LOGfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="SecurityAdmin" vsds="T1IN_APP_ACCS_LOG" vsaction="prevpage" name="T1IN_APP_ACCS_LOGprevpage" id="T1IN_APP_ACCS_LOGprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="SecurityAdmin" vsds="T1IN_APP_ACCS_LOG" vsaction="nextpage" id="T1IN_APP_ACCS_LOGnextpage" name="T1IN_APP_ACCS_LOGnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="SecurityAdmin" vsds="T1IN_APP_ACCS_LOG" vsaction="lastpage" id="T1IN_APP_ACCS_LOGlastpage" name="T1IN_APP_ACCS_LOGlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+
+  
+  
+
+  
+      <table class="advaction recsrc">
+        <tr>
+      
+         <td>
+<ams_map title="Update Actions" name="Update Actions">
+</ams_map>
+      </td>
+
+   
+      <td><vstext vsds=" " name="T1IN_APP_ACCS_LOGSearchColList" vspreservetag="true"></td>
+      <td>
+        
+<a name="btnT1IN_APP_ACCS_LOG" href="ABI" id="btnT1IN_APP_ACCS_LOG" title="View Details" vsaction="view_details"
+           vsds="T1IN_APP_ACCS_LOG">View Details</a>
+      </td>
+
+<!-- BEGIN CUSTOMIZATION --><!--
+      <td><ams_map title="Section Controls" name="Section Controls">
+      
+  <a href="javascript:
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+      
+  <a href="javascript:
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+--><!-- END CUSTOMIZATION -->
+    
+        </tr>
+      </table>
+
+  <fieldset class="advscalar">
+    <div class="advpresection">
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+          
+  
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT1ACCS_LOG_ID" id="txtT1ACCS_LOG_ID" 
+                  size="15"
+           vsds="T1IN_APP_ACCS_LOG" vsdf="ACCS_LOG_ID"
+                  ams_max_len="20"
+           ShowCodeInfo=""
+           value="ACCS_LOG_ID" ams_readonly >
+          </div>
+        </td>
+      </tr>
+    
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT1USER_ID" id="txtT1USER_ID" 
+               size="20"
+           vsds="T1IN_APP_ACCS_LOG" vsdf="USER_ID"
+         ams_max_len="16"
+           ShowCodeInfo=""
+           value="USER_ID" ams_readonly >
+          </div>
+        </td>
+      </tr>
+    
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT1APP_NM" id="txtT1APP_NM" 
+               size="20"
+           vsds="T1IN_APP_ACCS_LOG" vsdf="APP_NM"
+         ams_max_len="128"
+           ShowCodeInfo=""
+           value="APP_NM" ams_readonly >
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+            <input type="text" id="txtT1FROM_DT" name="txtT1FROM_DT" 
+                                    size="15"
+             vsds="T1IN_APP_ACCS_LOG" vsdf="FROM_DT"
+         vsformat="Short Date"
+             ShowCodeInfo=""
+             value="FROM_DT" ams_readonly >
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+            <input type="text" id="txtT1TO_DT" name="txtT1TO_DT" 
+                                    size="15"
+             vsds="T1IN_APP_ACCS_LOG" vsdf="TO_DT"
+         vsformat="Short Date"
+             ShowCodeInfo=""
+             value="TO_DT" ams_readonly >
+          </div>
+        </td>
+      </tr>
+    
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+<!-- BEGIN CUSTOMIZATION-->
+<!--
+      <br><br><table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T1IN_APP_ACCS_LOG_Top');" title="Go To Top">Top</a></td></tr></table>
+-->
+<!-- END CUSTOMIZATION-->
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1IN_APP_ACCS_LOG', new Array(), new Array() ) ;
+    
+  -->
+  </script>
+  </div>
+  <div id="ScalarView" name="ScalarView" vsds="" vsvisible="false">
+  <INPUT type="hidden" name="T2IN_APP_ACCS_LOGvscurrency" vsds="T2IN_APP_ACCS_LOG" vscurrency="true">
+
+  <a name="T2IN_APP_ACCS_LOG_Top"></a>
+  
+      <table class="advaction recsrc">
+        <tr>
+          
+      
+         <td>
+<ams_map title="Update Actions" name="Update Actions">
+</ams_map>
+      </td>
+
+   
+      <td><vstext vsds=" " name="T2IN_APP_ACCS_LOGSearchColList" vspreservetag="true"></td>
+
+   
+          
+      <td><ams_map title="Section Controls" name="Section Controls">
+      
+  <a href="javascript:
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+      
+  <a href="javascript:
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+    
+          
+          
+        </tr>
+      </table>
+   
+
+  <fieldset class="advscalar">
+    <div class="advpresection">
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+          
+          
+  
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT2ACCS_LOG_ID" title="Id">Id :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT2ACCS_LOG_ID" id="txtT2ACCS_LOG_ID" 
+               size="15"
+ vsds="T2IN_APP_ACCS_LOG" vsdf="ACCS_LOG_ID" 
+ value="ACCS_LOG_ID" ams_readonly ShowCodeInfo="" title="Id">
+        </td>
+      </tr>
+    
+    
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT2LOG_TS_DV" title="Timestamp">Timestamp :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT2LOG_TS_DV" id="txtT2LOG_TS_DV" 
+                                 size="15"
+ vsds="T2IN_APP_ACCS_LOG" vsdf="LOG_TS_DV" 
+      vsformat="MM/dd/yyyy HH:mm:ss"
+ value="LOG_TS_DV" ams_readonly ShowCodeInfo="" title="Timestamp">
+        </td>
+      </tr>
+    
+    
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT2USER_ID" title="User ID">User ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT2USER_ID" id="txtT2USER_ID" 
+            size="20"
+ vsds="T2IN_APP_ACCS_LOG" vsdf="USER_ID" 
+ value="USER_ID" ams_readonly ShowCodeInfo="" title="User ID">
+        </td>
+      </tr>
+    
+    
+        
+          
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT2APP_NM" title="Page Resource">Page Resource :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT2APP_NM" id="txtT2APP_NM" 
+            size="20"
+ vsds="T2IN_APP_ACCS_LOG" vsdf="APP_NM" 
+ value="APP_NM" ams_readonly ShowCodeInfo="" title="Page Resource">
+        </td>
+      </tr>
+    
+    
+        
+     
+      <tr>
+        
+      
+      <td class="label"><label for="txtT2REQ_HEADER" title="Request Header">Request Header :</label></td>
+   
+        <td class="val memo">
+          <textarea ams_readonly cols="35" rows="4" name="txtT2REQ_HEADER" id="txtT2REQ_HEADER" vsds="T2IN_APP_ACCS_LOG" vsdf="REQ_HEADER" 
+ title="Request Header"></textarea>
+        </td>
+      </tr>
+    
+      <tr>
+  
+      <td class="label"><label for="txtT2ACCSS_REQ" title="Request">Request :</label></td>
+        <td class="val">
+          <vstext type="text" name="txtT2ACCSS_REQ" id="txtT2ACCSS_REQ"
+ vsds="T2IN_APP_ACCS_LOG" vsdf="ACCSS_REQ" title="Request">
+        </td>
+      </tr>
+      <tr>
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+      <table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T2IN_APP_ACCS_LOG_Top');">Top</a></td></tr></table>
+-->
+<!-- END CUSTOMIZATION -->
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+<a name="btnT2IN_APP_ACCS_LOG" href="ABI" id="btnT2IN_APP_ACCS_LOG" title="Back to Logs" vsaction="all_logs"
+           vsds="T2IN_APP_ACCS_LOG">Back to Logs</a>
+      </td>
+    </tr>
+  </table>
+ 
+  </div>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>User Interface Field Security</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+
+<body class="adv reftable">
+  <vserror>
+  <form action="SecurityAdmin" method="post" vsform="true" name="pR_SC_UI_FLD_SEC">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="User Interface Field Security">User Interface Field Security</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="SecurityAdmin" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+ 
+
+  <INPUT type="hidden" name="T1R_SC_APPL_RSRCvscurrency" vsds="T1R_SC_APPL_RSRC" vscurrency="true">
+  
+  <table class="advaction recsrc">
+    <tr>
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+<a href="SecurityAdmin" vsds="T1R_SC_APPL_RSRC" vsaction="saveall" name="T1R_SC_APPL_RSRCSaveAll" id="T1R_SC_APPL_RSRCSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="SecurityAdmin" vsds="T1R_SC_APPL_RSRC" vsaction="undoall" name="T1R_SC_APPL_RSRCUndoAll" id="T1R_SC_APPL_RSRCUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="SecurityAdmin" vsds="T1R_SC_APPL_RSRC" vsaction="delete" id="IndexT1R_SC_APPL_RSRCdelete" name="T1R_SC_APPL_RSRCdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="SecurityAdmin" vsds="T1R_SC_APPL_RSRC" vsaction="insert" id="T1R_SC_APPL_RSRCinsert" name="T1R_SC_APPL_RSRCinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+      </td>
+-->
+<!-- END CUSTOMIZATION -->
+      
+<td><vstext vsds=" " name="T1R_SC_APPL_RSRCSearchColList" vspreservetag="true"></td>
+      
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="SecurityAdmin" vsds="T1R_SC_APPL_RSRC" vsaction="first" name="T1R_SC_APPL_RSRCfirst" id="T1R_SC_APPL_RSRCfirst" title="First Record" accesskey="0">First</a>
+ 
+<a href="SecurityAdmin" vsds="T1R_SC_APPL_RSRC" vsaction="prev" name="T1R_SC_APPL_RSRCprev" id="T1R_SC_APPL_RSRCprev" title="Previous Record" accesskey="1">Prev</a>
+ 
+<a href="SecurityAdmin" vsds="T1R_SC_APPL_RSRC" vsaction="next" name="T1R_SC_APPL_RSRCnext" id="T1R_SC_APPL_RSRCnext" title="Next Record" accesskey="2">Next</a>
+ 
+<a href="SecurityAdmin" vsds="T1R_SC_APPL_RSRC" vsaction="last" name="T1R_SC_APPL_RSRClast" id="T1R_SC_APPL_RSRClast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+      
+      
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+      <tr>
+        <td class="label"><label title="Resource ID">Resource ID :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1RSRC_ID" vsds="T1R_SC_APPL_RSRC" vsdf="RSRC_ID" 
+         size="15"
+>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label title="Resource Group ID">Resource Group ID :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1RSRC_GP_ID" vsds="T1R_SC_APPL_RSRC" vsdf="RSRC_GP_ID" 
+            size="8"
+>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label title="Resource Type">Resource Type :</label></td>
+        <td class="val">
+          <vstext name="disptxtT1RSRC_TYP_IND" vsds="T1R_SC_APPL_RSRC" vsdf="RSRC_TYP_IND" vscodetable="CVL_RSRC_TYP_IND">
+        </td>
+      </tr>
+    
+      <tr style="height:0em;">
+        <td class="label" style="height:0em;"></td>
+        <td class="val" style="height:0em;">
+          <div class="hidden val">
+          <input type="text" name="txtT1RSRC_ID_UP" id="txtT1RSRC_ID_UP" 
+               size="20"
+           vsds="T1R_SC_APPL_RSRC" vsdf="RSRC_ID_UP"
+         ams_max_len="129"
+           ShowCodeInfo=""
+           value="RSRC_ID_UP" ams_readonly >
+          </div>
+        </td>
+      </tr>
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+<a name="btnT2pR_SC_APPL_RSRC" href="SecurityAdmin" id="btnT2pR_SC_APPL_RSRC" title="Navigation to Resource Information" vsaction="pagetransition" 
+           vsds="T1R_SC_APPL_RSRC"
+ vsnavigation="T2pR_SC_APPL_RSRC">Resource Information</a>
+      </td>
+    </tr>
+  </table>
+ 
+
+  <input type="hidden" name="T3R_SC_UI_FLD_SEC_Currency" value="">
+  <input type="hidden" name="T3R_SC_UI_FLD_SEC_Old_Currency" value="">
+  
+  
+  
+  <table name="tblT3R_SC_UI_FLD_SEC" id="tblT3R_SC_UI_FLD_SEC" class="advgrid" vsds="T3R_SC_UI_FLD_SEC">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="SecurityAdmin" vsaction="sort" vsds="T3R_SC_UI_FLD_SEC" 
+    vsdf="FLD_ID"
+ name="T3FLD_IDsort" id="T3FLD_IDsort" title="Sort By Field ID">Field ID</a></th>
+      
+        <th 
+><span id="T3FLD_DSCRsortGridLabel" name="T3FLD_DSCRsortGridLabel" title="Field Description">Field Description</span></th>
+      
+        <th 
+><span id="T3CHAR_DISPsortGridLabel" name="T3CHAR_DISPsortGridLabel" title="Characters Displayed">Characters Displayed</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T3R_SC_UI_FLD_SECvscurrency" id="T3R_SC_UI_FLD_SECvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T3R_SC_UI_FLD_SEC" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td class="advcolimage">
+          <input type="text" name="txtT3FLD_ID" 
+            size="20"
+      maxlength="18"
+ value="FLD_ID" vsds="T3R_SC_UI_FLD_SEC" vsdf="FLD_ID" ShowCodeInfo="" 
+ title="Field ID">
+          <a href="javascript:{}" onclick="UTILS_GridPickExecute(this,'IndexT3FLD_ID','pckT3FLD_ID','T3R_SC_UI_FLD_SEC');event.returnValue=false;return false;" title="Select Field ID"><img src= "../AMSImages/ADVPick.gif"
+ title="Select Field ID" alt="Select Field ID" class="advimage"></a>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT3FLD_DSCR" vsds="T3R_SC_UI_FLD_SEC" vsdf="FLD_DSCR" 
+>
+        </td>
+      
+        <td>
+          <input type="text" name="txtT3CHAR_DISP" 
+            size="10"
+            maxlength="10"
+ value="CHAR_DISP" vsds="T3R_SC_UI_FLD_SEC" vsdf="CHAR_DISP" 
+ ShowCodeInfo="" title="Characters Displayed"
+      class="right"
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+    <td><ams_map title="Update Actions" name="Update Actions">
+<!-- BEGIN CUSTOMIZATION -->
+<a href="SecurityAdmin" vsds="T3R_SC_UI_FLD_SEC" vsaction="saveall" name="T3R_SC_UI_FLD_SECsaveall" id="T3R_SC_UI_FLD_SECsaveall" title="Save All" accesskey="5">Save</a>
+<a href="SecurityAdmin" vsds="T3R_SC_UI_FLD_SEC" vsaction="undoall" name="T3R_SC_UI_FLD_SECundoall" id="T3R_SC_UI_FLD_SECundoall" title="Undo All" accesskey="6">Undo</a>
+<!-- END CUSTOMIZATION -->
+<a href="SecurityAdmin" vsds="T3R_SC_UI_FLD_SEC" vsaction="delete" id="T3R_SC_UI_FLD_SECdelete" name="T3R_SC_UI_FLD_SECdelete" title="Delete Selected Row" accesskey="7">Delete</a>
+<a href="SecurityAdmin" vsds="T3R_SC_UI_FLD_SEC" vsaction="insert" id="T3R_SC_UI_FLD_SECinsert" name="T3R_SC_UI_FLD_SECinsert" title="Insert New Row" accesskey="I">Insert</a>
+    </ams_map></td>
+      
+  <td><ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="SecurityAdmin" vsds="T3R_SC_UI_FLD_SEC" vsaction="11" name="T3R_SC_UI_FLD_SECCopyLine" id="T3R_SC_UI_FLD_SECCopyLine" title="Copy Selected Row" accesskey="C">Copy</a>
+<a href="SecurityAdmin" vsds="T3R_SC_UI_FLD_SEC" vsaction="12" name="T3R_SC_UI_FLD_SECPasteLine" id="T3R_SC_UI_FLD_SECPasteLine" title="Paste Copied Row" accesskey="8">Paste</a>
+  </ams_map></td>
+      
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="SecurityAdmin" vsds="T3R_SC_UI_FLD_SEC" vsaction="firstpage" name="T3R_SC_UI_FLD_SECfirstpage" id="T3R_SC_UI_FLD_SECfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+<a href="SecurityAdmin" vsds="T3R_SC_UI_FLD_SEC" vsaction="prevpage" name="T3R_SC_UI_FLD_SECprevpage" id="T3R_SC_UI_FLD_SECprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+<a href="SecurityAdmin" vsds="T3R_SC_UI_FLD_SEC" vsaction="nextpage" id="T3R_SC_UI_FLD_SECnextpage" name="T3R_SC_UI_FLD_SECnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+<a href="SecurityAdmin" vsds="T3R_SC_UI_FLD_SEC" vsaction="lastpage" id="T3R_SC_UI_FLD_SEClastpage" name="T3R_SC_UI_FLD_SEClastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+<a name="btnT4pR_SC_FLD" href="SecurityAdmin" vsaction="pagetransition" id="btnT4pR_SC_FLD" 
+           vsds="T3R_SC_UI_FLD_SEC"
+ vsnavigation="T4pR_SC_FLD" title="Navigation to Field Information">Field Information</a>
+      </td>
+    </tr>
+  </table>
+  
+<!-- ***************** Start txtT3FLD_ID Pick ******************* -->
+<div style="visibility:hidden;display:none;position:absolute;">
+  <input id="IndexT3FLD_ID" type="image" vspick="T5R_SC_FLD" vspicktext="txtT3FLD_ID" vsds="T3R_SC_UI_FLD_SEC" vsaction="pick" name="pckT3FLD_ID" src="../AMSImages/ADVPick.gif"
+ alt="" title="">
+</div>
+<!-- ***************** End txtT3FLD_ID Pick ******************* -->
+        
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T3R_SC_UI_FLD_SEC', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'FLD_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Field ID' ;
+  -->
+  </script>
+ 
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+
+
+

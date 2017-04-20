@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0444482423.KHIRANAN.0000"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="False"
+	ChildMostDataObject="R_SC_APPL_RSRC"
+	DistinctRowsOnly="False"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[SELECT R_SC_APPL_RSRC.RSRC_ID AS RSRC_ID, R_SC_APPL_RSRC.RSRC_TYP_IND AS RSRC_TYP_IND, R_SC_APPL_RSRC.RSRC_GP_ID AS RSRC_GP_ID, R_SC_APPL_RSRC.LOG_FL AS LOG_FL, R_SC_APPL_RSRC.ORG_LVL_CD AS ORG_LVL_CD, R_SC_APPL_RSRC.ROW_SEC_FL AS ROW_SEC_FL, R_SC_APPL_RSRC.FLD_CNT AS FLD_CNT, R_SC_APPL_RSRC.AMS_ROW_VERS_NO AS AMS_ROW_VERS_NO, R_SC_APPL_RSRC.RSRC_ID_UP AS RSRC_ID_UP, R_SC_APPL_RSRC.UI_FLD_SEC_FL AS UI_FLD_SEC_FL, R_SC_APPL_RSRC.PG_SEC_FL AS PG_SEC_FL FROM <dbschema>.R_SC_APPL_RSRC R_SC_APPL_RSRC  ORDER BY R_SC_APPL_RSRC.RSRC_ID]]></RuntimeSql>
+	<Where><![CDATA[]]></Where>
+	<OrderBy>
+	<OrderByAttribute
+		Name="R_SC_APPL_RSRC.RSRC_ID"
+	/>
+	</OrderBy>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="R_SC_APPL_RSRC"
+			Alias="R_SC_APPL_RSRC"
+		/>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="RSRC_ID"
+			Alias="RSRC_ID"
+			AggregationType="None"
+			SourceDataObject="R_SC_APPL_RSRC"
+			Persistent="True"
+			>
+			<Caption><![CDATA[Resource ID]]></Caption>
+		</Attribute>
+
+		<Attribute
+			Name="RSRC_TYP_IND"
+			Alias="RSRC_TYP_IND"
+			AggregationType="None"
+			SourceDataObject="R_SC_APPL_RSRC"
+			Persistent="True"
+			>
+			<Caption><![CDATA[Resource Type]]></Caption>
+		</Attribute>
+
+		<Attribute
+			Name="RSRC_GP_ID"
+			Alias="RSRC_GP_ID"
+			AggregationType="None"
+			SourceDataObject="R_SC_APPL_RSRC"
+			Persistent="True"
+			>
+			<Caption><![CDATA[Resource Group ID]]></Caption>
+		</Attribute>
+
+		<Attribute
+			Name="LOG_FL"
+			Alias="LOG_FL"
+			AggregationType="None"
+			SourceDataObject="R_SC_APPL_RSRC"
+			Persistent="True"
+			>
+			<Caption><![CDATA[Logging]]></Caption>
+		</Attribute>
+
+		<Attribute
+			Name="ORG_LVL_CD"
+			Alias="ORG_LVL_CD"
+			AggregationType="None"
+			SourceDataObject="R_SC_APPL_RSRC"
+			Persistent="True"
+			>
+			<Caption><![CDATA[Organization Security ]]></Caption>
+		</Attribute>
+
+		<Attribute
+			Name="ROW_SEC_FL"
+			Alias="ROW_SEC_FL"
+			AggregationType="None"
+			SourceDataObject="R_SC_APPL_RSRC"
+			Persistent="True"
+			>
+			<Caption><![CDATA[Row Security]]></Caption>
+		</Attribute>
+
+		<Attribute
+			Name="FLD_CNT"
+			Alias="FLD_CNT"
+			AggregationType="None"
+			SourceDataObject="R_SC_APPL_RSRC"
+			Persistent="True"
+			>
+			<Caption><![CDATA[Secured Fields]]></Caption>
+		</Attribute>
+
+		<Attribute
+			Name="AMS_ROW_VERS_NO"
+			Alias="AMS_ROW_VERS_NO"
+			AggregationType="None"
+			SourceDataObject="R_SC_APPL_RSRC"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="RSRC_ID_UP"
+			Alias="RSRC_ID_UP"
+			AggregationType="None"
+			SourceDataObject="R_SC_APPL_RSRC"
+			Persistent="True"
+			>
+			<Caption><![CDATA[Resource ID]]></Caption>
+		</Attribute>
+
+		<Attribute
+			Name="UI_FLD_SEC_FL"
+			Alias="UI_FLD_SEC_FL"
+			AggregationType="None"
+			SourceDataObject="R_SC_APPL_RSRC"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="PG_SEC_FL"
+			Alias="PG_SEC_FL"
+			AggregationType="None"
+			SourceDataObject="R_SC_APPL_RSRC"
+			Persistent="True"
+		/>
+
+	</Attributes>
+	<RelsToParentDataObjects>
+		<RelToParentDO
+			RelToParentDO="ResourceGroup(R_SC_RSRC_GP)-ApplicationResources(R_SC_APPL_RSRC)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_SC_APPL_RSRC"
+				>
+					<AttributePairs>
+					<AttributePair
+							ParentAttribute="RSRC_GP_ID"
+							ChildAttribute="RSRC_GP_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToParentDO>
+	</RelsToParentDataObjects>
+
+	<RelsToChildDataObjects>
+		<RelToChildDO
+			RelToChildDO="R_SC_APPL_RSRC(R_SC_APPL_RSRC)-IN_AUD_LOG_CTL(IN_AUD_LOG_CTL)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_SC_APPL_RSRC"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="RSRC_ID"
+							ChildAttribute="PROC_RSRC_NM"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+		<RelToChildDO
+			RelToChildDO="R_SC_APPL_RSRC(R_SC_APPL_RSRC)-IN_FORM_DEF(IN_FORM_DEF)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_SC_APPL_RSRC"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="RSRC_ID"
+							ChildAttribute="APPL_RSRC_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+		<RelToChildDO
+			RelToChildDO="ApplicationResource(R_SC_APPL_RSRC)-ProcesLink(R_RSRC_PROC_LNK)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_SC_APPL_RSRC"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="RSRC_ID"
+							ChildAttribute="RSRC_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+		<RelToChildDO
+			RelToChildDO="ApplicationResource(R_SC_APPL_RSRC)-ResourceFields(R_SC_RSRC_FLD)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_SC_APPL_RSRC"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="RSRC_ID"
+							ChildAttribute="RSRC_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+		<RelToChildDO
+			RelToChildDO="ApplicationResource1(R_SC_APPL_RSRC)-ActionLog(SC_ACTN_LOG)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_SC_APPL_RSRC"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="RSRC_ID"
+							ChildAttribute="RSRC_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+		<RelToChildDO
+			RelToChildDO="UIFSToApplRsrc(R_SC_APPL_RSRC)-ApplRsrcToUIFS(R_SC_UI_FLD_SEC)"
+		>
+			<Aliases>
+				<Alias
+					Name="R_SC_APPL_RSRC"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="RSRC_ID"
+							ChildAttribute="RSRC_ID"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+	</RelsToChildDataObjects>
+
+	<PickSupportedRels>
+		<PickSupportedRel
+			PickSupportedRel="R_SC_APPL_RSRC(R_SC_APPL_RSRC)-IN_AUD_LOG_CTL(IN_AUD_LOG_CTL)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="R_SC_APPL_RSRC(R_SC_APPL_RSRC)-IN_FORM_DEF(IN_FORM_DEF)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="ApplicationResource(R_SC_APPL_RSRC)-ProcesLink(R_RSRC_PROC_LNK)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="ApplicationResource(R_SC_APPL_RSRC)-ResourceFields(R_SC_RSRC_FLD)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="ApplicationResource1(R_SC_APPL_RSRC)-ActionLog(SC_ACTN_LOG)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="UIFSToApplRsrc(R_SC_APPL_RSRC)-ApplRsrcToUIFS(R_SC_UI_FLD_SEC)"
+		/>
+	</PickSupportedRels >
+
+</QueryObject>

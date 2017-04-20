@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Upload Attachment</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/SS/SSUtil.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+<!-- BEGIN CUSTOMIZATION -->
+  <script language = "JavaScript">
+  <!--
+     function ADDATTCH_SubmitForm(foEvent)
+     {
+        if (mboolNS5Up)
+        {
+           if (foEvent.target.tagName == 'FORM' ||
+               foEvent.target.tagName == 'INPUT')
+           {
+              return false;
+           }
+        }
+        else if (mboolIE4Up)
+        {
+           if (foEvent.srcElement.tagName == 'FORM')
+           {
+              return false;
+           }
+        }
+        return true;
+     }
+  -->
+  </script>
+<!-- END CUSTOMIZATION -->
+</head>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<body class="adv reftable">
+-->
+<body class="adv reftable" onsubmit="return ADDATTCH_SubmitForm(event)">
+<!-- END CUSTOMIZATION -->
+  <vserror>
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+  <form action="Advantage" method="post" vsform="true" name="pAddAttachment">
+-->
+  <form action="Advantage" method="post" vsform="true" name="pAddAttachment" enctype="multipart/form-data">
+<!-- END CUSTOMIZATION -->
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+<!-- BEGIN CUSTOMIZATION -->
+    <input type="hidden" name="AttchFileName" value="">
+    <input type="hidden" name="AttchDscr" value="">
+    <input type="hidden" name="AttchType" value="">
+<!-- END CUSTOMIZATION -->
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Upload Attachment">Upload Attachment</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+  <INPUT type="hidden" name="T1IN_OBJ_ATT_STORvscurrency" vsds="T1IN_OBJ_ATT_STOR" vscurrency="true">
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Advantage" vsds="T1IN_OBJ_ATT_STOR" vsaction="saveall" name="T1IN_OBJ_ATT_STORSaveAll" id="T1IN_OBJ_ATT_STORSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Advantage" vsds="T1IN_OBJ_ATT_STOR" vsaction="undoall" name="T1IN_OBJ_ATT_STORUndoAll" id="T1IN_OBJ_ATT_STORUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="Advantage" vsds="T1IN_OBJ_ATT_STOR" vsaction="insert" id="T1IN_OBJ_ATT_STORinsert" name="T1IN_OBJ_ATT_STORinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="Advantage" vsds="T1IN_OBJ_ATT_STOR" vsaction="11" name="T1IN_OBJ_ATT_STORCopyRecord" id="T1IN_OBJ_ATT_STORCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+
+<a href="Advantage" vsds="T1IN_OBJ_ATT_STOR" vsaction="12" name="T1IN_OBJ_ATT_STORPasteLine" id="T1IN_OBJ_ATT_STORPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+
+<td><vstext vsds=" " name="T1IN_OBJ_ATT_STORSearchColList" vspreservetag="true"></td>
+
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="Advantage" vsds="T1IN_OBJ_ATT_STOR" vsaction="first" name="T1IN_OBJ_ATT_STORfirst" id="T1IN_OBJ_ATT_STORfirst" title="First Record" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T1IN_OBJ_ATT_STOR" vsaction="prev" name="T1IN_OBJ_ATT_STORprev" id="T1IN_OBJ_ATT_STORprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T1IN_OBJ_ATT_STOR" vsaction="next" name="T1IN_OBJ_ATT_STORnext" id="T1IN_OBJ_ATT_STORnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T1IN_OBJ_ATT_STOR" vsaction="last" name="T1IN_OBJ_ATT_STORlast" id="T1IN_OBJ_ATT_STORlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+-->
+
+          <a href="Advantage" vsds="T1IN_OBJ_ATT_STOR" vsaction="saveall"
+              name="T1IN_OBJ_ATT_STORSaveAll" id="T1IN_OBJ_ATT_STORSaveAll" title="Upload" accesskey="U"
+              onclick="document.forms[0].AttchFileName.value=document.forms[0].txtT1OBJ_ATT_DATA.value;
+                       document.forms[0].AttchDscr.value=document.forms[0].AttachDescription.value;
+                       document.forms[0].AttchType.value=document.forms[0].AttachType.value;">Upload</a>
+
+          <a href="Advantage" vsds="T1IN_OBJ_ATT_STOR" vsaction="undoall"
+              name="T1IN_OBJ_ATT_STORCancel" id="T1IN_OBJ_ATT_STORCancel" title="Cancel" accesskey="C"
+              onlick="document.forms[0].txtT1OBJ_ATT_DATA.value='';return true;">Cancel</a>
+
+      </td>
+
+<!-- END CUSTOMIZATION -->
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+<!-- BEGIN CUSTOMIZATION -->
+
+      <tr>
+        <td class="label"><label for="txtT1OBJ_ATT_DATA" title="Attachment File">Attachment File :</label></td>
+        <td class="val">
+          <input type="file" name="txtT1OBJ_ATT_DATA" id="txtT1OBJ_ATT_DATA"
+             size="50" vsds="T1IN_OBJ_ATT_STOR" vsdf="OBJ_ATT_DATA"
+             ShowCodeInfo=""
+             vsclass="versata.vfc.html.FileElement" title="Attachment File">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="AttachDescription" title="Description">Description :</label></td>
+        <td class="val">
+          <input type="text" name="AttachDescription" id="AttachDescription" vsdf="OBJ_ATT_DSCR"
+            size="50" maxlength="255" title="Description" class="adveditable">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="AttachType" title="Attachment Type">Attachment Type :</label></td>
+        <td class="val">
+          <select name="AttachType" id="AttachType" vsds="" vsdf="OBJ_ATT_TYP" size="1" vscodetable="CVL_OBJ_ATT_TYP" title="Attachment Type">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+<!-- END CUSTOMIZATION -->
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

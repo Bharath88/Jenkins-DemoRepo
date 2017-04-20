@@ -1,0 +1,570 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Future Document Triggering</title>
+  <base href>
+
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+<!--BEGIN CUSTOMIZATION -->
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDoc.js"></script>
+<!--END CUSTOMIZATION -->
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="DocFutureTrig">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+<!--BEGIN CUSTOMIZATION -->
+    <input type="hidden" name="freqType" value="">
+    <input type="hidden" name="freqVl1" value="">
+    <input type="hidden" name="freqVl2" value="">
+    <input type="hidden" name="LoadEvent" value="Y">
+    <input type="hidden" name="FDTQuerMode" value="false">
+<!--END CUSTOMIZATION -->
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Future Document Triggering">Future Document Triggering</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="Advantage" vsds="" vsaction="84" title="Back to Previous Page" name="QueryBack" id="QueryBack" accesskey="Z">Back</a>
+  </div>
+
+
+
+  <a name="T1FDT_WKLD_Top"></a>
+
+
+
+  <input type="hidden" name="T1FDT_WKLD_Currency" >
+  <input type="hidden" name="T1FDT_WKLD_Old_Currency" >
+  <table name="tblT1FDT_WKLD" id="tblT1FDT_WKLD" class="advgrid" vsds="T1FDT_WKLD">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><a href="Advantage" vsaction="sort" vsds="T1FDT_WKLD"
+    vsdf="DOC_CD"
+ name="T1DOC_CDsort" id="T1DOC_CDsort" title="Sort By Code">Code</a></th>
+
+        <th
+><a href="Advantage" vsaction="sort" vsds="T1FDT_WKLD"
+    vsdf="DOC_DEPT_CD"
+ name="T1DOC_DEPT_CDsort" id="T1DOC_DEPT_CDsort" title="Sort By Doc Dept">Doc Dept</a></th>
+
+        <th
+><a href="Advantage" vsaction="sort" vsds="T1FDT_WKLD"
+    vsdf="DOC_ID"
+ name="T1DOC_IDsort" id="T1DOC_IDsort" title="Sort By ID">ID</a></th>
+
+        <th
+><a href="Advantage" vsaction="sort" vsds="T1FDT_WKLD"
+    vsdf="DOC_VERS_NO"
+ name="T1DOC_VERS_NOsort" id="T1DOC_VERS_NOsort" title="Sort By Version">Version</a></th>
+
+        <th
+><span id="T1GEN_DOC_IDsortGridLabel" name="T1GEN_DOC_IDsortGridLabel" title="Gen Doc Id">Gen Doc Id</span></th>
+
+        <th
+><a href="Advantage" vsaction="sort" vsds="T1FDT_WKLD"
+    vsdf="FDT_STRT_DT"
+ name="T1FDT_STRT_DTsort" id="T1FDT_STRT_DTsort" title="Sort By Start Date">Start Date</a></th>
+
+        <th
+><a href="Advantage" vsaction="sort" vsds="T1FDT_WKLD"
+    vsdf="FDT_END_DT"
+ name="T1FDT_END_DTsort" id="T1FDT_END_DTsort" title="Sort By End Date">End Date</a></th>
+
+        <th
+><a href="Advantage" vsaction="sort" vsds="T1FDT_WKLD"
+    vsdf="FDT_RUN_STA"
+ name="T1FDT_RUN_STAsort" id="T1FDT_RUN_STAsort" title="Sort By Status">Status</a></th>
+        <th
+><span id="T1DOC_PFXsortGridLabel" name="T1DOC_PFXsortGridLabel" title="Document Prefix">Document Prefix</span></th>
+      <th class="advcorner right"></th>
+    </tr>
+    <tr class="advgridoddrow" onclick="UTILS_SelectGridRow(this);return true;" ams_altclassname="advgridevenrow" vsprototyperow="true">
+      <td class="advgridrowselect">
+        <input type="image" name="T1FDT_WKLDvscurrency" id="T1FDT_WKLDvscurrency" title="Select Row" alt="Select Row" src="../AMSImages/ADVRowSel.gif"
+ vsds="T1FDT_WKLD" vsaction="Currency">
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1DOC_CD" vsds="T1FDT_WKLD" vsdf="DOC_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1DOC_DEPT_CD" vsds="T1FDT_WKLD" vsdf="DOC_DEPT_CD"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1DOC_ID" vsds="T1FDT_WKLD" vsdf="DOC_ID"
+>
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1DOC_VERS_NO" vsds="T1FDT_WKLD" vsdf="DOC_VERS_NO"
+>
+        </td>
+
+        <td>
+          <a href="Advantage" vsaction="pagetransition" ams_doc_ref="GEN_DOC_ID" vsnavigation="DocCatalog">
+            <vstext name="btnT1GEN_DOC_ID" ams_doc_ref="GEN_DOC_ID" vsds="T1FDT_WKLD" vsdf="GEN_DOC_ID">
+          </a>
+        </td>
+
+        <td
+      class="right"
+
+>
+<!--BEGIN CUSTOMIZATION -->
+<!--
+          <vstext name="txtT1FDT_STRT_DT" vsds="T1FDT_WKLD" vsdf="FDT_STRT_DT"
+    vsformat="MM-dd-yy"
+>
+-->
+          <vstext name="txtT1FDT_STRT_DT" vsds="T1FDT_WKLD" vsdf="FDT_STRT_DT"
+    vsformat="AMS_DATE_FOUR_YEAR_PIVOT"
+>
+<!--END CUSTOMIZATION -->
+        </td>
+
+        <td
+      class="right"
+
+>
+<!--BEGIN CUSTOMIZATION -->
+<!--
+          <vstext name="txtT1FDT_END_DT" vsds="T1FDT_WKLD" vsdf="FDT_END_DT"
+    vsformat="MM-dd-yy"
+>
+-->
+          <vstext name="txtT1FDT_END_DT" vsds="T1FDT_WKLD" vsdf="FDT_END_DT"
+    vsformat="AMS_DATE_FOUR_YEAR_PIVOT"
+>
+<!--END CUSTOMIZATION -->
+        </td>
+
+        <td
+      class="right"
+>
+          <vstext vsds="T1FDT_WKLD" vsdf="FDT_RUN_STA" vscodetable="CVL_JOB_STATUS_2">
+        </td>
+        <td class="right"
+
+>
+          <vstext name="txtT1DOC_PFX" vsds="T1FDT_WKLD" vsdf="DOC_PFX"
+>
+        </td>
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><div name="T1FDT_WKLDGridNav" id="T1FDT_WKLDGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+<a href="Advantage" vsds="T1FDT_WKLD" vsaction="firstpage" name="T1FDT_WKLDfirstpage" id="T1FDT_WKLDfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+<a href="Advantage" vsds="T1FDT_WKLD" vsaction="prevpage" name="T1FDT_WKLDprevpage" id="T1FDT_WKLDprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+
+<a href="Advantage" vsds="T1FDT_WKLD" vsaction="nextpage" id="T1FDT_WKLDnextpage" name="T1FDT_WKLDnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+
+<a href="Advantage" vsds="T1FDT_WKLD" vsaction="lastpage" id="T1FDT_WKLDlastpage" name="T1FDT_WKLDlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+
+    </tr>
+  </table>
+
+
+<hr class="advsectsep"></hr>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+
+<a href="Advantage" vsds="T1FDT_WKLD" vsaction="saveall" name="T1FDT_WKLDSaveAll" id="T1FDT_WKLDSaveAll" title="Save All" accesskey="5">Save</a>
+
+<a href="Advantage" vsds="T1FDT_WKLD" vsaction="undoall" name="T1FDT_WKLDUndoAll" id="T1FDT_WKLDUndoAll" title="Undo All" accesskey="6">Undo</a>
+
+<a href="Advantage" vsds="T1FDT_WKLD" vsaction="delete" id="IndexT1FDT_WKLDdelete" name="T1FDT_WKLDdelete" title="Delete Current Record" accesskey="7">Delete</a>
+
+<a href="Advantage" vsds="T1FDT_WKLD" vsaction="insert" id="T1FDT_WKLDinsert" name="T1FDT_WKLDinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+      </td>
+
+
+<td><vstext vsds=" " name="T1FDT_WKLDSearchColList" vspreservetag="true"></td>
+<!-- BEGIN CUSTOMIZATION -->
+      <td>
+<ams_map title="ViewLog/Back" name="ViewLog/Back">
+<a href="Advantage" vsds="" vsaction="viewlog" name="viewlog" id="viewlog" title="View Log" accesskey="V">View Log</a>
+</ams_map>
+      </td>
+<!-- END CUSTOMIZATION -->
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+
+        <tr>
+
+
+        <td class="label"><label for="txtT1DOC_CD" title="Code">Code :</label></td>
+
+        <td class="val">
+
+
+
+          <input type="text" name="txtT1DOC_CD" id="txtT1DOC_CD"
+               size="15"
+ vsds="T1FDT_WKLD" vsdf="DOC_CD"
+         ams_max_len="8"
+ ShowCodeInfo="" value="DOC_CD" title="Code">
+
+
+
+        </td>
+        </tr>
+
+
+
+        <tr>
+
+
+        <td class="label"><label for="txtT1DOC_DEPT_CD" title="Doc Dept">Doc Dept :</label></td>
+
+        <td class="val">
+
+
+
+          <input type="text" name="txtT1DOC_DEPT_CD" id="txtT1DOC_DEPT_CD"
+            size="6"
+ vsds="T1FDT_WKLD" vsdf="DOC_DEPT_CD"
+         ams_max_len="4"
+ ShowCodeInfo="" value="DOC_DEPT_CD" title="Doc Dept">
+
+
+
+        </td>
+        </tr>
+
+
+
+        <tr>
+
+
+        <td class="label"><label for="txtT1DOC_ID" title="ID">ID :</label></td>
+
+        <td class="val">
+
+
+
+          <input type="text" name="txtT1DOC_ID" id="txtT1DOC_ID"
+               size="20"
+ vsds="T1FDT_WKLD" vsdf="DOC_ID"
+         ams_max_len="20"
+ ShowCodeInfo="" value="DOC_ID" title="ID">
+
+
+
+        </td>
+        </tr>
+
+
+
+        <tr>
+
+
+        <td class="label"><label for="txtT1DOC_VERS_NO" title="Version">Version :</label></td>
+
+        <td class="val">
+
+
+
+          <input type="text" name="txtT1DOC_VERS_NO" id="txtT1DOC_VERS_NO"
+               size="10"
+ vsds="T1FDT_WKLD" vsdf="DOC_VERS_NO"
+               ams_max_len="10"
+ ShowCodeInfo="" value="DOC_VERS_NO" title="Version">
+
+
+
+        </td>
+        </tr>
+
+
+      <tr>
+
+
+        <td class="label"><label for="txtT1FDT_STRT_DT" title="Start Date">Start Date :</label></td>
+
+        <td class="val">
+<!--BEGIN CUSTOMIZATION -->
+<!--
+          <input type="text" id="txtT1DOC_STRT_DT" name="txtT1DOC_STRT_DT" size="11" vsds="T1BS_AGENT" vsdf="DOC_STRT_DT"
+    vsformat="MM-dd-yy"
+ value="DOC_STRT_DT" title="Start Date">
+-->
+          <input type="text" id="txtT1FDT_STRT_DT" name="txtT1FDT_STRT_DT" size="11" vsds="T1FDT_WKLD" vsdf="FDT_STRT_DT"
+    vsformat="AMS_DATE_FOUR_YEAR_PIVOT"
+ value="FDT_STRT_DT" title="Start Date">
+<!--END CUSTOMIZATION -->
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.DocFutureTrig.txtT1FDT_STRT_DT.value, 'txtT1FDT_STRT_DT', document.DocFutureTrig.txtT1FDT_STRT_DT);event.returnValue=false;return false;" title="Select Start Date: Will open in a new window"><img src="../AMSImages/ADVCalendar.gif"
+ alt="Select Start Date: Will open in a new window" title="Select Start Date: Will open in a new window"></a>
+        </td>
+      </tr>
+
+      <tr>
+
+
+        <td class="label"><label for="txtT1FDT_END_DT" title="End Date">End Date :</label></td>
+
+        <td class="val">
+<!--BEGIN CUSTOMIZATION -->
+<!--
+          <input type="text" id="txtT1DOC_END_DT" name="txtT1DOC_END_DT" size="11" vsds="T1BS_AGENT" vsdf="DOC_END_DT"
+    vsformat="MM-dd-yy"
+ value="DOC_END_DT" title="End Date">
+-->
+          <input type="text" id="txtT1FDT_END_DT" name="txtT1FDT_END_DT" size="11" vsds="T1FDT_WKLD" vsdf="FDT_END_DT"
+    vsformat="AMS_DATE_FOUR_YEAR_PIVOT"
+ value="FDT_END_DT" title="End Date">
+<!--END CUSTOMIZATION -->
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.DocFutureTrig.txtT1FDT_END_DT.value, 'txtT1FDT_END_DT', document.DocFutureTrig.txtT1FDT_END_DT);event.returnValue=false;return false;" title="Select End Date: Will open in a new window"><img src="../AMSImages/ADVCalendar.gif"
+ alt="Select End Date: Will open in a new window" title="Select End Date: Will open in a new window"></a>
+        </td>
+      </tr>
+
+
+      <tr>
+
+        <td class="label"><label for="txtT1FDT_FREQ_TYP" title="Frequency Type 1">Frequency Type 1 :</label></td>
+
+        <td class="val">
+<!--BEGIN CUSTOMIZATION -->
+<!--
+          <select name="txtT1DOC_FDT_FREQ_TYP" id="txtT1DOC_FDT_FREQ_TYP" vsds="T1BS_AGENT" vsdf="DOC_FDT_FREQ_TYP" size="1" vscodetable="CVL_FDT_FREQ_1" ShowCodeInfo="" title="Frequency Type">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+-->
+          <select name="txtT1FDT_FREQ_TYP" id="txtT1FDT_FREQ_TYP" vsds="T1FDT_WKLD" vsdf="FDT_FREQ_TYP" size="1" vscodetable="CVL_FDT_FREQ_1" ShowCodeInfo="" title="Frequency Type" onchange="Set_OnChange();DOC_FDTScheduling()">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+
+      <tr>
+
+        <td class="label"><label for="txtT1FDT_RUN_VL1" title="Frequency Type 2">Frequency Type 2 :</label></td>
+
+        <td class="val">
+          <select name="txtT1FDT_RUN_VL1" id="txtT1FDT_RUN_VL1" vsds="T1FDT_WKLD" vsdf="FDT_RUN_VL1" size="1" vscodetable="CVL_FDT_FREQ_2" ShowCodeInfo="" title="Frequency Type 2">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+
+      <tr>
+
+        <td class="label"><label for="txtT1FDT_RUN_VL2" title="Frequency Type 3">Frequency Type 3 :</label></td>
+
+        <td class="val">
+          <select name="txtT1FDT_RUN_VL2" id="txtT1FDT_RUN_VL2" vsds="T1FDT_WKLD" vsdf="FDT_RUN_VL2" size="1" vscodetable="CVL_FDT_FREQ_3" ShowCodeInfo="" title="Frequency Type 3">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      </table></td><td class="advscalarcol"><table class="advscalar">
+<!--BEGIN CUSTOMIZATION -->
+      <tr>
+        <td class="label"><label for="TriggerType" title="Trigger Type">Trigger Type :</label></td>
+        <td class="tdwidth"><input type="radio" value="0" vsds=" " name="TriggerType" id="TriggerType" title="Trigger Type"> Recurring</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="tdwidth"><input type="radio" value="1" vsds=" " name="TriggerType" id="TriggerType" title="Trigger Type"> JV Reversal</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="tdwidth"><input type="radio" value="2" vsds=" " name="TriggerType" id="TriggerType" title="Trigger Type"> Reclassification</td>
+      </tr>
+<!-- END CUSTOMIZATION -->
+      <tr>
+        <td class="label"><label for="txtT1FDT_EXPIRE_DT" title="Expire Date">Expire Date :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1FDT_EXPIRE_DT" id="txtT1FDT_EXPIRE_DT"
+                                 size="10"
+ vsds="T1FDT_WKLD" vsdf="FDT_EXPIRE_DT"
+                                 ams_max_len="10"
+            vsformat="AMS_DATE_FOUR_YEAR_PIVOT"
+ ShowCodeInfo="" value="FDT_EXPIRE_DT" title="Expire Date">
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.DocFutureTrig.txtT1FDT_EXPIRE_DT.value, 'txtT1FDT_EXPIRE_DT', document.DocFutureTrig.txtT1FDT_EXPIRE_DT);event.returnValue=false;return false;" title="Select Expire Date : Will open in a new window"><img src="../AMSImages/ADVCalendar.gif"
+ alt="Select Expire Date : Will open in a new window" title="Select Expire Date : Will open in a new window"></a>
+
+        </td>
+      </tr>
+      <tr>
+
+      <tr>
+
+      <td class="label"><label for="txtT1ACT_FL" title="Active">Active :</label></td>
+
+        <td class="val">
+          <input type="checkbox" name="txtT1ACT_FL" id="txtT1ACT_FL" value="ACT_FL" vsds="T1FDT_WKLD" vsdf="ACT_FL" title="Active">
+        </td>
+      </tr>
+
+
+      <tr>
+
+        <td class="label"><label for="txtT1AMT_CRY_FWD_FL" title="Carry Forward Amount">Carry Forward Amount :</label></td>
+
+        <td class="val">
+          <input type="checkbox" name="txtT1AMT_CRY_FWD_FL" id="txtT1AMT_CRY_FWD_FL" value="AMT_CRY_FWD_FL" vsds="T1FDT_WKLD" vsdf="AMT_CRY_FWD_FL" title="Carry Forward Amount">
+        </td>
+      </tr>
+
+
+      <tr>
+
+        <td class="label"><label for="txtT1DOC_HLD_FL" title="Hold Document">Hold Document :</label></td>
+
+        <td class="val">
+          <input type="checkbox" name="txtT1DOC_HLD_FL" id="txtT1DOC_HLD_FL" value="DOC_HLD_FL" vsds="T1FDT_WKLD" vsdf="DOC_HLD_FL" title="Hold Document">
+        </td>
+      </tr>
+      <tr>
+
+      <td class="label"><label for="txtT1BYPS_APRV_FL" title="Bypass Approvals">Bypass Approvals :</label></td>
+
+        <td class="val">
+          <input type="checkbox" name="txtT1BYPS_APRV_FL" id="txtT1BYPS_APRV_FL" value="BYPS_APRV_FL" vsds="T1FDT_WKLD" vsdf="BYPS_APRV_FL" title="Bypass Approvals">
+        </td>
+      </tr>
+
+
+        <tr>
+
+
+      <td class="label"><label for="txtT1DOC_PFX" title="Document Prefix">Document Prefix :</label></td>
+
+        <td class="val">
+
+
+
+          <input type="text" name="txtT1DOC_PFX" id="txtT1DOC_PFX"
+            size="6"
+ vsds="T1FDT_WKLD" vsdf="DOC_PFX"
+         ams_max_len="4"
+ ShowCodeInfo="" value="DOC_PFX" title="Document Prefix" >
+
+
+
+        </td>
+        </tr>
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1FDT_WKLD', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'DOC_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Code' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'DOC_DEPT_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Doc Dept' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'DOC_ID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'ID' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'DOC_VERS_NO' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Version' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'FDT_STRT_DT' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Start Date' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'FDT_END_DT' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'End Date' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'FDT_RUN_STA' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Status' ;
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

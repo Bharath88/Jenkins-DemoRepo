@@ -1,0 +1,576 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Alternate Approval Assignments</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+<!-- BEGIN CUSTOMIZATION -->
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    function WFALTAPRV_setVirtualFields()
+    {
+       if (document.forms[0].txtT1ASSIGNEE_FL.checked)
+       {
+         if ( ( document.forms[0].txtT1ROLEID.value == "0" )
+            && (document.forms[0].txtT1USID.value == "0" ) )
+         {
+            document.forms[0].txtT1ROLEID.value = document.forms[0].txtT1ASSIGNEE.value;
+         } /* end if ( ( document.forms[0].txtT1ROLEID.value == "0" )... */
+         else
+         {
+            document.forms[0].txtT1ASSIGNEE.value = document.forms[0].txtT1ROLEID.value;
+         }/* end else */
+       } /* end if (document.forms[0].txtT1ASSIGNEE_FL.checked) */
+       else
+       {
+         if ( ( document.forms[0].txtT1ROLEID.value == "0" )
+            && (document.forms[0].txtT1USID.value == "0" ) )
+         {
+            document.forms[0].txtT1USID.value = document.forms[0].txtT1ASSIGNEE.value;
+         } /* end if ( ( document.forms[0].txtT1ROLEID.value == "0" )... */
+         else
+         {
+             document.forms[0].txtT1ASSIGNEE.value = document.forms[0].txtT1USID.value;
+         } /* end else */
+       } /* end else */
+       if (document.forms[0].txtT1ALT_ASSIGNEE_FL.checked)
+       {
+         if ( ( document.forms[0].txtT1ALT_ROLEID.value == "" )
+            && (document.forms[0].txtT1ALT_USID.value == "" ) )
+         {
+            document.forms[0].txtT1ALT_ROLEID.value = document.forms[0].txtT1ALT_ASSIGNEE.value;
+         } /* end if ( ( document.forms[0].txtT1ALT_ROLEID.value == "" )... */
+         else
+         {
+            document.forms[0].txtT1ALT_ASSIGNEE.value = document.forms[0].txtT1ALT_ROLEID.value;
+         } /* end else */
+       } /* end else */
+       else
+       {
+         if ( ( document.forms[0].txtT1ALT_ROLEID.value == "" )
+            && (document.forms[0].txtT1ALT_USID.value == "" ) )
+         {
+            document.forms[0].txtT1ALT_USID.value = document.forms[0].txtT1ALT_ASSIGNEE.value;
+         } /* end if ( ( document.forms[0].txtT1ALT_ROLEID.value == "" )... */
+         else
+         {
+            document.forms[0].txtT1ALT_ASSIGNEE.value = document.forms[0].txtT1ALT_USID.value;
+         } /* end else */
+       } /* end else */
+    }
+
+    function WFALTAPRV_SetHiddenValue( fiIndex )
+    {
+       switch( fiIndex )
+       {
+          case 1 :
+             if ( document.pR_WF_ALT_APRV_ID.txtT1ASSIGNEE_FL.checked )
+             {
+                document.forms[0].txtT1ROLEID.value = document.forms[0].txtT1ASSIGNEE.value ;
+                document.forms[0].txtT1USID.value = "0" ;
+             }
+             else
+             {
+                document.forms[0].txtT1USID.value = document.forms[0].txtT1ASSIGNEE.value ;
+                document.forms[0].txtT1ROLEID.value = "0" ;
+             }
+             break ;
+          case 2 :
+             if ( document.pR_WF_ALT_APRV_ID.txtT1ALT_ASSIGNEE_FL.checked )
+             {
+                document.forms[0].txtT1ALT_ROLEID.value = document.forms[0].txtT1ALT_ASSIGNEE.value ;
+                document.forms[0].txtT1ALT_USID.value = "" ;
+             }
+             else
+             {
+                document.forms[0].txtT1ALT_USID.value = document.forms[0].txtT1ALT_ASSIGNEE.value ;
+                document.forms[0].txtT1ALT_ROLEID.value = "" ;
+             }
+             break ;
+          default :
+             break ;
+       }
+    }
+
+    function WFALTAPRV_FindImageElem(fsImageName)
+    {
+       // Get all the elements with the "input" tag
+       // and loop thru them to find the matching
+       // image name. Once the matching tag
+       // is found perform a click on the anchor.
+       var loImageElems = document.getElementsByTagName('INPUT');
+
+       if (loImageElems != null)
+       {
+          for (var liIndex = 0; liIndex < loImageElems.length; liIndex++)
+          {
+             loImage = loImageElems.item(liIndex);
+
+             if (loImage != null && loImage.name == fsImageName)
+             {
+                return loImage;
+             } /* end if (loImage != null && loImage.name == fsImageName) */
+          } /* end of for loop */
+       } /* end if (loImageElems != null) */
+    } /* end WFALTAPRV_FindImageElem */
+
+    function WFALTAPRV_ClickForAssignee()
+    {
+       UTILS_StopRegisteringTransactions();
+       if (document.pR_WF_ALT_APRV_ID.txtT1ASSIGNEE_FL.checked)
+       {
+          DHTMLLIB_ClickElement(WFALTAPRV_FindImageElem('pckT1ROLEID'), document);
+       }
+       else
+       {
+          DHTMLLIB_ClickElement(WFALTAPRV_FindImageElem('pckT1USID'), document);
+       }
+       UTILS_StartRegisteringTransactions();
+    }
+
+    function WFALTAPRV_ClickForAltAssignee()
+    {
+       UTILS_StopRegisteringTransactions();
+       if (document.pR_WF_ALT_APRV_ID.txtT1ALT_ASSIGNEE_FL.checked)
+       {
+          DHTMLLIB_ClickElement(WFALTAPRV_FindImageElem('pckT1ALT_ROLEID'), document);
+       }
+       else
+       {
+          DHTMLLIB_ClickElement(WFALTAPRV_FindImageElem('pckT1ALT_USID'), document);
+       }
+       UTILS_StartRegisteringTransactions();
+    }
+
+    function WFALTAPRV_AdjustPickField()
+    {
+       var loStartupPage = UTILS_GetMainStartupPage();
+       if ( loStartupPage != null )
+       {
+          var lsPickField = loStartupPage.STARTPG_GetPickElem();
+          switch( lsPickField )
+          {
+             case 'txtT1USID' :
+             case 'txtT1ROLEID' :
+                loStartupPage.STARTPG_SetPickElem('txtT1ASSIGNEE');
+                break ;
+             case 'txtT1ALT_USID' :
+             case 'txtT1ALT_ROLEID' :
+                loStartupPage.STARTPG_SetPickElem('txtT1ALT_ASSIGNEE');
+                break ;
+             default :
+                break ;
+          }
+       }
+    }
+  -->
+  </script>
+<!-- END CUSTOMIZATION -->
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<!-- BEGIN CUSTOMIZATION -->
+<body class="adv reftable" onload="WFALTAPRV_setVirtualFields()">
+<!-- END CUSTOMIZATION -->
+  <vserror>
+  <form action="Workflow" method="post" vsform="true" name="pR_WF_ALT_APRV_ID">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Alternate Approval Assignments">Alternate Approval Assignments</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+  <a name="T1R_WF_ALT_APRV_ID_Top"></a>
+
+
+
+  <input type="hidden" name="T1R_WF_ALT_APRV_ID_Currency" value="">
+  <input type="hidden" name="T1R_WF_ALT_APRV_ID_Old_Currency" value="">
+  <table name="tblT1R_WF_ALT_APRV_ID" id="tblT1R_WF_ALT_APRV_ID" class="advgrid" vsds="T1R_WF_ALT_APRV_ID">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_ALT_APRV_ID"
+    vsdf="APRV_LVL"
+ name="T1APRV_LVLsort" id="T1APRV_LVLsort" title="Sort By Approval Level">Approval Level</a></th>
+
+        <th
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_ALT_APRV_ID"
+    vsdf="EFBGN_DT"
+ name="T1EFBGN_DTsort" id="T1EFBGN_DTsort" title="Sort By From Date">From Date</a></th>
+
+        <th
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_ALT_APRV_ID"
+    vsdf="EFEND_DT"
+ name="T1EFEND_DTsort" id="T1EFEND_DTsort" title="Sort By To Date">To Date</a></th>
+
+        <th
+><span id="T1ASSIGNEEsortGridLabel" name="T1ASSIGNEEsortGridLabel" title="Assignee ID">Assignee ID</span></th>
+
+        <th
+><span id="T1ALT_ASSIGNEEsortGridLabel" name="T1ALT_ASSIGNEEsortGridLabel" title="Alternate Assignee ID">Alternate Assignee ID</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_WF_ALT_APRV_IDvscurrency" id="T1R_WF_ALT_APRV_IDvscurrency" title="Select Row" alt="Select Row" vsds="T1R_WF_ALT_APRV_ID" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+>
+          <vstext vsds="T1R_WF_ALT_APRV_ID" vsdf="APRV_LVL" vscodetable="CVL_WF_LVLS">
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1EFBGN_DT" vsds="T1R_WF_ALT_APRV_ID" vsdf="EFBGN_DT"
+      vsformat="Short Date"
+>
+        </td>
+
+        <td
+      class="right"
+
+>
+          <vstext name="txtT1EFEND_DT" vsds="T1R_WF_ALT_APRV_ID" vsdf="EFEND_DT"
+      vsformat="Short Date"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1ASSIGNEE" vsds="T1R_WF_ALT_APRV_ID" vsdf="ASSIGNEE"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1ALT_ASSIGNEE" vsds="T1R_WF_ALT_APRV_ID" vsdf="ALT_ASSIGNEE"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Workflow" vsds="T1R_WF_ALT_APRV_ID" vsaction="firstpage" name="T1R_WF_ALT_APRV_IDfirstpage" id="T1R_WF_ALT_APRV_IDfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Workflow" vsds="T1R_WF_ALT_APRV_ID" vsaction="prevpage" name="T1R_WF_ALT_APRV_IDprevpage" id="T1R_WF_ALT_APRV_IDprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Workflow" vsds="T1R_WF_ALT_APRV_ID" vsaction="nextpage" id="T1R_WF_ALT_APRV_IDnextpage" name="T1R_WF_ALT_APRV_IDnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Workflow" vsds="T1R_WF_ALT_APRV_ID" vsaction="lastpage" id="T1R_WF_ALT_APRV_IDlastpage" name="T1R_WF_ALT_APRV_IDlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+
+<hr class="advsectsep"></hr>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Workflow" vsds="T1R_WF_ALT_APRV_ID" vsaction="saveall" name="T1R_WF_ALT_APRV_IDSaveAll" id="T1R_WF_ALT_APRV_IDSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Workflow" vsds="T1R_WF_ALT_APRV_ID" vsaction="undoall" name="T1R_WF_ALT_APRV_IDUndoAll" id="T1R_WF_ALT_APRV_IDUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="Workflow" vsds="T1R_WF_ALT_APRV_ID" vsaction="delete" id="IndexT1R_WF_ALT_APRV_IDdelete" name="T1R_WF_ALT_APRV_IDdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="Workflow" vsds="T1R_WF_ALT_APRV_ID" vsaction="insert" id="T1R_WF_ALT_APRV_IDinsert" name="T1R_WF_ALT_APRV_IDinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="Workflow" vsds="T1R_WF_ALT_APRV_ID" vsaction="11" name="T1R_WF_ALT_APRV_IDCopyRecord" id="T1R_WF_ALT_APRV_IDCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+
+<a href="Workflow" vsds="T1R_WF_ALT_APRV_ID" vsaction="12" name="T1R_WF_ALT_APRV_IDPasteLine" id="T1R_WF_ALT_APRV_IDPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+
+<td><vstext vsds=" " name="T1R_WF_ALT_APRV_IDSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1APRV_LVL" title="Approval Level (Required)">Approval Level :</label></td>
+        <td class="val required">
+          <select name="txtT1APRV_LVL" id="txtT1APRV_LVL" vsds="T1R_WF_ALT_APRV_ID" vsdf="APRV_LVL" size="1" vscodetable="CVL_WF_LVLS" ShowCodeInfo="" title="Approval Level (Required)">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1EFBGN_DT" title="From Date (Required)">From Date :</label></td>
+        <td class="val required">
+          <input type="text" id="txtT1EFBGN_DT" name="txtT1EFBGN_DT" size="11" vsds="T1R_WF_ALT_APRV_ID" vsdf="EFBGN_DT"
+      vsformat="Short Date"
+ value="EFBGN_DT" title="From Date (Required)">
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.pR_WF_ALT_APRV_ID.txtT1EFBGN_DT.value, 'txtT1EFBGN_DT', document.pR_WF_ALT_APRV_ID.txtT1EFBGN_DT);event.returnValue=false;return false;" title="Select From Date: Will open in a new window"><img src="../AMSImages/ADVCalendar.gif"
+ alt="Select From Date: Will open in a new window" title="Select From Date: Will open in a new window"></a>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1EFEND_DT" title="To Date (Required)">To Date :</label></td>
+        <td class="val required">
+          <input type="text" id="txtT1EFEND_DT" name="txtT1EFEND_DT" size="11" vsds="T1R_WF_ALT_APRV_ID" vsdf="EFEND_DT"
+      vsformat="Short Date"
+ value="EFEND_DT" title="To Date (Required)">
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.pR_WF_ALT_APRV_ID.txtT1EFEND_DT.value, 'txtT1EFEND_DT', document.pR_WF_ALT_APRV_ID.txtT1EFEND_DT);event.returnValue=false;return false;" title="Select To Date: Will open in a new window"><img src="../AMSImages/ADVCalendar.gif"
+ alt="Select To Date: Will open in a new window" title="Select To Date: Will open in a new window"></a>
+        </td>
+      </tr>
+
+<!-- BEGIN CUSTOMIZATION -->
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1ASSIGNEE" title="Assignee ID (Required)">Assignee ID :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1ASSIGNEE" id="txtT1ASSIGNEE"
+               size="20" onblur="WFALTAPRV_SetHiddenValue(1);return true;"
+ vsds="T1R_WF_ALT_APRV_ID" vsdf="ASSIGNEE"
+         ams_max_len="16"
+ ShowCodeInfo="" value="ASSIGNEE"title="Assignee ID (Required)">
+          <a href="javascript:WFALTAPRV_ClickForAssignee()" title="Select Assignee ID"><img src="../AMSImages/ADVPick.gif" title="Select Assignee ID" alt="Select Assignee ID"></a>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1ASSIGNEE_FL" title="Assignee Is Role?">Assignee Is Role? :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1ASSIGNEE_FL" id="txtT1ASSIGNEE_FL" value="ASSIGNEE_FL" vsds="T1R_WF_ALT_APRV_ID" vsdf="ASSIGNEE_FL" title="Assignee Is Role?" onblur="WFALTAPRV_SetHiddenValue(1);return true;">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1ALT_ASSIGNEE" title="Alternate Assignee ID (Required)">Alternate Assignee ID :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1ALT_ASSIGNEE" id="txtT1ALT_ASSIGNEE"
+               size="20" onblur="WFALTAPRV_SetHiddenValue(2);return true;"
+ vsds="T1R_WF_ALT_APRV_ID" vsdf="ALT_ASSIGNEE"
+         ams_max_len="16"
+ ShowCodeInfo="" value="ALT_ASSIGNEE"title="Alternate Assignee ID (Required)">
+          <a href="javascript:WFALTAPRV_ClickForAltAssignee()" title="Select Alternate Assignee ID"><img src="../AMSImages/ADVPick.gif" title="Select Alternate Assignee ID" alt="Select Alternate Assignee ID"></a>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1ALT_ASSIGNEE_FL" title="Alternate Assignee Is Role?">Alternate Assignee Is Role? :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1ALT_ASSIGNEE_FL" id="txtT1ALT_ASSIGNEE_FL" value="ALT_ASSIGNEE_FL" vsds="T1R_WF_ALT_APRV_ID" vsdf="ALT_ASSIGNEE_FL" title="Alternate Assignee Is Role?" onblur="WFALTAPRV_SetHiddenValue(2);return true;">
+        </td>
+      </tr>
+<!-- END CUSTOMIZATION -->
+
+      <tr>
+        <td class="label"><div class="hidden label"><label for="txtT1USID_UP" title="Assignee ID">Assignee ID :</label></div></td>
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1USID_UP" id="txtT1USID_UP"
+               size="20"
+ vsds="T1R_WF_ALT_APRV_ID" vsdf="USID_UP"
+         ams_max_len="16"
+ ShowCodeInfo="" title="Assignee ID" value="USID_UP"></div>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><div class="hidden label"><label for="txtT1ROLEID_UP" title="Assignee ID">Assignee ID :</label></div></td>
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1ROLEID_UP" id="txtT1ROLEID_UP"
+               size="20"
+ vsds="T1R_WF_ALT_APRV_ID" vsdf="ROLEID_UP"
+         ams_max_len="16"
+ ShowCodeInfo="" title="Assignee ID" value="ROLEID_UP"></div>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><div class="hidden label"><label for="txtT1ALT_USID_UP" title="Alternate Assignee ID">Alternate Assignee ID :</label></div></td>
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1ALT_USID_UP" id="txtT1ALT_USID_UP"
+               size="20"
+ vsds="T1R_WF_ALT_APRV_ID" vsdf="ALT_USID_UP"
+         ams_max_len="16"
+ ShowCodeInfo="" title="Alternate Assignee ID" value="ALT_USID_UP"></div>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><div class="hidden label"><label for="txtT1ALT_ROLEID_UP" title="Alternate Assignee ID">Alternate Assignee ID :</label></div></td>
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1ALT_ROLEID_UP" id="txtT1ALT_ROLEID_UP"
+               size="20"
+ vsds="T1R_WF_ALT_APRV_ID" vsdf="ALT_ROLEID_UP"
+         ams_max_len="50"
+ ShowCodeInfo="" title="Alternate Assignee ID" value="ALT_ROLEID_UP"></div>
+        </td>
+      </tr>
+
+<!-- BEGIN CUSTOMIZATION -->
+
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  <div style="visibility:hidden;display:none;position:absolute;top:-1000em;left:-1000em;">
+    <table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1USID" title="Assignee ID">Assignee ID :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1USID" id="txtT1USID"
+      ams_max_len="16"
+ value="USID"
+            size="20"
+ vsds="T1R_WF_ALT_APRV_ID" vsdf="USID" ShowCodeInfo="" title="Assignee ID">
+          <input type="image" vspick="T4R_SC_USER_DIR_INFO" vspicktext="txtT1USID" vsds="T1R_WF_ALT_APRV_ID" vsaction="pick" name="pckT1USID" id="pckT1USID" title="Select Assignee ID" alt="Select Assignee ID" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1ROLEID" title="Assignee ID">Assignee ID :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1ROLEID" id="txtT1ROLEID"
+      ams_max_len="16"
+ value="ROLEID"
+            size="20"
+ vsds="T1R_WF_ALT_APRV_ID" vsdf="ROLEID" ShowCodeInfo="" title="Assignee ID">
+          <input type="image" vspick="T2R_WF_ROLE" vspicktext="txtT1ROLEID" vsds="T1R_WF_ALT_APRV_ID" vsaction="pick" name="pckT1ROLEID" id="pckT1ROLEID" title="Select Assignee ID" alt="Select Assignee ID" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1ALT_USID" title="Alternate Assignee ID (Required)">Alternate Assignee ID :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1ALT_USID" id="txtT1ALT_USID"
+      ams_max_len="16"
+ value="ALT_USID"
+            size="20"
+ vsds="T1R_WF_ALT_APRV_ID" vsdf="ALT_USID" ShowCodeInfo="" title="Alternate Assignee ID (Required)">
+          <input type="image" vspick="T5R_SC_USER_DIR_INFO" vspicktext="txtT1ALT_USID" vsds="T1R_WF_ALT_APRV_ID" vsaction="pick" name="pckT1ALT_USID" id="pckT1ALT_USID" title="Select Alternate Assignee ID" alt="Select Alternate Assignee ID" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1ALT_ROLEID" title="Alternate Assignee ID (Required)">Alternate Assignee ID :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1ALT_ROLEID" id="txtT1ALT_ROLEID"
+      ams_max_len="16"
+ value="ALT_ROLEID"
+            size="20"
+ vsds="T1R_WF_ALT_APRV_ID" vsdf="ALT_ROLEID" ShowCodeInfo="" title="Alternate Assignee ID (Required)">
+          <input type="image" vspick="T3R_WF_ROLE" vspicktext="txtT1ALT_ROLEID" vsds="T1R_WF_ALT_APRV_ID" vsaction="pick" name="pckT1ALT_ROLEID" id="pckT1ALT_ROLEID" title="Select Alternate Assignee ID" alt="Select Alternate Assignee ID" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+<!-- END CUSTOMIZATION -->
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_WF_ALT_APRV_ID', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'APRV_LVL' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Approval Level' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'EFBGN_DT' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'From Date' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'EFEND_DT' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'To Date' ;
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<a name="btnT6pR_WF_SC_USER_DIR_INFO" href="Workflow" id="btnT6pR_WF_SC_USER_DIR_INFO" title="Navigation to Approval Users" vsaction="pagetransition"
+           vsds=""
+ vsnavigation="T6pR_WF_SC_USER_DIR_INFO">Approval Users</a>
+<a name="btnT7pR_WF_ROLE" href="Workflow" id="btnT7pR_WF_ROLE" title="Navigation to Approval Roles" vsaction="pagetransition"
+           vsds=""
+ vsnavigation="T7pR_WF_ROLE">Approval Roles</a>
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Workflow" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

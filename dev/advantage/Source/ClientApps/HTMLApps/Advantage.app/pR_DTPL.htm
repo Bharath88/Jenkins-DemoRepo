@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Document Templates</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="pR_DTPL">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Document Templates">Document Templates</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+      
+ 
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+          
+<a href="Advantage" vsds="T1R_DTPL" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+          
+<a href="Advantage" vsds="T1R_DTPL" vsaction="clearquery" name="T1R_DTPLclearquery" id="T1R_DTPLclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+           
+      <tr>
+        <td class="label"><label for="txtT1DOC_DEPT_CD" title="Document Department">Document Department :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_DEPT_CD" id="txtT1DOC_DEPT_CD" 
+         size="6"
+ vsds="T1R_DTPL" vsdf="DOC_DEPT_CD" vsdisplaymode="Query" 
+ value="DOC_DEPT_CD" title="Document Department">
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label for="txtT1TMPL_NM" title="Template Name">Template Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1TMPL_NM" id="txtT1TMPL_NM" 
+            size="20"
+ vsds="T1R_DTPL" vsdf="TMPL_NM" vsdisplaymode="Query" 
+ value="TMPL_NM" title="Template Name">
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label for="txtT1TMPL_FILE_NM" title="Template File Name">Template File Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1TMPL_FILE_NM" id="txtT1TMPL_FILE_NM" 
+            size="20"
+ vsds="T1R_DTPL" vsdf="TMPL_FILE_NM" vsdisplaymode="Query" 
+ value="TMPL_FILE_NM" title="Template File Name">
+        </td>
+      </tr>
+    
+        </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1TRGT_APPL" title="Target Application">Target Application :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1TRGT_APPL" id="txtT1TRGT_APPL" 
+            size="20"
+ vsds="T1R_DTPL" vsdf="TRGT_APPL" vsdisplaymode="Query" 
+ value="TRGT_APPL" title="Target Application">
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="label"><label for="txtT1MAX_DL_LINES" title="Max Download Lines">Max Download Lines :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1MAX_DL_LINES" id="txtT1MAX_DL_LINES" 
+            size="10"
+ vsds="T1R_DTPL" vsdf="MAX_DL_LINES" vsdisplaymode="Query" 
+ value="MAX_DL_LINES" title="Max Download Lines">
+        </td>
+      </tr>
+    
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  
+  <input type="hidden" name="T1R_DTPL_Currency" value="">
+  <input type="hidden" name="T1R_DTPL_Old_Currency" value="">
+  <table name="tblT1R_DTPL" id="tblT1R_DTPL" class="advgrid" vsds="T1R_DTPL">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1R_DTPL" 
+    vsdf="DOC_DEPT_CD"
+ name="T1DOC_DEPT_CDsort" id="T1DOC_DEPT_CDsort" title="Sort By Document Department">Document Department</a></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1R_DTPL" 
+    vsdf="TMPL_NM"
+ name="T1TMPL_NMsort" id="T1TMPL_NMsort" title="Sort By Template Name">Template Name</a></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1R_DTPL" 
+    vsdf="TMPL_FILE_NM"
+ name="T1TMPL_FILE_NMsort" id="T1TMPL_FILE_NMsort" title="Sort By Template File Name">Template File Name</a></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1R_DTPL" 
+    vsdf="TRGT_APPL"
+ name="T1TRGT_APPLsort" id="T1TRGT_APPLsort" title="Sort By Target Application">Target Application</a></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1R_DTPL" 
+    vsdf="MAX_DL_LINES"
+ name="T1MAX_DL_LINESsort" id="T1MAX_DL_LINESsort" title="Sort By Max Download Lines">Max Download Lines</a></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_DTPLvscurrency" id="T1R_DTPLvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1R_DTPL" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_DEPT_CD" vsds="T1R_DTPL" vsdf="DOC_DEPT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1TMPL_NM" vsds="T1R_DTPL" vsdf="TMPL_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1TMPL_FILE_NM" vsds="T1R_DTPL" vsdf="TMPL_FILE_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1TRGT_APPL" vsds="T1R_DTPL" vsdf="TRGT_APPL" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1MAX_DL_LINES" vsds="T1R_DTPL" vsdf="MAX_DL_LINES" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+      
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Advantage" vsds="T1R_DTPL" vsaction="firstpage" name="T1R_DTPLfirstpage" id="T1R_DTPLfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+<a href="Advantage" vsds="T1R_DTPL" vsaction="prevpage" name="T1R_DTPLprevpage" id="T1R_DTPLprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+<a href="Advantage" vsds="T1R_DTPL" vsaction="nextpage" id="T1R_DTPLnextpage" name="T1R_DTPLnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+<a href="Advantage" vsds="T1R_DTPL" vsaction="lastpage" id="T1R_DTPLlastpage" name="T1R_DTPLlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+<!-- BEGIN CUSTOMIZATION -->
+
+    <td><a href="Advantage" vsds="T1R_DTPL" vsaction="194" name="T1R_DTPLDownloadFile" id="T1R_DTPLDownloadFile" title=""
+      ams_download_type="msexcel"
+    ></a>
+    <!--<a href="javascript:submitForm(document.forms[0],'T1Q_DOC_RF_TEMPDownloadResults=T1Q_DOC_RF_TEMPDownloadResults', '_top');UTILS_InitPage();" onclick="if (!UTILS_CheckForTransaction()){event.returnValue = false};" name="T1Q_DOC_RF_TEMPDownload" id="T1Q_DOC_RF_TEMPDownload" title="Download Results">Download</a></td> -->
+<!-- END CUSTOMIZATION -->
+      
+    </tr>
+  </table>
+
+  
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+ 
+ <!-- BEGIN CUSTOMIZATION -->
+	  <table class="advaction recsrc">
+	 <tr>
+      <td>
+	  <ams_map title="Custom Actions" name="Custom Actions">
+				<input class="advbutton" type="button" name="download" value="Generate File" id="download" title="download"
+				onclick = "if (!UTILS_CheckForTransaction()){event.returnValue = false};javascript:submitForm(document.forms[0],'T1R_DTPLDownloadFile=T1R_DTPLDownloadFile', 'Display');UTILS_InitPage();" title="Generate File">
+				<a href="Advantage" vsds="" vsaction="cancel" name="T1R_DTPLback" id="T1R_DTPLback" title="Back" accesskey="B">Back</a>
+      </ams_map>
+      </td>
+      </tr>
+<!-- END CUSTOMIZATION -->
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

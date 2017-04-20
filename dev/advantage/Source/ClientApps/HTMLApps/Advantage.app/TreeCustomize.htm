@@ -1,0 +1,692 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Navigation Tree Nodes</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="TreeCustomize">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Navigation Tree Nodes">Navigation Tree Nodes</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+      
+      
+ 
+
+  <a name="T1IN_NODE_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1IN_NODE_Currency" value="">
+  <input type="hidden" name="T1IN_NODE_Old_Currency" value="">
+  <table name="tblT1IN_NODE" id="tblT1IN_NODE" class="advgrid" vsds="T1IN_NODE">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+        <th 
+><span id="T1NODE_NAMEsortGridLabel" name="T1NODE_NAMEsortGridLabel" title="Label">Label</span></th>
+        <th 
+><span id="T1PAGE_CDsortGridLabel" name="T1PAGE_CDsortGridLabel" title="Page Code">Page Code</span></th>
+        <th 
+><span id="T1URLsortGridLabel" name="T1URLsortGridLabel" title="URL">URL</span></th>
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IN_NODEvscurrency" id="T1IN_NODEvscurrency" title="Select Row" alt="Select Row" vsds="T1IN_NODE" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1NODE_NAME" vsds="T1IN_NODE" vsdf="NODE_NAME" 
+>
+        </td>
+        <td 
+>
+          <vstext name="txtT1PAGE_CD" vsds="T1IN_NODE" vsdf="PAGE_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1URL" vsds="T1IN_NODE" vsdf="URL" 
+>
+        </td>
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+<td><div name="T1IN_NODEGridNav" id="T1IN_NODEGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+
+
+      <a href="Advantage" vsds="T1IN_NODE" vsaction="firstpage" name="T1IN_NODEfirstpage" id="T1IN_NODEfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+
+      <a href="Advantage" vsds="T1IN_NODE" vsaction="prevpage" name="T1IN_NODEprevpage" id="T1IN_NODEprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+      <a href="Advantage" vsds="T1IN_NODE" vsaction="nextpage" id="T1IN_NODEnextpage" name="T1IN_NODEnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+      <a href="Advantage" vsds="T1IN_NODE" vsaction="lastpage" id="T1IN_NODElastpage" name="T1IN_NODElastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+    </tr>
+  </table>
+<hr class="advsectsep"></hr>
+      <table class="advaction recsrc">
+        <tr>
+         <td>
+<ams_map title="Update Actions" name="Update Actions">
+   
+      <a href="Advantage" vsds="T1IN_NODE" vsaction="saveall" name="T1IN_NODESaveAll" id="T1IN_NODESaveAll" title="Save All" accesskey="5">Save</a>
+   
+      <a href="Advantage" vsds="T1IN_NODE" vsaction="undoall" name="T1IN_NODEUndoAll" id="T1IN_NODEUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+      <a href="Advantage" vsds="T1IN_NODE" vsaction="delete" id="IndexT1IN_NODEdelete" name="T1IN_NODEdelete" title="Delete Current Record" accesskey="7">Delete</a>
+      <a href="Advantage" vsds="T1IN_NODE" vsaction="insert" id="T1IN_NODEinsert" name="T1IN_NODEinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+      <a href="Advantage" vsds="T1IN_NODE" vsaction="11" name="T1IN_NODECopyRecord" id="T1IN_NODECopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+      <a href="Advantage" vsds="T1IN_NODE" vsaction="12" name="T1IN_NODEPasteLine" id="T1IN_NODEPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+      <td><vstext vsds=" " name="T1IN_NODESearchColList" vspreservetag="true"></td>
+
+   
+      <td><ams_map title="Section Controls" name="Section Controls">
+      
+  <a href="javascript:
+        AMSTAB_ExpandSection('T1IN_NODE_Section1','T1IN_NODE_Section1_Button');
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+  <a href="javascript:
+        AMSTAB_CollapseSection('T1IN_NODE_Section1','T1IN_NODE_Section1_Button');
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+    
+        </tr>
+      </table>
+
+  <fieldset class="advscalar">
+    <div class="advpresection">
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+          
+  
+          
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1NODE_UNID" title="ID">ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1NODE_UNID" id="txtT1NODE_UNID" 
+               size="15"
+ vsds="T1IN_NODE" vsdf="NODE_UNID" 
+ value="NODE_UNID" ams_readonly ShowCodeInfo="" title="ID">
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1PARENT_UNID" title="Parent">Parent :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1PARENT_UNID" id="txtT1PARENT_UNID" 
+               ams_max_len="20"
+ value="PARENT_UNID" 
+               size="15"
+ vsds="T1IN_NODE" vsdf="PARENT_UNID" ShowCodeInfo="" title="Parent">
+          <input type="image" vspick="T3IN_NODE" vspicktext="txtT1PARENT_UNID" vsds="T1IN_NODE" vsaction="pick" name="pckT1PARENT_UNID" id="pckT1PARENT_UNID" title="Select Parent" alt="Select Parent" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1NODE_NAME" title="Label">Label :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1NODE_NAME" id="txtT1NODE_NAME" 
+               size="20"
+ vsds="T1IN_NODE" vsdf="NODE_NAME" 
+         ams_max_len="50"
+ ShowCodeInfo="" value="NODE_NAME" title="Label" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1NODE_TYPE" title="Type">Type :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1NODE_TYPE" id="txtT1NODE_TYPE" 
+               size="10"
+ vsds="T1IN_NODE" vsdf="NODE_TYPE" 
+               ams_max_len="10"
+ ShowCodeInfo="" value="NODE_TYPE" title="Type" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1NODE_SEQ_NO" title="Seq No">Seq No :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1NODE_SEQ_NO" id="txtT1NODE_SEQ_NO" 
+               size="10"
+ vsds="T1IN_NODE" vsdf="NODE_SEQ_NO" 
+               ams_max_len="10"
+ ShowCodeInfo="" value="NODE_SEQ_NO" title="Seq No" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1NODE_FLDR" title="Folder">Folder :</label></td>
+   
+        <td class="val">
+          <input type="checkbox" name="txtT1NODE_FLDR" id="txtT1NODE_FLDR" value="NODE_FLDR" vsds="T1IN_NODE" vsdf="NODE_FLDR" title="Folder">
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1TREE_TRUNK_UNID" title="Tree">Tree :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1TREE_TRUNK_UNID" id="txtT1TREE_TRUNK_UNID" 
+                  size="15"
+ vsds="T1IN_NODE" vsdf="TREE_TRUNK_UNID" 
+                  ams_max_len="20"
+ ShowCodeInfo="" value="TREE_TRUNK_UNID" title="Tree" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1PAGE_CD" title="Page Code">Page Code :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1PAGE_CD" id="txtT1PAGE_CD" 
+      ams_max_len="8"
+ value="PAGE_CD" 
+            size="15"
+ vsds="T1IN_NODE" vsdf="PAGE_CD" ShowCodeInfo="" title="Page Code">
+          <input type="image" vspick="T2IN_PAGES" vspicktext="txtT1PAGE_CD" vsds="T1IN_NODE" vsaction="pick" name="pckT1PAGE_CD" id="pckT1PAGE_CD" title="Select Page Code" alt="Select Page Code" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1URL" title="URL">URL :</label></td>
+   
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1URL" id="txtT1URL" vsds="T1IN_NODE" vsdf="URL" 
+ title="URL"></textarea>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1URL_TARGET" title="URL Target">URL Target :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1URL_TARGET" id="txtT1URL_TARGET" 
+               size="20"
+ vsds="T1IN_NODE" vsdf="URL_TARGET" 
+         ams_max_len="255"
+ ShowCodeInfo="" value="URL_TARGET" title="URL Target" >
+
+		  
+
+        </td>
+      </tr>
+    
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1APPL_ID" title="Application">Application :</label></td>
+   
+        <td class="val">
+          <select name="txtT1APPL_ID" id="txtT1APPL_ID" vsds="T1IN_NODE" vsdf="APPL_ID" size="1" vscodetable="R_SC_APPL" ShowCodeInfo="" title="Application">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+          
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DEST_PG" title="Dest. Page">Dest. Page :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DEST_PG" id="txtT1DEST_PG" 
+            size="20"
+ vsds="T1IN_NODE" vsdf="DEST_PG" 
+ value="DEST_PG" ams_readonly ShowCodeInfo="" title="Dest. Page">
+        </td>
+      </tr>
+    
+        
+          
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DEST_FRAMESET" title="Dest. Frameset">Dest. Frameset :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DEST_FRAMESET" id="txtT1DEST_FRAMESET" 
+            size="20"
+ vsds="T1IN_NODE" vsdf="DEST_FRAMESET" 
+ value="DEST_FRAMESET" ams_readonly ShowCodeInfo="" title="Dest. Frameset">
+        </td>
+      </tr>
+    
+        
+          
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DEST_FRAME" title="Dest. Frame">Dest. Frame :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DEST_FRAME" id="txtT1DEST_FRAME" 
+            size="20"
+ vsds="T1IN_NODE" vsdf="DEST_FRAME" 
+ value="DEST_FRAME" ams_readonly ShowCodeInfo="" title="Dest. Frame">
+        </td>
+      </tr>
+    
+        
+          
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1TARGET_FRAME" title="Target Frame">Target Frame :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1TARGET_FRAME" id="txtT1TARGET_FRAME" 
+            size="20"
+ vsds="T1IN_NODE" vsdf="TARGET_FRAME" 
+ value="TARGET_FRAME" ams_readonly ShowCodeInfo="" title="Target Frame">
+        </td>
+      </tr>
+    
+        
+          
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1APPL_NM" title="UI Package">UI Package :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1APPL_NM" id="txtT1APPL_NM" 
+            size="20"
+ vsds="T1IN_NODE" vsdf="APPL_NM" 
+ value="APPL_NM" ams_readonly ShowCodeInfo="" title="UI Package">
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1MODE_IND" title="Initial Mode">Initial Mode :</label></td>
+   
+        <td class="val">
+          <select name="txtT1MODE_IND" id="txtT1MODE_IND" vsds="T1IN_NODE" vsdf="MODE_IND" size="1" vscodetable="CVL_MODE_IND" ShowCodeInfo="" title="Initial Mode">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+    
+          
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1PAGE_TYP_CD" title="Page Type">Page Type :</label></td>
+   
+        <td class="val">
+          <input type="text" ams_readonly name="txtT1PAGE_TYP_CD" id="txtT1PAGE_TYP_CD" vsds="T1IN_NODE" vsdf="PAGE_TYP_CD" vscodetable="IN_PAGE_TYP" 
+ title="Page Type">
+        </td>
+      </tr>
+    
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1WHERE_CLAUSE" title="Where Clause">Where Clause :</label></td>
+   
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1WHERE_CLAUSE" id="txtT1WHERE_CLAUSE" vsds="T1IN_NODE" vsdf="WHERE_CLAUSE" 
+ title="Where Clause"></textarea>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1ORDER_BY" title="Order By">Order By :</label></td>
+   
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1ORDER_BY" id="txtT1ORDER_BY" vsds="T1IN_NODE" vsdf="ORDER_BY" 
+ title="Order By"></textarea>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtT1NODE_NAME_UP" title="Label">Label :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1NODE_NAME_UP" id="txtT1NODE_NAME_UP" 
+               size="20"
+ vsds="T1IN_NODE" vsdf="NODE_NAME_UP" 
+         ams_max_len="50"
+ ShowCodeInfo="" title="Label" value="NODE_NAME_UP"></div>
+        </td>
+      </tr>
+    
+        </table></td></tr></table></div></fieldset><a name="T1IN_NODE_Section1_Top"></a><fieldset class="advscalar section">
+        <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1IN_NODE_Section1','T1IN_NODE_Section1_Button');" title="Expand/Collapse Organization Codes"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1IN_NODE_Section1_Button"> Organization Codes</a></legend>
+        <div id="T1IN_NODE_Section1" class="advsection">
+        <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1GOVT_BRN_CD" title="Government Branch">Government Branch :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1GOVT_BRN_CD" id="txtT1GOVT_BRN_CD" 
+            size="6"
+ vsds="T1IN_NODE" vsdf="GOVT_BRN_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="GOVT_BRN_CD" title="Government Branch" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1CAB_CD" title="Cabinet">Cabinet :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1CAB_CD" id="txtT1CAB_CD" 
+            size="6"
+ vsds="T1IN_NODE" vsdf="CAB_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="CAB_CD" title="Cabinet" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DEPT_CD" title="Department">Department :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1DEPT_CD" id="txtT1DEPT_CD" 
+            size="6"
+ vsds="T1IN_NODE" vsdf="DEPT_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="DEPT_CD" title="Department" >
+
+		  
+
+        </td>
+      </tr>
+    
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DIV_CD" title="Division">Division :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1DIV_CD" id="txtT1DIV_CD" 
+            size="6"
+ vsds="T1IN_NODE" vsdf="DIV_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="DIV_CD" title="Division" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1GP_CD" title="Group">Group :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1GP_CD" id="txtT1GP_CD" 
+            size="6"
+ vsds="T1IN_NODE" vsdf="GP_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="GP_CD" title="Group" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1SECT_CD" title="Section">Section :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1SECT_CD" id="txtT1SECT_CD" 
+            size="6"
+ vsds="T1IN_NODE" vsdf="SECT_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="SECT_CD" title="Section" >
+
+		  
+
+        </td>
+      </tr>
+    
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DSTC_CD" title="District">District :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1DSTC_CD" id="txtT1DSTC_CD" 
+            size="6"
+ vsds="T1IN_NODE" vsdf="DSTC_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="DSTC_CD" title="District" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1BUR_CD" title="Bureau">Bureau :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1BUR_CD" id="txtT1BUR_CD" 
+            size="6"
+ vsds="T1IN_NODE" vsdf="BUR_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="BUR_CD" title="Bureau" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1UNIT_CD" title="Unit">Unit :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1UNIT_CD" id="txtT1UNIT_CD" 
+            size="6"
+ vsds="T1IN_NODE" vsdf="UNIT_CD" 
+         ams_max_len="4"
+ ShowCodeInfo="" value="UNIT_CD" title="Unit" >
+
+		  
+
+        </td>
+      </tr>
+    
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+  
+      <br><br><table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T1IN_NODE_Top');" title="Go To Top">Top</a></td></tr></table>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1IN_NODE', new Array(), new Array() ) ;
+    
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+</div>
+<a vsds=" " id="menu_action" ams_action="" href="Advantage" name="menu_action" vsaction="menu_action" title="">
+</a></div>
+  </form>
+</body>
+</html>
+
+
+

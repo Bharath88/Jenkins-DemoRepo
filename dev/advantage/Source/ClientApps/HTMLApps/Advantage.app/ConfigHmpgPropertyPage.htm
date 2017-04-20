@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Home Page Windows</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+<!-- BEGIN CUSTOMIZATION -->
+  <script type="text/javascript" language="JavaScript">
+  <!--
+     function CONFIGHMPG_VerifyProtocol( foURLField )
+     {
+        if ( ( foURLField.value.toLowerCase().indexOf( "http://" ) != 0 ) && ( foURLField.value.toLowerCase().indexOf( "https://" ) != 0 ) )
+        {
+           foURLField.value = "http://" + foURLField.value ;
+        }
+     }
+  -->
+  </script>
+<!-- END CUSTOMIZATION -->
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="ConfigHmpgPropertyPage">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Home Page Windows">Home Page Windows</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+
+
+
+  <input type="hidden" name="T1IN_HMPG_WIN_Currency" value="">
+  <input type="hidden" name="T1IN_HMPG_WIN_Old_Currency" value="">
+  <table name="tblT1IN_HMPG_WIN" id="tblT1IN_HMPG_WIN" class="advgrid" vsds="T1IN_HMPG_WIN">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1WIN_NMsortGridLabel" name="T1WIN_NMsortGridLabel" title="Name">Name</span></th>
+
+        <th
+><span id="T1PAGE_DESCsortGridLabel" name="T1PAGE_DESCsortGridLabel" title="Description">Description</span></th>
+
+        <th
+><span id="T1URLsortGridLabel" name="T1URLsortGridLabel" title="URL">URL</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IN_HMPG_WINvscurrency" id="T1IN_HMPG_WINvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1IN_HMPG_WIN" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1WIN_NM" vsds="T1IN_HMPG_WIN" vsdf="WIN_NM"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1PAGE_DESC" vsds="T1IN_HMPG_WIN" vsdf="PAGE_DESC"
+>
+        </td>
+
+        <td class="memo">
+          <textarea ams_readonly cols="20" rows="2" name="txtT1URL" vsds="T1IN_HMPG_WIN" vsdf="URL"
+ title="URL"></textarea>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+    <td><ams_map title="Update Actions" name="Update Actions">
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="save" id="T1IN_HMPG_WINSaveAll" name="T1IN_HMPG_WINSaveAll" title="Save" accesskey="5">Save</a>
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="undo" id="T1IN_HMPG_WINUndo" name="T1IN_HMPG_WINUndo" title="Undo" accesskey="6">Undo</a>
+-->
+<!-- END CUSTOMIZATION -->
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="delete" id="T1IN_HMPG_WINdelete" name="T1IN_HMPG_WINdelete" title="Delete Selected Row" accesskey="7">Delete</a>
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="insert" id="T1IN_HMPG_WINinsert" name="T1IN_HMPG_WINinsert" title="Insert New Row" accesskey="I">Insert</a>
+-->
+<!-- END CUSTOMIZATION -->
+    </ams_map></td>
+
+  <td><ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="11" name="T1IN_HMPG_WINCopyLine" id="T1IN_HMPG_WINCopyLine" title="Copy Selected Row" accesskey="C">Copy</a>
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="12" name="T1IN_HMPG_WINPasteLine" id="T1IN_HMPG_WINPasteLine" title="Paste Copied Row" accesskey="8">Paste</a>
+  </ams_map></td>
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="firstpage" name="T1IN_HMPG_WINfirstpage" id="T1IN_HMPG_WINfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="prevpage" name="T1IN_HMPG_WINprevpage" id="T1IN_HMPG_WINprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="nextpage" id="T1IN_HMPG_WINnextpage" name="T1IN_HMPG_WINnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="lastpage" id="T1IN_HMPG_WINlastpage" name="T1IN_HMPG_WINlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+-->
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="20" id="T1IN_HMPG_WINMoveTop" name="T1IN_HMPG_WINMoveTop" title="Move Top" accesskey="0">Top</a>
+
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="21" id="T1IN_HMPG_WINMoveUp" name="T1IN_HMPG_WINMoveUp" title="Move Up" accesskey="1">Up</a>
+
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="22" id="T1IN_HMPG_WINMoveDown" name="T1IN_HMPG_WINMoveDown" title="Move Down" accesskey="2">Down</a>
+
+<a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="24" id="T1IN_HMPG_WINMoveBottom" name="T1IN_HMPG_WINMoveBottom" title="Move Bottom" accesskey="3">Bottom</a>
+<!-- END CUSTOMIZATION -->
+</ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+
+        <p>
+		<table class="advscalar advaction">
+		  <tr>
+			<td></td>
+            <td class="label"><label for="T1IN_HMPG_WINAddAdvPage" title="ADVANTAGE Page">ADVANTAGE Page :</label></td>
+			<td>
+			  <a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="18"
+				name="T1IN_HMPG_WINAddAdvPage" id="T1IN_HMPG_WINAddAdvPage" title="Add ADVANTAGE Page" accesskey="A">Add</a>
+			</td>
+	        <td>
+            </td>
+		  </tr>
+		  <tr>
+            <td></td>
+			<td class="label" >
+			  	<label for="txtT1InfoReportList" title="infoAdvReport">infoAdvantage Resources:</label>
+			</td>
+			<td>
+				<a href="Advantage" vsds=" " vsaction="18" name="displayReportData" id=" displayReportData " title="Select To"><img src="../AMSImages/ADVPick.gif" title="Select To" alt="Select To"></a>
+		    </td>
+            <td>
+              <a title="(CGI ADVANTAGE assumes no responsibility for the behavior of external web sites)">(infoAdvantage Reports)</a>              
+			</td>
+		  </tr>
+		  <tr>
+            <td class="label"><label for="txtT1HTTPField" title="URL">URL :</label></td>
+			<td class="val">
+			  <input type="text" name="txtT1HTTPField" id="txtT1HTTPField" size="40" vsds="" vsdf="" value="http://" onblur="CONFIGHMPG_VerifyProtocol(txtT1HTTPField);" title="URL" class="adveditable">
+			</td>
+			<td>
+			  <a href="Advantage" vsds="T1IN_HMPG_WIN" vsaction="18"
+				name="T1IN_HMPG_WINAddExtPage" id="T1IN_HMPG_WINAddExtPage" title="Add External Page" accesskey="E">Add</a>
+		    </td>
+            <td>
+              <a title="(CGI ADVANTAGE assumes no responsibility for the behavior of external web sites)">(CGI ADVANTAGE assumes no responsibility for the behavior of external web sites)</a>
+			</td>
+		  </tr>
+		</table>
+
+<!-- END CUSTOMIZATION -->
+
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1IN_HMPG_WIN', new Array(), new Array() ) ;
+
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

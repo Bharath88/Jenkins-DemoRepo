@@ -1,0 +1,370 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Security Configuration</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="SecurityAdmin" method="post" vsform="true" name="pR_SC_SEC_CNFG_Scalar">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Security Configuration">Security Configuration</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="SecurityAdmin" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+
+
+  <INPUT type="hidden" name="T1R_SC_SEC_CNFGvscurrency" vsds="T1R_SC_SEC_CNFG" vscurrency="true">
+
+  <a name="T1R_SC_SEC_CNFG_Top"></a>
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="SecurityAdmin" vsds="T1R_SC_SEC_CNFG" vsaction="saveall" name="T1R_SC_SEC_CNFGSaveAll" id="T1R_SC_SEC_CNFGSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="SecurityAdmin" vsds="T1R_SC_SEC_CNFG" vsaction="undoall" name="T1R_SC_SEC_CNFGUndoAll" id="T1R_SC_SEC_CNFGUndoAll" title="Undo All" accesskey="6">Undo</a>
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<a href="SecurityAdmin" vsds="T1R_SC_SEC_CNFG" vsaction="delete" id="IndexT1R_SC_SEC_CNFGdelete" name="T1R_SC_SEC_CNFGdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="SecurityAdmin" vsds="T1R_SC_SEC_CNFG" vsaction="insert" id="T1R_SC_SEC_CNFGinsert" name="T1R_SC_SEC_CNFGinsert" title="Insert New Record" accesskey="I">Insert</a>
+-->
+<!-- END CUSTOMIZATION -->
+</ams_map>
+      </td>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+<!--
+<td><ams_map title="Record Navigation" name="Record Navigation">
+<a href="SecurityAdmin" vsds="T1R_SC_SEC_CNFG" vsaction="first" name="T1R_SC_SEC_CNFGfirst" id="T1R_SC_SEC_CNFGfirst" title="First Record" accesskey="0">First</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_SEC_CNFG" vsaction="prev" name="T1R_SC_SEC_CNFGprev" id="T1R_SC_SEC_CNFGprev" title="Previous Record" accesskey="1">Prev</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_SEC_CNFG" vsaction="next" name="T1R_SC_SEC_CNFGnext" id="T1R_SC_SEC_CNFGnext" title="Next Record" accesskey="2">Next</a>
+
+<a href="SecurityAdmin" vsds="T1R_SC_SEC_CNFG" vsaction="last" name="T1R_SC_SEC_CNFGlast" id="T1R_SC_SEC_CNFGlast" title="Last Record" accesskey="3">Last</a>
+</ams_map></td>
+-->
+<!-- END CUSTOMIZATION -->
+
+      <td><ams_map title="Section Controls" name="Section Controls">
+
+  <a href="javascript:
+        AMSTAB_ExpandSection('T1R_SC_SEC_CNFG_Section1','T1R_SC_SEC_CNFG_Section1_Button');
+  " title="Expand All"><img src="../AMSImages/ADVExpandAll.gif" alt="Expand All"></a>
+
+  <a href="javascript:
+        AMSTAB_CollapseSection('T1R_SC_SEC_CNFG_Section1','T1R_SC_SEC_CNFG_Section1_Button');
+  " title="Collapse All"><img src="../AMSImages/ADVCollapseAll.gif" alt="Collapse All"></a>
+      </ams_map></td>
+
+
+
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <div>
+      <table><tr><td class="advscalarcol">
+        <table class="advscalar">
+
+
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1CHK_ROLE_IND" title="Perform Default Security Role Check (Required)">Perform Default Security Role Check :</label></td>
+        <td class="val required">
+          <select name="txtT1CHK_ROLE_IND" id="txtT1CHK_ROLE_IND" vsds="T1R_SC_SEC_CNFG" vsdf="CHK_ROLE_IND" size="1" vscodetable="CVL_SC_CHK_ROLE" ShowCodeInfo="" ams_show_es="NO" title="Perform Default Security Role Check (Required)">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1USER_EMAIL_SUBJ" title="User Email Subject">User Email Subject :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1USER_EMAIL_SUBJ" id="txtT1USER_EMAIL_SUBJ"
+            size="60"
+ vsds="T1R_SC_SEC_CNFG" vsdf="USER_EMAIL_SUBJ"
+         ams_max_len="255"
+ ShowCodeInfo="" title="User Email Subject" value="USER_EMAIL_SUBJ">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1USER_EMAIL_TXT" title="User Email Text">User Email Text :</label></td>
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1USER_EMAIL_TXT" id="txtT1USER_EMAIL_TXT" vsds="T1R_SC_SEC_CNFG" vsdf="USER_EMAIL_TXT"
+ title="User Email Text"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1PSWD_RESET_SUBJ" title="Password Reset Email Subject">Password Reset Email Subject :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1PSWD_RESET_SUBJ" id="txtT1PSWD_RESET_SUBJ"
+            size="60"
+ vsds="T1R_SC_SEC_CNFG" vsdf="PSWD_RESET_SUBJ"
+         ams_max_len="255"
+ ShowCodeInfo="" title="Password Reset Email Subject" value="PSWD_RESET_SUBJ">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1PSWD_RESET_MSG" title="Password Reset Email Message Body">Password Reset Email Message Body :</label></td>
+        <td class="val memo">
+          <textarea cols="35" rows="4" name="txtT1PSWD_RESET_MSG" id="txtT1PSWD_RESET_MSG" vsds="T1R_SC_SEC_CNFG" vsdf="PSWD_RESET_MSG"
+ title="Password Reset Email Message Body"></textarea>
+        </td>
+      </tr>
+
+        </table></td></tr></table></div></fieldset><a name="T1R_SC_SEC_CNFG_Section1_Top"></a><fieldset class="advscalar section">
+        <legend class="advscalar section"><a href="javascript:AMSTAB_ToggleSection('T1R_SC_SEC_CNFG_Section1','T1R_SC_SEC_CNFG_Section1_Button');" title="Expand/Collapse Password Policy"><img src="../AMSImages/ADVSectionClosed.gif" alt="Expand" name="T1R_SC_SEC_CNFG_Section1_Button"> Password Policy</a></legend>
+        <div id="T1R_SC_SEC_CNFG_Section1" class="advsection">
+        <table><tr><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1PSWD_RESET_FL" title="Enable User Password Reset">Enable User Password Reset :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1PSWD_RESET_FL" id="txtT1PSWD_RESET_FL" value="PSWD_RESET_FL" vsds="T1R_SC_SEC_CNFG" vsdf="PSWD_RESET_FL" title="Enable User Password Reset">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1LCKT_CT" title="Lockout Count Due To Bad Logins (Required)">Lockout Count Due To Bad Logins :</label></td>
+
+        <td class="val required">
+          <input type="text" name="txtT1LCKT_CT" id="txtT1LCKT_CT"
+            size="3"
+ vsds="T1R_SC_SEC_CNFG" vsdf="LCKT_CT"
+            ams_max_len="3"
+ ShowCodeInfo="" value="LCKT_CT"title="Lockout Count Due To Bad Logins (Required)">
+        </td>
+      </tr>
+    
+    
+       
+        <tr>
+        
+      
+      <td class="label required">
+<span class="reqmarker">*</span>
+      <label for="txtT1PSWD_RESET_LCKT_CT" title="Lockout Count Due To Bad Password Resets (Required)">Lockout Count Due To Bad Password Resets :</label></td>
+   
+        <td class="val required">
+
+          
+
+          <input type="text" name="txtT1PSWD_RESET_LCKT_CT" id="txtT1PSWD_RESET_LCKT_CT" 
+               size="10"
+ vsds="T1R_SC_SEC_CNFG" vsdf="PSWD_RESET_LCKT_CT" 
+               ams_max_len="10"
+ ShowCodeInfo="" value="PSWD_RESET_LCKT_CT"title="Lockout Count Due To Bad Password Resets (Required)">
+        </td>
+        </tr>
+    
+    
+        
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1PSWD_HIST_CT" title="Password History Count (Required)">Password History Count :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1PSWD_HIST_CT" id="txtT1PSWD_HIST_CT"
+            size="3"
+ vsds="T1R_SC_SEC_CNFG" vsdf="PSWD_HIST_CT"
+            ams_max_len="3"
+ ShowCodeInfo="" value="PSWD_HIST_CT"title="Password History Count (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1PSWD_EXPR_DY_CT" title="Password Expiration Day Count (Required)">Password Expiration Day Count :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1PSWD_EXPR_DY_CT" id="txtT1PSWD_EXPR_DY_CT"
+               size="10"
+ vsds="T1R_SC_SEC_CNFG" vsdf="PSWD_EXPR_DY_CT"
+               ams_max_len="10"
+ ShowCodeInfo="" value="PSWD_EXPR_DY_CT"title="Password Expiration Day Count (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1PSWD_WARN_DY_CT" title="Password Warn Day Count (Required)">Password Warn Day Count :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1PSWD_WARN_DY_CT" id="txtT1PSWD_WARN_DY_CT"
+               size="10"
+ vsds="T1R_SC_SEC_CNFG" vsdf="PSWD_WARN_DY_CT"
+               ams_max_len="10"
+ ShowCodeInfo="" value="PSWD_WARN_DY_CT"title="Password Warn Day Count (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1USER_ID_MIN_LEN" title="User ID Minimum Length (Required)">User ID Minimum Length :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1USER_ID_MIN_LEN" id="txtT1USER_ID_MIN_LEN"
+               size="10"
+ vsds="T1R_SC_SEC_CNFG" vsdf="USER_ID_MIN_LEN"
+               ams_max_len="10"
+ ShowCodeInfo="" value="USER_ID_MIN_LEN"title="User ID Minimum Length (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1USER_ID_MAX_LEN" title="User ID Maximum Length (Required)">User ID Maximum Length :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1USER_ID_MAX_LEN" id="txtT1USER_ID_MAX_LEN"
+               size="10"
+ vsds="T1R_SC_SEC_CNFG" vsdf="USER_ID_MAX_LEN"
+               ams_max_len="10"
+ ShowCodeInfo="" value="USER_ID_MAX_LEN"title="User ID Maximum Length (Required)">
+        </td>
+      </tr>
+
+                            </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1PSWD_MIN_LEN" title="Password Minimum Length (Required)">Password Minimum Length :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1PSWD_MIN_LEN" id="txtT1PSWD_MIN_LEN"
+               size="10"
+ vsds="T1R_SC_SEC_CNFG" vsdf="PSWD_MIN_LEN"
+               ams_max_len="10"
+ ShowCodeInfo="" value="PSWD_MIN_LEN"title="Password Minimum Length (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label required">
+<span class="reqmarker">*</span>
+ <label for="txtT1PSWD_MAX_LEN" title="Password Maximum Length (Required)">Password Maximum Length :</label></td>
+        <td class="val required">
+          <input type="text" name="txtT1PSWD_MAX_LEN" id="txtT1PSWD_MAX_LEN"
+               size="10"
+ vsds="T1R_SC_SEC_CNFG" vsdf="PSWD_MAX_LEN"
+               ams_max_len="10"
+ ShowCodeInfo="" value="PSWD_MAX_LEN"title="Password Maximum Length (Required)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1PSWD_NUM_FL" title="Password Require Numeric (0-9)">Password Require Numeric (0-9) :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1PSWD_NUM_FL" id="txtT1PSWD_NUM_FL" value="PSWD_NUM_FL" vsds="T1R_SC_SEC_CNFG" vsdf="PSWD_NUM_FL" title="Password Require Numeric (0-9)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1PSWD_UPPER_FL" title="Password Require Upper Case (A-Z)">Password Require Upper Case (A-Z) :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1PSWD_UPPER_FL" id="txtT1PSWD_UPPER_FL" value="PSWD_UPPER_FL" vsds="T1R_SC_SEC_CNFG" vsdf="PSWD_UPPER_FL" title="Password Require Upper Case (A-Z)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1PSWD_LOWER_FL" title="Password Require Lower Case (a-z)">Password Require Lower Case (a-z) :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1PSWD_LOWER_FL" id="txtT1PSWD_LOWER_FL" value="PSWD_LOWER_FL" vsds="T1R_SC_SEC_CNFG" vsdf="PSWD_LOWER_FL" title="Password Require Lower Case (a-z)">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1PSWD_SYMBOL_FL" title="Password Require Symbol Flag"><span>Password Require Symbol Flag <br><vstext name="pwdrqdflag" id="pwdrqdflag" vsds="" vsdf=""></vstext></span></label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1PSWD_SYMBOL_FL" id="txtT1PSWD_SYMBOL_FL" value="PSWD_SYMBOL_FL" vsds="T1R_SC_SEC_CNFG" vsdf="PSWD_SYMBOL_FL" title="Password Require Symbol Flag">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1PSWD_NO_USID_FL" title="Password Cannot Contain User ID">Password Cannot Contain User ID :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1PSWD_NO_USID_FL" id="txtT1PSWD_NO_USID_FL" value="PSWD_NO_USID_FL" vsds="T1R_SC_SEC_CNFG" vsdf="PSWD_NO_USID_FL" title="Password Cannot Contain User ID">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1PSWD_NO_PSWD_FL" title="Password Cannot Contain 'password'">Password Cannot Contain 'password' :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1PSWD_NO_PSWD_FL" id="txtT1PSWD_NO_PSWD_FL" value="PSWD_NO_PSWD_FL" vsds="T1R_SC_SEC_CNFG" vsdf="PSWD_NO_PSWD_FL" title="Password Cannot Contain 'password'">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1EXPIRE_NEW_PSWD_FL" title="Expire New Password">Expire New Password :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1EXPIRE_NEW_PSWD_FL" id="txtT1EXPIRE_NEW_PSWD_FL" value="EXPIRE_NEW_PSWD_FL" vsds="T1R_SC_SEC_CNFG" vsdf="EXPIRE_NEW_PSWD_FL" title="Expire New Password">
+        </td>
+      </tr>
+        </table>
+      </td></tr></table>
+    </div>
+  </fieldset>
+
+  <table class="advaction recsrc"><tr><td><a href="javascript:UTILS_ScrollToAnchor('T1R_SC_SEC_CNFG_Top');">Top</a></td></tr></table>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="SecurityAdmin" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

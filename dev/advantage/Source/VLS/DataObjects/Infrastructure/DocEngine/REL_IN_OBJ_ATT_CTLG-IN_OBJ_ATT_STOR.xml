@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="DeleteChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="AttachmentData"
+		ParentRoleName="AttachmentCtlgEntry"
+		>
+		<AscendCaption><![CDATA[Attachments Catalog]]> </AscendCaption>
+		<DescendCaption><![CDATA[Attachments Store]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[ ]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="OBJ_ATT_UNID"
+				ChildAttribute="OBJ_ATT_UNID"
+			/>
+		</AttributePairs>
+	</Relationship>
+</Relationships>

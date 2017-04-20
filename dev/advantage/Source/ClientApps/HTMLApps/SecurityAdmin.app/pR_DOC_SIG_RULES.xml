@@ -1,0 +1,1397 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="AMSRefTableGridDisplay"
+	PositionTop="100"
+	PositionLeft="100"
+	PositionWidth="150"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="False"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSRefTableGridDisplayPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="563550337"
+	>
+	<FormCaption><![CDATA[Document Signature Rules]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="true"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+		<Property
+			Name="SSCaptionImageFileNm"
+			Value=""
+		/>
+	</ArchetypeExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="R_DOC_SIG_RULES"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGenericGridDisplayTabs"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="24" Name="SIG_RULE_ID" />
+				<RSDefaultAttribute ID="1" Name="DOC_CD" />
+				<RSDefaultAttribute ID="14" Name="GOVT_BRN_CD" />
+				<RSDefaultAttribute ID="15" Name="CAB_CD" />
+				<RSDefaultAttribute ID="13" Name="DEPT_CD" />
+				<RSDefaultAttribute ID="16" Name="DIV_CD" />
+				<RSDefaultAttribute ID="17" Name="GP_CD" />
+				<RSDefaultAttribute ID="18" Name="SECT_CD" />
+				<RSDefaultAttribute ID="19" Name="DSTC_CD" />
+				<RSDefaultAttribute ID="20" Name="BUR_CD" />
+				<RSDefaultAttribute ID="12" Name="UNIT_CD" />
+				<RSDefaultAttribute ID="4" Name="DOC_SIG_TYP" />
+				<RSDefaultAttribute ID="22" Name="EFBGN_DT" />
+				<RSDefaultAttribute ID="23" Name="EFEND_DT" />
+				<RSDefaultAttribute ID="26" Name="OR_COND_1" />
+				<RSDefaultAttribute ID="27" Name="OR_COND_2" />
+				<RSDefaultAttribute ID="28" Name="OR_COND_3" />
+				<RSDefaultAttribute ID="29" Name="OR_COND_4" />
+				<RSDefaultAttribute ID="30" Name="OR_COND_5" />
+				<RSDefaultAttribute ID="25" Name="SIG_RULE" />
+				<RSDefaultAttribute ID="3" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="5" Name="TBL_LAST_DT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_SIG_TYP" Displayed="True" UnPlaced="False" Archetype="ComboboxNoSpace" />
+				<RSAttribute Name="GOVT_BRN_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="CAB_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DEPT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DIV_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="GP_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SECT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DSTC_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="BUR_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="UNIT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="EFBGN_DT" Displayed="True" UnPlaced="False" Archetype="AMSDateChoiceCalendar" />
+				<RSAttribute Name="EFEND_DT" Displayed="True" UnPlaced="False" Archetype="AMSDateChoiceCalendar" />
+				<RSAttribute Name="OR_COND_1" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="OR_COND_2" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="OR_COND_3" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="OR_COND_4" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="OR_COND_5" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SIG_RULE" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyMemo" />
+				<RSAttribute Name="SIG_RULE_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="SIG_RULE_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DOC_SIG_TYP" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="GOVT_BRN_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="CAB_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DEPT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DIV_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="GP_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SECT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="DSTC_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="BUR_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="UNIT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="EFBGN_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="EFEND_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SIG_RULE" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OR_COND_1" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OR_COND_2" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OR_COND_3" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OR_COND_4" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="OR_COND_5" Displayed="False" UnPlaced="False" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxCSVRowsBeforeZip"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="DynamicGridAttrib"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCount"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCountMsg"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="OverrideNumRowsPerPage"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="ShowSearchPopup"
+				Value=""
+			/>
+			<Property
+				Name="UseDBHint"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value="%GOVT_BRN_CD%%DIV_CD%%DSTC_CD%%EFBGN_DT%%SIG_RULE%"
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="true"
+			/>
+			<Property
+				Name="ShowGridNav"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="SummaryCaption"
+				Value=""
+			/>
+			<Property
+				Name="Tab_10_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_10_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_11_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_11_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_12_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_12_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_13_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_13_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_14_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_14_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_15_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_15_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_16_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_16_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_17_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_17_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_18_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_18_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_19_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_19_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_1_Delimiter"
+				Value="%OR_COND_1%"
+			/>
+			<Property
+				Name="Tab_1_Name"
+				Value="Conditions"
+			/>
+			<Property
+				Name="Tab_20_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_20_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_2_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_2_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_3_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_3_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_4_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_4_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_5_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_5_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_6_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_6_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_7_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_7_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_8_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_8_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_9_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_9_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_Delimiter_Fields"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+		<PickObject
+			RSID="2"
+			Prefix="T2"
+			BusinessObject="R_DOC_CD"
+			Relationship="RDocSigRulesToRDocCD(R_DOC_CD)-RDocCDToRDocSigRules(R_DOC_SIG_RULES)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="True"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [DOC_CD] = [?DOC_CD]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="DOC_CD" />
+					<RSDefaultAttribute ID="2" Name="DOC_TYP" />
+					<RSDefaultAttribute ID="3" Name="DOC_CAT" />
+					<RSDefaultAttribute ID="4" Name="DOC_CD_NM" />
+					<RSDefaultAttribute ID="5" Name="DOC_CD_NM_UP" />
+					<RSDefaultAttribute ID="6" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="7" Name="TBL_LAST_DT" />
+				</DefaultAttributes>
+				<GridAttributes>
+					<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_TYP" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_CAT" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD_NM_UP" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="CustomPickFrame"
+					Value=""
+				/>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="EnableVirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="InitialBrowse"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value=""
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+				<Property
+					Name="TypeAheadDispCols"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+		<PickObject
+			RSID="3"
+			Prefix="T3"
+			BusinessObject="R_WF_APRV_COND"
+			Relationship="AprvCondToDocSigRules_1(R_WF_APRV_COND)-DocSigRulesToAprvCond_1(R_DOC_SIG_RULES)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [COND_ID] = [?OR_COND_1]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="COND_ID" />
+					<RSDefaultAttribute ID="2" Name="DOC_CD" />
+					<RSDefaultAttribute ID="3" Name="AND_COND_LHS_1" />
+					<RSDefaultAttribute ID="4" Name="AND_COND_OPR_1" />
+					<RSDefaultAttribute ID="5" Name="AND_COND_RHS_1" />
+					<RSDefaultAttribute ID="6" Name="AND_COND_LHS_2" />
+					<RSDefaultAttribute ID="7" Name="AND_COND_OPR_2" />
+					<RSDefaultAttribute ID="8" Name="AND_COND_RHS_2" />
+					<RSDefaultAttribute ID="9" Name="AND_COND_LHS_3" />
+					<RSDefaultAttribute ID="10" Name="AND_COND_OPR_3" />
+					<RSDefaultAttribute ID="11" Name="AND_COND_RHS_3" />
+					<RSDefaultAttribute ID="12" Name="AND_COND_LHS_4" />
+					<RSDefaultAttribute ID="13" Name="AND_COND_OPR_4" />
+					<RSDefaultAttribute ID="14" Name="AND_COND_RHS_4" />
+					<RSDefaultAttribute ID="15" Name="AND_COND_LHS_5" />
+					<RSDefaultAttribute ID="16" Name="AND_COND_OPR_5" />
+					<RSDefaultAttribute ID="17" Name="AND_COND_RHS_5" />
+					<RSDefaultAttribute ID="18" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="19" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="20" Name="AND_COND_TYP_1" />
+					<RSDefaultAttribute ID="21" Name="AND_COND_TYP_2" />
+					<RSDefaultAttribute ID="22" Name="AND_COND_TYP_3" />
+					<RSDefaultAttribute ID="23" Name="AND_COND_TYP_4" />
+					<RSDefaultAttribute ID="24" Name="AND_COND_TYP_5" />
+					<RSDefaultAttribute ID="25" Name="AND_COND_RHS_FLD_1" />
+					<RSDefaultAttribute ID="26" Name="AND_COND_RHS_FLD_2" />
+					<RSDefaultAttribute ID="27" Name="AND_COND_RHS_FLD_3" />
+					<RSDefaultAttribute ID="28" Name="AND_COND_RHS_FLD_4" />
+					<RSDefaultAttribute ID="29" Name="AND_COND_RHS_FLD_5" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="COND_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_5" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_5" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="COND_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_5" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_5" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="CustomPickFrame"
+					Value=""
+				/>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="EnableVirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="InitialBrowse"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value=""
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+				<Property
+					Name="TypeAheadDispCols"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+		<PickObject
+			RSID="4"
+			Prefix="T4"
+			BusinessObject="R_WF_APRV_COND"
+			Relationship="AprvCondToDocSigRules_2(R_WF_APRV_COND)-DocSigRulesToAprvCond_2(R_DOC_SIG_RULES)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [COND_ID] = [?OR_COND_2]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="COND_ID" />
+					<RSDefaultAttribute ID="2" Name="DOC_CD" />
+					<RSDefaultAttribute ID="3" Name="AND_COND_LHS_1" />
+					<RSDefaultAttribute ID="4" Name="AND_COND_OPR_1" />
+					<RSDefaultAttribute ID="5" Name="AND_COND_RHS_1" />
+					<RSDefaultAttribute ID="6" Name="AND_COND_LHS_2" />
+					<RSDefaultAttribute ID="7" Name="AND_COND_OPR_2" />
+					<RSDefaultAttribute ID="8" Name="AND_COND_RHS_2" />
+					<RSDefaultAttribute ID="9" Name="AND_COND_LHS_3" />
+					<RSDefaultAttribute ID="10" Name="AND_COND_OPR_3" />
+					<RSDefaultAttribute ID="11" Name="AND_COND_RHS_3" />
+					<RSDefaultAttribute ID="12" Name="AND_COND_LHS_4" />
+					<RSDefaultAttribute ID="13" Name="AND_COND_OPR_4" />
+					<RSDefaultAttribute ID="14" Name="AND_COND_RHS_4" />
+					<RSDefaultAttribute ID="15" Name="AND_COND_LHS_5" />
+					<RSDefaultAttribute ID="16" Name="AND_COND_OPR_5" />
+					<RSDefaultAttribute ID="17" Name="AND_COND_RHS_5" />
+					<RSDefaultAttribute ID="18" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="19" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="20" Name="AND_COND_TYP_1" />
+					<RSDefaultAttribute ID="21" Name="AND_COND_TYP_2" />
+					<RSDefaultAttribute ID="22" Name="AND_COND_TYP_3" />
+					<RSDefaultAttribute ID="23" Name="AND_COND_TYP_4" />
+					<RSDefaultAttribute ID="24" Name="AND_COND_TYP_5" />
+					<RSDefaultAttribute ID="25" Name="AND_COND_RHS_FLD_1" />
+					<RSDefaultAttribute ID="26" Name="AND_COND_RHS_FLD_2" />
+					<RSDefaultAttribute ID="27" Name="AND_COND_RHS_FLD_3" />
+					<RSDefaultAttribute ID="28" Name="AND_COND_RHS_FLD_4" />
+					<RSDefaultAttribute ID="29" Name="AND_COND_RHS_FLD_5" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="COND_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_5" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_5" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="COND_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_5" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_5" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="CustomPickFrame"
+					Value=""
+				/>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="EnableVirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="InitialBrowse"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value=""
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+				<Property
+					Name="TypeAheadDispCols"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+		<PickObject
+			RSID="5"
+			Prefix="T5"
+			BusinessObject="R_WF_APRV_COND"
+			Relationship="AprvCondToDocSigRules_3(R_WF_APRV_COND)-DocSigRulesToAprvCond_3(R_DOC_SIG_RULES)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [COND_ID] = [?OR_COND_3]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="COND_ID" />
+					<RSDefaultAttribute ID="2" Name="DOC_CD" />
+					<RSDefaultAttribute ID="3" Name="AND_COND_LHS_1" />
+					<RSDefaultAttribute ID="4" Name="AND_COND_OPR_1" />
+					<RSDefaultAttribute ID="5" Name="AND_COND_RHS_1" />
+					<RSDefaultAttribute ID="6" Name="AND_COND_LHS_2" />
+					<RSDefaultAttribute ID="7" Name="AND_COND_OPR_2" />
+					<RSDefaultAttribute ID="8" Name="AND_COND_RHS_2" />
+					<RSDefaultAttribute ID="9" Name="AND_COND_LHS_3" />
+					<RSDefaultAttribute ID="10" Name="AND_COND_OPR_3" />
+					<RSDefaultAttribute ID="11" Name="AND_COND_RHS_3" />
+					<RSDefaultAttribute ID="12" Name="AND_COND_LHS_4" />
+					<RSDefaultAttribute ID="13" Name="AND_COND_OPR_4" />
+					<RSDefaultAttribute ID="14" Name="AND_COND_RHS_4" />
+					<RSDefaultAttribute ID="15" Name="AND_COND_LHS_5" />
+					<RSDefaultAttribute ID="16" Name="AND_COND_OPR_5" />
+					<RSDefaultAttribute ID="17" Name="AND_COND_RHS_5" />
+					<RSDefaultAttribute ID="18" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="19" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="20" Name="AND_COND_TYP_1" />
+					<RSDefaultAttribute ID="21" Name="AND_COND_TYP_2" />
+					<RSDefaultAttribute ID="22" Name="AND_COND_TYP_3" />
+					<RSDefaultAttribute ID="23" Name="AND_COND_TYP_4" />
+					<RSDefaultAttribute ID="24" Name="AND_COND_TYP_5" />
+					<RSDefaultAttribute ID="25" Name="AND_COND_RHS_FLD_1" />
+					<RSDefaultAttribute ID="26" Name="AND_COND_RHS_FLD_2" />
+					<RSDefaultAttribute ID="27" Name="AND_COND_RHS_FLD_3" />
+					<RSDefaultAttribute ID="28" Name="AND_COND_RHS_FLD_4" />
+					<RSDefaultAttribute ID="29" Name="AND_COND_RHS_FLD_5" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="COND_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_5" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_5" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="COND_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_5" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_5" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="CustomPickFrame"
+					Value=""
+				/>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="EnableVirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="InitialBrowse"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value=""
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+				<Property
+					Name="TypeAheadDispCols"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+		<PickObject
+			RSID="6"
+			Prefix="T6"
+			BusinessObject="R_WF_APRV_COND"
+			Relationship="AprvCondToDocSigRules_4(R_WF_APRV_COND)-DocSigRulesToAprvCond_4(R_DOC_SIG_RULES)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [COND_ID] = [?OR_COND_4]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="COND_ID" />
+					<RSDefaultAttribute ID="2" Name="DOC_CD" />
+					<RSDefaultAttribute ID="3" Name="AND_COND_LHS_1" />
+					<RSDefaultAttribute ID="4" Name="AND_COND_OPR_1" />
+					<RSDefaultAttribute ID="5" Name="AND_COND_RHS_1" />
+					<RSDefaultAttribute ID="6" Name="AND_COND_LHS_2" />
+					<RSDefaultAttribute ID="7" Name="AND_COND_OPR_2" />
+					<RSDefaultAttribute ID="8" Name="AND_COND_RHS_2" />
+					<RSDefaultAttribute ID="9" Name="AND_COND_LHS_3" />
+					<RSDefaultAttribute ID="10" Name="AND_COND_OPR_3" />
+					<RSDefaultAttribute ID="11" Name="AND_COND_RHS_3" />
+					<RSDefaultAttribute ID="12" Name="AND_COND_LHS_4" />
+					<RSDefaultAttribute ID="13" Name="AND_COND_OPR_4" />
+					<RSDefaultAttribute ID="14" Name="AND_COND_RHS_4" />
+					<RSDefaultAttribute ID="15" Name="AND_COND_LHS_5" />
+					<RSDefaultAttribute ID="16" Name="AND_COND_OPR_5" />
+					<RSDefaultAttribute ID="17" Name="AND_COND_RHS_5" />
+					<RSDefaultAttribute ID="18" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="19" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="20" Name="AND_COND_TYP_1" />
+					<RSDefaultAttribute ID="21" Name="AND_COND_TYP_2" />
+					<RSDefaultAttribute ID="22" Name="AND_COND_TYP_3" />
+					<RSDefaultAttribute ID="23" Name="AND_COND_TYP_4" />
+					<RSDefaultAttribute ID="24" Name="AND_COND_TYP_5" />
+					<RSDefaultAttribute ID="25" Name="AND_COND_RHS_FLD_1" />
+					<RSDefaultAttribute ID="26" Name="AND_COND_RHS_FLD_2" />
+					<RSDefaultAttribute ID="27" Name="AND_COND_RHS_FLD_3" />
+					<RSDefaultAttribute ID="28" Name="AND_COND_RHS_FLD_4" />
+					<RSDefaultAttribute ID="29" Name="AND_COND_RHS_FLD_5" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="COND_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_5" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_5" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="COND_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_5" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_5" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="CustomPickFrame"
+					Value=""
+				/>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="EnableVirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="InitialBrowse"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value=""
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+				<Property
+					Name="TypeAheadDispCols"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+		<PickObject
+			RSID="7"
+			Prefix="T7"
+			BusinessObject="R_WF_APRV_COND"
+			Relationship="AprvCondToDocSigRules_5(R_WF_APRV_COND)-DocSigRulesToAprvCond_5(R_DOC_SIG_RULES)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="False"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [COND_ID] = [?OR_COND_5]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="COND_ID" />
+					<RSDefaultAttribute ID="2" Name="DOC_CD" />
+					<RSDefaultAttribute ID="3" Name="AND_COND_LHS_1" />
+					<RSDefaultAttribute ID="4" Name="AND_COND_OPR_1" />
+					<RSDefaultAttribute ID="5" Name="AND_COND_RHS_1" />
+					<RSDefaultAttribute ID="6" Name="AND_COND_LHS_2" />
+					<RSDefaultAttribute ID="7" Name="AND_COND_OPR_2" />
+					<RSDefaultAttribute ID="8" Name="AND_COND_RHS_2" />
+					<RSDefaultAttribute ID="9" Name="AND_COND_LHS_3" />
+					<RSDefaultAttribute ID="10" Name="AND_COND_OPR_3" />
+					<RSDefaultAttribute ID="11" Name="AND_COND_RHS_3" />
+					<RSDefaultAttribute ID="12" Name="AND_COND_LHS_4" />
+					<RSDefaultAttribute ID="13" Name="AND_COND_OPR_4" />
+					<RSDefaultAttribute ID="14" Name="AND_COND_RHS_4" />
+					<RSDefaultAttribute ID="15" Name="AND_COND_LHS_5" />
+					<RSDefaultAttribute ID="16" Name="AND_COND_OPR_5" />
+					<RSDefaultAttribute ID="17" Name="AND_COND_RHS_5" />
+					<RSDefaultAttribute ID="18" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="19" Name="TBL_LAST_DT" />
+					<RSDefaultAttribute ID="20" Name="AND_COND_TYP_1" />
+					<RSDefaultAttribute ID="21" Name="AND_COND_TYP_2" />
+					<RSDefaultAttribute ID="22" Name="AND_COND_TYP_3" />
+					<RSDefaultAttribute ID="23" Name="AND_COND_TYP_4" />
+					<RSDefaultAttribute ID="24" Name="AND_COND_TYP_5" />
+					<RSDefaultAttribute ID="25" Name="AND_COND_RHS_FLD_1" />
+					<RSDefaultAttribute ID="26" Name="AND_COND_RHS_FLD_2" />
+					<RSDefaultAttribute ID="27" Name="AND_COND_RHS_FLD_3" />
+					<RSDefaultAttribute ID="28" Name="AND_COND_RHS_FLD_4" />
+					<RSDefaultAttribute ID="29" Name="AND_COND_RHS_FLD_5" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="COND_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_5" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_5" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="COND_ID" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="DOC_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_1" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_2" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_3" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_4" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_LHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_OPR_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_5" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_TYP_5" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_1" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_2" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_3" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_4" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AND_COND_RHS_FLD_5" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="CustomPickFrame"
+					Value=""
+				/>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="EnableVirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="InitialBrowse"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value=""
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+				<Property
+					Name="TypeAheadDispCols"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+	</RecordSource>
+</Form>

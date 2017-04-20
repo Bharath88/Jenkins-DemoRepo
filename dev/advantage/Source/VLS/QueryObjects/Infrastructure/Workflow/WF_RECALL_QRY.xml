@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0351523090.ssurabhi.0007"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="False"
+	ChildMostDataObject="WF_APRV_SH"
+	DistinctRowsOnly="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[SELECT WF_APRV_SH.DOC_CD AS DOC_CD, WF_APRV_SH.DOC_DEPT_CD AS DOC_DEPT_CD, WF_APRV_SH.DOC_ID AS DOC_ID, WF_APRV_SH.DOC_VERS_NO AS DOC_VERS_NO, WF_APRV_SH.SEQ_NO AS SEQ_NO, WF_APRV_SH.STRT_DT AS STRT_DT, WF_APRV_SH.SBMT_ID AS SBMT_ID, WF_APRV_SH.LAST_ACTN_USID AS LAST_ACTN_USID, WF_APRV_SH.LAST_ACTN_STA AS LAST_ACTN_STA, WF_APRV_SH.LAST_ACTN_APRV_LVL AS LAST_ACTN_APRV_LVL, WF_APRV_SH.DOC_TYP AS DOC_TYP, WF_APRV_SH.DOC_CAT AS DOC_CAT, DOC_HDR.DOC_PHASE_CD AS DOC_PHASE_CD FROM <dbschema>.DOC_HDR DOC_HDR, <dbschema>.WF_APRV_SH WF_APRV_SH  WHERE DOC_HDR.DOC_CD = WF_APRV_SH.DOC_CD  AND DOC_HDR.DOC_DEPT_CD = WF_APRV_SH.DOC_DEPT_CD  AND DOC_HDR.DOC_ID = WF_APRV_SH.DOC_ID  AND DOC_HDR.DOC_VERS_NO = WF_APRV_SH.DOC_VERS_NO  AND  DOC_HDR.DOC_PHASE_CD = 2 AND WF_APRV_SH.LAST_ACTN_STA = 1 AND WF_APRV_SH.SEQ_NO = 1  ]]></RuntimeSql>
+	<Description><![CDATA[Get Approval sheet records for Pending documents where the logged in User had latest approved the document(some WHERE clause conditions added during doAction method in AMSWorklistPage.java).]]></Description>
+	<Where><![CDATA[DOC_HDR.DOC_PHASE_CD = 2 AND WF_APRV_SH.LAST_ACTN_STA = 1 AND WF_APRV_SH.SEQ_NO = 1]]></Where>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="DOC_HDR"
+			Alias="DOC_HDR"
+		/>
+
+		<DataObject
+			DataObjectName="WF_APRV_SH"
+			Alias="WF_APRV_SH"
+		/>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="DOC_CD"
+			Alias="DOC_CD"
+			AggregationType="None"
+			SourceDataObject="WF_APRV_SH"
+			Persistent="True"
+			IdentityColumnsElement="True"
+		/>
+
+		<Attribute
+			Name="DOC_DEPT_CD"
+			Alias="DOC_DEPT_CD"
+			AggregationType="None"
+			SourceDataObject="WF_APRV_SH"
+			Persistent="True"
+			IdentityColumnsElement="True"
+		/>
+
+		<Attribute
+			Name="DOC_ID"
+			Alias="DOC_ID"
+			AggregationType="None"
+			SourceDataObject="WF_APRV_SH"
+			Persistent="True"
+			IdentityColumnsElement="True"
+		/>
+
+		<Attribute
+			Name="DOC_VERS_NO"
+			Alias="DOC_VERS_NO"
+			AggregationType="None"
+			SourceDataObject="WF_APRV_SH"
+			Persistent="True"
+			IdentityColumnsElement="True"
+		/>
+
+		<Attribute
+			Name="SEQ_NO"
+			Alias="SEQ_NO"
+			AggregationType="None"
+			SourceDataObject="WF_APRV_SH"
+			Persistent="True"
+			IdentityColumnsElement="True"
+		/>
+
+		<Attribute
+			Name="STRT_DT"
+			Alias="STRT_DT"
+			AggregationType="None"
+			SourceDataObject="WF_APRV_SH"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="SBMT_ID"
+			Alias="SBMT_ID"
+			AggregationType="None"
+			SourceDataObject="WF_APRV_SH"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="LAST_ACTN_USID"
+			Alias="LAST_ACTN_USID"
+			AggregationType="None"
+			SourceDataObject="WF_APRV_SH"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="LAST_ACTN_STA"
+			Alias="LAST_ACTN_STA"
+			AggregationType="None"
+			SourceDataObject="WF_APRV_SH"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="LAST_ACTN_APRV_LVL"
+			Alias="LAST_ACTN_APRV_LVL"
+			AggregationType="None"
+			SourceDataObject="WF_APRV_SH"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DOC_TYP"
+			Alias="DOC_TYP"
+			AggregationType="None"
+			SourceDataObject="WF_APRV_SH"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DOC_CAT"
+			Alias="DOC_CAT"
+			AggregationType="None"
+			SourceDataObject="WF_APRV_SH"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DOC_PHASE_CD"
+			Alias="DOC_PHASE_CD"
+			AggregationType="None"
+			SourceDataObject="DOC_HDR"
+			Persistent="True"
+		/>
+
+	</Attributes>
+	<Joins
+		LeftDataObject="DOC_HDR"
+		RightDataObject="WF_APRV_SH"
+		JoinType="Equal"
+		>
+		<ColumnSet
+			LeftAttribute="DOC_HDR.DOC_CD"
+			RightAttribute="WF_APRV_SH.DOC_CD"
+		/>
+		<ColumnSet
+			LeftAttribute="DOC_HDR.DOC_DEPT_CD"
+			RightAttribute="WF_APRV_SH.DOC_DEPT_CD"
+		/>
+		<ColumnSet
+			LeftAttribute="DOC_HDR.DOC_ID"
+			RightAttribute="WF_APRV_SH.DOC_ID"
+		/>
+		<ColumnSet
+			LeftAttribute="DOC_HDR.DOC_VERS_NO"
+			RightAttribute="WF_APRV_SH.DOC_VERS_NO"
+		/>
+	</Joins>
+
+</QueryObject>

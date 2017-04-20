@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		ParentRoleName="VDocMsgToMsg"
+		ChildRoleName="MsgToVDocMsg"
+		IsEnforce="True"
+		OnParentDelete="DeleteChildren"
+		OnParentUpdate="UpdateChildren"
+		>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="MSG_CD"
+				ChildAttribute="MSG_CD"
+			/>
+		</AttributePairs>
+		<AscendCaption><![CDATA[R_MSG]]></AscendCaption>
+		<DescendCaption><![CDATA[V_DOC_MSG(s)]]></DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[%c:A761,v:[b:V_DOC_MSG/MSG_CD],v:[b:R_MSG/MSG_CD] table%]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+	</Relationship>
+</Relationships>

@@ -1,0 +1,463 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Statement Rows</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="CAFR" method="post" vsform="true" name="pRefSTMTROW">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Statement Rows">Statement Rows</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="CAFR" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+  <a name="rs01STMT_DEF_Top"></a>
+  
+  
+  
+  <input type="hidden" name="rs01STMT_DEF_Currency" >
+  <input type="hidden" name="rs01STMT_DEF_Old_Currency" >
+  <table name="tblrs01STMT_DEF" id="tblrs01STMT_DEF" class="advgrid" vsds="rs01STMT_DEF">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs01STMT_DEF" 
+    vsdf="STMT_FY"
+ name="rs01STMT_FYsort" id="rs01STMT_FYsort" title="Sort By Fiscal Year">Fiscal Year</a></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs01STMT_DEF" 
+    vsdf="STMT_CD"
+ name="rs01STMT_CDsort" id="rs01STMT_CDsort" title="Sort By Statement Code">Statement Code</a></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs01STMT_DEF" 
+    vsdf="STMT_NM_UP"
+ name="rs01STMT_NMsort" id="rs01STMT_NMsort" title="Sort By Statement Name">Statement Name</a></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr class="advgridoddrow" onclick="UTILS_SelectGridRow(this);return true;" ams_altclassname="advgridevenrow" vsprototyperow="true">
+      <td class="advgridrowselect">
+        <input type="image" name="rs01STMT_DEFvscurrency" id="rs01STMT_DEFvscurrency" title="Select Row" alt="Select Row" src="../AMSImages/ADVRowSel.gif"
+ vsds="rs01STMT_DEF" vsaction="Currency">
+      </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtrs01STMT_FY" vsds="rs01STMT_DEF" vsdf="STMT_FY" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtrs01STMT_CD" vsds="rs01STMT_DEF" vsdf="STMT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtrs01STMT_NM" vsds="rs01STMT_DEF" vsdf="STMT_NM" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="rs01STMT_DEFGridNav" id="rs01STMT_DEFGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="CAFR" vsds="rs01STMT_DEF" vsaction="firstpage" name="rs01STMT_DEFfirstpage" id="rs01STMT_DEFfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="CAFR" vsds="rs01STMT_DEF" vsaction="prevpage" name="rs01STMT_DEFprevpage" id="rs01STMT_DEFprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="CAFR" vsds="rs01STMT_DEF" vsaction="nextpage" id="rs01STMT_DEFnextpage" name="rs01STMT_DEFnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="CAFR" vsds="rs01STMT_DEF" vsaction="lastpage" id="rs01STMT_DEFlastpage" name="rs01STMT_DEFlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+  
+  
+
+  <table class="advaction recsrc">
+    <tr>
+	  <!-- BEGIN CUSTOMIZATION -->
+      <!-- td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+   
+      <a href="CAFR" vsds="rs01STMT_DEF" vsaction="saveall" name="rs01STMT_DEFSaveAll" id="rs01STMT_DEFSaveAll" title="Save All" accesskey="5">Save</a>
+   
+      <a href="CAFR" vsds="rs01STMT_DEF" vsaction="undoall" name="rs01STMT_DEFUndoAll" id="rs01STMT_DEFUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+      <a href="CAFR" vsds="rs01STMT_DEF" vsaction="delete" id="Indexrs01STMT_DEFdelete" name="rs01STMT_DEFdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="CAFR" vsds="rs01STMT_DEF" vsaction="insert" id="rs01STMT_DEFinsert" name="rs01STMT_DEFinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="CAFR" vsds="rs01STMT_DEF" vsaction="11" name="rs01STMT_DEFCopyRecord" id="rs01STMT_DEFCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="CAFR" vsds="rs01STMT_DEF" vsaction="12" name="rs01STMT_DEFPasteLine" id="rs01STMT_DEFPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td-->
+	  <!-- END CUSTOMIZATION -->      
+   
+      <td><vstext vsds=" " name="rs01STMT_DEFSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtrs01STMT_FY" title="Fiscal Year">Fiscal Year :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtrs01STMT_FY" id="txtrs01STMT_FY" 
+               size="10"
+ vsds="rs01STMT_DEF" vsdf="STMT_FY" 
+               ams_max_len="10"
+ ShowCodeInfo="" title="Fiscal Year" value="STMT_FY"></div>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtrs01STMT_CD" title="Statement Code">Statement Code :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtrs01STMT_CD" id="txtrs01STMT_CD" 
+               size="15"
+ vsds="rs01STMT_DEF" vsdf="STMT_CD" 
+         ams_max_len="10"
+ ShowCodeInfo="" title="Statement Code" value="STMT_CD"></div>
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtrs01STMT_NM_UP" title="Statement Name">Statement Name :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtrs01STMT_NM_UP" id="txtrs01STMT_NM_UP" 
+               size="20"
+ vsds="rs01STMT_DEF" vsdf="STMT_NM_UP" 
+         ams_max_len="100"
+ ShowCodeInfo="" title="Statement Name" value="STMT_NM_UP"></div>
+        </td>
+      </tr>
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'rs01STMT_DEF', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'STMT_FY' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Fiscal Year' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'STMT_CD' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Statement Code' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'STMT_NM' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Statement Name' ;
+  -->
+  </script>
+ 
+
+  <input type="hidden" name="rs02STMT_ROW_Currency" value="">
+  <input type="hidden" name="rs02STMT_ROW_Old_Currency" value="">
+  
+  
+  
+  <table name="tblrs02STMT_ROW" id="tblrs02STMT_ROW" class="advgrid" vsds="rs02STMT_ROW">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs02STMT_ROW" 
+    vsdf="STMT_ROW"
+ name="rs02STMT_ROWsort" id="rs02STMT_ROWsort" title="Sort By Statement Row">Statement Row</a></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs02STMT_ROW" 
+    vsdf="ROW_TITLE_UP"
+ name="rs02ROW_TITLEsort" id="rs02ROW_TITLEsort" title="Sort By Row Title">Row Title</a></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs02STMT_ROW" 
+    vsdf="ROW_LEVEL"
+ name="rs02ROW_LEVELsort" id="rs02ROW_LEVELsort" title="Sort By Row Level">Row Level</a></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs02STMT_ROW" 
+    vsdf="ROW_TYPE"
+ name="rs02ROW_TYPEsort" id="rs02ROW_TYPEsort" title="Sort By Row Type">Row Type</a></th>
+      
+        <th 
+><a href="CAFR" vsaction="sort" vsds="rs02STMT_ROW" 
+    vsdf="SEQ_NO"
+ name="rs02SEQ_NOsort" id="rs02SEQ_NOsort" title="Sort By Sequence No">Sequence No</a></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="rs02STMT_ROWvscurrency" id="rs02STMT_ROWvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="rs02STMT_ROW" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td>
+          <input type="text" name="txtrs02STMT_ROW" 
+         size="6"
+      maxlength="6"
+ value="STMT_ROW" vsds="rs02STMT_ROW" vsdf="STMT_ROW" 
+ ShowCodeInfo="" title="Statement Row"
+>
+        </td>
+      
+        <td>
+          <input type="text" name="txtrs02ROW_TITLE" size="100" maxlength="100" value="ROW_TITLE" vsds="rs02STMT_ROW" vsdf="ROW_TITLE" ShowCodeInfo="" vsformat="" oncontextmenu="if(event.ctrlKey){FRMPopUp_setColReference(document.pRefSTMTROW.txtrs02ROW_TITLE); return false;}" title="Row Title">
+        </td>
+      
+        <td>
+          <input type="text" name="txtrs02ROW_LEVEL" 
+            size="10"
+            maxlength="10"
+ value="ROW_LEVEL" vsds="rs02STMT_ROW" vsdf="ROW_LEVEL" 
+ ShowCodeInfo="" title="Row Level"
+      class="right"
+>
+        </td>
+      
+        <td>
+          <select name="txtrs02ROW_TYPE" vsds="rs02STMT_ROW" vsdf="ROW_TYPE" size="1" vscodetable="CVL_ROW_FORMULA" ShowCodeInfo="" title="Row Type">
+            <option value="JADEStored">JADEDisplayed</option>
+          </select>
+        </td>
+      
+        <td>
+          <input type="text" name="txtrs02SEQ_NO" 
+            size="10"
+            maxlength="10"
+ value="SEQ_NO" vsds="rs02STMT_ROW" vsdf="SEQ_NO" 
+ ShowCodeInfo="" title="Sequence No"
+      class="right"
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+    <td><ams_map title="Update Actions" name="Update Actions">
+	<!-- BEGIN CUSTOMIZATION -->
+<a href="CAFR" vsds="rs02STMT_ROW" vsaction="saveall" name="rs02STMT_ROWSaveAll" id="rs02STMT_ROWSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="CAFR" vsds="rs02STMT_ROW" vsaction="undoall" name="rs02STMT_ROWUndoAll" id="rs02STMT_ROWUndoAll" title="Undo All" accesskey="6">Undo</a>
+	<!-- END CUSTOMIZATION -->
+<a href="CAFR" vsds="rs02STMT_ROW" vsaction="delete" id="rs02STMT_ROWdelete" name="rs02STMT_ROWdelete" title="Delete Selected Row" accesskey="7">Delete</a>
+<a href="CAFR" vsds="rs02STMT_ROW" vsaction="insert" id="rs02STMT_ROWinsert" name="rs02STMT_ROWinsert" title="Insert New Row" accesskey="I">Insert</a>
+    </ams_map></td>
+      
+  <td><ams_map title="Copy/Paste" name="Copy/Paste">
+<a href="CAFR" vsds="rs02STMT_ROW" vsaction="11" name="rs02STMT_ROWCopyLine" id="rs02STMT_ROWCopyLine" title="Copy Selected Row" accesskey="C">Copy</a>
+<a href="CAFR" vsds="rs02STMT_ROW" vsaction="12" name="rs02STMT_ROWPasteLine" id="rs02STMT_ROWPasteLine" title="Paste Copied Row" accesskey="8">Paste</a>
+  </ams_map></td>
+      
+<td><div name="rs02STMT_ROWGridNav" id="rs02STMT_ROWGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="CAFR" vsds="rs02STMT_ROW" vsaction="firstpage" name="rs02STMT_ROWfirstpage" id="rs02STMT_ROWfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="CAFR" vsds="rs02STMT_ROW" vsaction="prevpage" name="rs02STMT_ROWprevpage" id="rs02STMT_ROWprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="CAFR" vsds="rs02STMT_ROW" vsaction="nextpage" id="rs02STMT_ROWnextpage" name="rs02STMT_ROWnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="CAFR" vsds="rs02STMT_ROW" vsaction="lastpage" id="rs02STMT_ROWlastpage" name="rs02STMT_ROWlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+	<!-- BEGIN CUSTOMIZATION -->      
+      <td><vstext vsds=" " name="rs02STMT_ROWSearchColList" vspreservetag="true"></td>      
+	<!-- END CUSTOMIZATION -->      
+    </tr>
+  </table>
+
+	<!-- BEGIN CUSTOMIZATION -->      
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtrs02STMT_ROW" title="Statement Row">Statement Row :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtrs02STMT_ROW" id="txtrs02STMT_ROW" 
+               size="6"
+ vsds="rs02STMT_ROW" vsdf="STMT_ROW" 
+               ams_max_len="6"
+ ShowCodeInfo="" title="Statement Row" value="STMT_ROW"></div>
+        </td>
+      </tr>
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtrs02ROW_TITLE_UP" title="Row Title">Row Title :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtrs02ROW_TITLE_UP" id="txtrs02ROW_TITLE_UP" 
+               size="20"
+ vsds="rs02STMT_ROW" vsdf="ROW_TITLE_UP" 
+         ams_max_len="100"
+ ShowCodeInfo="" title="Row Title" value="ROW_TITLE_UP"></div>
+        </td>
+      </tr>
+    
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtrs02SEQ_NO" title="Sequence No">Sequence No :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtrs02SEQ_NO" id="txtrs02SEQ_NO" 
+               size="15"
+ vsds="rs02STMT_ROW" vsdf="SEQ_NO" 
+         ams_max_len="10"
+ ShowCodeInfo="" title="Sequence No" value="SEQ_NO"></div>
+        </td>
+      </tr>
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+	<!-- END CUSTOMIZATION -->      
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+   
+        <a name="btnT1pRefSTMTDEF" href="CAFR" vsaction="pagetransition" id="btnT1pRefSTMTDEF" vsds="(None)" vsnavigation="T1pRefSTMTDEF" title="Navigation to Statement Definition">Statement Definition</a>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'rs02STMT_ROW', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'STMT_ROW' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Statement Row' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'ROW_TITLE' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Row Title' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'ROW_LEVEL' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Row Level' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'ROW_TYPE' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Row Type' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'SEQ_NO' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Sequence No' ;
+  -->
+  </script>
+ 
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="CAFR" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

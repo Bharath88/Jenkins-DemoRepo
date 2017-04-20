@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<!DOCTYPE QueryObject SYSTEM "QueryObject.dtd">
+<QueryObject
+	SurrId="0351523090.ssurabhi.0002"
+	IsRemoteAccessible="False"
+	SqlDialect="SQLStandard"
+	SuperClass="AMSQueryObject"
+	SqlTextModified="False"
+	ChildMostDataObject="IN_PAGES"
+	DistinctRowsOnly="False"
+	DTDVersion="05.06.01"
+	>
+	<RuntimeSql><![CDATA[SELECT IN_PAGES.APPL_NM AS APPL_NM, IN_PAGES.DEST_PG AS DEST_PG, IN_PAGES.DEST_FRAMESET AS DEST_FRAMESET, IN_PAGES.DEST_FRAME AS DEST_FRAME, IN_PAGES.TARGET_FRAME AS TARGET_FRAME, IN_PAGES.HLP_SUB_DIR AS HLP_SUB_DIR, IN_PAGES.HLP_FILE_NM AS HLP_FILE_NM FROM <dbschema>.IN_PAGES IN_PAGES ]]></RuntimeSql>
+	<Description><![CDATA[]]></Description>
+	<Comments><![CDATA[]]></Comments>
+	<Where><![CDATA[]]></Where>
+	<Having><![CDATA[]]></Having>
+
+	<DataObjects>
+		<DataObject
+			DataObjectName="IN_PAGES"
+			Alias="IN_PAGES"
+			>
+			<Description><![CDATA[ ]]></Description>
+		</DataObject>
+
+	</DataObjects>
+	<Attributes>
+		<Attribute
+			Name="APPL_NM"
+			Alias="APPL_NM"
+			AggregationType="None"
+			SourceDataObject="IN_PAGES"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DEST_PG"
+			Alias="DEST_PG"
+			AggregationType="None"
+			SourceDataObject="IN_PAGES"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DEST_FRAMESET"
+			Alias="DEST_FRAMESET"
+			AggregationType="None"
+			SourceDataObject="IN_PAGES"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="DEST_FRAME"
+			Alias="DEST_FRAME"
+			AggregationType="None"
+			SourceDataObject="IN_PAGES"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="TARGET_FRAME"
+			Alias="TARGET_FRAME"
+			AggregationType="None"
+			SourceDataObject="IN_PAGES"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="HLP_SUB_DIR"
+			Alias="HLP_SUB_DIR"
+			AggregationType="None"
+			SourceDataObject="IN_PAGES"
+			Persistent="True"
+		/>
+
+		<Attribute
+			Name="HLP_FILE_NM"
+			Alias="HLP_FILE_NM"
+			AggregationType="None"
+			SourceDataObject="IN_PAGES"
+			Persistent="True"
+		/>
+
+	</Attributes>
+	<RelsToChildDataObjects>
+		<RelToChildDO
+			RelToChildDO="IN_PAGES(IN_PAGES)-IN_LEAF(IN_LEAF)"
+		>
+			<Aliases>
+				<Alias
+					Name="IN_PAGES"
+				>
+					<AttributePairs>
+				<AttributePair
+							ParentAttribute="APPL_NM"
+							ChildAttribute="APPL_NM"
+							/>
+				<AttributePair
+							ParentAttribute="DEST_PG"
+							ChildAttribute="PG_NM"
+							/>
+					</AttributePairs>
+				</Alias>
+			</Aliases>
+		</RelToChildDO>
+	</RelsToChildDataObjects>
+
+	<PickSupportedRels>
+		<PickSupportedRel
+			PickSupportedRel="IN_PAGES(IN_PAGES)-IN_BF_ITEM(IN_BF_ITEM)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="IN_PAGES(IN_PAGES)-IN_FAV(IN_FAV)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="IN_PAGES(IN_PAGES)-IN_HMPG_WIN(IN_HMPG_WIN)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="IN_PAGES(IN_PAGES)-IN_LEAF_CTXT(IN_LEAF_CTXT)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="IN_PAGES(IN_PAGES)-IN_LEAF(IN_LEAF)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="IN_PAGES(IN_PAGES)-IN_NODE(IN_NODE)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="RInfrValdStpInPages(IN_PAGES)-InPagesRInfrValdStp(R_INFR_VALD_STP)"
+		/>
+		<PickSupportedRel
+			PickSupportedRel="IN_PAGES(IN_PAGES)-R_PREF_SETUP(R_PREF_SETUP)"
+		/>
+	</PickSupportedRels >
+
+</QueryObject>

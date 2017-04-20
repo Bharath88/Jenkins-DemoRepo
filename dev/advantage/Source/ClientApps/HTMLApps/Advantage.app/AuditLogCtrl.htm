@@ -1,0 +1,285 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Setup Audit Log and External Notification</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="AuditLogCtrl">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Setup Audit Log and External Notification">Setup Audit Log and External Notification</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+
+
+  <a name="T1IN_AUD_LOG_CTL_Top"></a>
+
+
+
+  <input type="hidden" name="T1IN_AUD_LOG_CTL_Currency" value="">
+  <input type="hidden" name="T1IN_AUD_LOG_CTL_Old_Currency" value="">
+  <table name="tblT1IN_AUD_LOG_CTL" id="tblT1IN_AUD_LOG_CTL" class="advgrid" vsds="T1IN_AUD_LOG_CTL">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><span id="T1PROC_RSRC_NMsortGridLabel" name="T1PROC_RSRC_NMsortGridLabel" title="Resource Name">Resource Name</span></th>
+
+        <th
+><span id="T1ENABLEsortGridLabel" name="T1ENABLEsortGridLabel" title="Audit Enabled">Audit Enabled</span></th>
+
+        <th
+><span id="T1EXTRNL_NOTIFCN_FLsortGridLabel" name="T1EXTRNL_NOTIFCN_FLsortGridLabel" title="External Notification">External Notification</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IN_AUD_LOG_CTLvscurrency" id="T1IN_AUD_LOG_CTLvscurrency" title="Select Row" alt="Select Row" vsds="T1IN_AUD_LOG_CTL" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td
+
+>
+          <vstext name="txtT1PROC_RSRC_NM" vsds="T1IN_AUD_LOG_CTL" vsdf="PROC_RSRC_NM"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1ENABLE" vsds="T1IN_AUD_LOG_CTL" vsdf="ENABLE"
+    vsformat="Yes/No"
+>
+        </td>
+
+        <td
+
+>
+          <vstext name="txtT1EXTRNL_NOTIFCN_FL" vsds="T1IN_AUD_LOG_CTL" vsdf="EXTRNL_NOTIFCN_FL"
+    vsformat="Yes/No"
+>
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+<td><div name="T1IN_AUD_LOG_CTLGridNav" id="T1IN_AUD_LOG_CTLGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Advantage" vsds="T1IN_AUD_LOG_CTL" vsaction="firstpage" name="T1IN_AUD_LOG_CTLfirstpage" id="T1IN_AUD_LOG_CTLfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Advantage" vsds="T1IN_AUD_LOG_CTL" vsaction="prevpage" name="T1IN_AUD_LOG_CTLprevpage" id="T1IN_AUD_LOG_CTLprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Advantage" vsds="T1IN_AUD_LOG_CTL" vsaction="nextpage" id="T1IN_AUD_LOG_CTLnextpage" name="T1IN_AUD_LOG_CTLnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Advantage" vsds="T1IN_AUD_LOG_CTL" vsaction="lastpage" id="T1IN_AUD_LOG_CTLlastpage" name="T1IN_AUD_LOG_CTLlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+
+
+
+    </tr>
+  </table>
+
+
+<hr class="advsectsep"></hr>
+
+
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+
+<ams_map title="Update Actions" name="Update Actions">
+<a href="Advantage" vsds="T1IN_AUD_LOG_CTL" vsaction="saveall" name="T1IN_AUD_LOG_CTLSaveAll" id="T1IN_AUD_LOG_CTLSaveAll" title="Save All" accesskey="5">Save</a>
+<a href="Advantage" vsds="T1IN_AUD_LOG_CTL" vsaction="undoall" name="T1IN_AUD_LOG_CTLUndoAll" id="T1IN_AUD_LOG_CTLUndoAll" title="Undo All" accesskey="6">Undo</a>
+<a href="Advantage" vsds="T1IN_AUD_LOG_CTL" vsaction="delete" id="IndexT1IN_AUD_LOG_CTLdelete" name="T1IN_AUD_LOG_CTLdelete" title="Delete Current Record" accesskey="7">Delete</a>
+<a href="Advantage" vsds="T1IN_AUD_LOG_CTL" vsaction="insert" id="T1IN_AUD_LOG_CTLinsert" name="T1IN_AUD_LOG_CTLinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+      </td>
+
+<td><vstext vsds=" " name="T1IN_AUD_LOG_CTLSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1PROC_TYP" title="Process Type">Process Type :</label></td>
+        <td class="val">
+          <input type="text" ams_readonly name="txtT1PROC_TYP" id="txtT1PROC_TYP" fhdf="AUD_PROC_TYP" vsds="T1IN_AUD_LOG_CTL" vsdf="PROC_TYP" vscodetable="CVL_LOG_RSCR_TYP"
+ title="Process Type">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1PROC_RSRC_NM" title="Resource Name">Resource Name :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1PROC_RSRC_NM" id="txtT1PROC_RSRC_NM"
+      ams_max_len="18"
+ value="PROC_RSRC_NM"
+            size="20"
+ vsds="T1IN_AUD_LOG_CTL" vsdf="PROC_RSRC_NM" ShowCodeInfo="" title="Resource Name">
+          <input type="image" vspick="T2R_SC_APPL_RSRC" vspicktext="txtT1PROC_RSRC_NM" vsds="T1IN_AUD_LOG_CTL" vsaction="pick" name="pckT1PROC_RSRC_NM" id="pckT1PROC_RSRC_NM" title="Select Resource Name" alt="Select Resource Name" src="../AMSImages/ADVPick.gif"
+>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1ENABLE" title="Audit Enabled">Audit Enabled :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1ENABLE" id="txtT1ENABLE" value="ENABLE" vsds="T1IN_AUD_LOG_CTL" vsdf="ENABLE" title="Audit Enabled">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1EXTRNL_NOTIFCN_FL" title="External Notification">External Notification :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1EXTRNL_NOTIFCN_FL" id="txtT1EXTRNL_NOTIFCN_FL" value="EXTRNL_NOTIFCN_FL" vsds="T1IN_AUD_LOG_CTL" vsdf="EXTRNL_NOTIFCN_FL" title="External Notification">
+        </td>
+      </tr>
+
+      </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        <td class="label"><label for="txtT1DOC_DEPT_CD" title="Doc Dept">Doc Dept :</label></td>
+        <td class="val">
+<!-- BEGIN CUSTOMIZATION added fhdf-->
+          <input type="text" name="txtT1DOC_DEPT_CD" id="txtT1DOC_DEPT_CD"
+            size="6" fhdf="AUD_DOC_DEPT_CD"
+ vsds="T1IN_AUD_LOG_CTL" vsdf="DOC_DEPT_CD"
+         ams_max_len="4"
+ ShowCodeInfo="" value="DOC_DEPT_CD" title="Doc Dept">
+<!-- END CUSTOMIZATION -->
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="label"><label for="txtT1DOC_ACTN_CD" title="Doc. Action Cd.">Doc. Action Cd. :</label></td>
+        <td class="val">
+          <input type="text" ams_readonly name="txtT1DOC_ACTN_CD" id="txtT1DOC_ACTN_CD" vsds="T1IN_AUD_LOG_CTL" vsdf="DOC_ACTN_CD" vscodetable="CVL_DOC_SCHED_ACTN"
+ title="Doc. Action Cd.">
+        </td>
+      </tr>
+
+<!-- BEGIN CUSTOMIZATION Comment out the existing tr tag generated for DOC_SBMT_PHASES-->
+<!--
+      <tr>
+      <td class="label"><label for="txtT1DOC_SBMT_PHASES" title="Doc Sbmt Phases">Doc Sbmt Phases :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1DOC_SBMT_PHASES" id="txtT1DOC_SBMT_PHASES"
+                  size="15"
+ vsds="T1IN_AUD_LOG_CTL" vsdf="DOC_SBMT_PHASES"
+                  ams_max_len="20"
+ ShowCodeInfo="" value="DOC_SBMT_PHASES" title="Doc Sbmt Phases" >
+        </td>
+      </tr>
+-->
+<!-- END CUSTOMIZATION -->
+<!-- BEGIN CUSTOMIZATION Use the following tr tag for DOC_SBMT_PHASES. Note it is customized for
+various things including pointing to a different field help htm file name -->
+      <tr>
+        <td class="label"><label for="txtT1DOC_SBMT_PHASE_DRAFT" title="Draft">Draft :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1DOC_SBMT_PHASE_DRAFT" id="txtT1DOC_SBMT_PHASE_DRAFT" value="DRAFT" fhdf="DOC_SBMT_PHASES" vsds="" vsdf="txtT1DOC_SBMT_PHASE_DRAFT" title="Draft">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1DOC_SBMT_PHASE_PENDING" title="Pending">Pending :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1DOC_SBMT_PHASE_PENDING" id="txtT1DOC_SBMT_PHASE_PENDING" value="PENDING" fhdf="DOC_SBMT_PHASES" vsds="" vsdf="txtT1DOC_SBMT_PHASE_PENDING" title="Pending">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><label for="txtT1DOC_SBMT_PHASE_FINAL" title="Final">Final :</label></td>
+        <td class="val">
+          <input type="checkbox" name="txtT1DOC_SBMT_PHASE_FINAL" id="txtT1DOC_SBMT_PHASE_FINAL" value="FINAL" fhdf="DOC_SBMT_PHASES" vsds="" vsdf="txtT1DOC_SBMT_PHASE_FINAL" title="Final">
+        </td>
+      </tr>
+
+<!-- END CUSTOMIZATION -->
+      <tr>
+        <td class="label"><div class="hidden label"><label for="txtT1PROC_RSRC_NM_UP" title="Resource Name">Resource Name :</label></div></td>
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1PROC_RSRC_NM_UP" id="txtT1PROC_RSRC_NM_UP"
+               size="20"
+ vsds="T1IN_AUD_LOG_CTL" vsdf="PROC_RSRC_NM_UP"
+         ams_max_len="18"
+ ShowCodeInfo="" title="Resource Name" value="PROC_RSRC_NM_UP"></div>
+        </td>
+      </tr>
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1IN_AUD_LOG_CTL', new Array(), new Array() ) ;
+
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

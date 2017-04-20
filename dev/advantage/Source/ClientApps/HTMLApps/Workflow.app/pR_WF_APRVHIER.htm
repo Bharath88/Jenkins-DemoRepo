@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Approval Hierarchy</title>
+  <base href>
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+  <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+  <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+<!-- BEGIN CUSTOMIZATION -->
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+<!-- END CUSTOMIZATION -->
+
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Workflow" method="post" vsform="true" name="pR_WF_APRVHIER">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+
+
+    <h1 class="advpagetitle">
+<vstitle vstitle="Approval Hierarchy">Approval Hierarchy</vstitle>
+    </h1>
+  <div class="advhdractns">
+
+<vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+<a href="Workflow" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+
+
+  <input type="hidden" name="T1R_WF_APRVHIER_Currency" value="">
+  <input type="hidden" name="T1R_WF_APRVHIER_Old_Currency" value="">
+
+
+
+  <table name="tblT1R_WF_APRVHIER" id="tblT1R_WF_APRVHIER" class="advgrid" vsds="T1R_WF_APRVHIER">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+
+        <th
+><a href="Workflow" vsaction="sort" vsds="T1R_WF_APRVHIER"
+    vsdf="SEQ_NO"
+ name="T1SEQ_NOsort" id="T1SEQ_NOsort" title="Sort By Sequence">Sequence</a></th>
+
+        <th
+><span id="T1GOVT_BRN_CDsortGridLabel" name="T1GOVT_BRN_CDsortGridLabel" title="Government Branch">Government Branch</span></th>
+
+        <th
+><span id="T1CAB_CDsortGridLabel" name="T1CAB_CDsortGridLabel" title="Cabinet">Cabinet</span></th>
+
+        <th
+><span id="T1DEPT_CDsortGridLabel" name="T1DEPT_CDsortGridLabel" title="Department">Department</span></th>
+
+        <th
+><span id="T1DIV_CDsortGridLabel" name="T1DIV_CDsortGridLabel" title="Division">Division</span></th>
+
+        <th
+><span id="T1GP_CDsortGridLabel" name="T1GP_CDsortGridLabel" title="Group">Group</span></th>
+
+        <th
+><span id="T1SECT_CDsortGridLabel" name="T1SECT_CDsortGridLabel" title="Section">Section</span></th>
+
+        <th
+><span id="T1DSTC_CDsortGridLabel" name="T1DSTC_CDsortGridLabel" title="District">District</span></th>
+
+        <th
+><span id="T1BUR_CDsortGridLabel" name="T1BUR_CDsortGridLabel" title="Bureau">Bureau</span></th>
+
+        <th
+><span id="T1UNIT_CDsortGridLabel" name="T1UNIT_CDsortGridLabel" title="Unit">Unit</span></th>
+
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1R_WF_APRVHIERvscurrency" id="T1R_WF_APRVHIERvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1R_WF_APRVHIER" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+
+        <td>
+          <input type="text" name="txtT1SEQ_NO"
+            size="10"
+            maxlength="10"
+ value="SEQ_NO" vsds="T1R_WF_APRVHIER" vsdf="SEQ_NO"
+ ShowCodeInfo="" title="Sequence"
+      class="right"
+>
+        </td>
+
+        <td class="center">
+          <input type="checkbox" name="txtT1GOVT_BRN_CD" value="GOVT_BRN_CD" vsds="T1R_WF_APRVHIER" vsdf="GOVT_BRN_CD" title="Government Branch">
+        </td>
+
+        <td class="center">
+          <input type="checkbox" name="txtT1CAB_CD" value="CAB_CD" vsds="T1R_WF_APRVHIER" vsdf="CAB_CD" title="Cabinet">
+        </td>
+
+        <td class="center">
+          <input type="checkbox" name="txtT1DEPT_CD" value="DEPT_CD" vsds="T1R_WF_APRVHIER" vsdf="DEPT_CD" title="Department">
+        </td>
+
+        <td class="center">
+          <input type="checkbox" name="txtT1DIV_CD" value="DIV_CD" vsds="T1R_WF_APRVHIER" vsdf="DIV_CD" title="Division">
+        </td>
+
+        <td class="center">
+          <input type="checkbox" name="txtT1GP_CD" value="GP_CD" vsds="T1R_WF_APRVHIER" vsdf="GP_CD" title="Group">
+        </td>
+
+        <td class="center">
+          <input type="checkbox" name="txtT1SECT_CD" value="SECT_CD" vsds="T1R_WF_APRVHIER" vsdf="SECT_CD" title="Section">
+        </td>
+
+        <td class="center">
+          <input type="checkbox" name="txtT1DSTC_CD" value="DSTC_CD" vsds="T1R_WF_APRVHIER" vsdf="DSTC_CD" title="District">
+        </td>
+
+        <td class="center">
+          <input type="checkbox" name="txtT1BUR_CD" value="BUR_CD" vsds="T1R_WF_APRVHIER" vsdf="BUR_CD" title="Bureau">
+        </td>
+
+        <td class="center">
+          <input type="checkbox" name="txtT1UNIT_CD" value="UNIT_CD" vsds="T1R_WF_APRVHIER" vsdf="UNIT_CD" title="Unit">
+        </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+
+    <td><ams_map title="Update Actions" name="Update Actions">
+<a href="Workflow" vsds="T1R_WF_APRVHIER" vsaction="save" id="T1R_WF_APRVHIERSaveAll" name="T1R_WF_APRVHIERSaveAll" title="Save" accesskey="5">Save</a>
+<a href="Workflow" vsds="T1R_WF_APRVHIER" vsaction="undo" id="T1R_WF_APRVHIERUndo" name="T1R_WF_APRVHIERUndo" title="Undo" accesskey="6">Undo</a>
+<a href="Workflow" vsds="T1R_WF_APRVHIER" vsaction="delete" id="T1R_WF_APRVHIERdelete" name="T1R_WF_APRVHIERdelete" title="Delete Selected Row" accesskey="7">Delete</a>
+<a href="Workflow" vsds="T1R_WF_APRVHIER" vsaction="insert" id="T1R_WF_APRVHIERinsert" name="T1R_WF_APRVHIERinsert" title="Insert New Row" accesskey="I">Insert</a>
+    </ams_map></td>
+
+
+<td><ams_map title="Grid Navigation" name="Grid Navigation">
+<a href="Workflow" vsds="T1R_WF_APRVHIER" vsaction="firstpage" name="T1R_WF_APRVHIERfirstpage" id="T1R_WF_APRVHIERfirstpage" title="First Block of Rows" accesskey="0">First</a>
+
+<a href="Workflow" vsds="T1R_WF_APRVHIER" vsaction="prevpage" name="T1R_WF_APRVHIERprevpage" id="T1R_WF_APRVHIERprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+
+<a href="Workflow" vsds="T1R_WF_APRVHIER" vsaction="nextpage" id="T1R_WF_APRVHIERnextpage" name="T1R_WF_APRVHIERnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+
+<a href="Workflow" vsds="T1R_WF_APRVHIER" vsaction="lastpage" id="T1R_WF_APRVHIERlastpage" name="T1R_WF_APRVHIERlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></td>
+
+
+<!-- BEGIN CUSTOMIZATION -->
+
+<td><vstext vsds=" " name="T1R_WF_APRVHIERSearchColList" vspreservetag="true"></td>
+<!-- END CUSTOMIZATION -->
+
+    </tr>
+  </table>
+
+<!-- BEGIN CUSTOMIZATION -->
+
+<div style="visibility:hidden;display:none;position:absolute;top:-1000em;left:-1000em;">
+
+      <table class="advscalar">
+
+      <tr>
+        <td class="label"><label for="txtT1SEQ_NO" title="Sequence">Sequence :</label></td>
+        <td class="val">
+          <input type="text" name="txtT1SEQ_NO" id="txtT1SEQ_NO"
+               size="10"
+ vsds="T1R_WF_APRVHIER" vsdf="SEQ_NO"
+               ams_max_len="10"
+ ShowCodeInfo="" value="SEQ_NO" title="Sequence">
+        </td>
+      </tr>
+
+
+      </table>
+
+
+</div>
+<!-- END CUSTOMIZATION -->
+
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1R_WF_APRVHIER', new Array(), new Array() ) ;
+
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'SEQ_NO' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Sequence' ;
+  -->
+  </script>
+
+
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+
+
+<a href="Workflow" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

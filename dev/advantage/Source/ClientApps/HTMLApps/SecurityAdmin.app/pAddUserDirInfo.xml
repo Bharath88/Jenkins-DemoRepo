@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="Default"
+	PositionTop="153"
+	PositionLeft="0"
+	PositionWidth="252"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSOtherPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="516206258"
+	>
+	<FormCaption><![CDATA[Add User Directory Information]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="R_SC_USER_DIR_INFO"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="Display"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="False"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="USER_ID" />
+				<RSDefaultAttribute ID="2" Name="LAST_NM_TXT" />
+				<RSDefaultAttribute ID="3" Name="FRST_NM_TXT" />
+				<RSDefaultAttribute ID="4" Name="LCLTY_TXT" />
+				<RSDefaultAttribute ID="5" Name="EMAIL_AD_TXT" />
+				<RSDefaultAttribute ID="6" Name="PH_NO_TXT" />
+				<RSDefaultAttribute ID="7" Name="FAX_NO_TXT" />
+				<RSDefaultAttribute ID="8" Name="ROOM_NO_TXT" />
+				<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="10" Name="PH_EXT" />
+				<RSDefaultAttribute ID="11" Name="USER_NM" />
+				<RSDefaultAttribute ID="26" Name="GOVT_BRN_CD" />
+				<RSDefaultAttribute ID="13" Name="CAB_CD" />
+				<RSDefaultAttribute ID="14" Name="DEPT_CD" />
+				<RSDefaultAttribute ID="15" Name="DIV_CD" />
+				<RSDefaultAttribute ID="16" Name="GP_CD" />
+				<RSDefaultAttribute ID="17" Name="SECT_CD" />
+				<RSDefaultAttribute ID="18" Name="DSTC_CD" />
+				<RSDefaultAttribute ID="19" Name="BUR_CD" />
+				<RSDefaultAttribute ID="20" Name="UNIT_CD" />
+				<RSDefaultAttribute ID="21" Name="USER_ID_UP" />
+				<RSDefaultAttribute ID="22" Name="LAST_NM_TXT_UP" />
+				<RSDefaultAttribute ID="23" Name="FRST_NM_TXT_UP" />
+				<RSDefaultAttribute ID="24" Name="LAST_UPDATE_DT" />
+				<RSDefaultAttribute ID="25" Name="LAST_UPDATE_USERID" />
+				<RSDefaultAttribute ID="27" Name="TBL_LAST_DT" />
+				<RSDefaultAttribute ID="28" Name="USER_NM_UP" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="USER_ID" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="LAST_NM_TXT" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="FRST_NM_TXT" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="LCLTY_TXT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ROOM_NO_TXT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="EMAIL_AD_TXT" Displayed="True" UnPlaced="False" Archetype="TextboxReq" />
+				<RSAttribute Name="PH_NO_TXT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="PH_EXT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="FAX_NO_TXT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="USER_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="CAB_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DEPT_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DIV_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="GP_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SECT_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DSTC_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="BUR_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="UNIT_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="USER_ID_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LAST_NM_TXT_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="FRST_NM_TXT_UP" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="GOVT_BRN_CD" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+				<RSAttribute Name="USER_NM_UP" Displayed="True" UnPlaced="True" />
+			</ScalerAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="orderByString"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="XDA"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value="%LCLTY_TXT% %PH_NO_TXT%"
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="false"
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+		</ArchetypeExtendedProperties>
+		<Transition
+			FormTransNum="1"
+			Prefix="T2"
+			TargetFormName="pAddUserAppInfo"
+			IsTargetInitialQueryMode="False"
+			IsTargetInitialAddMode="True"
+			IsVisibleAppline="True"
+			IsAddedAfterGen="False"
+			FormTransCaption="Add User Application Information"
+			ClassName="PageNavigation"
+			TargetFramesetPage=""
+			TargetFrame=""
+			FrameNameInFramesetPage=""
+			RSID="2"
+			BusinessObject="R_SC_USER_INFO"
+			Relationship="UsersDirectoryInformation(R_SC_USER_DIR_INFO)-UserInformation(R_SC_USER_INFO)"
+			RelnIsFromParent="True"
+			>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<ParameterizedWhereClause><![CDATA[ [USER_ID] = [?USER_ID]]]></ParameterizedWhereClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		</Transition>
+	</RecordSource>
+</Form>

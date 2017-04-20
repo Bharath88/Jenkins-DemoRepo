@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Customize Workgroups</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="WkgpCustomize">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Customize Workgroups">Customize Workgroups</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+  </div>
+      
+      
+ 
+  <a name="T1IN_WKGP_Top"></a>
+  
+  
+  
+  <input type="hidden" name="T1IN_WKGP_Currency" value="">
+  <input type="hidden" name="T1IN_WKGP_Old_Currency" value="">
+  <table name="tblT1IN_WKGP" id="tblT1IN_WKGP" class="advgrid" vsds="T1IN_WKGP">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1IN_WKGP" 
+    vsdf="WKGP_UNID"
+ name="T1WKGP_UNIDsort" id="T1WKGP_UNIDsort" title="Sort By ID">ID</a></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1IN_WKGP" 
+    vsdf="WKGP_NM_UP"
+ name="T1WKGP_NMsort" id="T1WKGP_NMsort" title="Sort By Name">Name</a></th>
+      
+        <th 
+><span id="T1WKGP_DESCsortGridLabel" name="T1WKGP_DESCsortGridLabel" title="Description">Description</span></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1IN_WKGPvscurrency" id="T1IN_WKGPvscurrency" title="Select Row" alt="Select Row" vsds="T1IN_WKGP" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1WKGP_UNID" vsds="T1IN_WKGP" vsdf="WKGP_UNID" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1WKGP_NM" vsds="T1IN_WKGP" vsdf="WKGP_NM" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1WKGP_DESC" vsds="T1IN_WKGP" vsdf="WKGP_DESC" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+<td><div name="T1IN_WKGPGridNav" id="T1IN_WKGPGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+      <a href="Advantage" vsds="T1IN_WKGP" vsaction="firstpage" name="T1IN_WKGPfirstpage" id="T1IN_WKGPfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+      <a href="Advantage" vsds="T1IN_WKGP" vsaction="prevpage" name="T1IN_WKGPprevpage" id="T1IN_WKGPprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+      <a href="Advantage" vsds="T1IN_WKGP" vsaction="nextpage" id="T1IN_WKGPnextpage" name="T1IN_WKGPnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+      <a href="Advantage" vsds="T1IN_WKGP" vsaction="lastpage" id="T1IN_WKGPlastpage" name="T1IN_WKGPlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+<hr class="advsectsep"></hr>
+  
+  
+
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        
+<ams_map title="Update Actions" name="Update Actions">
+   
+      <a href="Advantage" vsds="T1IN_WKGP" vsaction="saveall" name="T1IN_WKGPSaveAll" id="T1IN_WKGPSaveAll" title="Save All" accesskey="5">Save</a>
+   
+      <a href="Advantage" vsds="T1IN_WKGP" vsaction="undoall" name="T1IN_WKGPUndoAll" id="T1IN_WKGPUndoAll" title="Undo All" accesskey="6">Undo</a>
+   
+      <a href="Advantage" vsds="T1IN_WKGP" vsaction="delete" id="IndexT1IN_WKGPdelete" name="T1IN_WKGPdelete" title="Delete Current Record" accesskey="7">Delete</a>
+   
+      <a href="Advantage" vsds="T1IN_WKGP" vsaction="insert" id="T1IN_WKGPinsert" name="T1IN_WKGPinsert" title="Insert New Record" accesskey="I">Insert</a>
+</ams_map>
+<ams_map title="Copy/Paste" name="Copy/Paste">
+   
+      <a href="Advantage" vsds="T1IN_WKGP" vsaction="11" name="T1IN_WKGPCopyRecord" id="T1IN_WKGPCopyRecord" title="Copy Current Record" accesskey="C">Copy</a>
+ 
+   
+      <a href="Advantage" vsds="T1IN_WKGP" vsaction="12" name="T1IN_WKGPPasteLine" id="T1IN_WKGPPasteLine" title="Paste Copied Record" accesskey="8">Paste</a>
+</ams_map>
+      </td>
+      
+   
+      <td><vstext vsds=" " name="T1IN_WKGPSearchColList" vspreservetag="true"></td>
+    </tr>
+  </table>
+
+  <fieldset class="advscalar">
+    <table><tr><td class="advscalarcol">
+      <table class="advscalar">
+        
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1WKGP_UNID" title="ID">ID :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1WKGP_UNID" id="txtT1WKGP_UNID" 
+                  size="15"
+ vsds="T1IN_WKGP" vsdf="WKGP_UNID" 
+                  ams_max_len="20"
+ ShowCodeInfo="" value="WKGP_UNID" title="ID" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1WKGP_NM" title="Name">Name :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1WKGP_NM" id="txtT1WKGP_NM" 
+               size="20"
+ vsds="T1IN_WKGP" vsdf="WKGP_NM" 
+         ams_max_len="16"
+ ShowCodeInfo="" value="WKGP_NM" title="Name" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1WKGP_DESC" title="Description">Description :</label></td>
+   
+        <td class="val">
+
+          
+
+          <input type="text" name="txtT1WKGP_DESC" id="txtT1WKGP_DESC" 
+               size="20"
+ vsds="T1IN_WKGP" vsdf="WKGP_DESC" 
+         ams_max_len="50"
+ ShowCodeInfo="" value="WKGP_DESC" title="Description" >
+
+		  
+
+        </td>
+      </tr>
+    
+      <tr>
+        
+      
+      <td class="label"><div class="hidden label"><label for="txtT1WKGP_NM_UP" title="Name">Name :</label></div></td>
+   
+        <td class="val">
+          <div class="hidden val"><input type="text" name="txtT1WKGP_NM_UP" id="txtT1WKGP_NM_UP" 
+               size="20"
+ vsds="T1IN_WKGP" vsdf="WKGP_NM_UP" 
+         ams_max_len="16"
+ ShowCodeInfo="" title="Name" value="WKGP_NM_UP"></div>
+        </td>
+      </tr>
+    
+      </table>
+    </td></tr></table>
+  </fieldset>
+
+  
+
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+<a name="btnT2pIN_WKSP" href="Advantage" id="btnT2pIN_WKSP" title="Navigation to Workspaces" vsaction="pagetransition" 
+           vsds="T1IN_WKGP"
+ vsnavigation="T2pIN_WKSP">Workspaces</a>
+      </td>
+    </tr>
+  </table>
+  
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    var liDSIdx   = msUTILS_MltiSort.length ;
+    var liAttrIdx = 0 ;
+
+    msUTILS_MltiSort[liDSIdx] = new Array( 'T1IN_WKGP', new Array(), new Array() ) ;
+    
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'WKGP_UNID' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'ID' ;
+      msUTILS_MltiSort[liDSIdx][1][liAttrIdx] = 'WKGP_NM' ;
+      msUTILS_MltiSort[liDSIdx][2][liAttrIdx++] = 'Name' ;
+  -->
+  </script>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+<a name="btnT3pIN_WKSP" href="Advantage" id="btnT3pIN_WKSP" title="Navigation to System Workspaces" vsaction="pagetransition" 
+           vsds=""
+ vsnavigation="T3pIN_WKSP">System Workspaces</a>
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

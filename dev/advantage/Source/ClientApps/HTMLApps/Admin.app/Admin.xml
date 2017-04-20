@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE Application SYSTEM "Application.dtd">
+<Application
+	SurrId="0468675577.mshipley.0003"
+	TargetLanguage="HTML"
+	DefaultLogonUserId=""
+	ExecutionEnvironment="Browser"
+	AppletHeight="575"
+	AppletWidth="725"
+	ClassId="CF6FF728-208A-4E85-948E-788B2AD185B7"
+	SuppressDefaultLoginScreen="False"
+	InitialFramesetPage="FramesetPage"
+	StartupPageFrameName="Startup"
+	InitialFrameNameForStartupTrans="Display"
+	AppRepositoryVersion="05.06.01"
+	DeploySecurityInfo="False"
+	DTDVersion="05.06.00"
+	>
+	<ServerLocation><![CDATA[<localVLSServer>]]></ServerLocation>
+	<!-- APPLICATION FORMS -->
+	<Forms>
+		<Form>StartupPage</Form>
+		<Form>pNoData</Form>
+		<Form>pR_DOC_CAT</Form>
+		<Form>pR_DOC_TYP</Form>
+		<Form>pR_GEN_DOC_CTRL</Form>
+		<Form>pR_CLDT</Form>
+		<Form>pR_DOC_COMP_RQMTS_Generic</Form>
+		<Form>pR_EXT_APPS_Generic</Form>
+		<Form>pR_EXT_APPS_MSG_MAP_Generic</Form>
+	</Forms>
+	<SourceFiles>
+	</SourceFiles>
+</Application>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE Relationships SYSTEM "Relation.dtd">
+<Relationships
+	DTDVersion="05.06.00"
+	>
+	<Relationship
+		IsEnforce="True"
+		OnParentUpdate="PreventIfChildren"
+		OnParentDelete="PreventIfChildren"
+		OnChildInsertOrUpdate="PreventIfNoParent"
+		CountAggregates="0"
+		CountReplicates="0"
+		ChildRoleName="FieldComparisons"
+		ParentRoleName="FieldAccess1"
+		>
+		<AscendCaption><![CDATA[Field Access]]> </AscendCaption>
+		<DescendCaption><![CDATA[Field Comparisons]]> </DescendCaption>
+		<ErrPreventInsertOrUpdateChild><![CDATA[<System Supplied>]]> </ErrPreventInsertOrUpdateChild>
+		<ErrPreventDeleteParent><![CDATA[<System Supplied>]]> </ErrPreventDeleteParent>
+		<ErrPreventUpdateParent><![CDATA[<System Supplied>]]> </ErrPreventUpdateParent>
+		<AttributePairs>
+			<AttributePair
+				ParentAttribute="SEC_ROLE_ID"
+				ChildAttribute="SEC_ROLE_ID"
+			/>
+			<AttributePair
+				ParentAttribute="FLD_ID"
+				ChildAttribute="FLD_ID"
+			/>
+		</AttributePairs>
+	</Relationship>
+</Relationships>

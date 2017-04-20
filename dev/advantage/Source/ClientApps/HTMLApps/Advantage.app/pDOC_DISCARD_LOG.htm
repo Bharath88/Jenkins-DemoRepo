@@ -1,0 +1,290 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+<head>
+  <title>Document Discard Log</title>
+  <base href>
+  
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVMenuStyle.css">
+      <link type="text/css" rel="STYLESHEET" href="../AMSImages/ADVAppStyle.css">
+      <script type="text/javascript" language="JavaScript" vsscript="true"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSDHTMLLib.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSUtils.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenuArray.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSMenu.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSCalendar.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSTab.js"></script>
+      <script type="text/javascript" language="JavaScript" src="../AMSJS/AMSFrmtFld.js"></script>
+  <vstext vsds=" " name="InitPageTransaction" vspreservetag="true">
+</head>
+
+<body class="adv reftable">
+  <vserror>
+  <form action="Advantage" method="post" vsform="true" name="pDOC_DISCARD_LOG">
+    <input type="hidden" name="ExpandedSections" value="">
+    <input type="hidden" name="AMSPageVersNo" value="">
+    <input type="hidden" name="refreshScalar" value="">
+
+    
+   <div vsds="" id="MsgDisplay" name="MsgDisplay" title="Messages" vsvisible="true" ams_type="msg_disp" class="advmsgdisplay">
+      <vstext name="MsgDispContent" vsds="" vspreservetag="true">
+   </div>
+
+    <div name="PageContent" id="PageContent" class="advpgcont">
+      
+      
+  
+    <h1 class="advpagetitle">
+<vstitle vstitle="Document Discard Log">Document Discard Log</vstitle>
+    </h1>
+  <div class="advhdractns">
+    
+      <vstext vsds=" " name="PopupMenuLink" vspreservetag="true">
+   
+      <a href="Advantage" vsds=" " vsaction="55" title="Quick Search" id="leafsearch" name="leafsearch" target="Display" accesskey="Q">Quick Search</a>
+  </div>
+      
+      
+ 
+
+  
+  <table class="advaction recsrc">
+    <tr>
+      <td>
+        <ams_map title="Query Actions" name="Query Actions">
+      <a href="Advantage" vsds="T1DOC_DISCARD_LOG" vsaction="query" name="AMSBrowse" id="AMSBrowse" title="Browse">Browse</a>
+      <a href="Advantage" vsds="T1DOC_DISCARD_LOG" vsaction="clearquery" name="T1DOC_DISCARD_LOGclearquery" id="T1DOC_DISCARD_LOGclearquery" title="Clear Query Criteria" accesskey="X">Clear</a>
+        </ams_map>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="advscalarcol">
+        <table class="advscalar">
+           
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_CD" title="Doc Code">Doc Code :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_CD" id="txtT1DOC_CD" 
+            size="15"
+ vsds="T1DOC_DISCARD_LOG" vsdf="DOC_CD" vsdisplaymode="Query" 
+ value="DOC_CD" title="Doc Code">
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_DEPT_CD" title="Doc Dept Code">Doc Dept Code :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_DEPT_CD" id="txtT1DOC_DEPT_CD" 
+         size="6"
+ vsds="T1DOC_DISCARD_LOG" vsdf="DOC_DEPT_CD" vsdisplaymode="Query" 
+ value="DOC_DEPT_CD" title="Doc Dept Code">
+        </td>
+      </tr>
+    
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1DOC_ID" title="Doc ID">Doc ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1DOC_ID" id="txtT1DOC_ID" 
+            size="20"
+ vsds="T1DOC_DISCARD_LOG" vsdf="DOC_ID" vsdisplaymode="Query" 
+ value="DOC_ID" title="Doc ID">
+        </td>
+      </tr>
+    
+    
+        </table></td><td class="advscalarcol"><table class="advscalar">
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1EVNT_DT" title="Event Date">Event Date :</label></td>
+   
+        <td class="val">
+          <input type="text" id="txtT1EVNT_DT" name="txtT1EVNT_DT" size="11" vsds="T1DOC_DISCARD_LOG" vsdisplaymode="Query" vsdf="EVNT_DT" 
+    vsformat="AMS_DATE_FOUR_YEAR_PIVOT"
+ value="EVNT_DT" title="Event Date">
+          <a href="javascript:{}" onclick="AMSCalendar_CreateCalendar(document.pDOC_DISCARD_LOG.txtT1EVNT_DT.value, 'txtT1EVNT_DT', document.pDOC_DISCARD_LOG.txtT1EVNT_DT);event.returnValue=false;return false;" title="Select Event Date: Will open in a new window">
+            <img src="../AMSImages/ADVCalendar.gif"
+ alt="Select Event Date: Will open in a new window" title="Select Event Date: Will open in a new window">
+          </a>
+        </td>
+      </tr>
+    
+       
+      <tr>
+        
+      
+      <td class="label"><label for="txtT1USER_ID_UP" title="User ID">User ID :</label></td>
+   
+        <td class="val">
+          <input type="text" name="txtT1USER_ID_UP" id="txtT1USER_ID_UP" 
+            size="20"
+ vsds="T1DOC_DISCARD_LOG" vsdf="USER_ID_UP" vsdisplaymode="Query" 
+ value="USER_ID_UP" title="User ID">
+        </td>
+      </tr>
+    
+    
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  
+  
+
+  
+  <input type="hidden" name="T1DOC_DISCARD_LOG_Currency" value="">
+  <input type="hidden" name="T1DOC_DISCARD_LOG_Old_Currency" value="">
+  <table name="tblT1DOC_DISCARD_LOG" id="tblT1DOC_DISCARD_LOG" class="advgrid" vsds="T1DOC_DISCARD_LOG">
+    <tr class="advgridhdr">
+      <th class="advcorner left"></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1DOC_DISCARD_LOG" 
+    vsdf="DOC_CD"
+ name="T1DOC_CDsort" id="T1DOC_CDsort" title="Sort By Doc Code">Doc Code</a></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1DOC_DISCARD_LOG" 
+    vsdf="DOC_DEPT_CD"
+ name="T1DOC_DEPT_CDsort" id="T1DOC_DEPT_CDsort" title="Sort By Doc Dept Code">Doc Dept Code</a></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1DOC_DISCARD_LOG" 
+    vsdf="DOC_ID"
+ name="T1DOC_IDsort" id="T1DOC_IDsort" title="Sort By Doc ID">Doc ID</a></th>
+      
+        <th 
+><span id="T1DOC_VERS_NOsortGridLabel" name="T1DOC_VERS_NOsortGridLabel" vsdf="DOC_VERS_NO" title="Doc Vers No">Doc Vers No</span></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1DOC_DISCARD_LOG" 
+    vsdf="EVNT_DT"
+ name="T1EVNT_DTsort" id="T1EVNT_DTsort" title="Sort By Event Date">Event Date</a></th>
+      
+        <th 
+><a href="Advantage" vsaction="sort" vsds="T1DOC_DISCARD_LOG" 
+    vsdf="USER_ID"
+ name="T1USER_IDsort" id="T1USER_IDsort" title="Sort By User ID">User ID</a></th>
+      
+      <th class="advcorner right"></th>
+    </tr>
+    <tr vsprototyperow="true" class="advgridoddrow" ams_altclassname="advgridevenrow" onclick="UTILS_SelectGridRow(this);return true;">
+      <td class="advgridrowselect">
+        <input type="image" name="T1DOC_DISCARD_LOGvscurrency" id="T1DOC_DISCARD_LOGvscurrency" title="Select Row" alt="Select Row" ams_no_scalar_refresh="ams_no_scalar_refresh" vsds="T1DOC_DISCARD_LOG" vsaction="Currency" src="../AMSImages/ADVRowSel.gif"
+>
+      </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_CD" vsds="T1DOC_DISCARD_LOG" vsdf="DOC_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_DEPT_CD" vsds="T1DOC_DISCARD_LOG" vsdf="DOC_DEPT_CD" 
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1DOC_ID" vsds="T1DOC_DISCARD_LOG" vsdf="DOC_ID" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1DOC_VERS_NO" vsds="T1DOC_DISCARD_LOG" vsdf="DOC_VERS_NO" 
+>
+        </td>
+      
+        <td 
+      class="right"
+
+>
+          <vstext name="txtT1EVNT_DT" vsds="T1DOC_DISCARD_LOG" vsdf="EVNT_DT" 
+    vsformat="AMS_DATE_FOUR_YEAR_PIVOT"
+>
+        </td>
+      
+        <td 
+
+>
+          <vstext name="txtT1USER_ID" vsds="T1DOC_DISCARD_LOG" vsdf="USER_ID" 
+>
+        </td>
+      
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="advaction recsrc">
+    <tr>
+      
+      
+<td><div name="T1DOC_DISCARD_LOGGridNav" id="T1DOC_DISCARD_LOGGridNav" vsds=""><ams_map title="Grid Navigation" name="Grid Navigation">
+   
+         <a href="Advantage" vsds="T1DOC_DISCARD_LOG" vsaction="firstpage" name="T1DOC_DISCARD_LOGfirstpage" id="T1DOC_DISCARD_LOGfirstpage" title="First Block of Rows" accesskey="0">First</a>
+ 
+   
+         <a href="Advantage" vsds="T1DOC_DISCARD_LOG" vsaction="prevpage" name="T1DOC_DISCARD_LOGprevpage" id="T1DOC_DISCARD_LOGprevpage" title="Previous Block of Rows" accesskey="1">Prev</a>
+ 
+   
+         <a href="Advantage" vsds="T1DOC_DISCARD_LOG" vsaction="nextpage" id="T1DOC_DISCARD_LOGnextpage" name="T1DOC_DISCARD_LOGnextpage" title="Next Block of Rows" accesskey="2">Next</a>
+ 
+   
+         <a href="Advantage" vsds="T1DOC_DISCARD_LOG" vsaction="lastpage" id="T1DOC_DISCARD_LOGlastpage" name="T1DOC_DISCARD_LOGlastpage" title="Last Block of Rows" accesskey="3">Last</a>
+</ams_map></div></td>
+      
+      
+      
+    </tr>
+  </table>
+
+  
+  <table class="advtrans recsrc">
+    <tr>
+      <td>
+        
+      </td>
+    </tr>
+  </table>
+ 
+      
+<table id="FormTrans" name="FormTrans" title="Page Navigations" class="advtrans form"><tr><td><ams_map title="Page Navigations" name="Page Navigations">
+</ams_map></td></tr></table>
+      
+<div name="AMSPopupWin" id="AMSPopupWin" class="advpopupwin"><iframe name="AMSPopupWinBody" id="AMSPopupWinBody" title="Popup Menu" longdesc="../AMSImages/FrameDesc.htm#PopupMenu" scrolling="no" frameborder="0" width="100%" height="100%" src="../AMSImages/Empty.htm"></iframe></div>
+      
+      
+<a href="Advantage" vsds=" " vsaction="menu_action" ams_action="" name="menu_action" id="menu_action" title=""></a>
+    </div>
+  </form>
+</body>
+</html>
+
+
+

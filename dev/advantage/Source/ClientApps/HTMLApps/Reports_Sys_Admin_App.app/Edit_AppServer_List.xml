@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="AMSRefTableGridDisplay"
+	PositionTop="306.25"
+	PositionLeft="0"
+	PositionWidth="197.5"
+	PositionHeight="43.75"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="True"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSRefTableGridDisplayPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="755909037"
+	>
+	<FormCaption><![CDATA[Application Servers]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="T1"
+		BusinessObject="IN_APPSRV_LST"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGenericGridDisplay"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="1" Name="SEQ_NO" />
+				<RSDefaultAttribute ID="2" Name="APPSRV_NM" />
+				<RSDefaultAttribute ID="3" Name="STA" />
+				<RSDefaultAttribute ID="4" Name="JOB_MGR" />
+				<RSDefaultAttribute ID="5" Name="VLS_NM" />
+				<RSDefaultAttribute ID="6" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="7" Name="DED_OFLN_FL" />
+				<RSDefaultAttribute ID="8" Name="JOBMGR_PORT" />
+				<RSDefaultAttribute ID="9" Name="JOBMGR_POLLNG_ON" />
+				<RSDefaultAttribute ID="10" Name="JOBMGR_POLLNG_RT" />
+				<RSDefaultAttribute ID="11" Name="JOBMGR_ACTV_RT" />
+				<RSDefaultAttribute ID="12" Name="JOBMGR_MAX_THRDCNT" />
+				<RSDefaultAttribute ID="13" Name="JOBMGR_PCK_TGT_JOB" />
+				<RSDefaultAttribute ID="14" Name="ADMN_HOME_NM" />
+				<RSDefaultAttribute ID="15" Name="ACTIVE_JOB_Q_LST" />
+				<RSDefaultAttribute ID="16" Name="APPL_ID" />
+				<RSDefaultAttribute ID="17" Name="TBL_LAST_DT" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="SEQ_NO" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="VLS_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="JOBMGR_PORT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="JOBMGR_POLLNG_ON" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="JOBMGR_ACTV_RT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="JOBMGR_PCK_TGT_JOB" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="APPL_ID" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="APPSRV_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="STA" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="JOB_MGR" Displayed="True" UnPlaced="False" Archetype="TextBoxMemo" />
+				<RSAttribute Name="ADMN_HOME_NM" Displayed="True" UnPlaced="False" Archetype="TextBoxMemo" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DED_OFLN_FL" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="JOBMGR_POLLNG_RT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="JOBMGR_MAX_THRDCNT" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="ACTIVE_JOB_Q_LST" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="SEQ_NO" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="APPSRV_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="STA" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="VLS_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="JOB_MGR" Displayed="True" UnPlaced="False" Archetype="GridDisplayOnlyMemo" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="DED_OFLN_FL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="JOBMGR_PORT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="JOBMGR_POLLNG_ON" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="JOBMGR_POLLNG_RT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="JOBMGR_ACTV_RT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="JOBMGR_MAX_THRDCNT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="JOBMGR_PCK_TGT_JOB" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ADMN_HOME_NM" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="ACTIVE_JOB_Q_LST" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="APPL_ID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="True" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value=""
+			/>
+			<Property
+				Name="ShowSearchPopup"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value="%APPSRV_NM%"
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="false"
+			/>
+			<Property
+				Name="SummaryCaption"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+		</ArchetypeExtendedProperties>
+	</RecordSource>
+</Form>

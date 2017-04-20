@@ -1,0 +1,7 @@
+"JOB_RET_CD","JOB_RET_TXT","AMS_ROW_VERS_NO"
+1,"Successful",1
+4,"Warning",1
+8,"Non Fatal Error",1
+12,"Failed",1
+16,"Terminated",1
+20,"System Failure",1

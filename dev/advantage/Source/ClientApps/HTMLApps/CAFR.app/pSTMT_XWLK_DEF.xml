@@ -1,0 +1,2280 @@
+<?xml version="1.0"?>
+<!DOCTYPE Form SYSTEM "Form.dtd">
+<Form
+	DTDVersion="05.06.00"
+	TargetLanguage="HTML"
+	Archetype="AMSRefTableGridDisplay"
+	PositionTop="50"
+	PositionLeft="0"
+	PositionWidth="185"
+	PositionHeight="44"
+	IsAddedAfterGen="False"
+	HasCustomFormLayout="False"
+	ObjectsUnusedByFormLayout="False"
+	External="False"
+	NoDataForm="False"
+	ClassName="com.amsinc.gems.adv.vfc.html.AMSRefTableGridDisplayPage"
+	ObjectsRemovedFromLayout="False"
+	HTMLFileCheckSum="203601801"
+	>
+	<FormCaption><![CDATA[Statement Crosswalk]]></FormCaption>
+	<ArchetypeExtendedProperties>
+		<Property
+			Name="Back"
+			Value="false"
+		/>
+		<Property
+			Name="FooterType"
+			Value="none"
+		/>
+		<Property
+			Name="LayoutType"
+			Value="Standard"
+		/>
+		<Property
+			Name="PageDescription"
+			Value=""
+		/>
+		<Property
+			Name="Search"
+			Value="true"
+		/>
+		<Property
+			Name="ShowBreadCrumbs"
+			Value="false"
+		/>
+		<Property
+			Name="showFormCaption"
+			Value="true"
+		/>
+		<Property
+			Name="SSCaptionImageFileNm"
+			Value=""
+		/>
+	</ArchetypeExtendedProperties>
+	<ExtendedProperties>
+		<Property
+			Name="AddBackLink"
+			Value=""
+		/>
+		<Property
+			Name="ADVDTDType"
+			Value=""
+		/>
+		<Property
+			Name="ADVUIType"
+			Value=""
+		/>
+		<Property
+			Name="AjaxHandler"
+			Value=""
+		/>
+		<Property
+			Name="AttachmentTypeOptions"
+			Value=""
+		/>
+		<Property
+			Name="AttachmentTypes"
+			Value=""
+		/>
+		<Property
+			Name="ContainerPageElement"
+			Value=""
+		/>
+		<Property
+			Name="DefaultActionName"
+			Value=""
+		/>
+		<Property
+			Name="DivMapToGen"
+			Value=""
+		/>
+		<Property
+			Name="DivToGenAction"
+			Value=""
+		/>
+		<Property
+			Name="EditMode"
+			Value=""
+		/>
+		<Property
+			Name="ErrorsFromPage"
+			Value=""
+		/>
+		<Property
+			Name="ExcludeCopyPasteAttributes"
+			Value=""
+		/>
+		<Property
+			Name="IsSearchMenuButton"
+			Value=""
+		/>
+		<Property
+			Name="LastAction"
+			Value=""
+		/>
+		<Property
+			Name="LastSubAction"
+			Value=""
+		/>
+		<Property
+			Name="MenuName"
+			Value=""
+		/>
+		<Property
+			Name="PageCode"
+			Value=""
+		/>
+		<Property
+			Name="RetainDevWhere"
+			Value=""
+		/>
+		<Property
+			Name="SearchDS"
+			Value=""
+		/>
+		<Property
+			Name="SearchPopupOnload"
+			Value=""
+		/>
+		<Property
+			Name="Title"
+			Value=""
+		/>
+	</ExtendedProperties>
+	<RecordSource
+		RSID="1"
+		Prefix="rs01"
+		BusinessObject="STMT_XWLK_DEF"
+		RelnIsFromParent="False"
+		DoesSourceAffectMe="False"
+		DoIAffectSource="False"
+		IsAddedAfterGen="False"
+		RsAttributesDefault="False"
+		ClassName="com.amsinc.gems.adv.vfc.html.AMSDataSource"
+		RecordSourceArchetype="AMSGenericGridDisplayTabs"
+		MaxGridRowCount="10"
+		FetchedBlockRowCount="16"
+		AllowDelete="True"
+		AllowInsert="True"
+		AllowUpdate="True"
+		SaveMode="Immediate"
+		PreFetchRowCount="False"
+		>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<RSAttributesMeta>
+			<DefaultAttributes>
+				<RSDefaultAttribute ID="50" Name="STMT_FY" />
+				<RSDefaultAttribute ID="2" Name="STMT_CD" />
+				<RSDefaultAttribute ID="3" Name="STMT_NM" />
+				<RSDefaultAttribute ID="4" Name="SRC_TBL" />
+				<RSDefaultAttribute ID="5" Name="SRC_TBL_NM" />
+				<RSDefaultAttribute ID="9" Name="SMRY_COL_CD_1" />
+				<RSDefaultAttribute ID="10" Name="SMRY_COL_NM_1" />
+				<RSDefaultAttribute ID="11" Name="SMRY_COL_CD_2" />
+				<RSDefaultAttribute ID="12" Name="SMRY_COL_NM_2" />
+				<RSDefaultAttribute ID="13" Name="SMRY_COL_CD_3" />
+				<RSDefaultAttribute ID="14" Name="SMRY_COL_NM_3" />
+				<RSDefaultAttribute ID="15" Name="SMRY_COL_CD_4" />
+				<RSDefaultAttribute ID="16" Name="SMRY_COL_NM_4" />
+				<RSDefaultAttribute ID="17" Name="SMRY_COL_CD_5" />
+				<RSDefaultAttribute ID="18" Name="SMRY_COL_NM_5" />
+				<RSDefaultAttribute ID="19" Name="SMRY_COL_CD_6" />
+				<RSDefaultAttribute ID="20" Name="SMRY_COL_NM_6" />
+				<RSDefaultAttribute ID="21" Name="SMRY_COL_CD_7" />
+				<RSDefaultAttribute ID="22" Name="SMRY_COL_NM_7" />
+				<RSDefaultAttribute ID="23" Name="SMRY_COL_CD_8" />
+				<RSDefaultAttribute ID="24" Name="SMRY_COL_NM_8" />
+				<RSDefaultAttribute ID="25" Name="SMRY_COL_CD_9" />
+				<RSDefaultAttribute ID="26" Name="SMRY_COL_NM_9" />
+				<RSDefaultAttribute ID="27" Name="SMRY_COL_CD_10" />
+				<RSDefaultAttribute ID="28" Name="SMRY_COL_NM_10" />
+				<RSDefaultAttribute ID="29" Name="SMRY_COL_CD_11" />
+				<RSDefaultAttribute ID="30" Name="SMRY_COL_NM_11" />
+				<RSDefaultAttribute ID="31" Name="SMRY_COL_CD_12" />
+				<RSDefaultAttribute ID="32" Name="SMRY_COL_NM_12" />
+				<RSDefaultAttribute ID="33" Name="SMRY_COL_CD_13" />
+				<RSDefaultAttribute ID="34" Name="SMRY_COL_NM_13" />
+				<RSDefaultAttribute ID="35" Name="SMRY_COL_CD_14" />
+				<RSDefaultAttribute ID="36" Name="SMRY_COL_NM_14" />
+				<RSDefaultAttribute ID="37" Name="SMRY_COL_CD_15" />
+				<RSDefaultAttribute ID="38" Name="SMRY_COL_NM_15" />
+				<RSDefaultAttribute ID="39" Name="SMRY_COL_CD_16" />
+				<RSDefaultAttribute ID="40" Name="SMRY_COL_NM_16" />
+				<RSDefaultAttribute ID="41" Name="SMRY_COL_CD_17" />
+				<RSDefaultAttribute ID="42" Name="SMRY_COL_NM_17" />
+				<RSDefaultAttribute ID="43" Name="SMRY_COL_CD_18" />
+				<RSDefaultAttribute ID="44" Name="SMRY_COL_NM_18" />
+				<RSDefaultAttribute ID="45" Name="SMRY_COL_CD_19" />
+				<RSDefaultAttribute ID="46" Name="SMRY_COL_NM_19" />
+				<RSDefaultAttribute ID="47" Name="SMRY_COL_CD_20" />
+				<RSDefaultAttribute ID="48" Name="SMRY_COL_NM_20" />
+				<RSDefaultAttribute ID="49" Name="TBL_LAST_DT" />
+				<RSDefaultAttribute ID="51" Name="STMT_NM_UP" />
+				<RSDefaultAttribute ID="6" Name="AMS_ROW_VERS_NO" />
+				<RSDefaultAttribute ID="7" Name="LAST_UPDATE_DT" />
+				<RSDefaultAttribute ID="8" Name="LAST_UPDATE_USERID" />
+			</DefaultAttributes>
+			<ScalerAttributes>
+				<RSAttribute Name="STMT_CD" Displayed="True" UnPlaced="False" Archetype="AMSPickChoiceReq" />
+				<RSAttribute Name="STMT_NM" Displayed="True" UnPlaced="False" Archetype="AMSTextboxLong" />
+				<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" Archetype="AMSPickChoiceReq" />
+				<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_1" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_1" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_2" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_2" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_3" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_3" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_4" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_4" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_5" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_5" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_6" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_6" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_7" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_7" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_8" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_8" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_9" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_9" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_10" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_10" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_11" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_11" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_12" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_12" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_13" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_13" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_14" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_14" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_15" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_15" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_16" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_16" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_17" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_17" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_18" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_18" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_19" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_19" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="SMRY_COL_CD_20" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_20" Displayed="True" UnPlaced="False" Archetype="AMSDisplayOnlyTextNoLabel" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="STMT_FY" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="STMT_NM_UP" Displayed="True" UnPlaced="False" Archetype="AMSUpperCaseTextBox" />
+			</ScalerAttributes>
+			<GridAttributes>
+				<RSAttribute Name="STMT_CD" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="STMT_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+				<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_1" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_1" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_2" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_2" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_3" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_3" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_4" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_4" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_5" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_5" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_6" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_6" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_7" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_7" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_8" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_8" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_9" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_9" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_10" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_10" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_11" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_11" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_12" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_12" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_13" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_13" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_14" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_14" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_15" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_15" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_16" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_16" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_17" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_17" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_18" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_18" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_19" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_19" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_CD_20" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="SMRY_COL_NM_20" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="STMT_FY" Displayed="False" UnPlaced="False" />
+				<RSAttribute Name="STMT_NM_UP" Displayed="False" UnPlaced="False" />
+			</GridAttributes>
+		</RSAttributesMeta>
+		<ExtendedProperties>
+			<Property
+				Name="ColumnProjectionLevel"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileName"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxCSVRowsBeforeZip"
+				Value=""
+			/>
+			<Property
+				Name="DownloadMaxRows"
+				Value=""
+			/>
+			<Property
+				Name="DownloadProperties"
+				Value=""
+			/>
+			<Property
+				Name="DownloadTemplate"
+				Value=""
+			/>
+			<Property
+				Name="DynamicGridAttrib"
+				Value=""
+			/>
+			<Property
+				Name="maintenanceString"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCount"
+				Value=""
+			/>
+			<Property
+				Name="MaxRowCountMsg"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageEndWith"
+				Value=""
+			/>
+			<Property
+				Name="MirrorPageStartWith"
+				Value=""
+			/>
+			<Property
+				Name="MultiTableCurrentRow"
+				Value=""
+			/>
+			<Property
+				Name="OverrideNumRowsPerPage"
+				Value=""
+			/>
+			<Property
+				Name="PreFetchRowCount"
+				Value=""
+			/>
+			<Property
+				Name="SearchColList"
+				Value="&quot;STMT_CD,SRC_TBL,STMT_NM_UP&quot;"
+			/>
+			<Property
+				Name="ShowSearchPopup"
+				Value=""
+			/>
+			<Property
+				Name="UseDBHint"
+				Value=""
+			/>
+			<Property
+				Name="VirtualResultSet"
+				Value=""
+			/>
+			<Property
+				Name="ZoomDataSource"
+				Value=""
+			/>
+		</ExtendedProperties>
+		<ArchetypeExtendedProperties>
+			<Property
+				Name="Action_1_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_1_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_1_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_2_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_2_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_3_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_3_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_4_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_4_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_AutoDocInfo"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_Label"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_OpenDoc"
+				Value="true"
+			/>
+			<Property
+				Name="Action_5_SubAction"
+				Value=""
+			/>
+			<Property
+				Name="Action_5_TrueDataSource"
+				Value=""
+			/>
+			<Property
+				Name="DetailsCaption"
+				Value=""
+			/>
+			<Property
+				Name="DownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="GridDownloadFileType"
+				Value="none"
+			/>
+			<Property
+				Name="New_Column_Fields"
+				Value="%SMRY_COL_CD_11%"
+			/>
+			<Property
+				Name="ObjectAttachmentMode"
+				Value="Editable"
+			/>
+			<Property
+				Name="ObjectAttachments"
+				Value="false"
+			/>
+			<Property
+				Name="showCopyPaste"
+				Value="true"
+			/>
+			<Property
+				Name="ShowGridNav"
+				Value="true"
+			/>
+			<Property
+				Name="showSearchWin"
+				Value="true"
+			/>
+			<Property
+				Name="SummaryCaption"
+				Value=""
+			/>
+			<Property
+				Name="Tab_10_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_10_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_11_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_11_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_12_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_12_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_13_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_13_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_14_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_14_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_15_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_15_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_16_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_16_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_17_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_17_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_18_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_18_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_19_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_19_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_1_Delimiter"
+				Value="%SMRY_COL_CD_1%"
+			/>
+			<Property
+				Name="Tab_1_Name"
+				Value="Summary Columns"
+			/>
+			<Property
+				Name="Tab_20_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_20_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_2_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_2_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_3_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_3_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_4_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_4_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_5_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_5_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_6_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_6_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_7_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_7_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_8_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_8_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_9_Delimiter"
+				Value=""
+			/>
+			<Property
+				Name="Tab_9_Name"
+				Value=""
+			/>
+			<Property
+				Name="Tab_Delimiter_Fields"
+				Value=""
+			/>
+			<Property
+				Name="TimelineData"
+				Value="false"
+			/>
+			<Property
+				Name="UploadFileType"
+				Value="none"
+			/>
+		</ArchetypeExtendedProperties>
+		<PickObject
+			RSID="2"
+			Prefix="T1"
+			BusinessObject="STMT_DEF"
+			Relationship="StmtCwlkToStmtDef(STMT_DEF)-StmtDefToStmtCwlk(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [STMT_FY] = [?STMT_FY] and [STMT_CD] = [?STMT_CD]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="2" Name="STMT_FY" />
+					<RSDefaultAttribute ID="11" Name="STMT_CD" />
+					<RSDefaultAttribute ID="1" Name="STMT_NM" />
+					<RSDefaultAttribute ID="3" Name="STMT_DSCR" />
+					<RSDefaultAttribute ID="4" Name="RUN_IMMEDIATE" />
+					<RSDefaultAttribute ID="5" Name="XWLK_ACT_FL" />
+					<RSDefaultAttribute ID="6" Name="ACT_FL" />
+					<RSDefaultAttribute ID="14" Name="STMT_TYPE" />
+					<RSDefaultAttribute ID="7" Name="LAST_REFRESH_DT" />
+					<RSDefaultAttribute ID="8" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="9" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_USERID" />
+					<RSDefaultAttribute ID="12" Name="STMT_NM_UP" />
+					<RSDefaultAttribute ID="13" Name="STMT_DSCR_UP" />
+					<RSDefaultAttribute ID="15" Name="TBL_LAST_DT" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="STMT_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="STMT_FY" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="STMT_DSCR" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="RUN_IMMEDIATE" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="XWLK_ACT_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="ACT_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_REFRESH_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="STMT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="STMT_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="STMT_DSCR_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="STMT_TYPE" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="STMT_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="STMT_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="STMT_FY" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="ACT_FL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="STMT_DSCR" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="RUN_IMMEDIATE" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="XWLK_ACT_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_REFRESH_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="STMT_NM_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="STMT_DSCR_UP" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="STMT_TYPE" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="TBL_LAST_DT" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="CustomPickFrame"
+					Value=""
+				/>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="EnableVirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="InitialBrowse"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value=""
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+				<Property
+					Name="TypeAheadDispCols"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+		<PickObject
+			RSID="3"
+			Prefix="T2"
+			BusinessObject="STMT_SRC_TBL"
+			Relationship="StmtCwlkToStmtSrcTbl(STMT_SRC_TBL)-StmtSrcTblToStmtCwlk(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="2" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="NS_NM" />
+					<RSDefaultAttribute ID="4" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="5" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="6" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="NS_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="NS_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+			<ExtendedProperties>
+				<Property
+					Name="CustomPickFrame"
+					Value=""
+				/>
+				<Property
+					Name="DataSource"
+					Value=""
+				/>
+				<Property
+					Name="DisableAutoPickFilter"
+					Value=""
+				/>
+				<Property
+					Name="EnableVirtualResultSet"
+					Value=""
+				/>
+				<Property
+					Name="InitialBrowse"
+					Value=""
+				/>
+				<Property
+					Name="ScalarColList"
+					Value=""
+				/>
+				<Property
+					Name="StoreMultiRowsInSingleCol"
+					Value=""
+				/>
+				<Property
+					Name="TimelinePick"
+					Value=""
+				/>
+				<Property
+					Name="TypeAheadDispCols"
+					Value=""
+				/>
+				<Property
+					Name="UseDBHint"
+					Value=""
+				/>
+			</ExtendedProperties>
+		</PickObject>
+		<PickObject
+			RSID="4"
+			Prefix="T3"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl1(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef1(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_1]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="5"
+			Prefix="T4"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl2(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef2(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_2]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="6"
+			Prefix="T5"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl3(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef3(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_3]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="7"
+			Prefix="T6"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl4(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef4(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_4]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="8"
+			Prefix="T7"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl5(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef5(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_5]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="9"
+			Prefix="T8"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl6(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef6(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_6]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="10"
+			Prefix="T9"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl7(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef7(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_7]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="11"
+			Prefix="T10"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl8(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef8(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_8]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="12"
+			Prefix="T11"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl9(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef9(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_9]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="13"
+			Prefix="T12"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl10(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef10(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_10]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="14"
+			Prefix="T13"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl11(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef11(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_11]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="15"
+			Prefix="T14"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl12(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef12(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_12]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="16"
+			Prefix="T15"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl13(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef13(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_13]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="17"
+			Prefix="T16"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl14(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef14(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_14]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="18"
+			Prefix="T17"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl15(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef15(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_15]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="19"
+			Prefix="T18"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl16(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef16(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_16]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="20"
+			Prefix="T19"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl17(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef17(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_17]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="21"
+			Prefix="T20"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl18(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef18(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_18]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="22"
+			Prefix="T21"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl19(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef19(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_19]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+		<PickObject
+			RSID="23"
+			Prefix="T22"
+			BusinessObject="STMT_SRC_COL"
+			Relationship="StmtXwlkDefToStmtSrcColl20(STMT_SRC_COL)-StmtSrcCollToStmtXwlkDef20(STMT_XWLK_DEF)"
+			RelnIsFromParent="False"
+			DoesSourceAffectMe="False"
+			DoIAffectSource="True"
+			IsAddedAfterGen="False"
+			RsAttributesDefault="False"
+			ClassName="com.amsinc.gems.adv.vfc.html.AMSPick"
+			OnScreenPick="False"
+			>
+			<FKeyParamsClause><![CDATA[ [SRC_TBL] = [?SRC_TBL] and [COL_CD] = [?SMRY_COL_CD_20]]]></FKeyParamsClause>
+			<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+			<OrderByClause><![CDATA[ ]]></OrderByClause>
+			<RSAttributesMeta>
+				<DefaultAttributes>
+					<RSDefaultAttribute ID="1" Name="SRC_TBL" />
+					<RSDefaultAttribute ID="12" Name="SRC_TBL_NM" />
+					<RSDefaultAttribute ID="2" Name="REF_TBL_CD" />
+					<RSDefaultAttribute ID="13" Name="REF_TBL" />
+					<RSDefaultAttribute ID="14" Name="REF_TBL_NM" />
+					<RSDefaultAttribute ID="3" Name="COL_CD" />
+					<RSDefaultAttribute ID="4" Name="COL" />
+					<RSDefaultAttribute ID="5" Name="COL_NM" />
+					<RSDefaultAttribute ID="6" Name="SRC_COL_FL" />
+					<RSDefaultAttribute ID="7" Name="FY_COL_FL" />
+					<RSDefaultAttribute ID="8" Name="APD_COL_FL" />
+					<RSDefaultAttribute ID="9" Name="AMS_ROW_VERS_NO" />
+					<RSDefaultAttribute ID="10" Name="LAST_UPDATE_DT" />
+					<RSDefaultAttribute ID="11" Name="LAST_UPDATE_USERID" />
+				</DefaultAttributes>
+				<ScalerAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</ScalerAttributes>
+				<GridAttributes>
+					<RSAttribute Name="SRC_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="SRC_TBL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_CD" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="COL_NM" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_CD" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="COL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="SRC_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="FY_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="APD_COL_FL" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="AMS_ROW_VERS_NO" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_DT" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="LAST_UPDATE_USERID" Displayed="False" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL" Displayed="True" UnPlaced="False" />
+					<RSAttribute Name="REF_TBL_NM" Displayed="True" UnPlaced="False" />
+				</GridAttributes>
+			</RSAttributesMeta>
+		</PickObject>
+	</RecordSource>
+	<Transition
+		FormTransNum="1"
+		Prefix="T23"
+		TargetFormName="pRefSTMTDEF"
+		IsTargetInitialQueryMode="False"
+		IsTargetInitialAddMode="False"
+		IsVisibleAppline="True"
+		IsAddedAfterGen="False"
+		FormTransCaption="Statement Definition"
+		ClassName="PageNavigation"
+		TargetFramesetPage=""
+		TargetFrame=""
+		FrameNameInFramesetPage=""
+		RSID="24"
+		BusinessObject="STMT_DEF"
+		RelnIsFromParent="True"
+		>
+		<OrderByClause><![CDATA[ ]]></OrderByClause>
+		<ParameterizedWhereClause><![CDATA[ ]]></ParameterizedWhereClause>
+		<AdditionalWhereClause><![CDATA[ ]]></AdditionalWhereClause>
+	</Transition>
+</Form>
